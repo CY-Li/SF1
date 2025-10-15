@@ -1,0 +1,423 @@
+@import 'main.scss';
+
+.mainFrame {
+  width: 80%;
+  min-width: 950px;
+  margin: 5% auto;
+  background: white;
+  border-radius: 0 60px 0 60px;
+  @media #{$mobile} {
+    width: 90%;
+    min-width: 90%;
+    border-radius: 8px;
+  }
+}
+
+.frameTitle {
+  width: 100%;
+  text-align: center;
+  background: transparent linear-gradient(180deg, transparent 30%, #F8F2F2 100%) 0% 0% no-repeat padding-box;
+  padding: 20px;
+  border-bottom: 1px solid #e5c0b5;
+  position: relative;
+  @media #{$mobile} {
+    padding: 8px;
+  }
+  .title-zh {
+    font-size: 25px;
+    color: $minor;
+    font-weight: bold;
+    @media #{$mobile} {
+      font-size: 18px;
+    }
+  }
+  .title-en {
+    font-size: 12px;
+    color: $secondary;
+  }
+  .close {
+    position: absolute;
+    font-size: 40px;
+    color: $minor;
+    top: 50%;
+    right: 40px;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    @media #{$mobile} {
+      right: 10px;
+    }
+  }
+}
+
+.frameBody {
+  padding: 75px 0;
+  position: relative;
+  @media #{$mobile} {
+    padding: 0 16px;
+  }
+  .return {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    top: 20px;
+    left: 20px;
+    color: $minor;
+    i {
+      margin-right: 8px;
+    }
+  }
+  .registForm {
+    width: 85%;
+    min-width: 920px;
+    margin: auto;
+    @media #{$mobile} {
+      width: 100%;
+      min-width: 100%;
+      padding: 30px 0;
+    }
+  }
+  .customLabel {
+    display: flex;
+    align-items: center;
+    word-break: keep-all;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    label {
+      margin-right: 12px;
+      display: flex;
+      color: $primary;
+      @media #{$mobile} {
+        margin-bottom: 8px;
+        width: 100%;
+        font-size: 14px;
+      }
+    }
+    .required {
+      color: $minor;
+      margin-left: 16px;
+      @media #{$mobile} {
+        margin-left: 8px;
+      }
+    }
+    input:not([type=radio]) {
+      border: 1px solid $secondary;
+      border-radius: 8px;
+      height: 46px;
+      width: 445px;
+      outline: 0;
+      padding-left: 1em;
+      &:focus {
+        box-shadow: 0 0 0 0.25rem rgba(222,172,156,.25);
+      }
+      @media #{$mobile} {
+        width: 100%;
+        height: 36px;
+        font-size: 14px;
+      }
+    }
+    .tip {
+      width: 100%;
+      color: $secondary;
+      margin-top: 10px;
+      padding-left: 6.5em;
+      word-break: break-all;
+      @media #{$mobile} {
+        padding-left: 0;
+        font-size: 12px;
+      }
+    }
+    .phoneCheck {
+      position: absolute;
+      top: 50%;
+      left: calc(100% + 20px);
+      transform: translate(0, -50%);
+      display: flex;
+      align-items: center;
+      @media #{$mobile} {
+        left: auto;
+        right: 4px;
+      }
+      .checkIcon {
+        color: #88c858;
+        margin-right: 8px;
+        font-size: 32px;
+        @media #{$mobile} {
+          font-size: 26px;
+        }
+      }
+    }
+    .messageInput {
+      @media #{$mobile} {
+        width: calc(100% - 120px);
+        input {
+          border-radius: 8px 0 0 8px;
+        }
+      }
+    }
+    .sendMsgBtn {
+      width: 180px;
+      height: 46px;
+      margin-left: 20px;
+      @media #{$mobile} {
+        width: 120px;
+        margin-left: 0;
+        border-radius: 0 8px 8px 0;
+        height: 36px;
+        font-size: 14px;
+      }
+    }
+    .password-valid {
+      height: 46px;
+      margin-left: 20px;
+      display: flex;
+      padding-bottom: 4px;
+      align-items: flex-end;
+      @media #{$mobile} {
+        margin-left: 0;
+        height: 30px;
+      }
+      .levels {
+        display: flex;
+        align-items: flex-end;
+        height: 100%;
+        margin-right: 8px;
+        @media #{$mobile} {
+          padding-bottom: 2px;
+        }
+        .level {
+          border: 1px solid #88c858;
+          height: 7px;
+          width: 27px;
+          margin-right: 4px;
+          &.valid {
+            background: #88c858;
+          }
+        }
+      }
+      .msg {
+        @media #{$mobile} {
+          font-size: 12px;
+        }
+      }
+    }
+    .inputContainer {
+      @media #{$mobile} {
+        width: 100%;
+      }
+    }
+    .phone-group-input {
+      display: flex;
+      select {
+        width: 120px;
+      }
+      .inputContainer {
+        width: 325px;
+        input {
+          width: 100%;
+        }
+        @media #{$mobile} {
+          width: calc(100% - 120px);
+        }
+      }
+    }
+  }
+
+  .cellphoneInput {
+    position: relative;
+    &::before {
+      display: flex;
+      content: "+886";
+      width: 5em;
+      justify-content: center;
+      position: absolute;
+      height: 80%;
+      align-items: center;
+      top: 50%;
+      left: 0;
+      transform: translate(0, -50%);
+      border-right: 1px solid $secondary;
+      @media #{$mobile} {
+        width: 4em;
+        font-size: 14px;
+      }
+    }
+    input {
+      padding-left: 6em !important;
+      @media #{$mobile} {
+        padding-left: 4.5em !important;
+        padding-right: 40px !important;
+      }
+    }
+  }
+  .form-check {
+    @media #{$mobile} {
+      font-size: 12px;
+      margin-bottom: 30px;
+    }
+    .form-check-input {
+      border-color: #d4481c;
+      &:focus {
+        box-shadow: 0 0 0 0.25rem rgba(222,172,156,.25);
+      }
+      &:checked {
+        background-color: #d4481c;
+        border-color: #d4481c;
+      }
+    }
+  }
+  .submitBtn {
+    outline: 0;
+    border: none;
+    width: 280px;
+    height: 63px;
+    margin: 40px auto;
+    flex-wrap: wrap;
+    @media #{$mobile} {
+      width: 240px;
+      height: 55px;
+      margin: 10px auto;
+    }
+    .btn-zh {
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      @media #{$mobile} {
+        font-size: 14px;
+      }
+    }
+    .btn-en {
+      color: $secondary;
+      font-size: 12px;
+    }
+  }
+  .loginLayout {
+    width: 50%;
+    padding: 12px 5%;
+    border-right: 1px solid #b8b8b8;
+    @media #{$mobile} {
+      width: 100%;
+      border-right: none;
+      border-bottom: 1px dashed #b8b8b8;
+      padding: 30px 0;
+    }
+    .text {
+      display: none;
+      @media #{$mobile} {
+        color: $primary;
+        display: block;
+        text-align: center;
+        margin-bottom: 12px;
+        font-size: 14px;
+      }
+    }
+    .login-input-group {
+      width: 100%;
+      margin-bottom: 8px;
+      @media #{$mobile} {
+        margin-bottom: 16px;
+      }
+      label {
+        color: $primary;
+        text-align: center;
+        width: 100%;
+        @media #{$mobile} {
+          text-align: left;
+          font-size: 14px;
+        }
+      }
+      input {
+        border-radius: 25px;
+        border: 1px solid $secondary;
+        outline: 0;
+        padding-left: 1em;
+        height: 40px;
+        &:focus {
+          box-shadow: 0 0 0 0.25rem rgba(222,172,156,.25);
+        }
+        @media #{$mobile} {
+          height: 36px;
+        }
+      }
+      &.valid-group {
+        width: 50%;
+        @media #{$mobile} {
+          width: 160px;
+          margin-bottom: 8px;
+        }
+      }
+      .input-eye {
+        position: absolute;
+        top: calc(50% + 4px);
+        right: 12px;
+        transform: translate(0, -50%);
+        cursor: pointer;
+      }
+    }
+    .forget {
+      color: $primary;
+      font-size: 12px;
+      text-align: right;
+      margin-top: 4px;
+      span, i {
+        cursor: pointer;
+      }
+      i {
+        margin-left: 4px;
+      }
+    }
+    .validCanvas {
+      width: fit-content;
+      margin-left: auto;
+      margin-bottom: 8px;
+      cursor: pointer;
+      @media #{$mobile} {
+        margin-bottom: 30px;
+        margin-left: 0;
+      }
+    }
+  }
+  .toRegist {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    @media #{$mobile} {
+      padding: 30px 0;
+      width: 100%;
+    }
+    .toRegistTextZh {
+      color: #880f0b;
+      font-weight: bold;
+      font-size: 40px;
+      width: 100%;
+      @media #{$mobile} {
+        font-size: 16px;
+        font-weight: normal;
+      }
+
+    }
+    .toRegistTextEn {
+      font-size: 13px;
+      width: 100%;
+      color: $secondary;
+      @media #{$mobile} {
+        display: none;
+      }
+    }
+  }
+  &.terms {
+    padding: 75px 3em;
+    @media #{$mobile} {
+      padding: 75px 16px 40px 16px;
+    }
+  }
+  &.forgetBody {
+    @media #{$mobile} {
+      padding: 40px 16px 40px 16px;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+# 確保 shell 腳本在 Linux 環境中有執行權限
+scripts/*.sh text eol=lf
+*.sh text eol=lf
+
+# Docker 相關文件
+Dockerfile text eol=lf
+docker-compose.yml text eol=lf
+*.conf text eol=lf
+
+# SQL 腳本
+*.sql text eol=lf

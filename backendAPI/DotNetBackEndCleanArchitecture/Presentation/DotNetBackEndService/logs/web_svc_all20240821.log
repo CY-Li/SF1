@@ -1,0 +1,40 @@
+2024-08-21 15:08:54.794 +08:00 [INF] Now listening on: http://localhost:5001
+2024-08-21 15:08:54.815 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-21 15:08:54.835 +08:00 [INF] Hosting environment: Development
+2024-08-21 15:08:54.836 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2024-08-21 15:09:02.440 +08:00 [INF] HTTP GET / responded 404 in 5.2079 ms
+2024-08-21 15:34:49.415 +08:00 [INF] Now listening on: http://localhost:5001
+2024-08-21 15:34:49.471 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-21 15:34:49.472 +08:00 [INF] Hosting environment: Development
+2024-08-21 15:34:49.473 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2024-08-21 15:34:53.343 +08:00 [INF] HTTP GET / responded 404 in 2.1053 ms
+2024-08-21 15:45:34.266 +08:00 [INF] Now listening on: http://localhost:5001
+2024-08-21 15:45:34.334 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-21 15:45:34.355 +08:00 [INF] Hosting environment: Development
+2024-08-21 15:45:34.356 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2024-08-21 15:45:37.625 +08:00 [INF] HTTP GET / responded 404 in 2.4355 ms
+2024-08-21 16:31:16.171 +08:00 [INF] Now listening on: http://localhost:5001
+2024-08-21 16:31:16.185 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-21 16:31:16.190 +08:00 [INF] Hosting environment: Development
+2024-08-21 16:31:16.191 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2024-08-21 16:31:19.575 +08:00 [INF] HTTP GET / responded 404 in 2.5546 ms
+2024-08-21 17:19:40.653 +08:00 [INF] KycServiceController QueryKycAdmin START
+2024-08-21 17:19:40.662 +08:00 [INF] KycRepository QueryKycAdmin START
+2024-08-21 17:19:42.818 +08:00 [INF] KycRepository QueryKycAdmin END
+2024-08-21 17:19:42.865 +08:00 [INF] KycServiceController QueryKycAdmin END
+2024-08-21 17:19:42.981 +08:00 [INF] HTTP POST /api/AuthenticationMgmt/KycService/QueryKycAdmin responded 200 in 2624.8342 ms
+2024-08-21 17:19:47.251 +08:00 [INF] KycServiceController QueryKycAdmin START
+2024-08-21 17:19:47.578 +08:00 [INF] KycRepository QueryKycAdmin START
+2024-08-21 17:19:47.591 +08:00 [INF] KycRepository QueryKycAdmin END
+2024-08-21 17:19:47.592 +08:00 [INF] KycServiceController QueryKycAdmin END
+2024-08-21 17:19:47.594 +08:00 [INF] HTTP POST /api/AuthenticationMgmt/KycService/QueryKycAdmin responded 200 in 351.1311 ms
+2024-08-21 17:19:52.433 +08:00 [INF] KycServiceController Postkyc START
+2024-08-21 17:19:52.437 +08:00 [INF] KycRepository PutKyc START
+2024-08-21 17:19:52.548 +08:00 [INF] KycRepository PutKyc END
+2024-08-21 17:19:52.567 +08:00 [INF] KycServiceController Postkyc END
+2024-08-21 17:19:52.588 +08:00 [INF] HTTP POST /api/AuthenticationMgmt/KycService/PutKyc responded 200 in 180.1224 ms
+2024-08-21 17:19:53.936 +08:00 [INF] KycServiceController QueryKycAdmin START
+2024-08-21 17:19:53.938 +08:00 [INF] KycRepository QueryKycAdmin START
+2024-08-21 17:19:53.946 +08:00 [INF] KycRepository QueryKycAdmin END
+2024-08-21 17:19:53.947 +08:00 [INF] KycServiceController QueryKycAdmin END
+2024-08-21 17:19:53.948 +08:00 [INF] HTTP POST /api/AuthenticationMgmt/KycService/QueryKycAdmin responded 200 in 12.7280 ms

@@ -1,0 +1,131 @@
+2024-11-02 03:08:02.864 +08:00 [INF] Now listening on: http://localhost:5000
+2024-11-02 03:08:02.900 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-02 03:08:02.916 +08:00 [INF] Hosting environment: Development
+2024-11-02 03:08:02.929 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2024-11-02 03:08:22.030 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 2904.0275 ms
+2024-11-02 03:08:45.875 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 2337.7460 ms
+2024-11-02 03:08:58.345 +08:00 [INF] AnnouncementController GetAnnImages START
+2024-11-02 03:10:07.214 +08:00 [INF] AnnouncementController GetAnnImages END
+2024-11-02 03:10:07.263 +08:00 [INF] HTTP GET /api/Announcement/GetAnnImages responded 200 in 68963.8402 ms
+2024-11-02 03:10:07.295 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 2.3581 ms
+2024-11-02 03:10:07.325 +08:00 [INF] BalancesController QueryMemberBalanceUser START
+2024-11-02 03:10:07.384 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/BalancesService/QueryMemberBalanceUser
+2024-11-02 03:10:07.442 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/BalancesService/QueryMemberBalanceUser
+2024-11-02 03:10:09.719 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 205.1613 ms
+2024-11-02 03:10:11.365 +08:00 [INF] Received HTTP response headers after 3871.5617ms - 200
+2024-11-02 03:10:11.943 +08:00 [INF] End processing HTTP request after 4569.2609ms - 200
+2024-11-02 03:10:12.018 +08:00 [INF] BalancesController QueryMemberBalanceUser END
+2024-11-02 03:10:12.043 +08:00 [INF] HTTP GET /api/Balances/QueryMemberBalanceUser responded 200 in 4803.3254 ms
+2024-11-02 03:10:18.311 +08:00 [INF] BalancesController QueryMemberBalanceUser START
+2024-11-02 03:10:18.346 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/BalancesService/QueryMemberBalanceUser
+2024-11-02 03:10:18.348 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/BalancesService/QueryMemberBalanceUser
+2024-11-02 03:10:18.391 +08:00 [INF] Received HTTP response headers after 42.5787ms - 200
+2024-11-02 03:10:18.393 +08:00 [INF] End processing HTTP request after 47.1345ms - 200
+2024-11-02 03:10:18.401 +08:00 [INF] BalancesController QueryMemberBalanceUser END
+2024-11-02 03:10:18.404 +08:00 [INF] HTTP GET /api/Balances/QueryMemberBalanceUser responded 200 in 95.7346 ms
+2024-11-02 03:10:38.497 +08:00 [INF] BalancesController QueryMemberBalanceAdmin START
+2024-11-02 03:10:38.508 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/BalancesService/QueryMemberBalanceAdmin
+2024-11-02 03:10:38.511 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/BalancesService/QueryMemberBalanceAdmin
+2024-11-02 03:10:38.579 +08:00 [INF] Received HTTP response headers after 65.9954ms - 200
+2024-11-02 03:10:38.581 +08:00 [INF] End processing HTTP request after 72.8922ms - 200
+2024-11-02 03:10:38.591 +08:00 [INF] BalancesController QueryMemberBalanceAdmin END
+2024-11-02 03:10:38.597 +08:00 [INF] HTTP GET /api/Balances/QueryMemberBalanceAdmin responded 200 in 107.0120 ms
+2024-11-02 03:10:53.591 +08:00 [INF] BalancesController QueryMemberBalanceAdmin START
+2024-11-02 03:10:53.603 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/BalancesService/QueryMemberBalanceAdmin
+2024-11-02 03:10:53.615 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/BalancesService/QueryMemberBalanceAdmin
+2024-11-02 03:10:53.633 +08:00 [INF] Received HTTP response headers after 7.1157ms - 200
+2024-11-02 03:10:53.636 +08:00 [INF] End processing HTTP request after 33.4396ms - 200
+2024-11-02 03:10:53.643 +08:00 [INF] BalancesController QueryMemberBalanceAdmin END
+2024-11-02 03:10:53.645 +08:00 [INF] HTTP GET /api/Balances/QueryMemberBalanceAdmin responded 200 in 55.2639 ms
+2024-11-02 03:11:38.668 +08:00 [INF] BalancesController QueryMemberBalanceAdmin START
+2024-11-02 03:11:38.709 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/BalancesService/QueryMemberBalanceAdmin
+2024-11-02 03:11:38.711 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/BalancesService/QueryMemberBalanceAdmin
+2024-11-02 03:11:38.735 +08:00 [INF] Received HTTP response headers after 22.1633ms - 200
+2024-11-02 03:11:38.737 +08:00 [INF] End processing HTTP request after 27.8919ms - 200
+2024-11-02 03:11:38.752 +08:00 [INF] BalancesController QueryMemberBalanceAdmin END
+2024-11-02 03:11:38.754 +08:00 [INF] HTTP GET /api/Balances/QueryMemberBalanceAdmin responded 200 in 14622.6091 ms
+2024-11-02 03:13:30.185 +08:00 [INF] Now listening on: http://localhost:5000
+2024-11-02 03:13:30.203 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-02 03:13:30.204 +08:00 [INF] Hosting environment: Development
+2024-11-02 03:13:30.205 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2024-11-02 03:13:41.880 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 678.3601 ms
+2024-11-02 03:13:43.426 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 974.1836 ms
+2024-11-02 03:14:48.275 +08:00 [INF] BalancesController QueryMemberBalanceAdmin START
+2024-11-02 03:14:48.359 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/BalancesService/QueryMemberBalanceAdmin
+2024-11-02 03:14:48.366 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/BalancesService/QueryMemberBalanceAdmin
+2024-11-02 03:14:53.322 +08:00 [INF] Received HTTP response headers after 4947.4851ms - 200
+2024-11-02 03:14:53.344 +08:00 [INF] End processing HTTP request after 4993.857ms - 200
+2024-11-02 03:14:53.706 +08:00 [INF] BalancesController QueryMemberBalanceAdmin END
+2024-11-02 03:14:54.054 +08:00 [INF] HTTP GET /api/Balances/QueryMemberBalanceAdmin responded 200 in 14027.1571 ms
+2024-11-02 03:15:03.531 +08:00 [INF] BalancesController QueryMemberBalanceAdmin START
+2024-11-02 03:15:03.534 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/BalancesService/QueryMemberBalanceAdmin
+2024-11-02 03:15:03.540 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/BalancesService/QueryMemberBalanceAdmin
+2024-11-02 03:15:03.593 +08:00 [INF] Received HTTP response headers after 51.5517ms - 200
+2024-11-02 03:15:03.608 +08:00 [INF] End processing HTTP request after 74.0579ms - 200
+2024-11-02 03:15:03.612 +08:00 [INF] BalancesController QueryMemberBalanceAdmin END
+2024-11-02 03:15:03.616 +08:00 [INF] HTTP GET /api/Balances/QueryMemberBalanceAdmin responded 200 in 96.0203 ms
+2024-11-02 03:15:13.250 +08:00 [INF] AnnouncementController GetAnnImages START
+2024-11-02 03:15:13.273 +08:00 [INF] AnnouncementController GetAnnImages START
+2024-11-02 03:16:15.264 +08:00 [INF] AnnouncementController GetAnnImages END
+2024-11-02 03:16:15.265 +08:00 [INF] AnnouncementController GetAnnImages END
+2024-11-02 03:16:15.294 +08:00 [INF] HTTP GET /api/Announcement/GetAnnImages responded 200 in 62063.4986 ms
+2024-11-02 03:16:15.290 +08:00 [INF] HTTP GET /api/Announcement/GetAnnImages responded 200 in 62017.8310 ms
+2024-11-02 03:16:15.318 +08:00 [INF] AnnouncementController GetAnnImages START
+2024-11-02 03:16:15.348 +08:00 [INF] BalancesController QueryMemberBalanceAdmin START
+2024-11-02 03:16:15.424 +08:00 [INF] BalancesController QueryMemberBalanceAdmin START
+2024-11-02 03:16:15.966 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/BalancesService/QueryMemberBalanceAdmin
+2024-11-02 03:16:15.977 +08:00 [INF] AnnouncementController GetAnnImages END
+2024-11-02 03:16:15.981 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/BalancesService/QueryMemberBalanceAdmin
+2024-11-02 03:16:15.982 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/BalancesService/QueryMemberBalanceAdmin
+2024-11-02 03:16:15.987 +08:00 [INF] HTTP GET /api/Announcement/GetAnnImages responded 200 in 669.4045 ms
+2024-11-02 03:16:15.986 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/BalancesService/QueryMemberBalanceAdmin
+2024-11-02 03:16:15.997 +08:00 [INF] BalancesController QueryMemberBalanceAdmin START
+2024-11-02 03:16:16.001 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/BalancesService/QueryMemberBalanceAdmin
+2024-11-02 03:16:16.038 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/BalancesService/QueryMemberBalanceAdmin
+2024-11-02 03:16:17.380 +08:00 [INF] Received HTTP response headers after 1338.4858ms - 200
+2024-11-02 03:16:17.397 +08:00 [INF] End processing HTTP request after 1396.6117ms - 200
+2024-11-02 03:16:17.404 +08:00 [INF] BalancesController QueryMemberBalanceAdmin END
+2024-11-02 03:16:17.404 +08:00 [INF] Received HTTP response headers after 1408.8502ms - 200
+2024-11-02 03:16:17.410 +08:00 [INF] End processing HTTP request after 1429.2014ms - 200
+2024-11-02 03:16:17.414 +08:00 [INF] Received HTTP response headers after 1425.8087ms - 200
+2024-11-02 03:16:17.417 +08:00 [INF] End processing HTTP request after 1450.7356ms - 200
+2024-11-02 03:16:17.414 +08:00 [INF] BalancesController QueryMemberBalanceAdmin END
+2024-11-02 03:16:17.434 +08:00 [INF] HTTP GET /api/Balances/QueryMemberBalanceAdmin responded 200 in 2010.3369 ms
+2024-11-02 03:16:17.419 +08:00 [INF] BalancesController QueryMemberBalanceAdmin END
+2024-11-02 03:16:17.455 +08:00 [INF] HTTP GET /api/Balances/QueryMemberBalanceAdmin responded 200 in 2108.4494 ms
+2024-11-02 03:16:17.408 +08:00 [INF] HTTP GET /api/Balances/QueryMemberBalanceAdmin responded 200 in 1411.2476 ms
+2024-11-02 03:16:35.793 +08:00 [INF] BalancesController QueryMemberBalanceAdmin START
+2024-11-02 03:16:35.798 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/BalancesService/QueryMemberBalanceAdmin
+2024-11-02 03:16:35.802 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/BalancesService/QueryMemberBalanceAdmin
+2024-11-02 03:16:35.834 +08:00 [INF] Received HTTP response headers after 28.7253ms - 200
+2024-11-02 03:16:35.837 +08:00 [INF] End processing HTTP request after 39.1863ms - 200
+2024-11-02 03:16:35.841 +08:00 [INF] BalancesController QueryMemberBalanceAdmin END
+2024-11-02 03:16:35.845 +08:00 [INF] HTTP GET /api/Balances/QueryMemberBalanceAdmin responded 200 in 51.9496 ms
+2024-11-02 03:16:38.971 +08:00 [INF] BalancesController QueryMemberBalanceAdmin START
+2024-11-02 03:16:39.014 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/BalancesService/QueryMemberBalanceAdmin
+2024-11-02 03:16:39.018 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/BalancesService/QueryMemberBalanceAdmin
+2024-11-02 03:16:39.046 +08:00 [INF] Received HTTP response headers after 26.2708ms - 200
+2024-11-02 03:16:39.050 +08:00 [INF] End processing HTTP request after 35.709ms - 200
+2024-11-02 03:16:39.053 +08:00 [INF] BalancesController QueryMemberBalanceAdmin END
+2024-11-02 03:16:39.054 +08:00 [INF] HTTP GET /api/Balances/QueryMemberBalanceAdmin responded 200 in 83.9819 ms
+2024-11-02 03:57:55.912 +08:00 [INF] Now listening on: http://localhost:5000
+2024-11-02 03:57:56.896 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-02 03:57:57.023 +08:00 [INF] Hosting environment: Development
+2024-11-02 03:57:57.060 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2024-11-02 03:57:57.958 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 378.9877 ms
+2024-11-02 03:58:00.397 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 1475.3350 ms
+2024-11-02 15:08:42.573 +08:00 [INF] Now listening on: http://localhost:5000
+2024-11-02 15:08:47.546 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-02 15:08:47.549 +08:00 [INF] Hosting environment: Development
+2024-11-02 15:08:47.569 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2024-11-02 15:08:52.064 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 1962.1814 ms
+2024-11-02 15:09:36.018 +08:00 [INF] AnnouncementController GetAnnImages START
+2024-11-02 15:09:50.545 +08:00 [INF] AnnouncementController GetAnnImages END
+2024-11-02 15:09:50.587 +08:00 [INF] HTTP GET /api/Announcement/GetAnnImages responded 200 in 14771.3120 ms
+2024-11-02 15:09:50.844 +08:00 [INF] AnnouncementController GetAnnImage START
+2024-11-02 15:09:50.844 +08:00 [INF] AnnouncementController GetAnnImage START
+2024-11-02 15:09:50.845 +08:00 [INF] AnnouncementController GetAnnImage START
+2024-11-02 15:09:51.379 +08:00 [INF] HTTP GET /api/Announcement/8e394045-1298-4610-9a2c-4bc9b08bc71a_01.png responded 200 in 632.2211 ms
+2024-11-02 15:09:51.515 +08:00 [INF] HTTP GET /api/Announcement/8e394045-1298-4610-9a2c-4bc9b08bc71a_02.jpg responded 200 in 745.5328 ms
+2024-11-02 15:09:51.976 +08:00 [INF] HTTP GET /api/Announcement/8e394045-1298-4610-9a2c-4bc9b08bc71a_00.png responded 200 in 1228.3253 ms
+2024-11-02 15:09:52.686 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 346.6540 ms

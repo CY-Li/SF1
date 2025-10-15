@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
+    <title></title>
+    <script src="./js/library/jquery.min.js"></script>
+    <script src="./js/library/popper.min.js"></script>
+    <script src="./js/library/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/library/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./js/library/axios.min.js"></script>
+    <script src="./js/library/vue.min.js"></script>
+    <link rel="stylesheet" href="./scss/wallet.css" />
+    <script src="./js/header.js"></script>
+    <script>
+      $(function() {
+        $("#footer").load("./component/footer.html")
+        
+      })
+    </script>
+
+  </head>
+
+  <body style="background: white;">
+    <div id="app" v-cloak>
+      <header id="header">
+        <my-header></my-header>
+      </header>
+      <main>
+        <div class="walletContainer">
+          <!-- menu選單 -->
+          <div class="leftColumn">
+            <div class="memberCard">
+              <div class="memberId">
+                <div class="color-secondary">會員編號</div>
+                <div class="memberNum">{{ userData.mm_account }}</div>
+              </div>
+              <div class="balance">
+                <div>
+                  <div>帳戶餘額</div>
+                  <div class="amount">{{ walletData.mw_stored || 0 }}</div>
+                </div>
+              </div>
+            </div>
+            <div class="walletNavs">
+              <a href="/wallet.html?type=pay" class="nav pay" :class="{active: urlType == 'pay'}">
+                轉入<br class="d-block d-lg-none">註冊點數
+                <div class="text-en fs-12">TRANSFER</div>
+              </a>
+              <a href="/wallet.html?type=recharge" class="nav recharge" :class="{active: urlType == 'recharge'}">
+                加值
+                <div class="text-en fs-12">RECHARGE</div>
+              </a>
+              <a href="/wallet.html?type=withdraw" class="nav withdraw" :class="{active: urlType == 'withdraw'}">
+                提領<br class="d-block d-lg-none">餘額
+                <div class="text-en fs-12">WITHDRAW BALANCE</div>
+              </a>
+              <a href="/wallet.html?type=detail" class="nav detail" :class="{active: urlType == 'detail'}">
+                金流<br class="d-block d-lg-none">明細
+                <div class="text-en fs-12">CASH FLOW DETAILS</div>
+              </a>
+              <a href="/wallet.html?type=closing" class="nav closing" :class="{active: urlType == 'closing'}">
+                死會<br class="d-block d-lg-none">明細
+                <div class="text-en fs-12">CLOSING DUES</div>
+              </a>
+            </div>
+          </div>
+
+          <!-- 內容主體 -->
+          <div class="walletBody">
+            <!-- 錢包 -->
+            <div class="memberCard">
+              <div class="memberId">
+                <span class="circle1 circle"></span>
+                <span class="circle2 circle"></span>
+                會員編號 <span class="text-en">{{ userData.mm_account || 0 }}</span>
+              </div>
+              <div class="memberWallet">
+                <div class="balance">
+                  帳戶餘額 <span class="amount text-en ps-1">{{ walletData.mw_stored || 0 }}</span>
+                  <div class="tip">(可用點數) 可提領</div>
+                </div>
+                <div class="balance">
+                  平安點數 <span class="amount text-en ps-1">{{ walletData.mw_peace || 0 }}</span>
+                  <div class="tip">(得標金) 七天後轉到餘額</div>
+                </div>
+              </div>
+              <div class="extra">
+                <div class="bonus">
+                  <div class="mb-2">紅利點數<span class="amount text-en ps-1">{{ walletData.mw_reward || 0 }}</span></div>
+                  <div class="mb-2">商城點數<span class="amount text-en ps-1">{{ walletData.mw_mall || 0 }}</span></div>
+                </div>
+                <div class="bonus">
+                  <div class="mb-2">註冊點數<span class="amount text-en ps-1">{{ walletData.mw_registration || 0 }}</span></div>
+                  <div class="mb-2">累積獎勵<span class="amount text-en ps-1">{{ walletData.mw_accumulation || 0 }}</span></div>
+                </div>
+                <div class="bonus d-flex align-items-center">
+                  <div>死會會費 <span class="amount text-en ps-1">{{ walletData.mw_death || 0 }}</span></div>
+                  <div class="form-check mb-0 ms-2" style="min-height: auto;">
+                    <input v-model="isAuto" class="form-check-input" id="isAuto" type="checkbox" @change="autoPay">
+                    <label class="form-check-label" for="isAuto">自動續費</label>
+                  </div>
+                </div>
+                <div class="bonus">
+                  <div class="mb-2">當期繳交會費<span class="amount text-en ps-1">{{ walletData.current_bid_fee || 0 }}</span></div>
+                  <div class="mb-2">下期預估會費<span class="amount text-en ps-1">{{ walletData.next_bid_estimate || 0 }}</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="memberInfo">
+              <!-- 切換按鈕 -->
+              <div class="buttons">
+                <div class="leftButton">
+                  <div class="title">
+                    錢包餘額　
+                    <span class="text-en">{{ walletData.mw_stored || 0 }}</span>
+                  </div>
+                  <a href="/wallet.html?type=withdraw" class="common-btn withdraw nav" :class="{active: urlType == 'withdraw'}">提領餘額</a>
+                </div>
+                <div class="rightButton">
+                  <a href="/wallet.html?type=recharge" class="common-btn recharge nav" :class="{active: urlType == 'recharge'}">
+                    <div class="w-100">加值</div>
+                    <div class="text-en fs-12 color-secondary">RECHARGE</div>
+                  </a>
+                  <a href="/wallet.html?type=pay" class="common-btn pay nav" :class="{active: urlType == 'pay'}">
+                    <div class="w-100">轉入註冊點數</div>
+                    <div class="text-en fs-12 color-secondary">TRANSFER</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- 繳費表單 -->
+            <form v-if="urlType == 'pay'" class="pay"  @submit.prevent="showConfirm">
+              <div class="formTitle">
+                轉入註冊點數
+                <div class="text-en fs-12 color-secondary">TRANSFER</div>
+              </div>
+              <div class="form-input-groups">
+                <div class="custom-input-group">
+                  <input type="text" v-model="registPoint" class="form-control mb-4" placeholder="請輸入轉入數量">
+                  <input type="text" v-model="registPointTarget" class="form-control" placeholder="將註冊點數進行贈送時，請輸入對方帳號">
+                </div>
+              </div>
+              
+              <button type="submit" class="common-btn">
+                <div class="w-100">確認送出</div>
+                <div class="text-en fs-12 color-secondary">CONFIRM</div>
+              </button>
+            </form>
+            <div class="modal fade" id="confirmModal" tabindex="-1">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">系統提示</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p v-if="registPointTarget">即將贈送{{Number(registPoint)}}給{{registPointTarget}}</p>
+                    <p v-else-if="registPoint">即將從餘額轉入{{Number(registPoint)}}至註冊點數</p>
+                    <p>是否確定進行此操作?</p>
+                    <p>若要繼續請輸入您的二級密碼後進行確定</p>
+                    <div style="max-width: 100%; width: 300px">
+                      <input v-model="mm_2nd_pwd" minlength="4" class="w-100" maxlength="15" id="password2" name="password2" type="password" required>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-primary" :disabled="isLoading" @click="submitTransfer">確定</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 加值表單 -->
+            <form v-if="urlType == 'recharge'" @submit.prevent="doDeposit" class="recharge">
+              <div class="formTitle">加值<div class="text-en fs-12 color-secondary">RECHARGE</div></div>
+              <div class="form-input-groups ">
+                <div class="custom-input-group">
+                  <select v-model="rechargeMethod" class="form-select" id="recharge_method" name="recharge_method">
+                    <option selected disabled value="">加值方式</option>
+                    <option value="blockchain">區塊鏈錢包</option>
+                    <option value="bank">銀行轉帳</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- 區塊鏈錢包表單 -->
+              <div class="blockchain-groups" v-if="rechargeMethod == 'blockchain'">
+                <div class="divline2"></div>
+                <div class="form-input-groups">
+                  <label>選擇幣種</label>
+                  <div class="custom-input-group">
+                    <select v-model="blockchainForm.coinType" class="form-select" id="coin_type">
+                      <option selected disabled value="">請選擇</option>
+                      <option value="USDT">USDT</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-input-groups">
+                  <label for="money_blockchain">輸入金額</label>
+                  <div class="custom-input-group moneyInput">
+                    <input v-model="blockchainForm.amount" class="form-control" type="text" id="money_blockchain">
+                  </div>
+                  <div class="refreshBtn"><i class="bi bi-check-lg"></i>刷新</div>
+                </div>
+
+                <div class="form-input-groups">
+                  <label for="money_blockchain">匯率</label>
+                  <div class="mb-3">{{ conf.deposit_rate }}</div>
+                </div>
+                
+                <div class="form-input-groups">
+                  <label for="key_blockchain">付款憑證</label>
+                  <div class="custom-input-group">
+                    <input v-model="blockchainForm.key" class="form-control" type="text" id="key_blockchain">
+                  </div>
+                </div>
+                <div class="form-input-groups">
+                  <label for="address_blockchain">虛擬幣地址</label>
+                  <div class="custom-input-group">
+                    <input v-model="blockchainForm.address" class="form-control" type="text" id="address_blockchain">
+                  </div>
+                </div>
+                <div class="uploadLayout">
+                  <div class="qrcode-rows">
+                    <div class="qrcode">QR CODE<br class="d-none d-lg-block">(二維碼)</div>
+                    <div v-if="depositData.sps_picture" class="qrcodeImg"><img :src="`data:image/jpg;base64,${depositData.sps_picture}`" alt=""></div>
+                  </div>
+
+                  <div class="custom-upload-group">
+                    <div class="name">上傳成功圖片</div>
+                    <div class="uploadFrame">
+                      <div class="tip1">將圖片拖曳到這裡</div>
+                      <div class="tip2">或</div>
+                      <label v-show="!file1.base64" for="depositFile1" class="common-btn">上傳圖片</label>
+                      <div v-show="file1.base64" class="imgPreview"><img :src="file1.base64" alt=""></div>
+                      <input type="file" @change="imgFileReader($event, file1)" id="depositFile1" name="depositFile1" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="checkRow">
+                  <input v-model="blockchainForm.confirm" class="form-check-input" type="checkbox" id="check_terms_blockchain">
+                  <label class="form-check-label" for="check_terms_blockchain">
+                    本人已清楚了解<span class="termsBtn" style="color: #d4481c;cursor:pointer">注意事項</span>說明
+                  </label>
+                </div>
+              </div>
+
+              <!-- 銀行轉帳表單 -->
+              <div class="transfer-groups" v-if="rechargeMethod == 'bank'">
+                <!-- <div class="form-input-groups ">
+                  <div class="custom-input-group">
+                    <select class="form-select" id="transfer_method" name="transfer_method" required>
+                      <option value="fillIn" selected>填入帳戶</option>
+                      <option value="qrcode">QR Code(二維碼)</option>
+                    </select>
+                  </div>
+                </div> -->
+                <!-- <div class="divline2"></div> -->
+                <!-- 選擇填寫帳戶轉帳表單 -->
+                <div class="accountForm">
+                  <!-- <div class="form-input-groups">
+                    <label class="d-none d-lg-block" for="money_blockchain">選擇銀行</label>
+                    <div class="custom-input-group">
+                      <select class="form-select" id="transfer_bank" name="bank_id" required>
+                        <option selected disabled value="">請選擇銀行</option>
+                        <option value="1">台灣銀行</option>
+                      </select>
+                    </div>
+                  </div> -->
+                  <div class="form-input-groups">
+                    <label>銀行代號</label>
+                    <div class="mb-3">{{ conf.company_bank_code }}</div>
+                  </div>
+                  <div class="form-input-groups">
+                    <label>銀行帳戶</label>
+                    <div class="mb-3">{{ conf.company_bank_account }}</div>
+                  </div>
+                  <div class="form-input-groups">
+                    <label>收受人</label>
+                    <div class="mb-3">{{ conf.company_bank_account_name }}</div>
+                  </div>
+                  
+                  <!-- <div class="form-input-groups">
+                    <label class="d-none d-lg-block" for="transfer_account">銀行帳戶</label>
+                    <div class="custom-input-group">
+                      <input placeholder="請輸入銀行帳戶" class="form-control" type="text" id="transfer_account" name="account">
+                    </div>
+                  </div> -->
+  
+                  <!-- <div class="form-input-groups">
+                    <label for="card_date_mm">到期日</label>
+                    <div class="custom-input-group shortInput">
+                      <input placeholder="MM" class="form-control" type="text" id="card_date_mm" name="card_date_mm">
+                    </div>
+                    <span class="mx-4 mb-4" style="color: #9c9c9c;">/</span>
+                    <div class="custom-input-group shortInput">
+                      <input placeholder="YY" class="form-control" type="text" id="card_date_yy" name="card_date_yy">
+                    </div>
+                  </div> -->
+  
+                  <!-- <div class="form-input-groups">
+                    <label for="valid_code">安全驗證碼</label>
+                    <div class="custom-input-group mediumInput">
+                      <input placeholder="請輸入" class="form-control" type="text" id="valid_code" name="valid_code">
+                    </div>
+                  </div> -->
+  
+                  <!-- <div class="divline2"></div> -->
+  
+                  <!-- <div class="form-input-groups">
+                    <label for="address">帳單地址</label>
+                    <div class="custom-input-group">
+                      <input placeholder="請輸入" class="form-control" type="text" id="address" name="address">
+                    </div>
+                  </div>
+                  <div class="form-input-groups">
+                    <label for="zip_code">郵遞區號</label>
+                    <div class="custom-input-group mediumInput">
+                      <input placeholder="請輸入" class="form-control" type="text" id="zip_code" name="zip_code">
+                    </div>
+                  </div> -->
+  
+                  <!-- <div class="divline2"></div> -->
+                </div>
+
+                <div class="form-input-groups mb-4 mb-lg-5">
+                  <label for="money_transfer">轉入金額</label>
+                  <div class="custom-input-group mediumInput">
+                    <input placeholder="請輸入" v-model="bankForm.amount" class="form-control" type="text" id="money_transfer" name="money">
+                  </div>
+                </div>
+                <div class="uploadLayout" style="padding-left: 60px;">
+                  <div class="custom-upload-group">
+                    <div class="name">上傳成功圖片</div>
+                    <div class="uploadFrame">
+                      <div class="tip1">將圖片拖曳到這裡</div>
+                      <div class="tip2">或</div>
+                      <label v-show="!file2.base64" for="depositFile2" class="common-btn">上傳圖片</label>
+                      <div v-show="file2.base64" class="imgPreview"><img :src="file2.base64" alt=""></div>
+                      <input type="file" @change="imgFileReader($event, file2)" id="depositFile2" name="depositFile2" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="checkRow">
+                  <input class="form-check-input" type="checkbox" value="1" name="check_terms" id="check_terms_transfer" required>
+                  <label class="form-check-label" for="check_terms_transfer">
+                    本人已清楚了解<span class="termsBtn" style="color: #d4481c;cursor:pointer">注意事項</span>說明
+                  </label>
+                </div>
+                
+              </div>
+              
+              <button type="submit" class="common-btn" :disabled="rechargeBtnDisabled">
+                <div class="w-100">確認送出</div>
+                <div class="text-en fs-12 color-secondary">CONFIRM REGISTRATION</div>
+              </button>
+              <div class="divLine"></div>
+              <div class="formTitle">加值紀錄</div>
+              <div class="detailTable">
+                <template v-if="rechargeRecords.length">
+                  <div v-for="item, idx in rechargeRecords" :key="idx" class="tableRow">
+                    <div class="leftRow">
+                      <div class="content">{{ item.ad_url }}</div>
+                    </div>
+                    <div class="rightRow">
+                      <div class="type">{{ item.ad_status }}</div>
+                      <div class="amount">{{ item.ad_amount }}</div>
+                    </div>
+                  </div>
+                </template>
+                <div v-else class="text-center">查無資料</div>
+              </div>
+            </form>
+            <!-- 提領表單 -->
+            <form v-if="urlType == 'withdraw'" @submit.prevent="doWithdraw" class="withdraw">
+              <div class="formTitle">
+                提領餘額
+                <div class="text-en fs-12 color-secondary">WITHDRAW BALANCE</div>
+              </div>
+              .
+              <div class="withdraw-input-groups">
+                <div class="custom-input-group">
+                  <select v-model="withdrawForm.bank" class="form-select mb-3" id="bankIdWithdraw" name="bank_id" required>
+                    <option value="1">銀行代碼</option>
+                    <option value="2">USDT地址</option>
+                  </select>
+                  <input type="text" v-model="withdrawForm.account" class="form-control" id="accountWithdraw" name="account" :placeholder="withdrawForm.bank == 1? '請輸入轉入帳號' : '請輸入TRX地址'" required>
+                </div>
+                <div class="custom-input-group">
+                  <div>
+                    <input type="text" v-model="withdrawForm.amount" class="form-control" id="moneyWitjdraw" name="money" placeholder="請輸入金額" required>
+                    <div class="balance">可用餘額 <span class="amount text-en">{{ walletData.mw_stored || 0 }}</span></div>
+                  </div>
+                  <div class="mt-1">匯率 {{ conf.withdraw_rate }}</div>
+                </div>
+              </div>
+              
+              <button type="submit" class="common-btn">
+                <div class="w-100">確認送出</div>
+                <div class="text-en fs-12 color-secondary">CONFIRM REGISTRATION</div>
+              </button>
+            </form>
+
+            <!-- 金流明細 -->
+            <form v-if="urlType == 'detail'" id="detailForm" class="detail">
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="formTitle">
+                  金流明細
+                  <div class="text-en fs-12 color-secondary">CASH FLOW DETAILS</div>
+                </div>
+                <div class="d-flex align-items-center pe-4">
+                  <label class="mr-2">類別：</label>
+                  <select v-model="pointType" @change="changePointType" class="form-select" style="width: 160px" aria-label="Default select example">
+                    <option :value="0">全部</option>
+                    <option :value="11">儲值點數</option>
+                    <option :value="12">紅利點數</option>
+                    <option :value="13">平安點數</option>
+                    <option :value="14">商城點數</option>
+                    <option :value="15">註冊點數</option>
+                  </select>
+                </div>
+              </div>
+              <div v-if="cashFlowData.length" class="detailTable">
+                <div class="tableRow" v-for="data in cashFlowData">
+                  <div class="leftRow">
+                    <div class="date">{{ data.mb_create_datetime.substr(0, 10) }}</div>
+                    <div class="content">{{ data.mb_income_type_name }}</div>
+                  </div>
+                  <div class="rightRow">
+                    <div class="type">{{ data.mb_tr_type_name }}</div>
+                    <div class="amount">{{ data.mb_change_points }}</div>
+                    <!-- <div class="toggleBtn"><i class="bi bi-chevron-up"></i></div> -->
+                  </div>
+                  <!-- <div class="detail">
+                    <div class="detailRow">
+                      <div class="bank"></div>
+                      <div class="account"></div>
+                    </div>
+                    
+                  </div> -->
+                </div>
+              </div>
+              <!-- 分頁切換 -->
+              <div v-if="cashFlowData.length" class="paginations">
+                <div class="page-prev" :class="{'disabled': pageIndex <= 1}" @click="changePage(pageIndex - 1)"><i class="bi bi-caret-left-fill"></i></div>
+                <div v-if="hasPreGroup" @click="currentPageSizeGroup -= 1" class="page-ellipsis-prev">…</div>
+                <div 
+                  class="page"
+                  v-for="n in cashFlowTotalPage"
+                  @click="changePage(n)"
+                  :class="{'active': pageIndex == n}"
+                  :style="{'display': isInCurrentPageGroup(n)? 'flex' : 'none'}"
+                  >{{ n }}
+                </div>
+                <div v-if="hasNextGroup" @click="currentPageSizeGroup += 1" class="page-ellipsis-next">…</div>
+                <div class="page-next" :class="{'disabled': pageIndex >= cashFlowTotalPage}" @click="changePage(pageIndex + 1)"><i class="bi bi-caret-right-fill"></i></div>
+              </div>
+              <div v-else class="text-center">暫無資料</div>
+            </form>
+
+            <!-- 死會會費 -->
+            <form v-if="urlType == 'closing'" id="closingForm" class="closing">
+              <div class="closingTitle">
+                <div class="formTitle">
+                  死會會費
+                  <div class="text-en fs-12 color-secondary">CLOSING DUES</div>
+                </div>
+                <div class="tip">(自動續繳)</div>
+              </div>
+              <div v-if="cashFlowData.length" class="detailTable">
+                <div class="tableRow" v-for="data in cashFlowData">
+                  <div class="leftRow">
+                    <div class="date">{{ data.mb_create_datetime.substr(0, 10) }}</div>
+                    <div class="content">{{ data.mb_income_type_name }}</div>
+                  </div>
+                  <div class="rightRow">
+                    <div class="type">{{ data.mb_tr_type_name }}</div>
+                    <div class="amount">{{ data.mb_change_points }}</div>
+                    <!-- <div class="toggleBtn"><i class="bi bi-chevron-up"></i></div> -->
+                  </div>
+                  <!-- <div class="detail">
+                    <div class="detailRow">
+                      <div class="bank"></div>
+                      <div class="account"></div>
+                    </div>
+                    
+                  </div> -->
+                </div>
+              </div>
+              <!-- 分頁切換 -->
+              <div v-if="cashFlowData.length" class="paginations">
+                <div class="page-prev" :class="{'disabled': pageIndex <= 1}" @click="changePage(pageIndex - 1)"><i class="bi bi-caret-left-fill"></i></div>
+                <div v-if="hasPreGroup" @click="currentPageSizeGroup -= 1" class="page-ellipsis-prev">…</div>
+                <div 
+                  class="page"
+                  v-for="n in cashFlowTotalPage"
+                  @click="changePage(n)"
+                  :class="{'active': pageIndex == n}"
+                  :style="{'display': isInCurrentPageGroup(n)? 'flex' : 'none'}"
+                  >{{ n }}
+                </div>
+                <div v-if="hasNextGroup" @click="currentPageSizeGroup += 1" class="page-ellipsis-next">…</div>
+                <div class="page-next" :class="{'disabled': pageIndex >= cashFlowTotalPage}" @click="changePage(pageIndex + 1)"><i class="bi bi-caret-right-fill"></i></div>
+              </div>
+              <div v-else class="text-center">暫無資料</div>
+            </form>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer id="footer"></footer>
+    <script src="./js/wallet.js"></script>
+
+  </body>
+</html>

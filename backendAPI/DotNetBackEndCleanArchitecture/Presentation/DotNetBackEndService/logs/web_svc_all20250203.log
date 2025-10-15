@@ -1,0 +1,42 @@
+2025-02-03 04:58:23.932 +08:00 [INF] Now listening on: http://localhost:5001
+2025-02-03 04:58:23.994 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-03 04:58:23.996 +08:00 [INF] Hosting environment: Development
+2025-02-03 04:58:23.997 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2025-02-03 04:58:39.741 +08:00 [INF] HTTP GET / responded 404 in 4.3363 ms
+2025-02-03 05:03:26.910 +08:00 [INF] TenderServiceController GetTenderRecord START
+2025-02-03 05:03:28.044 +08:00 [INF] TenderRepository GetTenderRecord START
+2025-02-03 05:03:30.085 +08:00 [INF] TenderRepository GetTenderRecord You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE  1 = 1
+       AND A.ttr_tm_sn = 1001' at line 1
+2025-02-03 05:03:30.088 +08:00 [INF] TenderRepository GetTenderRecord END
+2025-02-03 05:03:30.089 +08:00 [INF] TenderServiceController GetTenderRecord ENDs
+2025-02-03 05:03:30.114 +08:00 [INF] HTTP POST /api/TenderMgmt/TenderService/GetTenderRecord responded 200 in 3499.5309 ms
+2025-02-03 05:05:16.150 +08:00 [INF] Now listening on: http://localhost:5001
+2025-02-03 05:05:17.546 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-03 05:05:17.547 +08:00 [INF] Hosting environment: Development
+2025-02-03 05:05:17.548 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2025-02-03 05:05:18.936 +08:00 [INF] HTTP GET / responded 404 in 2.3615 ms
+2025-02-03 05:14:01.950 +08:00 [INF] TenderServiceController GetTenderRecord START
+2025-02-03 05:14:02.030 +08:00 [INF] TenderRepository GetTenderRecord START
+2025-02-03 05:14:03.034 +08:00 [INF] TenderRepository GetTenderRecord END
+2025-02-03 05:14:03.065 +08:00 [INF] TenderServiceController GetTenderRecord ENDs
+2025-02-03 05:14:03.118 +08:00 [INF] HTTP POST /api/TenderMgmt/TenderService/GetTenderRecord responded 200 in 1489.2749 ms
+2025-02-03 05:14:07.316 +08:00 [INF] TenderServiceController GetTenderRecord START
+2025-02-03 05:14:07.318 +08:00 [INF] TenderRepository GetTenderRecord START
+2025-02-03 05:14:07.336 +08:00 [INF] TenderRepository GetTenderRecord END
+2025-02-03 05:14:07.337 +08:00 [INF] TenderServiceController GetTenderRecord ENDs
+2025-02-03 05:14:07.339 +08:00 [INF] HTTP POST /api/TenderMgmt/TenderService/GetTenderRecord responded 200 in 42.7856 ms
+2025-02-03 05:14:08.191 +08:00 [INF] TenderServiceController GetTenderRecord START
+2025-02-03 05:14:08.192 +08:00 [INF] TenderRepository GetTenderRecord START
+2025-02-03 05:14:08.200 +08:00 [INF] TenderRepository GetTenderRecord END
+2025-02-03 05:14:08.202 +08:00 [INF] TenderServiceController GetTenderRecord ENDs
+2025-02-03 05:14:08.203 +08:00 [INF] HTTP POST /api/TenderMgmt/TenderService/GetTenderRecord responded 200 in 33.3985 ms
+2025-02-03 05:14:09.135 +08:00 [INF] TenderServiceController GetTenderRecord START
+2025-02-03 05:14:09.156 +08:00 [INF] TenderRepository GetTenderRecord START
+2025-02-03 05:14:09.167 +08:00 [INF] TenderRepository GetTenderRecord END
+2025-02-03 05:14:09.170 +08:00 [INF] TenderServiceController GetTenderRecord ENDs
+2025-02-03 05:14:09.171 +08:00 [INF] HTTP POST /api/TenderMgmt/TenderService/GetTenderRecord responded 200 in 37.6798 ms
+2025-02-03 05:44:18.356 +08:00 [INF] Now listening on: http://localhost:5001
+2025-02-03 05:44:18.371 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-03 05:44:18.373 +08:00 [INF] Hosting environment: Development
+2025-02-03 05:44:18.374 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2025-02-03 05:44:20.201 +08:00 [INF] HTTP GET / responded 404 in 2.1537 ms

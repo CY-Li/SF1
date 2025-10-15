@@ -1,0 +1,30 @@
+2025-01-24 04:05:00.826 +08:00 [INF] Now listening on: http://localhost:5001
+2025-01-24 04:05:01.993 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-24 04:05:02.209 +08:00 [INF] Hosting environment: Development
+2025-01-24 04:05:04.141 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2025-01-24 04:05:04.943 +08:00 [INF] HTTP GET / responded 404 in 1.8710 ms
+2025-01-24 04:37:31.199 +08:00 [INF] AnnouncementServiceController QueryAnnAdmin START
+2025-01-24 04:37:31.214 +08:00 [INF] AnnouncementRepository QueryAnnAdmin START
+2025-01-24 04:37:32.112 +08:00 [INF] AnnouncementRepository QueryAnnAdmin END
+2025-01-24 04:37:32.115 +08:00 [INF] AnnouncementServiceController QueryAnnAdmin END
+2025-01-24 04:37:32.155 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnAdmin responded 200 in 1390.1633 ms
+2025-01-24 04:45:09.658 +08:00 [INF] Now listening on: http://localhost:5001
+2025-01-24 04:45:10.979 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-24 04:45:11.477 +08:00 [INF] Hosting environment: Development
+2025-01-24 04:45:11.681 +08:00 [INF] HTTP GET / responded 404 in 2.0187 ms
+2025-01-24 04:45:11.814 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2025-01-24 04:45:16.623 +08:00 [INF] AnnouncementServiceController QueryAnnAdmin START
+2025-01-24 04:45:16.633 +08:00 [INF] AnnouncementRepository QueryAnnAdmin START
+2025-01-24 04:45:17.491 +08:00 [INF] AnnouncementRepository QueryAnnAdmin END
+2025-01-24 04:45:17.503 +08:00 [INF] AnnouncementServiceController QueryAnnAdmin END
+2025-01-24 04:45:17.548 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnAdmin responded 200 in 1150.2712 ms
+2025-01-24 04:50:01.580 +08:00 [INF] Now listening on: http://localhost:5001
+2025-01-24 04:50:01.742 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-24 04:50:02.579 +08:00 [INF] Hosting environment: Development
+2025-01-24 04:50:02.621 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2025-01-24 04:50:03.691 +08:00 [INF] HTTP GET / responded 404 in 3.2050 ms
+2025-01-24 04:50:42.445 +08:00 [INF] AnnouncementServiceController QueryAnnAdmin START
+2025-01-24 04:50:42.455 +08:00 [INF] AnnouncementRepository QueryAnnAdmin START
+2025-01-24 04:50:43.590 +08:00 [INF] AnnouncementRepository QueryAnnAdmin END
+2025-01-24 04:50:43.591 +08:00 [INF] AnnouncementServiceController QueryAnnAdmin END
+2025-01-24 04:50:43.622 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnAdmin responded 200 in 1325.2626 ms

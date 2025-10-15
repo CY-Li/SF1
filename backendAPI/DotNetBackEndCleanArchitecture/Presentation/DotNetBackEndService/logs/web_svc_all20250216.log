@@ -1,0 +1,32 @@
+2025-02-16 18:24:00.409 +08:00 [INF] Now listening on: http://localhost:5001
+2025-02-16 18:24:00.447 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-16 18:24:00.463 +08:00 [INF] Hosting environment: Development
+2025-02-16 18:24:00.552 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2025-02-16 18:24:08.294 +08:00 [INF] HTTP GET / responded 404 in 3.3751 ms
+2025-02-16 18:24:48.370 +08:00 [INF] MembersServiceController GetMember START
+2025-02-16 18:24:48.842 +08:00 [INF] MemberRepository GetMember START
+2025-02-16 18:24:49.852 +08:00 [INF] MemberRepository GetMember END
+2025-02-16 18:24:49.853 +08:00 [INF] MembersServiceController GetMember END
+2025-02-16 18:24:49.908 +08:00 [INF] HTTP POST /api/MemberMgmt/MembersService/GetMember responded 200 in 2266.8686 ms
+2025-02-16 18:25:00.703 +08:00 [INF] MembersServiceController GetSubordinateOrg START
+2025-02-16 18:25:00.706 +08:00 [INF] MemberRepository GetSubordinateOrg START
+2025-02-16 18:25:00.864 +08:00 [INF] MemberRepository GetSubordinateOrg You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'pserson_subscripts_count(D.mm_id) AS total_qty
+FROM   GetSubordinateOrgCTE A...' at line 36
+2025-02-16 18:25:00.866 +08:00 [INF] MemberRepository GetSubordinateOrg END
+2025-02-16 18:25:00.869 +08:00 [INF] MembersServiceController GetSubordinateOrg END
+2025-02-16 18:25:00.895 +08:00 [INF] HTTP POST /api/MemberMgmt/MembersService/GetSubordinateOrg responded 200 in 205.8411 ms
+2025-02-16 18:26:57.661 +08:00 [INF] Now listening on: http://localhost:5001
+2025-02-16 18:26:57.674 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-16 18:26:57.675 +08:00 [INF] Hosting environment: Development
+2025-02-16 18:26:57.677 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2025-02-16 18:27:03.943 +08:00 [INF] HTTP GET / responded 404 in 3.9550 ms
+2025-02-16 18:27:16.601 +08:00 [INF] MembersServiceController GetSubordinateOrg START
+2025-02-16 18:27:16.606 +08:00 [INF] MemberRepository GetSubordinateOrg START
+2025-02-16 18:27:17.943 +08:00 [INF] MemberRepository GetSubordinateOrg END
+2025-02-16 18:27:17.946 +08:00 [INF] MembersServiceController GetSubordinateOrg END
+2025-02-16 18:27:17.990 +08:00 [INF] HTTP POST /api/MemberMgmt/MembersService/GetSubordinateOrg responded 200 in 1562.5857 ms
+2025-02-16 18:27:28.787 +08:00 [INF] MembersServiceController GetSubordinateOrg START
+2025-02-16 18:27:28.790 +08:00 [INF] MemberRepository GetSubordinateOrg START
+2025-02-16 18:27:28.816 +08:00 [INF] MemberRepository GetSubordinateOrg END
+2025-02-16 18:27:28.819 +08:00 [INF] MembersServiceController GetSubordinateOrg END
+2025-02-16 18:27:28.821 +08:00 [INF] HTTP POST /api/MemberMgmt/MembersService/GetSubordinateOrg responded 200 in 40.4662 ms

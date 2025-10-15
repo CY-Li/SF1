@@ -1,0 +1,7 @@
+<form [formGroup]="imageForm" (ngSubmit)="onSubmit()">
+    <div *ngFor="let image of images; let i = index">
+        <img [src]="image.url" alt="Image {{i + 1}}" class="fixed-img">
+        <input type="file" (change)="onFileChange($event, i)">
+    </div>
+    <button mat-raised-button color="primary" type="submit">修改公告</button>
+</form>

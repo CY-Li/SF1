@@ -1,0 +1,44 @@
+2024-08-16 10:07:15.584 +08:00 [INF] Now listening on: http://localhost:5001
+2024-08-16 10:07:15.671 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-16 10:07:18.871 +08:00 [INF] Hosting environment: Development
+2024-08-16 10:07:19.283 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2024-08-16 10:07:19.903 +08:00 [INF] HTTP GET / responded 404 in 2.4352 ms
+2024-08-16 10:07:53.453 +08:00 [INF] TenderServiceController GetTender START
+2024-08-16 10:07:53.659 +08:00 [INF] TenderRepository GetTender START
+2024-08-16 10:07:56.638 +08:00 [INF] TenderRepository GetTender END
+2024-08-16 10:07:56.639 +08:00 [INF] TenderServiceController GetTender ENDs
+2024-08-16 10:07:56.700 +08:00 [INF] HTTP POST /api/TenderMgmt/TenderService/GetTender responded 200 in 3723.0587 ms
+2024-08-16 10:08:20.572 +08:00 [INF] TenderServiceController Bidding START
+2024-08-16 10:08:21.033 +08:00 [INF] BiddingRepository Bidding START
+2024-08-16 10:09:00.309 +08:00 [INF] GetInvitationOrg GetInvitationOrgProcess START
+2024-08-16 10:09:00.348 +08:00 [INF] GetInvitationOrg GetInvitationOrgProcess END
+2024-08-16 10:09:01.437 +08:00 [INF] BiddingRepository Bidding查看 283、540,13,4,1,0
+2024-08-16 10:09:02.091 +08:00 [INF] BiddingRepository Bidding查看 
+2024-08-16 10:09:02.913 +08:00 [INF] BiddingRepository Bidding查看 [{"mm_id":121,"mm_invite_code":40,"class_level":1,"invite_level":0,"invite_bonus":0},{"mm_id":40,"mm_invite_code":13,"class_level":2,"invite_level":0,"invite_bonus":0},{"mm_id":13,"mm_invite_code":4,"class_level":3,"invite_level":0,"invite_bonus":0},{"mm_id":4,"mm_invite_code":1,"class_level":4,"invite_level":0,"invite_bonus":0},{"mm_id":1,"mm_invite_code":0,"class_level":5,"invite_level":0,"invite_bonus":0}]
+2024-08-16 10:09:03.007 +08:00 [INF] BiddingRepository Bidding END
+2024-08-16 10:09:03.008 +08:00 [INF] TenderServiceController Bidding END
+2024-08-16 10:09:03.020 +08:00 [INF] HTTP POST /api/TenderMgmt/TenderService/Bidding responded 200 in 42493.8900 ms
+2024-08-16 10:11:23.021 +08:00 [INF] Now listening on: http://localhost:5001
+2024-08-16 10:11:23.039 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-16 10:11:23.044 +08:00 [INF] Hosting environment: Development
+2024-08-16 10:11:23.044 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2024-08-16 10:11:28.876 +08:00 [INF] HTTP GET / responded 404 in 5.1046 ms
+2024-08-16 10:12:01.221 +08:00 [INF] TenderServiceController Bidding START
+2024-08-16 10:12:01.329 +08:00 [INF] BiddingRepository Bidding START
+2024-08-16 10:12:07.456 +08:00 [INF] GetInvitationOrg GetInvitationOrgProcess START
+2024-08-16 10:12:07.518 +08:00 [INF] GetInvitationOrg GetInvitationOrgProcess END
+2024-08-16 10:12:08.313 +08:00 [INF] BiddingRepository Bidding查看 283、540,13,4,1,0
+2024-08-16 10:12:08.318 +08:00 [INF] BiddingRepository Bidding查看 
+2024-08-16 10:12:08.701 +08:00 [INF] BiddingRepository Bidding查看 [{"mm_id":121,"mm_invite_code":40,"class_level":1,"invite_level":0,"invite_bonus":0},{"mm_id":40,"mm_invite_code":13,"class_level":2,"invite_level":0,"invite_bonus":0},{"mm_id":13,"mm_invite_code":4,"class_level":3,"invite_level":0,"invite_bonus":0},{"mm_id":4,"mm_invite_code":1,"class_level":4,"invite_level":0,"invite_bonus":0},{"mm_id":1,"mm_invite_code":0,"class_level":5,"invite_level":0,"invite_bonus":0}]
+2024-08-16 10:12:09.723 +08:00 [INF] BiddingRepository Bidding END
+2024-08-16 10:12:09.744 +08:00 [INF] TenderServiceController Bidding END
+2024-08-16 10:12:09.771 +08:00 [INF] HTTP POST /api/TenderMgmt/TenderService/Bidding responded 200 in 10020.5253 ms
+2024-08-16 10:13:13.384 +08:00 [INF] ScheduleServiceController BiddingSchedule START
+2024-08-16 10:13:13.389 +08:00 [INF] BiddingSchedule Process START
+2024-08-16 10:13:13.561 +08:00 [INF] BiddingSchedule Process 新增帳務紀錄
+2024-08-16 10:13:13.638 +08:00 [INF] BiddingSchedule Process 新增交易紀錄
+2024-08-16 10:13:13.736 +08:00 [INF] BiddingSchedule Process 更新錢包
+2024-08-16 10:13:13.745 +08:00 [INF] BiddingSchedule Process 更新下標活動紀錄
+2024-08-16 10:13:13.752 +08:00 [INF] BiddingSchedule Process END
+2024-08-16 10:13:13.775 +08:00 [INF] ScheduleServiceController BiddingSchedule END
+2024-08-16 10:13:13.777 +08:00 [INF] HTTP POST /api/ScheduleMgmt/ScheduleService/BiddingSchedule responded 200 in 400.0398 ms

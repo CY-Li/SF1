@@ -1,0 +1,74 @@
+2024-11-02 03:08:01.164 +08:00 [INF] Now listening on: http://localhost:5001
+2024-11-02 03:08:01.204 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-02 03:08:01.209 +08:00 [INF] Hosting environment: Development
+2024-11-02 03:08:01.210 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2024-11-02 03:08:21.437 +08:00 [INF] HTTP GET / responded 404 in 108.9685 ms
+2024-11-02 03:10:07.829 +08:00 [INF] BalancesServiceController QueryMemberBalanceUser START
+2024-11-02 03:10:08.894 +08:00 [INF] MemberBalanceRepository QueryMemberBalanceUser START
+2024-11-02 03:10:11.085 +08:00 [INF] MemberBalanceRepository QueryMemberBalanceUser END
+2024-11-02 03:10:11.094 +08:00 [INF] BalancesServiceController QueryMemberBalanceUser START
+2024-11-02 03:10:11.216 +08:00 [INF] HTTP POST /api/FinancialMgmt/BalancesService/QueryMemberBalanceUser responded 200 in 3726.5669 ms
+2024-11-02 03:10:18.372 +08:00 [INF] BalancesServiceController QueryMemberBalanceUser START
+2024-11-02 03:10:18.374 +08:00 [INF] MemberBalanceRepository QueryMemberBalanceUser START
+2024-11-02 03:10:18.386 +08:00 [INF] MemberBalanceRepository QueryMemberBalanceUser END
+2024-11-02 03:10:18.387 +08:00 [INF] BalancesServiceController QueryMemberBalanceUser START
+2024-11-02 03:10:18.389 +08:00 [INF] HTTP POST /api/FinancialMgmt/BalancesService/QueryMemberBalanceUser responded 200 in 25.6341 ms
+2024-11-02 03:10:38.546 +08:00 [INF] BalancesServiceController QueryMemberBalanceAdmin START
+2024-11-02 03:10:38.575 +08:00 [INF] BalancesServiceController QueryMemberBalanceAdmin START
+2024-11-02 03:10:38.578 +08:00 [INF] HTTP POST /api/FinancialMgmt/BalancesService/QueryMemberBalanceAdmin responded 200 in 58.0780 ms
+2024-11-02 03:10:53.629 +08:00 [INF] BalancesServiceController QueryMemberBalanceAdmin START
+2024-11-02 03:10:53.632 +08:00 [INF] BalancesServiceController QueryMemberBalanceAdmin START
+2024-11-02 03:10:53.633 +08:00 [INF] HTTP POST /api/FinancialMgmt/BalancesService/QueryMemberBalanceAdmin responded 200 in 5.4674 ms
+2024-11-02 03:11:38.730 +08:00 [INF] BalancesServiceController QueryMemberBalanceAdmin START
+2024-11-02 03:11:38.733 +08:00 [INF] BalancesServiceController QueryMemberBalanceAdmin START
+2024-11-02 03:11:38.734 +08:00 [INF] HTTP POST /api/FinancialMgmt/BalancesService/QueryMemberBalanceAdmin responded 200 in 4.8302 ms
+2024-11-02 03:13:30.257 +08:00 [INF] Now listening on: http://localhost:5001
+2024-11-02 03:13:30.276 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-02 03:13:30.279 +08:00 [INF] Hosting environment: Development
+2024-11-02 03:13:30.280 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2024-11-02 03:13:41.221 +08:00 [INF] HTTP GET / responded 404 in 3.1019 ms
+2024-11-02 03:14:48.587 +08:00 [INF] BalancesServiceController QueryMemberBalanceAdmin START
+2024-11-02 03:14:51.420 +08:00 [INF] MemberBalanceRepository QueryMemberBalanceAdimin START
+2024-11-02 03:14:53.210 +08:00 [INF] MemberBalanceRepository QueryMemberBalanceAdimin END
+2024-11-02 03:14:53.247 +08:00 [INF] BalancesServiceController QueryMemberBalanceAdmin START
+2024-11-02 03:14:53.311 +08:00 [INF] HTTP POST /api/FinancialMgmt/BalancesService/QueryMemberBalanceAdmin responded 200 in 4915.2480 ms
+2024-11-02 03:15:03.569 +08:00 [INF] BalancesServiceController QueryMemberBalanceAdmin START
+2024-11-02 03:15:03.572 +08:00 [INF] MemberBalanceRepository QueryMemberBalanceAdimin START
+2024-11-02 03:15:03.580 +08:00 [INF] MemberBalanceRepository QueryMemberBalanceAdimin END
+2024-11-02 03:15:03.580 +08:00 [INF] BalancesServiceController QueryMemberBalanceAdmin START
+2024-11-02 03:15:03.592 +08:00 [INF] HTTP POST /api/FinancialMgmt/BalancesService/QueryMemberBalanceAdmin responded 200 in 42.3334 ms
+2024-11-02 03:16:17.327 +08:00 [INF] BalancesServiceController QueryMemberBalanceAdmin START
+2024-11-02 03:16:17.334 +08:00 [INF] BalancesServiceController QueryMemberBalanceAdmin START
+2024-11-02 03:16:17.338 +08:00 [INF] BalancesServiceController QueryMemberBalanceAdmin START
+2024-11-02 03:16:17.341 +08:00 [INF] MemberBalanceRepository QueryMemberBalanceAdimin START
+2024-11-02 03:16:17.341 +08:00 [INF] MemberBalanceRepository QueryMemberBalanceAdimin START
+2024-11-02 03:16:17.362 +08:00 [INF] MemberBalanceRepository QueryMemberBalanceAdimin END
+2024-11-02 03:16:17.342 +08:00 [INF] MemberBalanceRepository QueryMemberBalanceAdimin START
+2024-11-02 03:16:17.372 +08:00 [INF] MemberBalanceRepository QueryMemberBalanceAdimin END
+2024-11-02 03:16:17.373 +08:00 [INF] BalancesServiceController QueryMemberBalanceAdmin START
+2024-11-02 03:16:17.374 +08:00 [INF] BalancesServiceController QueryMemberBalanceAdmin START
+2024-11-02 03:16:17.375 +08:00 [INF] HTTP POST /api/FinancialMgmt/BalancesService/QueryMemberBalanceAdmin responded 200 in 41.3103 ms
+2024-11-02 03:16:17.376 +08:00 [INF] HTTP POST /api/FinancialMgmt/BalancesService/QueryMemberBalanceAdmin responded 200 in 43.2673 ms
+2024-11-02 03:16:17.391 +08:00 [INF] MemberBalanceRepository QueryMemberBalanceAdimin END
+2024-11-02 03:16:17.393 +08:00 [INF] BalancesServiceController QueryMemberBalanceAdmin START
+2024-11-02 03:16:17.394 +08:00 [INF] HTTP POST /api/FinancialMgmt/BalancesService/QueryMemberBalanceAdmin responded 200 in 75.3779 ms
+2024-11-02 03:16:35.808 +08:00 [INF] BalancesServiceController QueryMemberBalanceAdmin START
+2024-11-02 03:16:35.810 +08:00 [INF] MemberBalanceRepository QueryMemberBalanceAdimin START
+2024-11-02 03:16:35.824 +08:00 [INF] MemberBalanceRepository QueryMemberBalanceAdimin END
+2024-11-02 03:16:35.827 +08:00 [INF] BalancesServiceController QueryMemberBalanceAdmin START
+2024-11-02 03:16:35.830 +08:00 [INF] HTTP POST /api/FinancialMgmt/BalancesService/QueryMemberBalanceAdmin responded 200 in 23.3966 ms
+2024-11-02 03:16:39.021 +08:00 [INF] BalancesServiceController QueryMemberBalanceAdmin START
+2024-11-02 03:16:39.023 +08:00 [INF] MemberBalanceRepository QueryMemberBalanceAdimin START
+2024-11-02 03:16:39.037 +08:00 [INF] MemberBalanceRepository QueryMemberBalanceAdimin END
+2024-11-02 03:16:39.038 +08:00 [INF] BalancesServiceController QueryMemberBalanceAdmin START
+2024-11-02 03:16:39.039 +08:00 [INF] HTTP POST /api/FinancialMgmt/BalancesService/QueryMemberBalanceAdmin responded 200 in 18.4307 ms
+2024-11-02 03:57:52.565 +08:00 [INF] Now listening on: http://localhost:5001
+2024-11-02 03:57:52.998 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-02 03:57:55.588 +08:00 [INF] Hosting environment: Development
+2024-11-02 03:57:56.037 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2024-11-02 03:57:56.590 +08:00 [INF] HTTP GET / responded 404 in 2.0467 ms
+2024-11-02 15:08:42.999 +08:00 [INF] Now listening on: http://localhost:5001
+2024-11-02 15:08:49.903 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-02 15:08:49.913 +08:00 [INF] Hosting environment: Development
+2024-11-02 15:08:49.919 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2024-11-02 15:08:50.001 +08:00 [INF] HTTP GET / responded 404 in 2.2671 ms

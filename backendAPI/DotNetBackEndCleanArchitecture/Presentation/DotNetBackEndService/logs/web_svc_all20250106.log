@@ -1,0 +1,98 @@
+2025-01-06 05:45:21.466 +08:00 [INF] Now listening on: http://localhost:5001
+2025-01-06 05:45:21.522 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-06 05:45:21.610 +08:00 [INF] Hosting environment: Development
+2025-01-06 05:45:21.611 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2025-01-06 05:45:25.876 +08:00 [INF] HTTP GET / responded 404 in 5.4428 ms
+2025-01-06 05:50:52.052 +08:00 [INF] Now listening on: http://localhost:5001
+2025-01-06 05:50:52.065 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-06 05:50:52.068 +08:00 [INF] Hosting environment: Development
+2025-01-06 05:50:52.073 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2025-01-06 05:50:57.730 +08:00 [INF] HTTP GET / responded 404 in 2.5147 ms
+2025-01-06 05:52:29.059 +08:00 [INF] Now listening on: http://localhost:5001
+2025-01-06 05:52:29.207 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-06 05:52:29.720 +08:00 [INF] Hosting environment: Development
+2025-01-06 05:52:29.728 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2025-01-06 05:52:33.330 +08:00 [INF] HTTP GET / responded 404 in 17.2122 ms
+2025-01-06 05:53:02.376 +08:00 [INF] TenderServiceController GetParticipationRecord START
+2025-01-06 05:53:02.736 +08:00 [INF] TenderRepository GetParticipationRecord START
+2025-01-06 05:53:04.023 +08:00 [INF] TenderRepository GetParticipationRecord END
+2025-01-06 05:53:04.025 +08:00 [INF] TenderServiceController GetParticipationRecord ENDs
+2025-01-06 05:53:04.058 +08:00 [INF] HTTP POST /api/TenderMgmt/TenderService/GetParticipationRecord responded 200 in 1866.1442 ms
+2025-01-06 05:53:10.874 +08:00 [INF] TenderServiceController GetParticipationRecord START
+2025-01-06 05:53:10.882 +08:00 [INF] TenderRepository GetParticipationRecord START
+2025-01-06 05:53:10.902 +08:00 [INF] TenderRepository GetParticipationRecord END
+2025-01-06 05:53:10.912 +08:00 [INF] TenderServiceController GetParticipationRecord ENDs
+2025-01-06 05:53:10.914 +08:00 [INF] HTTP POST /api/TenderMgmt/TenderService/GetParticipationRecord responded 200 in 51.3615 ms
+2025-01-06 05:53:39.068 +08:00 [INF] TenderServiceController QueryTenderInProgressUser START
+2025-01-06 05:53:39.071 +08:00 [INF] TenderRepository QueryTenderInProgressUser START
+2025-01-06 05:53:39.112 +08:00 [INF] TenderRepository QueryTenderInProgressUser END
+2025-01-06 05:53:39.114 +08:00 [INF] TenderServiceController QueryTenderInProgressUser END
+2025-01-06 05:53:39.130 +08:00 [INF] HTTP POST /api/TenderMgmt/TenderService/QueryTenderInProgressUser responded 200 in 85.9726 ms
+2025-01-06 05:54:17.334 +08:00 [INF] TenderServiceController QueryTenderInProgressUser START
+2025-01-06 05:54:17.342 +08:00 [INF] TenderRepository QueryTenderInProgressUser START
+2025-01-06 05:54:17.347 +08:00 [INF] TenderRepository QueryTenderInProgressUser END
+2025-01-06 05:54:17.352 +08:00 [INF] TenderServiceController QueryTenderInProgressUser END
+2025-01-06 05:54:17.353 +08:00 [INF] HTTP POST /api/TenderMgmt/TenderService/QueryTenderInProgressUser responded 200 in 20.8898 ms
+2025-01-06 05:58:30.601 +08:00 [INF] TenderServiceController QueryTenderInProgressUser START
+2025-01-06 05:58:30.603 +08:00 [INF] TenderRepository QueryTenderInProgressUser START
+2025-01-06 05:58:30.615 +08:00 [INF] TenderRepository QueryTenderInProgressUser END
+2025-01-06 05:58:30.617 +08:00 [INF] TenderServiceController QueryTenderInProgressUser END
+2025-01-06 05:58:30.620 +08:00 [INF] HTTP POST /api/TenderMgmt/TenderService/QueryTenderInProgressUser responded 200 in 22.5430 ms
+2025-01-06 05:58:44.222 +08:00 [INF] TenderServiceController QueryTenderInProgressUser START
+2025-01-06 05:58:44.242 +08:00 [INF] TenderRepository QueryTenderInProgressUser START
+2025-01-06 05:58:44.246 +08:00 [INF] TenderRepository QueryTenderInProgressUser END
+2025-01-06 05:58:44.250 +08:00 [INF] TenderServiceController QueryTenderInProgressUser END
+2025-01-06 05:58:44.254 +08:00 [INF] HTTP POST /api/TenderMgmt/TenderService/QueryTenderInProgressUser responded 200 in 32.1562 ms
+2025-01-06 05:58:57.822 +08:00 [INF] TenderServiceController QueryTenderInProgressUser START
+2025-01-06 05:58:57.855 +08:00 [INF] TenderRepository QueryTenderInProgressUser START
+2025-01-06 05:58:57.876 +08:00 [INF] TenderRepository QueryTenderInProgressUser END
+2025-01-06 05:58:57.879 +08:00 [INF] TenderServiceController QueryTenderInProgressUser END
+2025-01-06 05:58:57.882 +08:00 [INF] HTTP POST /api/TenderMgmt/TenderService/QueryTenderInProgressUser responded 200 in 61.3571 ms
+2025-01-06 05:59:29.245 +08:00 [INF] TenderServiceController QueryTenderInProgressUser START
+2025-01-06 05:59:29.262 +08:00 [INF] TenderRepository QueryTenderInProgressUser START
+2025-01-06 05:59:29.278 +08:00 [INF] TenderRepository QueryTenderInProgressUser END
+2025-01-06 05:59:29.280 +08:00 [INF] TenderServiceController QueryTenderInProgressUser END
+2025-01-06 05:59:29.281 +08:00 [INF] HTTP POST /api/TenderMgmt/TenderService/QueryTenderInProgressUser responded 200 in 36.6976 ms
+2025-01-06 06:00:23.831 +08:00 [INF] Now listening on: http://localhost:5001
+2025-01-06 06:00:24.070 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-06 06:00:24.503 +08:00 [INF] Hosting environment: Development
+2025-01-06 06:00:25.780 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2025-01-06 06:00:26.362 +08:00 [INF] HTTP GET / responded 404 in 7.0486 ms
+2025-01-06 06:01:14.870 +08:00 [INF] TenderServiceController QueryTenderParticipatedUser START
+2025-01-06 06:01:22.365 +08:00 [INF] TenderRepository QueryTenderParticipatedUser START
+2025-01-06 06:01:26.376 +08:00 [INF] TenderRepository QueryTenderParticipatedUser END
+2025-01-06 06:01:26.379 +08:00 [INF] TenderServiceController QueryTenderParticipatedUser END
+2025-01-06 06:01:26.406 +08:00 [INF] HTTP POST /api/TenderMgmt/TenderService/QueryTenderParticipatedUser responded 200 in 11718.9023 ms
+2025-01-06 06:01:34.990 +08:00 [INF] TenderServiceController QueryTenderParticipatedUser START
+2025-01-06 06:01:34.991 +08:00 [INF] TenderRepository QueryTenderParticipatedUser START
+2025-01-06 06:01:35.006 +08:00 [INF] TenderRepository QueryTenderParticipatedUser END
+2025-01-06 06:01:35.008 +08:00 [INF] TenderServiceController QueryTenderParticipatedUser END
+2025-01-06 06:01:35.012 +08:00 [INF] HTTP POST /api/TenderMgmt/TenderService/QueryTenderParticipatedUser responded 200 in 28.1683 ms
+2025-01-06 06:01:49.259 +08:00 [INF] TenderServiceController QueryTenderAllUser START
+2025-01-06 06:01:49.261 +08:00 [INF] TenderRepository QueryTenderAllUser START
+2025-01-06 06:01:49.322 +08:00 [INF] TenderRepository QueryTenderAllUser Parameter '@skipCNT' must be defined. To use this as a variable, set 'Allow User Variables=true' in the connection string.
+2025-01-06 06:01:49.328 +08:00 [INF] TenderRepository QueryTenderAllUser END
+2025-01-06 06:01:49.329 +08:00 [INF] TenderServiceController QueryTenderAllUser END
+2025-01-06 06:01:49.334 +08:00 [INF] HTTP POST /api/TenderMgmt/TenderService/QueryTenderAllUser responded 200 in 102.9984 ms
+2025-01-06 06:02:25.555 +08:00 [INF] TenderServiceController QueryTenderAllUser START
+2025-01-06 06:02:25.559 +08:00 [INF] TenderRepository QueryTenderAllUser START
+2025-01-06 06:04:40.809 +08:00 [INF] Now listening on: http://localhost:5001
+2025-01-06 06:04:40.826 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-06 06:04:40.828 +08:00 [INF] Hosting environment: Development
+2025-01-06 06:04:40.829 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2025-01-06 06:04:47.559 +08:00 [INF] HTTP GET / responded 404 in 3.9916 ms
+2025-01-06 06:11:14.992 +08:00 [INF] KycServiceController CheckKyc START
+2025-01-06 06:11:15.076 +08:00 [INF] KycRepository CheckKyc START
+2025-01-06 06:11:15.849 +08:00 [INF] KycRepository CheckKyc END
+2025-01-06 06:11:15.852 +08:00 [INF] KycServiceController CheckKyc END
+2025-01-06 06:11:15.918 +08:00 [INF] HTTP POST /api/AuthenticationMgmt/KycService/CheckKyc responded 200 in 1472.8306 ms
+2025-01-06 06:11:41.116 +08:00 [INF] KycServiceController PostKyc START
+2025-01-06 06:11:41.123 +08:00 [INF] KycRepository PostkKyc START
+2025-01-06 06:11:41.157 +08:00 [INF] KycRepository PostkKyc END
+2025-01-06 06:11:41.159 +08:00 [INF] KycServiceController PostKyc END
+2025-01-06 06:11:41.173 +08:00 [INF] HTTP POST /api/AuthenticationMgmt/KycService/PostKyc responded 200 in 114.2707 ms
+2025-01-06 06:12:45.252 +08:00 [INF] KycServiceController Postkyc START
+2025-01-06 06:12:45.255 +08:00 [INF] KycRepository PutKyc START
+2025-01-06 06:12:47.342 +08:00 [INF] KycRepository PutKyc END
+2025-01-06 06:12:47.350 +08:00 [INF] KycServiceController Postkyc END
+2025-01-06 06:12:47.351 +08:00 [INF] HTTP POST /api/AuthenticationMgmt/KycService/PutKyc responded 200 in 2115.5796 ms

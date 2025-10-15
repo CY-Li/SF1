@@ -1,0 +1,123 @@
+2024-10-01 16:52:42.883 +08:00 [INF] Now listening on: http://localhost:5001
+2024-10-01 16:52:43.069 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-01 16:52:43.070 +08:00 [INF] Hosting environment: Development
+2024-10-01 16:52:43.071 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2024-10-01 16:52:49.885 +08:00 [INF] HTTP GET / responded 404 in 6.6313 ms
+2024-10-01 16:54:19.033 +08:00 [INF] AnnouncementServiceController GetAnnouncement START
+2024-10-01 16:54:19.038 +08:00 [INF] AnnouncementRepository GetAnnouncement START
+2024-10-01 16:54:24.632 +08:00 [INF] AnnouncementRepository GetAnnouncement END
+2024-10-01 16:54:24.636 +08:00 [INF] AnnouncementServiceController GetAnnouncement END
+2024-10-01 16:54:24.717 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/GetAnnouncement responded 200 in 5770.2026 ms
+2024-10-01 16:58:03.272 +08:00 [INF] Now listening on: http://localhost:5001
+2024-10-01 16:58:03.306 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-01 16:58:03.318 +08:00 [INF] Hosting environment: Development
+2024-10-01 16:58:03.319 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2024-10-01 16:58:12.661 +08:00 [INF] HTTP GET / responded 404 in 2.5874 ms
+2024-10-01 16:59:39.083 +08:00 [INF] AnnouncementServiceController GetAnnouncement START
+2024-10-01 16:59:39.089 +08:00 [INF] AnnouncementRepository GetAnnouncement START
+2024-10-01 16:59:41.318 +08:00 [INF] AnnouncementRepository GetAnnouncement END
+2024-10-01 16:59:41.321 +08:00 [INF] AnnouncementServiceController GetAnnouncement END
+2024-10-01 16:59:41.398 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/GetAnnouncement responded 200 in 2379.5364 ms
+2024-10-01 17:01:07.453 +08:00 [INF] Now listening on: http://localhost:5001
+2024-10-01 17:01:08.192 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-01 17:01:08.207 +08:00 [INF] Hosting environment: Development
+2024-10-01 17:01:08.208 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2024-10-01 17:01:09.358 +08:00 [INF] HTTP GET / responded 404 in 3.4868 ms
+2024-10-01 17:01:55.780 +08:00 [INF] AnnouncementServiceController PostAnnouncement START
+2024-10-01 17:01:59.721 +08:00 [INF] AnnouncementRepository PostAnnouncement START
+2024-10-01 17:02:06.974 +08:00 [INF] AnnouncementRepository PostAnnouncement END
+2024-10-01 17:02:06.991 +08:00 [INF] AnnouncementServiceController PostAnnouncement END
+2024-10-01 17:02:07.027 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/PostAnnouncement responded 200 in 11408.7820 ms
+2024-10-01 17:02:14.542 +08:00 [INF] AnnouncementServiceController GetAnnouncement START
+2024-10-01 17:02:14.544 +08:00 [INF] AnnouncementRepository GetAnnouncement START
+2024-10-01 17:02:17.674 +08:00 [INF] AnnouncementRepository GetAnnouncement END
+2024-10-01 17:02:17.686 +08:00 [INF] AnnouncementServiceController GetAnnouncement END
+2024-10-01 17:02:17.703 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/GetAnnouncement responded 200 in 3165.1002 ms
+2024-10-01 17:49:14.206 +08:00 [INF] Now listening on: http://localhost:5001
+2024-10-01 17:49:14.220 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-01 17:49:14.224 +08:00 [INF] Hosting environment: Development
+2024-10-01 17:49:14.226 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2024-10-01 17:49:25.588 +08:00 [INF] HTTP GET / responded 404 in 3.9308 ms
+2024-10-01 17:49:56.680 +08:00 [ERR] HTTP POST /api/FinancialMgmt/ApplyWithdrawService/PostApplyWithdraw responded 500 in 63.5164 ms
+System.InvalidOperationException: Unable to resolve service for type 'AppAbstraction.FinancialMgmt.IApplyWithdrawService' while attempting to activate 'DotNetBackEndService.Controllers.FinancialMgmt.ApplyWithdrawServiceController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method2(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-10-01 17:49:57.260 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'AppAbstraction.FinancialMgmt.IApplyWithdrawService' while attempting to activate 'DotNetBackEndService.Controllers.FinancialMgmt.ApplyWithdrawServiceController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method2(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-10-01 17:52:07.835 +08:00 [INF] Now listening on: http://localhost:5001
+2024-10-01 17:52:07.861 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-01 17:52:07.863 +08:00 [INF] Hosting environment: Development
+2024-10-01 17:52:07.864 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2024-10-01 17:52:18.987 +08:00 [INF] HTTP GET / responded 404 in 15.6472 ms
+2024-10-01 17:54:20.744 +08:00 [INF] ApplyWithdrawServiceController PostApplyWithdraw START
+2024-10-01 17:54:20.752 +08:00 [INF] ApplyWithdrawRepository PostApplyWithdraw START
+2024-10-01 17:54:21.242 +08:00 [INF] ApplyWithdrawRepository PostApplyWithdraw Parameter '@aw_create_member' must be defined. To use this as a variable, set 'Allow User Variables=true' in the connection string.
+2024-10-01 17:54:21.247 +08:00 [INF] ApplyWithdrawRepository PostApplyWithdraw END
+2024-10-01 17:54:21.247 +08:00 [INF] ApplyWithdrawServiceController PostApplyWithdraw END
+2024-10-01 17:54:21.272 +08:00 [INF] HTTP POST /api/FinancialMgmt/ApplyWithdrawService/PostApplyWithdraw responded 200 in 3597.7792 ms
+2024-10-01 17:57:35.101 +08:00 [INF] Now listening on: http://localhost:5001
+2024-10-01 17:57:35.124 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-01 17:57:35.126 +08:00 [INF] Hosting environment: Development
+2024-10-01 17:57:35.127 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2024-10-01 17:57:43.773 +08:00 [INF] HTTP GET / responded 404 in 1.9571 ms
+2024-10-01 17:59:41.563 +08:00 [INF] ApplyWithdrawServiceController PostApplyWithdraw START
+2024-10-01 17:59:41.568 +08:00 [INF] ApplyWithdrawRepository PostApplyWithdraw START
+2024-10-01 17:59:42.004 +08:00 [INF] ApplyWithdrawRepository PostApplyWithdraw END
+2024-10-01 17:59:42.006 +08:00 [INF] ApplyWithdrawServiceController PostApplyWithdraw END
+2024-10-01 17:59:42.026 +08:00 [INF] HTTP POST /api/FinancialMgmt/ApplyWithdrawService/PostApplyWithdraw responded 200 in 2998.0932 ms
+2024-10-01 18:05:18.579 +08:00 [INF] ApplyWithdrawServiceController PutApplyWithdraw START
+2024-10-01 18:05:22.597 +08:00 [INF] ApplyWithdrawRepository PutApplyWithdraw START
+2024-10-01 18:06:24.754 +08:00 [INF] ApplyWithdrawRepository PutApplyWithdraw Parameter '@ad_status' must be defined. To use this as a variable, set 'Allow User Variables=true' in the connection string.
+2024-10-01 18:06:24.848 +08:00 [INF] ApplyWithdrawRepository PutApplyWithdraw END
+2024-10-01 18:06:24.853 +08:00 [INF] ApplyWithdrawServiceController PutApplyWithdraw END
+2024-10-01 18:06:24.855 +08:00 [INF] HTTP POST /api/FinancialMgmt/ApplyWithdrawService/PutApplyWithdraw responded 200 in 66326.1674 ms
+2024-10-01 18:07:09.834 +08:00 [INF] Now listening on: http://localhost:5001
+2024-10-01 18:07:09.861 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-01 18:07:09.868 +08:00 [INF] Hosting environment: Development
+2024-10-01 18:07:09.871 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2024-10-01 18:07:23.956 +08:00 [INF] HTTP GET / responded 404 in 2.1138 ms
+2024-10-01 18:08:06.265 +08:00 [INF] ApplyWithdrawServiceController PutApplyWithdraw START
+2024-10-01 18:08:10.824 +08:00 [INF] ApplyWithdrawRepository PutApplyWithdraw START
+2024-10-01 18:08:36.487 +08:00 [INF] ApplyWithdrawRepository PutApplyWithdraw Unknown column 'ad_update_member' in 'field list'
+2024-10-01 18:08:36.493 +08:00 [INF] ApplyWithdrawRepository PutApplyWithdraw END
+2024-10-01 18:08:36.506 +08:00 [INF] ApplyWithdrawServiceController PutApplyWithdraw END
+2024-10-01 18:08:36.536 +08:00 [INF] HTTP POST /api/FinancialMgmt/ApplyWithdrawService/PutApplyWithdraw responded 200 in 30624.6734 ms
+2024-10-01 18:09:16.060 +08:00 [INF] Now listening on: http://localhost:5001
+2024-10-01 18:09:16.100 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-01 18:09:16.103 +08:00 [INF] Hosting environment: Development
+2024-10-01 18:09:16.104 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2024-10-01 18:09:23.831 +08:00 [INF] HTTP GET / responded 404 in 1.7323 ms
+2024-10-01 18:12:07.292 +08:00 [INF] ApplyWithdrawServiceController PutApplyWithdraw START
+2024-10-01 18:12:10.516 +08:00 [INF] ApplyWithdrawRepository PutApplyWithdraw START
+2024-10-01 18:12:21.130 +08:00 [INF] ApplyWithdrawRepository PutApplyWithdraw END
+2024-10-01 18:12:21.131 +08:00 [INF] ApplyWithdrawServiceController PutApplyWithdraw END
+2024-10-01 18:12:21.153 +08:00 [INF] HTTP POST /api/FinancialMgmt/ApplyWithdrawService/PutApplyWithdraw responded 200 in 14135.4851 ms
+2024-10-01 18:12:40.595 +08:00 [INF] ApplyWithdrawServiceController PutApplyWithdraw START
+2024-10-01 18:12:42.273 +08:00 [INF] ApplyWithdrawRepository PutApplyWithdraw START
+2024-10-01 18:12:50.772 +08:00 [INF] ApplyWithdrawRepository PutApplyWithdraw END
+2024-10-01 18:12:50.779 +08:00 [INF] ApplyWithdrawServiceController PutApplyWithdraw END
+2024-10-01 18:12:50.785 +08:00 [INF] HTTP POST /api/FinancialMgmt/ApplyWithdrawService/PutApplyWithdraw responded 200 in 10199.7272 ms

@@ -1,0 +1,90 @@
+.content {
+    padding-top: 10px;
+}
+
+.mat-50 {
+    width: 48%;
+    margin: 1%;
+}
+
+.mat-100 {
+    width: 99%;
+    margin: 1%;
+}
+
+@media (max-width: 600px) {
+
+    /* 假設小於6吋的手機寬度約為600px */
+    .mat-50 {
+        width: 99%;
+        margin: 1%;
+    }
+}
+
+.action {
+    padding: 0px 25px 20px;
+
+    button {
+        margin-right: 8px;
+        // flex: 1;
+    }
+}
+
+// .invisible {
+//     display: block;
+//     visibility: hidden;
+// }
+.invisible {
+    opacity: 0;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+
+.fixed-img {
+    width: 100%;
+    /* 根據容器寬度自適應 */
+    max-width: 300px;
+    /* 設定最大寬度，例如 6.3 吋的大小 */
+    height: auto;
+    /* 保持圖片的高寬比 */
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.image-preview-container {
+    margin-top: 16px;
+
+    .preview-card {
+        max-width: 350px;
+        padding: 16px;
+        border: 1px solid rgba(0, 0, 0, 0.12);
+
+        mat-card-header {
+            margin-bottom: 12px;
+        }
+    }
+}
+
+/* 无障碍隐藏样式 */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.block-container {
+    display: block;
+    margin-bottom: 16px
+}

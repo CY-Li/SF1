@@ -1,0 +1,6 @@
+2024-08-16 10:07:52.634 +08:00 [INF] TenderController GetTender START
+2024-08-16 10:07:56.787 +08:00 [INF] ROSCAController GetTenderList END
+2024-08-16 10:08:20.482 +08:00 [INF] TenderController Bidding START
+2024-08-16 10:09:03.032 +08:00 [INF] TenderController Bidding END
+2024-08-16 10:11:59.641 +08:00 [INF] TenderController Bidding START
+2024-08-16 10:12:10.202 +08:00 [INF] TenderController Bidding END

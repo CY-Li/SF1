@@ -1,0 +1,15 @@
+2025-01-10 04:20:03.049 +08:00 [INF] Now listening on: http://localhost:5001
+2025-01-10 04:20:03.066 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-10 04:20:03.069 +08:00 [INF] Hosting environment: Development
+2025-01-10 04:20:03.071 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2025-01-10 04:20:07.339 +08:00 [INF] HTTP GET / responded 404 in 1.9457 ms
+2025-01-10 04:20:37.520 +08:00 [INF] KycServiceController QueryKycAdmin START
+2025-01-10 04:20:38.130 +08:00 [INF] KycRepository QueryKycAdmin START
+2025-01-10 04:20:39.367 +08:00 [INF] KycRepository QueryKycAdmin END
+2025-01-10 04:20:39.370 +08:00 [INF] KycServiceController QueryKycAdmin END
+2025-01-10 04:20:39.398 +08:00 [INF] HTTP POST /api/AuthenticationMgmt/KycService/QueryKycAdmin responded 200 in 2393.7265 ms
+2025-01-10 04:20:53.834 +08:00 [INF] KycServiceController QueryKycAdmin START
+2025-01-10 04:20:53.836 +08:00 [INF] KycRepository QueryKycAdmin START
+2025-01-10 04:20:53.851 +08:00 [INF] KycRepository QueryKycAdmin END
+2025-01-10 04:20:53.851 +08:00 [INF] KycServiceController QueryKycAdmin END
+2025-01-10 04:20:53.856 +08:00 [INF] HTTP POST /api/AuthenticationMgmt/KycService/QueryKycAdmin responded 200 in 27.4478 ms

@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
+    <title></title>
+    <script src="./js/library/jquery.min.js"></script>
+    <script src="./js/library/popper.min.js"></script>
+    <script src="./js/library/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/library/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script src="./js/library/panzoom.js"></script>
+
+    <script src="./js/library/datepicker.min.js"></script>
+    <link rel="stylesheet" href="./css/library/datepicker.min.css" />
+    <script src="./js/library/vue.min.js"></script>
+    <script src="./js/library/axios.min.js"></script>
+    <link rel="stylesheet" href="./scss/account.css" />
+    <script src="./js/header.js"></script>
+
+  </head>
+
+  <body style="background: white;">
+    <div id="app" v-cloak>
+      <header id="header">
+        <my-header></my-header>
+      </header>
+      <main>
+        <div class="accountContainer">
+          <!-- menu選單 -->
+          <div class="leftColumn">
+            <div class="memberCard">
+              <div class="memberId">
+                <div class="mamberName">會員名稱</div>
+                <div class="memberNum">{{ userData.mm_account }}</div>
+              </div>
+              <div class="memberDate">註冊日期：<span class="color-primary">{{ formatDate(userData.mm_create_datetime) }}</span></div>
+              <!-- <div class="memberDate">開標日期：<span class="color-primary">2020/02/02</span></div> -->
+              <div class="logoutBtn common-btn" @click="logout">會員登出</div>
+            </div>
+            <div class="myNavs">
+              <a href="/account.html?type=profile" class="nav profile active">
+                會員<br class="d-block d-lg-none">資料
+                <div class="text-en fs-12">MEMBER PROFILE</div>
+              </a>
+              <a href="/account.html?type=tender" class="nav tender">
+                參與<br class="d-block d-lg-none">標案
+                <div class="text-en fs-12">PARTICIPATE IN THE TENDER</div>
+              </a>
+              <a href="/account.html?type=invite" class="nav invite">
+                組織
+                <div class="text-en fs-12">TEAMS</div>
+              </a>
+              <a href="/account.html?type=kyc" class="nav kyc">
+                KYC
+                <div class="text-en fs-12">KYC</div>
+              </a>
+              <a href="javascript:void(0)" @click="logout" class="nav logout d-none d-lg-block">
+                會員<br class="d-block d-lg-none">登出
+                <div class="text-en fs-12">MEMBER LOGOUT</div>
+              </a>
+            </div>
+          </div>
+
+          <div class="accountBody">
+            <!-- 會員資料 -->
+            <div class="frame profile">
+              <div class="frameTitle">
+                <div class="title-zh">會員資料</div>
+                <div class="title-en text-en">REGISTER ACCOUNT</div>
+              </div>
+              <!-- 表單 -->
+              <div class="date">
+                註冊日期　<span class="text-en">2020/02/02</span>
+              </div>
+              <form @submit.prevent="updateUserData" id="profileForm">
+                <div class="formTitle"></div>
+                <div class="formGroup">
+                  <!-- <div class="custom-input-group">
+                    <label for="profile_name" class="require">姓名</label>
+                    <input v-model="userData.mm_name" minlength="4" maxlength="30" type="text" class="form-control" id="profile_name"required>
+                  </div> -->
+                  <div class="custom-input-group">
+                    <label for="profile_pswd">變更新密碼</label>
+                    <input v-model="newPswd" minlength="4" maxlength="15" type="password" class="form-control" id="profile_pswd">
+                  </div>
+                  <div class="custom-input-group">
+                    <label for="profile_pswd2">確認新密碼</label>
+                    <input v-model="newPswdConfirm" minlength="4" maxlength="15" type="password" class="form-control" id="profile_pswd2">
+                    
+                  </div>
+                  <div class="custom-input-group">
+                    <label></label>
+                    <div style="color: #e15b5b">無須變更請空白</div>
+                  </div>
+                </div>
+                <div class="formTitle"></div>
+                <div class="formGroup">
+                  <div class="custom-input-group">
+                    <label for="mm_2nd_pwd">變更二級密碼</label>
+                    <input v-model="mm_2nd_pwd" minlength="4" maxlength="15" type="password" class="form-control" id="mm_2nd_pwd">
+                  </div>
+                  <div class="custom-input-group">
+                    <label for="mm_2nd_pwdConfirm">確認二級密碼</label>
+                    <input v-model="mm_2nd_pwdConfirm" minlength="4" maxlength="15" type="password" class="form-control" id="mm_2nd_pwdConfirm">
+                  </div>
+                  <div class="custom-input-group">
+                    <label></label>
+                    <div style="color: #e15b5b">無須變更請空白</div>
+                  </div>
+                </div>
+                <div class="formTitle"></div>
+                <div v-if="false">
+                  <div class="formTitle">申請者資料</div>
+                  <!-- 預計投資 -->
+                  <div class="formGroup">
+                    <div class="custom-input-group">
+                      <label class="require">繳款方式</label>
+                      <select class="form-select" id="pay_method" name="pay_method" required>
+                        <option selected disabled value="">請選擇</option>
+                        <option value="1">匯款</option>
+                      </select>
+                    </div>
+                    <div class="custom-input-group">
+                      <label class="require">預計參加會數</label>
+                      <select class="form-select" id="attend_num" name="attend_num" required>
+                        <option selected disabled value="">請選擇</option>
+                        <option value="0">0</option>
+                      </select>
+                    </div>
+                    <div class="custom-input-group">
+                      <label for="attend_money" class="require">預計投資金額</label>
+                      <input type="text" class="form-control" id="attend_money" name="attend_money" required>
+                    </div>
+                  </div>
+                  <div class="formTitle">匯款帳號</div>
+                  <!-- 匯款資料 -->
+                  <div class="formGroup">
+                    <div class="custom-input-group">
+                      <label class="require">行號</label>
+                      <select class="form-select" id="band_id" name="bank" required>
+                        <option selected disabled value="">請選擇</option>
+                        <option value="1">銀行1</option>
+                      </select>
+                    </div>
+                    <div class="custom-input-group">
+                      <label class="require">分行</label>
+                      <select class="form-select" id="branch_id" name="branch" required>
+                        <option selected disabled value="">請選擇</option>
+                        <option value="1">分行1</option>
+                      </select>
+                    </div>
+                    
+                  </div>
+                  <div class="formTitle">上傳身分證明</div>
+                  <!-- 上傳證件 -->
+                  <div class="formGroup">
+                    <div v-for="upload, ind in uploads" :key="ind" class="uploadLayout">
+                      <div class="title">
+                        <li>{{upload.title}}</li>
+                        <div v-if="upload.subtitle" class="tip">{{upload.subtitle}}</div>
+                      </div>
+                      <div v-for="img, idx in upload.images" :key="`${ind}_${idx}`" class="custom-upload-group">
+                        <div class="name">{{img.label}}</div>
+                        <div class="uploadFrame">
+                          <div class="tip1">將圖片拖曳到這裡</div>
+                          <div class="tip2">或</div>
+                          <label v-show="!img.base64" :for="`img${ind}_${idx}`" class="common-btn">上傳圖片</label>
+                          <div v-show="img.base64" class="imgPreview"><img :src="img.base64" alt=""></div>
+                          <input type="file" @change="imgFileReader($event, img)" :id="`img${ind}_${idx}`" :name="`img${ind}_${idx}`" required>
+                        </div>
+                      </div>
+                    </div>
+    
+                  </div>
+                </div>
+                <!-- <div class="formTitle">推薦碼</div> -->
+                <!-- 推薦碼 -->
+                <!-- <div class="formGroup">
+                  <div class="custom-input-group">
+                    <label>推薦碼</label>
+                    <input disabled type="text" :value="userData.mm_invite_code" class="form-control" id="referral">
+                  </div>
+                </div> -->
+
+                <div class="tips">
+                  <ul>
+                    <li>備註文字備註文字備註文字備註文字備註文字備註文字</li>
+                    <li>備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字</li>
+                    <li>備註文字備註文字備註文字備註文字備註文字備註文字</li>
+                    <li>備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字備註文字</li>
+                  </ul>
+                </div>
+                <div class="form-check formCheck">
+                  <input class="form-check-input" type="checkbox" value="" name="check_terms" id="check_terms" required>
+                  <label class="form-check-label" for="check_terms">
+                    本人已清楚了解上列備註說明
+                  </label>
+                </div>
+
+                <button type="submit" class="common-btn">
+                  <div class="w-100">確認送出</div>
+                  <div class="text-en fs-12 color-secondary">CONFIRM REGISTRATION</div>
+                </button>
+              </form>
+            </div>
+
+            <!-- 參與標案 -->
+            <div class="frame tender d-none">
+              <!-- 相關總計 -->
+              <div class="subtotal">
+                <div class="child">
+                  <div class="name">進行中活會</div>
+                  <div class="amount text-en">{{ tenderCount.self_available_quantity || 0 }}</div>
+                </div>
+                <div class="child">
+                  <div class="name">已參與會數</div>
+                  <div class="amount text-en">{{ tenderCount.all_quantity || 0 }}</div>
+                </div>
+                <div class="child">
+                  <div class="name">組織總活會</div>
+                  <div class="amount text-en">{{ tenderCount.self_org_available_quantity || 0 }}</div>
+                </div>
+                <div class="child">
+                  <div class="name">組織總會數</div>
+                  <div class="amount text-en">{{ tenderCount.self_org_quantity || 0 }}</div>
+                </div>
+              </div>
+              <div class="tenderBtns">
+                <div class="tenderBtn" :class="{'active': tenderTabType == 1}" @click="tenderTabType = 1">進行中活會</div>
+                <div class="tenderBtn" :class="{'active': tenderTabType == 2}" @click="tenderTabType = 2">組織總會數</div>
+              </div>
+
+              <div class="attendData">
+                <div class="tenderChipRow">
+                  <div v-for="tender in tenders" class="tenderChip" @click="openDetail(tender)">
+                    <div class="name">{{ tender.tm_type_name }}</div>
+                    <div v-if="tenderTabType == 1">
+                      <div>進行中:{{tender.self_available_quantity }}</div>
+                      <div>所有標會:{{tender.self_all_quantity }}</div>
+                    </div>
+                    <div v-if="tenderTabType == 2">
+                      <div>進行中:{{tender.self_org_available_quantity }}</div>
+                      <div>參與總會數:{{tender.self_org_all_quantity }}</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal fade" id="recordModal" tabindex="-1" aria-labelledby="recordModal" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered">
+                  <div class="modal-content" id="print-area">
+                    <div class="modal-header">
+                      <div class="title">{{tenderDetail.ttr_title}}</div>
+                      <div class="modalClose" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x"></i></div>
+                    </div>
+                    <div class="info">
+                      <div class="mb-2">{{tenderDetail.ttr_detail01}}</div>
+                      <div class="mb-2">{{tenderDetail.ttr_detail02}}</div>
+                      <div class="mb-2">{{tenderDetail.ttr_detail03}}</div>
+                      <div >{{tenderDetail.ttr_detail04}}</div>
+                    </div>
+                    <div class="modal-body">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>會首</th>
+                            <th>{{ formatName(tenderDetail.ttr_owner) }}</th>
+                            <th>{{ formatPhone(tenderDetail.ttr_phone) }}</th>
+                            <th>{{ formatDate(tenderDetail.ttr_tm_group_datetime) }}</th>
+                            <th colspan="4">{{ formatAddress(tenderDetail.ttr_address) }}</th>
+                          </tr>
+                          <tr>
+                            <th>編號</th>
+                            <th>姓名</th>
+                            <th>聯絡電話</th>
+                            <th>得標日期</th>
+                            <th>編號</th>
+                            <th>姓名</th>
+                            <th>聯絡電話</th>
+                            <th>得標日期</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr v-for="row, ind in tenderDetail.detailRows" :key="`row-${ind}`">
+                            <td>{{ row[0].td_sequence }}</td>
+                            <td>{{ formatName(row[0].mm_name) }}</td>
+                            <td>{{ formatPhone(row[0].mm_phone_number) }}</td>
+                            <td>{{formatDate( row[0].td_update_datetime) }}</td>
+                            <td v-if="row[1]">{{ row[1].td_sequence }}</td>
+                            <td v-if="row[1]">{{ formatName(row[1].mm_name) }}</td>
+                            <td v-if="row[1]">{{ formatPhone(row[1].mm_phone_number) }}</td>
+                            <td v-if="row[1]">{{ formatDate( row[1].td_update_datetime) }}</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="modal-footer">
+                      <div class="common-btn" style="width: 120px; height: 30px; margin: auto" @click="printData">列印</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 子帳號相關內容 -->
+            <div class="frame subaccount invite d-none">
+              <div class="accountData">
+                <!-- 主帳號資訊 -->
+                <div class="mainAccountData">
+                  <div class="child">
+                    <div class="dataRow">
+                      <div>
+                        <div>帳號</div>
+                        <div class="text-en">{{ userData.mm_phone_number }}</div>
+                      </div>
+                      <div class="inviteData">
+                        <div>我的邀請代碼</div>
+                        <div class="text-en">{{ userData.mm_account }}</div>
+                      </div>
+                    </div>
+                    <div class="inviteTable">
+                      <div class="label">分享邀請連結</div>
+                      <div class="inviteInput">
+                        <input type="text" id="invite_link" class="form-control" name="invite_link" disabled :value="referee">
+                        <div class="copyBtn" @click="copyText">複製</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="subaccountData">組織圖</div>
+                <!-- 拖曳樹狀圖 -->
+                <div class="dragContainer" style="position: relative;">
+                  <div class="tips">
+                    <div class="title">
+                      <div>組織總覽</div>
+                      <div class="text-en italic color-secondary fs-12">ORGANIZE</div>
+                    </div>
+                    <div>
+                      <div class="tip">
+                        <div class="arrows">
+                          <span class="text-en italic fs-12 color-primary">
+                            DRAG
+                            <div class="arrow up"><img src="./images/arrow-up.svg" alt=""></div>
+                            <div class="arrow right"><img src="./images/arrow-up.svg" alt=""></div>
+                            <div class="arrow down"><img src="./images/arrow-up.svg" alt=""></div>
+                            <div class="arrow left"><img src="./images/arrow-up.svg" alt=""></div>
+                          </span>
+                        </div>
+                        <div class="text">
+                          <div><span class="d-none d-md-inline">左鍵</span>按住畫面</div>
+                          <div>可移動畫面</div>
+                        </div>
+                        
+                      </div>
+                      <div class="zooms">點擊<span id="zoomIn"><i class="bi bi-plus-circle"></i>放大</span>或<span id="zoomOut"><i class="bi bi-dash-circle"></i>縮小</span></div>
+                    </div>
+                  </div>
+                  <div id="drag" style="background-image:url(./images/home/panzoom.png)">
+                    <div class="dragBody d-flex flex-column justify-content-center align-items-center">
+                      <div class="dragItems">
+                        <group-chip v-for="item, key in groups" :item="item" :key="item.mm_account" />
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 子帳號列表 暫時棄置 -->
+              <div class="accountListTable d-none">
+                <div class="tableHead">
+                  <div class="accountColumn">帳號</div>
+                  <div class="positionColumn">安置位置</div>
+                  <div class="toggleColumn">切換帳戶</div>
+                </div>
+                <!-- 已啟動並有子帳戶 -->
+                <div>
+                  <!-- 帳號列表 -->
+                  <div class="tableBody">
+                    <!-- 新增子帳號 -->
+                    <div class="addTableRow">
+                      <div class="tableRow">
+                        <div class="accountColumn">09-000-0000-003</div>
+                        <div class="toggleCoumn-md">
+                          <div class="toggleBtn"><i class="bi bi-arrow-left-right"></i></div>
+                        </div>
+                        <div class="positionColumn">
+                          <select class="form-select" id="position1" name="account_position_1">
+                            <option selected disabled value="">安置位子</option>
+                            <option value="1">F1</option>
+                          </select>
+                        </div>
+                        <div class="toggleColumn">
+                          <div class="common-btn toggleBtn">切換至此帳戶</div>
+                        </div>
+                      </div>
+                      <div class="btnRow">
+                        <div class="btn cancel">取消 <i class="bi bi-x-lg"></i></div>
+                        <div class="btn">新增 <i class="bi bi-circle"></i></div>
+                      </div>
+                    </div>
+                    <!-- 子帳號列表(非當前啟用)-->
+                    <div class="tableRow">
+                      <div class="accountColumn">09-000-0000-003</div>
+                      <div class="toggleCoumn-md">
+                        <div class="toggleBtn"><i class="bi bi-arrow-left-right"></i></div>
+                        <div class="isActive">
+                          <span class="jump1">.</span>
+                          <span class="jump2">.</span>
+                          <span class="jump3">.</span>
+                        </div>
+                      </div>
+                      <div class="positionColumn">
+                        <select class="form-select" id="position1" name="account_position_1">
+                          <option selected disabled value="">安置位子</option>
+                          <option value="1">F1</option>
+                        </select>
+                      </div>
+                      <div class="toggleColumn">
+                        <div class="common-btn toggleBtn">切換至此帳戶</div>
+                        <div class="common-btn isActive">正在此帳戶</div>
+                      </div>
+                    </div>
+                    <!-- 子帳號列表(當前啟用)-->
+                    <div class="tableRow active">
+                      <div class="accountColumn">09-000-0000-004</div>
+                      <div class="toggleCoumn-md">
+                        <div class="toggleBtn"><i class="bi bi-arrow-left-right"></i></div>
+                        <div class="isActive">
+                          <span class="jump1">.</span>
+                          <span class="jump2">.</span>
+                          <span class="jump3">.</span>
+                        </div>
+                      </div>
+                      <div class="positionColumn">
+                        <select class="form-select" id="position1" name="account_position_1">
+                          <option selected disabled value="">安置位子</option>
+                          <option value="1">F1</option>
+                        </select>
+                      </div>
+                      <div class="toggleColumn">
+                        <div class="common-btn toggleBtn">切換至此帳戶</div>
+                        <div class="common-btn isActive">正在此帳戶</div>
+                      </div>
+                    </div>
+                    <div class="tableRow">
+                      <div class="accountColumn">09-000-0000-003</div>
+                      <div class="toggleCoumn-md">
+                        <div class="toggleBtn"><i class="bi bi-arrow-left-right"></i></div>
+                        <div class="isActive">
+                          <span class="jump1">.</span>
+                          <span class="jump2">.</span>
+                          <span class="jump3">.</span>
+                        </div>
+                      </div>
+                      <div class="positionColumn">
+                        <select class="form-select" id="position1" name="account_position_1">
+                          <option selected disabled value="">安置位子</option>
+                          <option value="1">F1</option>
+                        </select>
+                      </div>
+                      <div class="toggleColumn">
+                        <div class="common-btn toggleBtn">切換至此帳戶</div>
+                        <div class="common-btn isActive">正在此帳戶</div>
+                      </div>
+                    </div>
+                    <div class="tableRow">
+                      <div class="accountColumn">09-000-0000-003</div>
+                      <div class="toggleCoumn-md">
+                        <div class="toggleBtn"><i class="bi bi-arrow-left-right"></i></div>
+                        <div class="isActive">
+                          <span class="jump1">.</span>
+                          <span class="jump2">.</span>
+                          <span class="jump3">.</span>
+                        </div>
+                      </div>
+                      <div class="positionColumn">
+                        <select class="form-select" id="position1" name="account_position_1">
+                          <option selected disabled value="">安置位子</option>
+                          <option value="1">F1</option>
+                        </select>
+                      </div>
+                      <div class="toggleColumn">
+                        <div class="common-btn toggleBtn">切換至此帳戶</div>
+                        <div class="common-btn isActive">正在此帳戶</div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 分頁切換 -->
+                  <div class="paginations">
+                    <div class="page-prev"><i class="bi bi-caret-left-fill"></i></div>
+                    <div class="page-ellipsis-prev">…</div>
+                    <div class="page" data-page="1">1</div>
+                    <div class="page" data-page="2">2</div>
+                    <div class="page" data-page="3">3</div>
+                    <div class="page" data-page="4">4</div>
+                    <div class="page" data-page="5">5</div>
+                    <div class="page" data-page="6">6</div>
+                    <div class="page" data-page="7">7</div>
+                    <div class="page" data-page="8">8</div>
+                    <div class="page" data-page="9">9</div>
+                    <div class="page" data-page="10">10</div>
+                    <div class="page" data-page="11">11</div>
+                    <div class="page" data-page="12">12</div>
+                    <div class="page" data-page="13">13</div>
+                    <div class="page" data-page="14">14</div>
+                    <div class="page" data-page="15">15</div>
+                    <div class="page" data-page="16">16</div>
+                    <div class="page" data-page="17">17</div>
+                    <div class="page" data-page="18">18</div>
+                    <div class="page" data-page="19">19</div>
+                    <div class="page" data-page="20">20</div>
+                    <div class="page" data-page="21">21</div>
+                    <div class="page" data-page="22">22</div>
+                    <div class="page" data-page="23">23</div>
+                    <div class="page" data-page="24">24</div>
+                    <div class="page-ellipsis-next">…</div>
+                    <div class="page-next"><i class="bi bi-caret-right-fill"></i></div>
+                  </div>
+                </div>
+                <!-- 已啟動未有子帳戶 -->
+                <div class="notStarted d-none">
+                  <div>目前帳戶已激活</div>
+                  <div>可以點擊右上新增，或按<span class="color-minor">新增子帳戶</span>。</div>
+                </div>
+                <!-- 未啟動 -->
+                <div class="notStarted d-none">
+                  <div>目前帳戶尚未激活</div>
+                  <div>為主要帳戶激活安置位子後，方可新增子帳戶。</div>
+                  <div class="tip">注意：安置位置激活後無法再進行更換，請確認後再行激活。</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- KYC -->
+            <div class="frame kyc d-none">
+              <div class="frameTitle">
+                <div class="title-zh">審核驗證</div>
+              </div>
+              <!-- 表單 -->
+              <form @submit.prevent="kycSubmit" id="kycForm">
+                <div class="pt-4">
+                  <div class="formTitle">申請者資料</div>
+                  <div class="formGroup">
+                    <!-- <div class="custom-input-group">
+                      <label class="require">所在城市</label>
+                      <select class="form-select" id="kyc_city" required>
+                        <option selected disabled value="">請選擇</option>
+                      </select>
+                    </div> -->
+                    <div class="custom-input-group">
+                      <label for="kyc-name" class="require">姓名</label>
+                      <input v-model="kycData.userName" minlength="10" maxlength="10" type="text" class="form-control" id="kyc-name" required>
+                    </div>
+                    <div class="custom-input-group">
+                      <label class="require">性別</label>
+                      <div  class="d-flex align-items-center">
+                        <div class="form-check me-2">
+                          <input v-model="kycData.gender" :value="1" class="form-check-input" type="radio" name="gender" id="gender_male">
+                          <label class="form-check-label" for="gender_male">男</label>
+                        </div>
+                        <div class="form-check">
+                          <input v-model="kycData.gender" :value="2" class="form-check-input" type="radio" name="gender" id="gender_female">
+                          <label class="form-check-label" for="gender_female">女</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="custom-input-group">
+                      <label for="identify" class="require">身分證字號</label>
+                      <input v-model="kycData.id" minlength="10" maxlength="10" type="text" class="form-control" id="identify" required>
+                    </div>
+                    <div class="custom-input-group">
+                      <label for="address" class="require">通訊地址</label>
+                      <input v-model="kycData.address" minlength="4" maxlength="100" type="text" class="form-control" id="address" required>
+                    </div>
+                    <div class="custom-input-group">
+                      <label for="email" class="require">電子郵件</label>
+                      <input v-model="kycData.email" minlength="4" maxlength="50" type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="custom-input-group">
+                      <label for="bank_account" class="require">銀行帳號</label>
+                      <div class="d-flex flex-grow-1" style="max-width: 515px;">
+                        <input v-model="kycData.bank_code" style="max-width: 90px;" placeholder="銀行代碼" type="text" class="form-control" id="bank_code" name="bank_code" required>
+                        <input v-model="kycData.account" style="max-width: calc(100% - 90px)" placeholder="銀行帳號" type="text" class="form-control" id="bank_account" name="bank_account" required>
+                      </div>
+                    </div>
+                    <div class="custom-input-group">
+                      <label for="bank_user_name" class="require">戶名</label>
+                      <input v-model="kycData.bankUserName" type="text" class="form-control" id="bank_user_name" name="bank_user_name" required>
+                    </div>
+                    <div class="custom-input-group">
+                      <label for="bank_branch" class="require">分行</label>
+                      <input v-model="kycData.bankBranch" type="text" class="form-control" id="bank_branch" name="bank_branch" required>
+                    </div>
+                    <div class="custom-input-group">
+                      <label for="wallet-address" class="require">電子錢包地址</label>
+                      <input v-model="kycData.wallet_address" type="text" class="form-control" id="wallet-address" name="wallet-address" required>
+                    </div>
+                  </div>
+                  <div class="formTitle">上傳身分證明</div>
+                  <!-- 上傳證件 -->
+                  <div class="formGroup">
+                    <div v-for="upload, ind in uploads" :key="ind" class="uploadLayout">
+                      <div class="title">
+                        <li>{{upload.title}}</li>
+                        <!-- <div v-if="upload.subtitle" class="tip">{{upload.subtitle}}</div> -->
+                      </div>
+                      <div v-for="img, idx in upload.images" :key="`${ind}_${idx}`" class="custom-upload-group">
+                        <div class="name">{{img.label}}</div>
+                        <div class="uploadFrame">
+                          <div class="tip1">將圖片拖曳到這裡</div>
+                          <div class="tip2">或</div>
+                          <label v-show="!img.base64" :for="`img${ind}_${idx}`" class="common-btn">上傳圖片</label>
+                          <div v-show="img.base64" class="imgPreview"><img :src="img.base64" alt=""></div>
+                          <input type="file" @change="imgFileReader($event, img)" :id="`img${ind}_${idx}`" :name="`img${ind}_${idx}`" required>
+                        </div>
+                      </div>
+                    </div>
+    
+                  </div>
+                  <div class="formTitle">指定受益人</div>
+                  <!-- 指定受益人 -->
+                  <div class="formGroup">
+                    <div class="custom-input-group">
+                      <label for="beneficiary">指定受益人</label>
+                      <input v-model="kycData.beneficiary" type="text" class="form-control" id="beneficiary" name="beneficiary">
+                    </div>
+                    <div class="custom-input-group">
+                      <label for="beneficiary_phone">指定受益人聯絡電話</label>
+                      <input v-model="kycData.beneficiary_phone" type="text" class="form-control" id="beneficiary_phone" name="beneficiary_phone">
+                    </div>
+                    <div class="custom-input-group">
+                      <label for="relation">指定受益人關係</label>
+                      <input v-model="kycData.relation" type="text" class="form-control" id="relation" name="relation">
+                    </div>
+                  </div>
+                </div>
+                <button type="submit" class="common-btn">
+                  <div class="w-100">申請審核</div>
+                  <div class="text-en fs-12 color-secondary">CONFIRM</div>
+                </button>
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer id="footer"></footer>
+    <script src="./js/account.js"></script>
+  </body>
+</html>

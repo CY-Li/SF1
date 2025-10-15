@@ -1,0 +1,212 @@
+2024-08-20 12:25:27.071 +08:00 [INF] Now listening on: http://localhost:5000
+2024-08-20 12:25:32.706 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-20 12:25:32.708 +08:00 [INF] Hosting environment: Development
+2024-08-20 12:25:32.712 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2024-08-20 12:25:34.069 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 1185.1365 ms
+2024-08-20 12:26:08.518 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 3428.0413 ms
+2024-08-20 14:10:45.261 +08:00 [INF] Now listening on: http://localhost:5000
+2024-08-20 14:10:45.276 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-20 14:10:45.278 +08:00 [INF] Hosting environment: Development
+2024-08-20 14:10:45.279 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2024-08-20 14:10:50.460 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 545.0344 ms
+2024-08-20 14:10:53.998 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 661.6815 ms
+2024-08-20 14:11:10.573 +08:00 [INF] KycController QueryKycAdmin START
+2024-08-20 14:11:10.679 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/AuthenticationMgmt/KycService/QueryKycAdmin
+2024-08-20 14:11:10.684 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/AuthenticationMgmt/KycService/QueryKycAdmin
+2024-08-20 14:11:13.022 +08:00 [INF] Received HTTP response headers after 2327.9281ms - 200
+2024-08-20 14:11:13.027 +08:00 [INF] End processing HTTP request after 2354.233ms - 200
+2024-08-20 14:11:13.060 +08:00 [INF] HTTP GET /api/Kyc/QueryKycAdmin responded 200 in 2673.2224 ms
+2024-08-20 14:11:43.841 +08:00 [INF] KycController QueryKycAdmin START
+2024-08-20 14:11:43.860 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/AuthenticationMgmt/KycService/QueryKycAdmin
+2024-08-20 14:11:43.863 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/AuthenticationMgmt/KycService/QueryKycAdmin
+2024-08-20 14:11:43.923 +08:00 [INF] Received HTTP response headers after 52.0165ms - 200
+2024-08-20 14:11:43.925 +08:00 [INF] End processing HTTP request after 65.0042ms - 200
+2024-08-20 14:11:44.011 +08:00 [INF] HTTP GET /api/Kyc/QueryKycAdmin responded 200 in 179.2650 ms
+2024-08-20 14:11:44.495 +08:00 [INF] KycController GetKycImage START
+2024-08-20 14:11:44.495 +08:00 [INF] KycController GetKycImage START
+2024-08-20 14:11:44.600 +08:00 [INF] HTTP GET /api/Kyc/283/7/8e394045-1298-4610-9a2c-4bc9b08bc71a_02.png responded 200 in 125.7123 ms
+2024-08-20 14:11:44.626 +08:00 [INF] HTTP GET /api/Kyc/283/7/8e394045-1298-4610-9a2c-4bc9b08bc71a_01.jpg responded 200 in 154.3567 ms
+2024-08-20 14:12:07.804 +08:00 [INF] HTTP PUT /api/Kyc/ responded 200 in 13.8201 ms
+2024-08-20 14:29:54.020 +08:00 [INF] Now listening on: http://localhost:5000
+2024-08-20 14:29:54.077 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-20 14:29:54.078 +08:00 [INF] Hosting environment: Development
+2024-08-20 14:29:54.079 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2024-08-20 14:30:02.766 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 362.8361 ms
+2024-08-20 14:30:05.062 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 1045.3778 ms
+2024-08-20 14:30:30.597 +08:00 [INF] KycController PutKyc START
+2024-08-20 14:30:30.671 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/AuthenticationMgmt/KycService/PutKyc
+2024-08-20 14:30:30.676 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/AuthenticationMgmt/KycService/PutKyc
+2024-08-20 14:30:32.022 +08:00 [INF] Received HTTP response headers after 1338.2301ms - 200
+2024-08-20 14:30:32.028 +08:00 [INF] End processing HTTP request after 1365.0425ms - 200
+2024-08-20 14:30:32.043 +08:00 [INF] KycController PutKyc END
+2024-08-20 14:30:32.061 +08:00 [INF] HTTP PUT /api/Kyc/ responded 200 in 1545.4527 ms
+2024-08-20 14:30:33.894 +08:00 [INF] KycController QueryKycAdmin START
+2024-08-20 14:30:34.296 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/AuthenticationMgmt/KycService/QueryKycAdmin
+2024-08-20 14:30:34.303 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/AuthenticationMgmt/KycService/QueryKycAdmin
+2024-08-20 14:30:34.529 +08:00 [INF] Received HTTP response headers after 218.8869ms - 200
+2024-08-20 14:30:34.570 +08:00 [INF] End processing HTTP request after 273.8564ms - 200
+2024-08-20 14:30:34.583 +08:00 [INF] HTTP GET /api/Kyc/QueryKycAdmin responded 200 in 1047.2366 ms
+2024-08-20 14:30:46.340 +08:00 [INF] KycController QueryKycAdmin START
+2024-08-20 14:30:46.372 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/AuthenticationMgmt/KycService/QueryKycAdmin
+2024-08-20 14:30:46.374 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/AuthenticationMgmt/KycService/QueryKycAdmin
+2024-08-20 14:30:46.413 +08:00 [INF] Received HTTP response headers after 30.3399ms - 200
+2024-08-20 14:30:46.416 +08:00 [INF] End processing HTTP request after 44.8172ms - 200
+2024-08-20 14:30:46.420 +08:00 [INF] HTTP GET /api/Kyc/QueryKycAdmin responded 200 in 98.9831 ms
+2024-08-20 14:32:30.669 +08:00 [INF] Now listening on: http://localhost:5000
+2024-08-20 14:32:30.797 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-20 14:32:32.683 +08:00 [INF] Hosting environment: Development
+2024-08-20 14:32:32.685 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2024-08-20 14:32:33.617 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 433.2651 ms
+2024-08-20 14:32:35.742 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 1099.9278 ms
+2024-08-20 14:32:38.784 +08:00 [INF] KycController QueryKycAdmin START
+2024-08-20 14:32:39.635 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/AuthenticationMgmt/KycService/QueryKycAdmin
+2024-08-20 14:32:39.895 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/AuthenticationMgmt/KycService/QueryKycAdmin
+2024-08-20 14:32:42.596 +08:00 [INF] Received HTTP response headers after 2695.7921ms - 200
+2024-08-20 14:32:42.604 +08:00 [INF] End processing HTTP request after 2974.7794ms - 200
+2024-08-20 14:32:42.771 +08:00 [INF] HTTP GET /api/Kyc/QueryKycAdmin responded 200 in 4191.2246 ms
+2024-08-20 14:32:43.256 +08:00 [INF] KycController GetKycImage START
+2024-08-20 14:32:43.258 +08:00 [INF] KycController GetKycImage START
+2024-08-20 14:32:43.316 +08:00 [INF] HTTP GET /api/Kyc/283/7/8e394045-1298-4610-9a2c-4bc9b08bc71a_02.png responded 200 in 81.3138 ms
+2024-08-20 14:32:43.325 +08:00 [INF] HTTP GET /api/Kyc/283/7/8e394045-1298-4610-9a2c-4bc9b08bc71a_01.jpg responded 200 in 129.0436 ms
+2024-08-20 15:13:18.824 +08:00 [INF] Now listening on: http://localhost:5000
+2024-08-20 15:13:18.849 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-20 15:13:18.851 +08:00 [INF] Hosting environment: Development
+2024-08-20 15:13:18.851 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2024-08-20 15:13:24.128 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 452.9506 ms
+2024-08-20 15:13:31.924 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 566.3722 ms
+2024-08-20 15:24:22.809 +08:00 [INF] KycController QueryKycAdmin START
+2024-08-20 15:24:22.876 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/AuthenticationMgmt/KycService/QueryKycAdmin
+2024-08-20 15:24:22.884 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/AuthenticationMgmt/KycService/QueryKycAdmin
+2024-08-20 15:24:23.546 +08:00 [INF] Received HTTP response headers after 655.5847ms - 200
+2024-08-20 15:24:23.552 +08:00 [INF] End processing HTTP request after 698.8573ms - 200
+2024-08-20 15:24:23.629 +08:00 [INF] HTTP GET /api/Kyc/QueryKycAdmin responded 200 in 900.8311 ms
+2024-08-20 15:24:23.733 +08:00 [INF] KycController GetKycImage START
+2024-08-20 15:24:23.733 +08:00 [INF] KycController GetKycImage START
+2024-08-20 15:24:23.775 +08:00 [INF] HTTP GET /api/Kyc/283/7/8e394045-1298-4610-9a2c-4bc9b08bc71a_02.png responded 200 in 46.1271 ms
+2024-08-20 15:24:23.788 +08:00 [INF] HTTP GET /api/Kyc/283/7/8e394045-1298-4610-9a2c-4bc9b08bc71a_01.jpg responded 200 in 82.4189 ms
+2024-08-20 15:24:27.121 +08:00 [INF] KycController QueryKycAdmin START
+2024-08-20 15:24:27.124 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/AuthenticationMgmt/KycService/QueryKycAdmin
+2024-08-20 15:24:27.127 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/AuthenticationMgmt/KycService/QueryKycAdmin
+2024-08-20 15:24:27.189 +08:00 [INF] Received HTTP response headers after 54.4098ms - 200
+2024-08-20 15:24:27.200 +08:00 [INF] End processing HTTP request after 76.0852ms - 200
+2024-08-20 15:24:27.204 +08:00 [INF] HTTP GET /api/Kyc/QueryKycAdmin responded 200 in 97.7107 ms
+2024-08-20 15:24:34.937 +08:00 [INF] KycController QueryKycAdmin START
+2024-08-20 15:24:34.954 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/AuthenticationMgmt/KycService/QueryKycAdmin
+2024-08-20 15:24:34.963 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/AuthenticationMgmt/KycService/QueryKycAdmin
+2024-08-20 15:24:34.999 +08:00 [INF] Received HTTP response headers after 32.9521ms - 200
+2024-08-20 15:24:35.003 +08:00 [INF] End processing HTTP request after 48.8775ms - 200
+2024-08-20 15:24:35.013 +08:00 [INF] HTTP GET /api/Kyc/QueryKycAdmin responded 200 in 76.1646 ms
+2024-08-20 15:26:16.714 +08:00 [INF] KycController QueryKycAdmin START
+2024-08-20 15:26:16.717 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/AuthenticationMgmt/KycService/QueryKycAdmin
+2024-08-20 15:26:16.728 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/AuthenticationMgmt/KycService/QueryKycAdmin
+2024-08-20 15:26:16.916 +08:00 [INF] Received HTTP response headers after 184.7271ms - 200
+2024-08-20 15:26:16.924 +08:00 [INF] End processing HTTP request after 207.0124ms - 200
+2024-08-20 15:26:16.929 +08:00 [INF] HTTP GET /api/Kyc/QueryKycAdmin responded 200 in 214.8629 ms
+2024-08-20 15:26:17.047 +08:00 [INF] KycController GetKycImage START
+2024-08-20 15:26:17.051 +08:00 [INF] KycController GetKycImage START
+2024-08-20 15:26:17.074 +08:00 [INF] HTTP GET /api/Kyc/283/7/8e394045-1298-4610-9a2c-4bc9b08bc71a_02.png responded 200 in 24.3932 ms
+2024-08-20 15:26:17.074 +08:00 [INF] HTTP GET /api/Kyc/283/7/8e394045-1298-4610-9a2c-4bc9b08bc71a_01.jpg responded 200 in 27.2657 ms
+2024-08-20 15:26:19.357 +08:00 [INF] KycController QueryKycAdmin START
+2024-08-20 15:26:19.371 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/AuthenticationMgmt/KycService/QueryKycAdmin
+2024-08-20 15:26:19.373 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/AuthenticationMgmt/KycService/QueryKycAdmin
+2024-08-20 15:26:19.405 +08:00 [INF] Received HTTP response headers after 29.4592ms - 200
+2024-08-20 15:26:19.408 +08:00 [INF] End processing HTTP request after 37.2897ms - 200
+2024-08-20 15:26:19.412 +08:00 [INF] HTTP GET /api/Kyc/QueryKycAdmin responded 200 in 90.6643 ms
+2024-08-20 15:26:21.099 +08:00 [INF] KycController QueryKycAdmin START
+2024-08-20 15:26:21.115 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/AuthenticationMgmt/KycService/QueryKycAdmin
+2024-08-20 15:26:21.115 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/AuthenticationMgmt/KycService/QueryKycAdmin
+2024-08-20 15:26:21.209 +08:00 [INF] Received HTTP response headers after 92.5217ms - 200
+2024-08-20 15:26:21.341 +08:00 [INF] End processing HTTP request after 225.8954ms - 200
+2024-08-20 15:26:21.342 +08:00 [INF] HTTP GET /api/Kyc/QueryKycAdmin responded 200 in 253.6731 ms
+2024-08-20 15:26:22.997 +08:00 [INF] KycController QueryKycAdmin START
+2024-08-20 15:26:23.851 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/AuthenticationMgmt/KycService/QueryKycAdmin
+2024-08-20 15:26:23.855 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/AuthenticationMgmt/KycService/QueryKycAdmin
+2024-08-20 15:26:23.884 +08:00 [INF] Received HTTP response headers after 25.0366ms - 200
+2024-08-20 15:26:23.890 +08:00 [INF] End processing HTTP request after 39.3804ms - 200
+2024-08-20 15:26:23.897 +08:00 [INF] HTTP GET /api/Kyc/QueryKycAdmin responded 200 in 901.0694 ms
+2024-08-20 15:26:24.084 +08:00 [INF] KycController GetKycImage START
+2024-08-20 15:26:24.084 +08:00 [INF] KycController GetKycImage START
+2024-08-20 15:26:24.115 +08:00 [INF] HTTP GET /api/Kyc/283/7/8e394045-1298-4610-9a2c-4bc9b08bc71a_02.png responded 200 in 30.8184 ms
+2024-08-20 15:26:24.115 +08:00 [INF] HTTP GET /api/Kyc/283/7/8e394045-1298-4610-9a2c-4bc9b08bc71a_01.jpg responded 200 in 31.7974 ms
+2024-08-20 15:26:26.067 +08:00 [INF] KycController QueryKycAdmin START
+2024-08-20 15:26:26.070 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/AuthenticationMgmt/KycService/QueryKycAdmin
+2024-08-20 15:26:26.072 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/AuthenticationMgmt/KycService/QueryKycAdmin
+2024-08-20 15:26:26.132 +08:00 [INF] Received HTTP response headers after 58.7226ms - 200
+2024-08-20 15:26:26.135 +08:00 [INF] End processing HTTP request after 64.2741ms - 200
+2024-08-20 15:26:26.136 +08:00 [INF] HTTP GET /api/Kyc/QueryKycAdmin responded 200 in 77.0553 ms
+2024-08-20 15:26:28.180 +08:00 [INF] KycController QueryKycAdmin START
+2024-08-20 15:26:28.212 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/AuthenticationMgmt/KycService/QueryKycAdmin
+2024-08-20 15:26:28.215 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/AuthenticationMgmt/KycService/QueryKycAdmin
+2024-08-20 15:26:28.235 +08:00 [INF] Received HTTP response headers after 16.3014ms - 200
+2024-08-20 15:26:28.248 +08:00 [INF] End processing HTTP request after 36.3184ms - 200
+2024-08-20 15:26:28.250 +08:00 [INF] HTTP GET /api/Kyc/QueryKycAdmin responded 200 in 77.1135 ms
+2024-08-20 15:26:44.909 +08:00 [INF] KycController QueryKycAdmin START
+2024-08-20 15:26:44.910 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/AuthenticationMgmt/KycService/QueryKycAdmin
+2024-08-20 15:26:44.911 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/AuthenticationMgmt/KycService/QueryKycAdmin
+2024-08-20 15:26:44.937 +08:00 [INF] Received HTTP response headers after 25.3346ms - 200
+2024-08-20 15:26:44.939 +08:00 [INF] End processing HTTP request after 28.4674ms - 200
+2024-08-20 15:26:44.940 +08:00 [INF] HTTP GET /api/Kyc/QueryKycAdmin responded 200 in 31.7765 ms
+2024-08-20 15:37:20.821 +08:00 [INF] AnnouncementController PutAnnouncement START
+2024-08-20 15:37:22.477 +08:00 [INF] AnnouncementController PutAnnouncement END
+2024-08-20 15:37:22.480 +08:00 [INF] HTTP PUT /api/Announcement/ responded 200 in 31252.9917 ms
+2024-08-20 15:37:51.351 +08:00 [INF] AnnouncementController PutAnnouncement START
+2024-08-20 15:38:04.569 +08:00 [INF] AnnouncementController PutAnnouncement END
+2024-08-20 15:38:04.572 +08:00 [INF] HTTP PUT /api/Announcement/ responded 200 in 17619.6048 ms
+2024-08-20 16:05:28.636 +08:00 [INF] AnnouncementController PutAnnouncement START
+2024-08-20 16:05:29.706 +08:00 [INF] AnnouncementController PutAnnouncement END
+2024-08-20 16:05:29.709 +08:00 [INF] HTTP PUT /api/Announcement/ responded 200 in 7977.5589 ms
+2024-08-20 16:06:03.587 +08:00 [INF] AnnouncementController PutAnnouncement START
+2024-08-20 16:06:04.433 +08:00 [INF] AnnouncementController PutAnnouncement END
+2024-08-20 16:06:04.435 +08:00 [INF] HTTP PUT /api/Announcement/ responded 200 in 18832.3180 ms
+2024-08-20 16:37:54.614 +08:00 [INF] Now listening on: http://localhost:5000
+2024-08-20 16:37:54.921 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-20 16:37:54.934 +08:00 [INF] Hosting environment: Development
+2024-08-20 16:37:54.936 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2024-08-20 16:37:55.948 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 537.2291 ms
+2024-08-20 16:37:57.681 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 1034.0894 ms
+2024-08-20 16:38:22.906 +08:00 [INF] AnnouncementController PutAnnouncement START
+2024-08-20 16:38:23.865 +08:00 [INF] AnnouncementController PutAnnouncement END
+2024-08-20 16:38:23.886 +08:00 [INF] HTTP PUT /api/Announcement/ responded 200 in 10047.1980 ms
+2024-08-20 16:40:14.488 +08:00 [INF] Now listening on: http://localhost:5000
+2024-08-20 16:40:14.506 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-20 16:40:14.913 +08:00 [INF] Hosting environment: Development
+2024-08-20 16:40:14.918 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2024-08-20 16:40:18.074 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 290.3031 ms
+2024-08-20 16:40:19.607 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 958.9843 ms
+2024-08-20 16:48:40.183 +08:00 [INF] Now listening on: http://localhost:5000
+2024-08-20 16:48:42.982 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-20 16:48:42.999 +08:00 [INF] Hosting environment: Development
+2024-08-20 16:48:43.003 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2024-08-20 16:48:44.446 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 411.2854 ms
+2024-08-20 16:48:46.098 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 914.7292 ms
+2024-08-20 16:50:56.295 +08:00 [INF] AnnouncementController PutAnnouncement START
+2024-08-20 16:50:57.612 +08:00 [INF] AnnouncementController PutAnnouncement END
+2024-08-20 16:50:57.643 +08:00 [INF] HTTP PUT /api/Announcement/ responded 200 in 40206.6178 ms
+2024-08-20 17:01:35.505 +08:00 [INF] AnnouncementController PutAnnouncement START
+2024-08-20 17:02:22.434 +08:00 [INF] AnnouncementController PutAnnouncement END
+2024-08-20 17:02:22.447 +08:00 [INF] HTTP PUT /api/Announcement/ responded 200 in 134661.9502 ms
+2024-08-20 17:07:42.989 +08:00 [INF] AnnouncementController PutAnnouncement START
+2024-08-20 17:07:44.741 +08:00 [INF] AnnouncementController PutAnnouncement END
+2024-08-20 17:07:44.744 +08:00 [INF] HTTP PUT /api/Announcement/ responded 200 in 157779.0464 ms
+2024-08-20 17:22:31.404 +08:00 [INF] Now listening on: http://localhost:5000
+2024-08-20 17:22:31.425 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-20 17:22:31.428 +08:00 [INF] Hosting environment: Development
+2024-08-20 17:22:31.430 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2024-08-20 17:22:36.737 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 595.2816 ms
+2024-08-20 17:22:38.735 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 936.5351 ms
+2024-08-20 17:24:39.095 +08:00 [INF] AnnouncementController PutAnnouncement START
+2024-08-20 17:26:45.128 +08:00 [INF] AnnouncementController PutAnnouncement END
+2024-08-20 17:26:45.165 +08:00 [INF] HTTP PUT /api/Announcement/ responded 200 in 129871.9018 ms
+2024-08-20 18:26:26.426 +08:00 [INF] AnnouncementController PutAnnouncement START
+2024-08-20 18:29:33.389 +08:00 [INF] AnnouncementController PutAnnouncement END
+2024-08-20 18:29:33.396 +08:00 [INF] HTTP PUT /api/Announcement/ responded 200 in 190941.2962 ms
+2024-08-20 18:30:12.302 +08:00 [INF] AnnouncementController PutAnnouncement START
+2024-08-20 18:33:52.771 +08:00 [INF] AnnouncementController PutAnnouncement END
+2024-08-20 18:33:52.778 +08:00 [INF] HTTP PUT /api/Announcement/ responded 200 in 251731.8298 ms
+2024-08-20 18:37:17.579 +08:00 [INF] AnnouncementController PutAnnouncement START
+2024-08-20 18:37:45.022 +08:00 [INF] AnnouncementController PutAnnouncement END
+2024-08-20 18:37:45.036 +08:00 [INF] HTTP PUT /api/Announcement/ responded 200 in 119301.1351 ms
+2024-08-20 18:41:12.746 +08:00 [INF] AnnouncementController PutAnnouncement START
+2024-08-20 18:43:16.928 +08:00 [INF] AnnouncementController PutAnnouncement END
+2024-08-20 18:43:16.937 +08:00 [INF] HTTP PUT /api/Announcement/ responded 200 in 127457.9963 ms
+2024-08-20 18:43:23.990 +08:00 [INF] AnnouncementController PutAnnouncement START

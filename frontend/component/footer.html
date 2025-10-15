@@ -1,0 +1,42 @@
+<div class="myFooter">
+  <div class="circleBg">
+    <img src="/images/footerCircle.svg" alt="">
+    <div class="goTop">
+      <div class="topCircle">
+        <div class="topBtn">
+          <img src="./images/top.svg" alt="">
+        </div>
+      </div>
+      <div class="text">回到最上層</div>
+    </div>
+    
+  </div>
+  <div class="logo"><img src="./images/logo.png" alt=""></div>
+  <div class="footerNavs">
+    <a href="/" target="_self" class="nav homeNav">
+      <div>首　　頁</div>
+      <div class="text-en">TOP</div>
+    </a>
+    <a href="/hall.html" target="_self" class="nav hallNav">
+      <div>商會大廳</div>
+      <div class="text-en">CHAMBER OF COMMERCE</div>
+    </a>
+    <a href="/wallet.html" target="_self" class="nav walletNav">
+      <div>會員錢包</div>
+      <div class="text-en">WALLET</div>
+    </a>
+    <!-- <a href="/account.html?type=subaccount" target="_self" class="nav childNav">
+      <div>子帳戶管理</div>
+      <div class="text-en">SUBACCOUNT MANAGEMENT</div>
+    </a> -->
+    <a href="/account.html" target="_self" class="nav mainNav">
+      <div>會員資訊</div>
+      <div class="text-en">BACK TO MAIN ACCOUNT</div>
+    </a>
+  </div>
+</div>
+<script>
+  $(".topCircle").click(function() {
+    $("html, body").animate( { scrollTop: 0}, 200);
+  })
+</script>

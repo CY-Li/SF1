@@ -1,0 +1,36 @@
+.mat-50{
+    width: 48%;
+    margin: 1%;
+}
+
+// .row {
+//     display: flex;
+//     gap: 10px;
+
+//     mat-form-field {
+//         width: 100%;
+//     }
+// }
+
+.action {
+    padding: 0px 25px 20px;
+
+    button {
+        flex: 1;
+    }
+}
+
+
+// .material-symbols-outlined {
+//   font-variation-settings:
+//   'FILL' 0,
+//   'wght' 400,
+//   'GRAD' 0,
+//   'opsz' 24
+// }
+
+.fixed-img {
+    width: 48%; /* 根據容器寬度自適應 */
+    max-width: 300px; /* 設定最大寬度，例如 6.3 吋的大小 */
+    height: auto; /* 保持圖片的高寬比 */
+  }

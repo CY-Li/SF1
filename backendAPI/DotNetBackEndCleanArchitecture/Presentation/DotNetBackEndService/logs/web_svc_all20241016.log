@@ -1,0 +1,10 @@
+2024-10-16 10:49:12.985 +08:00 [INF] Now listening on: http://localhost:5001
+2024-10-16 10:49:13.115 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-16 10:49:13.264 +08:00 [INF] Hosting environment: Development
+2024-10-16 10:49:13.266 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2024-10-16 10:49:23.674 +08:00 [INF] HTTP GET / responded 404 in 1.8865 ms
+2024-10-16 11:27:51.055 +08:00 [INF] Now listening on: http://localhost:5001
+2024-10-16 11:27:51.086 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-16 11:27:51.104 +08:00 [INF] Hosting environment: Development
+2024-10-16 11:27:51.106 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2024-10-16 11:27:57.092 +08:00 [INF] HTTP GET / responded 404 in 7.3344 ms

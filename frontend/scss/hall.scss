@@ -1,0 +1,329 @@
+@import 'main.scss';
+
+#myCarousel {
+  margin-bottom: 80px;
+  @media #{$mobile} {
+    margin-bottom: 60px;
+  }
+  .carousel-indicators {
+    margin: 0 4px 0 0;
+    bottom: auto;
+    top: calc(100% + 12px);
+    justify-content: flex-end;
+    @media #{$mobile} {
+      justify-content: center;
+    }
+    button {
+      border: 0;
+      background: $secondary;
+      opacity: 1;
+      width: 24px;
+      height: 4px;
+      border-radius: 4px;
+      &.active {
+        background: $minor;
+      }
+    }
+  }
+}
+
+.subtotal {
+  display: flex;
+  background: $primary;
+  border-radius: 14px;
+  padding: 30px 0;
+  margin-bottom: 80px;
+  @media #{$mobile} {
+    width: 90%;
+    margin: 0 auto 60px auto;
+    padding: 8px 0;
+  }
+  .child {
+    width: 50%;
+    color: $white;
+    padding: 0 30px 45px 30px;
+    @media #{$mobile} {
+      padding: 0 12px 20px 12px;
+    }
+    .name {
+      font-size: 24px;
+      margin-bottom: 50px;
+      @media #{$mobile} {
+        font-size: 12px;
+        margin-bottom: 20px;
+      }
+    }
+    .dollarSign {
+      font-size: 26px;
+      margin-right: 16px;
+      @media #{$mobile} {
+        font-size: 14px;
+        margin-right: 8px;
+      }
+    }
+    .amount {
+      font-size: 55px;
+      text-align: center;
+      @media #{$mobile} {
+        font-size: 20px;
+      }
+    }
+    &:first-child {
+      border-right: 1px solid #bb6459;
+    }
+  }
+}
+
+.recordsLayout {
+  margin-bottom: 80px;
+  @media #{$mobile} {
+    width: 90%;
+    margin: 0 auto 60px auto;
+  }
+  .recordsTabs {
+    display: flex;
+    .recordsTab {
+      width: 50%;
+      text-align: center;
+      border: 1px solid white;
+      background: $white;
+      padding: 6px 0;
+      cursor: pointer;
+      &.active {
+        background: white;
+      }
+      .name-zh {
+        font-size: 20px;
+        color: $primary;
+        @media #{$mobile} {
+          font-size: 16px;
+        }
+      }
+      .name-en {
+        font-size: 12px;
+        color: $secondary;
+      }
+    }
+  }
+  .recordsNavs {
+    background: white;
+    display: flex;
+    padding: 60px 70px 30px 70px;
+    border-bottom: 1px solid $white;
+    @media #{$mobile} {
+      padding: 12px;
+      border-bottom: none;
+      justify-content: space-between;
+    }
+    .recordsNav {
+      margin-right: 40px;
+      color: $black;
+      cursor: pointer;
+      @media #{$mobile} {
+        margin-right: 0;
+        font-size: 14px;
+      }
+      &.active {
+        color: $primary;
+        border-bottom: 2px solid $primary;
+        font-weight: bold;
+      }
+    }
+  }
+}
+.records {
+  padding: 60px 70px;
+  display: flex;
+  flex-wrap: wrap;
+  background: white;
+  @media #{$mobile} {
+    padding: 12px 8px;
+  }
+  .record {
+    width: calc((100% - 48px) / 3);
+    margin: 8px;
+    border-radius: 14px;
+    border: 1px solid #e4dada;
+    padding: 20px 20px 12px 20px;
+    cursor: pointer;
+    @media #{$mobile} {
+      width: 100%;
+      padding: 8px 6px;
+    }
+    .recordHeader {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      .type {
+        width: 100px;
+        background: $primary;
+        color: white;
+        border-radius: 25px;
+        padding: 4px 0;
+        text-align: center;
+        margin-right: 15px;
+      }
+      .date {
+        color: $primary;
+      }
+    }
+    .recordFooter {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+      @media #{$mobile} {
+        display: block;
+      }
+      .amount {
+        color: $primary;
+      }
+    }
+  }
+}
+
+.modal-content {
+  border-color: $white;
+  padding: 8px 16px;
+}
+.modal-header {
+  text-align: center;
+  display: block;
+  position: relative;
+  .title {
+    border: 1px solid black;
+    width: fit-content;
+    font-size: 25px;
+    padding: 0 4px;
+    margin: auto;
+    @media #{$mobile} {
+      font-size: 18px;
+    }
+  }
+  .modalClose {
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    color: $primary;
+    font-size: 25px;
+    transform: translate(0, -50%);
+    cursor: pointer;
+  }
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+  }
+}
+
+.inProgress {
+  padding-left: 20px;
+  margin-bottom: 80px;
+  @media #{$mobile} {
+    width: 90%;
+    margin: 0 auto 60px auto;
+    padding: 8px 0;
+  }
+  .progressTitle {
+    display: inline-block;
+    font-size: 20px;
+    width: 6em;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 50px;
+    @media #{$mobile} {
+      display: flex;
+      width: 100%;
+      font-size: 16px;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .title-zh {
+      color: $primary;
+      @media #{$mobile} {
+        margin-right: 8px;
+      }
+    }
+    .title-en {
+      color: $secondary;
+      font-size: 12px;
+    }
+  }
+  .tenderBtns {
+    height: 60px;
+    display: flex;
+    width: 75%;
+    border-radius: 50px;
+    background: white;
+    margin: 0 auto 40px;
+    @media #{$mobile} {
+      height: 36px;
+      margin: 0 auto 16px;
+    }
+    .tenderBtn {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $primary;
+      font-size: 20px;
+      cursor: pointer;
+      letter-spacing: 4.5px;
+      @media #{$mobile} {
+        font-size: 14px;
+        letter-spacing: 2px;
+      }
+      &.active {
+        background: $primary;
+        border-radius: 50px;
+        color: white;
+      }
+    }
+  }
+  .attendData {
+    padding: 40px 0;
+    text-align: center;
+    font-size: 18px;
+    @media #{$mobile} {
+      font-size: 14px;
+    }
+    .tenderChipRow {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .tenderChip {
+      width: calc((100% - 64px) / 4);
+      margin: 8px;
+      border-radius: 14px;
+      border: 1px solid #e4dada;
+      padding: 20px 20px 12px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      @media #{$mobile} {
+        width: calc(50% - 16px);
+        display: block;
+      }
+      .name {
+        width: 140px;
+        background: $primary;
+        color: white;
+        border-radius: 25px;
+        padding: 4px 0;
+        text-align: center;
+        margin-right: 12px;
+        @media #{$mobile} {
+          width: 100%;
+          margin-right: 0;
+          margin-bottom: 4px;
+        }
+      }
+    }
+  }
+}
+

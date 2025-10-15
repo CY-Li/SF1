@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "OnDc3I190EFaf/1ocEjPmyHq1ThejhsTR8/REGiQ1wk=",
+  "Source": "DotNetBackEndService",
+  "BasePath": "_content/DotNetBackEndService",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

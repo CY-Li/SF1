@@ -1,0 +1,1157 @@
+@import 'main.scss';
+
+@keyframes bounce {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, -10px);
+  }
+  100% {
+    transform: translate(0, 0px);
+  }
+}
+
+main {
+  background: $white;
+}
+
+footer {
+  background: $white;
+}
+.accountContainer {
+  display: flex;
+  padding: 60px 40px;
+  align-items: start;
+  @media #{$mobile} {
+    display: block;
+    padding: 20px 0;
+  }
+  .leftColumn {
+    width: 320px;
+    border-radius: 0 50px 0 50px;
+    margin-right: 80px;
+    @media #{$mobile} {
+      width: 90%;
+      margin-right: auto;
+      margin-left: auto;
+      border: none;
+      padding-bottom: 20px;
+    }
+    .memberCard {
+      background: white;
+      border-radius: 0 50px 0 50px;
+      padding: 30px 0;
+      margin-bottom: 40px;
+      @media #{$mobile} {
+        margin-bottom: 20px;
+      }
+    }
+    .memberId {
+      text-align: center;
+      position: relative;
+      margin-bottom: 30px;
+      @media #{$mobile} {
+        margin-bottom: 20px;
+      }
+      .mamberName {
+        font-size: 24px;
+        @media #{$mobile} {
+          font-size: 12px;
+        }
+      }
+      .memberNum {
+        color: $gray;
+        font-size: 12px;
+        @media #{$mobile} {
+          font-size: 14px;
+        }
+      }
+    }
+    .memberDate {
+      text-align: center;
+      font-size: 17px;
+      @media #{$mobile} {
+        font-size: 14px;
+      }
+    }
+    .logoutBtn {
+      display: none;
+      width: 180px;
+      height: 30px;
+      background: white;
+      color: $primary;
+      border: 1px solid $primary;
+      text-align: center;
+      margin: 8px auto 0 auto;
+      font-size: 14px;
+      @media #{$mobile} {
+        display: flex;
+      }
+    }
+    .myNavs {
+      width: 280px;
+      margin: auto;
+      @media #{$mobile} {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+      }
+      .nav {
+        border-radius: 50px;
+        color: $primary;
+        text-align: center;
+        padding: 10px 0;
+        margin-bottom: 10px;
+        display: block;
+        font-size: 18px;
+        @media #{$mobile} {
+          border-radius: 4px;
+          margin-bottom: 0px;
+          width: 70px;
+          height: 60px;
+          justify-content: center;
+          align-items: center;
+          font-size: 14px;
+          display: flex;
+          background: white;
+        }
+        .text-en {
+          color: #d4481c;
+          @media #{$mobile} {
+            display: none;
+          }
+        }
+        &.active {
+          background: $primary;
+          color: white;
+          .text-en {
+            color: $secondary;
+          }
+        }
+      }
+    }
+  }
+  .accountBody {
+    flex-grow: 1;
+    background: white;
+    border-radius: 0 50px 0 50px;
+    width: calc(100% - 400px);
+    @media #{$mobile} {
+      width: 90%;
+      margin: auto;
+      border-radius: 0;
+      background: $white;
+    }
+    .frameTitle {
+      width: 100%;
+      text-align: center;
+      background: transparent linear-gradient(180deg, transparent 30%, #F8F2F2 100%) 0% 0% no-repeat padding-box;
+      padding: 20px;
+      border-bottom: 1px solid #e5c0b5;
+      position: relative;
+      @media #{$mobile} {
+        display: none;
+      }
+      .title-zh {
+        font-size: 25px;
+        color: $minor;
+        font-weight: bold;
+      }
+      .title-en {
+        font-size: 12px;
+        color: $secondary;
+      }
+    }
+    .date {
+      text-align: right;
+      margin-bottom: 30px;
+      padding: 80px 80px 0 80px;
+      @media #{$mobile} {
+        padding: 0 30px;
+        margin-bottom: 10px;
+      }
+      .text-en {
+        color: $minor;
+      }
+    }
+    form {
+      padding-bottom: 80px;
+      font-size: 18px;
+      @media #{$mobile} {
+        border-radius: 8px;
+        background: white;
+        padding: 30px 0;
+      }
+      .formTitle {
+        position: relative;
+        color: $primary;
+        padding-left: 220px;
+        margin-bottom: 30px;
+        letter-spacing: 7px;
+        height: 16px;
+        @media #{$mobile} {
+          padding-left: 50px;
+          letter-spacing: 2px;
+          font-size: 14px;
+          margin-bottom: 20px;
+        }
+        &::before {
+          width: 200px;
+          height: 1px;
+          display: block;
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 0;
+          transform: translate(0, -50%);
+          background: $primary;
+          @media #{$mobile} {
+            width: 40px;
+          }
+        }
+      }
+      .formGroup {
+        margin-bottom: 40px;
+        @media #{$mobile} {
+          margin-bottom: 20px;
+        }
+      }
+      .custom-input-group {
+        display: flex;
+        padding: 0 80px;
+        align-items: center;
+        margin-bottom: 20px;
+        @media #{$mobile} {
+          display: block;
+          padding: 0 20px;
+        }
+        label {
+          display: block;
+          text-align: justify;
+          text-align-last: justify;
+          margin-right: 20px;
+          width: 120px;
+          position: relative;
+          padding-right: 4px;
+          @media #{$mobile} {
+            width: max-content;
+            text-align: left;
+            text-align-last: left;
+            margin-bottom: 4px;
+            font-size: 14px;
+          }
+          &.require::after {
+            position: absolute;
+            content: "*";
+            color: $primary;
+            top: 0%;
+            left: 100%;
+          }
+        }
+        input:not([type=radio]), select {
+          flex-grow: 1;
+          max-width: 515px;
+          height: 46px;
+          @media #{$mobile} {
+            font-size: 14px;
+          }
+        }
+      }
+      #datepicker {
+        flex-grow: 1;
+        max-width: 515px;
+        position: relative;
+        input {
+          background: transparent;
+          z-index: 2;
+          position: relative;
+        }
+        .dateIcon {
+          position: absolute;
+          right: 10px;
+          top: 50%;
+          transform: translate(0, -50%);
+          cursor: pointer;
+          z-index: 1;
+        }
+      }
+      .uploadLayout {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .title {
+          width: 100%;
+          padding-left: 200px;
+          margin-bottom: 20px;
+          @media #{$mobile} {
+            padding-left: 20px;
+            font-size: 14px;
+          }
+          .tip {
+            padding-left: 18px;
+            color: $minor;
+            font-size: 16px;
+            @media #{$mobile} {
+              font-size: 12px;
+            }
+          }
+        }
+        .custom-upload-group {
+          margin-right: 20px;
+          margin-bottom: 30px;
+          @media #{$mobile} {
+            margin: 0 0 30px 0;
+            padding: 0 10px;
+          }
+          .name {
+            text-align: center;
+            margin-bottom: 8px;
+            color: $gray;
+            @media #{$mobile} {
+              font-size: 12px;
+              text-align: left;
+            }
+          }
+          .uploadFrame {
+            width: 300px;
+            height: 190px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            text-align: center;
+            background: #fcfbfb;
+            border: 2px solid #f8f2f2;
+            border-radius: 14px;
+            position: relative;
+            overflow: hidden;
+          }
+          .tip1 {
+            width: 100%;
+            font-size: 18px;
+            @media #{$mobile} {
+              display: none;
+            }
+          }
+          .tip2 {
+            width: 100%;
+            font-size: 15px;
+            color: $gray;
+            margin: 8px 0;
+            @media #{$mobile} {
+              display: none;
+            }
+          }
+          label.common-btn {
+            background: white;
+            border: 1px solid $minor;
+            color: $minor;
+            width: 164px;
+            height: 36px;
+            position: relative;
+            z-index: 2;
+            @media #{$mobile} {
+              width: 120px;
+              height: 28px;
+              font-size: 14px;
+            }
+          }
+          input {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            opacity: 0;
+          }
+          .imgPreview {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+      .tips {
+        padding: 16px 10px;
+        margin: 0 30px 20px 30px;
+        border-radius: 8px;
+        background: $white;
+        @media #{$mobile} {
+          margin: 0 10px 20px 10px;
+          font-size: 12px;
+          padding: 12px;
+        }
+        ul {
+          padding-left: 16px;
+        }
+        li {
+          margin-bottom: 4px;
+          list-style: decimal;
+        }
+      }
+
+      .form-check {
+        &.formCheck {
+          padding: 0 60px;
+          margin-bottom: 40px;
+        }
+        @media #{$mobile} {
+          font-size: 12px;
+        }
+        .form-check-input {
+          border-color: #d4481c;
+          &:focus {
+            box-shadow: 0 0 0 0.25rem rgba(222,172,156,.25);
+          }
+          &:checked {
+            background-color: #d4481c;
+            border-color: #d4481c;
+          }
+        }
+      }
+      button.common-btn {
+        width: 282px;
+        height: 63px;
+        flex-wrap: wrap;
+        margin: auto;
+        @media #{$mobile} {
+          width: 240px;
+          height: 55px;
+        }
+      }
+    }
+
+    .frame.tender {
+      background: $white;
+      .subtotal {
+        display: flex;
+        background: $primary;
+        border-radius: 14px;
+        padding: 30px 0;
+        margin-bottom: 60px;
+        flex-wrap: wrap;
+        @media #{$mobile} {
+          margin: 0 auto 20px auto;
+          padding: 8px 0;
+        }
+        .child {
+          width: 50%;
+          color: $white;
+          padding: 0 30px 45px 30px;
+          @media #{$mobile} {
+            padding: 0 12px 20px 12px;
+          }
+          .name {
+            font-size: 18px;
+            margin-bottom: 20px;
+            @media #{$mobile} {
+              font-size: 12px;
+              margin-bottom: 12px;
+            }
+          }
+          .amount {
+            font-size: 36px;
+            text-align: center;
+            @media #{$mobile} {
+              font-size: 18px;
+            }
+          }
+          &:nth-child(odd) {
+            border-right: 1px solid #bb6459;
+          }
+        }
+      }
+      .tenderBtns {
+        height: 70px;
+        display: flex;
+        width: 100%;
+        border-radius: 50px;
+        background: white;
+        margin-bottom: 60px;
+        @media #{$mobile} {
+          height: 36px;
+          margin-bottom: 20px;
+        }
+        .tenderBtn {
+          width: 50%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: $primary;
+          font-size: 22px;
+          cursor: pointer;
+          letter-spacing: 4.5px;
+          @media #{$mobile} {
+            font-size: 14px;
+            letter-spacing: 2px;
+          }
+          &.active {
+            background: $primary;
+            border-radius: 50px;
+            color: white;
+          }
+        }
+      }
+      .attendData {
+        padding: 40px 0;
+        text-align: center;
+        font-size: 18px;
+        @media #{$mobile} {
+          font-size: 14px;
+        }
+        .tenderChipRow {
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .tenderChip {
+          width: calc((100% - 64px) / 4);
+          margin: 8px;
+          border-radius: 14px;
+          border: 1px solid #e4dada;
+          padding: 20px 20px 12px 20px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          cursor: pointer;
+          @media #{$mobile} {
+            width: calc(50% - 16px);
+            display: block;
+          }
+          .name {
+            width: 140px;
+            background: $primary;
+            color: white;
+            border-radius: 25px;
+            padding: 4px 0;
+            text-align: center;
+            margin-right: 12px;
+            @media #{$mobile} {
+              width: 100%;
+              margin-right: 0;
+              margin-bottom: 4px;
+            }
+          }
+        }
+      }
+      
+    }
+    .frame.subaccount {
+      background: $white;
+      font-size: 18px;
+      @media #{$mobile} {
+        font-size: 14px;
+      }
+      .accountData {
+        background: white;
+        border-radius: 14px;
+        border: 1px solid #880f0b;
+        margin-bottom: 20px;
+      }
+      .mainAccountData {
+        display: flex;
+        background: transparent linear-gradient(180deg, $primary 0%, #880f0b 100%) 0% 0% no-repeat padding-box;
+        border-radius: 14px;
+        padding: 30px 0;
+        justify-content: center;
+        @media #{$mobile} {
+          padding: 8px 20px;
+          display: block;
+        }
+        .child {
+          width: 70%;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          align-content: center;
+          justify-content: center;
+          color: $white;
+          padding: 20px 30px;
+          @media #{$mobile} {
+            width: 100%;
+            padding: 20px 0;
+          }
+          .nowAt {
+            width: 100%;
+            display: flex;
+            .jump1 {
+              margin-left: 8px;
+              animation: 1s ease-in-out 0s bounce infinite;
+            }
+            .jump2 {
+              margin-left: 4px;
+              animation: 1s ease-in-out .3s bounce infinite;
+            }
+            .jump3 {
+              margin-left: 4px;
+              animation: 1s ease-in-out .6s bounce infinite;
+            }
+          }
+          .changeRow {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            .common-btn {
+              width: 90px;
+              height: 28px;
+              background: white;
+              color: $primary;
+              font-size: 14px;
+            }
+          }
+          .dataRow {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            @media #{$mobile} {
+              display: block;
+            }
+            .inviteData {
+              font-size: 16px;
+              text-align: center;
+              @media #{$mobile} {
+                text-align: left;
+                margin: 8px 0;
+                font-size: 14px;
+              }
+              .text-en {
+                background: $secondary;
+                padding: 4px;
+                border-radius: 8px;
+                @media #{$mobile} {
+                  text-align: center;
+                }
+              }
+            }
+          }
+          .btnRow {
+            display: flex;
+            width: 100%;
+            .common-btn {
+              width: 118px;
+              height: 37px;
+              margin-left: 12px;
+              border: 1.5px solid white;
+              min-width: 118px;
+              @media #{$mobile} {
+                font-size: 12px;
+                width: 90px;
+                height: 32px;
+                min-width: 90px;
+              }
+            }
+            select {
+              border-radius: 50px;
+              @media #{$mobile} {
+                height: 32px;
+                font-size: 12px;
+              }
+            }
+          }
+          
+        }
+      }
+      .subaccountData {
+        font-size: 24px;
+        padding: 20px;
+        text-align: center;
+        @media #{$mobile} {
+          font-size: 16px;
+          padding: 8px;
+        }
+      }
+      .accountListTable {
+        background: #880f0b;
+        border-radius: 14px;
+        font-size: 18px;
+        text-align: center;
+        padding-bottom: 65px;
+        @media #{$mobile} {
+          font-size: 14px;
+          border-radius: 0;
+          background: $white;
+        }
+        .tableHead {
+          display: flex;
+          justify-content: space-between;
+          color: white;
+          padding: 24px;
+          @media #{$mobile} {
+            display: none;
+          }
+        }
+        .tableBody {
+          .addTableRow {
+            padding: 20px 0;
+            background: $white;
+            display: none;
+            .positionColumn {
+              display: block !important;
+            }
+            .btnRow {
+              display: flex;
+              justify-content: flex-end;
+              align-items: center;
+              padding: 10px 5% 10px 0;
+              .btn {
+                margin-left: 20px;
+                color: $primary;
+              }
+            }
+            .tableRow {
+              @media #{$mobile} {
+                margin-bottom: 0;
+              }
+            }
+          }
+          .tableRow {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px;
+            color: $primary;
+            background: white;
+            @media #{$mobile} {
+              flex-wrap: wrap;
+              padding: 20px 20px;
+              margin-bottom: 12px;
+            }
+            &.active {
+              @media #{$mobile} {
+                background: $primary;
+                color: white;
+              }
+              .common-btn {
+                &.toggleBtn {
+                  display: none;
+                }
+                &.isActive {
+                  display: flex;
+                }
+              }
+              .toggleCoumn-md {
+                .toggleBtn {
+                  display: none;
+                }
+                .isActive {
+                  display: flex;
+                  justify-content: flex-end;
+                  .jump1 {
+                    margin-left: 4px;
+                    animation: 1s ease-in-out 0s bounce infinite;
+                  }
+                  .jump2 {
+                    margin-left: 4px;
+                    animation: 1s ease-in-out .3s bounce infinite;
+                  }
+                  .jump3 {
+                    margin-left: 4px;
+                    animation: 1s ease-in-out .6s bounce infinite;
+                  }
+                }
+              }
+            }
+            .common-btn {
+              font-size: 16px;
+              border: 1px solid $primary;
+              max-width: 160px;
+              height: 46px;
+              margin: auto;
+              &.toggleBtn {
+                background: white;
+                color: $primary;
+              }
+              &.isActive {
+                display: none;
+              }
+            }
+          }
+        }
+        .accountColumn {
+          width: 20%;
+          @media #{$mobile} {
+            flex-grow: 1;
+            text-align: left;
+          }
+        }
+        .positionColumn {
+          width: 45%;
+          @media #{$mobile} {
+            display: none;
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+          }
+          select {
+            border-radius: 50px;
+            text-align: center;
+            color: $primary;
+            border-color: $primary;
+            height: 46px;
+            @media #{$mobile} {
+              font-size: 14px;
+              border: none;
+              background-color: $white;
+              height: 36px;
+            }
+          }
+        }
+        .toggleColumn {
+          width: 20%;
+          @media #{$mobile} {
+            display: none;
+          }
+        }
+        .toggleCoumn-md {
+          display: none;
+          @media #{$mobile} {
+            display: block;
+            width: 60px;
+          }
+          .toggleBtn {
+            text-align: right;
+            font-size: 18px;
+            color: $primary;
+          }
+          .isActive {
+            display: none;
+          }
+        }
+        .paginations {
+          margin: auto;
+          display: flex;
+          color: $primary;
+          justify-content: center;
+          align-items: center;
+          font-size: 15px;
+          padding: 30px 0;
+          background: $white;
+          &>div {
+            cursor: pointer;
+          }
+          .page-prev, .page-next {
+            font-size: 20px;
+            &.disabled {
+              color: #9f9494;
+              cursor: unset;
+            }
+          }
+          .page-prev {
+            margin-right: 30px;
+          }
+          .page-ellipsis-prev {
+            margin-right: 20px;
+          }
+          .page-next {
+            margin-left: 30px;
+          }
+          .page-ellipsis-next {
+            margin-left: 20px;
+          }
+          .page {
+            margin: 0 5px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &.active {
+              background: $primary;
+              color: white;
+            }
+          }
+        }
+        .notStarted {
+          padding: 60px 0;
+          text-align: center;
+          background: white;
+          @media #{$mobile} {
+            padding: 60px 20px;
+            background: transparent;
+          }
+          .tip {
+            color: $minor;
+            margin-top: 20px;
+          }
+        }
+      }
+      .inviteTable {
+        border-radius: 14px;
+        font-size: 18px;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        @media #{$mobile} {
+          font-size: 14px;
+        }
+        .label {
+          width: 7em;
+          min-width: 7em;
+        }
+        .inviteInput {
+          position: relative;
+          flex-grow: 1;
+          input {
+            background-color: white !important;
+            height: 46px;
+            border-color: $secondary;
+            padding-right: 80px;
+            @media #{$mobile} {
+              height: 36px;
+              padding-right: 65px;
+            }
+          }
+          .copyBtn {
+            color: $minor;
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translate(0, -50%);
+            padding-left: 20px;
+            border-left: 1px solid $minor;
+            cursor: pointer;
+            @media #{$mobile} {
+              right: 16px;
+              padding-left: 16px;
+            }
+          }
+        }
+      }
+    }
+
+  }
+  .dragContainer {
+    .tips {
+      box-shadow: 0px 3px 15px #4E27100F;
+      padding: 20px 40px;
+      background: white;
+      position: absolute;
+      top: -20px;
+      right: 40px;
+      display: flex;
+      align-items: center;
+      border-radius: 14px;
+      z-index: 99;
+      @media #{$mobile} {
+        right: 50%;
+        width: 95%;
+        top: 0px;
+        max-width: 600px;
+        transform: translate(50%, 0);
+        padding: 12px 16px;
+        justify-content: space-around;
+      }
+      .title {
+        text-align: center;
+        margin-right: 40px;
+        font-size: 18px;
+        color: $primary;
+        @media #{$mobile} {
+          font-size: 16px;
+          margin-right: 12px;
+        }
+      }
+      .tip {
+        background: #f8f2f2;
+        border-radius: 40px;
+        padding: 16px 40px 16px 16px;
+        display: flex;
+        align-items: center;
+        @media #{$mobile} {
+          padding: 8px 12px;
+        }
+      }
+      .arrows {
+        display: flex;
+        height: 80px;
+        width: 100px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-right: 40px;
+        @media #{$mobile} {
+          margin-right: 12px;
+          font-size: 12px;
+        }
+        .text-en {
+          position: relative;
+        }
+        .arrow {
+          width: 14px;
+          position: absolute;
+          &.up {
+            bottom: calc(100% + 8px);
+            left: calc(50% - 7px);
+          }
+          &.right {
+            transform: rotate(90deg);
+            bottom: calc(50% - 11px);
+            left: calc(100% + 6px);
+          }
+          &.down {
+            transform: rotate(180deg);
+            top: calc(100% + 8px);
+            left: calc(50% - 7px);
+          }
+          &.left {
+            transform: rotate(-90deg);
+            bottom: calc(50% - 11px);
+            right: calc(100% + 6px);
+          }
+        }
+      }
+      .text {
+        color: $minor;
+        @media #{$mobile} {
+          font-size: 12px;
+        }
+      }
+      .zooms {
+        margin-top: 12px;
+        #zoomIn, #zoomOut {
+          margin: 0 8px;
+          color: #a11f1a;
+          cursor: pointer;
+          i {
+            margin-right: 4px;
+          }
+        }
+      }
+    }
+    #drag {
+      width: 100%;
+      margin-bottom: 50px;
+      height: 600px;
+      position: relative;
+      overflow: hidden;
+      background-size: contain;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 40px;
+      @media #{$mobile} {
+        height: 400px;
+      }
+
+      .dragItems {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 30px;
+        align-items: baseline;
+        &.children::before {
+          content: '';
+          position: absolute;
+          display: block;
+          width: calc(100% - 180px);
+          left: 90px;
+          top: -15px;
+          height: 1px;
+          background: $primary;
+        }
+        .dragItem {
+          display: flex;
+          align-items: center;
+          align-content: center;
+          justify-content: center;
+          position: relative;
+          width: 180px;
+          height: 60px;
+          border-radius: 50px;
+          background: white;
+          border: 1px solid $primary;
+          color: $primary;
+          text-align: center;
+          flex-wrap: wrap;
+          line-height: 18px;
+          margin: 0 12px;
+          &.active {
+            color: #f8f2f2;
+            background: $primary;
+            &::before {
+              display: block;
+              content: "";
+              width: 8px;
+              height: 8px;
+              border-radius: 50%;
+              background: $primary;
+              position: absolute;
+              top: calc(50% - 4px);
+              right: calc(100% - 4px);
+            }
+            &::after {
+              content: "";
+              display: block;
+              width: 1px;
+              height: 15px;
+              position: absolute;
+              background: $primary;
+              top: 100%;
+              left: calc(50% - 0.5px);
+            }
+          }
+          .star {
+            position: absolute;
+            top: 50%;
+            left: 2px;
+            color: $secondary;
+            transform: translate(0, -50%);
+          }
+        }
+      }
+    }
+  }
+}
+
+.modal-content {
+  border-color: $white;
+  padding: 8px 16px;
+}
+.modal-header {
+  text-align: center;
+  display: block;
+  position: relative;
+  .title {
+    border: 1px solid black;
+    width: fit-content;
+    font-size: 25px;
+    padding: 0 4px;
+    margin: auto;
+    @media #{$mobile} {
+      font-size: 18px;
+    }
+  }
+  .modalClose {
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    color: $primary;
+    font-size: 25px;
+    transform: translate(0, -50%);
+    cursor: pointer;
+  }
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+  }
+}

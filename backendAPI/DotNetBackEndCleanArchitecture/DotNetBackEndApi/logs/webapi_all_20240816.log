@@ -1,0 +1,40 @@
+2024-08-16 10:07:19.980 +08:00 [INF] Now listening on: http://localhost:5000
+2024-08-16 10:07:20.347 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-16 10:07:24.110 +08:00 [INF] Hosting environment: Development
+2024-08-16 10:07:24.111 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2024-08-16 10:07:25.115 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 363.7010 ms
+2024-08-16 10:07:27.380 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 1106.6612 ms
+2024-08-16 10:07:52.634 +08:00 [INF] TenderController GetTender START
+2024-08-16 10:07:52.787 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/TenderMgmt/TenderService/GetTender
+2024-08-16 10:07:52.795 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/TenderMgmt/TenderService/GetTender
+2024-08-16 10:07:56.717 +08:00 [INF] Received HTTP response headers after 3908.6632ms - 200
+2024-08-16 10:07:56.755 +08:00 [INF] End processing HTTP request after 3974.9623ms - 200
+2024-08-16 10:07:56.787 +08:00 [INF] ROSCAController GetTenderList END
+2024-08-16 10:07:56.817 +08:00 [INF] HTTP GET /api/Tender responded 200 in 4524.2101 ms
+2024-08-16 10:08:20.482 +08:00 [INF] TenderController Bidding START
+2024-08-16 10:08:20.507 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/TenderMgmt/TenderService/Bidding
+2024-08-16 10:08:20.510 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/TenderMgmt/TenderService/Bidding
+2024-08-16 10:09:03.022 +08:00 [INF] Received HTTP response headers after 42508.5446ms - 200
+2024-08-16 10:09:03.025 +08:00 [INF] End processing HTTP request after 42518.318ms - 200
+2024-08-16 10:09:03.032 +08:00 [INF] TenderController Bidding END
+2024-08-16 10:09:03.037 +08:00 [INF] HTTP POST /api/Tender/Bidding responded 200 in 42582.0562 ms
+2024-08-16 10:11:23.498 +08:00 [INF] Now listening on: http://localhost:5000
+2024-08-16 10:11:23.517 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-16 10:11:23.521 +08:00 [INF] Hosting environment: Development
+2024-08-16 10:11:23.523 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2024-08-16 10:11:29.405 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 441.1583 ms
+2024-08-16 10:11:31.616 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 1204.9506 ms
+2024-08-16 10:11:59.641 +08:00 [INF] TenderController Bidding START
+2024-08-16 10:11:59.690 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/TenderMgmt/TenderService/Bidding
+2024-08-16 10:11:59.698 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/TenderMgmt/TenderService/Bidding
+2024-08-16 10:12:09.778 +08:00 [INF] Received HTTP response headers after 10075.7515ms - 200
+2024-08-16 10:12:10.196 +08:00 [INF] End processing HTTP request after 10510.7294ms - 200
+2024-08-16 10:12:10.202 +08:00 [INF] TenderController Bidding END
+2024-08-16 10:12:10.220 +08:00 [INF] HTTP POST /api/Tender/Bidding responded 200 in 10813.3890 ms
+2024-08-16 10:13:13.340 +08:00 [INF] ScheduleController BiddingSchedule START
+2024-08-16 10:13:13.359 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/ScheduleMgmt/ScheduleService/BiddingSchedule
+2024-08-16 10:13:13.364 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/ScheduleMgmt/ScheduleService/BiddingSchedule
+2024-08-16 10:13:13.801 +08:00 [INF] Received HTTP response headers after 435.8646ms - 200
+2024-08-16 10:13:13.824 +08:00 [INF] End processing HTTP request after 465.4029ms - 200
+2024-08-16 10:13:13.825 +08:00 [INF] ScheduleController BiddingSchedule END
+2024-08-16 10:13:13.827 +08:00 [INF] HTTP POST /api/Schedule/BiddingSchedule responded 200 in 521.3042 ms

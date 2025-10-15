@@ -1,0 +1,15 @@
+D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Domain\DomainEntity\bin\Debug\net7.0\DomainEntity.deps.json
+D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Domain\DomainEntity\bin\Debug\net7.0\DomainEntity.dll
+D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Domain\DomainEntity\bin\Debug\net7.0\DomainEntity.pdb
+D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Domain\DomainEntity\bin\Debug\net7.0\DomainEntityDTO.dll
+D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Domain\DomainEntity\bin\Debug\net7.0\DomainEntityDTO.pdb
+D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Domain\DomainEntity\obj\Debug\net7.0\DomainEntity.csproj.AssemblyReference.cache
+D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Domain\DomainEntity\obj\Debug\net7.0\DomainEntity.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Domain\DomainEntity\obj\Debug\net7.0\DomainEntity.AssemblyInfoInputs.cache
+D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Domain\DomainEntity\obj\Debug\net7.0\DomainEntity.AssemblyInfo.cs
+D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Domain\DomainEntity\obj\Debug\net7.0\DomainEntity.csproj.CoreCompileInputs.cache
+D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Domain\DomainEntity\obj\Debug\net7.0\DomainEntity.csproj.CopyComplete
+D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Domain\DomainEntity\obj\Debug\net7.0\DomainEntity.dll
+D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Domain\DomainEntity\obj\Debug\net7.0\refint\DomainEntity.dll
+D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Domain\DomainEntity\obj\Debug\net7.0\DomainEntity.pdb
+D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Domain\DomainEntity\obj\Debug\net7.0\ref\DomainEntity.dll

@@ -1,0 +1,172 @@
+<form [formGroup]="formGroup" (ngSubmit)="queryFrontPageList(0,pageSize,pageSort,pageSortDirection)">
+    <mat-form-field class="mat-50">
+        <mat-label>帳號</mat-label>
+        <input formControlName="mm_account" matInput>
+        <mat-error *ngIf="formGroup.get('mm_account')?.hasError('pattern')">
+            帳號不可超過10個字元
+        </mat-error>
+    </mat-form-field>
+    <mat-form-field class="mat-50">
+        <mat-label>名稱</mat-label>
+        <input matInput formControlName="mm_name">
+        <mat-error *ngIf="formGroup.get('mm_name')?.hasError('maxlength')">
+            名稱不可超過30個字元
+        </mat-error>
+    </mat-form-field>
+    <mat-form-field class="mat-50">
+        <mat-label>介紹人</mat-label>
+        <input matInput formControlName="mm_introduce_user">
+        <mat-error *ngIf="formGroup.get('mm_introduce_user')?.hasError('pattern')">
+            只能是數字
+        </mat-error>
+    </mat-form-field>
+    <mat-form-field class="mat-50">
+        <mat-label>邀請碼</mat-label>
+        <input matInput formControlName="mm_invite_user">
+        <mat-error *ngIf="formGroup.get('mm_invite_user')?.hasError('pattern')">
+            只能是數字
+        </mat-error>
+    </mat-form-field>
+
+
+    <div class="form-action">
+        <!-- <button mat-raised-button color="primary" (click)="openAddEditForm(false);$event.stopPropagation()">新增</button> -->
+        <button mat-raised-button color="primary" type="submit">查詢</button>
+    </div>
+</form>
+
+
+
+
+<div class="table-container  mat-table">
+    <table mat-table [dataSource]="dataSource" multiTemplateDataRows matSort matSortDirection="desc">
+        <!--  Action  Column  -->
+        <ng-container matColumnDef="action" class="table-action">
+            <th mat-header-cell *matHeaderCellDef> Action </th>
+            <td mat-cell *matCellDef="let  row">
+                <div class="table-action">
+                    <button mat-icon-button color="  primary" (click)="openAddEditForm(true,row)">
+                        <mat-icon>table_view</mat-icon>
+                    </button>
+                    <!-- <button mat-icon-button color="primary" (click)="openAddEditForm(false,row)">
+                        <mat-icon>edit</mat-icon>
+                    </button> -->
+                    <!--  <button  mat-icon-button  color="warn"  (click)="onDelete(row.id,'確定刪除嗎?')">
+                                        <mat-icon>delete</mat-icon>
+                                </button>  -->
+                </div>
+
+                <!--  明細用  -->
+                <!--  <button  mat-icon-button  aria-label="expand  row"
+                                (click)="(expandedElement  =  expandedElement  ===  row  ?  null  :  row);  $event.stopPropagation()">
+                                @if  (expandedElement  ===  row)  {
+                                <mat-icon>keyboard_arrow_up</mat-icon>
+                                }  @else  {
+                                <mat-icon>keyboard_arrow_down</mat-icon>
+                                }
+                        </button>  -->
+            </td>
+        </ng-container>
+
+        <!--  明細用  -->
+        <ng-container matColumnDef="expandedDetail">
+            <td mat-cell *matCellDef="let  row" [attr.colspan]="3">
+                <div class="example-element-detail"
+                    [@detailExpand]="row  ==  expandedElement  ?  'expanded'  :  'collapsed'">
+
+                    <table>
+                        <ng-container>
+                            <tr> Details </tr>
+                            <td> {{row.sps_id}} </td>
+                        </ng-container>
+                    </table>
+
+                </div>
+            </td>
+        </ng-container>
+
+
+        <!--  mm_id  Column  -->
+        <ng-container matColumnDef="mm_id">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> ID </th>
+            <td mat-cell *matCellDef="let  row"> {{row.mm_id}} </td>
+        </ng-container>
+
+        <!--  mm_account  Column  -->
+        <ng-container matColumnDef="mm_account">
+            <th mat-header-cell *matHeaderCellDef> 帳號 </th>
+            <td mat-cell *matCellDef="let  row"> {{row.mm_account}} </td>
+        </ng-container>
+
+        <!--  mm_name  Column  -->
+        <ng-container matColumnDef="mm_name">
+            <th mat-header-cell *matHeaderCellDef> 名稱 </th>
+            <td mat-cell *matCellDef="let  row"> {{row.mm_name}} </td>
+        </ng-container>
+
+        <!--  mm_introduce_user  Column  -->
+        <ng-container matColumnDef="mm_introduce_user">
+            <th mat-header-cell *matHeaderCellDef> 介紹人 </th>
+            <td mat-cell *matCellDef="let  row"> {{row.mm_introduce_user}} </td>
+        </ng-container>
+
+        <!--  mm_invite_user  Column  -->
+        <ng-container matColumnDef="mm_invite_user">
+            <th mat-header-cell *matHeaderCellDef> 邀請人 </th>
+            <td mat-cell *matCellDef="let  row"> {{row.mm_invite_user}} </td>
+        </ng-container>
+
+        <!--  mm_level  Column  -->
+        <ng-container matColumnDef="mm_level">
+            <th mat-header-cell *matHeaderCellDef> 等級 </th>
+            <td mat-cell *matCellDef="let  row"> {{row.mm_level}} </td>
+        </ng-container>
+
+        <!--  mm_status  Column  -->
+        <ng-container matColumnDef="mm_status">
+            <th mat-header-cell *matHeaderCellDef> 帳號狀態 </th>
+            <td mat-cell *matCellDef="let  row"> {{row.mm_status}} </td>
+        </ng-container>
+
+        <!--  mm_kyc  Column  -->
+        <ng-container matColumnDef="mm_kyc">
+            <th mat-header-cell *matHeaderCellDef> KYC狀態 </th>
+            <td mat-cell *matCellDef="let  row"> {{row.mm_kyc}} </td>
+        </ng-container>
+
+        <!--  mm_kyc  Column  -->
+        <ng-container matColumnDef="mm_create_datetime">
+            <th mat-header-cell *matHeaderCellDef> 加入時間 </th>
+            <td mat-cell *matCellDef="let  row"> {{row.mm_create_datetime}} </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let  row;  columns:  displayedColumns;" class="example-element-row"
+            [class.example-expanded-row]="expandedElement  ===  row"
+            (click)="expandedElement  =  expandedElement  ===  row  ?  null  :  row">
+        </tr>
+        <!--  <tr  mat-row  *matRowDef="let  row;  columns:  ['expandedDetail']"  class="example-detail-row"></tr>  -->
+        <!--  Row  shown  when  there  is  no  matching  data.  -->
+        <tr class="mat-row" *matNoDataRow>
+            <td class="mat-cell" colspan="4">No data matching the filter</td>
+        </tr>
+    </table>
+    
+    <div class="paginator-container">
+        <div class="page-input-container">
+            <span class="input-label">跳轉到</span>
+            <input matInput 
+                   type="number" 
+                   [(ngModel)]="currnPageIndex"
+                   (change)="onPageInputChange()"
+                   [min]="1" 
+                   [max]="totalpages"
+                   class="page-input">
+            <span class="total-pages">/ {{ totalpages }}</span>
+        </div>
+        <mat-paginator [length]="totalCount" [pageIndex]="pageIndex" [pageSizeOptions]="[10]"
+            aria-label="Select  page  of  users">
+        </mat-paginator>
+    </div>
+
+</div>

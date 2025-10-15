@@ -1,0 +1,161 @@
+2024-10-03 01:12:26.987 +08:00 [INF] Now listening on: http://localhost:5001
+2024-10-03 01:12:27.023 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-03 01:12:27.030 +08:00 [INF] Hosting environment: Development
+2024-10-03 01:12:27.037 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2024-10-03 01:12:36.291 +08:00 [INF] HTTP GET / responded 404 in 41.6388 ms
+2024-10-03 01:13:06.687 +08:00 [INF] AnnouncementServiceController QueryAnnAdmin START
+2024-10-03 01:13:07.106 +08:00 [INF] AnnouncementRepository QueryAnnAdmin START
+2024-10-03 01:13:08.218 +08:00 [INF] AnnouncementRepository QueryAnnAdmin START
+2024-10-03 01:13:08.225 +08:00 [INF] AnnouncementRepository QueryAnnAdmin END
+2024-10-03 01:13:08.226 +08:00 [INF] AnnouncementServiceController QueryAnnAdmin END
+2024-10-03 01:13:08.258 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnAdmin responded 200 in 1854.5005 ms
+2024-10-03 01:14:19.117 +08:00 [INF] Now listening on: http://localhost:5001
+2024-10-03 01:14:19.176 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-03 01:14:19.178 +08:00 [INF] Hosting environment: Development
+2024-10-03 01:14:19.179 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2024-10-03 01:14:21.681 +08:00 [INF] HTTP GET / responded 404 in 2.1819 ms
+2024-10-03 01:15:42.100 +08:00 [INF] AnnouncementServiceController QueryAnnAdmin START
+2024-10-03 01:15:42.106 +08:00 [INF] AnnouncementRepository QueryAnnAdmin START
+2024-10-03 01:15:43.933 +08:00 [INF] AnnouncementRepository QueryAnnAdmin END
+2024-10-03 01:15:43.949 +08:00 [INF] AnnouncementServiceController QueryAnnAdmin END
+2024-10-03 01:15:44.009 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnAdmin responded 200 in 2134.5173 ms
+2024-10-03 01:16:00.164 +08:00 [INF] AnnouncementServiceController QueryAnnAdmin START
+2024-10-03 01:16:00.168 +08:00 [INF] AnnouncementRepository QueryAnnAdmin START
+2024-10-03 01:16:00.179 +08:00 [INF] AnnouncementRepository QueryAnnAdmin END
+2024-10-03 01:16:00.182 +08:00 [INF] AnnouncementServiceController QueryAnnAdmin END
+2024-10-03 01:16:00.186 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnAdmin responded 200 in 39.3331 ms
+2024-10-03 01:16:10.908 +08:00 [INF] AnnouncementServiceController QueryAnnAdmin START
+2024-10-03 01:16:10.928 +08:00 [INF] AnnouncementRepository QueryAnnAdmin START
+2024-10-03 01:16:10.941 +08:00 [INF] AnnouncementRepository QueryAnnAdmin END
+2024-10-03 01:16:10.943 +08:00 [INF] AnnouncementServiceController QueryAnnAdmin END
+2024-10-03 01:16:10.947 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnAdmin responded 200 in 48.3777 ms
+2024-10-03 01:18:05.040 +08:00 [INF] Now listening on: http://localhost:5001
+2024-10-03 01:18:05.062 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-03 01:18:05.064 +08:00 [INF] Hosting environment: Development
+2024-10-03 01:18:05.066 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2024-10-03 01:18:10.370 +08:00 [INF] HTTP GET / responded 404 in 3.0307 ms
+2024-10-03 01:18:25.407 +08:00 [INF] AnnouncementServiceController QueryAnnAdmin START
+2024-10-03 01:18:25.718 +08:00 [INF] AnnouncementRepository QueryAnnAdmin START
+2024-10-03 01:18:26.401 +08:00 [INF] AnnouncementRepository QueryAnnAdmin END
+2024-10-03 01:18:26.414 +08:00 [INF] AnnouncementServiceController QueryAnnAdmin END
+2024-10-03 01:18:26.476 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnAdmin responded 200 in 1351.3771 ms
+2024-10-03 01:18:37.836 +08:00 [INF] AnnouncementServiceController QueryAnnAdmin START
+2024-10-03 01:18:37.837 +08:00 [INF] AnnouncementRepository QueryAnnAdmin START
+2024-10-03 01:18:37.842 +08:00 [INF] AnnouncementRepository QueryAnnAdmin END
+2024-10-03 01:18:37.844 +08:00 [INF] AnnouncementServiceController QueryAnnAdmin END
+2024-10-03 01:18:37.855 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnAdmin responded 200 in 32.9003 ms
+2024-10-03 01:20:04.517 +08:00 [INF] Now listening on: http://localhost:5001
+2024-10-03 01:20:04.573 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-03 01:20:04.576 +08:00 [INF] Hosting environment: Development
+2024-10-03 01:20:04.619 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2024-10-03 01:20:12.555 +08:00 [INF] HTTP GET / responded 404 in 25.1241 ms
+2024-10-03 01:21:00.637 +08:00 [INF] AnnouncementServiceController QueryAnnAdmin START
+2024-10-03 01:21:00.653 +08:00 [INF] AnnouncementRepository QueryAnnAdmin START
+2024-10-03 01:21:01.269 +08:00 [INF] AnnouncementRepository QueryAnnAdmin END
+2024-10-03 01:21:01.287 +08:00 [INF] AnnouncementServiceController QueryAnnAdmin END
+2024-10-03 01:21:01.330 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnAdmin responded 200 in 1292.8272 ms
+2024-10-03 02:02:41.726 +08:00 [INF] Now listening on: http://localhost:5001
+2024-10-03 02:02:41.745 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-03 02:02:41.746 +08:00 [INF] Hosting environment: Development
+2024-10-03 02:02:41.747 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2024-10-03 02:02:51.373 +08:00 [INF] HTTP GET / responded 404 in 2.6650 ms
+2024-10-03 02:04:03.981 +08:00 [INF] AnnouncementServiceController QueryAnnAdmin START
+2024-10-03 02:04:03.987 +08:00 [INF] AnnouncementRepository QueryAnnAdmin START
+2024-10-03 02:04:04.410 +08:00 [INF] AnnouncementRepository QueryAnnAdmin END
+2024-10-03 02:04:04.413 +08:00 [INF] AnnouncementServiceController QueryAnnAdmin END
+2024-10-03 02:04:04.448 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnAdmin responded 200 in 607.8105 ms
+2024-10-03 02:04:19.349 +08:00 [INF] AnnouncementServiceController QueryAnnAdmin START
+2024-10-03 02:04:19.352 +08:00 [INF] AnnouncementRepository QueryAnnAdmin START
+2024-10-03 02:04:19.365 +08:00 [INF] AnnouncementRepository QueryAnnAdmin END
+2024-10-03 02:04:19.367 +08:00 [INF] AnnouncementServiceController QueryAnnAdmin END
+2024-10-03 02:04:19.371 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnAdmin responded 200 in 27.6852 ms
+2024-10-03 02:04:22.944 +08:00 [INF] AnnouncementServiceController QueryAnnAdmin START
+2024-10-03 02:04:22.969 +08:00 [INF] AnnouncementRepository QueryAnnAdmin START
+2024-10-03 02:04:22.981 +08:00 [INF] AnnouncementRepository QueryAnnAdmin END
+2024-10-03 02:04:22.983 +08:00 [INF] AnnouncementServiceController QueryAnnAdmin END
+2024-10-03 02:04:22.986 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnAdmin responded 200 in 44.9449 ms
+2024-10-03 02:04:28.284 +08:00 [INF] AnnouncementServiceController QueryAnnAdmin START
+2024-10-03 02:04:28.285 +08:00 [INF] AnnouncementRepository QueryAnnAdmin START
+2024-10-03 02:04:28.289 +08:00 [INF] AnnouncementRepository QueryAnnAdmin END
+2024-10-03 02:04:28.296 +08:00 [INF] AnnouncementServiceController QueryAnnAdmin END
+2024-10-03 02:04:28.299 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnAdmin responded 200 in 16.5336 ms
+2024-10-03 02:04:32.332 +08:00 [INF] AnnouncementServiceController QueryAnnAdmin START
+2024-10-03 02:04:32.343 +08:00 [INF] AnnouncementRepository QueryAnnAdmin START
+2024-10-03 02:04:32.347 +08:00 [INF] AnnouncementRepository QueryAnnAdmin END
+2024-10-03 02:04:32.355 +08:00 [INF] AnnouncementServiceController QueryAnnAdmin END
+2024-10-03 02:04:32.358 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnAdmin responded 200 in 26.7732 ms
+2024-10-03 02:04:36.004 +08:00 [INF] AnnouncementServiceController QueryAnnAdmin START
+2024-10-03 02:04:36.005 +08:00 [INF] AnnouncementRepository QueryAnnAdmin START
+2024-10-03 02:04:36.015 +08:00 [INF] AnnouncementRepository QueryAnnAdmin END
+2024-10-03 02:04:36.017 +08:00 [INF] AnnouncementServiceController QueryAnnAdmin END
+2024-10-03 02:04:36.019 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnAdmin responded 200 in 16.4195 ms
+2024-10-03 02:04:42.084 +08:00 [INF] AnnouncementServiceController QueryAnnAdmin START
+2024-10-03 02:04:42.085 +08:00 [INF] AnnouncementRepository QueryAnnAdmin START
+2024-10-03 02:04:42.087 +08:00 [INF] AnnouncementRepository QueryAnnAdmin END
+2024-10-03 02:04:42.094 +08:00 [INF] AnnouncementServiceController QueryAnnAdmin END
+2024-10-03 02:04:42.096 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnAdmin responded 200 in 13.0237 ms
+2024-10-03 03:31:58.645 +08:00 [INF] Now listening on: http://localhost:5001
+2024-10-03 03:31:58.704 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-03 03:31:58.705 +08:00 [INF] Hosting environment: Development
+2024-10-03 03:31:58.707 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2024-10-03 03:32:06.665 +08:00 [INF] HTTP GET / responded 404 in 2.1823 ms
+2024-10-03 03:33:32.132 +08:00 [INF] Now listening on: http://localhost:5001
+2024-10-03 03:33:32.148 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-03 03:33:32.150 +08:00 [INF] Hosting environment: Development
+2024-10-03 03:33:32.153 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2024-10-03 03:33:42.263 +08:00 [INF] HTTP GET / responded 404 in 7.6904 ms
+2024-10-03 03:34:40.801 +08:00 [INF] ApplyDepositServiceController QueryApplyDepositUser START
+2024-10-03 03:34:40.843 +08:00 [INF] ApplyDepositRepository QueryApplyDepositUser START
+2024-10-03 03:34:42.448 +08:00 [INF] ApplyDepositRepository QueryApplyDepositUser END
+2024-10-03 03:34:42.449 +08:00 [INF] ApplyDepositServiceController QueryApplyDepositUser END
+2024-10-03 03:34:42.490 +08:00 [INF] HTTP POST /api/FinancialMgmt/ApplyDepositService/QueryApplyDepositUser responded 200 in 2440.1949 ms
+2024-10-03 03:34:48.625 +08:00 [INF] ApplyDepositServiceController QueryApplyDepositUser START
+2024-10-03 03:34:48.770 +08:00 [INF] ApplyDepositRepository QueryApplyDepositUser START
+2024-10-03 03:34:48.831 +08:00 [INF] ApplyDepositRepository QueryApplyDepositUser END
+2024-10-03 03:34:48.833 +08:00 [INF] ApplyDepositServiceController QueryApplyDepositUser END
+2024-10-03 03:34:48.842 +08:00 [INF] HTTP POST /api/FinancialMgmt/ApplyDepositService/QueryApplyDepositUser responded 200 in 236.4041 ms
+2024-10-03 03:34:53.622 +08:00 [INF] ApplyDepositServiceController QueryApplyDepositUser START
+2024-10-03 03:34:53.627 +08:00 [INF] ApplyDepositRepository QueryApplyDepositUser START
+2024-10-03 03:34:53.631 +08:00 [INF] ApplyDepositRepository QueryApplyDepositUser END
+2024-10-03 03:34:53.634 +08:00 [INF] ApplyDepositServiceController QueryApplyDepositUser END
+2024-10-03 03:34:53.636 +08:00 [INF] HTTP POST /api/FinancialMgmt/ApplyDepositService/QueryApplyDepositUser responded 200 in 19.2061 ms
+2024-10-03 03:35:00.315 +08:00 [INF] ApplyDepositServiceController QueryApplyDepositUser START
+2024-10-03 03:35:00.363 +08:00 [INF] ApplyDepositRepository QueryApplyDepositUser START
+2024-10-03 03:35:00.384 +08:00 [INF] ApplyDepositRepository QueryApplyDepositUser END
+2024-10-03 03:35:00.386 +08:00 [INF] ApplyDepositServiceController QueryApplyDepositUser END
+2024-10-03 03:35:00.388 +08:00 [INF] HTTP POST /api/FinancialMgmt/ApplyDepositService/QueryApplyDepositUser responded 200 in 81.3952 ms
+2024-10-03 03:36:02.671 +08:00 [INF] Now listening on: http://localhost:5001
+2024-10-03 03:36:02.683 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-03 03:36:02.685 +08:00 [INF] Hosting environment: Development
+2024-10-03 03:36:02.687 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2024-10-03 03:36:11.796 +08:00 [INF] HTTP GET / responded 404 in 1.7522 ms
+2024-10-03 03:37:10.729 +08:00 [INF] ApplyWithdrawServiceController QueryApplyWithdrawUser START
+2024-10-03 03:37:10.862 +08:00 [INF] ApplyWithdrawServiceController QueryApplyWithdrawUser END
+2024-10-03 03:37:11.134 +08:00 [INF] HTTP POST /api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawUser responded 200 in 972.3018 ms
+2024-10-03 03:37:19.207 +08:00 [INF] ApplyWithdrawServiceController QueryApplyWithdrawUser START
+2024-10-03 03:37:19.209 +08:00 [INF] ApplyWithdrawServiceController QueryApplyWithdrawUser END
+2024-10-03 03:37:19.211 +08:00 [INF] HTTP POST /api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawUser responded 200 in 11.9861 ms
+2024-10-03 03:37:31.959 +08:00 [INF] ApplyWithdrawServiceController QueryApplyWithdrawUser START
+2024-10-03 03:37:32.011 +08:00 [INF] ApplyWithdrawServiceController QueryApplyWithdrawUser END
+2024-10-03 03:37:32.018 +08:00 [INF] HTTP POST /api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawUser responded 200 in 66.2067 ms
+2024-10-03 03:37:49.514 +08:00 [INF] ApplyWithdrawServiceController QueryApplyWithdrawUser START
+2024-10-03 03:37:49.516 +08:00 [INF] ApplyWithdrawServiceController QueryApplyWithdrawUser END
+2024-10-03 03:37:49.523 +08:00 [INF] HTTP POST /api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawUser responded 200 in 10.2153 ms
+2024-10-03 03:38:02.100 +08:00 [INF] ApplyWithdrawServiceController QueryApplyWithdrawUser START
+2024-10-03 03:38:02.123 +08:00 [INF] ApplyWithdrawServiceController QueryApplyWithdrawUser END
+2024-10-03 03:38:02.123 +08:00 [INF] HTTP POST /api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawUser responded 200 in 28.0561 ms
+2024-10-03 03:40:17.750 +08:00 [INF] Now listening on: http://localhost:5001
+2024-10-03 03:40:17.766 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-03 03:40:17.767 +08:00 [INF] Hosting environment: Development
+2024-10-03 03:40:17.768 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2024-10-03 03:40:28.144 +08:00 [INF] HTTP GET / responded 404 in 3.4878 ms
+2024-10-03 03:41:17.162 +08:00 [INF] ApplyWithdrawServiceController QueryApplyWithdrawUser START
+2024-10-03 03:41:21.773 +08:00 [INF] ApplyWithdrawRepository QueryApplyWithdrawUser START
+2024-10-03 03:41:26.236 +08:00 [INF] ApplyWithdrawRepository QueryApplyWithdrawUser END
+2024-10-03 03:41:26.241 +08:00 [INF] ApplyWithdrawServiceController QueryApplyWithdrawUser END
+2024-10-03 03:41:26.286 +08:00 [INF] HTTP POST /api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawUser responded 200 in 9700.7549 ms
+2024-10-03 03:41:34.091 +08:00 [INF] ApplyWithdrawServiceController QueryApplyWithdrawUser START
+2024-10-03 03:41:34.092 +08:00 [INF] ApplyWithdrawRepository QueryApplyWithdrawUser START
+2024-10-03 03:41:34.104 +08:00 [INF] ApplyWithdrawRepository QueryApplyWithdrawUser END
+2024-10-03 03:41:34.104 +08:00 [INF] ApplyWithdrawServiceController QueryApplyWithdrawUser END
+2024-10-03 03:41:34.106 +08:00 [INF] HTTP POST /api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawUser responded 200 in 19.8546 ms

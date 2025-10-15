@@ -1,0 +1,99 @@
+2025-01-23 20:52:40.017 +08:00 [INF] Now listening on: http://localhost:5000
+2025-01-23 20:52:42.674 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-23 20:52:43.663 +08:00 [INF] Hosting environment: Development
+2025-01-23 20:52:43.679 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2025-01-23 20:52:44.300 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 481.6568 ms
+2025-01-23 20:52:46.572 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 1180.7249 ms
+2025-01-23 20:53:58.502 +08:00 [INF] AnnouncementController GetAnnImages START
+2025-01-23 20:54:02.602 +08:00 [INF] AnnouncementController GetAnnImages END
+2025-01-23 20:54:03.899 +08:00 [INF] HTTP GET /api/Announcement/GetAnnImages responded 200 in 5441.1709 ms
+2025-01-23 20:54:05.728 +08:00 [INF] AnnouncementController GetAnnImages START
+2025-01-23 20:54:09.177 +08:00 [INF] AnnouncementController GetAnnImages END
+2025-01-23 20:54:09.197 +08:00 [INF] HTTP GET /api/Announcement/GetAnnImages responded 200 in 3473.4380 ms
+2025-01-23 20:54:11.401 +08:00 [INF] AnnouncementController GetAnnImage START
+2025-01-23 20:54:11.445 +08:00 [INF] AnnouncementController GetAnnImage START
+2025-01-23 20:54:11.448 +08:00 [INF] AnnouncementController GetAnnImage START
+2025-01-23 20:54:12.750 +08:00 [INF] HTTP GET /api/Announcement/8e394045-1298-4610-9a2c-4bc9b08bc71a_01.png responded 200 in 3020.7048 ms
+2025-01-23 20:54:12.779 +08:00 [INF] HTTP GET /api/Announcement/8e394045-1298-4610-9a2c-4bc9b08bc71a_00.png responded 200 in 3060.9008 ms
+2025-01-23 20:54:12.799 +08:00 [INF] HTTP GET /api/Announcement/8e394045-1298-4610-9a2c-4bc9b08bc71a_02.jpg responded 200 in 1551.2594 ms
+2025-01-23 20:55:40.301 +08:00 [INF] AnnouncementController PutAnnouncement START
+2025-01-23 20:55:40.310 +08:00 [INF] AnnouncementController PutAnnouncement END
+2025-01-23 20:55:40.319 +08:00 [INF] HTTP PUT /api/Announcement/ responded 200 in 69093.2768 ms
+2025-01-23 20:55:42.919 +08:00 [INF] AnnouncementController GetAnnImages START
+2025-01-23 20:55:42.948 +08:00 [INF] AnnouncementController GetAnnImages END
+2025-01-23 20:55:42.951 +08:00 [INF] HTTP GET /api/Announcement/GetAnnImages responded 200 in 32.1012 ms
+2025-01-23 20:55:42.985 +08:00 [INF] AnnouncementController GetAnnImage START
+2025-01-23 20:55:42.994 +08:00 [INF] HTTP GET /api/Announcement/8e394045-1298-4610-9a2c-4bc9b08bc71a_02.png responded 200 in 15.0289 ms
+2025-01-23 21:15:09.639 +08:00 [INF] Now listening on: http://localhost:5000
+2025-01-23 21:15:09.693 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-23 21:15:09.706 +08:00 [INF] Hosting environment: Development
+2025-01-23 21:15:09.707 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2025-01-23 21:15:12.081 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 408.1704 ms
+2025-01-23 21:15:17.366 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 787.2112 ms
+2025-01-23 21:16:28.490 +08:00 [INF] AnnouncementController GetAnnImages START
+2025-01-23 21:16:28.542 +08:00 [INF] AnnouncementController GetAnnImages END
+2025-01-23 21:16:28.569 +08:00 [INF] HTTP GET /api/Announcement/GetAnnImages responded 200 in 116.7707 ms
+2025-01-23 21:16:31.892 +08:00 [INF] AnnouncementController GetAnnImage START
+2025-01-23 21:16:31.892 +08:00 [INF] AnnouncementController GetAnnImage START
+2025-01-23 21:16:31.892 +08:00 [INF] AnnouncementController GetAnnImage START
+2025-01-23 21:16:31.970 +08:00 [INF] HTTP GET /api/Announcement/8e394045-1298-4610-9a2c-4bc9b08bc71a_02.png responded 200 in 131.1890 ms
+2025-01-23 21:16:31.954 +08:00 [INF] HTTP GET /api/Announcement/8e394045-1298-4610-9a2c-4bc9b08bc71a_01.png responded 200 in 143.1880 ms
+2025-01-23 21:16:32.095 +08:00 [INF] HTTP GET /api/Announcement/8e394045-1298-4610-9a2c-4bc9b08bc71a_00.png responded 200 in 296.9576 ms
+2025-01-23 21:16:59.023 +08:00 [INF] AnnouncementController PutAnnouncement START
+2025-01-23 21:16:59.052 +08:00 [INF] AnnouncementController PutAnnouncement END
+2025-01-23 21:16:59.058 +08:00 [INF] HTTP PUT /api/Announcement/ responded 200 in 18928.2848 ms
+2025-01-23 21:17:01.585 +08:00 [INF] AnnouncementController GetAnnImages START
+2025-01-23 21:17:01.625 +08:00 [INF] AnnouncementController GetAnnImages END
+2025-01-23 21:17:01.628 +08:00 [INF] HTTP GET /api/Announcement/GetAnnImages responded 200 in 43.7844 ms
+2025-01-23 21:17:04.108 +08:00 [INF] AnnouncementController GetAnnImages START
+2025-01-23 21:17:04.131 +08:00 [INF] AnnouncementController GetAnnImages END
+2025-01-23 21:17:04.147 +08:00 [INF] HTTP GET /api/Announcement/GetAnnImages responded 200 in 39.8622 ms
+2025-01-23 21:17:04.745 +08:00 [INF] AnnouncementController GetAnnImage START
+2025-01-23 21:17:04.771 +08:00 [INF] AnnouncementController GetAnnImage START
+2025-01-23 21:17:04.786 +08:00 [INF] AnnouncementController GetAnnImage START
+2025-01-23 21:17:07.774 +08:00 [INF] HTTP GET /api/Announcement/8e394045-1298-4610-9a2c-4bc9b08bc71a_01.png responded 200 in 3003.7211 ms
+2025-01-23 21:17:07.815 +08:00 [INF] HTTP GET /api/Announcement/8e394045-1298-4610-9a2c-4bc9b08bc71a_02.png responded 200 in 3040.7023 ms
+2025-01-23 21:17:07.922 +08:00 [INF] HTTP GET /api/Announcement/8e394045-1298-4610-9a2c-4bc9b08bc71a_00.png responded 200 in 3173.8292 ms
+2025-01-23 21:25:52.339 +08:00 [INF] Now listening on: http://localhost:5000
+2025-01-23 21:25:56.476 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-23 21:25:56.861 +08:00 [INF] Hosting environment: Development
+2025-01-23 21:25:56.869 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2025-01-23 21:26:02.094 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 2348.2165 ms
+2025-01-23 21:26:24.482 +08:00 [INF] AnnouncementController GetAnnImages START
+2025-01-23 21:26:26.823 +08:00 [INF] AnnouncementController GetAnnImages END
+2025-01-23 21:26:28.575 +08:00 [INF] HTTP GET /api/Announcement/GetAnnImages responded 200 in 4233.3019 ms
+2025-01-23 21:26:32.684 +08:00 [INF] AnnouncementController GetAnnImage START
+2025-01-23 21:26:32.691 +08:00 [INF] AnnouncementController GetAnnImage START
+2025-01-23 21:26:34.709 +08:00 [INF] AnnouncementController GetAnnImage START
+2025-01-23 21:26:34.784 +08:00 [INF] HTTP GET /api/Announcement/8e394045-1298-4610-9a2c-4bc9b08bc71a_01.png responded 200 in 2331.2287 ms
+2025-01-23 21:26:34.816 +08:00 [INF] HTTP GET /api/Announcement/8e394045-1298-4610-9a2c-4bc9b08bc71a_02.png responded 200 in 2463.2271 ms
+2025-01-23 21:26:34.959 +08:00 [INF] HTTP GET /api/Announcement/8e394045-1298-4610-9a2c-4bc9b08bc71a_00.png responded 200 in 252.4654 ms
+2025-01-23 21:26:36.054 +08:00 [ERR] HTTP GET /swagger/v1/swagger.json responded 500 in 187.9963 ms
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - DotNetBackEndApi.Controllers.SystemMgmt.AnnouncementController.PutAnnouncement (DotNetBackEndApi). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-01-23 21:26:36.334 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - DotNetBackEndApi.Controllers.SystemMgmt.AnnouncementController.PutAnnouncement (DotNetBackEndApi). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-01-23 21:32:02.292 +08:00 [INF] AnnouncementController GetAnnImages START
+2025-01-23 21:32:02.313 +08:00 [INF] AnnouncementController GetAnnImages END
+2025-01-23 21:32:02.315 +08:00 [INF] HTTP GET /api/Announcement/GetAnnImages responded 200 in 24.9909 ms
+2025-01-23 21:32:02.370 +08:00 [INF] AnnouncementController GetAnnImages START
+2025-01-23 21:32:02.373 +08:00 [INF] AnnouncementController GetAnnImages END
+2025-01-23 21:32:02.375 +08:00 [INF] HTTP GET /api/Announcement/GetAnnImages responded 200 in 5.8204 ms
+2025-01-23 21:32:03.422 +08:00 [INF] AnnouncementController GetAnnImage START
+2025-01-23 21:32:04.368 +08:00 [INF] AnnouncementController GetAnnImage START
+2025-01-23 21:32:06.841 +08:00 [INF] AnnouncementController GetAnnImage START
+2025-01-23 21:32:06.843 +08:00 [INF] HTTP GET /api/Announcement/8e394045-1298-4610-9a2c-4bc9b08bc71a_01.png responded 200 in 2475.5064 ms
+2025-01-23 21:32:06.915 +08:00 [INF] HTTP GET /api/Announcement/8e394045-1298-4610-9a2c-4bc9b08bc71a_00.png responded 200 in 3493.1255 ms
+2025-01-23 21:32:06.918 +08:00 [INF] HTTP GET /api/Announcement/8e394045-1298-4610-9a2c-4bc9b08bc71a_02.png responded 200 in 77.4165 ms

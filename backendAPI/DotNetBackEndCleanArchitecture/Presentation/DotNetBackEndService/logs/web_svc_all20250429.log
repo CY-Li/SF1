@@ -1,0 +1,60 @@
+2025-04-29 07:48:41.802 +08:00 [INF] Now listening on: http://localhost:5001
+2025-04-29 07:48:43.311 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-29 07:48:45.001 +08:00 [INF] Hosting environment: Development
+2025-04-29 07:48:45.001 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2025-04-29 07:48:45.268 +08:00 [INF] HTTP GET / responded 404 in 2.0068 ms
+2025-04-29 07:56:21.695 +08:00 [INF] ApplyDepositServiceController QueryApplyDepositAdmin START
+2025-04-29 07:56:22.229 +08:00 [INF] ApplyDepositRepository QueryApplyDepositAdmin START
+2025-04-29 07:56:23.465 +08:00 [INF] ApplyDepositRepository QueryApplyDepositAdmin END
+2025-04-29 07:56:23.467 +08:00 [INF] ApplyDepositServiceController QueryApplyDepositAdmin END
+2025-04-29 07:56:23.521 +08:00 [INF] HTTP POST /api/FinancialMgmt/ApplyDepositService/QueryApplyDepositAdmin responded 200 in 2550.9905 ms
+2025-04-29 07:58:09.274 +08:00 [INF] ApplyDepositServiceController QueryApplyDepositAdmin START
+2025-04-29 07:58:09.278 +08:00 [INF] ApplyDepositRepository QueryApplyDepositAdmin START
+2025-04-29 07:58:09.304 +08:00 [INF] ApplyDepositRepository QueryApplyDepositAdmin END
+2025-04-29 07:58:09.307 +08:00 [INF] ApplyDepositServiceController QueryApplyDepositAdmin END
+2025-04-29 07:58:09.310 +08:00 [INF] HTTP POST /api/FinancialMgmt/ApplyDepositService/QueryApplyDepositAdmin responded 200 in 43.0539 ms
+2025-04-29 07:59:38.074 +08:00 [INF] Now listening on: http://localhost:5001
+2025-04-29 07:59:38.137 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-29 07:59:38.138 +08:00 [INF] Hosting environment: Development
+2025-04-29 07:59:38.141 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2025-04-29 07:59:41.330 +08:00 [INF] HTTP GET / responded 404 in 1.3750 ms
+2025-04-29 07:59:45.885 +08:00 [INF] ApplyDepositServiceController QueryApplyDepositAdmin START
+2025-04-29 07:59:45.891 +08:00 [INF] ApplyDepositRepository QueryApplyDepositAdmin START
+2025-04-29 07:59:47.175 +08:00 [INF] ApplyDepositRepository QueryApplyDepositAdmin END
+2025-04-29 07:59:47.181 +08:00 [INF] ApplyDepositServiceController QueryApplyDepositAdmin END
+2025-04-29 07:59:47.240 +08:00 [INF] HTTP POST /api/FinancialMgmt/ApplyDepositService/QueryApplyDepositAdmin responded 200 in 1579.5414 ms
+2025-04-29 08:00:16.444 +08:00 [INF] ApplyDepositServiceController QueryApplyDepositAdmin START
+2025-04-29 08:00:16.447 +08:00 [INF] ApplyDepositRepository QueryApplyDepositAdmin START
+2025-04-29 08:00:16.452 +08:00 [INF] ApplyDepositRepository QueryApplyDepositAdmin END
+2025-04-29 08:00:16.454 +08:00 [INF] ApplyDepositServiceController QueryApplyDepositAdmin END
+2025-04-29 08:00:16.458 +08:00 [INF] HTTP POST /api/FinancialMgmt/ApplyDepositService/QueryApplyDepositAdmin responded 200 in 18.4948 ms
+2025-04-29 08:01:29.424 +08:00 [INF] ApplyDepositServiceController QueryApplyDepositAdmin START
+2025-04-29 08:01:29.425 +08:00 [INF] ApplyDepositRepository QueryApplyDepositAdmin START
+2025-04-29 08:01:29.427 +08:00 [INF] ApplyDepositRepository QueryApplyDepositAdmin END
+2025-04-29 08:01:29.429 +08:00 [INF] ApplyDepositServiceController QueryApplyDepositAdmin END
+2025-04-29 08:01:29.431 +08:00 [INF] HTTP POST /api/FinancialMgmt/ApplyDepositService/QueryApplyDepositAdmin responded 200 in 17.3697 ms
+2025-04-29 08:01:54.824 +08:00 [INF] ApplyDepositServiceController QueryApplyDepositAdmin START
+2025-04-29 08:01:54.825 +08:00 [INF] ApplyDepositRepository QueryApplyDepositAdmin START
+2025-04-29 08:01:54.833 +08:00 [INF] ApplyDepositRepository QueryApplyDepositAdmin END
+2025-04-29 08:01:54.835 +08:00 [INF] ApplyDepositServiceController QueryApplyDepositAdmin END
+2025-04-29 08:01:54.836 +08:00 [INF] HTTP POST /api/FinancialMgmt/ApplyDepositService/QueryApplyDepositAdmin responded 200 in 13.6455 ms
+2025-04-29 08:02:03.240 +08:00 [INF] ApplyDepositServiceController QueryApplyDepositAdmin START
+2025-04-29 08:02:03.261 +08:00 [INF] ApplyDepositRepository QueryApplyDepositAdmin START
+2025-04-29 08:02:03.272 +08:00 [INF] ApplyDepositRepository QueryApplyDepositAdmin END
+2025-04-29 08:02:03.273 +08:00 [INF] ApplyDepositServiceController QueryApplyDepositAdmin END
+2025-04-29 08:02:03.275 +08:00 [INF] HTTP POST /api/FinancialMgmt/ApplyDepositService/QueryApplyDepositAdmin responded 200 in 35.5240 ms
+2025-04-29 08:02:09.884 +08:00 [INF] ApplyDepositServiceController PutApplyDeposit START
+2025-04-29 08:02:09.890 +08:00 [INF] ApplyDepositRepository PutApplyDeposit START
+2025-04-29 08:02:09.946 +08:00 [INF] ApplyDepositRepository PutApplyDeposit END
+2025-04-29 08:02:09.949 +08:00 [INF] ApplyDepositServiceController PutApplyDeposit END
+2025-04-29 08:02:09.961 +08:00 [INF] HTTP POST /api/FinancialMgmt/ApplyDepositService/PutApplyDeposit responded 200 in 92.2347 ms
+2025-04-29 08:02:11.549 +08:00 [INF] ApplyDepositServiceController QueryApplyDepositAdmin START
+2025-04-29 08:02:11.563 +08:00 [INF] ApplyDepositRepository QueryApplyDepositAdmin START
+2025-04-29 08:02:11.567 +08:00 [INF] ApplyDepositRepository QueryApplyDepositAdmin END
+2025-04-29 08:02:11.611 +08:00 [INF] ApplyDepositServiceController QueryApplyDepositAdmin END
+2025-04-29 08:02:11.612 +08:00 [INF] HTTP POST /api/FinancialMgmt/ApplyDepositService/QueryApplyDepositAdmin responded 200 in 64.3852 ms
+2025-04-29 08:02:13.896 +08:00 [INF] ApplyDepositServiceController QueryApplyDepositAdmin START
+2025-04-29 08:02:13.897 +08:00 [INF] ApplyDepositRepository QueryApplyDepositAdmin START
+2025-04-29 08:02:13.908 +08:00 [INF] ApplyDepositRepository QueryApplyDepositAdmin END
+2025-04-29 08:02:13.912 +08:00 [INF] ApplyDepositServiceController QueryApplyDepositAdmin END
+2025-04-29 08:02:13.914 +08:00 [INF] HTTP POST /api/FinancialMgmt/ApplyDepositService/QueryApplyDepositAdmin responded 200 in 18.6878 ms

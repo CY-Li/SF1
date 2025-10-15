@@ -1,0 +1,30 @@
+2024-08-29 00:24:48.679 +08:00 [INF] Now listening on: http://localhost:5001
+2024-08-29 00:24:48.733 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-29 00:24:48.754 +08:00 [INF] Hosting environment: Development
+2024-08-29 00:24:48.785 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2024-08-29 00:24:55.115 +08:00 [INF] HTTP GET / responded 404 in 6.4556 ms
+2024-08-29 00:27:31.736 +08:00 [INF] KycServiceController CheckKyc START
+2024-08-29 00:27:31.926 +08:00 [INF] KycRepository CheckKyc START
+2024-08-29 00:27:33.715 +08:00 [INF] KycRepository CheckKyc END
+2024-08-29 00:27:33.718 +08:00 [INF] KycServiceController CheckKyc END
+2024-08-29 00:27:33.770 +08:00 [INF] HTTP POST /api/AuthenticationMgmt/KycService/CheckKyc responded 200 in 2204.0104 ms
+2024-08-29 00:27:39.228 +08:00 [INF] KycServiceController PostKyc START
+2024-08-29 00:27:39.231 +08:00 [INF] KycRepository PostkKyc START
+2024-08-29 00:27:39.261 +08:00 [INF] KycRepository PostkKyc END
+2024-08-29 00:27:39.263 +08:00 [INF] KycServiceController PostKyc END
+2024-08-29 00:27:39.272 +08:00 [INF] HTTP POST /api/AuthenticationMgmt/KycService/PostKyc responded 200 in 96.4272 ms
+2024-08-29 00:28:53.102 +08:00 [INF] KycServiceController QueryKycAdmin START
+2024-08-29 00:28:53.105 +08:00 [INF] KycRepository QueryKycAdmin START
+2024-08-29 00:28:53.295 +08:00 [INF] KycRepository QueryKycAdmin END
+2024-08-29 00:28:53.310 +08:00 [INF] KycServiceController QueryKycAdmin END
+2024-08-29 00:28:53.338 +08:00 [INF] HTTP POST /api/AuthenticationMgmt/KycService/QueryKycAdmin responded 200 in 264.5205 ms
+2024-08-29 00:29:16.738 +08:00 [INF] KycServiceController Postkyc START
+2024-08-29 00:29:16.740 +08:00 [INF] KycRepository PutKyc START
+2024-08-29 00:29:20.464 +08:00 [INF] KycRepository PutKyc END
+2024-08-29 00:29:20.467 +08:00 [INF] KycServiceController Postkyc END
+2024-08-29 00:29:20.468 +08:00 [INF] HTTP POST /api/AuthenticationMgmt/KycService/PutKyc responded 200 in 3738.4429 ms
+2024-08-29 00:29:22.842 +08:00 [INF] KycServiceController QueryKycAdmin START
+2024-08-29 00:29:22.845 +08:00 [INF] KycRepository QueryKycAdmin START
+2024-08-29 00:29:22.850 +08:00 [INF] KycRepository QueryKycAdmin END
+2024-08-29 00:29:22.855 +08:00 [INF] KycServiceController QueryKycAdmin END
+2024-08-29 00:29:22.857 +08:00 [INF] HTTP POST /api/AuthenticationMgmt/KycService/QueryKycAdmin responded 200 in 28.2280 ms

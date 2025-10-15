@@ -1,0 +1,157 @@
+2024-08-13 00:24:09.781 +08:00 [INF] Now listening on: http://localhost:5001
+2024-08-13 00:24:09.798 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-13 00:24:09.809 +08:00 [INF] Hosting environment: Development
+2024-08-13 00:24:09.810 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2024-08-13 00:24:20.493 +08:00 [INF] HTTP GET / responded 404 in 6.6639 ms
+2024-08-13 00:25:40.608 +08:00 [INF] Now listening on: http://localhost:5001
+2024-08-13 00:25:40.622 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-13 00:25:40.625 +08:00 [INF] Hosting environment: Development
+2024-08-13 00:25:40.626 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2024-08-13 00:25:43.290 +08:00 [INF] HTTP GET / responded 404 in 2.4180 ms
+2024-08-13 00:26:21.480 +08:00 [INF] KycServiceController QueryKycAdmin START
+2024-08-13 00:26:22.070 +08:00 [INF] KycRepository QueryKycAdmin START
+2024-08-13 00:26:23.026 +08:00 [INF] KycRepository QueryKycAdmin END
+2024-08-13 00:26:23.029 +08:00 [INF] KycServiceController QueryKycAdmin END
+2024-08-13 00:26:23.073 +08:00 [INF] HTTP POST /api/AuthenticationMgmt/KycService/QueryKycAdmin responded 200 in 1806.5159 ms
+2024-08-13 00:26:34.130 +08:00 [INF] KycServiceController QueryKycAdmin START
+2024-08-13 00:26:34.132 +08:00 [INF] KycRepository QueryKycAdmin START
+2024-08-13 00:26:34.227 +08:00 [INF] KycRepository QueryKycAdmin You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'B.mm_account = '0900000283'   ORDER BY A.akc_id  
+ OFFSET  0 ROWS #跳過筆...' at line 22
+2024-08-13 00:26:34.228 +08:00 [INF] KycRepository QueryKycAdmin END
+2024-08-13 00:26:34.230 +08:00 [INF] KycServiceController QueryKycAdmin END
+2024-08-13 00:26:34.233 +08:00 [INF] HTTP POST /api/AuthenticationMgmt/KycService/QueryKycAdmin responded 200 in 107.7115 ms
+2024-08-13 00:27:50.577 +08:00 [INF] KycServiceController QueryKycAdmin START
+2024-08-13 00:27:50.579 +08:00 [INF] KycRepository QueryKycAdmin START
+2024-08-13 00:28:57.607 +08:00 [INF] KycRepository QueryKycAdmin You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'B.mm_account = '0900000283'   ORDER BY A.akc_id  
+ OFFSET  0 ROWS #跳過筆...' at line 22
+2024-08-13 00:28:57.608 +08:00 [INF] KycRepository QueryKycAdmin END
+2024-08-13 00:28:57.608 +08:00 [INF] KycServiceController QueryKycAdmin END
+2024-08-13 00:28:57.609 +08:00 [INF] HTTP POST /api/AuthenticationMgmt/KycService/QueryKycAdmin responded 200 in 67068.4886 ms
+2024-08-13 00:48:58.660 +08:00 [INF] Now listening on: http://localhost:5001
+2024-08-13 00:48:58.674 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-13 00:48:58.677 +08:00 [INF] Hosting environment: Development
+2024-08-13 00:48:58.677 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2024-08-13 00:49:04.472 +08:00 [INF] HTTP GET / responded 404 in 2.5368 ms
+2024-08-13 00:49:24.831 +08:00 [INF] KycServiceController QueryKycAdmin START
+2024-08-13 00:49:24.872 +08:00 [INF] KycRepository QueryKycAdmin START
+2024-08-13 00:49:28.490 +08:00 [INF] KycRepository QueryKycAdmin END
+2024-08-13 00:49:28.494 +08:00 [INF] KycServiceController QueryKycAdmin END
+2024-08-13 00:49:28.560 +08:00 [INF] HTTP POST /api/AuthenticationMgmt/KycService/QueryKycAdmin responded 200 in 4207.0267 ms
+2024-08-13 00:49:34.547 +08:00 [INF] KycServiceController QueryKycAdmin START
+2024-08-13 00:49:34.550 +08:00 [INF] KycRepository QueryKycAdmin START
+2024-08-13 00:49:34.559 +08:00 [INF] KycRepository QueryKycAdmin END
+2024-08-13 00:49:34.561 +08:00 [INF] KycServiceController QueryKycAdmin END
+2024-08-13 00:49:34.564 +08:00 [INF] HTTP POST /api/AuthenticationMgmt/KycService/QueryKycAdmin responded 200 in 22.1250 ms
+2024-08-13 00:49:40.042 +08:00 [INF] KycServiceController QueryKycAdmin START
+2024-08-13 00:49:40.043 +08:00 [INF] KycRepository QueryKycAdmin START
+2024-08-13 00:49:40.046 +08:00 [INF] KycRepository QueryKycAdmin END
+2024-08-13 00:49:40.048 +08:00 [INF] KycServiceController QueryKycAdmin END
+2024-08-13 00:49:40.052 +08:00 [INF] HTTP POST /api/AuthenticationMgmt/KycService/QueryKycAdmin responded 200 in 31.7971 ms
+2024-08-13 00:49:57.049 +08:00 [INF] KycServiceController Postkyc START
+2024-08-13 00:49:57.060 +08:00 [INF] KycRepository PutKyc START
+2024-08-13 00:49:57.128 +08:00 [INF] KycRepository PutKyc Unknown column 'B.akc_id' in 'where clause'
+2024-08-13 00:49:57.130 +08:00 [INF] KycRepository PutKyc END
+2024-08-13 00:49:57.131 +08:00 [INF] KycServiceController Postkyc END
+2024-08-13 00:49:57.138 +08:00 [INF] HTTP POST /api/AuthenticationMgmt/KycService/PutKyc responded 200 in 175.1787 ms
+2024-08-13 00:50:45.585 +08:00 [INF] Now listening on: http://localhost:5001
+2024-08-13 00:50:45.600 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-13 00:50:45.602 +08:00 [INF] Hosting environment: Development
+2024-08-13 00:50:45.604 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2024-08-13 00:50:51.304 +08:00 [INF] HTTP GET / responded 404 in 1.9042 ms
+2024-08-13 00:56:54.517 +08:00 [INF] KycServiceController Postkyc START
+2024-08-13 00:56:54.525 +08:00 [INF] KycRepository PutKyc START
+2024-08-13 00:56:54.960 +08:00 [INF] KycRepository PutKyc END
+2024-08-13 00:56:54.965 +08:00 [INF] KycServiceController Postkyc END
+2024-08-13 00:56:54.991 +08:00 [INF] HTTP POST /api/AuthenticationMgmt/KycService/PutKyc responded 200 in 651.8944 ms
+2024-08-13 00:58:23.179 +08:00 [INF] Now listening on: http://localhost:5001
+2024-08-13 00:58:23.194 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-13 00:58:23.198 +08:00 [INF] Hosting environment: Development
+2024-08-13 00:58:23.198 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2024-08-13 00:58:31.087 +08:00 [INF] HTTP GET / responded 404 in 37.7616 ms
+2024-08-13 00:58:54.097 +08:00 [INF] KycServiceController Postkyc START
+2024-08-13 00:58:54.433 +08:00 [INF] KycRepository PutKyc START
+2024-08-13 00:58:55.289 +08:00 [INF] KycRepository PutKyc END
+2024-08-13 00:58:55.297 +08:00 [INF] KycServiceController Postkyc END
+2024-08-13 00:58:55.331 +08:00 [INF] HTTP POST /api/AuthenticationMgmt/KycService/PutKyc responded 200 in 1424.4196 ms
+2024-08-13 00:59:40.297 +08:00 [INF] KycServiceController Postkyc START
+2024-08-13 00:59:40.300 +08:00 [INF] KycRepository PutKyc START
+2024-08-13 00:59:40.316 +08:00 [INF] KycRepository PutKyc END
+2024-08-13 00:59:40.317 +08:00 [INF] KycServiceController Postkyc END
+2024-08-13 00:59:40.319 +08:00 [INF] HTTP POST /api/AuthenticationMgmt/KycService/PutKyc responded 200 in 36.1188 ms
+2024-08-13 00:59:48.907 +08:00 [INF] KycServiceController Postkyc START
+2024-08-13 00:59:48.909 +08:00 [INF] KycRepository PutKyc START
+2024-08-13 00:59:48.925 +08:00 [INF] KycServiceController Postkyc END
+2024-08-13 00:59:48.926 +08:00 [INF] HTTP POST /api/AuthenticationMgmt/KycService/PutKyc responded 200 in 23.8193 ms
+2024-08-13 00:59:54.216 +08:00 [INF] KycServiceController Postkyc START
+2024-08-13 00:59:54.229 +08:00 [INF] KycRepository PutKyc START
+2024-08-13 00:59:54.241 +08:00 [INF] KycRepository PutKyc END
+2024-08-13 00:59:54.243 +08:00 [INF] KycServiceController Postkyc END
+2024-08-13 00:59:54.244 +08:00 [INF] HTTP POST /api/AuthenticationMgmt/KycService/PutKyc responded 200 in 33.0017 ms
+2024-08-13 01:07:30.311 +08:00 [INF] Now listening on: http://localhost:5001
+2024-08-13 01:07:30.331 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-13 01:07:30.334 +08:00 [INF] Hosting environment: Development
+2024-08-13 01:07:30.334 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2024-08-13 01:07:33.694 +08:00 [INF] HTTP GET / responded 404 in 1.4129 ms
+2024-08-13 01:07:55.114 +08:00 [INF] KycServiceController Postkyc START
+2024-08-13 01:07:55.416 +08:00 [INF] KycRepository PutKyc START
+2024-08-13 01:07:56.036 +08:00 [INF] KycServiceController Postkyc END
+2024-08-13 01:07:56.068 +08:00 [INF] HTTP POST /api/AuthenticationMgmt/KycService/PutKyc responded 200 in 1434.1539 ms
+2024-08-13 01:08:02.802 +08:00 [INF] KycServiceController Postkyc START
+2024-08-13 01:08:02.805 +08:00 [INF] KycRepository PutKyc START
+2024-08-13 01:08:02.820 +08:00 [INF] KycServiceController Postkyc END
+2024-08-13 01:08:02.823 +08:00 [INF] HTTP POST /api/AuthenticationMgmt/KycService/PutKyc responded 200 in 26.7152 ms
+2024-08-13 01:08:24.967 +08:00 [INF] KycServiceController Postkyc START
+2024-08-13 01:08:24.982 +08:00 [INF] KycRepository PutKyc START
+2024-08-13 01:08:24.996 +08:00 [INF] KycServiceController Postkyc END
+2024-08-13 01:08:25.001 +08:00 [INF] HTTP POST /api/AuthenticationMgmt/KycService/PutKyc responded 200 in 37.6158 ms
+2024-08-13 02:16:45.010 +08:00 [INF] Now listening on: http://localhost:5001
+2024-08-13 02:16:45.037 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-13 02:16:45.081 +08:00 [INF] Hosting environment: Development
+2024-08-13 02:16:45.083 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2024-08-13 02:16:50.973 +08:00 [INF] HTTP GET / responded 404 in 1.6754 ms
+2024-08-13 02:20:10.780 +08:00 [INF] Now listening on: http://localhost:5001
+2024-08-13 02:20:10.831 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-13 02:20:10.833 +08:00 [INF] Hosting environment: Development
+2024-08-13 02:20:10.834 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2024-08-13 02:20:16.422 +08:00 [INF] HTTP GET / responded 404 in 4.9368 ms
+2024-08-13 02:54:28.655 +08:00 [INF] Now listening on: http://localhost:5001
+2024-08-13 02:54:30.785 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-13 02:54:30.796 +08:00 [INF] Hosting environment: Development
+2024-08-13 02:54:30.797 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2024-08-13 02:54:31.242 +08:00 [INF] HTTP GET / responded 404 in 2.1742 ms
+2024-08-13 02:57:34.389 +08:00 [INF] Now listening on: http://localhost:5001
+2024-08-13 02:57:34.404 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-13 02:57:34.406 +08:00 [INF] Hosting environment: Development
+2024-08-13 02:57:34.407 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2024-08-13 02:57:40.336 +08:00 [INF] HTTP GET / responded 404 in 4.6385 ms
+2024-08-13 10:50:53.494 +08:00 [INF] Now listening on: http://localhost:5001
+2024-08-13 10:50:53.584 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-13 10:50:53.588 +08:00 [INF] Hosting environment: Development
+2024-08-13 10:50:53.589 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2024-08-13 10:51:00.569 +08:00 [INF] HTTP GET / responded 404 in 3.5566 ms
+2024-08-13 10:51:14.385 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/GetAnnouncement responded 404 in 0.2147 ms
+2024-08-13 10:52:08.586 +08:00 [INF] Now listening on: http://localhost:5001
+2024-08-13 10:52:08.602 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-13 10:52:08.603 +08:00 [INF] Hosting environment: Development
+2024-08-13 10:52:08.604 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2024-08-13 10:52:14.047 +08:00 [INF] HTTP GET / responded 404 in 3.4051 ms
+2024-08-13 10:52:23.472 +08:00 [INF] AnnouncementServiceController GetAnnouncement START
+2024-08-13 10:52:23.480 +08:00 [INF] AnnouncementRepository GetAnnouncement START
+2024-08-13 10:52:24.835 +08:00 [INF] AnnouncementRepository GetAnnouncement END
+2024-08-13 10:52:24.837 +08:00 [INF] AnnouncementServiceController GetAnnouncement END
+2024-08-13 10:52:24.924 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/GetAnnouncement responded 200 in 1524.4244 ms
+2024-08-13 10:54:03.330 +08:00 [INF] Now listening on: http://localhost:5001
+2024-08-13 10:54:03.351 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-13 10:54:03.355 +08:00 [INF] Hosting environment: Development
+2024-08-13 10:54:03.355 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2024-08-13 10:54:10.018 +08:00 [INF] HTTP GET / responded 404 in 29.8485 ms
+2024-08-13 10:54:21.584 +08:00 [INF] AnnouncementServiceController GetAnnouncement START
+2024-08-13 10:54:21.610 +08:00 [INF] AnnouncementRepository GetAnnouncement START
+2024-08-13 10:54:22.787 +08:00 [INF] AnnouncementRepository GetAnnouncement END
+2024-08-13 10:54:22.790 +08:00 [INF] AnnouncementServiceController GetAnnouncement END
+2024-08-13 10:54:22.890 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/GetAnnouncement responded 200 in 1358.2556 ms
+2024-08-13 10:54:38.444 +08:00 [INF] AnnouncementServiceController GetAnnouncement START
+2024-08-13 10:54:38.525 +08:00 [INF] AnnouncementRepository GetAnnouncement START
+2024-08-13 10:54:38.537 +08:00 [INF] AnnouncementRepository GetAnnouncement END
+2024-08-13 10:54:38.540 +08:00 [INF] AnnouncementServiceController GetAnnouncement END
+2024-08-13 10:54:38.543 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/GetAnnouncement responded 200 in 130.8703 ms

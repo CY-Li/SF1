@@ -1,0 +1,143 @@
+2025-01-06 05:45:21.638 +08:00 [INF] Now listening on: http://localhost:5000
+2025-01-06 05:45:21.655 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-06 05:45:21.657 +08:00 [INF] Hosting environment: Development
+2025-01-06 05:45:21.658 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2025-01-06 05:45:30.075 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 269.1215 ms
+2025-01-06 05:45:30.196 +08:00 [INF] HTTP GET /swagger/swagger-ui.css responded 304 in 30.5872 ms
+2025-01-06 05:45:30.196 +08:00 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 304 in 30.4408 ms
+2025-01-06 05:45:30.212 +08:00 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 304 in 6.7458 ms
+2025-01-06 05:45:31.361 +08:00 [INF] HTTP GET /swagger/favicon-32x32.png responded 304 in 0.1750 ms
+2025-01-06 05:45:32.945 +08:00 [ERR] HTTP GET /swagger/v1/swagger.json responded 500 in 1869.8923 ms
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/Tender" for actions - DotNetBackEndApi.Controllers.TenderMgmt.TenderController.GetTender (DotNetBackEndApi),DotNetBackEndApi.Controllers.TenderMgmt.TenderController.GetParticipationRecord (DotNetBackEndApi). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-01-06 05:45:33.269 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/Tender" for actions - DotNetBackEndApi.Controllers.TenderMgmt.TenderController.GetTender (DotNetBackEndApi),DotNetBackEndApi.Controllers.TenderMgmt.TenderController.GetParticipationRecord (DotNetBackEndApi). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-01-06 05:52:28.539 +08:00 [INF] Now listening on: http://localhost:5000
+2025-01-06 05:52:28.556 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-06 05:52:28.595 +08:00 [INF] Hosting environment: Development
+2025-01-06 05:52:28.596 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2025-01-06 05:52:30.423 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 319.8795 ms
+2025-01-06 05:52:34.314 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 1987.9194 ms
+2025-01-06 05:53:02.046 +08:00 [INF] TenderController GetParticipationRecord START
+2025-01-06 05:53:02.094 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/TenderMgmt/TenderService/GetParticipationRecord
+2025-01-06 05:53:02.100 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/TenderMgmt/TenderService/GetParticipationRecord
+2025-01-06 05:53:04.062 +08:00 [INF] Received HTTP response headers after 1957.291ms - 200
+2025-01-06 05:53:04.070 +08:00 [INF] End processing HTTP request after 1983.4015ms - 200
+2025-01-06 05:53:04.107 +08:00 [INF] TenderController GetParticipationRecord END
+2025-01-06 05:53:04.154 +08:00 [INF] HTTP GET /api/Tender/GetParticipationRecord responded 200 in 2230.2816 ms
+2025-01-06 05:53:10.842 +08:00 [INF] TenderController GetParticipationRecord START
+2025-01-06 05:53:10.849 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/TenderMgmt/TenderService/GetParticipationRecord
+2025-01-06 05:53:10.851 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/TenderMgmt/TenderService/GetParticipationRecord
+2025-01-06 05:53:10.915 +08:00 [INF] Received HTTP response headers after 62.8481ms - 200
+2025-01-06 05:53:10.935 +08:00 [INF] End processing HTTP request after 85.4581ms - 200
+2025-01-06 05:53:10.937 +08:00 [INF] TenderController GetParticipationRecord END
+2025-01-06 05:53:10.941 +08:00 [INF] HTTP GET /api/Tender/GetParticipationRecord responded 200 in 102.0551 ms
+2025-01-06 05:53:39.027 +08:00 [INF] TenderController QueryTenderAllUser START
+2025-01-06 05:53:39.036 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/TenderMgmt/TenderService/QueryTenderInProgressUser
+2025-01-06 05:53:39.038 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/TenderMgmt/TenderService/QueryTenderInProgressUser
+2025-01-06 05:53:39.130 +08:00 [INF] Received HTTP response headers after 91.2619ms - 200
+2025-01-06 05:53:39.132 +08:00 [INF] End processing HTTP request after 95.8467ms - 200
+2025-01-06 05:53:39.147 +08:00 [INF] TenderController QueryTenderAllUser START
+2025-01-06 05:53:39.159 +08:00 [INF] HTTP GET /api/Tender/QueryTenderAllUser responded 200 in 144.5474 ms
+2025-01-06 05:54:17.324 +08:00 [INF] TenderController QueryTenderParticipatedUser START
+2025-01-06 05:54:17.328 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/TenderMgmt/TenderService/QueryTenderInProgressUser
+2025-01-06 05:54:17.329 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/TenderMgmt/TenderService/QueryTenderInProgressUser
+2025-01-06 05:54:17.353 +08:00 [INF] Received HTTP response headers after 22.567ms - 200
+2025-01-06 05:54:17.355 +08:00 [INF] End processing HTTP request after 26.882ms - 200
+2025-01-06 05:54:17.362 +08:00 [INF] TenderController QueryTenderParticipatedUser START
+2025-01-06 05:54:17.372 +08:00 [INF] HTTP GET /api/Tender/QueryTenderParticipatedUser responded 200 in 52.1562 ms
+2025-01-06 05:58:30.524 +08:00 [INF] TenderController QueryTenderParticipatedUser START
+2025-01-06 05:58:30.566 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/TenderMgmt/TenderService/QueryTenderInProgressUser
+2025-01-06 05:58:30.572 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/TenderMgmt/TenderService/QueryTenderInProgressUser
+2025-01-06 05:58:30.623 +08:00 [INF] Received HTTP response headers after 48.9618ms - 200
+2025-01-06 05:58:30.629 +08:00 [INF] End processing HTTP request after 62.0686ms - 200
+2025-01-06 05:58:30.639 +08:00 [INF] TenderController QueryTenderParticipatedUser START
+2025-01-06 05:58:30.641 +08:00 [INF] HTTP GET /api/Tender/QueryTenderParticipatedUser responded 200 in 133.0694 ms
+2025-01-06 05:58:44.177 +08:00 [INF] TenderController QueryTenderParticipatedUser START
+2025-01-06 05:58:44.202 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/TenderMgmt/TenderService/QueryTenderInProgressUser
+2025-01-06 05:58:44.219 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/TenderMgmt/TenderService/QueryTenderInProgressUser
+2025-01-06 05:58:44.267 +08:00 [INF] Received HTTP response headers after 46.7859ms - 200
+2025-01-06 05:58:44.289 +08:00 [INF] End processing HTTP request after 86.5135ms - 200
+2025-01-06 05:58:44.303 +08:00 [INF] TenderController QueryTenderParticipatedUser START
+2025-01-06 05:58:44.304 +08:00 [INF] HTTP GET /api/Tender/QueryTenderParticipatedUser responded 200 in 127.1151 ms
+2025-01-06 05:58:57.804 +08:00 [INF] TenderController QueryTenderParticipatedUser START
+2025-01-06 05:58:57.812 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/TenderMgmt/TenderService/QueryTenderInProgressUser
+2025-01-06 05:58:57.816 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/TenderMgmt/TenderService/QueryTenderInProgressUser
+2025-01-06 05:58:57.886 +08:00 [INF] Received HTTP response headers after 66.3942ms - 200
+2025-01-06 05:58:57.889 +08:00 [INF] End processing HTTP request after 77.132ms - 200
+2025-01-06 05:58:57.892 +08:00 [INF] TenderController QueryTenderParticipatedUser START
+2025-01-06 05:58:57.893 +08:00 [INF] HTTP GET /api/Tender/QueryTenderParticipatedUser responded 200 in 89.6748 ms
+2025-01-06 05:59:29.237 +08:00 [INF] TenderController QueryTenderParticipatedUser START
+2025-01-06 05:59:29.241 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/TenderMgmt/TenderService/QueryTenderInProgressUser
+2025-01-06 05:59:29.243 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/TenderMgmt/TenderService/QueryTenderInProgressUser
+2025-01-06 05:59:29.283 +08:00 [INF] Received HTTP response headers after 39.0876ms - 200
+2025-01-06 05:59:29.294 +08:00 [INF] End processing HTTP request after 52.8503ms - 200
+2025-01-06 05:59:29.295 +08:00 [INF] TenderController QueryTenderParticipatedUser START
+2025-01-06 05:59:29.296 +08:00 [INF] HTTP GET /api/Tender/QueryTenderParticipatedUser responded 200 in 59.8233 ms
+2025-01-06 06:00:27.297 +08:00 [INF] Now listening on: http://localhost:5000
+2025-01-06 06:00:28.883 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-06 06:00:28.960 +08:00 [INF] Hosting environment: Development
+2025-01-06 06:00:29.089 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2025-01-06 06:00:29.850 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 543.4240 ms
+2025-01-06 06:00:31.352 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 940.1497 ms
+2025-01-06 06:01:14.591 +08:00 [INF] TenderController QueryTenderParticipatedUser START
+2025-01-06 06:01:14.641 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/TenderMgmt/TenderService/QueryTenderParticipatedUser
+2025-01-06 06:01:14.648 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/TenderMgmt/TenderService/QueryTenderParticipatedUser
+2025-01-06 06:01:26.410 +08:00 [INF] Received HTTP response headers after 11758.1887ms - 200
+2025-01-06 06:01:26.416 +08:00 [INF] End processing HTTP request after 11781.8416ms - 200
+2025-01-06 06:01:26.440 +08:00 [INF] TenderController QueryTenderParticipatedUser START
+2025-01-06 06:01:26.469 +08:00 [INF] HTTP GET /api/Tender/QueryTenderParticipatedUser responded 200 in 11981.7998 ms
+2025-01-06 06:01:34.915 +08:00 [INF] TenderController QueryTenderParticipatedUser START
+2025-01-06 06:01:34.959 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/TenderMgmt/TenderService/QueryTenderParticipatedUser
+2025-01-06 06:01:34.961 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/TenderMgmt/TenderService/QueryTenderParticipatedUser
+2025-01-06 06:01:35.013 +08:00 [INF] Received HTTP response headers after 50.966ms - 200
+2025-01-06 06:01:35.015 +08:00 [INF] End processing HTTP request after 56.1297ms - 200
+2025-01-06 06:01:35.025 +08:00 [INF] TenderController QueryTenderParticipatedUser START
+2025-01-06 06:01:35.028 +08:00 [INF] HTTP GET /api/Tender/QueryTenderParticipatedUser responded 200 in 116.7754 ms
+2025-01-06 06:01:49.193 +08:00 [INF] TenderController QueryTenderAllUser START
+2025-01-06 06:01:49.221 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/TenderMgmt/TenderService/QueryTenderAllUser
+2025-01-06 06:01:49.222 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/TenderMgmt/TenderService/QueryTenderAllUser
+2025-01-06 06:01:49.336 +08:00 [INF] Received HTTP response headers after 111.9626ms - 200
+2025-01-06 06:01:49.337 +08:00 [INF] End processing HTTP request after 116.309ms - 200
+2025-01-06 06:01:49.346 +08:00 [INF] TenderController QueryTenderAllUser START
+2025-01-06 06:01:49.353 +08:00 [INF] HTTP GET /api/Tender/QueryTenderAllUser responded 200 in 171.1836 ms
+2025-01-06 06:02:25.524 +08:00 [INF] TenderController QueryTenderAllUser START
+2025-01-06 06:02:25.527 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/TenderMgmt/TenderService/QueryTenderAllUser
+2025-01-06 06:02:25.529 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/TenderMgmt/TenderService/QueryTenderAllUser
+2025-01-06 06:04:42.500 +08:00 [INF] Now listening on: http://localhost:5000
+2025-01-06 06:04:42.516 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-06 06:04:42.518 +08:00 [INF] Hosting environment: Development
+2025-01-06 06:04:42.520 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2025-01-06 06:04:48.354 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 617.7891 ms
+2025-01-06 06:04:51.404 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 689.4237 ms
+2025-01-06 06:10:40.713 +08:00 [INF] HTTP POST /api/Kyc responded 200 in 146.7499 ms
+2025-01-06 06:11:14.248 +08:00 [INF] KycController PostKyc START
+2025-01-06 06:11:14.348 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/AuthenticationMgmt/KycService/CheckKyc
+2025-01-06 06:11:14.354 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/AuthenticationMgmt/KycService/CheckKyc
+2025-01-06 06:11:15.923 +08:00 [INF] Received HTTP response headers after 1563.4373ms - 200
+2025-01-06 06:11:15.930 +08:00 [INF] End processing HTTP request after 1587.0769ms - 200
+2025-01-06 06:11:41.014 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/AuthenticationMgmt/KycService/PostKyc
+2025-01-06 06:11:41.018 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/AuthenticationMgmt/KycService/PostKyc
+2025-01-06 06:11:41.178 +08:00 [INF] Received HTTP response headers after 148.7111ms - 200
+2025-01-06 06:11:41.190 +08:00 [INF] End processing HTTP request after 175.9604ms - 200
+2025-01-06 06:11:48.092 +08:00 [INF] KycController PostKyc END
+2025-01-06 06:11:48.113 +08:00 [INF] HTTP POST /api/Kyc responded 200 in 33874.7949 ms
+2025-01-06 06:12:45.186 +08:00 [INF] KycController PutKyc START
+2025-01-06 06:12:45.190 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/AuthenticationMgmt/KycService/PutKyc
+2025-01-06 06:12:45.219 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/AuthenticationMgmt/KycService/PutKyc
+2025-01-06 06:12:47.361 +08:00 [INF] Received HTTP response headers after 2134.7218ms - 200
+2025-01-06 06:12:47.362 +08:00 [INF] End processing HTTP request after 2172.6503ms - 200
+2025-01-06 06:12:47.364 +08:00 [INF] KycController PutKyc END
+2025-01-06 06:12:47.401 +08:00 [INF] HTTP PUT /api/Kyc responded 200 in 12311.4221 ms

@@ -1,0 +1,116 @@
+<h1 mat-dialog-title>{{ isEditing ? '修改' : '新增' }}項目</h1>
+
+<div mat-dialog-content class="content">
+    <form [formGroup]="addEditFormGroup">
+        <!-- 引數代號，顯示但不可更改 -->
+        <mat-form-field class="mat-50">
+            <mat-label>ID</mat-label>
+            <input formControlName="ab_id" matInput [readonly]="isReadonly">
+        </mat-form-field>
+
+        <mat-form-field class="mat-50">
+            <mat-label>公告標題</mat-label>
+            <!-- <input formControlName="sps_code" matInput [readonly]="isEditing"> -->
+            <input formControlName="ab_title" matInput>
+            <mat-error *ngIf="addEditFormGroup.get('ab_title')?.hasError('maxlength')">
+                參數代號不可超過30個字元
+            </mat-error>
+        </mat-form-field>
+
+        <mat-form-field class="mat-50">
+            <mat-label>公告內容</mat-label>
+            <input formControlName="ab_content" matInput>
+            <mat-error *ngIf="addEditFormGroup.get('ab_content')?.hasError('maxlength')">
+                帳號不可超過300個字元
+            </mat-error>
+        </mat-form-field>
+
+        <mat-form-field class="mat-50">
+            <mat-label>公告狀態</mat-label>
+            <mat-select formControlName="ab_status">
+                <mat-option value="10">開啟</mat-option>
+                <mat-option value="20">關閉</mat-option>
+            </mat-select>
+            <mat-error *ngIf="addEditFormGroup.get('ab_status')?.hasError('pattern')">
+                狀態只能開啟或關閉
+            </mat-error>
+        </mat-form-field>
+
+        <mat-form-field class="mat-50">
+            <mat-label>時間</mat-label>
+            <input matInput [matDatepicker]="datepicker" formControlName="ab_datetime">
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="datepicker"></mat-datepicker-toggle>
+            <mat-datepicker #datepicker></mat-datepicker>
+            <mat-error *ngIf="addEditFormGroup.get('ab_datetime')?.hasError('required')">
+                請選擇時間，此時間用來表示首頁是否顯示
+            </mat-error>
+        </mat-form-field>
+
+        <div class="content">
+
+            <div class="block-container">
+                <mat-label>公告圖片</mat-label>
+                @if(isEditing){
+                <img [src]="getFormImage('ab_image_url')" alt="Image Preview" class="fixed-img">
+                }
+                <!-- 隐藏的 input -->
+                <input type="file" class="invisible" (change)="onFileChange($event)" #fileUpload
+                    accept="image/jpeg, image/png" aria-label="上傳圖片">
+            </div>
+
+            <div *ngIf="!isView" class="block-container">
+                <button mat-stroked-button type="button" (click)="fileUpload.click()"
+                    aria-describedby="image-upload-hint">
+                    <mat-icon>upload</mat-icon>
+                    選擇圖片
+                </button>
+                <!-- 提示文字 -->
+                <mat-hint id="image-upload-hint">支持 JPG/PNG 格式，最大 10MB</mat-hint>
+            </div>
+            <!-- 上傳按鈕 -->
+
+            <div class="block-container">
+                <!-- 圖片預覽 -->
+                <div *ngIf="imageSrc" class="image-preview-container">
+                    <mat-card class="preview-card">
+                        <mat-card-header>
+                            <mat-card-title>預覽圖片</mat-card-title>
+                        </mat-card-header>
+                        <mat-card-content>
+                            <img [src]="imageSrc" alt="Image Preview" class="fixed-img" matTooltip="上傳的圖片預覽"
+                                aria-describedby="preview-desc">
+                            <p id="preview-desc" class="sr-only">此區域顯示已上傳圖片的預覽效果</p>
+                        </mat-card-content>
+                    </mat-card>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- <div class="content">
+            <mat-label>公告圖片</mat-label>
+            <input type="file" class="invisible" (change)="onFileChange($event)" #fileUpload
+                accept="image/jpeg, image/png" />
+            <img [src]="getFormImage('ab_image_url')" alt="Image Preview" class="fixed-img">
+
+            <button mat-raised-button color="primary" (click)="fileUpload.click()" mat-raised-button color="primary">
+                <mat-icon>upload_file</mat-icon>
+                上傳圖片
+            </button>
+            <div *ngIf="imageSrc">
+                <h3>圖片預覽：</h3>
+                <img [src]="imageSrc" alt="Image Preview" class="fixed-img">
+            </div>
+        </div> -->
+    </form>
+</div>
+<!-- 其他欄位 -->
+<div mat-dialog-actions>
+    @if(!isView){
+    <button mat-raised-button color="primary" (click)="onFormSubmit()">保存變更</button>
+    }
+    <button mat-raised-button type="button" (click)="onFormClose()">取消</button>
+    <!-- <button  mat-raised-button color="warn" (click)="editClose()">取消</button> -->
+</div>
+<!-- <button *ngIf="isEditing" (click)="saveChanges()">保存變更</button> -->

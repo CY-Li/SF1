@@ -1,0 +1,18 @@
+2025-01-10 04:20:06.971 +08:00 [INF] Now listening on: http://localhost:5000
+2025-01-10 04:20:10.661 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-10 04:20:13.832 +08:00 [INF] Hosting environment: Development
+2025-01-10 04:20:13.833 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2025-01-10 04:20:14.412 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 314.6994 ms
+2025-01-10 04:20:21.295 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 2191.9381 ms
+2025-01-10 04:20:36.627 +08:00 [INF] KycController QueryKycAdmin START
+2025-01-10 04:20:36.959 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/AuthenticationMgmt/KycService/QueryKycAdmin
+2025-01-10 04:20:36.965 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/AuthenticationMgmt/KycService/QueryKycAdmin
+2025-01-10 04:20:39.406 +08:00 [INF] Received HTTP response headers after 2435.7935ms - 200
+2025-01-10 04:20:39.435 +08:00 [INF] End processing HTTP request after 2480.9077ms - 200
+2025-01-10 04:20:39.490 +08:00 [INF] HTTP GET /api/Kyc/QueryKycAdmin responded 200 in 3029.5267 ms
+2025-01-10 04:20:53.494 +08:00 [INF] KycController QueryKycAdmin START
+2025-01-10 04:20:53.804 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/AuthenticationMgmt/KycService/QueryKycAdmin
+2025-01-10 04:20:53.805 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/AuthenticationMgmt/KycService/QueryKycAdmin
+2025-01-10 04:20:53.866 +08:00 [INF] Received HTTP response headers after 59.1132ms - 200
+2025-01-10 04:20:53.867 +08:00 [INF] End processing HTTP request after 63.4255ms - 200
+2025-01-10 04:20:53.927 +08:00 [INF] HTTP GET /api/Kyc/QueryKycAdmin responded 200 in 510.1765 ms

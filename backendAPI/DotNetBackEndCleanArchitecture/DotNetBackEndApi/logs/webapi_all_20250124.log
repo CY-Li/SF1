@@ -1,0 +1,72 @@
+2025-01-24 04:05:03.874 +08:00 [INF] Now listening on: http://localhost:5000
+2025-01-24 04:05:03.957 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-24 04:05:03.960 +08:00 [INF] Hosting environment: Development
+2025-01-24 04:05:03.960 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2025-01-24 04:05:12.499 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 1164.0011 ms
+2025-01-24 04:05:21.188 +08:00 [ERR] HTTP GET /swagger/v1/swagger.json responded 500 in 710.9775 ms
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - DotNetBackEndApi.Controllers.SystemMgmt.AnnouncementController.PutAnnouncement (DotNetBackEndApi). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-01-24 04:05:21.241 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - DotNetBackEndApi.Controllers.SystemMgmt.AnnouncementController.PutAnnouncement (DotNetBackEndApi). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-01-24 04:37:21.092 +08:00 [INF] AnnouncementController GetAnnImages START
+2025-01-24 04:37:21.092 +08:00 [INF] AnnouncementController GetAnnImages START
+2025-01-24 04:37:21.168 +08:00 [INF] AnnouncementController GetAnnImages END
+2025-01-24 04:37:21.168 +08:00 [INF] AnnouncementController GetAnnImages END
+2025-01-24 04:37:21.191 +08:00 [INF] HTTP GET /api/Announcement/GetAnnImages responded 200 in 158.0464 ms
+2025-01-24 04:37:21.192 +08:00 [INF] HTTP GET /api/Announcement/GetAnnImages responded 200 in 158.0593 ms
+2025-01-24 04:37:26.128 +08:00 [INF] AnnouncementController GetAnnImage START
+2025-01-24 04:37:26.128 +08:00 [INF] AnnouncementController GetAnnImage START
+2025-01-24 04:37:26.128 +08:00 [INF] AnnouncementController GetAnnImage START
+2025-01-24 04:37:28.202 +08:00 [INF] HTTP GET /api/Announcement/8e394045-1298-4610-9a2c-4bc9b08bc71a_01.png responded 200 in 4379.6894 ms
+2025-01-24 04:37:28.204 +08:00 [INF] HTTP GET /api/Announcement/8e394045-1298-4610-9a2c-4bc9b08bc71a_00.png responded 200 in 4620.4752 ms
+2025-01-24 04:37:28.257 +08:00 [INF] HTTP GET /api/Announcement/8e394045-1298-4610-9a2c-4bc9b08bc71a_02.png responded 200 in 2698.3501 ms
+2025-01-24 04:37:30.152 +08:00 [INF] AnnouncementController QueryAnnAdmin START
+2025-01-24 04:37:30.196 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnAdmin
+2025-01-24 04:37:30.199 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnAdmin
+2025-01-24 04:37:32.159 +08:00 [INF] Received HTTP response headers after 1955.3456ms - 200
+2025-01-24 04:37:32.162 +08:00 [INF] End processing HTTP request after 1972.5065ms - 200
+2025-01-24 04:37:32.191 +08:00 [INF] AnnouncementController QueryAnnAdmin START
+2025-01-24 04:37:32.198 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnAdmin responded 200 in 2073.9273 ms
+2025-01-24 04:45:12.318 +08:00 [INF] Now listening on: http://localhost:5000
+2025-01-24 04:45:12.340 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-24 04:45:12.350 +08:00 [INF] Hosting environment: Development
+2025-01-24 04:45:12.351 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2025-01-24 04:45:14.947 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 469.6620 ms
+2025-01-24 04:45:16.264 +08:00 [INF] AnnouncementController QueryAnnAdmin START
+2025-01-24 04:45:16.335 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnAdmin
+2025-01-24 04:45:16.341 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnAdmin
+2025-01-24 04:45:17.558 +08:00 [INF] Received HTTP response headers after 1203.3085ms - 200
+2025-01-24 04:45:17.573 +08:00 [INF] End processing HTTP request after 1247.302ms - 200
+2025-01-24 04:45:17.607 +08:00 [INF] AnnouncementController QueryAnnAdmin START
+2025-01-24 04:45:17.656 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnAdmin responded 200 in 1588.9821 ms
+2025-01-24 04:45:23.213 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 1930.1234 ms
+2025-01-24 04:45:56.672 +08:00 [INF] HTTP PUT /api/Announcement/ responded 200 in 23.4147 ms
+2025-01-24 04:48:22.159 +08:00 [INF] HTTP PUT /api/Announcement/ responded 200 in 4.6647 ms
+2025-01-24 04:50:03.983 +08:00 [INF] Now listening on: http://localhost:5000
+2025-01-24 04:50:06.518 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-24 04:50:06.832 +08:00 [INF] Hosting environment: Development
+2025-01-24 04:50:06.837 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2025-01-24 04:50:07.539 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 484.5499 ms
+2025-01-24 04:50:13.842 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 1452.8721 ms
+2025-01-24 04:50:41.898 +08:00 [INF] AnnouncementController QueryAnnAdmin START
+2025-01-24 04:50:41.974 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnAdmin
+2025-01-24 04:50:42.209 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnAdmin
+2025-01-24 04:50:43.627 +08:00 [INF] Received HTTP response headers after 1396.2466ms - 200
+2025-01-24 04:50:43.634 +08:00 [INF] End processing HTTP request after 1677.7284ms - 200
+2025-01-24 04:50:43.687 +08:00 [INF] AnnouncementController QueryAnnAdmin START
+2025-01-24 04:50:43.718 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnAdmin responded 200 in 1944.8267 ms
+2025-01-24 04:51:15.286 +08:00 [INF] AnnouncementController PostAnnouncement START
+2025-01-24 04:51:15.306 +08:00 [INF] AnnouncementController PostAnnouncement END
+2025-01-24 04:51:15.310 +08:00 [INF] HTTP PUT /api/Announcement/ responded 200 in 18240.1738 ms

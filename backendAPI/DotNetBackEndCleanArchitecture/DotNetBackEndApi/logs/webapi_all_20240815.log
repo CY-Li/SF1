@@ -1,0 +1,366 @@
+2024-08-15 10:46:58.892 +08:00 [INF] Now listening on: http://localhost:5000
+2024-08-15 10:47:01.153 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-15 10:47:01.163 +08:00 [INF] Hosting environment: Development
+2024-08-15 10:47:01.165 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2024-08-15 10:47:04.290 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 848.5166 ms
+2024-08-15 10:47:06.723 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 1401.8717 ms
+2024-08-15 10:48:41.557 +08:00 [INF] Now listening on: http://localhost:5000
+2024-08-15 10:48:41.595 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-15 10:48:41.599 +08:00 [INF] Hosting environment: Development
+2024-08-15 10:48:41.600 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2024-08-15 10:48:44.744 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 336.5905 ms
+2024-08-15 10:48:46.559 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 1093.8400 ms
+2024-08-15 10:48:58.693 +08:00 [INF] SpsController QuerySps START
+2024-08-15 10:48:58.850 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 10:48:58.855 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 10:49:02.403 +08:00 [INF] Received HTTP response headers after 3539.7143ms - 200
+2024-08-15 10:49:02.620 +08:00 [INF] End processing HTTP request after 3775.2898ms - 200
+2024-08-15 10:49:02.652 +08:00 [INF] SpsController QuerySps START
+2024-08-15 10:49:02.687 +08:00 [INF] HTTP GET /api/Sps/QuerySps responded 200 in 4101.6822 ms
+2024-08-15 13:34:03.982 +08:00 [INF] Now listening on: http://localhost:5000
+2024-08-15 13:34:04.100 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-15 13:34:04.102 +08:00 [INF] Hosting environment: Development
+2024-08-15 13:34:04.104 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2024-08-15 13:34:20.969 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 461.4253 ms
+2024-08-15 13:34:23.152 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 1107.1792 ms
+2024-08-15 13:34:51.089 +08:00 [INF] SpsController QuerySps START
+2024-08-15 13:34:51.440 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 13:34:51.445 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 13:34:52.916 +08:00 [INF] Received HTTP response headers after 1465.0398ms - 200
+2024-08-15 13:34:52.926 +08:00 [INF] End processing HTTP request after 1498.7111ms - 200
+2024-08-15 13:34:52.961 +08:00 [INF] SpsController QuerySps START
+2024-08-15 13:34:53.065 +08:00 [INF] HTTP GET /api/Sps/QuerySps responded 200 in 2205.5037 ms
+2024-08-15 13:34:53.385 +08:00 [INF] SpsController QuerySps START
+2024-08-15 13:34:53.429 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 13:34:53.440 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 13:34:53.526 +08:00 [INF] Received HTTP response headers after 84.2897ms - 200
+2024-08-15 13:34:53.529 +08:00 [INF] End processing HTTP request after 99.6318ms - 200
+2024-08-15 13:34:53.532 +08:00 [INF] SpsController QuerySps START
+2024-08-15 13:34:53.554 +08:00 [INF] HTTP GET /api/Sps/QuerySps responded 200 in 173.7826 ms
+2024-08-15 13:39:36.605 +08:00 [INF] SpsController QuerySps START
+2024-08-15 13:39:36.608 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 13:39:36.613 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 13:39:36.678 +08:00 [INF] Received HTTP response headers after 62.2307ms - 200
+2024-08-15 13:39:36.697 +08:00 [INF] End processing HTTP request after 89.4137ms - 200
+2024-08-15 13:39:36.700 +08:00 [INF] SpsController QuerySps START
+2024-08-15 13:39:36.708 +08:00 [INF] HTTP GET /api/Sps/QuerySps responded 200 in 154.8998 ms
+2024-08-15 13:40:16.631 +08:00 [INF] SpsController QuerySps START
+2024-08-15 13:40:16.634 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 13:40:16.640 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 13:40:16.688 +08:00 [INF] Received HTTP response headers after 46.6057ms - 200
+2024-08-15 13:40:16.689 +08:00 [INF] End processing HTTP request after 55.1543ms - 200
+2024-08-15 13:40:16.693 +08:00 [INF] SpsController QuerySps START
+2024-08-15 13:40:16.695 +08:00 [INF] HTTP GET /api/Sps/QuerySps responded 200 in 67.7863 ms
+2024-08-15 13:41:04.096 +08:00 [INF] SpsController QuerySps START
+2024-08-15 13:41:04.103 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 13:41:04.106 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 13:41:04.136 +08:00 [INF] Received HTTP response headers after 28.7417ms - 200
+2024-08-15 13:41:04.170 +08:00 [INF] End processing HTTP request after 66.9389ms - 200
+2024-08-15 13:41:04.185 +08:00 [INF] SpsController QuerySps START
+2024-08-15 13:41:04.188 +08:00 [INF] HTTP GET /api/Sps/QuerySps responded 200 in 93.2374 ms
+2024-08-15 13:43:14.346 +08:00 [INF] SpsController QuerySps START
+2024-08-15 13:43:14.347 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 13:43:14.348 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 13:43:14.394 +08:00 [INF] Received HTTP response headers after 45.5656ms - 200
+2024-08-15 13:43:14.396 +08:00 [INF] End processing HTTP request after 49.0574ms - 200
+2024-08-15 13:43:14.408 +08:00 [INF] SpsController QuerySps START
+2024-08-15 13:43:14.410 +08:00 [INF] HTTP GET /api/Sps/QuerySps responded 200 in 67.5653 ms
+2024-08-15 13:46:27.410 +08:00 [INF] SpsController QuerySps START
+2024-08-15 13:46:27.411 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 13:46:27.414 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 13:46:27.486 +08:00 [INF] Received HTTP response headers after 62.3657ms - 200
+2024-08-15 13:46:27.489 +08:00 [INF] End processing HTTP request after 78.058ms - 200
+2024-08-15 13:46:27.493 +08:00 [INF] SpsController QuerySps START
+2024-08-15 13:46:27.495 +08:00 [INF] HTTP GET /api/Sps/QuerySps responded 200 in 86.0198 ms
+2024-08-15 13:46:47.188 +08:00 [INF] SpsController QuerySps START
+2024-08-15 13:46:47.199 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 13:46:47.204 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 13:46:47.239 +08:00 [INF] Received HTTP response headers after 25.5794ms - 200
+2024-08-15 13:46:47.273 +08:00 [INF] End processing HTTP request after 73.8963ms - 200
+2024-08-15 13:46:47.280 +08:00 [INF] SpsController QuerySps START
+2024-08-15 13:46:47.282 +08:00 [INF] HTTP GET /api/Sps/QuerySps responded 200 in 96.0349 ms
+2024-08-15 14:25:03.160 +08:00 [INF] SpsController QuerySps START
+2024-08-15 14:25:03.251 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 14:25:03.255 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 14:25:03.646 +08:00 [INF] Received HTTP response headers after 367.626ms - 200
+2024-08-15 14:25:04.159 +08:00 [INF] End processing HTTP request after 908.0791ms - 200
+2024-08-15 14:25:04.161 +08:00 [INF] SpsController QuerySps START
+2024-08-15 14:25:04.170 +08:00 [INF] HTTP GET /api/Sps/QuerySps responded 200 in 1011.2594 ms
+2024-08-15 14:25:07.264 +08:00 [INF] SpsController QuerySps START
+2024-08-15 14:25:07.266 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 14:25:07.275 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 14:25:07.297 +08:00 [INF] Received HTTP response headers after 19.568ms - 200
+2024-08-15 14:25:07.304 +08:00 [INF] End processing HTTP request after 38.4024ms - 200
+2024-08-15 14:25:07.308 +08:00 [INF] SpsController QuerySps START
+2024-08-15 14:25:07.311 +08:00 [INF] HTTP GET /api/Sps/QuerySps responded 200 in 49.0093 ms
+2024-08-15 14:26:35.573 +08:00 [INF] SpsController QuerySps START
+2024-08-15 14:26:35.574 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 14:26:35.576 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 14:26:35.646 +08:00 [INF] Received HTTP response headers after 64.3915ms - 200
+2024-08-15 14:26:35.669 +08:00 [INF] End processing HTTP request after 95.2665ms - 200
+2024-08-15 14:26:35.677 +08:00 [INF] SpsController QuerySps START
+2024-08-15 14:26:35.678 +08:00 [INF] HTTP GET /api/Sps/QuerySps responded 200 in 106.4074 ms
+2024-08-15 14:27:34.853 +08:00 [INF] SpsController QuerySps START
+2024-08-15 14:27:34.949 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 14:27:34.954 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 14:27:35.019 +08:00 [INF] Received HTTP response headers after 63.8397ms - 200
+2024-08-15 14:27:35.021 +08:00 [INF] End processing HTTP request after 72.0805ms - 200
+2024-08-15 14:27:35.027 +08:00 [INF] SpsController QuerySps START
+2024-08-15 14:27:35.028 +08:00 [INF] HTTP GET /api/Sps/QuerySps responded 200 in 184.2876 ms
+2024-08-15 14:28:54.621 +08:00 [INF] SpsController QuerySps START
+2024-08-15 14:28:54.692 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 14:28:54.701 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 14:28:54.733 +08:00 [INF] Received HTTP response headers after 30.0318ms - 200
+2024-08-15 14:28:54.735 +08:00 [INF] End processing HTTP request after 42.4404ms - 200
+2024-08-15 14:28:54.736 +08:00 [INF] SpsController QuerySps START
+2024-08-15 14:28:54.738 +08:00 [INF] HTTP GET /api/Sps/QuerySps responded 200 in 117.9528 ms
+2024-08-15 14:34:50.747 +08:00 [INF] SpsController QuerySps START
+2024-08-15 14:34:50.757 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 14:34:50.762 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 14:34:51.203 +08:00 [INF] Received HTTP response headers after 440.8867ms - 200
+2024-08-15 14:34:51.206 +08:00 [INF] End processing HTTP request after 449.7564ms - 200
+2024-08-15 14:34:51.210 +08:00 [INF] SpsController QuerySps START
+2024-08-15 14:34:51.216 +08:00 [INF] HTTP GET /api/Sps/QuerySps responded 200 in 469.6959 ms
+2024-08-15 14:35:13.504 +08:00 [INF] SpsController QuerySps START
+2024-08-15 14:35:14.381 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 14:35:14.389 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 14:35:14.488 +08:00 [INF] Received HTTP response headers after 97.5958ms - 200
+2024-08-15 14:35:14.688 +08:00 [INF] End processing HTTP request after 306.8202ms - 200
+2024-08-15 14:35:14.691 +08:00 [INF] SpsController QuerySps START
+2024-08-15 14:35:14.692 +08:00 [INF] HTTP GET /api/Sps/QuerySps responded 200 in 1188.7032 ms
+2024-08-15 14:35:18.165 +08:00 [INF] SpsController QuerySps START
+2024-08-15 14:35:18.201 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 14:35:18.202 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 14:35:18.228 +08:00 [INF] Received HTTP response headers after 24.6304ms - 200
+2024-08-15 14:35:18.232 +08:00 [INF] End processing HTTP request after 30.5515ms - 200
+2024-08-15 14:35:18.237 +08:00 [INF] SpsController QuerySps START
+2024-08-15 14:35:18.239 +08:00 [INF] HTTP GET /api/Sps/QuerySps responded 200 in 75.5290 ms
+2024-08-15 14:36:01.581 +08:00 [INF] SpsController QuerySps START
+2024-08-15 14:36:02.563 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 14:36:02.668 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 14:36:02.684 +08:00 [INF] Received HTTP response headers after 12.3542ms - 200
+2024-08-15 14:36:02.691 +08:00 [INF] End processing HTTP request after 128.0041ms - 200
+2024-08-15 14:36:02.696 +08:00 [INF] SpsController QuerySps START
+2024-08-15 14:36:02.698 +08:00 [INF] HTTP GET /api/Sps/QuerySps responded 200 in 1233.2609 ms
+2024-08-15 14:38:39.409 +08:00 [INF] SpsController QuerySps START
+2024-08-15 14:38:39.447 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 14:38:39.457 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 14:38:39.633 +08:00 [INF] Received HTTP response headers after 173.0999ms - 200
+2024-08-15 14:38:39.694 +08:00 [INF] End processing HTTP request after 246.3292ms - 200
+2024-08-15 14:38:39.696 +08:00 [INF] SpsController QuerySps START
+2024-08-15 14:38:39.706 +08:00 [INF] HTTP GET /api/Sps/QuerySps responded 200 in 304.5622 ms
+2024-08-15 14:49:27.655 +08:00 [INF] SpsController QuerySps START
+2024-08-15 14:49:27.761 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 14:49:27.765 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 14:49:27.932 +08:00 [INF] Received HTTP response headers after 163.4569ms - 200
+2024-08-15 14:49:27.937 +08:00 [INF] End processing HTTP request after 175.899ms - 200
+2024-08-15 14:49:27.938 +08:00 [INF] SpsController QuerySps START
+2024-08-15 14:49:27.943 +08:00 [INF] HTTP GET /api/Sps/QuerySps responded 200 in 288.6633 ms
+2024-08-15 14:50:35.004 +08:00 [INF] SpsController QuerySps START
+2024-08-15 14:50:35.025 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 14:50:35.028 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 14:50:35.059 +08:00 [INF] Received HTTP response headers after 26.5327ms - 200
+2024-08-15 14:50:35.064 +08:00 [INF] End processing HTTP request after 39.0172ms - 200
+2024-08-15 14:50:35.069 +08:00 [INF] SpsController QuerySps START
+2024-08-15 14:50:35.072 +08:00 [INF] HTTP GET /api/Sps/QuerySps responded 200 in 68.2067 ms
+2024-08-15 14:52:09.897 +08:00 [INF] SpsController QuerySps START
+2024-08-15 14:52:10.373 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 14:52:10.392 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 14:52:10.436 +08:00 [INF] Received HTTP response headers after 34.4741ms - 200
+2024-08-15 14:52:10.437 +08:00 [INF] End processing HTTP request after 63.8612ms - 200
+2024-08-15 14:52:10.440 +08:00 [INF] SpsController QuerySps START
+2024-08-15 14:52:10.452 +08:00 [INF] HTTP GET /api/Sps/QuerySps responded 200 in 554.8460 ms
+2024-08-15 14:52:30.307 +08:00 [INF] SpsController QuerySps START
+2024-08-15 14:52:30.309 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 14:52:30.310 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 14:52:30.357 +08:00 [INF] Received HTTP response headers after 45.5744ms - 200
+2024-08-15 14:52:30.375 +08:00 [INF] End processing HTTP request after 66.1329ms - 200
+2024-08-15 14:52:30.376 +08:00 [INF] SpsController QuerySps START
+2024-08-15 14:52:30.378 +08:00 [INF] HTTP GET /api/Sps/QuerySps responded 200 in 81.2766 ms
+2024-08-15 14:52:32.174 +08:00 [INF] SpsController QuerySps START
+2024-08-15 14:52:32.182 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 14:52:32.423 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 14:52:32.501 +08:00 [INF] Received HTTP response headers after 70.543ms - 200
+2024-08-15 14:52:32.504 +08:00 [INF] End processing HTTP request after 321.8301ms - 200
+2024-08-15 14:52:32.515 +08:00 [INF] SpsController QuerySps START
+2024-08-15 14:52:32.517 +08:00 [INF] HTTP GET /api/Sps/QuerySps responded 200 in 343.7038 ms
+2024-08-15 14:52:33.306 +08:00 [INF] SpsController QuerySps START
+2024-08-15 14:52:33.356 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 14:52:33.358 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 14:52:33.387 +08:00 [INF] Received HTTP response headers after 10.8074ms - 200
+2024-08-15 14:52:33.394 +08:00 [INF] End processing HTTP request after 37.7997ms - 200
+2024-08-15 14:52:33.430 +08:00 [INF] SpsController QuerySps START
+2024-08-15 14:52:33.438 +08:00 [INF] HTTP GET /api/Sps/QuerySps responded 200 in 132.9550 ms
+2024-08-15 14:52:33.452 +08:00 [INF] SpsController QuerySps START
+2024-08-15 14:52:33.463 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 14:52:33.479 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 14:52:33.517 +08:00 [INF] Received HTTP response headers after 37.588ms - 200
+2024-08-15 14:52:33.520 +08:00 [INF] End processing HTTP request after 57.4788ms - 200
+2024-08-15 14:52:33.522 +08:00 [INF] SpsController QuerySps START
+2024-08-15 14:52:33.525 +08:00 [INF] HTTP GET /api/Sps/QuerySps responded 200 in 73.4919 ms
+2024-08-15 14:52:33.992 +08:00 [INF] SpsController QuerySps START
+2024-08-15 14:52:34.011 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 14:52:34.012 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 14:52:34.032 +08:00 [INF] Received HTTP response headers after 19.4271ms - 200
+2024-08-15 14:52:34.035 +08:00 [INF] End processing HTTP request after 24.2365ms - 200
+2024-08-15 14:52:34.036 +08:00 [INF] SpsController QuerySps START
+2024-08-15 14:52:34.039 +08:00 [INF] HTTP GET /api/Sps/QuerySps responded 200 in 48.0542 ms
+2024-08-15 14:52:37.109 +08:00 [INF] SpsController QuerySps START
+2024-08-15 14:52:37.453 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 14:52:37.455 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 14:52:37.473 +08:00 [INF] Received HTTP response headers after 17.4138ms - 200
+2024-08-15 14:52:37.476 +08:00 [INF] End processing HTTP request after 22.5753ms - 200
+2024-08-15 14:52:37.479 +08:00 [INF] SpsController QuerySps START
+2024-08-15 14:52:37.480 +08:00 [INF] HTTP GET /api/Sps/QuerySps responded 200 in 371.1040 ms
+2024-08-15 14:57:24.357 +08:00 [INF] SpsController QuerySps START
+2024-08-15 14:57:24.368 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 14:57:24.372 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 14:57:24.461 +08:00 [INF] Received HTTP response headers after 79.8046ms - 200
+2024-08-15 14:57:24.464 +08:00 [INF] End processing HTTP request after 95.6393ms - 200
+2024-08-15 14:57:24.472 +08:00 [INF] SpsController QuerySps START
+2024-08-15 14:57:24.473 +08:00 [INF] HTTP GET /api/Sps/QuerySps responded 200 in 116.1030 ms
+2024-08-15 14:59:18.072 +08:00 [INF] SpsController QuerySps START
+2024-08-15 14:59:18.084 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 14:59:18.085 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 14:59:18.159 +08:00 [INF] Received HTTP response headers after 73.8186ms - 200
+2024-08-15 14:59:18.182 +08:00 [INF] End processing HTTP request after 98.0385ms - 200
+2024-08-15 14:59:18.183 +08:00 [INF] SpsController QuerySps START
+2024-08-15 14:59:18.212 +08:00 [INF] HTTP GET /api/Sps/QuerySps responded 200 in 141.2988 ms
+2024-08-15 15:00:27.338 +08:00 [INF] SpsController QuerySps START
+2024-08-15 15:00:27.623 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 15:00:27.657 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 15:00:28.104 +08:00 [INF] Received HTTP response headers after 438.943ms - 200
+2024-08-15 15:00:28.224 +08:00 [INF] End processing HTTP request after 600.0208ms - 200
+2024-08-15 15:00:28.231 +08:00 [INF] SpsController QuerySps START
+2024-08-15 15:00:28.264 +08:00 [INF] HTTP GET /api/Sps/QuerySps responded 200 in 925.5659 ms
+2024-08-15 15:00:30.886 +08:00 [INF] SpsController QuerySps START
+2024-08-15 15:00:30.897 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 15:00:30.900 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 15:00:30.920 +08:00 [INF] Received HTTP response headers after 16.3981ms - 200
+2024-08-15 15:00:30.933 +08:00 [INF] End processing HTTP request after 35.8605ms - 200
+2024-08-15 15:00:30.951 +08:00 [INF] SpsController QuerySps START
+2024-08-15 15:00:30.955 +08:00 [INF] HTTP GET /api/Sps/QuerySps responded 200 in 69.3452 ms
+2024-08-15 15:21:06.726 +08:00 [INF] SpsController QuerySps START
+2024-08-15 15:21:06.728 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 15:21:06.735 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 15:21:06.927 +08:00 [INF] Received HTTP response headers after 191.7801ms - 200
+2024-08-15 15:21:06.928 +08:00 [INF] End processing HTTP request after 200.9347ms - 200
+2024-08-15 15:21:06.931 +08:00 [INF] SpsController QuerySps START
+2024-08-15 15:21:06.933 +08:00 [INF] HTTP GET /api/Sps/QuerySps responded 200 in 207.4754 ms
+2024-08-15 15:21:35.342 +08:00 [INF] SpsController QuerySps START
+2024-08-15 15:21:35.351 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 15:21:35.353 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 15:21:35.374 +08:00 [INF] Received HTTP response headers after 16.8994ms - 200
+2024-08-15 15:21:35.392 +08:00 [INF] End processing HTTP request after 41.1994ms - 200
+2024-08-15 15:21:35.398 +08:00 [INF] SpsController QuerySps START
+2024-08-15 15:21:35.398 +08:00 [INF] HTTP GET /api/Sps/QuerySps responded 200 in 57.7812 ms
+2024-08-15 15:47:48.811 +08:00 [INF] Now listening on: http://localhost:5000
+2024-08-15 15:47:59.222 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-15 15:48:01.205 +08:00 [INF] Hosting environment: Development
+2024-08-15 15:48:01.269 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2024-08-15 15:48:01.795 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 319.0072 ms
+2024-08-15 15:48:16.908 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 1385.1936 ms
+2024-08-15 16:07:46.711 +08:00 [INF] Now listening on: http://localhost:5000
+2024-08-15 16:07:46.995 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-15 16:07:47.039 +08:00 [INF] Hosting environment: Development
+2024-08-15 16:07:47.060 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2024-08-15 16:07:47.896 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 370.7519 ms
+2024-08-15 16:07:49.913 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 1023.6284 ms
+2024-08-15 16:10:08.340 +08:00 [INF] SpsController QuerySps START
+2024-08-15 16:10:08.397 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 16:10:08.404 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 16:10:10.454 +08:00 [INF] Received HTTP response headers after 2037.197ms - 200
+2024-08-15 16:10:10.476 +08:00 [INF] End processing HTTP request after 2088.6381ms - 200
+2024-08-15 16:10:10.519 +08:00 [INF] SpsController QuerySps START
+2024-08-15 16:10:10.538 +08:00 [INF] HTTP GET /api/Sps/QuerySps responded 200 in 2481.1909 ms
+2024-08-15 16:11:16.808 +08:00 [INF] SpsController QuerySps START
+2024-08-15 16:11:17.262 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 16:11:17.265 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 16:11:17.311 +08:00 [INF] Received HTTP response headers after 42.8825ms - 200
+2024-08-15 16:11:17.313 +08:00 [INF] End processing HTTP request after 50.4504ms - 200
+2024-08-15 16:11:17.317 +08:00 [INF] SpsController QuerySps START
+2024-08-15 16:11:17.323 +08:00 [INF] HTTP GET /api/Sps/QuerySps responded 200 in 526.6169 ms
+2024-08-15 16:11:35.120 +08:00 [INF] SpsController PutSps START
+2024-08-15 16:11:35.930 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/PutSps
+2024-08-15 16:11:35.937 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/PutSps
+2024-08-15 16:11:36.044 +08:00 [INF] Received HTTP response headers after 106.4943ms - 200
+2024-08-15 16:11:36.053 +08:00 [INF] End processing HTTP request after 116.0084ms - 200
+2024-08-15 16:11:36.060 +08:00 [INF] SpsController PutSps START
+2024-08-15 16:11:36.073 +08:00 [INF] HTTP PUT /api/Sps/ responded 200 in 975.7703 ms
+2024-08-15 16:11:44.512 +08:00 [INF] SpsController QuerySps START
+2024-08-15 16:11:44.580 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 16:11:44.587 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 16:11:44.807 +08:00 [INF] Received HTTP response headers after 196.057ms - 200
+2024-08-15 16:11:44.840 +08:00 [INF] End processing HTTP request after 259.9014ms - 200
+2024-08-15 16:11:44.848 +08:00 [INF] SpsController QuerySps START
+2024-08-15 16:11:44.851 +08:00 [INF] HTTP GET /api/Sps/QuerySps responded 200 in 346.1446 ms
+2024-08-15 16:12:09.155 +08:00 [INF] SpsController QuerySps START
+2024-08-15 16:12:09.158 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 16:12:09.166 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 16:12:09.201 +08:00 [INF] Received HTTP response headers after 33.9601ms - 200
+2024-08-15 16:12:09.205 +08:00 [INF] End processing HTTP request after 46.5496ms - 200
+2024-08-15 16:12:09.206 +08:00 [INF] SpsController QuerySps START
+2024-08-15 16:12:09.208 +08:00 [INF] HTTP GET /api/Sps/QuerySps responded 200 in 54.4198 ms
+2024-08-15 16:12:21.523 +08:00 [INF] SpsController PutSps START
+2024-08-15 16:12:21.635 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/PutSps
+2024-08-15 16:12:21.639 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/PutSps
+2024-08-15 16:12:21.668 +08:00 [INF] Received HTTP response headers after 15.2372ms - 200
+2024-08-15 16:12:21.672 +08:00 [INF] End processing HTTP request after 36.414ms - 200
+2024-08-15 16:12:21.675 +08:00 [INF] SpsController PutSps START
+2024-08-15 16:12:21.677 +08:00 [INF] HTTP PUT /api/Sps/ responded 200 in 156.8690 ms
+2024-08-15 16:12:25.897 +08:00 [INF] SpsController QuerySps START
+2024-08-15 16:12:25.906 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 16:12:25.917 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 16:12:25.951 +08:00 [INF] Received HTTP response headers after 20.0708ms - 200
+2024-08-15 16:12:25.962 +08:00 [INF] End processing HTTP request after 56.6177ms - 200
+2024-08-15 16:12:25.966 +08:00 [INF] SpsController QuerySps START
+2024-08-15 16:12:25.968 +08:00 [INF] HTTP GET /api/Sps/QuerySps responded 200 in 71.1584 ms
+2024-08-15 16:13:01.394 +08:00 [INF] SpsController PutSps START
+2024-08-15 16:13:01.395 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/PutSps
+2024-08-15 16:13:01.396 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/PutSps
+2024-08-15 16:13:01.460 +08:00 [INF] Received HTTP response headers after 62.2572ms - 200
+2024-08-15 16:13:01.469 +08:00 [INF] End processing HTTP request after 73.9956ms - 200
+2024-08-15 16:13:01.471 +08:00 [INF] SpsController PutSps START
+2024-08-15 16:13:01.472 +08:00 [INF] HTTP PUT /api/Sps/ responded 200 in 77.8302 ms
+2024-08-15 16:13:02.378 +08:00 [INF] SpsController QuerySps START
+2024-08-15 16:13:02.425 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 16:13:02.429 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 16:13:02.445 +08:00 [INF] Received HTTP response headers after 14.5362ms - 200
+2024-08-15 16:13:02.460 +08:00 [INF] End processing HTTP request after 34.8594ms - 200
+2024-08-15 16:13:02.463 +08:00 [INF] SpsController QuerySps START
+2024-08-15 16:13:02.464 +08:00 [INF] HTTP GET /api/Sps/QuerySps responded 200 in 88.3754 ms
+2024-08-15 16:13:20.795 +08:00 [INF] SpsController PutSps START
+2024-08-15 16:13:20.796 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/PutSps
+2024-08-15 16:13:20.797 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/PutSps
+2024-08-15 16:13:20.844 +08:00 [INF] Received HTTP response headers after 45.505ms - 200
+2024-08-15 16:13:20.847 +08:00 [INF] End processing HTTP request after 50.4771ms - 200
+2024-08-15 16:13:20.848 +08:00 [INF] SpsController PutSps START
+2024-08-15 16:13:20.858 +08:00 [INF] HTTP PUT /api/Sps/ responded 200 in 63.4773 ms
+2024-08-15 16:13:22.252 +08:00 [INF] SpsController QuerySps START
+2024-08-15 16:13:22.297 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 16:13:22.300 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 16:13:22.324 +08:00 [INF] Received HTTP response headers after 15.9428ms - 200
+2024-08-15 16:13:22.331 +08:00 [INF] End processing HTTP request after 34.0735ms - 200
+2024-08-15 16:13:22.342 +08:00 [INF] SpsController QuerySps START
+2024-08-15 16:13:22.344 +08:00 [INF] HTTP GET /api/Sps/QuerySps responded 200 in 93.3830 ms
+2024-08-15 16:15:16.958 +08:00 [INF] SpsController QuerySps START
+2024-08-15 16:15:16.969 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 16:15:16.970 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 16:15:17.316 +08:00 [INF] Received HTTP response headers after 329.1057ms - 200
+2024-08-15 16:15:17.489 +08:00 [INF] End processing HTTP request after 520.1732ms - 200
+2024-08-15 16:15:17.491 +08:00 [INF] SpsController QuerySps START
+2024-08-15 16:15:17.494 +08:00 [INF] HTTP GET /api/Sps/QuerySps responded 200 in 540.5265 ms
+2024-08-15 16:15:21.538 +08:00 [INF] SpsController QuerySps START
+2024-08-15 16:15:21.548 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 16:15:21.549 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 16:15:21.569 +08:00 [INF] Received HTTP response headers after 18.9711ms - 200
+2024-08-15 16:15:21.579 +08:00 [INF] End processing HTTP request after 31.3116ms - 200
+2024-08-15 16:15:21.584 +08:00 [INF] SpsController QuerySps START
+2024-08-15 16:15:21.585 +08:00 [INF] HTTP GET /api/Sps/QuerySps responded 200 in 47.9906 ms
+2024-08-15 16:15:51.122 +08:00 [INF] SpsController QuerySps START
+2024-08-15 16:15:51.234 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 16:15:51.238 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2024-08-15 16:15:51.283 +08:00 [INF] Received HTTP response headers after 44.4881ms - 200
+2024-08-15 16:15:51.289 +08:00 [INF] End processing HTTP request after 55.263ms - 200
+2024-08-15 16:15:51.290 +08:00 [INF] SpsController QuerySps START
+2024-08-15 16:15:51.293 +08:00 [INF] HTTP GET /api/Sps/QuerySps responded 200 in 171.5356 ms

@@ -1,0 +1,52 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitignore
+
+# Documentation
+README.md
+*.md
+
+# Tests
+FontEnd/src/test/
+FontEnd/e2e/
+*.test.ts
+*.spec.ts
+
+# Development files
+FontEnd/src/
+FontEnd/angular.json
+FontEnd/tsconfig*.json
+
+# Build artifacts
+# FontEnd/dist/  # 保留 dist 目錄用於 Docker 建置
+coverage/
+
+# Logs
+logs/
+*.log
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Temporary folders
+tmp/
+temp/

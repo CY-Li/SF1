@@ -1,0 +1,40 @@
+2025-04-26 07:11:52.282 +08:00 [INF] Now listening on: http://localhost:5000
+2025-04-26 07:11:52.311 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-26 07:11:52.313 +08:00 [INF] Hosting environment: Development
+2025-04-26 07:11:52.313 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2025-04-26 07:11:55.574 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 560.6020 ms
+2025-04-26 07:11:57.834 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 1022.8880 ms
+2025-04-26 07:12:26.054 +08:00 [INF] PointConversionController GetTransactionData START
+2025-04-26 07:12:26.183 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/PointConversionService/GetTransactionData
+2025-04-26 07:12:26.189 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/PointConversionService/GetTransactionData
+2025-04-26 07:12:33.402 +08:00 [INF] Received HTTP response headers after 7204.4836ms - 200
+2025-04-26 07:12:33.405 +08:00 [INF] End processing HTTP request after 7228.5386ms - 200
+2025-04-26 07:12:33.436 +08:00 [INF] PointConversionController GetTransactionData START
+2025-04-26 07:12:33.647 +08:00 [INF] HTTP GET /api/PointConversion/1 responded 200 in 7862.5857 ms
+2025-04-26 07:14:12.766 +08:00 [INF] ApplyDepositController PostApplyDeposit START
+2025-04-26 07:14:12.795 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyDepositService/PostApplyDeposit
+2025-04-26 07:14:12.798 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyDepositService/PostApplyDeposit
+2025-04-26 07:14:12.942 +08:00 [INF] Received HTTP response headers after 130.9113ms - 400
+2025-04-26 07:14:12.946 +08:00 [INF] End processing HTTP request after 151.0826ms - 400
+2025-04-26 07:14:13.044 +08:00 [INF] ApplyDepositController PostApplyDeposit END
+2025-04-26 07:14:13.061 +08:00 [INF] HTTP POST /api/ApplyDeposit responded 200 in 567.0906 ms
+2025-04-26 07:16:15.648 +08:00 [INF] Now listening on: http://localhost:5000
+2025-04-26 07:16:15.698 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-26 07:16:15.699 +08:00 [INF] Hosting environment: Development
+2025-04-26 07:16:15.700 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2025-04-26 07:16:19.688 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 624.8424 ms
+2025-04-26 07:16:21.255 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 966.5145 ms
+2025-04-26 07:17:44.817 +08:00 [INF] ApplyDepositController PostApplyDeposit START
+2025-04-26 07:17:44.866 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyDepositService/PostApplyDeposit
+2025-04-26 07:17:44.876 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyDepositService/PostApplyDeposit
+2025-04-26 07:17:45.873 +08:00 [INF] Received HTTP response headers after 992.443ms - 200
+2025-04-26 07:17:45.887 +08:00 [INF] End processing HTTP request after 1027.4969ms - 200
+2025-04-26 07:17:45.901 +08:00 [INF] ApplyDepositController PostApplyDeposit END
+2025-04-26 07:17:45.976 +08:00 [INF] HTTP POST /api/ApplyDeposit responded 200 in 1357.9461 ms
+2025-04-26 07:19:58.536 +08:00 [INF] ApplyWithdrawController PostApplyWithdraw START
+2025-04-26 07:19:58.550 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyWithdrawService/PostApplyWithdraw
+2025-04-26 07:19:58.556 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyWithdrawService/PostApplyWithdraw
+2025-04-26 07:19:58.653 +08:00 [INF] Received HTTP response headers after 96.1007ms - 200
+2025-04-26 07:19:58.666 +08:00 [INF] End processing HTTP request after 118.1058ms - 200
+2025-04-26 07:19:58.670 +08:00 [INF] ApplyWithdrawController PostApplyWithdraw END
+2025-04-26 07:19:58.680 +08:00 [INF] HTTP POST /api/ApplyWithdraw responded 200 in 248.7070 ms

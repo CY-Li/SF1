@@ -1,0 +1,44 @@
+2024-08-29 00:24:55.036 +08:00 [INF] Now listening on: http://localhost:5000
+2024-08-29 00:24:56.347 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-29 00:24:56.350 +08:00 [INF] Hosting environment: Development
+2024-08-29 00:24:56.369 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2024-08-29 00:24:58.358 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 583.4840 ms
+2024-08-29 00:25:09.948 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 1573.8038 ms
+2024-08-29 00:27:31.338 +08:00 [INF] KycController PostKyc START
+2024-08-29 00:27:31.437 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/AuthenticationMgmt/KycService/CheckKyc
+2024-08-29 00:27:31.444 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/AuthenticationMgmt/KycService/CheckKyc
+2024-08-29 00:27:33.774 +08:00 [INF] Received HTTP response headers after 2325.2479ms - 200
+2024-08-29 00:27:33.783 +08:00 [INF] End processing HTTP request after 2354.8825ms - 200
+2024-08-29 00:27:38.904 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/AuthenticationMgmt/KycService/PostKyc
+2024-08-29 00:27:39.142 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/AuthenticationMgmt/KycService/PostKyc
+2024-08-29 00:27:39.273 +08:00 [INF] Received HTTP response headers after 115.1919ms - 200
+2024-08-29 00:27:39.285 +08:00 [INF] End processing HTTP request after 381.8213ms - 200
+2024-08-29 00:27:39.293 +08:00 [INF] KycController PostKyc END
+2024-08-29 00:27:39.313 +08:00 [INF] HTTP POST /api/Kyc responded 200 in 8169.2642 ms
+2024-08-29 00:28:53.054 +08:00 [INF] KycController QueryKycAdmin START
+2024-08-29 00:28:53.059 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/AuthenticationMgmt/KycService/QueryKycAdmin
+2024-08-29 00:28:53.067 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/AuthenticationMgmt/KycService/QueryKycAdmin
+2024-08-29 00:28:53.340 +08:00 [INF] Received HTTP response headers after 271.0168ms - 200
+2024-08-29 00:28:53.371 +08:00 [INF] End processing HTTP request after 311.9493ms - 200
+2024-08-29 00:28:53.462 +08:00 [INF] HTTP GET /api/Kyc/QueryKycAdmin responded 200 in 449.7595 ms
+2024-08-29 00:28:53.631 +08:00 [INF] KycController GetKycImage START
+2024-08-29 00:28:53.631 +08:00 [INF] KycController GetKycImage START
+2024-08-29 00:28:53.687 +08:00 [INF] HTTP GET /api/Kyc/1/8/026313d4-27d5-42e6-8be6-5b4e2cc34637_01.png responded 200 in 95.7599 ms
+2024-08-29 00:28:53.695 +08:00 [INF] KycController GetKycImage START
+2024-08-29 00:28:53.697 +08:00 [INF] KycController GetKycImage START
+2024-08-29 00:28:53.712 +08:00 [INF] HTTP GET /api/Kyc/283/7/8e394045-1298-4610-9a2c-4bc9b08bc71a_02.png responded 200 in 15.6350 ms
+2024-08-29 00:28:53.720 +08:00 [INF] HTTP GET /api/Kyc/283/7/8e394045-1298-4610-9a2c-4bc9b08bc71a_01.jpg responded 200 in 25.5726 ms
+2024-08-29 00:28:53.722 +08:00 [INF] HTTP GET /api/Kyc/1/8/026313d4-27d5-42e6-8be6-5b4e2cc34637_02.jpg responded 200 in 130.6359 ms
+2024-08-29 00:29:16.701 +08:00 [INF] KycController PutKyc START
+2024-08-29 00:29:16.720 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/AuthenticationMgmt/KycService/PutKyc
+2024-08-29 00:29:16.724 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/AuthenticationMgmt/KycService/PutKyc
+2024-08-29 00:29:20.510 +08:00 [INF] Received HTTP response headers after 3782.8178ms - 200
+2024-08-29 00:29:20.511 +08:00 [INF] End processing HTTP request after 3791.5521ms - 200
+2024-08-29 00:29:20.515 +08:00 [INF] KycController PutKyc END
+2024-08-29 00:29:20.517 +08:00 [INF] HTTP PUT /api/Kyc/ responded 200 in 6054.7751 ms
+2024-08-29 00:29:22.801 +08:00 [INF] KycController QueryKycAdmin START
+2024-08-29 00:29:22.804 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/AuthenticationMgmt/KycService/QueryKycAdmin
+2024-08-29 00:29:22.810 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/AuthenticationMgmt/KycService/QueryKycAdmin
+2024-08-29 00:29:22.858 +08:00 [INF] Received HTTP response headers after 45.2956ms - 200
+2024-08-29 00:29:22.867 +08:00 [INF] End processing HTTP request after 63.3977ms - 200
+2024-08-29 00:29:22.873 +08:00 [INF] HTTP GET /api/Kyc/QueryKycAdmin responded 200 in 72.8916 ms

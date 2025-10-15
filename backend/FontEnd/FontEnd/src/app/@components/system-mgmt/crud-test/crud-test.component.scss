@@ -1,0 +1,40 @@
+.mat-50 {
+    width: 48%;
+    margin: 1%;
+}
+
+@media (max-width: 600px) {
+
+    /* 假設小於6吋的手機寬度約為600px */
+    .mat-50 {
+        width: 99%;
+        margin: 1%;
+    }
+}
+
+.form-action {
+    padding: 0px 25px 20px;
+
+    button {
+        flex: 1;
+        margin-right: 8px;
+    }
+}
+.table-action {
+    display: flex;
+    gap: 5px;
+  }
+
+
+.example-element-row td {
+    border-bottom-width: 0;
+}
+
+.example-element-detail {
+    overflow: hidden;
+    display: flex;
+}
+
+tr.example-detail-row {
+    height: 0;
+}

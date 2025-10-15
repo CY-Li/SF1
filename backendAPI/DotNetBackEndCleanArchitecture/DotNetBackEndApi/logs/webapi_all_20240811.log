@@ -1,0 +1,86 @@
+2024-08-11 00:11:51.489 +08:00 [INF] Now listening on: http://localhost:5000
+2024-08-11 00:11:52.216 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-11 00:11:52.830 +08:00 [INF] Hosting environment: Development
+2024-08-11 00:11:52.891 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2024-08-11 00:11:56.416 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 263.0554 ms
+2024-08-11 00:11:58.237 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 1061.8382 ms
+2024-08-11 00:12:18.613 +08:00 [INF] KycController PostKYC START
+2024-08-11 12:18:26.466 +08:00 [INF] Now listening on: http://localhost:5000
+2024-08-11 12:18:26.498 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-11 12:18:26.511 +08:00 [INF] Hosting environment: Development
+2024-08-11 12:18:26.513 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2024-08-11 12:18:31.091 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 359.9267 ms
+2024-08-11 12:18:33.122 +08:00 [ERR] HTTP GET /swagger/v1/swagger.json responded 500 in 1236.8981 ms
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - DotNetBackEndApi.Controllers.AuthenticationMgmt.KycController.GetKycImage (DotNetBackEndApi). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-08-11 12:18:33.433 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - DotNetBackEndApi.Controllers.AuthenticationMgmt.KycController.GetKycImage (DotNetBackEndApi). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-08-11 12:19:35.289 +08:00 [INF] Now listening on: http://localhost:5000
+2024-08-11 12:19:35.303 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-11 12:19:35.305 +08:00 [INF] Hosting environment: Development
+2024-08-11 12:19:35.306 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2024-08-11 12:19:37.666 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 520.3377 ms
+2024-08-11 12:19:42.835 +08:00 [ERR] HTTP GET /swagger/v1/swagger.json responded 500 in 993.3982 ms
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - DotNetBackEndApi.Controllers.AuthenticationMgmt.KycController.GetKycImage (DotNetBackEndApi). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-08-11 12:19:42.897 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - DotNetBackEndApi.Controllers.AuthenticationMgmt.KycController.GetKycImage (DotNetBackEndApi). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-08-11 12:20:19.466 +08:00 [INF] Now listening on: http://localhost:5000
+2024-08-11 12:20:19.615 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-11 12:20:19.670 +08:00 [INF] Hosting environment: Development
+2024-08-11 12:20:19.674 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2024-08-11 12:20:21.921 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 301.2979 ms
+2024-08-11 12:20:23.376 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 896.1792 ms
+2024-08-11 12:20:40.149 +08:00 [INF] KycController GetKycImage START
+2024-08-11 12:20:50.151 +08:00 [INF] KycController GetKycImage END
+2024-08-11 12:20:51.990 +08:00 [INF] HTTP GET /api/Kyc responded 200 in 13853.4002 ms
+2024-08-11 18:04:09.162 +08:00 [INF] Now listening on: http://localhost:5000
+2024-08-11 18:04:09.191 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-11 18:04:09.193 +08:00 [INF] Hosting environment: Development
+2024-08-11 18:04:09.198 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2024-08-11 18:04:12.516 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 234.4649 ms
+2024-08-11 18:04:13.832 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 797.2235 ms
+2024-08-11 18:05:02.213 +08:00 [INF] KycController GetKycImage START
+2024-08-11 18:05:02.260 +08:00 [INF] HTTP GET /api/Kyc/下載111 responded 404 in 189.3964 ms
+2024-08-11 18:05:27.796 +08:00 [INF] KycController GetKycImage START
+2024-08-11 18:05:49.017 +08:00 [INF] HTTP GET /api/Kyc/下載111 responded 404 in 28844.7549 ms
+2024-08-11 18:06:00.406 +08:00 [INF] KycController GetKycImage START
+2024-08-11 18:06:19.482 +08:00 [INF] HTTP GET /api/Kyc/下載111.jpg responded 404 in 21305.1376 ms
+2024-08-11 18:06:27.422 +08:00 [INF] KycController GetKycImage START
+2024-08-11 18:06:27.456 +08:00 [INF] HTTP GET /api/Kyc/下載111.png responded 200 in 1688.0771 ms
+2024-08-11 18:14:18.278 +08:00 [INF] KycController PostKYC START
+2024-08-11 18:15:52.075 +08:00 [INF] KycController PostKYC END
+2024-08-11 18:15:52.082 +08:00 [INF] HTTP POST /api/Kyc responded 200 in 93921.6362 ms
+2024-08-11 22:05:46.703 +08:00 [INF] Now listening on: http://localhost:5000
+2024-08-11 22:05:46.716 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-11 22:05:46.723 +08:00 [INF] Hosting environment: Development
+2024-08-11 22:05:46.723 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2024-08-11 22:05:54.840 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 616.2431 ms
+2024-08-11 22:05:56.577 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 830.9804 ms
+2024-08-11 22:07:30.751 +08:00 [INF] KycController PostKYC START
+2024-08-11 22:08:12.517 +08:00 [INF] KycController PostKYC END
+2024-08-11 22:08:12.551 +08:00 [INF] HTTP POST /api/Kyc responded 200 in 42052.8815 ms

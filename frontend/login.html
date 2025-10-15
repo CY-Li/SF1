@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
+    <title></title>
+    <script src="./js/library/jquery.min.js"></script>
+    <script src="./js/library/popper.min.js"></script>
+    <script src="./js/library/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/library/bootstrap.min.css" />
+    <script src="./js/library/vue.min.js"></script>
+    <script src="./js/library/axios.min.js"></script>
+    <script src="./js/header.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+
+    <link rel="stylesheet" href="./scss/login.css" />
+    <script>
+      $(function() {
+        $("#footer").load("./component/footer.html")
+      })
+    </script>
+
+  </head>
+
+  <body>
+    <div id="app" v-cloak>
+      <header id="header">
+        <my-header></my-header>
+      </header>
+      <main>
+        <!-- 快速登入 -->
+        <div v-show="layoutType === 1" class="mainFrame loginFrame ">
+          <div class="frameTitle">
+            <div class="title-zh">快速登入</div>
+            <div class="title-en text-en">LOGIN</div>
+            <!-- <div class="close"><i class="bi bi-x"></i></div> -->
+          </div>
+          <div class="frameBody d-flex flex-wrap">
+            <div class="loginLayout">
+              <div class="text">會員登入</div>
+              <form @submit.prevent="login" id="login" class="loginForm">
+                <!-- <div class="login-input-group">
+                  <label for="cellphone_login" class="form-label">手機認證</label>
+                  <div class="cellphoneInput">
+                    <input required type="tel" class="form-control" id="cellphone_login" name="cellphone_login">
+                  </div>
+                </div> -->
+                <div class="login-input-group">
+                  <label for="account_login" class="form-label">帳號</label>
+                  <input v-model="loginForm.account" minlength="4" maxlength="20" required type="text" class="form-control" id="account_login">
+                </div>
+
+                <div class="login-input-group" style="position: relative">
+                  <label for="password_login" class="form-label">密碼</label>
+                  <input v-model="loginForm.pswd" minlength="4" maxlength="15" required :type="showPassword? 'text' : 'password'" class="form-control" id="password_login">
+                  <span class="input-eye" @click="showPassword = !showPassword">
+                    <i class="bi" :class="[showPassword? 'bi-eye' : 'bi-eye-slash']"></i>
+                   </span>
+                  <div @click="layoutType = 3" class="forget"><span>忘記密碼</span><i class="bi bi-question-circle"></i></div>
+                </div>
+                <div class="d-block align-items-end d-lg-flex">
+                  <div class="valid-group login-input-group">
+                    <label for="valid_login" class="form-label">請輸入驗證碼</label>
+                    <input v-model="loginForm.validCode" required type="text" class="form-control" id="valid_login" name="valid_login">
+                  </div>
+                  <div class="validCanvas"><canvas @click="drawCanvas" id="mycanvas" width='160' height='40'></canvas></div>
+                </div>
+
+                <button class="submitBtn common-btn">
+                  <div class="btn-zh w-100">登　　入</div>
+                  <div class="btn-en w-100 text-en">LOGIN</div>
+                </button>
+              </form>
+            </div>
+            <div class="toRegist">
+              <div class="toRegistTextZh">註冊會員</div>
+              <div class="toRegistTextEn text-en">REGISTED MEMBER</div>
+              <div class="submitBtn common-btn" @click="layoutType = 2">
+                <div class="btn-zh w-100 text-center">註冊會員</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 註冊 -->
+        <div v-show="layoutType === 2" class="mainFrame registFrame">
+          <div class="frameTitle">
+            <div class="title-zh">註冊帳號</div>
+            <div class="title-en text-en">REGISTER ACCOUNT</div>
+            <div @click="layoutType = 1" class="close"><i class="bi bi-x"></i></div>
+          </div>
+          <div class="frameBody">
+            <form @submit.prevent="regist" class="registForm" id="regist">
+              <div class="customLabel">
+                <div>
+                  <label for="account">帳　　號<span class="required">*</span></label>
+                  <div style="color: #a11f1a" class="text-left">(手機號碼)</div>
+                </div>
+                <div class="phone-group-input">
+                  <select v-model="registForm.areaCode" class="form-select" id="phone_code" required>
+                    <option selected value="+886">台灣+886</option>
+                  </select>
+                  <div class="inputContainer"><input v-model="registForm.account" minlength="4" maxlength="25" id="account" name="account" type="text" required></div>
+                </div>
+                <div class="tip mt-0">台灣地區開頭不必填0</div>
+              </div>
+              <div class="customLabel">
+                <label for="password">密　　碼<span class="required">*</span></label>
+                <div class="inputContainer"><input v-model="registForm.pswd" minlength="4" maxlength="15" id="password" name="password" type="password" required></div>
+                <div class="tip">
+                  密碼設定長度至少為8個字元的字串。<br>
+                  至少有兩個大小寫之英文字母，並混和數字。<br>
+                  <!-- 避免使用重複、過於簡單且易於猜測或與帳號相同的字母或數字(例如：aaa、abc、123...)。<br>
+                  避免使用他人容易取得之資料設為密碼(例如：英文名、生日或電話…等) -->
+                </div>
+              </div>
+
+              <div class="customLabel">
+                <label for="password_confirm">確認密碼<span class="required">*</span></label>
+                <div class="inputContainer"><input v-model="registForm.pswd2" id="password_confirm" name="password_confirm" type="password" required></div>
+              </div>
+              <div class="customLabel">
+                <label for="referral" class="ps-0 ps-lg-3">推薦人<span class="required">*</span></label>
+                <div  class="inputContainer"><input id="referral" v-model="registForm.introducer" name="referral" type="text" required></div>
+                <div class="tip mt-0">填寫完整電話號碼</div>
+              </div>
+
+              <div class="customLabel">
+                <label for="referral" class="ps-0 ps-lg-3">安置碼<span class="required">*</span></label>
+                <div  class="inputContainer"><input id="referral" v-model="registForm.invite" name="referral" type="text" required></div>
+              </div>
+
+              <div class="customLabel">
+                <label for="password2">二級密碼<span class="required">*</span></label>
+                <div class="inputContainer"><input v-model="registForm.mm_2nd_pwd" minlength="4" maxlength="15" id="password2" name="password2" type="password" required></div>
+              </div>
+              <div class="customLabel">
+                <label for="mm_2nd_pwd2">確認密碼<span class="required">*</span></label>
+                <div class="inputContainer"><input v-model="registForm.mm_2nd_pwd2" id="mm_2nd_pwd2" name="mm_2nd_pwd2" type="password" required></div>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" v-model="registForm.confirm" type="checkbox" name="check_terms" id="check_terms" required>
+                <label class="form-check-label" for="check_terms">
+                  本人已清楚了解並同意<span @click="showTerms" class="termsBtn" style="color: #d4481c;cursor:pointer">平安商會條款內容</span>
+                </label>
+              </div>
+
+              <button class="submitBtn common-btn">
+                <div class="btn-zh w-100">確認註冊</div>
+                <div class="btn-en w-100 text-en">CONFIRM REGISTRATION</div>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- 忘記密碼 -->
+        <div v-show="layoutType === 3" class="mainFrame forgetFrame">
+          <div class="frameTitle">
+            <div class="title-zh">忘記密碼</div>
+            <div class="title-en text-en">FORGET THE PASSWORD</div>
+            <div @click="layoutType = 1" class="close"><i class="bi bi-x"></i></div>
+          </div>
+          <div class="frameBody forgetBody">
+            <div @click="layoutType = 1" class="return">
+              <i class="bi bi-arrow-return-left"></i>
+              <span>返回快速登入</span>
+            </div>
+            <form action="" methods="POST" class="registForm" id="forgetPassword">
+              <div class="customLabel">
+                <label for="cellphone_forget">手機號碼</label>
+                <div class="cellphoneInput">
+                  <input id="cellphone_forget" name="cellphone_forget" type="tel" required>
+                  <div class="phoneCheck">
+                    <span class="checkIcon"><i class="bi bi-check-circle"></i></span>
+                    <span class="d-none d-lg-inline">可使用。</span>
+                  </div>
+                </div>
+                <div class="tip">請正確輸入，下一步將會進行手機簡訊驗證。</div>
+              </div>
+
+              <div class="customLabel">
+                <label for="message_forget">簡訊驗證</label>
+                <div class="messageInput"><input id="message_forget" name="message_forget" type="text" required></div>
+                <div class="sendMsgBtn common-btn">寄送簡訊驗證</div>
+              </div>
+
+              <div class="customLabel">
+                <label for="password_forget">新密碼　</label>
+                <div class="inputContainer"><input id="password_forget" name="password_forget" type="password" required></div>
+                <div class="tip">
+                  密碼設定長度至少為8個字元的字串。<br>
+                  至少有兩個英文字母，並混和數字。<br>
+                  避免使用重複、過於簡單且易於猜測或與帳號相同的字母或數字(例如：aaa、abc、123...)。<br>
+                  避免使用他人容易取得之資料設為密碼(例如：英文名、生日或電話…等)
+                </div>
+              </div>
+
+              <div class="customLabel mb-5 mb-lg-0">
+                <label for="password_forget_confirm">再次確認<br class="d-none d-lg-block">新密碼</label>
+                <div><input id="password_forget_confirm" name="password_forget_confirm" type="password" required></div>
+              </div>
+
+
+              <button class="submitBtn common-btn" type="submit">
+                <div class="btn-zh w-100">確認重置密碼</div>
+                <div class="btn-en w-100 text-en">CONFIRM RESET PASSWORD</div>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- 條款 -->
+        <div v-show="layoutType === 4" class="mainFrame termsFrame">
+          <div class="frameTitle">
+            <div class="title-zh">平安商會條款內容</div>
+            <div class="title-en text-en">Chamber of Commerce Terms</div>
+            <div @click="layoutType = 2" class="close"><i class="bi bi-x"></i></div>
+          </div>
+          <div class="frameBody terms">
+            <div @click="layoutType = 2" class="return">
+              <i class="bi bi-arrow-return-left"></i>
+              <span>返回註冊</span>
+            </div>
+            <div class="content">條款內容條款內容條款內容條款內容,條款內容條款內容,條款內容條款內容條款內容條款內容,條款內容條款內容,條款內容條款內容</div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer id="footer"></footer>
+    <script src="./js/login.js"></script>
+
+  </body>
+</html>

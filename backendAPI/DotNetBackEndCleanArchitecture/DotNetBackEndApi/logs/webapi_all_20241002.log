@@ -1,0 +1,132 @@
+2024-10-02 19:03:03.980 +08:00 [INF] Now listening on: http://localhost:5000
+2024-10-02 19:03:05.669 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-02 19:03:05.685 +08:00 [INF] Hosting environment: Development
+2024-10-02 19:03:05.687 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2024-10-02 19:03:08.449 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 632.2202 ms
+2024-10-02 19:03:11.839 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 2067.2407 ms
+2024-10-02 20:34:08.536 +08:00 [INF] HTTP GET /api/ApplyWithdraw/QueryApplyWithdrawAdmin responded 200 in 163.2132 ms
+2024-10-02 20:34:26.304 +08:00 [INF] ApplyWithdrawController QueryApplyDepositAdmin START
+2024-10-02 20:34:28.325 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyDepositService/QueryApplyDepositAdmin
+2024-10-02 20:34:29.389 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyDepositService/QueryApplyDepositAdmin
+2024-10-02 20:34:43.529 +08:00 [INF] Received HTTP response headers after 13094.2276ms - 200
+2024-10-02 20:34:43.679 +08:00 [INF] End processing HTTP request after 15363.15ms - 200
+2024-10-02 20:34:43.728 +08:00 [INF] ApplyWithdrawController QueryApplyDepositAdmin START
+2024-10-02 20:34:43.744 +08:00 [INF] HTTP GET /api/ApplyWithdraw/QueryApplyWithdrawAdmin responded 200 in 17450.7510 ms
+2024-10-02 20:37:20.224 +08:00 [INF] Now listening on: http://localhost:5000
+2024-10-02 20:37:20.361 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-02 20:37:20.364 +08:00 [INF] Hosting environment: Development
+2024-10-02 20:37:20.366 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2024-10-02 20:37:26.857 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 474.2282 ms
+2024-10-02 20:37:28.989 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 1107.0266 ms
+2024-10-02 20:38:13.465 +08:00 [INF] ApplyWithdrawController QueryApplyWithdrawAdmin START
+2024-10-02 20:38:13.529 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawAdmin
+2024-10-02 20:38:13.540 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawAdmin
+2024-10-02 20:38:18.893 +08:00 [INF] Received HTTP response headers after 5275.8425ms - 200
+2024-10-02 20:38:18.981 +08:00 [INF] End processing HTTP request after 5462.9451ms - 200
+2024-10-02 20:38:19.032 +08:00 [INF] ApplyWithdrawController QueryApplyWithdrawAdmin START
+2024-10-02 20:38:19.062 +08:00 [INF] HTTP GET /api/ApplyWithdraw/QueryApplyWithdrawAdmin responded 200 in 5826.3262 ms
+2024-10-02 20:38:34.093 +08:00 [INF] ApplyWithdrawController QueryApplyWithdrawAdmin START
+2024-10-02 20:38:34.130 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawAdmin
+2024-10-02 20:38:34.145 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawAdmin
+2024-10-02 20:38:39.123 +08:00 [INF] Received HTTP response headers after 4976.6076ms - 200
+2024-10-02 20:38:39.133 +08:00 [INF] End processing HTTP request after 5003.7103ms - 200
+2024-10-02 20:38:39.138 +08:00 [INF] ApplyWithdrawController QueryApplyWithdrawAdmin START
+2024-10-02 20:38:39.144 +08:00 [INF] HTTP GET /api/ApplyWithdraw/QueryApplyWithdrawAdmin responded 200 in 5092.8969 ms
+2024-10-02 20:45:04.537 +08:00 [INF] ApplyWithdrawController QueryApplyWithdrawAdmin START
+2024-10-02 20:45:04.802 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawAdmin
+2024-10-02 20:45:04.803 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawAdmin
+2024-10-02 20:45:04.875 +08:00 [INF] Received HTTP response headers after 66.6602ms - 200
+2024-10-02 20:45:04.883 +08:00 [INF] End processing HTTP request after 81.0608ms - 200
+2024-10-02 20:45:04.885 +08:00 [INF] ApplyWithdrawController QueryApplyWithdrawAdmin START
+2024-10-02 20:45:04.896 +08:00 [INF] HTTP GET /api/ApplyWithdraw/QueryApplyWithdrawAdmin responded 200 in 362.7382 ms
+2024-10-02 20:45:40.088 +08:00 [INF] ApplyWithdrawController QueryApplyWithdrawAdmin START
+2024-10-02 20:45:40.091 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawAdmin
+2024-10-02 20:45:40.093 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawAdmin
+2024-10-02 20:45:40.139 +08:00 [INF] Received HTTP response headers after 40.8457ms - 200
+2024-10-02 20:45:40.141 +08:00 [INF] End processing HTTP request after 49.8934ms - 200
+2024-10-02 20:45:40.149 +08:00 [INF] ApplyWithdrawController QueryApplyWithdrawAdmin START
+2024-10-02 20:45:40.152 +08:00 [INF] HTTP GET /api/ApplyWithdraw/QueryApplyWithdrawAdmin responded 200 in 65.5315 ms
+2024-10-02 20:45:43.426 +08:00 [INF] ApplyWithdrawController PutApplyWithdraw START
+2024-10-02 20:45:43.432 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyWithdrawService/PutApplyWithdraw
+2024-10-02 20:45:43.434 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyWithdrawService/PutApplyWithdraw
+2024-10-02 20:45:47.200 +08:00 [INF] Received HTTP response headers after 3762.4587ms - 200
+2024-10-02 20:45:47.285 +08:00 [INF] End processing HTTP request after 3853.7542ms - 200
+2024-10-02 20:45:47.304 +08:00 [INF] ApplyWithdrawController PutApplyWithdraw END
+2024-10-02 20:45:47.307 +08:00 [INF] HTTP PUT /api/ApplyWithdraw/ responded 200 in 3901.0898 ms
+2024-10-02 20:45:49.598 +08:00 [INF] ApplyWithdrawController QueryApplyWithdrawAdmin START
+2024-10-02 20:45:49.612 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawAdmin
+2024-10-02 20:45:49.613 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawAdmin
+2024-10-02 20:45:49.935 +08:00 [INF] Received HTTP response headers after 307.847ms - 200
+2024-10-02 20:45:49.943 +08:00 [INF] End processing HTTP request after 330.843ms - 200
+2024-10-02 20:45:49.950 +08:00 [INF] ApplyWithdrawController QueryApplyWithdrawAdmin START
+2024-10-02 20:45:49.961 +08:00 [INF] HTTP GET /api/ApplyWithdraw/QueryApplyWithdrawAdmin responded 200 in 365.3293 ms
+2024-10-02 20:45:52.260 +08:00 [INF] ApplyWithdrawController QueryApplyWithdrawAdmin START
+2024-10-02 20:45:52.262 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawAdmin
+2024-10-02 20:45:52.263 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawAdmin
+2024-10-02 20:45:52.289 +08:00 [INF] Received HTTP response headers after 24.5369ms - 200
+2024-10-02 20:45:52.309 +08:00 [INF] End processing HTTP request after 47.511ms - 200
+2024-10-02 20:45:52.310 +08:00 [INF] ApplyWithdrawController QueryApplyWithdrawAdmin START
+2024-10-02 20:45:52.311 +08:00 [INF] HTTP GET /api/ApplyWithdraw/QueryApplyWithdrawAdmin responded 200 in 52.1559 ms
+2024-10-02 20:46:11.483 +08:00 [INF] ApplyWithdrawController QueryApplyWithdrawAdmin START
+2024-10-02 20:46:11.484 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawAdmin
+2024-10-02 20:46:11.486 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawAdmin
+2024-10-02 20:46:11.534 +08:00 [INF] Received HTTP response headers after 47.3646ms - 200
+2024-10-02 20:46:11.536 +08:00 [INF] End processing HTTP request after 51.2005ms - 200
+2024-10-02 20:46:11.537 +08:00 [INF] ApplyWithdrawController QueryApplyWithdrawAdmin START
+2024-10-02 20:46:11.538 +08:00 [INF] HTTP GET /api/ApplyWithdraw/QueryApplyWithdrawAdmin responded 200 in 55.9732 ms
+2024-10-02 20:46:14.040 +08:00 [INF] ApplyWithdrawController QueryApplyWithdrawAdmin START
+2024-10-02 20:46:14.041 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawAdmin
+2024-10-02 20:46:14.043 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawAdmin
+2024-10-02 20:46:14.062 +08:00 [INF] Received HTTP response headers after 18.4453ms - 200
+2024-10-02 20:46:14.067 +08:00 [INF] End processing HTTP request after 25.2994ms - 200
+2024-10-02 20:46:14.073 +08:00 [INF] ApplyWithdrawController QueryApplyWithdrawAdmin START
+2024-10-02 20:46:14.076 +08:00 [INF] HTTP GET /api/ApplyWithdraw/QueryApplyWithdrawAdmin responded 200 in 36.4568 ms
+2024-10-02 20:46:15.842 +08:00 [INF] ApplyWithdrawController QueryApplyWithdrawAdmin START
+2024-10-02 20:46:15.844 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawAdmin
+2024-10-02 20:46:15.846 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawAdmin
+2024-10-02 20:46:15.903 +08:00 [INF] Received HTTP response headers after 48.8366ms - 200
+2024-10-02 20:46:15.906 +08:00 [INF] End processing HTTP request after 62.0723ms - 200
+2024-10-02 20:46:15.907 +08:00 [INF] ApplyWithdrawController QueryApplyWithdrawAdmin START
+2024-10-02 20:46:15.919 +08:00 [INF] HTTP GET /api/ApplyWithdraw/QueryApplyWithdrawAdmin responded 200 in 77.1398 ms
+2024-10-02 20:53:15.700 +08:00 [INF] ApplyWithdrawController QueryApplyWithdrawAdmin START
+2024-10-02 20:53:15.702 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawAdmin
+2024-10-02 20:53:15.705 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawAdmin
+2024-10-02 20:53:15.828 +08:00 [INF] Received HTTP response headers after 114.4508ms - 200
+2024-10-02 20:53:15.854 +08:00 [INF] End processing HTTP request after 151.9232ms - 200
+2024-10-02 20:53:16.095 +08:00 [INF] ApplyWithdrawController QueryApplyWithdrawAdmin START
+2024-10-02 20:53:16.109 +08:00 [INF] HTTP GET /api/ApplyWithdraw/QueryApplyWithdrawAdmin responded 200 in 409.3384 ms
+2024-10-02 20:53:45.993 +08:00 [INF] ApplyWithdrawController QueryApplyWithdrawAdmin START
+2024-10-02 20:53:45.995 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawAdmin
+2024-10-02 20:53:46.006 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawAdmin
+2024-10-02 20:53:46.035 +08:00 [INF] Received HTTP response headers after 26.2542ms - 200
+2024-10-02 20:53:46.037 +08:00 [INF] End processing HTTP request after 41.6477ms - 200
+2024-10-02 20:53:46.056 +08:00 [INF] ApplyWithdrawController QueryApplyWithdrawAdmin START
+2024-10-02 20:53:46.057 +08:00 [INF] HTTP GET /api/ApplyWithdraw/QueryApplyWithdrawAdmin responded 200 in 63.6369 ms
+2024-10-02 20:53:47.882 +08:00 [INF] ApplyWithdrawController QueryApplyWithdrawAdmin START
+2024-10-02 20:53:47.892 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawAdmin
+2024-10-02 20:53:47.893 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawAdmin
+2024-10-02 20:53:47.923 +08:00 [INF] Received HTTP response headers after 24.1897ms - 200
+2024-10-02 20:53:47.931 +08:00 [INF] End processing HTTP request after 39.0262ms - 200
+2024-10-02 20:53:47.939 +08:00 [INF] ApplyWithdrawController QueryApplyWithdrawAdmin START
+2024-10-02 20:53:47.940 +08:00 [INF] HTTP GET /api/ApplyWithdraw/QueryApplyWithdrawAdmin responded 200 in 58.3831 ms
+2024-10-02 20:53:49.701 +08:00 [INF] ApplyWithdrawController QueryApplyWithdrawAdmin START
+2024-10-02 20:53:49.703 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawAdmin
+2024-10-02 20:53:49.705 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawAdmin
+2024-10-02 20:53:49.752 +08:00 [INF] Received HTTP response headers after 33.5824ms - 200
+2024-10-02 20:53:49.842 +08:00 [INF] End processing HTTP request after 138.7452ms - 200
+2024-10-02 20:53:49.849 +08:00 [INF] ApplyWithdrawController QueryApplyWithdrawAdmin START
+2024-10-02 20:53:49.858 +08:00 [INF] HTTP GET /api/ApplyWithdraw/QueryApplyWithdrawAdmin responded 200 in 158.7867 ms
+2024-10-02 20:53:50.076 +08:00 [INF] ApplyWithdrawController QueryApplyWithdrawAdmin START
+2024-10-02 20:53:50.077 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawAdmin
+2024-10-02 20:53:50.078 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawAdmin
+2024-10-02 20:53:50.131 +08:00 [INF] Received HTTP response headers after 51.8983ms - 200
+2024-10-02 20:53:50.227 +08:00 [INF] End processing HTTP request after 150.1048ms - 200
+2024-10-02 20:53:50.228 +08:00 [INF] ApplyWithdrawController QueryApplyWithdrawAdmin START
+2024-10-02 20:53:50.239 +08:00 [INF] HTTP GET /api/ApplyWithdraw/QueryApplyWithdrawAdmin responded 200 in 165.0441 ms
+2024-10-02 20:54:27.123 +08:00 [INF] ApplyWithdrawController QueryApplyWithdrawAdmin START
+2024-10-02 20:54:27.139 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawAdmin
+2024-10-02 20:54:27.140 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawAdmin
+2024-10-02 20:54:27.187 +08:00 [INF] Received HTTP response headers after 45.6707ms - 200
+2024-10-02 20:54:27.233 +08:00 [INF] End processing HTTP request after 93.5686ms - 200
+2024-10-02 20:54:27.239 +08:00 [INF] ApplyWithdrawController QueryApplyWithdrawAdmin START
+2024-10-02 20:54:27.244 +08:00 [INF] HTTP GET /api/ApplyWithdraw/QueryApplyWithdrawAdmin responded 200 in 121.3800 ms

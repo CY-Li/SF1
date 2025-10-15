@@ -1,0 +1,1597 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:500,700|Raleway:700");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap");
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background: white;
+  box-shadow: 0px 3px 10px rgba(113, 99, 28, 0.1019607843);
+}
+@media only screen and (max-width: 992px) {
+  header {
+    background: #f5f5f5;
+    box-shadow: none;
+  }
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+@media only screen and (max-width: 992px) {
+  .navBar {
+    justify-content: center;
+  }
+}
+
+.logo {
+  width: 160px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+@media only screen and (max-width: 992px) {
+  .logo {
+    width: 120px;
+    padding: 12px 0;
+  }
+}
+
+.navs {
+  display: flex;
+}
+.navs .nav {
+  margin: 0 40px;
+  font-size: 18px;
+  color: #262626;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.navs .nav.active {
+  border-top: 5px solid #a11f1a;
+}
+@media only screen and (max-width: 992px) {
+  .navs .nav.active {
+    border-top: none;
+    color: #a11f1a;
+  }
+}
+.navs .nav:hover {
+  color: #595959;
+}
+@media only screen and (max-width: 992px) {
+  .navs .nav {
+    margin: 0 auto 40px auto;
+  }
+}
+.navs .nav.registNav {
+  display: none;
+}
+@media only screen and (max-width: 992px) {
+  .navs .nav.registNav {
+    display: flex;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .navs {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background: white linear-gradient(180deg, white 40%, #F8F2F2 100%) 0% 0% no-repeat padding-box;
+    display: none;
+  }
+}
+.navs .closeMenu {
+  display: none;
+}
+@media only screen and (max-width: 992px) {
+  .navs .closeMenu {
+    display: block;
+    margin-bottom: 40px;
+  }
+  .navs .closeMenu span {
+    padding: 8px;
+    cursor: pointer;
+    color: #a11f1a;
+    font-size: 50px;
+    font-weight: bold;
+  }
+}
+.navs .menuFooter {
+  display: none;
+  color: #deac9c;
+}
+@media only screen and (max-width: 992px) {
+  .navs .menuFooter {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    background: white;
+    padding: 19px 25px;
+    font-size: 12px;
+  }
+}
+
+.registBtn {
+  padding: 20px 50px;
+  background: #a11f1a;
+  color: white;
+  border-radius: 25px 0 25px 0;
+  cursor: pointer;
+}
+@media only screen and (max-width: 992px) {
+  .registBtn {
+    display: none;
+  }
+}
+
+.hamburger {
+  display: none;
+}
+@media only screen and (max-width: 992px) {
+  .hamburger {
+    display: inline;
+    position: absolute;
+    font-size: 30px;
+    color: #880f0b;
+    top: 50%;
+    left: 12px;
+    transform: translate(0, -50%);
+  }
+}
+
+* {
+  font-family: "Noto Sans TC", Microsoft JhengHei, sans-serif;
+  -webkit-overflow-scrolling: touch;
+}
+
+[v-cloak] {
+  opacity: 0;
+}
+
+.text-en {
+  font-family: "Montserrat";
+}
+
+body {
+  background: #f9f9f9;
+  position: relative;
+  color: #262626;
+  overflow-x: hidden;
+}
+
+body.lock-body {
+  max-height: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.color-primary {
+  color: #a11f1a !important;
+}
+
+.color-secondary {
+  color: #deac9c !important;
+}
+
+.color-minor {
+  color: #c24e4a !important;
+}
+
+.fs-12 {
+  font-size: 12px !important;
+}
+
+.common-btn {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  cursor: pointer;
+  background: #a11f1a;
+  border-radius: 50rem;
+  color: white;
+  border: none;
+}
+.common-btn:disabled {
+  background: #9c9c9c;
+}
+
+footer {
+  padding-top: 75px;
+}
+@media only screen and (max-width: 992px) {
+  footer {
+    padding-top: 0;
+  }
+}
+footer .myFooter {
+  width: 100%;
+  position: relative;
+  display: flex;
+  background: #a11f1a;
+  padding: 60px 30px;
+  align-items: center;
+}
+@media only screen and (max-width: 992px) {
+  footer .myFooter {
+    justify-content: center;
+    padding: 20px 0;
+  }
+}
+footer .circleBg {
+  position: absolute;
+  top: 0;
+  width: 350px;
+  right: 0;
+  transform: translate(0, -64%);
+}
+@media only screen and (max-width: 992px) {
+  footer .circleBg {
+    display: none;
+  }
+}
+footer .circleBg .goTop {
+  position: absolute;
+  width: 100px;
+  top: 50px;
+  left: 53%;
+  transform: translate(-50%, 0);
+}
+footer .circleBg .topCircle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid white;
+  padding-top: 20px;
+  cursor: pointer;
+}
+footer .circleBg .topCircle .topBtn {
+  width: 60px;
+  margin: auto;
+}
+footer .circleBg .text {
+  color: #f8f2f2;
+  writing-mode: vertical-lr;
+  margin: 12px auto 0 auto;
+  font-size: 14px;
+}
+footer .logo {
+  width: 200px;
+}
+footer .footerNavs {
+  display: flex;
+  margin-left: 60px;
+  text-align: center;
+}
+@media only screen and (max-width: 992px) {
+  footer .footerNavs {
+    display: none;
+  }
+}
+footer .footerNavs .nav {
+  color: #f9f9f9;
+  margin-right: 20px;
+  display: block;
+}
+footer .footerNavs .text-en {
+  font-size: 12px;
+  color: #deac9c;
+  transform: scale(0.8);
+}
+
+.mySwiper .swiper-pagination .swiper-pagination-bullet {
+  width: 18px;
+  height: 4px;
+  border-radius: 4px;
+  background: #deac9c;
+}
+.mySwiper .swiper-pagination.swiper-pagination-bullet-active {
+  background: #a11f1a;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, -10px);
+  }
+  100% {
+    transform: translate(0, 0px);
+  }
+}
+main {
+  background: #f9f9f9;
+}
+
+footer {
+  background: #f9f9f9;
+}
+
+.accountContainer {
+  display: flex;
+  padding: 60px 40px;
+  align-items: start;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer {
+    display: block;
+    padding: 20px 0;
+  }
+}
+.accountContainer .leftColumn {
+  width: 320px;
+  border-radius: 0 50px 0 50px;
+  margin-right: 80px;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .leftColumn {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    border: none;
+    padding-bottom: 20px;
+  }
+}
+.accountContainer .leftColumn .memberCard {
+  background: white;
+  border-radius: 0 50px 0 50px;
+  padding: 30px 0;
+  margin-bottom: 40px;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .leftColumn .memberCard {
+    margin-bottom: 20px;
+  }
+}
+.accountContainer .leftColumn .memberId {
+  text-align: center;
+  position: relative;
+  margin-bottom: 30px;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .leftColumn .memberId {
+    margin-bottom: 20px;
+  }
+}
+.accountContainer .leftColumn .memberId .mamberName {
+  font-size: 24px;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .leftColumn .memberId .mamberName {
+    font-size: 12px;
+  }
+}
+.accountContainer .leftColumn .memberId .memberNum {
+  color: #9c9c9c;
+  font-size: 12px;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .leftColumn .memberId .memberNum {
+    font-size: 14px;
+  }
+}
+.accountContainer .leftColumn .memberDate {
+  text-align: center;
+  font-size: 17px;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .leftColumn .memberDate {
+    font-size: 14px;
+  }
+}
+.accountContainer .leftColumn .logoutBtn {
+  display: none;
+  width: 180px;
+  height: 30px;
+  background: white;
+  color: #a11f1a;
+  border: 1px solid #a11f1a;
+  text-align: center;
+  margin: 8px auto 0 auto;
+  font-size: 14px;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .leftColumn .logoutBtn {
+    display: flex;
+  }
+}
+.accountContainer .leftColumn .myNavs {
+  width: 280px;
+  margin: auto;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .leftColumn .myNavs {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+}
+.accountContainer .leftColumn .myNavs .nav {
+  border-radius: 50px;
+  color: #a11f1a;
+  text-align: center;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  display: block;
+  font-size: 18px;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .leftColumn .myNavs .nav {
+    border-radius: 4px;
+    margin-bottom: 0px;
+    width: 70px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    display: flex;
+    background: white;
+  }
+}
+.accountContainer .leftColumn .myNavs .nav .text-en {
+  color: #d4481c;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .leftColumn .myNavs .nav .text-en {
+    display: none;
+  }
+}
+.accountContainer .leftColumn .myNavs .nav.active {
+  background: #a11f1a;
+  color: white;
+}
+.accountContainer .leftColumn .myNavs .nav.active .text-en {
+  color: #deac9c;
+}
+.accountContainer .accountBody {
+  flex-grow: 1;
+  background: white;
+  border-radius: 0 50px 0 50px;
+  width: calc(100% - 400px);
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .accountBody {
+    width: 90%;
+    margin: auto;
+    border-radius: 0;
+    background: #f9f9f9;
+  }
+}
+.accountContainer .accountBody .frameTitle {
+  width: 100%;
+  text-align: center;
+  background: transparent linear-gradient(180deg, transparent 30%, #F8F2F2 100%) 0% 0% no-repeat padding-box;
+  padding: 20px;
+  border-bottom: 1px solid #e5c0b5;
+  position: relative;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .accountBody .frameTitle {
+    display: none;
+  }
+}
+.accountContainer .accountBody .frameTitle .title-zh {
+  font-size: 25px;
+  color: #c24e4a;
+  font-weight: bold;
+}
+.accountContainer .accountBody .frameTitle .title-en {
+  font-size: 12px;
+  color: #deac9c;
+}
+.accountContainer .accountBody .date {
+  text-align: right;
+  margin-bottom: 30px;
+  padding: 80px 80px 0 80px;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .accountBody .date {
+    padding: 0 30px;
+    margin-bottom: 10px;
+  }
+}
+.accountContainer .accountBody .date .text-en {
+  color: #c24e4a;
+}
+.accountContainer .accountBody form {
+  padding-bottom: 80px;
+  font-size: 18px;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .accountBody form {
+    border-radius: 8px;
+    background: white;
+    padding: 30px 0;
+  }
+}
+.accountContainer .accountBody form .formTitle {
+  position: relative;
+  color: #a11f1a;
+  padding-left: 220px;
+  margin-bottom: 30px;
+  letter-spacing: 7px;
+  height: 16px;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .accountBody form .formTitle {
+    padding-left: 50px;
+    letter-spacing: 2px;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+}
+.accountContainer .accountBody form .formTitle::before {
+  width: 200px;
+  height: 1px;
+  display: block;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  background: #a11f1a;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .accountBody form .formTitle::before {
+    width: 40px;
+  }
+}
+.accountContainer .accountBody form .formGroup {
+  margin-bottom: 40px;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .accountBody form .formGroup {
+    margin-bottom: 20px;
+  }
+}
+.accountContainer .accountBody form .custom-input-group {
+  display: flex;
+  padding: 0 80px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .accountBody form .custom-input-group {
+    display: block;
+    padding: 0 20px;
+  }
+}
+.accountContainer .accountBody form .custom-input-group label {
+  display: block;
+  text-align: justify;
+  -moz-text-align-last: justify;
+       text-align-last: justify;
+  margin-right: 20px;
+  width: 120px;
+  position: relative;
+  padding-right: 4px;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .accountBody form .custom-input-group label {
+    width: -moz-max-content;
+    width: max-content;
+    text-align: left;
+    -moz-text-align-last: left;
+         text-align-last: left;
+    margin-bottom: 4px;
+    font-size: 14px;
+  }
+}
+.accountContainer .accountBody form .custom-input-group label.require::after {
+  position: absolute;
+  content: "*";
+  color: #a11f1a;
+  top: 0%;
+  left: 100%;
+}
+.accountContainer .accountBody form .custom-input-group input:not([type=radio]), .accountContainer .accountBody form .custom-input-group select {
+  flex-grow: 1;
+  max-width: 515px;
+  height: 46px;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .accountBody form .custom-input-group input:not([type=radio]), .accountContainer .accountBody form .custom-input-group select {
+    font-size: 14px;
+  }
+}
+.accountContainer .accountBody form #datepicker {
+  flex-grow: 1;
+  max-width: 515px;
+  position: relative;
+}
+.accountContainer .accountBody form #datepicker input {
+  background: transparent;
+  z-index: 2;
+  position: relative;
+}
+.accountContainer .accountBody form #datepicker .dateIcon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translate(0, -50%);
+  cursor: pointer;
+  z-index: 1;
+}
+.accountContainer .accountBody form .uploadLayout {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.accountContainer .accountBody form .uploadLayout .title {
+  width: 100%;
+  padding-left: 200px;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .accountBody form .uploadLayout .title {
+    padding-left: 20px;
+    font-size: 14px;
+  }
+}
+.accountContainer .accountBody form .uploadLayout .title .tip {
+  padding-left: 18px;
+  color: #c24e4a;
+  font-size: 16px;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .accountBody form .uploadLayout .title .tip {
+    font-size: 12px;
+  }
+}
+.accountContainer .accountBody form .uploadLayout .custom-upload-group {
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .accountBody form .uploadLayout .custom-upload-group {
+    margin: 0 0 30px 0;
+    padding: 0 10px;
+  }
+}
+.accountContainer .accountBody form .uploadLayout .custom-upload-group .name {
+  text-align: center;
+  margin-bottom: 8px;
+  color: #9c9c9c;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .accountBody form .uploadLayout .custom-upload-group .name {
+    font-size: 12px;
+    text-align: left;
+  }
+}
+.accountContainer .accountBody form .uploadLayout .custom-upload-group .uploadFrame {
+  width: 300px;
+  height: 190px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  background: #fcfbfb;
+  border: 2px solid #f8f2f2;
+  border-radius: 14px;
+  position: relative;
+  overflow: hidden;
+}
+.accountContainer .accountBody form .uploadLayout .custom-upload-group .tip1 {
+  width: 100%;
+  font-size: 18px;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .accountBody form .uploadLayout .custom-upload-group .tip1 {
+    display: none;
+  }
+}
+.accountContainer .accountBody form .uploadLayout .custom-upload-group .tip2 {
+  width: 100%;
+  font-size: 15px;
+  color: #9c9c9c;
+  margin: 8px 0;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .accountBody form .uploadLayout .custom-upload-group .tip2 {
+    display: none;
+  }
+}
+.accountContainer .accountBody form .uploadLayout .custom-upload-group label.common-btn {
+  background: white;
+  border: 1px solid #c24e4a;
+  color: #c24e4a;
+  width: 164px;
+  height: 36px;
+  position: relative;
+  z-index: 2;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .accountBody form .uploadLayout .custom-upload-group label.common-btn {
+    width: 120px;
+    height: 28px;
+    font-size: 14px;
+  }
+}
+.accountContainer .accountBody form .uploadLayout .custom-upload-group input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.accountContainer .accountBody form .uploadLayout .custom-upload-group .imgPreview {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.accountContainer .accountBody form .uploadLayout .custom-upload-group .imgPreview img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.accountContainer .accountBody form .tips {
+  padding: 16px 10px;
+  margin: 0 30px 20px 30px;
+  border-radius: 8px;
+  background: #f9f9f9;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .accountBody form .tips {
+    margin: 0 10px 20px 10px;
+    font-size: 12px;
+    padding: 12px;
+  }
+}
+.accountContainer .accountBody form .tips ul {
+  padding-left: 16px;
+}
+.accountContainer .accountBody form .tips li {
+  margin-bottom: 4px;
+  list-style: decimal;
+}
+.accountContainer .accountBody form .form-check.formCheck {
+  padding: 0 60px;
+  margin-bottom: 40px;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .accountBody form .form-check {
+    font-size: 12px;
+  }
+}
+.accountContainer .accountBody form .form-check .form-check-input {
+  border-color: #d4481c;
+}
+.accountContainer .accountBody form .form-check .form-check-input:focus {
+  box-shadow: 0 0 0 0.25rem rgba(222, 172, 156, 0.25);
+}
+.accountContainer .accountBody form .form-check .form-check-input:checked {
+  background-color: #d4481c;
+  border-color: #d4481c;
+}
+.accountContainer .accountBody form button.common-btn {
+  width: 282px;
+  height: 63px;
+  flex-wrap: wrap;
+  margin: auto;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .accountBody form button.common-btn {
+    width: 240px;
+    height: 55px;
+  }
+}
+.accountContainer .accountBody .frame.tender {
+  background: #f9f9f9;
+}
+.accountContainer .accountBody .frame.tender .subtotal {
+  display: flex;
+  background: #a11f1a;
+  border-radius: 14px;
+  padding: 30px 0;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .accountBody .frame.tender .subtotal {
+    margin: 0 auto 20px auto;
+    padding: 8px 0;
+  }
+}
+.accountContainer .accountBody .frame.tender .subtotal .child {
+  width: 50%;
+  color: #f9f9f9;
+  padding: 0 30px 45px 30px;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .accountBody .frame.tender .subtotal .child {
+    padding: 0 12px 20px 12px;
+  }
+}
+.accountContainer .accountBody .frame.tender .subtotal .child .name {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .accountBody .frame.tender .subtotal .child .name {
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+}
+.accountContainer .accountBody .frame.tender .subtotal .child .amount {
+  font-size: 36px;
+  text-align: center;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .accountBody .frame.tender .subtotal .child .amount {
+    font-size: 18px;
+  }
+}
+.accountContainer .accountBody .frame.tender .subtotal .child:nth-child(odd) {
+  border-right: 1px solid #bb6459;
+}
+.accountContainer .accountBody .frame.tender .tenderBtns {
+  height: 70px;
+  display: flex;
+  width: 100%;
+  border-radius: 50px;
+  background: white;
+  margin-bottom: 60px;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .accountBody .frame.tender .tenderBtns {
+    height: 36px;
+    margin-bottom: 20px;
+  }
+}
+.accountContainer .accountBody .frame.tender .tenderBtns .tenderBtn {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #a11f1a;
+  font-size: 22px;
+  cursor: pointer;
+  letter-spacing: 4.5px;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .accountBody .frame.tender .tenderBtns .tenderBtn {
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+}
+.accountContainer .accountBody .frame.tender .tenderBtns .tenderBtn.active {
+  background: #a11f1a;
+  border-radius: 50px;
+  color: white;
+}
+.accountContainer .accountBody .frame.tender .attendData {
+  padding: 40px 0;
+  text-align: center;
+  font-size: 18px;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .accountBody .frame.tender .attendData {
+    font-size: 14px;
+  }
+}
+.accountContainer .accountBody .frame.tender .attendData .tenderChipRow {
+  display: flex;
+  flex-wrap: wrap;
+}
+.accountContainer .accountBody .frame.tender .attendData .tenderChip {
+  width: calc((100% - 64px) / 4);
+  margin: 8px;
+  border-radius: 14px;
+  border: 1px solid #e4dada;
+  padding: 20px 20px 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .accountBody .frame.tender .attendData .tenderChip {
+    width: calc(50% - 16px);
+    display: block;
+  }
+}
+.accountContainer .accountBody .frame.tender .attendData .tenderChip .name {
+  width: 140px;
+  background: #a11f1a;
+  color: white;
+  border-radius: 25px;
+  padding: 4px 0;
+  text-align: center;
+  margin-right: 12px;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .accountBody .frame.tender .attendData .tenderChip .name {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 4px;
+  }
+}
+.accountContainer .accountBody .frame.subaccount {
+  background: #f9f9f9;
+  font-size: 18px;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .accountBody .frame.subaccount {
+    font-size: 14px;
+  }
+}
+.accountContainer .accountBody .frame.subaccount .accountData {
+  background: white;
+  border-radius: 14px;
+  border: 1px solid #880f0b;
+  margin-bottom: 20px;
+}
+.accountContainer .accountBody .frame.subaccount .mainAccountData {
+  display: flex;
+  background: transparent linear-gradient(180deg, #a11f1a 0%, #880f0b 100%) 0% 0% no-repeat padding-box;
+  border-radius: 14px;
+  padding: 30px 0;
+  justify-content: center;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .accountBody .frame.subaccount .mainAccountData {
+    padding: 8px 20px;
+    display: block;
+  }
+}
+.accountContainer .accountBody .frame.subaccount .mainAccountData .child {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  color: #f9f9f9;
+  padding: 20px 30px;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .accountBody .frame.subaccount .mainAccountData .child {
+    width: 100%;
+    padding: 20px 0;
+  }
+}
+.accountContainer .accountBody .frame.subaccount .mainAccountData .child .nowAt {
+  width: 100%;
+  display: flex;
+}
+.accountContainer .accountBody .frame.subaccount .mainAccountData .child .nowAt .jump1 {
+  margin-left: 8px;
+  animation: 1s ease-in-out 0s bounce infinite;
+}
+.accountContainer .accountBody .frame.subaccount .mainAccountData .child .nowAt .jump2 {
+  margin-left: 4px;
+  animation: 1s ease-in-out 0.3s bounce infinite;
+}
+.accountContainer .accountBody .frame.subaccount .mainAccountData .child .nowAt .jump3 {
+  margin-left: 4px;
+  animation: 1s ease-in-out 0.6s bounce infinite;
+}
+.accountContainer .accountBody .frame.subaccount .mainAccountData .child .changeRow {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.accountContainer .accountBody .frame.subaccount .mainAccountData .child .changeRow .common-btn {
+  width: 90px;
+  height: 28px;
+  background: white;
+  color: #a11f1a;
+  font-size: 14px;
+}
+.accountContainer .accountBody .frame.subaccount .mainAccountData .child .dataRow {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .accountBody .frame.subaccount .mainAccountData .child .dataRow {
+    display: block;
+  }
+}
+.accountContainer .accountBody .frame.subaccount .mainAccountData .child .dataRow .inviteData {
+  font-size: 16px;
+  text-align: center;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .accountBody .frame.subaccount .mainAccountData .child .dataRow .inviteData {
+    text-align: left;
+    margin: 8px 0;
+    font-size: 14px;
+  }
+}
+.accountContainer .accountBody .frame.subaccount .mainAccountData .child .dataRow .inviteData .text-en {
+  background: #deac9c;
+  padding: 4px;
+  border-radius: 8px;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .accountBody .frame.subaccount .mainAccountData .child .dataRow .inviteData .text-en {
+    text-align: center;
+  }
+}
+.accountContainer .accountBody .frame.subaccount .mainAccountData .child .btnRow {
+  display: flex;
+  width: 100%;
+}
+.accountContainer .accountBody .frame.subaccount .mainAccountData .child .btnRow .common-btn {
+  width: 118px;
+  height: 37px;
+  margin-left: 12px;
+  border: 1.5px solid white;
+  min-width: 118px;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .accountBody .frame.subaccount .mainAccountData .child .btnRow .common-btn {
+    font-size: 12px;
+    width: 90px;
+    height: 32px;
+    min-width: 90px;
+  }
+}
+.accountContainer .accountBody .frame.subaccount .mainAccountData .child .btnRow select {
+  border-radius: 50px;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .accountBody .frame.subaccount .mainAccountData .child .btnRow select {
+    height: 32px;
+    font-size: 12px;
+  }
+}
+.accountContainer .accountBody .frame.subaccount .subaccountData {
+  font-size: 24px;
+  padding: 20px;
+  text-align: center;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .accountBody .frame.subaccount .subaccountData {
+    font-size: 16px;
+    padding: 8px;
+  }
+}
+.accountContainer .accountBody .frame.subaccount .accountListTable {
+  background: #880f0b;
+  border-radius: 14px;
+  font-size: 18px;
+  text-align: center;
+  padding-bottom: 65px;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .accountBody .frame.subaccount .accountListTable {
+    font-size: 14px;
+    border-radius: 0;
+    background: #f9f9f9;
+  }
+}
+.accountContainer .accountBody .frame.subaccount .accountListTable .tableHead {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding: 24px;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .accountBody .frame.subaccount .accountListTable .tableHead {
+    display: none;
+  }
+}
+.accountContainer .accountBody .frame.subaccount .accountListTable .tableBody .addTableRow {
+  padding: 20px 0;
+  background: #f9f9f9;
+  display: none;
+}
+.accountContainer .accountBody .frame.subaccount .accountListTable .tableBody .addTableRow .positionColumn {
+  display: block !important;
+}
+.accountContainer .accountBody .frame.subaccount .accountListTable .tableBody .addTableRow .btnRow {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 5% 10px 0;
+}
+.accountContainer .accountBody .frame.subaccount .accountListTable .tableBody .addTableRow .btnRow .btn {
+  margin-left: 20px;
+  color: #a11f1a;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .accountBody .frame.subaccount .accountListTable .tableBody .addTableRow .tableRow {
+    margin-bottom: 0;
+  }
+}
+.accountContainer .accountBody .frame.subaccount .accountListTable .tableBody .tableRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  color: #a11f1a;
+  background: white;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .accountBody .frame.subaccount .accountListTable .tableBody .tableRow {
+    flex-wrap: wrap;
+    padding: 20px 20px;
+    margin-bottom: 12px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .accountBody .frame.subaccount .accountListTable .tableBody .tableRow.active {
+    background: #a11f1a;
+    color: white;
+  }
+}
+.accountContainer .accountBody .frame.subaccount .accountListTable .tableBody .tableRow.active .common-btn.toggleBtn {
+  display: none;
+}
+.accountContainer .accountBody .frame.subaccount .accountListTable .tableBody .tableRow.active .common-btn.isActive {
+  display: flex;
+}
+.accountContainer .accountBody .frame.subaccount .accountListTable .tableBody .tableRow.active .toggleCoumn-md .toggleBtn {
+  display: none;
+}
+.accountContainer .accountBody .frame.subaccount .accountListTable .tableBody .tableRow.active .toggleCoumn-md .isActive {
+  display: flex;
+  justify-content: flex-end;
+}
+.accountContainer .accountBody .frame.subaccount .accountListTable .tableBody .tableRow.active .toggleCoumn-md .isActive .jump1 {
+  margin-left: 4px;
+  animation: 1s ease-in-out 0s bounce infinite;
+}
+.accountContainer .accountBody .frame.subaccount .accountListTable .tableBody .tableRow.active .toggleCoumn-md .isActive .jump2 {
+  margin-left: 4px;
+  animation: 1s ease-in-out 0.3s bounce infinite;
+}
+.accountContainer .accountBody .frame.subaccount .accountListTable .tableBody .tableRow.active .toggleCoumn-md .isActive .jump3 {
+  margin-left: 4px;
+  animation: 1s ease-in-out 0.6s bounce infinite;
+}
+.accountContainer .accountBody .frame.subaccount .accountListTable .tableBody .tableRow .common-btn {
+  font-size: 16px;
+  border: 1px solid #a11f1a;
+  max-width: 160px;
+  height: 46px;
+  margin: auto;
+}
+.accountContainer .accountBody .frame.subaccount .accountListTable .tableBody .tableRow .common-btn.toggleBtn {
+  background: white;
+  color: #a11f1a;
+}
+.accountContainer .accountBody .frame.subaccount .accountListTable .tableBody .tableRow .common-btn.isActive {
+  display: none;
+}
+.accountContainer .accountBody .frame.subaccount .accountListTable .accountColumn {
+  width: 20%;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .accountBody .frame.subaccount .accountListTable .accountColumn {
+    flex-grow: 1;
+    text-align: left;
+  }
+}
+.accountContainer .accountBody .frame.subaccount .accountListTable .positionColumn {
+  width: 45%;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .accountBody .frame.subaccount .accountListTable .positionColumn {
+    display: none;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+  }
+}
+.accountContainer .accountBody .frame.subaccount .accountListTable .positionColumn select {
+  border-radius: 50px;
+  text-align: center;
+  color: #a11f1a;
+  border-color: #a11f1a;
+  height: 46px;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .accountBody .frame.subaccount .accountListTable .positionColumn select {
+    font-size: 14px;
+    border: none;
+    background-color: #f9f9f9;
+    height: 36px;
+  }
+}
+.accountContainer .accountBody .frame.subaccount .accountListTable .toggleColumn {
+  width: 20%;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .accountBody .frame.subaccount .accountListTable .toggleColumn {
+    display: none;
+  }
+}
+.accountContainer .accountBody .frame.subaccount .accountListTable .toggleCoumn-md {
+  display: none;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .accountBody .frame.subaccount .accountListTable .toggleCoumn-md {
+    display: block;
+    width: 60px;
+  }
+}
+.accountContainer .accountBody .frame.subaccount .accountListTable .toggleCoumn-md .toggleBtn {
+  text-align: right;
+  font-size: 18px;
+  color: #a11f1a;
+}
+.accountContainer .accountBody .frame.subaccount .accountListTable .toggleCoumn-md .isActive {
+  display: none;
+}
+.accountContainer .accountBody .frame.subaccount .accountListTable .paginations {
+  margin: auto;
+  display: flex;
+  color: #a11f1a;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  padding: 30px 0;
+  background: #f9f9f9;
+}
+.accountContainer .accountBody .frame.subaccount .accountListTable .paginations > div {
+  cursor: pointer;
+}
+.accountContainer .accountBody .frame.subaccount .accountListTable .paginations .page-prev, .accountContainer .accountBody .frame.subaccount .accountListTable .paginations .page-next {
+  font-size: 20px;
+}
+.accountContainer .accountBody .frame.subaccount .accountListTable .paginations .page-prev.disabled, .accountContainer .accountBody .frame.subaccount .accountListTable .paginations .page-next.disabled {
+  color: #9f9494;
+  cursor: unset;
+}
+.accountContainer .accountBody .frame.subaccount .accountListTable .paginations .page-prev {
+  margin-right: 30px;
+}
+.accountContainer .accountBody .frame.subaccount .accountListTable .paginations .page-ellipsis-prev {
+  margin-right: 20px;
+}
+.accountContainer .accountBody .frame.subaccount .accountListTable .paginations .page-next {
+  margin-left: 30px;
+}
+.accountContainer .accountBody .frame.subaccount .accountListTable .paginations .page-ellipsis-next {
+  margin-left: 20px;
+}
+.accountContainer .accountBody .frame.subaccount .accountListTable .paginations .page {
+  margin: 0 5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.accountContainer .accountBody .frame.subaccount .accountListTable .paginations .page.active {
+  background: #a11f1a;
+  color: white;
+}
+.accountContainer .accountBody .frame.subaccount .accountListTable .notStarted {
+  padding: 60px 0;
+  text-align: center;
+  background: white;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .accountBody .frame.subaccount .accountListTable .notStarted {
+    padding: 60px 20px;
+    background: transparent;
+  }
+}
+.accountContainer .accountBody .frame.subaccount .accountListTable .notStarted .tip {
+  color: #c24e4a;
+  margin-top: 20px;
+}
+.accountContainer .accountBody .frame.subaccount .inviteTable {
+  border-radius: 14px;
+  font-size: 18px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .accountBody .frame.subaccount .inviteTable {
+    font-size: 14px;
+  }
+}
+.accountContainer .accountBody .frame.subaccount .inviteTable .label {
+  width: 7em;
+  min-width: 7em;
+}
+.accountContainer .accountBody .frame.subaccount .inviteTable .inviteInput {
+  position: relative;
+  flex-grow: 1;
+}
+.accountContainer .accountBody .frame.subaccount .inviteTable .inviteInput input {
+  background-color: white !important;
+  height: 46px;
+  border-color: #deac9c;
+  padding-right: 80px;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .accountBody .frame.subaccount .inviteTable .inviteInput input {
+    height: 36px;
+    padding-right: 65px;
+  }
+}
+.accountContainer .accountBody .frame.subaccount .inviteTable .inviteInput .copyBtn {
+  color: #c24e4a;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translate(0, -50%);
+  padding-left: 20px;
+  border-left: 1px solid #c24e4a;
+  cursor: pointer;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .accountBody .frame.subaccount .inviteTable .inviteInput .copyBtn {
+    right: 16px;
+    padding-left: 16px;
+  }
+}
+.accountContainer .dragContainer .tips {
+  box-shadow: 0px 3px 15px rgba(78, 39, 16, 0.0588235294);
+  padding: 20px 40px;
+  background: white;
+  position: absolute;
+  top: -20px;
+  right: 40px;
+  display: flex;
+  align-items: center;
+  border-radius: 14px;
+  z-index: 99;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .dragContainer .tips {
+    right: 50%;
+    width: 95%;
+    top: 0px;
+    max-width: 600px;
+    transform: translate(50%, 0);
+    padding: 12px 16px;
+    justify-content: space-around;
+  }
+}
+.accountContainer .dragContainer .tips .title {
+  text-align: center;
+  margin-right: 40px;
+  font-size: 18px;
+  color: #a11f1a;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .dragContainer .tips .title {
+    font-size: 16px;
+    margin-right: 12px;
+  }
+}
+.accountContainer .dragContainer .tips .tip {
+  background: #f8f2f2;
+  border-radius: 40px;
+  padding: 16px 40px 16px 16px;
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .dragContainer .tips .tip {
+    padding: 8px 12px;
+  }
+}
+.accountContainer .dragContainer .tips .arrows {
+  display: flex;
+  height: 80px;
+  width: 100px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-right: 40px;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .dragContainer .tips .arrows {
+    margin-right: 12px;
+    font-size: 12px;
+  }
+}
+.accountContainer .dragContainer .tips .arrows .text-en {
+  position: relative;
+}
+.accountContainer .dragContainer .tips .arrows .arrow {
+  width: 14px;
+  position: absolute;
+}
+.accountContainer .dragContainer .tips .arrows .arrow.up {
+  bottom: calc(100% + 8px);
+  left: calc(50% - 7px);
+}
+.accountContainer .dragContainer .tips .arrows .arrow.right {
+  transform: rotate(90deg);
+  bottom: calc(50% - 11px);
+  left: calc(100% + 6px);
+}
+.accountContainer .dragContainer .tips .arrows .arrow.down {
+  transform: rotate(180deg);
+  top: calc(100% + 8px);
+  left: calc(50% - 7px);
+}
+.accountContainer .dragContainer .tips .arrows .arrow.left {
+  transform: rotate(-90deg);
+  bottom: calc(50% - 11px);
+  right: calc(100% + 6px);
+}
+.accountContainer .dragContainer .tips .text {
+  color: #c24e4a;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .dragContainer .tips .text {
+    font-size: 12px;
+  }
+}
+.accountContainer .dragContainer .tips .zooms {
+  margin-top: 12px;
+}
+.accountContainer .dragContainer .tips .zooms #zoomIn, .accountContainer .dragContainer .tips .zooms #zoomOut {
+  margin: 0 8px;
+  color: #a11f1a;
+  cursor: pointer;
+}
+.accountContainer .dragContainer .tips .zooms #zoomIn i, .accountContainer .dragContainer .tips .zooms #zoomOut i {
+  margin-right: 4px;
+}
+.accountContainer .dragContainer #drag {
+  width: 100%;
+  margin-bottom: 50px;
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+  background-size: contain;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+}
+@media only screen and (max-width: 992px) {
+  .accountContainer .dragContainer #drag {
+    height: 400px;
+  }
+}
+.accountContainer .dragContainer #drag .dragItems {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 30px;
+  align-items: baseline;
+}
+.accountContainer .dragContainer #drag .dragItems.children::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: calc(100% - 180px);
+  left: 90px;
+  top: -15px;
+  height: 1px;
+  background: #a11f1a;
+}
+.accountContainer .dragContainer #drag .dragItems .dragItem {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+  width: 180px;
+  height: 60px;
+  border-radius: 50px;
+  background: white;
+  border: 1px solid #a11f1a;
+  color: #a11f1a;
+  text-align: center;
+  flex-wrap: wrap;
+  line-height: 18px;
+  margin: 0 12px;
+}
+.accountContainer .dragContainer #drag .dragItems .dragItem.active {
+  color: #f8f2f2;
+  background: #a11f1a;
+}
+.accountContainer .dragContainer #drag .dragItems .dragItem.active::before {
+  display: block;
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #a11f1a;
+  position: absolute;
+  top: calc(50% - 4px);
+  right: calc(100% - 4px);
+}
+.accountContainer .dragContainer #drag .dragItems .dragItem.active::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 15px;
+  position: absolute;
+  background: #a11f1a;
+  top: 100%;
+  left: calc(50% - 0.5px);
+}
+.accountContainer .dragContainer #drag .dragItems .dragItem .star {
+  position: absolute;
+  top: 50%;
+  left: 2px;
+  color: #deac9c;
+  transform: translate(0, -50%);
+}
+
+.modal-content {
+  border-color: #f9f9f9;
+  padding: 8px 16px;
+}
+
+.modal-header {
+  text-align: center;
+  display: block;
+  position: relative;
+}
+.modal-header .title {
+  border: 1px solid black;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 25px;
+  padding: 0 4px;
+  margin: auto;
+}
+@media only screen and (max-width: 992px) {
+  .modal-header .title {
+    font-size: 18px;
+  }
+}
+.modal-header .modalClose {
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  color: #a11f1a;
+  font-size: 25px;
+  transform: translate(0, -50%);
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+table th, table td {
+  border: 1px solid black;
+  padding: 8px;
+}/*# sourceMappingURL=account.css.map */

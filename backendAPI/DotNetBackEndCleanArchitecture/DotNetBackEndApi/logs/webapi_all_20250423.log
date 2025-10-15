@@ -1,0 +1,26 @@
+2025-04-23 09:05:48.373 +08:00 [INF] Now listening on: http://localhost:5000
+2025-04-23 09:05:52.904 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-23 09:05:52.926 +08:00 [INF] Hosting environment: Development
+2025-04-23 09:05:54.646 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2025-04-23 09:05:54.675 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 784.0947 ms
+2025-04-23 09:06:03.877 +08:00 [INF] HTTP GET /swagger/swagger-ui.css responded 304 in 36.2225 ms
+2025-04-23 09:06:03.921 +08:00 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 304 in 2.0116 ms
+2025-04-23 09:06:03.923 +08:00 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 304 in 1.3367 ms
+2025-04-23 09:06:05.952 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 1215.9734 ms
+2025-04-23 09:06:09.952 +08:00 [INF] HTTP GET /swagger/favicon-32x32.png responded 304 in 3.4601 ms
+2025-04-23 09:06:34.725 +08:00 [INF] LoginController Login START
+2025-04-23 09:06:34.799 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/AuthenticationMgmt/LoginService/Login
+2025-04-23 09:06:34.804 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/AuthenticationMgmt/LoginService/Login
+2025-04-23 09:12:59.041 +08:00 [INF] Received HTTP response headers after 384219.1283ms - 200
+2025-04-23 09:12:59.044 +08:00 [INF] End processing HTTP request after 384252.6704ms - 200
+2025-04-23 09:13:00.012 +08:00 [INF] AuthenticateController Login END
+2025-04-23 09:13:00.048 +08:00 [INF] HTTP POST /api/Login responded 200 in 386353.1873 ms
+2025-04-23 09:21:13.616 +08:00 [INF] Now listening on: http://localhost:5000
+2025-04-23 09:21:13.930 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-23 09:21:13.932 +08:00 [INF] Hosting environment: Development
+2025-04-23 09:21:13.933 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2025-04-23 09:21:15.440 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 422.6470 ms
+2025-04-23 09:21:17.018 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 958.8608 ms
+2025-04-23 09:21:48.440 +08:00 [INF] LoginController Login START
+2025-04-23 09:21:48.486 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/AuthenticationMgmt/LoginService/Login
+2025-04-23 09:21:48.491 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/AuthenticationMgmt/LoginService/Login

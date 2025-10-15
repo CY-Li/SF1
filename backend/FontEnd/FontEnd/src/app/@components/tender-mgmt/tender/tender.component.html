@@ -1,0 +1,213 @@
+<form [formGroup]="formGroup" (ngSubmit)="getTenderList(1,10)">
+    <mat-form-field class="mat-50">
+        <mat-label>下標人</mat-label>
+        <input formControlName="mm_account" matInput>
+        <mat-error *ngIf="formGroup.get('mm_account')?.hasError('maxlength')">
+            帳號不可超過10個字元
+        </mat-error>
+    </mat-form-field>
+    <mat-form-field class="mat-50">
+        <mat-label>標案代號</mat-label>
+        <input formControlName="tm_id" matInput>
+        <mat-error *ngIf="formGroup.get('tm_id')?.hasError('pattern')">
+            只能是數字
+        </mat-error>
+    </mat-form-field>
+    <mat-form-field class="mat-50">
+        <mat-label>標會種類</mat-label>
+        <mat-select formControlName="tm_type">
+            <mat-option value=""></mat-option>
+            <mat-option value="A">散會</mat-option>
+            <mat-option value="B">4人玩法</mat-option>
+            <mat-option value="C">2人玩法</mat-option>
+            <mat-option value="D">1人玩法</mat-option>
+        </mat-select>
+        <mat-error *ngIf="formGroup.get('tm_type')?.hasError('maxlength')">
+            標會種類錯誤
+        </mat-error>
+    </mat-form-field>
+    <mat-form-field class="mat-50">
+        <mat-label>標會狀態</mat-label>
+        <mat-select formControlName="tm_status">
+            <mat-option value="0">未成組</mat-option>
+            <mat-option value="1">已成組</mat-option>
+            <mat-option value="2">結束</mat-option>
+        </mat-select>
+        <mat-error *ngIf="formGroup.get('tm_status')?.hasError('maxlength')">
+            標會狀態錯誤
+        </mat-error>
+    </mat-form-field>
+    <div class="action">
+        <button mat-raised-button color="primary" type="submit">查詢</button>
+        <!-- <button mat-raised-button color="accent" type="button" (click)="openCreateTender();$event.stopPropagation()">新增</button> -->
+    </div>
+</form>
+
+<div class="table-container">
+    <table mat-table [dataSource]="myDataSource" multiTemplateDataRows>
+
+        <ng-container matColumnDef="expand">
+            <th mat-header-cell *matHeaderCellDef aria-label="row actions">&nbsp;</th>
+            <td mat-cell *matCellDef="let element">
+                <button mat-icon-button aria-label="expand row"
+                    (click)="(expandedElement = expandedElement === element ? null : element); $event.stopPropagation()">
+                    @if (expandedElement === element) {
+                    <mat-icon>keyboard_arrow_up</mat-icon>
+                    } @else {
+                    <mat-icon>keyboard_arrow_down</mat-icon>
+                    }
+                </button>
+            </td>
+        </ng-container>
+
+        <!-- Expanded Content Column - The detail row is made up of this one column that spans across all columns -->
+        <ng-container matColumnDef="expandedDetail">
+            <td mat-cell *matCellDef="let element" [attr.colspan]="displayedColumns.length">
+                <div class="example-element-detail"
+                    [@detailExpand]="element == expandedElement ? 'expanded' : 'collapsed'"
+                    *ngIf="element['tenderDetail'].length!==0">
+
+                    <table mat-table [dataSource]="element['tenderDetail']" class="mat-elevation-z8">
+
+                        <!-- Action Column -->
+                        <ng-container matColumnDef="action">
+                            <th mat-header-cell *matHeaderCellDef> Action </th>
+                            <td mat-cell *matCellDef="let row">
+                                <ng-container *ngIf="row.td_period == 0 && element.tm_status != 0">
+                                    <button mat-icon-button color="primary"
+                                        (click)="openConfirmDialog(row,'確定該標案明細得標嗎?','OK')">
+                                        <mat-icon>check_circle_outline</mat-icon>
+                                    </button>
+                                </ng-container>
+                            </td>
+                        </ng-container>
+
+                        <!-- <ng-container matColumnDef="td_id">
+                            <th mat-header-cell *matHeaderCellDef> 明細ID </th>
+                            <td mat-cell *matCellDef="let element"> {{element.td_id}} </td>
+                        </ng-container> -->
+
+                        <!-- <ng-container matColumnDef="td_participants">
+                            <th mat-header-cell *matHeaderCellDef> 參加者 </th>
+                            <td mat-cell *matCellDef="let element"> {{element.td_participants}} </td>
+                        </ng-container> -->
+
+                        <ng-container matColumnDef="td_sequence">
+                            <th mat-header-cell *matHeaderCellDef> 明細 </th>
+                            <td mat-cell *matCellDef="let element"> {{element.td_sequence}} </td>
+                        </ng-container>
+
+                        <ng-container matColumnDef="mm_account">
+                            <th mat-header-cell *matHeaderCellDef> 下標人 </th>
+                            <td mat-cell *matCellDef="let element"> {{element.mm_account}} </td>
+                        </ng-container>
+
+                        <ng-container matColumnDef="td_period">
+                            <th mat-header-cell *matHeaderCellDef> 該標中標期數 </th>
+                            <td mat-cell *matCellDef="let element"> {{element.td_period}} </td>
+                        </ng-container>
+
+                        <!-- <ng-container matColumnDef="td_status">
+                            <th mat-header-cell *matHeaderCellDef> 下標狀態 </th>
+                            <td mat-cell *matCellDef="let element"> {{element.td_status=="1"?"下標":"未下標"}} </td>
+                        </ng-container> -->
+
+                        <!-- <ng-container matColumnDef="td_update_datetime">
+                            <th mat-header-cell *matHeaderCellDef> 明細更動時間 </th>
+                            <td mat-cell *matCellDef="let element"> {{element.td_update_datetime}} </td>
+                        </ng-container> -->
+
+                        <tr mat-header-row *matHeaderRowDef="displayedDetailColumns"></tr>
+                        <tr mat-row *matRowDef="let element; columns: displayedDetailColumns;"></tr>
+                    </table>
+
+
+                </div>
+            </td>
+        </ng-container>
+
+        <!-- Action Column -->
+        <!-- <ng-container matColumnDef="action">
+            <th mat-header-cell *matHeaderCellDef> Action </th>
+            <td mat-cell *matCellDef="let row">
+                <ng-container *ngIf="['0','3'].includes(row.ad_status)">
+                    <button mat-icon-button color="primary" (click)="openConfirmDialog(row,'確定通過審核嗎?','OK')">
+                        <mat-icon>check_circle_outline</mat-icon>
+                    </button>
+                    <button mat-icon-button color="warn" (click)="openConfirmDialog(row,'確定駁回嗎?','NO')">
+                        <mat-icon>highlight_off</mat-icon>
+                    </button>
+                </ng-container>
+            </td>
+        </ng-container> -->
+
+        <!-- tm_id Column -->
+        <!-- <ng-container matColumnDef="tm_id">
+            <th mat-header-cell *matHeaderCellDef> ID </th>
+            <td mat-cell *matCellDef="let row"> {{row.tm_id}} </td>
+        </ng-container> -->
+
+        <!-- tm_sn Column -->
+        <ng-container matColumnDef="tm_sn">
+            <th mat-header-cell *matHeaderCellDef> 成組序號 </th>
+            <td mat-cell *matCellDef="let row"> {{row.tm_sn}} </td>
+        </ng-container>
+
+        <!-- tm_type Column -->
+        <ng-container matColumnDef="tm_type_name">
+            <th mat-header-cell *matHeaderCellDef> 標會種類 </th>
+            <td mat-cell *matCellDef="let row"> {{row.tm_type_name}} </td>
+        </ng-container>
+
+        <!-- tm_bidder Column -->
+        <!-- <ng-container matColumnDef="tm_bidder">
+            <th mat-header-cell *matHeaderCellDef> 下標人 </th>
+            <td mat-cell *matCellDef="let row"> {{row.tm_bidder}} </td>
+        </ng-container> -->
+
+        <!-- tm_winners Column -->
+        <ng-container matColumnDef="tm_winners">
+            <th mat-header-cell *matHeaderCellDef> 得標人 </th>
+            <td mat-cell *matCellDef="let row"> {{row.tm_winners}} </td>
+        </ng-container>
+
+        <!-- tm_current_period Column -->
+        <!-- <ng-container matColumnDef="tm_current_period">
+            <th mat-header-cell *matHeaderCellDef> 目前期數 </th>
+            <td mat-cell *matCellDef="let row"> {{row.tm_current_period}} </td>
+        </ng-container> -->
+
+        <!-- tm_status Column -->
+        <!-- <ng-container matColumnDef="tm_status">
+            <th mat-header-cell *matHeaderCellDef> 是否成組 </th>
+            <td mat-cell *matCellDef="let row"> {{row.tm_status}} </td>
+        </ng-container> -->
+
+        <!-- tm_win_first_datetime Column -->
+        <ng-container matColumnDef="tm_win_first_datetime">
+            <th mat-header-cell *matHeaderCellDef> 第一次開標時間 </th>
+            <td mat-cell *matCellDef="let row"> {{row.tm_win_first_datetime}} </td>
+        </ng-container>
+
+        <!-- tm_win_end_datetime Column -->
+        <ng-container matColumnDef="tm_win_end_datetime">
+            <th mat-header-cell *matHeaderCellDef> 最後開標時間 </th>
+            <td mat-cell *matCellDef="let row"> {{row.tm_win_end_datetime}} </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;" class="example-element-row"
+            [class.example-expanded-row]="expandedElement === row"
+            (click)="expandedElement = expandedElement === row ? null : row">
+        </tr>
+        <tr mat-row *matRowDef="let row; columns: ['expandedDetail']" class="example-detail-row"></tr>
+
+        <!-- Row shown when there is no matching data. -->
+        <tr class="mat-row" *matNoDataRow>
+            <td class="mat-cell" colspan="4">No data matching the filter</td>
+        </tr>
+    </table>
+
+    <mat-paginator [length]="totalCount" [pageIndex]="mypageIndex" [pageSizeOptions]="[10]"
+        aria-label="Select page of users"></mat-paginator>
+</div>

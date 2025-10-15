@@ -1,0 +1,40 @@
+2025-02-16 18:24:00.617 +08:00 [INF] Now listening on: http://localhost:5000
+2025-02-16 18:24:01.036 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-16 18:24:02.899 +08:00 [INF] Hosting environment: Development
+2025-02-16 18:24:02.899 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2025-02-16 18:24:08.727 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 850.4875 ms
+2025-02-16 18:24:13.234 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 739.6776 ms
+2025-02-16 18:24:47.493 +08:00 [INF] MembersController GetMember START
+2025-02-16 18:24:47.583 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/GetMember
+2025-02-16 18:24:47.593 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/GetMember
+2025-02-16 18:24:49.922 +08:00 [INF] Received HTTP response headers after 2321.2663ms - 200
+2025-02-16 18:24:49.962 +08:00 [INF] End processing HTTP request after 2385.1959ms - 200
+2025-02-16 18:24:49.994 +08:00 [INF] MembersController GetMember START
+2025-02-16 18:24:50.017 +08:00 [INF] HTTP GET /api/Members/1 responded 200 in 2634.6798 ms
+2025-02-16 18:25:00.671 +08:00 [INF] MembersController GetSubordinateOrg START
+2025-02-16 18:25:00.676 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/GetSubordinateOrg
+2025-02-16 18:25:00.677 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/GetSubordinateOrg
+2025-02-16 18:25:00.899 +08:00 [INF] Received HTTP response headers after 221.1572ms - 200
+2025-02-16 18:25:00.916 +08:00 [INF] End processing HTTP request after 240.1509ms - 200
+2025-02-16 18:25:00.941 +08:00 [INF] MembersController GetSubordinateOrg START
+2025-02-16 18:25:00.945 +08:00 [INF] HTTP GET /api/Members/GetSubordinateOrg/1 responded 200 in 289.2985 ms
+2025-02-16 18:26:58.229 +08:00 [INF] Now listening on: http://localhost:5000
+2025-02-16 18:26:58.249 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-16 18:26:58.251 +08:00 [INF] Hosting environment: Development
+2025-02-16 18:26:58.253 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2025-02-16 18:27:04.335 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 470.8396 ms
+2025-02-16 18:27:07.019 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 710.4907 ms
+2025-02-16 18:27:16.333 +08:00 [INF] MembersController GetSubordinateOrg START
+2025-02-16 18:27:16.386 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/GetSubordinateOrg
+2025-02-16 18:27:16.389 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/GetSubordinateOrg
+2025-02-16 18:27:17.998 +08:00 [INF] Received HTTP response headers after 1601.3136ms - 200
+2025-02-16 18:27:18.003 +08:00 [INF] End processing HTTP request after 1625.2592ms - 200
+2025-02-16 18:27:18.025 +08:00 [INF] MembersController GetSubordinateOrg START
+2025-02-16 18:27:18.048 +08:00 [INF] HTTP GET /api/Members/GetSubordinateOrg/1 responded 200 in 1813.6867 ms
+2025-02-16 18:27:28.740 +08:00 [INF] MembersController GetSubordinateOrg START
+2025-02-16 18:27:28.764 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/GetSubordinateOrg
+2025-02-16 18:27:28.766 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/GetSubordinateOrg
+2025-02-16 18:27:28.823 +08:00 [INF] Received HTTP response headers after 55.9882ms - 200
+2025-02-16 18:27:28.824 +08:00 [INF] End processing HTTP request after 60.0745ms - 200
+2025-02-16 18:27:28.825 +08:00 [INF] MembersController GetSubordinateOrg START
+2025-02-16 18:27:28.827 +08:00 [INF] HTTP GET /api/Members/GetSubordinateOrg/283 responded 200 in 92.2113 ms

@@ -1,0 +1,145 @@
+<form [formGroup]="formGroup" (ngSubmit)="queryFrontPageList(0,pageSize,pageSort,pageSortDirection)">
+    <mat-form-field class="mat-50">
+        <mat-label>參數代號</mat-label>
+        <input formControlName="sps_code" matInput>
+        <mat-error *ngIf="formGroup.get('sps_code')?.hasError('maxlength')">
+            帳號不可超過25個字元
+        </mat-error>
+    </mat-form-field>
+    <mat-form-field class="mat-50">
+        <mat-label>參數名稱</mat-label>
+        <input matInput formControlName="sps_code">
+        <mat-error *ngIf="formGroup.get('sps_name')?.hasError('maxlength')">
+            名稱不可超過5個字元
+        </mat-error>
+    </mat-form-field>
+    <!-- <mat-form-field class="mat-50">
+        <mat-label>申請狀態</mat-label>
+        <input matInput formControlName="ad_status">
+        <mat-error *ngIf="formGroup.get('ad_status')?.hasError('maxlength')">
+            申請狀態錯誤
+        </mat-error>
+    </mat-form-field> -->
+    <div class="form-action">
+        <button mat-raised-button color="primary" (click)="openAddEditForm(false);$event.stopPropagation()">新增</button>
+        <button mat-raised-button color="primary" type="submit">查詢</button>
+    </div>
+</form>
+
+<div class="table-container mat-table">
+
+    <table mat-table [dataSource]="dataSource" multiTemplateDataRows matSort matSortDirection="desc">
+        <!-- Action Column -->
+        <ng-container matColumnDef="action" class="table-action">
+            <th mat-header-cell *matHeaderCellDef> Action </th>
+            <td mat-cell *matCellDef="let row">
+                <div class="table-action">
+                    <button mat-icon-button color=" primary" (click)="openAddEditForm(true,row)">
+                        <mat-icon>table_view</mat-icon>
+                    </button>
+                    <button mat-icon-button color="primary" (click)="openAddEditForm(false,row)">
+                        <mat-icon>edit</mat-icon>
+                    </button>
+                    <!-- <button mat-icon-button color="warn" (click)="onDelete(row.id,'確定刪除嗎?')">
+                        <mat-icon>delete</mat-icon>
+                    </button> -->
+                </div>
+
+                <!-- 明細用 -->
+                <!-- <button mat-icon-button aria-label="expand row"
+                    (click)="(expandedElement = expandedElement === row ? null : row); $event.stopPropagation()">
+                    @if (expandedElement === row) {
+                    <mat-icon>keyboard_arrow_up</mat-icon>
+                    } @else {
+                    <mat-icon>keyboard_arrow_down</mat-icon>
+                    }
+                </button> -->
+            </td>
+        </ng-container>
+
+        <!-- 明細用 -->
+        <ng-container matColumnDef="expandedDetail">
+            <td mat-cell *matCellDef="let row" [attr.colspan]="3">
+                <div class="example-element-detail" [@detailExpand]="row == expandedElement ? 'expanded' : 'collapsed'">
+
+                    <table>
+                        <ng-container>
+                            <tr> Details </tr>
+                            <td> {{row.sps_id}} </td>
+                        </ng-container>
+                    </table>
+
+                </div>
+            </td>
+        </ng-container>
+
+        <!-- sp_id Column -->
+        <ng-container matColumnDef="sps_id">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> ID </th>
+            <td mat-cell *matCellDef="let row"> {{row.sps_id}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="sps_code">
+            <th mat-header-cell *matHeaderCellDef> 參數代號 </th>
+            <td mat-cell *matCellDef="let row"> {{row.sps_code}} </td>
+        </ng-container>
+        <ng-container matColumnDef="sps_name">
+            <th mat-header-cell *matHeaderCellDef> 參數名稱 </th>
+            <td mat-cell *matCellDef="let row"> {{row.sps_name}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="sps_description">
+            <th mat-header-cell *matHeaderCellDef> 參數描述 </th>
+            <td mat-cell *matCellDef="let row"> {{row.sps_description}} </td>
+        </ng-container>
+
+        <!-- <ng-container matColumnDef="sps_parameter01">
+            <th mat-header-cell *matHeaderCellDef> 參數1 </th>
+            <td mat-cell *matCellDef="let row"> {{row.sps_parameter01}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="sps_parameter02">
+            <th mat-header-cell *matHeaderCellDef> 參數2 </th>
+            <td mat-cell *matCellDef="let row"> {{row.sps_parameter02}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="sps_parameter03">
+            <th mat-header-cell *matHeaderCellDef> 參數3 </th>
+            <td mat-cell *matCellDef="let row"> {{row.sps_parameter03}} </td>
+        </ng-container>
+
+
+        <ng-container matColumnDef="sps_parameter04">
+            <th mat-header-cell *matHeaderCellDef> 參數4 </th>
+            <td mat-cell *matCellDef="let row"> {{row.sps_parameter04}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="sps_parameter05">
+            <th mat-header-cell *matHeaderCellDef> 參數5 </th>
+            <td mat-cell *matCellDef="let row"> {{row.sps_parameter05}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="sps_parameter06">
+            <th mat-header-cell *matHeaderCellDef> 參數6 </th>
+            <td mat-cell *matCellDef="let row"> {{row.sps_parameter06}} </td>
+        </ng-container> -->
+
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;" class="example-element-row"
+            [class.example-expanded-row]="expandedElement === row"
+            (click)="expandedElement = expandedElement === row ? null : row">
+        </tr>
+        <!-- <tr mat-row *matRowDef="let row; columns: ['expandedDetail']" class="example-detail-row"></tr> -->
+        <!-- Row shown when there is no matching data. -->
+        <tr class="mat-row" *matNoDataRow>
+            <td class="mat-cell" colspan="4">No data matching the filter</td>
+        </tr>
+
+    </table>
+
+
+    <mat-paginator [length]="totalCount" [pageIndex]="pageIndex" [pageSizeOptions]="[10]"
+        aria-label="Select page of users">
+    </mat-paginator>
+</div>

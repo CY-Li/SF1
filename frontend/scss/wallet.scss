@@ -1,0 +1,1047 @@
+@import 'main.scss';
+
+main {
+  background: white;
+}
+.walletContainer {
+  display: flex;
+  padding: 60px 40px;
+  align-items: start;
+  @media #{$mobile} {
+    display: block;
+    padding: 20px 0;
+  }
+  .leftColumn {
+    width: 320px;
+    border: 3px solid #F8F2F2;
+    background: white;
+    border-radius: 0 50px 0 50px;
+    padding-bottom: 35px;
+    margin-right: 80px;
+    @media #{$mobile} {
+      width: 90%;
+      margin-right: auto;
+      margin-left: auto;
+      border: none;
+      padding-bottom: 20px;
+    }
+    .memberCard {
+      background: transparent linear-gradient(180deg, #C2674A 0%, #B7553E 4%, #A83F2E 14%, #952219 46%, #880f0b 100%) 0% 0% no-repeat padding-box;
+      border-radius: 0 50px 0 50px;
+      padding: 24px 0;
+      margin-bottom: 40px;
+      @media #{$mobile} {
+        margin-bottom: 20px;
+      }
+    }
+    .memberId {
+      text-align: center;
+      padding-bottom: 12px;
+      position: relative;
+      margin-bottom: 30px;
+      @media #{$mobile} {
+        margin-bottom: 20px;
+      }
+      .memberNum {
+        color: $secondary;
+        font-size: 20px;
+        @media #{$mobile} {
+          font-size: 18px;
+        }
+      }
+      &::before {
+        display: block;
+        width: 24px;
+        height: 1px;
+        background: $secondary;
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: calc(50% - 12px);
+      }
+    }
+    .balance {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      &>div {
+        width: 100px;
+      }
+      .amount {
+        font-size: 20px;
+        @media #{$mobile} {
+          font-size: 18px;
+        }
+      }
+    }
+    .walletNavs {
+      width: 280px;
+      margin: auto;
+      @media #{$mobile} {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+      .nav {
+        background: #fcfbfb;
+        border-radius: 50px;
+        color: $primary;
+        text-align: center;
+        padding: 10px 0;
+        margin-bottom: 10px;
+        display: block;
+        @media #{$mobile} {
+          border-radius: 4px;
+          margin-bottom: 0px;
+          width: 60px;
+          height: 60px;
+          justify-content: center;
+          align-items: center;
+          font-size: 14px;
+          display: flex;
+        }
+        .text-en {
+          color: #d4481c;
+          @media #{$mobile} {
+            display: none;
+          }
+        }
+        &.active {
+          background: $primary;
+          color: white;
+          .text-en {
+            color: $secondary;
+          }
+        }
+      }
+    }
+  }
+  .walletBody {
+    flex-grow: 1;
+    @media #{$mobile} {
+      width: 90%;
+      margin: auto;
+    }
+    .memberCard {
+      background: transparent linear-gradient(119deg, #C2674A 0%, #880F0B 100%) 0% 0% no-repeat padding-box;
+      padding: 30px 20px;
+      border-radius: 14px;
+      margin-bottom: 24px;
+      @media #{$mobile} {
+        margin: auto auto  20px;
+        padding: 20px;
+      }
+      .memberId {
+        position: relative;
+        padding-left: 100px;
+        color: $secondary;
+        font-size: 18px;
+        margin-bottom: 40px;
+        @media #{$mobile} {
+          padding-left: 75px;
+          margin-bottom: 20px;
+        }
+        .circle {
+          position: absolute;
+          width: 46px;
+          height: 46px;
+          border-radius: 50%;
+          top: calc(50% - 23px);
+          @media #{$mobile} {
+            width: 30px;
+            height: 30px;
+            top: calc(50% - 15px);
+          }
+          &.circle1 {
+            background: transparent linear-gradient(-15deg, #E6E5CE00 0%, #F8F2F2 100%) 0% 0% no-repeat padding-box;
+            left: 0;
+          }
+          &.circle2 {
+            background: transparent linear-gradient(115deg, #E6E5CE00 0%, #F8F2F2 100%) 0% 0% no-repeat padding-box;
+            left: 32px;
+            @media #{$mobile} {
+              left: 22px;
+            }
+          }
+        }
+      }
+      .memberWallet {
+        padding: 20px 0;
+        display: flex;
+        margin-bottom: 10px;
+        @media #{$mobile} {
+          padding: 0;
+        }
+        .balance {
+          font-size: 18px;
+          color: #f8f2f2;
+          width: 50%;
+          padding: 0 6%;
+          @media #{$mobile} {
+            font-size: 12px;
+            padding: 0 12px;
+          }
+          .amount {
+            color: white;
+            font-size: 30px;
+            @media #{$mobile} {
+              font-size: 14px;
+            }
+          }
+          .tip {
+            font-size: 12px;
+            color: $secondary;
+          }
+          &:first-child {
+            border-right: 1px solid $secondary;
+          }
+        }
+      }
+      .extra {
+        padding: 16px 0;
+        display: flex;
+        flex-wrap: wrap;
+        @media #{$mobile} {
+          padding: 0;
+        }
+        .bonus {
+          font-size: 16px;
+          color: #f8f2f2;
+          width: 50%;
+          padding: 0 6%;
+          @media #{$mobile} {
+            font-size: 12px;
+            padding: 0 12px;
+          }
+          .amount {
+            color: white;
+            font-size: 20px;
+            @media #{$mobile} {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+      input {
+        &:focus {
+          box-shadow: 0 0 0 0.25rem rgba(222,172,156,.25);
+        }
+        &:checked {
+          background-color: #d4481c;
+          border-color: #d4481c;
+        }
+      }
+    }
+    .memberInfo {
+      background: $primary;
+      border-radius: 14px;
+      overflow: hidden;
+      margin-bottom: 16px;
+      .balanceInfo {
+        background: #fcfbfb;
+        padding: 20px;
+        .bonusTitle {
+          color: $primary;
+          font-size: 18px;
+          margin-bottom: 40px;
+          @media #{$mobile} {
+            margin-bottom: 16px;
+          }
+        }
+        .bonusRow {
+          display: flex;
+          align-items: center;
+          @media #{$mobile} {
+            flex-wrap: wrap;
+            flex-direction: column-reverse;
+          }
+          &>div {
+            width: 50%;
+            @media #{$mobile} {
+              width: 100%;
+            }
+          }
+        }
+        .bonusContents {
+          display: flex;
+          padding-left: 30px;
+          flex-wrap: wrap;
+          @media #{$mobile} {
+            padding: 0 20px;
+          }
+          .bonusContent {
+            width: 40%;
+            margin-bottom: 28px;
+            color: $primary;
+            line-height: 24px;
+            position: relative;
+            padding-left: 8px;
+            @media #{$mobile} {
+              width: 30%;
+              font-size: 12px;
+              margin-right: 3%;
+            }
+            .amount {
+              font-size: 24px;
+              font-weight: bold;
+              font-size: 16px;
+            }
+            &::before {
+              content: "";
+              width: 3px;
+              height: 80%;
+              display: block;
+              position: absolute;
+              top: 50%;
+              transform: translate(0, -50%);
+              left: 0;
+              border-radius: 4px;
+              @media #{$mobile} {
+                background: $secondary !important;
+              }
+            }
+            &:nth-child(1)::before {
+              background: $secondary;
+            }
+            &:nth-child(2)::before {
+              background: #f5f5f5;
+            }
+            &:nth-child(3)::before {
+              background: $primary;
+            }
+            &:nth-child(4)::before {
+              background: #880f0b;
+            }
+            &:nth-child(5)::before {
+              background: white;
+            }
+          }
+        }
+        #pie {
+          width: 200px;
+          height: 200px;
+          background: #deac9c;
+          border-radius: 50%;
+          background-image: linear-gradient(to right, transparent 50%, #d4481c 0%);
+          position: relative;
+          margin: auto;
+          @media #{$mobile} {
+            margin-bottom: 20px;
+          }
+          .pieInner {
+            margin-left: 50%;
+            height: 100%;
+            border-radius: 0 100% 100% 0 / 50%;
+            transform-origin: left;
+            background-color: inherit;
+          }
+          .circle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            border-radius: 50%;
+            width: 130px;
+            height: 130px;
+          }
+        }
+      }
+      .buttons {
+        display: flex;
+        padding: 20px 0;
+      }
+      .leftButton {
+        display: flex;
+        flex-wrap: wrap;
+        border-right: 1px solid $secondary;
+        justify-content: center;
+        align-items: center;
+        width: 35%;
+        @media #{$mobile} {
+          width: 50%;
+          border-right: 0;
+        }
+        .title {
+          color: #f8f2f2;
+          margin-bottom: 18px;
+          width: 100%;
+          text-align: center;
+          @media #{$mobile} {
+            font-size: 14px;
+            margin-bottom: 12px;
+          }
+          .text-en {
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            @media #{$mobile} {
+              font-size: 16px;
+            }
+          }
+        }
+        .common-btn {
+          width: 206px;
+          height: 34px;
+          max-width: 90%;
+          @media #{$mobile} {
+            font-size: 14px;
+            width: 120px;
+            height: 26px;
+          }
+        }
+      }
+      .rightButton {
+        width: 65%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media #{$mobile} {
+          width: 50%;
+          flex-wrap: wrap;
+        }
+        .common-btn {
+          width: 230px;
+          height: 63px;
+          text-align: center;
+          max-width: calc((100% - 16px) * .45);
+          @media #{$mobile} {
+            font-size: 14px;
+            width: 120px;
+            height: 26px;
+            margin: auto;
+            max-width: 180px;
+            .text-en {
+              display: none;
+            }
+          }
+          &:first-child {
+            margin-right: 16px;
+            @media #{$mobile} {
+              margin-right: auto;
+              margin-bottom: 12px;
+            }
+          }
+        }
+      }
+      .common-btn {
+        border: 1px solid white;
+        font-size: 18px;
+        flex-wrap: wrap;
+        &.active {
+          color: $primary;
+          background: white;
+        }
+      }
+    }
+  }
+  form {
+    background: #fcfbfb;
+    border-radius: 14px;
+    padding-bottom: 40px;
+    .formTitle {
+      font-size: 20px;
+      color: $primary;
+      padding: 30px;
+      @media #{$mobile} {
+        font-size: 16px;
+        padding: 20px;
+      }
+    }
+    .form-input-groups {
+      display: flex;
+      padding: 0 60px;
+      align-items: center;
+      @media #{$mobile} {
+        flex-wrap: wrap;
+        padding: 0 20px;
+      }
+      .custom-input-group {
+        flex-grow: 1;
+        margin-bottom: 16px;
+      }
+      .amount {
+        width: 300px;
+        min-width: 300px;
+        margin-left: 40px;
+        @media #{$mobile} {
+          width: 100%;
+          min-width: 100%;
+          margin-left: 0;
+          text-align: center;
+          font-size: 14px;
+        }
+        &>div:first-child {
+          margin-bottom: 16px;
+          @media #{$mobile} {
+            margin-bottom: 4px;
+          }
+        }
+        .text-en {
+          color: $primary;
+          font-size: 25px;
+          font-weight: bold;
+          margin: 0 20px;
+          @media #{$mobile} {
+            font-size: 16px;
+            margin: 0 8px;
+          }
+        }
+      }
+      label {
+        width: 5em;
+        min-width: 5em;
+        margin-right: 12px;
+        white-space: nowrap;
+        font-size: 18px;
+        text-align: right;
+        margin-bottom: 16px;
+        @media #{$mobile} {
+          width: 100%;
+          margin-right: 0;
+          margin-bottom: 4px;
+          text-align: left;
+          font-size: 14px;
+        }
+      }
+      .moneyInput {
+        margin-bottom: 16px;
+        position: relative;
+        @media #{$mobile} {
+          width: calc(100% - 107px);
+        }
+        input {
+          padding-right: 80px;
+          @media #{$mobile} {
+            padding-right: 4px;;
+          }
+        }
+        &::after {
+          position: absolute;
+          display: block;
+          color: $secondary;
+          border-left: 1px solid $secondary;
+          padding: 0 20px;
+          top: 50%;
+          content: "TRX";
+          right: 0;
+          transform: translate(0, -50%);
+          @media #{$mobile} {
+            display: none;;
+          }
+        }
+      }
+      .shortInput {
+        width: 100px;
+        flex-grow: 0;
+        @media #{$mobile} {
+          width: 75px;
+        }
+      }
+      .mediumInput {
+        width: 254px;
+        flex-grow: 0;
+        @media #{$mobile} {
+          width: 204px;
+        }
+      }
+      .refreshBtn {
+        width: 137px;
+        height: 44px;
+        display: flex;
+        border-radius: 50px;
+        background: #88c858;
+        margin-bottom: 16px;
+        margin-left: 20px;
+        cursor: pointer;
+        font-size: 18px;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        @media #{$mobile} {
+          width: 99px;
+          margin-left: 8px;
+          font-size: 14px;
+          height: 35px;
+        }
+        i {
+          margin-right: 8px;
+          font-size: 22px;
+          @media #{$mobile} {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    .withdraw-input-groups {
+      display: flex;
+      padding: 0 60px;
+      justify-content: space-between;
+      @media #{$mobile} {
+        flex-wrap: wrap;
+        padding: 0 20px;
+      }
+      .custom-input-group {
+        width: 45%;
+        @media #{$mobile} {
+          width: 100%;
+          margin-bottom: 16px;
+        }
+      }
+      .balance {
+        font-size: 14px;
+        color: $primary;
+        .amount {
+          font-size: 16px;
+        }
+      }
+
+    }
+    .uploadLayout {
+      display: flex;
+      flex-wrap: wrap;
+      .title {
+        width: 100%;
+        padding-left: 200px;
+        margin-bottom: 20px;
+        @media #{$mobile} {
+          padding-left: 20px;
+          font-size: 14px;
+        }
+        .tip {
+          padding-left: 18px;
+          color: $minor;
+          font-size: 16px;
+          @media #{$mobile} {
+            font-size: 12px;
+          }
+        }
+      }
+      .custom-upload-group {
+        margin-right: 20px;
+        margin-bottom: 30px;
+        @media #{$mobile} {
+          margin: 0 0 30px 0;
+          padding: 0 10px;
+        }
+        .name {
+          text-align: center;
+          margin-bottom: 8px;
+          color: $gray;
+          @media #{$mobile} {
+            font-size: 12px;
+            text-align: left;
+          }
+        }
+        .uploadFrame {
+          width: 300px;
+          height: 190px;
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+          text-align: center;
+          background: #fcfbfb;
+          border: 2px solid #f8f2f2;
+          border-radius: 14px;
+          position: relative;
+          overflow: hidden;
+        }
+        .tip1 {
+          width: 100%;
+          font-size: 18px;
+          @media #{$mobile} {
+            display: none;
+          }
+        }
+        .tip2 {
+          width: 100%;
+          font-size: 15px;
+          color: $gray;
+          margin: 8px 0;
+          @media #{$mobile} {
+            display: none;
+          }
+        }
+        label.common-btn {
+          background: white;
+          border: 1px solid $minor;
+          color: $minor;
+          width: 164px;
+          height: 36px;
+          position: relative;
+          z-index: 2;
+          @media #{$mobile} {
+            width: 120px;
+            height: 28px;
+            font-size: 14px;
+          }
+        }
+        input {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          opacity: 0;
+        }
+        .imgPreview {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+    .form-select, .form-control {
+      height: 44px;
+      outline: 0;
+      border: none;
+      border-bottom: 1px solid $secondary;
+      border-radius: 0;
+      @media #{$mobile} {
+        height: 35px;
+        font-size: 14px;
+      }
+    }
+    .common-btn {
+      border: 0;
+      flex-wrap: wrap;
+      width: 280px;
+      height: 63px;
+      margin: 40px auto;
+      text-align: center;
+      font-size: 18px;
+      @media #{$mobile} {
+        width: 200px;
+        height: 56px;
+        font-size: 14px;
+        margin: 20px auto;
+      }
+    }
+    .divLine {
+      height: 45px;
+      background: $primary;
+      @media #{$mobile} {
+        height: 20px;
+      }
+    }
+    .divline2 {
+      height: 1px;
+      background: $secondary;
+      width: 160px;
+      margin-top: 40px;
+      margin-bottom: 30px;
+      @media #{$mobile} {
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+    }
+    .checkGroups {
+      padding: 40px;
+      background: white;
+      width: 96%;
+      margin: auto;
+      @media #{$mobile} {
+        padding: 20px;
+      }
+      .custom-check-group {
+        margin-bottom: 40px;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        @media #{$mobile} {
+          margin-bottom: 20px;
+          font-size: 14px;
+        }
+        .form-check-input {
+          width: 23px;
+          height: 23px;
+          border-color: $gray;
+          border-radius: 0;
+          margin-right: 40px;
+          min-width: 23px;
+          background: white;
+          padding: 4px;
+          @media #{$mobile} {
+            width: 15px;
+            height: 15px;
+            margin-right: 10px;
+            min-width: 15px;
+            padding: 2px;
+          }
+          &:checked {
+            background: $gray;
+            background-clip: content-box;
+          }
+        }
+        label {
+          display: flex;
+          justify-content: space-between;
+          flex-grow: 1;
+          align-items: center;
+          .name {
+            flex-grow: 1;
+          }
+          .text-en {
+            color: $primary;
+            width: 100px;
+            min-width: 100px;
+            @media #{$mobile} {
+              width: 60px;
+              min-width: 60px;
+            }
+          }
+        }
+      }
+    }
+    .qrcode-rows {
+      display: flex;
+      padding: 0 60px;
+      margin-bottom: 40px;
+      @media #{$mobile} {
+        padding: 0 20px;
+        margin-top: 16px;
+        display: block;
+      }
+      .qrcode {
+        width: 80px;
+        font-size: 18px;
+        margin-right: 12px;
+        @media #{$mobile} {
+          width: 100%;
+          margin-right: 0;
+          font-size: 14px;
+          margin-bottom: 4px;
+        }
+      }
+      .qrcodeImg {
+        width: 220px;
+        padding: 15px;
+        background: white;
+      }
+    }
+    .checkRow {
+      padding: 0 60px;
+      @media #{$mobile} {
+        padding: 0 20px;
+        font-size: 12px;
+      }
+      .form-check-input {
+        border-color: #d4481c;
+        &:checked {
+          background-color: #d4481c;
+          border-color: #d4481c;
+        }
+      }
+    }
+    .detailTable {
+      .tableRow {
+        display: flex;
+        padding: 20px;
+        flex-wrap: wrap;
+        align-items: center;
+        background: white;
+        @media #{$mobile} {
+          font-size: 14px;
+          padding: 10px;
+          margin: 0 10px 12px 10px;
+        }
+        .leftRow {
+          display: flex;
+          width: calc(100% - 240px);
+          @media #{$mobile} {
+            display: block;
+            width: calc(100% - 100px);
+          }
+          .date {
+            width: 150px;
+            min-width: 150px;
+            color: $gray;
+            padding-left: 20px;
+            @media #{$mobile} {
+              padding-left: 0;
+              font-size: 12px;
+              margin-bottom: 4px;
+            }
+          }
+          .content {
+            flex-grow: 1;
+          }
+        }
+        .rightRow {
+          display: flex;
+          width: 240px;
+          @media #{$mobile} {
+            display: block;
+            width: 100px;
+            text-align: right;
+          }
+          .type {
+            width: 100px;
+            min-width: 100px;
+            text-align: center;
+            color: $primary;
+            @media #{$mobile} {
+              font-size: 12px;
+              margin-bottom: 4px;
+              text-align: right;
+            }
+            &.transfer {
+              color: #88c858;
+            }
+          }
+          .amount {
+            width: 100px;
+            min-width: 100px;
+            text-align: center;
+            @media #{$mobile} {
+              text-align: right;
+            }
+          }
+          .toggleBtn {
+            width: 20px;
+            min-width: 20px;
+            color: #707070;
+            cursor: pointer;
+            transform: rotate(0deg);
+            transition: transform .3s ease;
+            &.open {
+              transform: rotate(180deg);
+            }
+            @media #{$mobile} {
+              display: none;
+            }
+          }
+        }
+        .detail {
+          display: none;
+          width: 100%;
+          @media #{$mobile} {
+            display: block !important;
+          }
+          .detailRow {
+            padding: 20px 16px;
+            background: #fcfbfb;
+            display: flex;
+            margin: 20px 0;
+            @media #{$mobile} {
+              padding: 8px;
+              display: block;
+              margin-bottom: 8px;
+              font-size: 12px;
+            }
+            .bank {
+              margin-right: 30px;
+              color: $gray;
+            }
+          }
+        }
+      }
+    }
+    .paginations {
+      margin: auto;
+      display: flex;
+      color: $primary;
+      justify-content: center;
+      align-items: center;
+      font-size: 15px;
+      padding: 30px 0;
+      &>div {
+        cursor: pointer;
+      }
+      .page-prev, .page-next {
+        font-size: 20px;
+        &.disabled {
+          color: #9f9494;
+          cursor: unset;
+        }
+      }
+      .page-prev {
+        margin-right: 30px;
+      }
+      .page-ellipsis-prev {
+        margin-right: 20px;
+      }
+      .page-next {
+        margin-left: 30px;
+      }
+      .page-ellipsis-next {
+        margin-left: 20px;
+      }
+      .page {
+        margin: 0 5px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &.active {
+          background: $primary;
+          color: white;
+        }
+      }
+    }
+    .closingTitle {
+      display: block;
+      padding: 30px;
+      @media #{$mobile} {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        padding: 20px;
+      }
+      .formTitle {
+        padding: 0;
+      }
+      .tip {
+        font-size: 12px;
+        color: $gray;
+        text-align: right;
+        padding-right: 30px;
+        @media #{$mobile} {
+          padding-right: 0;
+        }
+      }
+
+    }
+    .closingTable {
+      .tableRow {
+        display: flex;
+        align-items: center;
+        padding: 20px 60px;
+        font-size: 18px;
+        background: white;
+        margin: 0 8px;
+        @media #{$mobile} {
+          padding: 20px;
+          font-size: 14px;
+          margin: 0 10px 12px 10px;
+        }
+        .name {
+          width: calc(100% - 100px);
+          word-break: break-all;
+          @media #{$mobile} {
+            width: calc(100% - 80px);
+          }
+        }
+        .amount {
+          color: $minor;
+          width: 100px;
+          text-align: right;
+          @media #{$mobile} {
+            width: 80px;
+          }
+        }
+      }
+    }
+  }
+}

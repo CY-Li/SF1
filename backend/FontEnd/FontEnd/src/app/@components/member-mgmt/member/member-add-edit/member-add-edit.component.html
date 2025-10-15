@@ -1,0 +1,66 @@
+<h1 mat-dialog-title>{{ isEditing ? '修改' : '新增' }}項目</h1>
+
+<div mat-dialog-content class="content">
+    <form [formGroup]="addEditFormGroup">
+        <!-- 引數代號，顯示但不可更改 -->
+        <mat-form-field class="mat-50">
+            <mat-label>ID</mat-label>
+            <input formControlName="mm_id" matInput [readonly]="isReadonly">
+        </mat-form-field>
+
+        <mat-form-field class="mat-50">
+            <mat-label>帳號</mat-label>
+            <input formControlName="mm_account" matInput [readonly]="isReadonly">
+        </mat-form-field>
+
+        <mat-form-field class="mat-50">
+            <mat-label>名稱</mat-label>
+            <input matInput type="text" formControlName="mm_name" readonly>
+        </mat-form-field>
+
+        <mat-form-field class="mat-50">
+            <mat-label>介紹人</mat-label>
+            <input matInput formControlName="mm_introduce_user">
+        </mat-form-field>
+
+        <mat-form-field class="mat-50">
+            <mat-label>邀請人</mat-label>
+            <input matInput formControlName="mm_invite_code">
+        </mat-form-field>
+
+        <mat-form-field class="mat-50">
+            <mat-label>階層</mat-label>
+            <input matInput formControlName="mm_level">
+        </mat-form-field>
+        
+        <mat-form-field class="mat-50">
+            <mat-label>狀態</mat-label>
+            <input matInput formControlName="mm_status" readonly>
+        </mat-form-field>
+
+        <mat-form-field class="mat-50">
+            <mat-label>KYC狀態</mat-label>
+            <input matInput formControlName="mm_kyc" readonly>
+        </mat-form-field>
+
+        <mat-form-field class="mat-50">
+            <mat-label>錢包地址</mat-label>
+            <input matInput formControlName="mm_mw_address" readonly>
+        </mat-form-field>
+
+        <mat-form-field class="mat-50">
+            <mat-label>加入時間</mat-label>
+            <input matInput formControlName="mm_create_datetime" readonly>
+        </mat-form-field>
+    </form>
+</div>
+<!-- 其他欄位 -->
+<div mat-dialog-actions>
+    <!-- @if(!isView){
+        <button mat-raised-button color="primary"  (click)="onFormSubmit()">保存變更</button>
+    } -->
+    <button mat-raised-button type="button" (click)="onFormClose()">取消</button>
+    <!-- <button  mat-raised-button color="warn" (click)="editClose()">取消</button> -->
+</div>
+
+    

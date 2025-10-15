@@ -1,0 +1,8 @@
+2024-07-07 14:54:14.006 +08:00 [INF] ApplyDepositController GetDepositData START
+2024-07-07 14:54:16.348 +08:00 [INF] ApplyDepositController GetDepositData END
+2024-07-07 14:55:34.832 +08:00 [INF] ApplyDepositController PostApplyDeposit START
+2024-07-07 14:55:35.961 +08:00 [INF] ApplyDepositController PostApplyDeposit END
+2024-07-07 14:55:51.294 +08:00 [INF] ApplyDepositController QueryApplyDepositUser START
+2024-07-07 14:55:51.540 +08:00 [INF] ApplyDepositController QueryApplyDepositUser START
+2024-07-07 14:56:31.145 +08:00 [INF] ApplyDepositController PutApplyDeposit START
+2024-07-07 14:56:31.440 +08:00 [INF] ApplyDepositController PutApplyDeposit END

@@ -1,0 +1,210 @@
+2024-10-01 16:52:43.156 +08:00 [INF] Now listening on: http://localhost:5000
+2024-10-01 16:52:43.174 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-01 16:52:43.237 +08:00 [INF] Hosting environment: Development
+2024-10-01 16:52:43.239 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2024-10-01 16:52:50.659 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 877.7336 ms
+2024-10-01 16:52:54.530 +08:00 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 304 in 7.9391 ms
+2024-10-01 16:52:54.531 +08:00 [INF] HTTP GET /swagger/swagger-ui.css responded 304 in 72.5834 ms
+2024-10-01 16:52:54.643 +08:00 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 304 in 0.2037 ms
+2024-10-01 16:52:56.377 +08:00 [INF] HTTP GET /swagger/favicon-32x32.png responded 304 in 0.1740 ms
+2024-10-01 16:52:57.988 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 1628.0885 ms
+2024-10-01 16:54:18.768 +08:00 [INF] AnnouncementController GetAnnouncement START
+2024-10-01 16:54:18.879 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/GetAnnouncement
+2024-10-01 16:54:18.893 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/GetAnnouncement
+2024-10-01 16:54:24.721 +08:00 [INF] Received HTTP response headers after 5824.3838ms - 200
+2024-10-01 16:54:24.726 +08:00 [INF] End processing HTTP request after 5852.8086ms - 200
+2024-10-01 16:54:24.766 +08:00 [INF] AnnouncementController GetAnnouncement END
+2024-10-01 16:54:24.798 +08:00 [INF] HTTP GET /api/Announcement/GetAnnouncement responded 200 in 6287.5763 ms
+2024-10-01 16:58:03.303 +08:00 [INF] Now listening on: http://localhost:5000
+2024-10-01 16:58:03.326 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-01 16:58:03.331 +08:00 [INF] Hosting environment: Development
+2024-10-01 16:58:03.331 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2024-10-01 16:58:13.961 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 363.3285 ms
+2024-10-01 16:58:15.713 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 970.0490 ms
+2024-10-01 16:59:38.930 +08:00 [INF] AnnouncementController GetAnnouncement START
+2024-10-01 16:59:38.970 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/GetAnnouncement
+2024-10-01 16:59:38.974 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/GetAnnouncement
+2024-10-01 16:59:41.402 +08:00 [INF] Received HTTP response headers after 2418.2645ms - 200
+2024-10-01 16:59:41.408 +08:00 [INF] End processing HTTP request after 2443.63ms - 200
+2024-10-01 16:59:41.432 +08:00 [INF] AnnouncementController GetAnnouncement END
+2024-10-01 16:59:41.451 +08:00 [INF] HTTP GET /api/Announcement/GetAnnouncement responded 200 in 2572.7100 ms
+2024-10-01 17:01:01.155 +08:00 [INF] Now listening on: http://localhost:5000
+2024-10-01 17:01:01.176 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-01 17:01:01.187 +08:00 [INF] Hosting environment: Development
+2024-10-01 17:01:01.188 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2024-10-01 17:01:04.480 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 427.2844 ms
+2024-10-01 17:01:07.493 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 1266.0914 ms
+2024-10-01 17:01:55.512 +08:00 [INF] AnnouncementController PostAnnouncement START
+2024-10-01 17:01:55.567 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/PostAnnouncement
+2024-10-01 17:01:55.571 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/PostAnnouncement
+2024-10-01 17:02:07.031 +08:00 [INF] Received HTTP response headers after 11455.5457ms - 200
+2024-10-01 17:02:07.033 +08:00 [INF] End processing HTTP request after 11474.3694ms - 200
+2024-10-01 17:02:07.042 +08:00 [INF] AnnouncementController PostAnnouncement END
+2024-10-01 17:02:07.060 +08:00 [INF] HTTP POST /api/Announcement responded 200 in 11696.8779 ms
+2024-10-01 17:02:14.507 +08:00 [INF] AnnouncementController GetAnnouncement START
+2024-10-01 17:02:14.513 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/GetAnnouncement
+2024-10-01 17:02:14.522 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/GetAnnouncement
+2024-10-01 17:02:17.711 +08:00 [INF] Received HTTP response headers after 3186.5192ms - 200
+2024-10-01 17:02:17.725 +08:00 [INF] End processing HTTP request after 3211.7934ms - 200
+2024-10-01 17:02:17.866 +08:00 [INF] AnnouncementController GetAnnouncement END
+2024-10-01 17:02:17.873 +08:00 [INF] HTTP GET /api/Announcement/GetAnnouncement responded 200 in 3372.0431 ms
+2024-10-01 17:49:14.064 +08:00 [INF] Now listening on: http://localhost:5000
+2024-10-01 17:49:14.093 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-01 17:49:14.097 +08:00 [INF] Hosting environment: Development
+2024-10-01 17:49:14.101 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2024-10-01 17:49:26.193 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 379.4998 ms
+2024-10-01 17:49:28.324 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 1033.6939 ms
+2024-10-01 17:49:56.517 +08:00 [INF] ApplyWithdrawController PostApplyWithdraw START
+2024-10-01 17:49:56.566 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyWithdrawService/PostApplyWithdraw
+2024-10-01 17:49:56.569 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyWithdrawService/PostApplyWithdraw
+2024-10-01 17:49:57.320 +08:00 [INF] Received HTTP response headers after 746.4832ms - 500
+2024-10-01 17:49:57.326 +08:00 [INF] End processing HTTP request after 768.9089ms - 500
+2024-10-01 17:50:07.249 +08:00 [ERR] HTTP POST /api/ApplyWithdraw responded 500 in 10850.3210 ms
+System.Text.Json.JsonException: 'S' is an invalid start of a value. Path: $ | LineNumber: 0 | BytePositionInLine: 0.
+ ---> System.Text.Json.JsonReaderException: 'S' is an invalid start of a value. LineNumber: 0 | BytePositionInLine: 0.
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+   at System.Text.Json.Utf8JsonReader.ConsumeValue(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ReadFirstToken(Byte first)
+   at System.Text.Json.Utf8JsonReader.ReadSingleSegment()
+   at System.Text.Json.Utf8JsonReader.Read()
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, JsonReaderException ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo jsonTypeInfo, Nullable`1 actualByteCount)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at DotNetBackEndApi.Shared.HttpClientService.StartProcessQuery[T](String apiName, Object data) in D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi\Shared\HttpClientService.cs:line 59
+   at DotNetBackEndApi.Shared.HttpClientService.ProcessQuery[T](String apiName, Object data) in D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi\Shared\HttpClientService.cs:line 25
+   at DotNetBackEndApi.Controllers.FinancialMgmt.ApplyWithdrawController.PostApplyWithdraw(PostApplyWithdrawReqModel reqModel) in D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi\Controllers\FinancialMgmt\ApplyWithdrawController.cs:line 43
+   at lambda_method4(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-10-01 17:50:07.587 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Text.Json.JsonException: 'S' is an invalid start of a value. Path: $ | LineNumber: 0 | BytePositionInLine: 0.
+ ---> System.Text.Json.JsonReaderException: 'S' is an invalid start of a value. LineNumber: 0 | BytePositionInLine: 0.
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+   at System.Text.Json.Utf8JsonReader.ConsumeValue(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ReadFirstToken(Byte first)
+   at System.Text.Json.Utf8JsonReader.ReadSingleSegment()
+   at System.Text.Json.Utf8JsonReader.Read()
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, JsonReaderException ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo jsonTypeInfo, Nullable`1 actualByteCount)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at DotNetBackEndApi.Shared.HttpClientService.StartProcessQuery[T](String apiName, Object data) in D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi\Shared\HttpClientService.cs:line 59
+   at DotNetBackEndApi.Shared.HttpClientService.ProcessQuery[T](String apiName, Object data) in D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi\Shared\HttpClientService.cs:line 25
+   at DotNetBackEndApi.Controllers.FinancialMgmt.ApplyWithdrawController.PostApplyWithdraw(PostApplyWithdrawReqModel reqModel) in D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi\Controllers\FinancialMgmt\ApplyWithdrawController.cs:line 43
+   at lambda_method4(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-10-01 17:52:08.057 +08:00 [INF] Now listening on: http://localhost:5000
+2024-10-01 17:52:08.076 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-01 17:52:08.079 +08:00 [INF] Hosting environment: Development
+2024-10-01 17:52:08.080 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2024-10-01 17:52:19.310 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 540.4688 ms
+2024-10-01 17:52:21.288 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 1197.8845 ms
+2024-10-01 17:54:17.560 +08:00 [INF] ApplyWithdrawController PostApplyWithdraw START
+2024-10-01 17:54:17.608 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyWithdrawService/PostApplyWithdraw
+2024-10-01 17:54:17.613 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyWithdrawService/PostApplyWithdraw
+2024-10-01 17:54:21.275 +08:00 [INF] Received HTTP response headers after 3656.5467ms - 200
+2024-10-01 17:54:21.279 +08:00 [INF] End processing HTTP request after 3680.0166ms - 200
+2024-10-01 17:54:21.290 +08:00 [INF] ApplyWithdrawController PostApplyWithdraw END
+2024-10-01 17:54:21.311 +08:00 [INF] HTTP POST /api/ApplyWithdraw responded 200 in 3858.0260 ms
+2024-10-01 17:57:35.569 +08:00 [INF] Now listening on: http://localhost:5000
+2024-10-01 17:57:35.583 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-01 17:57:35.611 +08:00 [INF] Hosting environment: Development
+2024-10-01 17:57:35.612 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2024-10-01 17:57:44.935 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 720.0610 ms
+2024-10-01 17:57:46.967 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 548.8319 ms
+2024-10-01 17:59:38.861 +08:00 [INF] ApplyWithdrawController PostApplyWithdraw START
+2024-10-01 17:59:38.937 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyWithdrawService/PostApplyWithdraw
+2024-10-01 17:59:38.945 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyWithdrawService/PostApplyWithdraw
+2024-10-01 17:59:42.030 +08:00 [INF] Received HTTP response headers after 3079.6055ms - 200
+2024-10-01 17:59:42.032 +08:00 [INF] End processing HTTP request after 3106.738ms - 200
+2024-10-01 17:59:42.043 +08:00 [INF] ApplyWithdrawController PostApplyWithdraw END
+2024-10-01 17:59:42.063 +08:00 [INF] HTTP POST /api/ApplyWithdraw responded 200 in 3370.2739 ms
+2024-10-01 18:05:18.467 +08:00 [INF] ApplyWithdrawController PutApplyWithdraw START
+2024-10-01 18:05:18.472 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyWithdrawService/PutApplyWithdraw
+2024-10-01 18:05:18.474 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyWithdrawService/PutApplyWithdraw
+2024-10-01 18:06:24.860 +08:00 [INF] Received HTTP response headers after 66384.6623ms - 200
+2024-10-01 18:06:25.725 +08:00 [INF] End processing HTTP request after 67253.5247ms - 200
+2024-10-01 18:06:25.728 +08:00 [INF] ApplyWithdrawController PutApplyWithdraw END
+2024-10-01 18:06:25.731 +08:00 [INF] HTTP PUT /api/ApplyWithdraw responded 200 in 67286.9584 ms
+2024-10-01 18:07:10.424 +08:00 [INF] Now listening on: http://localhost:5000
+2024-10-01 18:07:10.445 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-01 18:07:10.446 +08:00 [INF] Hosting environment: Development
+2024-10-01 18:07:10.447 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2024-10-01 18:07:24.691 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 654.4826 ms
+2024-10-01 18:07:27.053 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 717.1510 ms
+2024-10-01 18:08:05.801 +08:00 [INF] ApplyWithdrawController PutApplyWithdraw START
+2024-10-01 18:08:05.849 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyWithdrawService/PutApplyWithdraw
+2024-10-01 18:08:05.856 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyWithdrawService/PutApplyWithdraw
+2024-10-01 18:08:36.540 +08:00 [INF] Received HTTP response headers after 30677.8723ms - 200
+2024-10-01 18:08:36.548 +08:00 [INF] End processing HTTP request after 30710.2645ms - 200
+2024-10-01 18:08:36.563 +08:00 [INF] ApplyWithdrawController PutApplyWithdraw END
+2024-10-01 18:08:36.577 +08:00 [INF] HTTP PUT /api/ApplyWithdraw responded 200 in 30914.6086 ms
+2024-10-01 18:09:16.252 +08:00 [INF] Now listening on: http://localhost:5000
+2024-10-01 18:09:16.268 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-01 18:09:16.270 +08:00 [INF] Hosting environment: Development
+2024-10-01 18:09:16.272 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2024-10-01 18:09:24.286 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 339.4743 ms
+2024-10-01 18:09:26.528 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 548.3779 ms
+2024-10-01 18:12:06.927 +08:00 [INF] ApplyWithdrawController PutApplyWithdraw START
+2024-10-01 18:12:06.973 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyWithdrawService/PutApplyWithdraw
+2024-10-01 18:12:06.980 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyWithdrawService/PutApplyWithdraw
+2024-10-01 18:12:21.159 +08:00 [INF] Received HTTP response headers after 14174.2812ms - 200
+2024-10-01 18:12:21.168 +08:00 [INF] End processing HTTP request after 14200.0937ms - 200
+2024-10-01 18:12:21.179 +08:00 [INF] ApplyWithdrawController PutApplyWithdraw END
+2024-10-01 18:12:21.198 +08:00 [INF] HTTP PUT /api/ApplyWithdraw responded 200 in 14424.2208 ms
+2024-10-01 18:12:40.552 +08:00 [INF] ApplyWithdrawController PutApplyWithdraw START
+2024-10-01 18:12:40.571 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyWithdrawService/PutApplyWithdraw
+2024-10-01 18:12:40.572 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyWithdrawService/PutApplyWithdraw
+2024-10-01 18:12:50.786 +08:00 [INF] Received HTTP response headers after 10213.5347ms - 200
+2024-10-01 18:12:50.789 +08:00 [INF] End processing HTTP request after 10217.3526ms - 200
+2024-10-01 18:12:50.825 +08:00 [INF] ApplyWithdrawController PutApplyWithdraw END
+2024-10-01 18:12:50.827 +08:00 [INF] HTTP PUT /api/ApplyWithdraw responded 200 in 10328.5582 ms

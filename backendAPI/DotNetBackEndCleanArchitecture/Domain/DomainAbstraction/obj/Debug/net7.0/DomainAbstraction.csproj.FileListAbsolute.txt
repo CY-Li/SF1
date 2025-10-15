@@ -1,0 +1,17 @@
+D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Domain\DomainAbstraction\bin\Debug\net7.0\DomainAbstraction.deps.json
+D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Domain\DomainAbstraction\bin\Debug\net7.0\DomainAbstraction.dll
+D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Domain\DomainAbstraction\bin\Debug\net7.0\DomainAbstraction.pdb
+D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Domain\DomainAbstraction\bin\Debug\net7.0\DomainEntity.dll
+D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Domain\DomainAbstraction\bin\Debug\net7.0\DomainEntityDTO.dll
+D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Domain\DomainAbstraction\bin\Debug\net7.0\DomainEntity.pdb
+D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Domain\DomainAbstraction\bin\Debug\net7.0\DomainEntityDTO.pdb
+D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Domain\DomainAbstraction\obj\Debug\net7.0\DomainAbstraction.csproj.AssemblyReference.cache
+D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Domain\DomainAbstraction\obj\Debug\net7.0\DomainAbstraction.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Domain\DomainAbstraction\obj\Debug\net7.0\DomainAbstraction.AssemblyInfoInputs.cache
+D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Domain\DomainAbstraction\obj\Debug\net7.0\DomainAbstraction.AssemblyInfo.cs
+D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Domain\DomainAbstraction\obj\Debug\net7.0\DomainAbstraction.csproj.CoreCompileInputs.cache
+D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Domain\DomainAbstraction\obj\Debug\net7.0\DomainAbstraction.csproj.CopyComplete
+D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Domain\DomainAbstraction\obj\Debug\net7.0\DomainAbstraction.dll
+D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Domain\DomainAbstraction\obj\Debug\net7.0\refint\DomainAbstraction.dll
+D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Domain\DomainAbstraction\obj\Debug\net7.0\DomainAbstraction.pdb
+D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Domain\DomainAbstraction\obj\Debug\net7.0\ref\DomainAbstraction.dll

@@ -1,0 +1,210 @@
+2025-02-10 05:07:26.618 +08:00 [INF] Now listening on: http://localhost:5000
+2025-02-10 05:07:26.693 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-10 05:07:26.695 +08:00 [INF] Hosting environment: Development
+2025-02-10 05:07:26.697 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2025-02-10 05:07:34.415 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 356.6703 ms
+2025-02-10 05:07:36.367 +08:00 [ERR] HTTP GET /swagger/v1/swagger.json responded 500 in 854.6480 ms
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/PointConversion" for actions - DotNetBackEndApi.Controllers.FinancialMgmt.PointConversionController.PostPointConversion (DotNetBackEndApi),DotNetBackEndApi.Controllers.FinancialMgmt.PointConversionController.PsotGiftPoint (DotNetBackEndApi). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-02-10 05:07:36.513 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/PointConversion" for actions - DotNetBackEndApi.Controllers.FinancialMgmt.PointConversionController.PostPointConversion (DotNetBackEndApi),DotNetBackEndApi.Controllers.FinancialMgmt.PointConversionController.PsotGiftPoint (DotNetBackEndApi). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-02-10 05:14:31.336 +08:00 [INF] Now listening on: http://localhost:5000
+2025-02-10 05:14:31.349 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-10 05:14:31.353 +08:00 [INF] Hosting environment: Development
+2025-02-10 05:14:31.354 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2025-02-10 05:14:36.430 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 257.8132 ms
+2025-02-10 05:14:38.508 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 670.4316 ms
+2025-02-10 05:40:22.121 +08:00 [INF] Now listening on: http://localhost:5000
+2025-02-10 05:40:22.143 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-10 05:40:22.912 +08:00 [INF] Hosting environment: Development
+2025-02-10 05:40:22.913 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2025-02-10 05:40:23.656 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 255.3161 ms
+2025-02-10 05:40:26.060 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 1563.9797 ms
+2025-02-10 05:40:48.615 +08:00 [INF] PointConversionController PostPointConversion START
+2025-02-10 05:40:48.677 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/PointConversionService/PostPointConversion
+2025-02-10 05:40:48.683 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/PointConversionService/PostPointConversion
+2025-02-10 05:40:48.884 +08:00 [INF] Received HTTP response headers after 196.7603ms - 404
+2025-02-10 05:40:48.895 +08:00 [INF] End processing HTTP request after 226.2871ms - 404
+2025-02-10 05:40:49.160 +08:00 [INF] PointConversionController PostPointConversion END
+2025-02-10 05:40:49.392 +08:00 [INF] HTTP POST /api/PointConversion responded 200 in 922.7040 ms
+2025-02-10 05:41:11.171 +08:00 [INF] PointConversionController PostPointConversion START
+2025-02-10 05:42:13.581 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/PointConversionService/PostPointConversion
+2025-02-10 05:42:13.594 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/PointConversionService/PostPointConversion
+2025-02-10 05:42:13.638 +08:00 [INF] Received HTTP response headers after 41.279ms - 404
+2025-02-10 05:42:13.645 +08:00 [INF] End processing HTTP request after 63.9712ms - 404
+2025-02-10 05:42:13.683 +08:00 [INF] PointConversionController PostPointConversion END
+2025-02-10 05:42:13.687 +08:00 [INF] HTTP POST /api/PointConversion responded 200 in 62519.6448 ms
+2025-02-10 05:42:15.123 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 11.0284 ms
+2025-02-10 05:42:16.595 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 227.0374 ms
+2025-02-10 05:42:53.497 +08:00 [INF] Now listening on: http://localhost:5000
+2025-02-10 05:42:53.517 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-10 05:42:53.518 +08:00 [INF] Hosting environment: Development
+2025-02-10 05:42:53.519 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2025-02-10 05:42:58.443 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 500.0429 ms
+2025-02-10 05:42:59.999 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 963.1654 ms
+2025-02-10 05:43:20.439 +08:00 [INF] PointConversionController PostPointConversion START
+2025-02-10 05:43:23.457 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/PointConversionService/PostPointConversion
+2025-02-10 05:43:23.461 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/PointConversionService/PostPointConversion
+2025-02-10 05:43:40.697 +08:00 [INF] Received HTTP response headers after 17230.2411ms - 200
+2025-02-10 05:43:40.718 +08:00 [INF] End processing HTTP request after 17266.2043ms - 200
+2025-02-10 05:43:40.735 +08:00 [INF] PointConversionController PostPointConversion END
+2025-02-10 05:43:40.758 +08:00 [INF] HTTP POST /api/PointConversion responded 200 in 20431.7611 ms
+2025-02-10 05:43:51.725 +08:00 [INF] PointConversionController PostPointConversion START
+2025-02-10 05:43:51.826 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/PointConversionService/PostPointConversion
+2025-02-10 05:43:51.828 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/PointConversionService/PostPointConversion
+2025-02-10 05:43:53.554 +08:00 [INF] Received HTTP response headers after 1723.6976ms - 200
+2025-02-10 05:43:53.562 +08:00 [INF] End processing HTTP request after 1735.8711ms - 200
+2025-02-10 05:43:53.564 +08:00 [INF] PointConversionController PostPointConversion END
+2025-02-10 05:43:53.567 +08:00 [INF] HTTP POST /api/PointConversion responded 200 in 1846.4916 ms
+2025-02-10 05:43:56.256 +08:00 [INF] PointConversionController PostPointConversion START
+2025-02-10 05:43:56.261 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/PointConversionService/PostPointConversion
+2025-02-10 05:43:56.263 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/PointConversionService/PostPointConversion
+2025-02-10 05:45:06.747 +08:00 [INF] Now listening on: http://localhost:5000
+2025-02-10 05:45:06.766 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-10 05:45:06.768 +08:00 [INF] Hosting environment: Development
+2025-02-10 05:45:06.768 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2025-02-10 05:45:10.087 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 281.0164 ms
+2025-02-10 05:45:11.528 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 865.6555 ms
+2025-02-10 06:03:01.070 +08:00 [INF] PointConversionController PostPointConversion START
+2025-02-10 06:03:01.110 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/PointConversionService/PostPointConversion
+2025-02-10 06:03:01.115 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/PointConversionService/PostPointConversion
+2025-02-10 06:03:12.133 +08:00 [INF] Received HTTP response headers after 11013.2506ms - 200
+2025-02-10 06:03:12.142 +08:00 [INF] End processing HTTP request after 11037.5676ms - 200
+2025-02-10 06:03:12.148 +08:00 [INF] PointConversionController PostPointConversion END
+2025-02-10 06:03:12.166 +08:00 [INF] HTTP POST /api/PointConversion responded 200 in 11217.5398 ms
+2025-02-10 06:03:19.672 +08:00 [INF] PointConversionController PostPointConversion START
+2025-02-10 06:03:19.729 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/PointConversionService/PostPointConversion
+2025-02-10 06:03:19.731 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/PointConversionService/PostPointConversion
+2025-02-10 06:03:44.010 +08:00 [INF] Received HTTP response headers after 24278.8811ms - 200
+2025-02-10 06:03:44.016 +08:00 [INF] End processing HTTP request after 24286.3433ms - 200
+2025-02-10 06:03:44.017 +08:00 [INF] PointConversionController PostPointConversion END
+2025-02-10 06:03:44.019 +08:00 [INF] HTTP POST /api/PointConversion responded 200 in 24395.2367 ms
+2025-02-10 06:04:26.240 +08:00 [INF] PointConversionController PsotGiftPoint START
+2025-02-10 06:04:26.241 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/PointConversionService/PsotGiftPoint
+2025-02-10 06:04:26.242 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/PointConversionService/PsotGiftPoint
+2025-02-10 06:04:26.271 +08:00 [INF] Received HTTP response headers after 27.5544ms - 404
+2025-02-10 06:04:26.276 +08:00 [INF] End processing HTTP request after 34.958ms - 404
+2025-02-10 06:04:26.347 +08:00 [INF] PointConversionController PsotGiftPoint END
+2025-02-10 06:04:26.350 +08:00 [INF] HTTP POST /api/PointConversion/GiftPoint responded 200 in 125.4026 ms
+2025-02-10 06:04:52.766 +08:00 [INF] PointConversionController PsotGiftPoint START
+2025-02-10 06:05:50.552 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/PointConversionService/PsotGiftPoint
+2025-02-10 06:05:50.627 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/PointConversionService/PsotGiftPoint
+2025-02-10 06:05:51.151 +08:00 [INF] Received HTTP response headers after 518.8644ms - 404
+2025-02-10 06:05:51.154 +08:00 [INF] End processing HTTP request after 601.4121ms - 404
+2025-02-10 06:05:51.216 +08:00 [INF] PointConversionController PsotGiftPoint END
+2025-02-10 06:05:51.257 +08:00 [INF] HTTP POST /api/PointConversion/GiftPoint responded 200 in 58490.8987 ms
+2025-02-10 06:05:53.169 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 1.5894 ms
+2025-02-10 06:05:54.088 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 161.8273 ms
+2025-02-10 06:06:08.530 +08:00 [INF] PointConversionController PsotGiftPoint START
+2025-02-10 06:06:11.288 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/PointConversionService/PostGiftPoint
+2025-02-10 06:06:11.385 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/PointConversionService/PostGiftPoint
+2025-02-10 06:06:22.912 +08:00 [INF] Received HTTP response headers after 11524.3783ms - 200
+2025-02-10 06:06:22.941 +08:00 [INF] End processing HTTP request after 11652.9862ms - 200
+2025-02-10 06:06:22.945 +08:00 [INF] PointConversionController PsotGiftPoint END
+2025-02-10 06:06:22.950 +08:00 [INF] HTTP POST /api/PointConversion/GiftPoint responded 200 in 14425.8194 ms
+2025-02-10 06:06:30.727 +08:00 [INF] PointConversionController PsotGiftPoint START
+2025-02-10 06:06:30.750 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/PointConversionService/PostGiftPoint
+2025-02-10 06:06:30.754 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/PointConversionService/PostGiftPoint
+2025-02-10 06:07:07.200 +08:00 [INF] Received HTTP response headers after 36444.4148ms - 200
+2025-02-10 06:07:07.208 +08:00 [INF] End processing HTTP request after 36457.7526ms - 200
+2025-02-10 06:07:07.210 +08:00 [INF] PointConversionController PsotGiftPoint END
+2025-02-10 06:07:07.211 +08:00 [INF] HTTP POST /api/PointConversion/GiftPoint responded 200 in 36484.6085 ms
+2025-02-10 06:07:19.843 +08:00 [INF] PointConversionController PsotGiftPoint START
+2025-02-10 06:07:19.858 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/PointConversionService/PostGiftPoint
+2025-02-10 06:07:19.869 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/PointConversionService/PostGiftPoint
+2025-02-10 06:07:35.573 +08:00 [INF] Received HTTP response headers after 15701.5028ms - 200
+2025-02-10 06:07:35.630 +08:00 [INF] End processing HTTP request after 15771.9432ms - 200
+2025-02-10 06:07:35.632 +08:00 [INF] PointConversionController PsotGiftPoint END
+2025-02-10 06:07:35.634 +08:00 [INF] HTTP POST /api/PointConversion/GiftPoint responded 200 in 15791.8830 ms
+2025-02-10 06:09:25.521 +08:00 [INF] Now listening on: http://localhost:5000
+2025-02-10 06:09:25.542 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-10 06:09:25.546 +08:00 [INF] Hosting environment: Development
+2025-02-10 06:09:25.548 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2025-02-10 06:09:28.938 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 422.2771 ms
+2025-02-10 06:09:32.852 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 1550.4165 ms
+2025-02-10 06:09:41.712 +08:00 [INF] PointConversionController PsotGiftPoint START
+2025-02-10 06:09:41.759 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/PointConversionService/PostGiftPoint
+2025-02-10 06:09:41.808 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/PointConversionService/PostGiftPoint
+2025-02-10 06:09:59.549 +08:00 [INF] Received HTTP response headers after 17728.6965ms - 200
+2025-02-10 06:09:59.610 +08:00 [INF] End processing HTTP request after 17857.9057ms - 200
+2025-02-10 06:09:59.627 +08:00 [INF] PointConversionController PsotGiftPoint END
+2025-02-10 06:09:59.642 +08:00 [INF] HTTP POST /api/PointConversion/GiftPoint responded 200 in 18030.7963 ms
+2025-02-10 06:12:36.363 +08:00 [INF] Now listening on: http://localhost:5000
+2025-02-10 06:12:36.388 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-10 06:12:36.393 +08:00 [INF] Hosting environment: Development
+2025-02-10 06:12:36.396 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2025-02-10 06:12:40.081 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 589.3716 ms
+2025-02-10 06:12:42.231 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 1023.1296 ms
+2025-02-10 06:12:52.617 +08:00 [INF] PointConversionController PsotGiftPoint START
+2025-02-10 06:12:52.692 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/PointConversionService/PostGiftPoint
+2025-02-10 06:12:52.699 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/PointConversionService/PostGiftPoint
+2025-02-10 06:12:56.836 +08:00 [INF] Received HTTP response headers after 4127.2751ms - 200
+2025-02-10 06:12:56.850 +08:00 [INF] End processing HTTP request after 4162.5447ms - 200
+2025-02-10 06:12:56.856 +08:00 [INF] PointConversionController PsotGiftPoint END
+2025-02-10 06:12:56.868 +08:00 [INF] HTTP POST /api/PointConversion/GiftPoint responded 200 in 4416.8813 ms
+2025-02-10 06:13:06.216 +08:00 [INF] PointConversionController PsotGiftPoint START
+2025-02-10 06:13:06.298 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/PointConversionService/PostGiftPoint
+2025-02-10 06:13:06.648 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/PointConversionService/PostGiftPoint
+2025-02-10 06:13:09.641 +08:00 [INF] Received HTTP response headers after 2991.2211ms - 200
+2025-02-10 06:13:09.644 +08:00 [INF] End processing HTTP request after 3357.6ms - 200
+2025-02-10 06:13:09.645 +08:00 [INF] PointConversionController PsotGiftPoint END
+2025-02-10 06:13:09.647 +08:00 [INF] HTTP POST /api/PointConversion/GiftPoint responded 200 in 3452.4128 ms
+2025-02-10 06:13:19.660 +08:00 [INF] PointConversionController PsotGiftPoint START
+2025-02-10 06:13:19.662 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/PointConversionService/PostGiftPoint
+2025-02-10 06:13:19.663 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/PointConversionService/PostGiftPoint
+2025-02-10 06:13:24.091 +08:00 [INF] Received HTTP response headers after 4427.1386ms - 200
+2025-02-10 06:13:24.097 +08:00 [INF] End processing HTTP request after 4434.59ms - 200
+2025-02-10 06:13:24.105 +08:00 [INF] PointConversionController PsotGiftPoint END
+2025-02-10 06:13:24.109 +08:00 [INF] HTTP POST /api/PointConversion/GiftPoint responded 200 in 4452.4856 ms
+2025-02-10 15:39:25.092 +08:00 [INF] Now listening on: http://localhost:5000
+2025-02-10 15:39:25.114 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-10 15:39:25.115 +08:00 [INF] Hosting environment: Development
+2025-02-10 15:39:25.116 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2025-02-10 15:39:29.490 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 499.8168 ms
+2025-02-10 15:39:31.610 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 622.3399 ms
+2025-02-10 15:40:41.508 +08:00 [INF] PointConversionController PostPointConversion START
+2025-02-10 15:40:41.569 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/PointConversionService/PostPointConversion
+2025-02-10 15:40:41.574 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/PointConversionService/PostPointConversion
+2025-02-10 15:40:47.979 +08:00 [INF] Received HTTP response headers after 6399.9737ms - 200
+2025-02-10 15:40:47.990 +08:00 [INF] End processing HTTP request after 6430.0161ms - 200
+2025-02-10 15:40:47.997 +08:00 [INF] PointConversionController PostPointConversion END
+2025-02-10 15:40:48.015 +08:00 [INF] HTTP POST /api/PointConversion responded 200 in 6632.9188 ms
+2025-02-10 15:41:12.799 +08:00 [INF] PointConversionController PsotGiftPoint START
+2025-02-10 15:41:12.807 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/PointConversionService/PostGiftPoint
+2025-02-10 15:41:12.808 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/PointConversionService/PostGiftPoint
+2025-02-10 15:41:15.642 +08:00 [INF] Received HTTP response headers after 2833.2009ms - 200
+2025-02-10 15:41:15.643 +08:00 [INF] End processing HTTP request after 2836.7348ms - 200
+2025-02-10 15:41:15.644 +08:00 [INF] PointConversionController PsotGiftPoint END
+2025-02-10 15:41:15.649 +08:00 [INF] HTTP POST /api/PointConversion/GiftPoint responded 200 in 2864.1321 ms
+2025-02-10 16:06:43.080 +08:00 [INF] Now listening on: http://localhost:5000
+2025-02-10 16:06:43.103 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-10 16:06:43.104 +08:00 [INF] Hosting environment: Development
+2025-02-10 16:06:43.104 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2025-02-10 16:06:51.734 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 361.9439 ms
+2025-02-10 16:06:53.592 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 989.2405 ms
+2025-02-10 16:07:51.089 +08:00 [INF] PointConversionController PsotGiftPoint START
+2025-02-10 16:07:51.128 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/PointConversionService/PostGiftPoint
+2025-02-10 16:07:51.140 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/PointConversionService/PostGiftPoint
+2025-02-10 16:07:57.649 +08:00 [INF] Received HTTP response headers after 6504.4048ms - 200
+2025-02-10 16:07:57.653 +08:00 [INF] End processing HTTP request after 6529.2634ms - 200
+2025-02-10 16:07:57.662 +08:00 [INF] PointConversionController PsotGiftPoint END
+2025-02-10 16:07:57.678 +08:00 [INF] HTTP POST /api/PointConversion/GiftPoint responded 200 in 6713.0714 ms
+2025-02-10 16:08:13.384 +08:00 [INF] PointConversionController PsotGiftPoint START
+2025-02-10 16:08:13.426 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/PointConversionService/PostGiftPoint
+2025-02-10 16:08:13.428 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/PointConversionService/PostGiftPoint
+2025-02-10 16:08:16.005 +08:00 [INF] Received HTTP response headers after 2572.3562ms - 200
+2025-02-10 16:08:16.007 +08:00 [INF] End processing HTTP request after 2580.6068ms - 200
+2025-02-10 16:08:16.008 +08:00 [INF] PointConversionController PsotGiftPoint END
+2025-02-10 16:08:16.011 +08:00 [INF] HTTP POST /api/PointConversion/GiftPoint responded 200 in 2631.9128 ms

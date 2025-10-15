@@ -1,0 +1,182 @@
+services:
+  # MariaDB 資料庫服務
+  mariadb:
+    image: mariadb:11.3.2
+    container_name: rosca-mariadb
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${DB_NAME}
+      MYSQL_USER: ${DB_USER}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+      MYSQL_CHARACTER_SET_SERVER: utf8mb4
+      MYSQL_COLLATION_SERVER: utf8mb4_general_ci
+      TZ: Asia/Taipei
+    ports:
+      - "3306:3306"
+    volumes:
+      - db-data:/var/lib/mysql
+      - ./database/init:/docker-entrypoint-initdb.d:ro
+      - ./database/my.cnf:/etc/mysql/conf.d/custom.cnf:ro
+      - db-logs:/var/log/mysql
+    networks:
+      - rosca-network
+    command: >
+      --character-set-server=utf8mb4
+      --collation-server=utf8mb4_general_ci
+      --init-connect='SET NAMES utf8mb4'
+      --innodb-flush-log-at-trx-commit=2
+      --sync-binlog=0
+      --innodb-use-native-aio=0
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      timeout: 20s
+      retries: 10
+      interval: 30s
+      start_period: 80s
+
+  # .NET Core 後端 API 服務 (API Gateway)
+  backend:
+    build:
+      context: ./backendAPI/DotNetBackEndCleanArchitecture
+      dockerfile: Dockerfile
+      args:
+        BUILDKIT_INLINE_CACHE: 1
+    container_name: rosca-backend
+    restart: unless-stopped
+    environment:
+      ASPNETCORE_ENVIRONMENT: ${ASPNETCORE_ENVIRONMENT}
+      ASPNETCORE_URLS: http://+:5000
+      ConnectionStrings__BackEndDatabase: "Server=mariadb;Port=3306;User Id=${DB_USER};Password=${DB_PASSWORD};Database=${DB_NAME};CharSet=utf8mb4;AllowUserVariables=True;UseAffectedRows=False;"
+      APIUrl: "http://backend-service:5001/"
+      TZ: Asia/Taipei
+      # JWT 設定
+      JWT__SecretKey: ${JWT_SECRET_KEY:-your-super-secret-jwt-key-change-in-production}
+      JWT__Issuer: ${JWT_ISSUER:-ROSCA-API}
+      JWT__Audience: ${JWT_AUDIENCE:-ROSCA-Client}
+      JWT__ExpiryMinutes: ${JWT_EXPIRY_MINUTES:-60}
+      # CORS 設定
+      CORS__AllowedOrigins: ${CORS_ALLOWED_ORIGINS:-http://localhost,http://localhost:8080}
+      # 檔案上傳設定
+      FileUpload__MaxFileSize: ${FILE_UPLOAD_MAX_SIZE:-10485760}
+      FileUpload__AllowedExtensions: ${FILE_UPLOAD_EXTENSIONS:-.jpg,.jpeg,.png,.gif,.pdf}
+      # Hangfire 設定
+      Hangfire__DashboardEnabled: ${HANGFIRE_DASHBOARD_ENABLED:-true}
+      # Serilog 設定
+      Serilog__MinimumLevel__Default: ${LOG_LEVEL:-Information}
+    volumes:
+      - uploads:/app/uploads
+      - backend-kycimages:/app/KycImages
+      - backend-depositimages:/app/DepositImages
+      - backend-withdrawimages:/app/WithdrawImages
+      - backend-annimages:/app/AnnImagessss
+    depends_on:
+      mariadb:
+        condition: service_healthy
+      backend-service:
+        condition: service_started
+    networks:
+      - rosca-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/api/HomePicture/GetAnnImages" ]
+      timeout: 10s
+      retries: 5
+      interval: 30s
+      start_period: 60s
+
+  # .NET Core 後端微服務
+  backend-service:
+    build:
+      context: ./backendAPI/DotNetBackEndCleanArchitecture
+      dockerfile: Presentation/DotNetBackEndService/Dockerfile
+      args:
+        BUILDKIT_INLINE_CACHE: 1
+    container_name: rosca-backend-service
+    restart: unless-stopped
+    environment:
+      ASPNETCORE_ENVIRONMENT: ${ASPNETCORE_ENVIRONMENT}
+      ASPNETCORE_URLS: http://+:5001
+      ConnectionStrings__BackEndDatabase: "Server=mariadb;Port=3306;User Id=${DB_USER};Password=${DB_PASSWORD};Database=${DB_NAME};CharSet=utf8mb4;AllowUserVariables=True;UseAffectedRows=False;"
+      TZ: Asia/Taipei
+      # JWT 設定
+      JWT__SecretKey: ${JWT_SECRET_KEY:-your-super-secret-jwt-key-change-in-production}
+      JWT__Issuer: ${JWT_ISSUER:-ROSCA-API}
+      JWT__Audience: ${JWT_AUDIENCE:-ROSCA-Client}
+      JWT__ExpiryMinutes: ${JWT_EXPIRY_MINUTES:-60}
+      # Serilog 設定
+      Serilog__MinimumLevel__Default: ${LOG_LEVEL:-Information}
+    volumes:
+      - uploads:/app/uploads
+      - backend-kycimages:/app/KycImages
+      - backend-depositimages:/app/DepositImages
+      - backend-withdrawimages:/app/WithdrawImages
+      - backend-annimages:/app/AnnImagessss
+    depends_on:
+      mariadb:
+        condition: service_healthy
+    networks:
+      - rosca-network
+    # healthcheck:
+    #   test: ["CMD", "curl", "-f", "http://localhost:5001/health" ]
+    #   timeout: 10s
+    #   retries: 5
+    #   interval: 30s
+    #   start_period: 60s
+
+  # 前台使用者系統 (Vue.js + Nginx)
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: rosca-frontend
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    networks:
+      - rosca-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:80"]
+      timeout: 10s
+      retries: 3
+      interval: 30s
+
+  # 後台管理系統 (Angular + Nginx)
+  admin:
+    build:
+      context: ./backend/FontEnd
+      dockerfile: Dockerfile
+    container_name: rosca-admin
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend
+    networks:
+      - rosca-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:80"]
+      timeout: 10s
+      retries: 3
+      interval: 30s
+
+volumes:
+  db-data:
+    driver: local
+  db-logs:
+    driver: local
+  uploads:
+    driver: local
+  backend-kycimages:
+    driver: local
+  backend-depositimages:
+    driver: local
+  backend-withdrawimages:
+    driver: local
+  backend-annimages:
+    driver: local
+
+networks:
+  rosca-network:
+    driver: bridge

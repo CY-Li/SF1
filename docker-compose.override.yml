@@ -1,0 +1,52 @@
+# Docker Compose 開發環境覆蓋配置
+# 此文件會自動與 docker-compose.yml 合併
+
+services:
+  # 開發環境 MariaDB 配置
+  mariadb:
+    # 開發環境暴露資料庫端口以便外部連接
+    ports:
+      - "3306:3306"
+    # 開發環境日誌配置
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+    # 開發環境額外的環境變數
+    environment:
+      MYSQL_INITDB_SKIP_TZINFO: 1
+
+  # 開發環境後端配置
+  backend:
+    # 開發環境暴露後端端口以便直接訪問
+    ports:
+      - "5000:5000"
+    # 開發環境日誌配置
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+    # 開發環境額外的環境變數
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: http://+:5000
+      Logging__LogLevel__Default: Information
+      Logging__LogLevel__Microsoft: Warning
+
+  # 開發環境前台配置
+  frontend:
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  # 開發環境後台配置
+  admin:
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"

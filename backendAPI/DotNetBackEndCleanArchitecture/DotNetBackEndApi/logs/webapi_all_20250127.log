@@ -1,0 +1,1276 @@
+2025-01-27 03:09:56.840 +08:00 [INF] Now listening on: http://localhost:5000
+2025-01-27 03:09:56.884 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-27 03:09:56.888 +08:00 [INF] Hosting environment: Development
+2025-01-27 03:09:56.888 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2025-01-27 03:10:02.324 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 305.5253 ms
+2025-01-27 03:10:04.150 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 1083.1908 ms
+2025-01-27 03:10:45.880 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 03:10:45.955 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 03:10:45.960 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 03:10:46.125 +08:00 [INF] Received HTTP response headers after 161.0989ms - 500
+2025-01-27 03:10:46.129 +08:00 [INF] End processing HTTP request after 184.0209ms - 500
+2025-01-27 03:10:46.580 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 03:10:46.592 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnBoardAdmin responded 200 in 808.7330 ms
+2025-01-27 03:10:54.515 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 03:10:54.521 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 03:10:54.529 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 03:10:54.561 +08:00 [INF] Received HTTP response headers after 27.8704ms - 500
+2025-01-27 03:10:54.564 +08:00 [INF] End processing HTTP request after 43.1592ms - 500
+2025-01-27 03:10:54.693 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 03:10:54.699 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnBoardAdmin responded 200 in 198.1629 ms
+2025-01-27 03:11:45.451 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 03:11:45.459 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 03:11:45.462 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 03:11:45.500 +08:00 [INF] Received HTTP response headers after 35.5202ms - 500
+2025-01-27 03:11:45.505 +08:00 [INF] End processing HTTP request after 46.7725ms - 500
+2025-01-27 03:11:45.644 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 03:11:45.647 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnBoardAdmin responded 200 in 197.3365 ms
+2025-01-27 03:12:08.600 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 03:12:08.654 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 03:12:08.655 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 03:12:08.750 +08:00 [INF] Received HTTP response headers after 83.3911ms - 500
+2025-01-27 03:12:08.796 +08:00 [INF] End processing HTTP request after 141.8535ms - 500
+2025-01-27 03:12:09.015 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 03:12:09.017 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnBoardAdmin responded 200 in 424.3986 ms
+2025-01-27 03:13:12.983 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 03:13:14.996 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 03:13:15.009 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 03:13:15.059 +08:00 [INF] Received HTTP response headers after 48.3668ms - 500
+2025-01-27 03:13:15.098 +08:00 [INF] End processing HTTP request after 102.4947ms - 500
+2025-01-27 03:13:15.263 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 03:13:15.264 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnBoardAdmin responded 200 in 2282.4072 ms
+2025-01-27 03:13:21.659 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 03:13:24.050 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 03:13:24.063 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 03:13:24.075 +08:00 [INF] Received HTTP response headers after 10.1751ms - 500
+2025-01-27 03:13:24.077 +08:00 [INF] End processing HTTP request after 27.3273ms - 500
+2025-01-27 03:14:10.132 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 03:14:10.151 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnBoardAdmin responded 200 in 48493.9707 ms
+2025-01-27 03:14:13.149 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 14.0015 ms
+2025-01-27 03:14:13.797 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 83.9927 ms
+2025-01-27 03:15:47.620 +08:00 [INF] Now listening on: http://localhost:5000
+2025-01-27 03:15:47.637 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-27 03:15:47.639 +08:00 [INF] Hosting environment: Development
+2025-01-27 03:15:47.641 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2025-01-27 03:16:02.514 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 7279.9269 ms
+2025-01-27 03:16:15.542 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 1002.0611 ms
+2025-01-27 03:16:23.176 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 03:16:26.836 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 03:16:26.844 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 03:16:26.966 +08:00 [INF] Received HTTP response headers after 118.79ms - 500
+2025-01-27 03:16:26.974 +08:00 [INF] End processing HTTP request after 144.6721ms - 500
+2025-01-27 03:17:37.516 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 03:17:37.562 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnBoardAdmin responded 200 in 74485.4025 ms
+2025-01-27 03:17:50.973 +08:00 [INF] AnnouncementController QueryAnnBoardUser START
+2025-01-27 03:17:50.984 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardUserRespModel
+2025-01-27 03:17:50.987 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardUserRespModel
+2025-01-27 03:17:51.020 +08:00 [INF] Received HTTP response headers after 29.8045ms - 404
+2025-01-27 03:17:51.030 +08:00 [INF] End processing HTTP request after 45.7794ms - 404
+2025-01-27 03:17:51.093 +08:00 [INF] AnnouncementController QueryAnnBoardUser START
+2025-01-27 03:17:51.112 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnBoardUser responded 200 in 149.9253 ms
+2025-01-27 03:19:13.578 +08:00 [INF] Now listening on: http://localhost:5000
+2025-01-27 03:19:20.469 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-27 03:19:20.476 +08:00 [INF] Hosting environment: Development
+2025-01-27 03:19:20.477 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2025-01-27 03:19:20.685 +08:00 [INF] SpsController QuerySps START
+2025-01-27 03:19:20.756 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2025-01-27 03:19:20.917 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 204.1991 ms
+2025-01-27 03:19:20.925 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2025-01-27 03:19:22.930 +08:00 [INF] Received HTTP response headers after 1995.7581ms - 200
+2025-01-27 03:19:22.933 +08:00 [INF] End processing HTTP request after 2183.0529ms - 200
+2025-01-27 03:19:22.983 +08:00 [INF] SpsController QuerySps START
+2025-01-27 03:19:23.009 +08:00 [INF] HTTP GET /api/Sps/QuerySps responded 200 in 2564.5249 ms
+2025-01-27 03:19:28.699 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 2082.6375 ms
+2025-01-27 03:19:28.707 +08:00 [INF] SpsController QuerySps START
+2025-01-27 03:19:28.710 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2025-01-27 03:19:28.711 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2025-01-27 03:19:28.745 +08:00 [INF] Received HTTP response headers after 32.5659ms - 200
+2025-01-27 03:19:28.748 +08:00 [INF] End processing HTTP request after 37.9494ms - 200
+2025-01-27 03:19:28.755 +08:00 [INF] SpsController QuerySps START
+2025-01-27 03:19:28.759 +08:00 [INF] HTTP GET /api/Sps/QuerySps responded 200 in 58.7214 ms
+2025-01-27 03:19:33.775 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 03:19:52.856 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 03:19:52.860 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 03:20:31.925 +08:00 [INF] Received HTTP response headers after 39062.1065ms - 500
+2025-01-27 03:20:31.927 +08:00 [INF] End processing HTTP request after 39070.2942ms - 500
+2025-01-27 03:20:40.460 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 03:20:40.473 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 03:20:40.526 +08:00 [INF] Received HTTP response headers after 50.905ms - 500
+2025-01-27 03:20:40.554 +08:00 [INF] End processing HTTP request after 94.0167ms - 500
+2025-01-27 03:20:40.686 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 03:20:40.697 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnBoardAdmin responded 200 in 66939.0201 ms
+2025-01-27 03:20:43.749 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 03:21:42.961 +08:00 [INF] Now listening on: http://localhost:5000
+2025-01-27 03:21:42.978 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-27 03:21:42.980 +08:00 [INF] Hosting environment: Development
+2025-01-27 03:21:42.982 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2025-01-27 03:21:53.315 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 401.2409 ms
+2025-01-27 03:21:54.818 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 921.9254 ms
+2025-01-27 03:21:57.910 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 03:22:02.780 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 03:22:02.785 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 03:22:07.331 +08:00 [INF] Received HTTP response headers after 4538.283ms - 200
+2025-01-27 03:22:07.361 +08:00 [INF] End processing HTTP request after 4585.74ms - 200
+2025-01-27 03:22:07.628 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 03:22:07.998 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnBoardAdmin responded 200 in 10227.0341 ms
+2025-01-27 03:22:11.836 +08:00 [INF] AnnouncementController GetAnnBoardImage START
+2025-01-27 03:22:12.733 +08:00 [INF] HTTP GET /api/Announcement/GetAnnBoardImage/d133fef2-4a53-43a8-874c-d66c9e7d7acb_3.png responded 200 in 917.6719 ms
+2025-01-27 03:22:31.963 +08:00 [INF] AnnouncementController PutAnnouncement START
+2025-01-27 03:22:36.622 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/PutAnnouncement
+2025-01-27 03:22:36.711 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/PutAnnouncement
+2025-01-27 03:22:41.579 +08:00 [INF] Received HTTP response headers after 4867.1243ms - 200
+2025-01-27 03:22:41.580 +08:00 [INF] End processing HTTP request after 4958.0112ms - 200
+2025-01-27 03:22:41.591 +08:00 [INF] AnnouncementController PutAnnouncement END
+2025-01-27 03:22:41.600 +08:00 [INF] HTTP PUT /api/Announcement/ responded 200 in 9819.9657 ms
+2025-01-27 03:22:43.895 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 03:22:43.904 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 03:22:43.913 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 03:22:43.968 +08:00 [INF] Received HTTP response headers after 52.0179ms - 200
+2025-01-27 03:22:43.995 +08:00 [INF] End processing HTTP request after 91.285ms - 200
+2025-01-27 03:22:44.084 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 03:22:44.087 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnBoardAdmin responded 200 in 196.9284 ms
+2025-01-27 03:22:44.599 +08:00 [INF] AnnouncementController GetAnnBoardImage START
+2025-01-27 03:22:44.966 +08:00 [INF] HTTP GET /api/Announcement/GetAnnBoardImage/d133fef2-4a53-43a8-874c-d66c9e7d7acb_4.png responded 200 in 374.3856 ms
+2025-01-27 03:22:54.335 +08:00 [INF] AnnouncementController PutAnnouncement START
+2025-01-27 03:22:54.347 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/PutAnnouncement
+2025-01-27 03:22:54.350 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/PutAnnouncement
+2025-01-27 03:22:54.393 +08:00 [INF] Received HTTP response headers after 28.6399ms - 200
+2025-01-27 03:22:54.395 +08:00 [INF] End processing HTTP request after 48.943ms - 200
+2025-01-27 03:22:54.398 +08:00 [INF] AnnouncementController PutAnnouncement END
+2025-01-27 03:22:54.408 +08:00 [INF] HTTP PUT /api/Announcement/ responded 200 in 276.5017 ms
+2025-01-27 03:22:56.623 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 03:22:56.682 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 03:22:56.712 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 03:22:56.951 +08:00 [INF] Received HTTP response headers after 119.4695ms - 200
+2025-01-27 03:22:56.962 +08:00 [INF] End processing HTTP request after 279.7891ms - 200
+2025-01-27 03:22:56.966 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 03:22:56.967 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnBoardAdmin responded 200 in 345.5414 ms
+2025-01-27 03:22:58.319 +08:00 [INF] AnnouncementController GetAnnBoardImage START
+2025-01-27 03:22:58.354 +08:00 [INF] HTTP GET /api/Announcement/GetAnnBoardImage/d133fef2-4a53-43a8-874c-d66c9e7d7acb_4.jpg responded 200 in 36.1513 ms
+2025-01-27 03:23:12.386 +08:00 [INF] AnnouncementController PutAnnouncement START
+2025-01-27 03:23:12.450 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/PutAnnouncement
+2025-01-27 03:23:12.469 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/PutAnnouncement
+2025-01-27 03:23:12.517 +08:00 [INF] Received HTTP response headers after 47.282ms - 200
+2025-01-27 03:23:12.520 +08:00 [INF] End processing HTTP request after 69.7164ms - 200
+2025-01-27 03:23:12.522 +08:00 [INF] AnnouncementController PutAnnouncement END
+2025-01-27 03:23:12.523 +08:00 [INF] HTTP PUT /api/Announcement/ responded 200 in 151.5352 ms
+2025-01-27 03:23:16.194 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 03:23:16.255 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 03:23:16.257 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 03:23:16.272 +08:00 [INF] Received HTTP response headers after 13.993ms - 200
+2025-01-27 03:23:16.274 +08:00 [INF] End processing HTTP request after 18.4865ms - 200
+2025-01-27 03:23:16.275 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 03:23:16.276 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnBoardAdmin responded 200 in 82.2179 ms
+2025-01-27 04:00:48.941 +08:00 [INF] AnnouncementController QueryAnnBoardUser START
+2025-01-27 04:00:48.950 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardUserRespModel
+2025-01-27 04:00:48.953 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardUserRespModel
+2025-01-27 04:00:49.038 +08:00 [INF] Received HTTP response headers after 80.9846ms - 404
+2025-01-27 04:00:49.042 +08:00 [INF] End processing HTTP request after 92.0639ms - 404
+2025-01-27 04:00:49.140 +08:00 [INF] AnnouncementController QueryAnnBoardUser START
+2025-01-27 04:00:49.149 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnBoardUser responded 200 in 216.3466 ms
+2025-01-27 04:01:34.458 +08:00 [INF] AnnouncementController QueryAnnBoardUser START
+2025-01-27 04:01:34.476 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardUserRespModel
+2025-01-27 04:01:34.481 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardUserRespModel
+2025-01-27 04:01:34.565 +08:00 [INF] Received HTTP response headers after 82.2574ms - 404
+2025-01-27 04:01:34.567 +08:00 [INF] End processing HTTP request after 91.0849ms - 404
+2025-01-27 04:01:34.605 +08:00 [INF] AnnouncementController QueryAnnBoardUser START
+2025-01-27 04:01:34.609 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnBoardUser responded 200 in 19565.7330 ms
+2025-01-27 04:02:34.809 +08:00 [INF] AnnouncementController QueryAnnBoardUser START
+2025-01-27 04:02:39.020 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardUserRespModel
+2025-01-27 04:02:39.030 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardUserRespModel
+2025-01-27 04:02:39.111 +08:00 [INF] Received HTTP response headers after 42.3477ms - 404
+2025-01-27 04:02:39.115 +08:00 [INF] End processing HTTP request after 94.9857ms - 404
+2025-01-27 04:03:35.641 +08:00 [INF] Now listening on: http://localhost:5000
+2025-01-27 04:03:35.739 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-27 04:03:35.742 +08:00 [INF] Hosting environment: Development
+2025-01-27 04:03:35.743 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2025-01-27 04:03:38.218 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 370.6523 ms
+2025-01-27 04:03:40.858 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 2035.1906 ms
+2025-01-27 04:03:46.346 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:03:46.394 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:03:46.401 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:03:47.013 +08:00 [INF] Received HTTP response headers after 607.5432ms - 200
+2025-01-27 04:03:47.017 +08:00 [INF] End processing HTTP request after 627.6235ms - 200
+2025-01-27 04:03:47.071 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:03:47.101 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnBoardAdmin responded 200 in 869.3433 ms
+2025-01-27 04:03:53.691 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:03:53.702 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:03:53.703 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:03:53.744 +08:00 [INF] Received HTTP response headers after 40.2128ms - 200
+2025-01-27 04:03:53.746 +08:00 [INF] End processing HTTP request after 44.6551ms - 200
+2025-01-27 04:03:53.749 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:03:53.751 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnBoardAdmin responded 200 in 64.8350 ms
+2025-01-27 04:03:57.563 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:03:57.615 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:03:57.618 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:03:57.651 +08:00 [INF] Received HTTP response headers after 29.713ms - 200
+2025-01-27 04:03:57.654 +08:00 [INF] End processing HTTP request after 38.9056ms - 200
+2025-01-27 04:03:57.679 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:03:57.685 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnBoardAdmin responded 200 in 124.0571 ms
+2025-01-27 04:04:08.529 +08:00 [INF] AnnouncementController QueryAnnBoardUser START
+2025-01-27 04:04:08.544 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardUserRespModel
+2025-01-27 04:04:08.548 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardUserRespModel
+2025-01-27 04:04:08.562 +08:00 [INF] Received HTTP response headers after 9.9823ms - 404
+2025-01-27 04:04:08.564 +08:00 [INF] End processing HTTP request after 20.5584ms - 404
+2025-01-27 04:04:08.634 +08:00 [INF] AnnouncementController QueryAnnBoardUser START
+2025-01-27 04:04:08.644 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnBoardUser responded 200 in 1649.8708 ms
+2025-01-27 04:05:12.055 +08:00 [INF] Now listening on: http://localhost:5000
+2025-01-27 04:05:12.084 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-27 04:05:12.086 +08:00 [INF] Hosting environment: Development
+2025-01-27 04:05:12.088 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2025-01-27 04:05:16.617 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 382.2828 ms
+2025-01-27 04:05:18.336 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 962.2324 ms
+2025-01-27 04:05:38.247 +08:00 [INF] AnnouncementController QueryAnnBoardUser START
+2025-01-27 04:05:38.292 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardUser
+2025-01-27 04:05:38.302 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardUser
+2025-01-27 04:05:41.817 +08:00 [INF] Received HTTP response headers after 3506.4049ms - 200
+2025-01-27 04:05:41.851 +08:00 [INF] End processing HTTP request after 3562.3121ms - 200
+2025-01-27 04:05:41.910 +08:00 [INF] AnnouncementController QueryAnnBoardUser START
+2025-01-27 04:05:41.929 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnBoardUser responded 200 in 6718.2835 ms
+2025-01-27 04:05:56.432 +08:00 [INF] AnnouncementController GetAnnBoardImage START
+2025-01-27 04:05:56.789 +08:00 [INF] HTTP GET /api/Announcement/GetAnnBoardImage/d133fef2-4a53-43a8-874c-d66c9e7d7acb_4.png responded 200 in 409.5684 ms
+2025-01-27 04:05:56.885 +08:00 [INF] HTTP GET /favicon.ico responded 404 in 9.9966 ms
+2025-01-27 04:05:59.423 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:05:59.429 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:05:59.431 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:06:00.318 +08:00 [INF] Received HTTP response headers after 882.8447ms - 200
+2025-01-27 04:06:00.324 +08:00 [INF] End processing HTTP request after 894.9415ms - 200
+2025-01-27 04:06:00.336 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:06:00.343 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnBoardAdmin responded 200 in 928.1989 ms
+2025-01-27 04:06:27.712 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:06:28.230 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:06:28.233 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:06:28.269 +08:00 [INF] Received HTTP response headers after 34.366ms - 200
+2025-01-27 04:06:28.272 +08:00 [INF] End processing HTTP request after 42.4428ms - 200
+2025-01-27 04:06:28.278 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:06:28.284 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnBoardAdmin responded 200 in 573.6152 ms
+2025-01-27 04:11:53.024 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:11:53.607 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:11:53.609 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:11:53.642 +08:00 [INF] Received HTTP response headers after 29.7488ms - 200
+2025-01-27 04:11:53.644 +08:00 [INF] End processing HTTP request after 36.6517ms - 200
+2025-01-27 04:11:53.648 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:11:53.651 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnBoardAdmin responded 200 in 628.4211 ms
+2025-01-27 04:12:13.489 +08:00 [INF] HTTP PUT /api/Announcement/ responded 200 in 72.7569 ms
+2025-01-27 04:13:51.822 +08:00 [INF] HTTP PUT /api/Announcement/ responded 200 in 3.3222 ms
+2025-01-27 04:15:26.832 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:15:26.835 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:15:26.839 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:15:27.710 +08:00 [INF] Received HTTP response headers after 869.4214ms - 200
+2025-01-27 04:15:27.713 +08:00 [INF] End processing HTTP request after 877.7553ms - 200
+2025-01-27 04:15:27.716 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:15:27.717 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnBoardAdmin responded 200 in 886.7697 ms
+2025-01-27 04:15:29.744 +08:00 [INF] AnnouncementController GetAnnBoardImage START
+2025-01-27 04:15:29.758 +08:00 [INF] HTTP GET /api/Announcement/GetAnnBoardImage/d133fef2-4a53-43a8-874c-d66c9e7d7acb_3.png responded 200 in 14.8669 ms
+2025-01-27 04:15:45.209 +08:00 [INF] AnnouncementController PutAnnouncement START
+2025-01-27 04:15:45.237 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/PutAnnouncement
+2025-01-27 04:15:45.262 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/PutAnnouncement
+2025-01-27 04:15:45.720 +08:00 [INF] Received HTTP response headers after 457.2711ms - 200
+2025-01-27 04:15:46.110 +08:00 [INF] End processing HTTP request after 873.4268ms - 200
+2025-01-27 04:15:46.530 +08:00 [INF] AnnouncementController PutAnnouncement END
+2025-01-27 04:15:46.532 +08:00 [INF] HTTP PUT /api/Announcement/ responded 200 in 1391.8833 ms
+2025-01-27 04:15:48.435 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:15:48.470 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:15:48.476 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:15:48.514 +08:00 [INF] Received HTTP response headers after 34.4813ms - 200
+2025-01-27 04:15:48.525 +08:00 [INF] End processing HTTP request after 55.5579ms - 200
+2025-01-27 04:15:48.527 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:15:48.528 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnBoardAdmin responded 200 in 93.3061 ms
+2025-01-27 04:15:50.754 +08:00 [INF] AnnouncementController GetAnnBoardImage START
+2025-01-27 04:15:50.783 +08:00 [INF] HTTP GET /api/Announcement/GetAnnBoardImage/d133fef2-4a53-43a8-874c-d66c9e7d7acb_1.jpg responded 200 in 29.5418 ms
+2025-01-27 04:15:59.113 +08:00 [INF] AnnouncementController PutAnnouncement START
+2025-01-27 04:15:59.115 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/PutAnnouncement
+2025-01-27 04:15:59.123 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/PutAnnouncement
+2025-01-27 04:15:59.143 +08:00 [INF] Received HTTP response headers after 18.1785ms - 200
+2025-01-27 04:15:59.146 +08:00 [INF] End processing HTTP request after 30.8321ms - 200
+2025-01-27 04:15:59.150 +08:00 [INF] AnnouncementController PutAnnouncement END
+2025-01-27 04:15:59.154 +08:00 [INF] HTTP PUT /api/Announcement/ responded 200 in 41.9866 ms
+2025-01-27 04:16:01.225 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:16:01.256 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:16:01.263 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:16:01.282 +08:00 [INF] Received HTTP response headers after 15.5201ms - 200
+2025-01-27 04:16:01.287 +08:00 [INF] End processing HTTP request after 31.0787ms - 200
+2025-01-27 04:16:01.294 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:16:01.296 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnBoardAdmin responded 200 in 75.1692 ms
+2025-01-27 04:16:07.191 +08:00 [INF] AnnouncementController PutAnnouncement START
+2025-01-27 04:16:07.232 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/PutAnnouncement
+2025-01-27 04:16:07.233 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/PutAnnouncement
+2025-01-27 04:16:07.279 +08:00 [INF] Received HTTP response headers after 44.3703ms - 200
+2025-01-27 04:16:07.282 +08:00 [INF] End processing HTTP request after 50.1249ms - 200
+2025-01-27 04:16:07.283 +08:00 [INF] AnnouncementController PutAnnouncement END
+2025-01-27 04:16:07.290 +08:00 [INF] HTTP PUT /api/Announcement/ responded 200 in 99.6860 ms
+2025-01-27 04:16:09.041 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:16:09.252 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:16:09.254 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:16:09.272 +08:00 [INF] Received HTTP response headers after 14.9392ms - 200
+2025-01-27 04:16:09.276 +08:00 [INF] End processing HTTP request after 23.9414ms - 200
+2025-01-27 04:16:09.279 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:16:09.288 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnBoardAdmin responded 200 in 247.3693 ms
+2025-01-27 04:17:01.856 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:17:01.919 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:17:01.922 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:17:01.981 +08:00 [INF] Received HTTP response headers after 50.9748ms - 200
+2025-01-27 04:17:01.989 +08:00 [INF] End processing HTTP request after 70.4233ms - 200
+2025-01-27 04:17:01.993 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:17:01.995 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnBoardAdmin responded 200 in 138.6882 ms
+2025-01-27 04:17:05.927 +08:00 [INF] AnnouncementController PutAnnouncement START
+2025-01-27 04:17:05.943 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/PutAnnouncement
+2025-01-27 04:17:05.975 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/PutAnnouncement
+2025-01-27 04:17:06.056 +08:00 [INF] Received HTTP response headers after 69.6631ms - 200
+2025-01-27 04:17:06.065 +08:00 [INF] End processing HTTP request after 121.8405ms - 200
+2025-01-27 04:17:06.067 +08:00 [INF] AnnouncementController PutAnnouncement END
+2025-01-27 04:17:06.068 +08:00 [INF] HTTP PUT /api/Announcement/ responded 200 in 141.9190 ms
+2025-01-27 04:17:08.645 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:17:08.677 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:17:08.681 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:17:09.089 +08:00 [INF] Received HTTP response headers after 154.5022ms - 200
+2025-01-27 04:17:09.151 +08:00 [INF] End processing HTTP request after 474.2352ms - 200
+2025-01-27 04:17:09.208 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:17:09.223 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnBoardAdmin responded 200 in 578.6902 ms
+2025-01-27 04:17:30.153 +08:00 [INF] AnnouncementController PutAnnouncement START
+2025-01-27 04:17:30.159 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/PutAnnouncement
+2025-01-27 04:17:30.162 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/PutAnnouncement
+2025-01-27 04:17:30.188 +08:00 [INF] Received HTTP response headers after 24.3433ms - 200
+2025-01-27 04:17:30.197 +08:00 [INF] End processing HTTP request after 38.3725ms - 200
+2025-01-27 04:17:30.201 +08:00 [INF] AnnouncementController PutAnnouncement END
+2025-01-27 04:17:30.202 +08:00 [INF] HTTP PUT /api/Announcement/ responded 200 in 62.4681 ms
+2025-01-27 04:17:31.819 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:17:31.894 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:17:31.921 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:17:32.002 +08:00 [INF] Received HTTP response headers after 77.5424ms - 200
+2025-01-27 04:17:32.006 +08:00 [INF] End processing HTTP request after 112.464ms - 200
+2025-01-27 04:17:32.023 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:17:32.032 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnBoardAdmin responded 200 in 212.5629 ms
+2025-01-27 04:17:34.423 +08:00 [INF] AnnouncementController GetAnnBoardImage START
+2025-01-27 04:17:34.677 +08:00 [INF] HTTP GET /api/Announcement/GetAnnBoardImage/d133fef2-4a53-43a8-874c-d66c9e7d7acb_2.png responded 200 in 254.5443 ms
+2025-01-27 04:17:39.806 +08:00 [INF] AnnouncementController PutAnnouncement START
+2025-01-27 04:17:39.808 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/PutAnnouncement
+2025-01-27 04:17:39.811 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/PutAnnouncement
+2025-01-27 04:17:39.842 +08:00 [INF] Received HTTP response headers after 25.8701ms - 200
+2025-01-27 04:17:39.856 +08:00 [INF] End processing HTTP request after 48.102ms - 200
+2025-01-27 04:17:39.859 +08:00 [INF] AnnouncementController PutAnnouncement END
+2025-01-27 04:17:39.875 +08:00 [INF] HTTP PUT /api/Announcement/ responded 200 in 68.6708 ms
+2025-01-27 04:17:41.226 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:17:41.253 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:17:41.257 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:17:41.284 +08:00 [INF] Received HTTP response headers after 26.1266ms - 200
+2025-01-27 04:17:41.289 +08:00 [INF] End processing HTTP request after 36.5862ms - 200
+2025-01-27 04:17:41.299 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:17:41.301 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnBoardAdmin responded 200 in 75.9476 ms
+2025-01-27 04:19:41.268 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:19:41.282 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:19:41.286 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:19:41.329 +08:00 [INF] Received HTTP response headers after 40.5074ms - 200
+2025-01-27 04:19:41.348 +08:00 [INF] End processing HTTP request after 66.6699ms - 200
+2025-01-27 04:19:41.350 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:19:41.359 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnBoardAdmin responded 200 in 91.9240 ms
+2025-01-27 04:19:53.810 +08:00 [INF] AnnouncementController PutAnnouncement START
+2025-01-27 04:19:53.820 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/PutAnnouncement
+2025-01-27 04:19:53.823 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/PutAnnouncement
+2025-01-27 04:19:53.903 +08:00 [INF] Received HTTP response headers after 77.8649ms - 200
+2025-01-27 04:19:53.904 +08:00 [INF] End processing HTTP request after 84.3152ms - 200
+2025-01-27 04:19:53.919 +08:00 [INF] AnnouncementController PutAnnouncement END
+2025-01-27 04:19:53.920 +08:00 [INF] HTTP PUT /api/Announcement/ responded 200 in 124.4665 ms
+2025-01-27 04:19:56.875 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:19:56.904 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:19:56.906 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:19:57.139 +08:00 [INF] Received HTTP response headers after 224.9879ms - 200
+2025-01-27 04:19:57.157 +08:00 [INF] End processing HTTP request after 253.1979ms - 200
+2025-01-27 04:19:57.173 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:19:57.176 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnBoardAdmin responded 200 in 301.5426 ms
+2025-01-27 04:19:57.896 +08:00 [INF] AnnouncementController GetAnnBoardImage START
+2025-01-27 04:19:57.906 +08:00 [INF] HTTP GET /api/Announcement/GetAnnBoardImage/d133fef2-4a53-43a8-874c-d66c9e7d7acb_2.png responded 200 in 10.0410 ms
+2025-01-27 04:20:06.410 +08:00 [INF] AnnouncementController PutAnnouncement START
+2025-01-27 04:20:06.466 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/PutAnnouncement
+2025-01-27 04:20:06.468 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/PutAnnouncement
+2025-01-27 04:20:06.495 +08:00 [INF] Received HTTP response headers after 25.7292ms - 200
+2025-01-27 04:20:06.503 +08:00 [INF] End processing HTTP request after 37.3757ms - 200
+2025-01-27 04:20:06.507 +08:00 [INF] AnnouncementController PutAnnouncement END
+2025-01-27 04:20:06.513 +08:00 [INF] HTTP PUT /api/Announcement/ responded 200 in 103.7562 ms
+2025-01-27 04:21:44.042 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:21:44.060 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:21:44.064 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:21:44.078 +08:00 [INF] Received HTTP response headers after 13.3964ms - 200
+2025-01-27 04:21:44.082 +08:00 [INF] End processing HTTP request after 22.4449ms - 200
+2025-01-27 04:21:44.091 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:21:44.092 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnBoardAdmin responded 200 in 51.0600 ms
+2025-01-27 04:23:56.415 +08:00 [INF] AnnouncementController PutAnnouncement START
+2025-01-27 04:23:56.918 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/PutAnnouncement
+2025-01-27 04:23:56.920 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/PutAnnouncement
+2025-01-27 04:23:56.983 +08:00 [INF] Received HTTP response headers after 57.3982ms - 200
+2025-01-27 04:23:56.993 +08:00 [INF] End processing HTTP request after 74.4604ms - 200
+2025-01-27 04:23:57.000 +08:00 [INF] AnnouncementController PutAnnouncement END
+2025-01-27 04:23:57.003 +08:00 [INF] HTTP PUT /api/Announcement/ responded 200 in 589.0278 ms
+2025-01-27 04:24:02.556 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:24:05.056 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:24:05.058 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:24:05.153 +08:00 [INF] Received HTTP response headers after 93.4783ms - 200
+2025-01-27 04:24:05.161 +08:00 [INF] End processing HTTP request after 104.3335ms - 200
+2025-01-27 04:24:05.165 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:24:05.167 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnBoardAdmin responded 200 in 2611.7956 ms
+2025-01-27 04:24:19.360 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:24:21.032 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:24:21.055 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:24:21.071 +08:00 [INF] Received HTTP response headers after 13.2736ms - 200
+2025-01-27 04:24:21.077 +08:00 [INF] End processing HTTP request after 45.5222ms - 200
+2025-01-27 04:24:21.079 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:24:21.080 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnBoardAdmin responded 200 in 1720.7147 ms
+2025-01-27 04:24:21.091 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:24:21.117 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:24:21.128 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:24:21.144 +08:00 [INF] Received HTTP response headers after 14.7539ms - 200
+2025-01-27 04:24:21.147 +08:00 [INF] End processing HTTP request after 29.8236ms - 200
+2025-01-27 04:24:21.151 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:24:21.158 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnBoardAdmin responded 200 in 67.3245 ms
+2025-01-27 04:24:26.137 +08:00 [INF] AnnouncementController PutAnnouncement START
+2025-01-27 04:24:26.169 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/PutAnnouncement
+2025-01-27 04:24:26.171 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/PutAnnouncement
+2025-01-27 04:24:26.345 +08:00 [INF] Received HTTP response headers after 173.5334ms - 200
+2025-01-27 04:24:26.348 +08:00 [INF] End processing HTTP request after 178.849ms - 200
+2025-01-27 04:24:26.349 +08:00 [INF] AnnouncementController PutAnnouncement END
+2025-01-27 04:24:26.351 +08:00 [INF] HTTP PUT /api/Announcement/ responded 200 in 214.0287 ms
+2025-01-27 04:24:27.870 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:24:27.909 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:24:27.913 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:24:27.958 +08:00 [INF] Received HTTP response headers after 30.7386ms - 200
+2025-01-27 04:24:27.966 +08:00 [INF] End processing HTTP request after 56.9726ms - 200
+2025-01-27 04:24:27.967 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:24:27.968 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnBoardAdmin responded 200 in 98.9248 ms
+2025-01-27 04:31:27.657 +08:00 [INF] Now listening on: http://localhost:5000
+2025-01-27 04:31:27.674 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-27 04:31:27.676 +08:00 [INF] Hosting environment: Development
+2025-01-27 04:31:27.679 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2025-01-27 04:31:32.741 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 667.9251 ms
+2025-01-27 04:31:34.961 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 668.9975 ms
+2025-01-27 04:32:02.290 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:32:02.341 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:32:02.351 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:32:03.253 +08:00 [INF] Received HTTP response headers after 895.8613ms - 200
+2025-01-27 04:32:03.257 +08:00 [INF] End processing HTTP request after 921.9639ms - 200
+2025-01-27 04:32:03.344 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:32:03.362 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnBoardAdmin responded 200 in 1155.4015 ms
+2025-01-27 04:32:11.404 +08:00 [INF] AnnouncementController PutAnnouncement START
+2025-01-27 04:32:11.415 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/PutAnnouncement
+2025-01-27 04:32:11.416 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/PutAnnouncement
+2025-01-27 04:32:11.503 +08:00 [INF] Received HTTP response headers after 86.534ms - 200
+2025-01-27 04:32:11.510 +08:00 [INF] End processing HTTP request after 94.8041ms - 200
+2025-01-27 04:32:11.521 +08:00 [INF] AnnouncementController PutAnnouncement END
+2025-01-27 04:32:11.551 +08:00 [INF] HTTP PUT /api/Announcement/ responded 200 in 303.2865 ms
+2025-01-27 04:32:13.181 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:32:13.242 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:32:13.288 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:32:13.318 +08:00 [INF] Received HTTP response headers after 26.2082ms - 200
+2025-01-27 04:32:13.319 +08:00 [INF] End processing HTTP request after 77.2128ms - 200
+2025-01-27 04:32:13.323 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:32:13.325 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnBoardAdmin responded 200 in 158.9068 ms
+2025-01-27 04:32:13.648 +08:00 [INF] AnnouncementController GetAnnBoardImage START
+2025-01-27 04:32:14.287 +08:00 [INF] HTTP GET /api/Announcement/GetAnnBoardImage/d133fef2-4a53-43a8-874c-d66c9e7d7acb_2.jpg responded 200 in 666.5510 ms
+2025-01-27 04:32:18.692 +08:00 [INF] AnnouncementController PutAnnouncement START
+2025-01-27 04:32:18.708 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/PutAnnouncement
+2025-01-27 04:32:18.710 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/PutAnnouncement
+2025-01-27 04:32:18.742 +08:00 [INF] Received HTTP response headers after 24.5258ms - 200
+2025-01-27 04:32:18.745 +08:00 [INF] End processing HTTP request after 37.8408ms - 200
+2025-01-27 04:32:18.749 +08:00 [INF] AnnouncementController PutAnnouncement END
+2025-01-27 04:32:18.752 +08:00 [INF] HTTP PUT /api/Announcement/ responded 200 in 67.2389 ms
+2025-01-27 04:32:20.299 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:32:20.476 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:32:20.486 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:32:20.510 +08:00 [INF] Received HTTP response headers after 22.8233ms - 200
+2025-01-27 04:32:20.517 +08:00 [INF] End processing HTTP request after 40.1805ms - 200
+2025-01-27 04:32:20.521 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:32:20.524 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnBoardAdmin responded 200 in 230.8752 ms
+2025-01-27 04:32:23.497 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:32:23.516 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:32:23.522 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:32:23.570 +08:00 [INF] Received HTTP response headers after 46.5788ms - 200
+2025-01-27 04:32:23.618 +08:00 [INF] End processing HTTP request after 101.9586ms - 200
+2025-01-27 04:32:23.890 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:32:23.897 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnBoardAdmin responded 200 in 401.2330 ms
+2025-01-27 04:33:58.415 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:33:58.556 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:33:58.574 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:33:58.671 +08:00 [INF] Received HTTP response headers after 91.5537ms - 200
+2025-01-27 04:33:58.675 +08:00 [INF] End processing HTTP request after 118.566ms - 200
+2025-01-27 04:33:59.156 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:33:59.160 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnBoardAdmin responded 200 in 745.0774 ms
+2025-01-27 04:35:00.373 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:35:00.584 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:35:00.593 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:35:00.707 +08:00 [INF] Received HTTP response headers after 107.4802ms - 200
+2025-01-27 04:35:00.721 +08:00 [INF] End processing HTTP request after 136.6027ms - 200
+2025-01-27 04:35:00.733 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:35:00.750 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnBoardAdmin responded 200 in 377.8583 ms
+2025-01-27 04:35:06.403 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:35:06.661 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:35:06.677 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:35:07.394 +08:00 [INF] Received HTTP response headers after 686.114ms - 200
+2025-01-27 04:35:07.416 +08:00 [INF] End processing HTTP request after 755.6182ms - 200
+2025-01-27 04:35:07.418 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:35:07.430 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnBoardAdmin responded 200 in 1033.0628 ms
+2025-01-27 04:35:39.188 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:35:39.790 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:35:39.807 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:35:39.839 +08:00 [INF] Received HTTP response headers after 30.8369ms - 200
+2025-01-27 04:35:39.849 +08:00 [INF] End processing HTTP request after 59.1331ms - 200
+2025-01-27 04:35:39.851 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:35:39.868 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnBoardAdmin responded 200 in 680.4122 ms
+2025-01-27 04:37:16.886 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:37:17.606 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:37:17.678 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:37:17.761 +08:00 [INF] Received HTTP response headers after 51.409ms - 200
+2025-01-27 04:37:17.952 +08:00 [INF] End processing HTTP request after 344.5411ms - 200
+2025-01-27 04:37:18.072 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:37:18.227 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnBoardAdmin responded 200 in 1341.7780 ms
+2025-01-27 04:37:32.486 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:37:32.630 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:37:32.696 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:37:33.127 +08:00 [INF] Received HTTP response headers after 421.1993ms - 200
+2025-01-27 04:37:33.131 +08:00 [INF] End processing HTTP request after 501.2507ms - 200
+2025-01-27 04:37:33.135 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:37:33.137 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnBoardAdmin responded 200 in 651.3957 ms
+2025-01-27 04:38:19.627 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:38:19.724 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:38:19.727 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:38:19.754 +08:00 [INF] Received HTTP response headers after 23.3611ms - 200
+2025-01-27 04:38:19.755 +08:00 [INF] End processing HTTP request after 31.5755ms - 200
+2025-01-27 04:38:19.772 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:38:19.777 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnBoardAdmin responded 200 in 150.0200 ms
+2025-01-27 04:38:40.529 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:38:40.671 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:38:40.680 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:38:40.701 +08:00 [INF] Received HTTP response headers after 18.689ms - 200
+2025-01-27 04:38:40.713 +08:00 [INF] End processing HTTP request after 41.9703ms - 200
+2025-01-27 04:38:40.716 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:38:40.720 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnBoardAdmin responded 200 in 193.0246 ms
+2025-01-27 04:39:33.105 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:39:33.292 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:39:33.295 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:39:33.337 +08:00 [INF] Received HTTP response headers after 37.2641ms - 200
+2025-01-27 04:39:33.394 +08:00 [INF] End processing HTTP request after 101.5623ms - 200
+2025-01-27 04:39:33.400 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:39:33.401 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnBoardAdmin responded 200 in 296.6007 ms
+2025-01-27 04:40:16.794 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:40:16.847 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:40:16.870 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:40:16.923 +08:00 [INF] Received HTTP response headers after 51.4387ms - 200
+2025-01-27 04:40:16.928 +08:00 [INF] End processing HTTP request after 81.6076ms - 200
+2025-01-27 04:40:16.930 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:40:16.932 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnBoardAdmin responded 200 in 138.4825 ms
+2025-01-27 04:40:19.577 +08:00 [INF] AnnouncementController GetAnnBoardImage START
+2025-01-27 04:40:19.599 +08:00 [INF] HTTP GET /api/Announcement/GetAnnBoardImage/d133fef2-4a53-43a8-874c-d66c9e7d7acb_2.jpg responded 200 in 22.2035 ms
+2025-01-27 04:40:22.335 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:40:22.368 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:40:22.372 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:40:22.507 +08:00 [INF] Received HTTP response headers after 101.7173ms - 200
+2025-01-27 04:40:23.076 +08:00 [INF] End processing HTTP request after 707.5949ms - 200
+2025-01-27 04:40:23.079 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:40:23.082 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnBoardAdmin responded 200 in 747.4634 ms
+2025-01-27 04:41:24.471 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:41:25.956 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:41:25.983 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:41:26.043 +08:00 [INF] Received HTTP response headers after 57.0352ms - 200
+2025-01-27 04:41:26.045 +08:00 [INF] End processing HTTP request after 90.474ms - 200
+2025-01-27 04:41:26.048 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:41:26.050 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnBoardAdmin responded 200 in 1579.7614 ms
+2025-01-27 04:42:35.596 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:42:35.610 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:42:35.613 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:42:36.199 +08:00 [INF] Received HTTP response headers after 584.2955ms - 200
+2025-01-27 04:42:36.216 +08:00 [INF] End processing HTTP request after 605.6661ms - 200
+2025-01-27 04:42:36.222 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:42:36.225 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnBoardAdmin responded 200 in 629.5081 ms
+2025-01-27 04:42:57.229 +08:00 [INF] HTTP POST /api/Announcement/ responded 200 in 156.3121 ms
+2025-01-27 04:48:39.505 +08:00 [INF] Now listening on: http://localhost:5000
+2025-01-27 04:48:39.523 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-27 04:48:39.526 +08:00 [INF] Hosting environment: Development
+2025-01-27 04:48:39.528 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2025-01-27 04:48:42.800 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 444.6578 ms
+2025-01-27 04:48:44.270 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 891.8778 ms
+2025-01-27 04:49:13.477 +08:00 [INF] HTTP POST /api/Announcement/ responded 200 in 494.2303 ms
+2025-01-27 04:52:33.284 +08:00 [INF] Now listening on: http://localhost:5000
+2025-01-27 04:52:33.298 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-27 04:52:33.300 +08:00 [INF] Hosting environment: Development
+2025-01-27 04:52:33.302 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2025-01-27 04:52:40.619 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 278.9680 ms
+2025-01-27 04:52:43.054 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 601.4191 ms
+2025-01-27 04:53:09.833 +08:00 [INF] HTTP POST /api/Announcement/ responded 200 in 438.7826 ms
+2025-01-27 04:53:14.079 +08:00 [INF] HTTP POST /api/Announcement/ responded 200 in 190.0319 ms
+2025-01-27 04:54:13.511 +08:00 [INF] Now listening on: http://localhost:5000
+2025-01-27 04:54:13.536 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-27 04:54:13.573 +08:00 [INF] Hosting environment: Development
+2025-01-27 04:54:13.573 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2025-01-27 04:54:17.248 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 271.1537 ms
+2025-01-27 04:54:18.622 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 865.7273 ms
+2025-01-27 04:54:59.405 +08:00 [INF] AnnouncementController PostAnnouncement START
+2025-01-27 04:54:59.492 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/PostAnnouncement
+2025-01-27 04:54:59.496 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/PostAnnouncement
+2025-01-27 04:55:04.571 +08:00 [INF] Received HTTP response headers after 5069.057ms - 200
+2025-01-27 04:55:04.578 +08:00 [INF] End processing HTTP request after 5092.1317ms - 200
+2025-01-27 04:55:04.637 +08:00 [INF] AnnouncementController PostAnnouncement END
+2025-01-27 04:55:04.654 +08:00 [INF] HTTP POST /api/Announcement/ responded 200 in 7662.4015 ms
+2025-01-27 04:55:14.515 +08:00 [INF] AnnouncementController PostAnnouncement START
+2025-01-27 04:55:14.520 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/PostAnnouncement
+2025-01-27 04:55:14.599 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/PostAnnouncement
+2025-01-27 04:55:40.576 +08:00 [INF] Received HTTP response headers after 25926.569ms - 200
+2025-01-27 04:55:40.581 +08:00 [INF] End processing HTTP request after 26061.9197ms - 200
+2025-01-27 04:55:40.585 +08:00 [INF] AnnouncementController PostAnnouncement END
+2025-01-27 04:55:40.589 +08:00 [INF] HTTP POST /api/Announcement/ responded 200 in 27962.6222 ms
+2025-01-27 04:55:50.588 +08:00 [INF] AnnouncementController PostAnnouncement START
+2025-01-27 04:55:50.684 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/PostAnnouncement
+2025-01-27 04:55:52.925 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/PostAnnouncement
+2025-01-27 04:59:09.712 +08:00 [INF] Received HTTP response headers after 196786.6503ms - 200
+2025-01-27 04:59:09.715 +08:00 [INF] End processing HTTP request after 199030.4722ms - 200
+2025-01-27 04:59:09.779 +08:00 [INF] AnnouncementController PostAnnouncement END
+2025-01-27 04:59:09.786 +08:00 [INF] HTTP POST /api/Announcement/ responded 200 in 200616.0130 ms
+2025-01-27 04:59:37.689 +08:00 [INF] Now listening on: http://localhost:5000
+2025-01-27 04:59:37.781 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-27 04:59:37.803 +08:00 [INF] Hosting environment: Development
+2025-01-27 04:59:37.813 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2025-01-27 04:59:42.758 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 385.7769 ms
+2025-01-27 04:59:44.454 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 1136.5678 ms
+2025-01-27 04:59:49.654 +08:00 [INF] AnnouncementController PostAnnouncement START
+2025-01-27 04:59:51.418 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/PostAnnouncement
+2025-01-27 04:59:51.421 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/PostAnnouncement
+2025-01-27 04:59:56.874 +08:00 [INF] Received HTTP response headers after 5408.9112ms - 200
+2025-01-27 04:59:56.889 +08:00 [INF] End processing HTTP request after 5476.8263ms - 200
+2025-01-27 04:59:56.905 +08:00 [INF] AnnouncementController PostAnnouncement END
+2025-01-27 04:59:56.929 +08:00 [INF] HTTP POST /api/Announcement/ responded 200 in 8983.0599 ms
+2025-01-27 04:59:59.144 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:59:59.150 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:59:59.154 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 04:59:59.499 +08:00 [INF] Received HTTP response headers after 344.7253ms - 200
+2025-01-27 04:59:59.502 +08:00 [INF] End processing HTTP request after 352.1977ms - 200
+2025-01-27 04:59:59.543 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 04:59:59.552 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnBoardAdmin responded 200 in 431.1392 ms
+2025-01-27 05:00:01.116 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 05:00:01.121 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 05:00:01.125 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 05:00:01.149 +08:00 [INF] Received HTTP response headers after 21.9396ms - 200
+2025-01-27 05:00:01.153 +08:00 [INF] End processing HTTP request after 31.5111ms - 200
+2025-01-27 05:00:01.158 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 05:00:01.164 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnBoardAdmin responded 200 in 55.0510 ms
+2025-01-27 05:00:01.900 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 05:00:01.930 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 05:00:01.934 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 05:00:01.958 +08:00 [INF] Received HTTP response headers after 19.4604ms - 200
+2025-01-27 05:00:01.961 +08:00 [INF] End processing HTTP request after 31.5057ms - 200
+2025-01-27 05:00:01.965 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 05:00:01.968 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnBoardAdmin responded 200 in 68.4082 ms
+2025-01-27 05:00:03.792 +08:00 [INF] AnnouncementController GetAnnBoardImage START
+2025-01-27 05:00:04.059 +08:00 [INF] HTTP GET /api/Announcement/GetAnnBoardImage/d133fef2-4a53-43a8-874c-d66c9e7d7acb_5164566c-5645-4f79-bedc-2510cdf1bee0.png responded 200 in 287.7791 ms
+2025-01-27 05:00:38.161 +08:00 [INF] AnnouncementController PutAnnouncement START
+2025-01-27 05:00:38.179 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/PutAnnouncement
+2025-01-27 05:00:38.184 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/PutAnnouncement
+2025-01-27 05:00:38.228 +08:00 [INF] Received HTTP response headers after 43.0584ms - 200
+2025-01-27 05:00:38.231 +08:00 [INF] End processing HTTP request after 52.3822ms - 200
+2025-01-27 05:00:38.238 +08:00 [INF] AnnouncementController PutAnnouncement END
+2025-01-27 05:00:38.239 +08:00 [INF] HTTP PUT /api/Announcement/ responded 200 in 93.4808 ms
+2025-01-27 05:00:40.025 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 05:00:40.454 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 05:00:40.464 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 05:00:40.537 +08:00 [INF] Received HTTP response headers after 71.1474ms - 200
+2025-01-27 05:00:40.549 +08:00 [INF] End processing HTTP request after 95.0851ms - 200
+2025-01-27 05:00:40.552 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 05:00:40.555 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnBoardAdmin responded 200 in 533.1182 ms
+2025-01-27 05:01:16.203 +08:00 [INF] AnnouncementController GetAnnBoardImage START
+2025-01-27 05:01:16.234 +08:00 [INF] HTTP GET /api/Announcement/GetAnnBoardImage/d133fef2-4a53-43a8-874c-d66c9e7d7acb_5.png responded 200 in 31.2025 ms
+2025-01-27 05:01:20.102 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 05:01:20.104 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 05:01:20.105 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 05:01:20.121 +08:00 [INF] Received HTTP response headers after 14.3574ms - 200
+2025-01-27 05:01:20.129 +08:00 [INF] End processing HTTP request after 25.5448ms - 200
+2025-01-27 05:01:20.132 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 05:01:20.133 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnBoardAdmin responded 200 in 31.4996 ms
+2025-01-27 05:01:21.265 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 05:01:21.268 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 05:01:21.274 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 05:01:21.304 +08:00 [INF] Received HTTP response headers after 29.2908ms - 200
+2025-01-27 05:01:21.306 +08:00 [INF] End processing HTTP request after 37.7839ms - 200
+2025-01-27 05:01:21.308 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 05:01:21.309 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnBoardAdmin responded 200 in 44.9930 ms
+2025-01-27 05:01:23.982 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 05:01:23.984 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 05:01:23.990 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 05:01:24.007 +08:00 [INF] Received HTTP response headers after 13.8167ms - 200
+2025-01-27 05:01:24.010 +08:00 [INF] End processing HTTP request after 25.844ms - 200
+2025-01-27 05:01:24.013 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 05:01:24.016 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnBoardAdmin responded 200 in 34.9953 ms
+2025-01-27 05:01:24.933 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 05:01:24.935 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 05:01:24.943 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 05:01:24.959 +08:00 [INF] Received HTTP response headers after 14.068ms - 200
+2025-01-27 05:01:24.990 +08:00 [INF] End processing HTTP request after 55.2633ms - 200
+2025-01-27 05:01:24.999 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 05:01:25.008 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnBoardAdmin responded 200 in 75.1912 ms
+2025-01-27 05:01:29.026 +08:00 [INF] SpsController QuerySps START
+2025-01-27 05:01:29.049 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2025-01-27 05:01:29.056 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2025-01-27 05:01:29.105 +08:00 [INF] Received HTTP response headers after 46.726ms - 200
+2025-01-27 05:01:29.107 +08:00 [INF] End processing HTTP request after 57.2614ms - 200
+2025-01-27 05:01:29.141 +08:00 [INF] SpsController QuerySps START
+2025-01-27 05:01:29.198 +08:00 [INF] HTTP GET /api/Sps/QuerySps responded 200 in 183.0086 ms
+2025-01-27 05:01:30.235 +08:00 [INF] SpsController QuerySps START
+2025-01-27 05:01:30.256 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2025-01-27 05:01:30.266 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2025-01-27 05:01:30.351 +08:00 [INF] Received HTTP response headers after 84.2756ms - 200
+2025-01-27 05:01:30.362 +08:00 [INF] End processing HTTP request after 106.4421ms - 200
+2025-01-27 05:01:30.368 +08:00 [INF] SpsController QuerySps START
+2025-01-27 05:01:30.370 +08:00 [INF] HTTP GET /api/Sps/QuerySps responded 200 in 135.4341 ms
+2025-01-27 05:01:34.644 +08:00 [INF] SpsController QuerySps START
+2025-01-27 05:01:34.678 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2025-01-27 05:01:34.681 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2025-01-27 05:01:34.959 +08:00 [INF] Received HTTP response headers after 267.2309ms - 200
+2025-01-27 05:01:34.974 +08:00 [INF] End processing HTTP request after 295.9174ms - 200
+2025-01-27 05:01:34.976 +08:00 [INF] SpsController QuerySps START
+2025-01-27 05:01:34.977 +08:00 [INF] HTTP GET /api/Sps/QuerySps responded 200 in 334.0873 ms
+2025-01-27 05:01:48.763 +08:00 [INF] SpsController PostSps START
+2025-01-27 05:01:48.767 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/PostSps
+2025-01-27 05:01:48.769 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/PostSps
+2025-01-27 05:01:53.225 +08:00 [INF] Received HTTP response headers after 4451.0615ms - 200
+2025-01-27 05:01:53.973 +08:00 [INF] End processing HTTP request after 5205.6219ms - 200
+2025-01-27 05:01:53.998 +08:00 [INF] SpsController PostSps END
+2025-01-27 05:01:54.000 +08:00 [INF] HTTP POST /api/Sps/ responded 200 in 5263.7612 ms
+2025-01-27 05:01:55.475 +08:00 [INF] SpsController QuerySps START
+2025-01-27 05:01:55.512 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2025-01-27 05:01:55.515 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2025-01-27 05:01:55.534 +08:00 [INF] Received HTTP response headers after 17.5536ms - 200
+2025-01-27 05:01:55.790 +08:00 [INF] End processing HTTP request after 276.7503ms - 200
+2025-01-27 05:01:55.792 +08:00 [INF] SpsController QuerySps START
+2025-01-27 05:01:55.798 +08:00 [INF] HTTP GET /api/Sps/QuerySps responded 200 in 323.3822 ms
+2025-01-27 05:02:11.787 +08:00 [INF] HTTP GET /api/Announcement/GetAnnImages responded 404 in 50.1403 ms
+2025-01-27 05:05:49.845 +08:00 [INF] Now listening on: http://localhost:5000
+2025-01-27 05:05:49.863 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-27 05:05:49.868 +08:00 [INF] Hosting environment: Development
+2025-01-27 05:05:49.869 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2025-01-27 05:05:53.330 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 301.8236 ms
+2025-01-27 05:05:54.695 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 865.9789 ms
+2025-01-27 05:06:02.700 +08:00 [INF] HTTP GET /api/Announcement/GetAnnImages responded 404 in 4.9881 ms
+2025-01-27 05:06:05.479 +08:00 [INF] HTTP GET /api/Announcement/GetAnnImages responded 404 in 0.6564 ms
+2025-01-27 05:07:11.206 +08:00 [INF] HomePictureController GetAnnImages START
+2025-01-27 05:07:11.253 +08:00 [INF] HomePictureController GetAnnImages END
+2025-01-27 05:07:11.270 +08:00 [INF] HTTP GET /api/HomePicture/GetAnnImages responded 200 in 116.0911 ms
+2025-01-27 05:07:16.520 +08:00 [INF] HomePictureController GetAnnImages START
+2025-01-27 05:07:16.558 +08:00 [INF] HomePictureController GetAnnImages END
+2025-01-27 05:07:16.560 +08:00 [INF] HTTP GET /api/HomePicture/GetAnnImages responded 200 in 42.2486 ms
+2025-01-27 05:07:32.504 +08:00 [INF] HTTP PUT /api/HomePicture/ responded 404 in 0.1036 ms
+2025-01-27 05:07:53.752 +08:00 [INF] HomePictureController GetAnnImages START
+2025-01-27 05:08:42.850 +08:00 [INF] HomePictureController GetAnnImages END
+2025-01-27 05:08:42.859 +08:00 [INF] HTTP GET /api/HomePicture/GetAnnImages responded 200 in 68672.1428 ms
+2025-01-27 05:09:12.241 +08:00 [INF] Now listening on: http://localhost:5000
+2025-01-27 05:09:12.277 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-27 05:09:12.343 +08:00 [INF] Hosting environment: Development
+2025-01-27 05:09:12.346 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2025-01-27 05:09:16.119 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 331.6265 ms
+2025-01-27 05:09:17.521 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 797.7259 ms
+2025-01-27 05:09:23.513 +08:00 [INF] HomePictureController GetAnnImages START
+2025-01-27 05:09:23.573 +08:00 [INF] HomePictureController GetAnnImages END
+2025-01-27 05:09:23.591 +08:00 [INF] HTTP GET /api/HomePicture/GetAnnImages responded 200 in 2844.7488 ms
+2025-01-27 05:09:23.976 +08:00 [INF] HomePictureController GetAnnImage START
+2025-01-27 05:09:28.063 +08:00 [INF] HomePictureController GetAnnImage START
+2025-01-27 05:09:26.760 +08:00 [INF] HomePictureController GetAnnImage START
+2025-01-27 05:09:28.257 +08:00 [INF] HTTP GET /api/HomePicture/GetAnnImage/8e394045-1298-4610-9a2c-4bc9b08bc71a_00.png responded 200 in 4349.8481 ms
+2025-01-27 05:09:28.254 +08:00 [INF] HTTP GET /api/HomePicture/GetAnnImage/8e394045-1298-4610-9a2c-4bc9b08bc71a_02.png responded 200 in 191.3317 ms
+2025-01-27 05:09:28.327 +08:00 [INF] HTTP GET /api/HomePicture/GetAnnImage/8e394045-1298-4610-9a2c-4bc9b08bc71a_01.png responded 200 in 1600.3014 ms
+2025-01-27 05:09:35.477 +08:00 [INF] HTTP PUT /api/HomePicture/ responded 404 in 0.2280 ms
+2025-01-27 05:09:38.550 +08:00 [INF] HTTP PUT /api/HomePicture/ responded 404 in 0.1073 ms
+2025-01-27 05:10:44.715 +08:00 [INF] Now listening on: http://localhost:5000
+2025-01-27 05:10:44.761 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-27 05:10:44.794 +08:00 [INF] Hosting environment: Development
+2025-01-27 05:10:44.797 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2025-01-27 05:10:49.481 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 261.4351 ms
+2025-01-27 05:10:50.940 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 877.5484 ms
+2025-01-27 05:11:10.375 +08:00 [INF] HomePictureController GetAnnImages START
+2025-01-27 05:11:10.440 +08:00 [INF] HomePictureController GetAnnImages END
+2025-01-27 05:11:10.467 +08:00 [INF] HTTP GET /api/HomePicture/GetAnnImages responded 200 in 165.5325 ms
+2025-01-27 05:11:11.153 +08:00 [INF] HomePictureController GetAnnImage START
+2025-01-27 05:11:11.160 +08:00 [INF] HomePictureController GetAnnImage START
+2025-01-27 05:11:13.704 +08:00 [INF] HomePictureController GetAnnImage START
+2025-01-27 05:11:15.093 +08:00 [INF] HTTP GET /api/HomePicture/GetAnnImage/8e394045-1298-4610-9a2c-4bc9b08bc71a_01.png responded 200 in 3954.6976 ms
+2025-01-27 05:11:15.152 +08:00 [INF] HTTP GET /api/HomePicture/GetAnnImage/8e394045-1298-4610-9a2c-4bc9b08bc71a_02.png responded 200 in 1447.5591 ms
+2025-01-27 05:11:15.244 +08:00 [INF] HTTP GET /api/HomePicture/GetAnnImage/8e394045-1298-4610-9a2c-4bc9b08bc71a_00.png responded 200 in 4165.4150 ms
+2025-01-27 05:11:22.319 +08:00 [INF] HomePictureController PutAnnouncement START
+2025-01-27 05:11:22.368 +08:00 [INF] HomePictureController PutAnnouncement END
+2025-01-27 05:11:22.392 +08:00 [INF] HTTP PUT /api/HomePicture/PutAnnFrontPage responded 200 in 102.2935 ms
+2025-01-27 05:11:23.651 +08:00 [INF] HomePictureController GetAnnImages START
+2025-01-27 05:11:23.703 +08:00 [INF] HomePictureController GetAnnImages END
+2025-01-27 05:11:23.705 +08:00 [INF] HTTP GET /api/HomePicture/GetAnnImages responded 200 in 54.0627 ms
+2025-01-27 05:11:33.810 +08:00 [INF] HomePictureController GetAnnImages START
+2025-01-27 05:11:33.910 +08:00 [INF] HomePictureController GetAnnImages END
+2025-01-27 05:11:33.910 +08:00 [INF] HTTP GET /api/HomePicture/GetAnnImages responded 200 in 100.5730 ms
+2025-01-27 05:11:34.740 +08:00 [INF] HomePictureController GetAnnImage START
+2025-01-27 05:11:34.741 +08:00 [INF] HomePictureController GetAnnImage START
+2025-01-27 05:11:34.846 +08:00 [INF] HomePictureController GetAnnImage START
+2025-01-27 05:11:36.844 +08:00 [INF] HTTP GET /api/HomePicture/GetAnnImage/8e394045-1298-4610-9a2c-4bc9b08bc71a_02.png responded 200 in 1998.7652 ms
+2025-01-27 05:11:36.793 +08:00 [INF] HTTP GET /api/HomePicture/GetAnnImage/8e394045-1298-4610-9a2c-4bc9b08bc71a_01.png responded 200 in 2052.4667 ms
+2025-01-27 05:11:37.026 +08:00 [INF] HTTP GET /api/HomePicture/GetAnnImage/8e394045-1298-4610-9a2c-4bc9b08bc71a_00.png responded 200 in 2286.5472 ms
+2025-01-27 06:03:05.230 +08:00 [INF] Now listening on: http://localhost:5000
+2025-01-27 06:03:05.286 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-27 06:03:05.315 +08:00 [INF] Hosting environment: Development
+2025-01-27 06:03:05.315 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2025-01-27 06:03:11.961 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 298.0776 ms
+2025-01-27 06:03:13.298 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 911.7782 ms
+2025-01-27 06:05:14.268 +08:00 [INF] MembersController QueryMember START
+2025-01-27 06:05:14.318 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/QueryMember
+2025-01-27 06:05:14.324 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/QueryMember
+2025-01-27 06:05:15.333 +08:00 [INF] Received HTTP response headers after 1003.6803ms - 200
+2025-01-27 06:05:15.356 +08:00 [INF] End processing HTTP request after 1045.1375ms - 200
+2025-01-27 06:05:15.389 +08:00 [INF] MembersController QueryMember START
+2025-01-27 06:05:15.412 +08:00 [INF] HTTP GET /api/Members/QueryMember responded 200 in 1241.4873 ms
+2025-01-27 06:05:27.791 +08:00 [INF] MembersController QueryMember START
+2025-01-27 06:05:27.794 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/QueryMember
+2025-01-27 06:05:27.797 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/QueryMember
+2025-01-27 06:05:27.828 +08:00 [INF] Received HTTP response headers after 29.8267ms - 200
+2025-01-27 06:05:27.829 +08:00 [INF] End processing HTTP request after 35.2461ms - 200
+2025-01-27 06:05:27.833 +08:00 [INF] MembersController QueryMember START
+2025-01-27 06:05:27.837 +08:00 [INF] HTTP GET /api/Members/QueryMember responded 200 in 51.4762 ms
+2025-01-27 06:05:28.433 +08:00 [INF] MembersController QueryMember START
+2025-01-27 06:05:28.436 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/QueryMember
+2025-01-27 06:05:28.438 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/QueryMember
+2025-01-27 06:05:28.457 +08:00 [INF] Received HTTP response headers after 15.8084ms - 200
+2025-01-27 06:05:28.464 +08:00 [INF] End processing HTTP request after 28.2708ms - 200
+2025-01-27 06:05:28.467 +08:00 [INF] MembersController QueryMember START
+2025-01-27 06:05:28.470 +08:00 [INF] HTTP GET /api/Members/QueryMember responded 200 in 38.6132 ms
+2025-01-27 06:06:06.959 +08:00 [INF] MembersController QueryMember START
+2025-01-27 06:06:07.127 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/QueryMember
+2025-01-27 06:06:07.129 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/QueryMember
+2025-01-27 06:06:07.151 +08:00 [INF] Received HTTP response headers after 20.0019ms - 200
+2025-01-27 06:06:07.155 +08:00 [INF] End processing HTTP request after 27.9298ms - 200
+2025-01-27 06:06:07.160 +08:00 [INF] MembersController QueryMember START
+2025-01-27 06:06:07.163 +08:00 [INF] HTTP GET /api/Members/QueryMember responded 200 in 204.6969 ms
+2025-01-27 06:06:19.436 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 06:06:19.445 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 06:06:19.449 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin
+2025-01-27 06:06:19.509 +08:00 [INF] Received HTTP response headers after 57.6727ms - 200
+2025-01-27 06:06:19.517 +08:00 [INF] End processing HTTP request after 71.5097ms - 200
+2025-01-27 06:06:19.727 +08:00 [INF] AnnouncementController QueryAnnBoardAdmin START
+2025-01-27 06:06:19.749 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnBoardAdmin responded 200 in 323.1059 ms
+2025-01-27 06:06:20.478 +08:00 [INF] AnnouncementController GetAnnBoardImage START
+2025-01-27 06:06:20.523 +08:00 [INF] HTTP GET /api/Announcement/GetAnnBoardImage/d133fef2-4a53-43a8-874c-d66c9e7d7acb_5.png responded 200 in 62.8772 ms
+2025-01-27 06:06:26.410 +08:00 [INF] MembersController QueryMember START
+2025-01-27 06:06:26.415 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/QueryMember
+2025-01-27 06:06:26.420 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/QueryMember
+2025-01-27 06:06:26.438 +08:00 [INF] Received HTTP response headers after 17.3186ms - 200
+2025-01-27 06:06:26.441 +08:00 [INF] End processing HTTP request after 26.4883ms - 200
+2025-01-27 06:06:26.451 +08:00 [INF] MembersController QueryMember START
+2025-01-27 06:06:26.455 +08:00 [INF] HTTP GET /api/Members/QueryMember responded 200 in 47.0795 ms
+2025-01-27 06:17:40.235 +08:00 [INF] Now listening on: http://localhost:5000
+2025-01-27 06:17:40.253 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-27 06:17:40.256 +08:00 [INF] Hosting environment: Development
+2025-01-27 06:17:40.258 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2025-01-27 06:18:40.190 +08:00 [INF] Now listening on: http://localhost:5000
+2025-01-27 06:18:40.205 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-27 06:18:40.206 +08:00 [INF] Hosting environment: Development
+2025-01-27 06:18:40.208 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2025-01-27 06:18:46.191 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 602.1183 ms
+2025-01-27 06:18:51.266 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 1233.0875 ms
+2025-01-27 06:18:54.305 +08:00 [INF] MembersController QueryMember START
+2025-01-27 06:18:54.352 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/QueryMember
+2025-01-27 06:18:54.355 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/QueryMember
+2025-01-27 06:18:55.293 +08:00 [INF] Received HTTP response headers after 930.7567ms - 200
+2025-01-27 06:18:55.299 +08:00 [INF] End processing HTTP request after 956.8699ms - 200
+2025-01-27 06:18:55.336 +08:00 [INF] MembersController QueryMember START
+2025-01-27 06:18:55.358 +08:00 [INF] HTTP GET /api/Members/QueryMember responded 200 in 1179.4120 ms
+2025-01-27 06:18:56.941 +08:00 [INF] MembersController QueryMember START
+2025-01-27 06:18:56.946 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/QueryMember
+2025-01-27 06:18:56.949 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/QueryMember
+2025-01-27 06:18:56.987 +08:00 [INF] Received HTTP response headers after 35.6085ms - 200
+2025-01-27 06:18:56.998 +08:00 [INF] End processing HTTP request after 51.8091ms - 200
+2025-01-27 06:18:57.000 +08:00 [INF] MembersController QueryMember START
+2025-01-27 06:18:57.003 +08:00 [INF] HTTP GET /api/Members/QueryMember responded 200 in 70.6109 ms
+2025-01-27 06:18:57.821 +08:00 [INF] MembersController QueryMember START
+2025-01-27 06:18:57.824 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/QueryMember
+2025-01-27 06:18:57.827 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/QueryMember
+2025-01-27 06:18:57.875 +08:00 [INF] Received HTTP response headers after 40.6768ms - 200
+2025-01-27 06:18:57.879 +08:00 [INF] End processing HTTP request after 54.2404ms - 200
+2025-01-27 06:18:57.883 +08:00 [INF] MembersController QueryMember START
+2025-01-27 06:18:57.886 +08:00 [INF] HTTP GET /api/Members/QueryMember responded 200 in 66.6311 ms
+2025-01-27 06:19:01.034 +08:00 [INF] MembersController QueryMember START
+2025-01-27 06:19:01.039 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/QueryMember
+2025-01-27 06:19:01.046 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/QueryMember
+2025-01-27 06:19:01.066 +08:00 [INF] Received HTTP response headers after 16.8956ms - 200
+2025-01-27 06:19:01.074 +08:00 [INF] End processing HTTP request after 35.1782ms - 200
+2025-01-27 06:19:01.077 +08:00 [INF] MembersController QueryMember START
+2025-01-27 06:19:01.080 +08:00 [INF] HTTP GET /api/Members/QueryMember responded 200 in 47.3128 ms
+2025-01-27 06:19:01.609 +08:00 [INF] MembersController QueryMember START
+2025-01-27 06:19:01.648 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/QueryMember
+2025-01-27 06:19:01.652 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/QueryMember
+2025-01-27 06:19:01.675 +08:00 [INF] Received HTTP response headers after 19.1872ms - 200
+2025-01-27 06:19:01.702 +08:00 [INF] End processing HTTP request after 54.0681ms - 200
+2025-01-27 06:19:01.711 +08:00 [INF] MembersController QueryMember START
+2025-01-27 06:19:01.733 +08:00 [INF] HTTP GET /api/Members/QueryMember responded 200 in 131.6922 ms
+2025-01-27 06:19:46.144 +08:00 [INF] MembersController QueryMember START
+2025-01-27 06:19:46.244 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/QueryMember
+2025-01-27 06:19:46.252 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/QueryMember
+2025-01-27 06:19:46.438 +08:00 [INF] Received HTTP response headers after 184.8457ms - 200
+2025-01-27 06:19:46.506 +08:00 [INF] End processing HTTP request after 262.3068ms - 200
+2025-01-27 06:19:46.599 +08:00 [INF] MembersController QueryMember START
+2025-01-27 06:19:46.608 +08:00 [INF] HTTP GET /api/Members/QueryMember responded 200 in 465.2019 ms
+2025-01-27 06:19:53.723 +08:00 [INF] MembersController QueryMember START
+2025-01-27 06:19:53.914 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/QueryMember
+2025-01-27 06:19:53.915 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/QueryMember
+2025-01-27 06:19:53.946 +08:00 [INF] Received HTTP response headers after 29.4504ms - 200
+2025-01-27 06:19:53.952 +08:00 [INF] End processing HTTP request after 38.5201ms - 200
+2025-01-27 06:19:53.976 +08:00 [INF] MembersController QueryMember START
+2025-01-27 06:19:53.978 +08:00 [INF] HTTP GET /api/Members/QueryMember responded 200 in 254.7671 ms
+2025-01-27 06:20:03.570 +08:00 [INF] MembersController QueryMember START
+2025-01-27 06:20:03.572 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/QueryMember
+2025-01-27 06:20:03.572 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/QueryMember
+2025-01-27 06:20:03.605 +08:00 [INF] Received HTTP response headers after 29.681ms - 200
+2025-01-27 06:20:03.617 +08:00 [INF] End processing HTTP request after 45.253ms - 200
+2025-01-27 06:20:03.618 +08:00 [INF] MembersController QueryMember START
+2025-01-27 06:20:03.620 +08:00 [INF] HTTP GET /api/Members/QueryMember responded 200 in 49.9371 ms
+2025-01-27 06:20:04.213 +08:00 [INF] MembersController QueryMember START
+2025-01-27 06:20:04.219 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/QueryMember
+2025-01-27 06:20:04.221 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/QueryMember
+2025-01-27 06:20:04.239 +08:00 [INF] Received HTTP response headers after 16.7553ms - 200
+2025-01-27 06:20:04.244 +08:00 [INF] End processing HTTP request after 24.2625ms - 200
+2025-01-27 06:20:04.246 +08:00 [INF] MembersController QueryMember START
+2025-01-27 06:20:04.254 +08:00 [INF] HTTP GET /api/Members/QueryMember responded 200 in 41.9286 ms
+2025-01-27 06:20:16.069 +08:00 [INF] MembersController QueryMember START
+2025-01-27 06:20:16.075 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/QueryMember
+2025-01-27 06:20:16.076 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/QueryMember
+2025-01-27 06:20:16.099 +08:00 [INF] Received HTTP response headers after 21.9165ms - 200
+2025-01-27 06:20:16.116 +08:00 [INF] End processing HTTP request after 40.7908ms - 200
+2025-01-27 06:20:16.120 +08:00 [INF] MembersController QueryMember START
+2025-01-27 06:20:16.123 +08:00 [INF] HTTP GET /api/Members/QueryMember responded 200 in 55.3857 ms
+2025-01-27 06:20:16.572 +08:00 [INF] MembersController QueryMember START
+2025-01-27 06:20:16.574 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/QueryMember
+2025-01-27 06:20:16.580 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/QueryMember
+2025-01-27 06:20:16.600 +08:00 [INF] Received HTTP response headers after 14.0045ms - 200
+2025-01-27 06:20:16.604 +08:00 [INF] End processing HTTP request after 30.0193ms - 200
+2025-01-27 06:20:16.607 +08:00 [INF] MembersController QueryMember START
+2025-01-27 06:20:16.611 +08:00 [INF] HTTP GET /api/Members/QueryMember responded 200 in 39.0462 ms
+2025-01-27 06:20:17.835 +08:00 [INF] MembersController QueryMember START
+2025-01-27 06:20:17.837 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/QueryMember
+2025-01-27 06:20:17.838 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/QueryMember
+2025-01-27 06:20:17.865 +08:00 [INF] Received HTTP response headers after 18.413ms - 200
+2025-01-27 06:20:17.868 +08:00 [INF] End processing HTTP request after 31.0646ms - 200
+2025-01-27 06:20:17.872 +08:00 [INF] MembersController QueryMember START
+2025-01-27 06:20:17.874 +08:00 [INF] HTTP GET /api/Members/QueryMember responded 200 in 40.0234 ms
+2025-01-27 06:20:18.032 +08:00 [INF] MembersController QueryMember START
+2025-01-27 06:20:18.034 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/QueryMember
+2025-01-27 06:20:18.038 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/QueryMember
+2025-01-27 06:20:18.059 +08:00 [INF] Received HTTP response headers after 18.6258ms - 200
+2025-01-27 06:20:18.062 +08:00 [INF] End processing HTTP request after 27.2947ms - 200
+2025-01-27 06:20:18.066 +08:00 [INF] MembersController QueryMember START
+2025-01-27 06:20:18.070 +08:00 [INF] HTTP GET /api/Members/QueryMember responded 200 in 38.4429 ms
+2025-01-27 06:20:18.193 +08:00 [INF] MembersController QueryMember START
+2025-01-27 06:20:18.204 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/QueryMember
+2025-01-27 06:20:18.207 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/QueryMember
+2025-01-27 06:20:18.260 +08:00 [INF] Received HTTP response headers after 42.2664ms - 200
+2025-01-27 06:20:18.267 +08:00 [INF] End processing HTTP request after 63.237ms - 200
+2025-01-27 06:20:18.270 +08:00 [INF] MembersController QueryMember START
+2025-01-27 06:20:18.271 +08:00 [INF] HTTP GET /api/Members/QueryMember responded 200 in 79.4363 ms
+2025-01-27 06:20:18.433 +08:00 [INF] MembersController QueryMember START
+2025-01-27 06:20:18.437 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/QueryMember
+2025-01-27 06:20:18.444 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/QueryMember
+2025-01-27 06:20:18.493 +08:00 [INF] Received HTTP response headers after 47.0639ms - 200
+2025-01-27 06:20:18.540 +08:00 [INF] MembersController QueryMember START
+2025-01-27 06:20:18.545 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/QueryMember
+2025-01-27 06:20:18.546 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/QueryMember
+2025-01-27 06:20:18.543 +08:00 [INF] End processing HTTP request after 105.8499ms - 200
+2025-01-27 06:20:18.555 +08:00 [INF] MembersController QueryMember START
+2025-01-27 06:20:18.590 +08:00 [INF] Received HTTP response headers after 42.32ms - 200
+2025-01-27 06:20:18.592 +08:00 [INF] End processing HTTP request after 47.6592ms - 200
+2025-01-27 06:20:18.590 +08:00 [INF] HTTP GET /api/Members/QueryMember responded 200 in 160.4573 ms
+2025-01-27 06:20:18.594 +08:00 [INF] MembersController QueryMember START
+2025-01-27 06:20:18.605 +08:00 [INF] HTTP GET /api/Members/QueryMember responded 200 in 65.3478 ms
+2025-01-27 06:20:18.734 +08:00 [INF] MembersController QueryMember START
+2025-01-27 06:20:18.767 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/QueryMember
+2025-01-27 06:20:18.770 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/QueryMember
+2025-01-27 06:20:18.800 +08:00 [INF] Received HTTP response headers after 23.9885ms - 200
+2025-01-27 06:20:18.813 +08:00 [INF] End processing HTTP request after 46.5987ms - 200
+2025-01-27 06:20:18.817 +08:00 [INF] MembersController QueryMember START
+2025-01-27 06:20:18.819 +08:00 [INF] HTTP GET /api/Members/QueryMember responded 200 in 85.4466 ms
+2025-01-27 06:20:18.889 +08:00 [INF] MembersController QueryMember START
+2025-01-27 06:20:19.014 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/QueryMember
+2025-01-27 06:20:19.061 +08:00 [INF] MembersController QueryMember START
+2025-01-27 06:20:19.080 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/QueryMember
+2025-01-27 06:20:19.088 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/QueryMember
+2025-01-27 06:20:19.078 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/QueryMember
+2025-01-27 06:20:19.500 +08:00 [INF] Received HTTP response headers after 409.0019ms - 200
+2025-01-27 06:20:19.505 +08:00 [INF] End processing HTTP request after 424.1393ms - 200
+2025-01-27 06:20:19.507 +08:00 [INF] Received HTTP response headers after 391.1297ms - 200
+2025-01-27 06:20:19.520 +08:00 [INF] End processing HTTP request after 505.9571ms - 200
+2025-01-27 06:20:19.540 +08:00 [INF] MembersController QueryMember START
+2025-01-27 06:20:19.540 +08:00 [INF] MembersController QueryMember START
+2025-01-27 06:20:19.544 +08:00 [INF] HTTP GET /api/Members/QueryMember responded 200 in 483.1408 ms
+2025-01-27 06:20:19.545 +08:00 [INF] HTTP GET /api/Members/QueryMember responded 200 in 655.8521 ms
+2025-01-27 06:21:06.788 +08:00 [INF] MembersController QueryMember START
+2025-01-27 06:21:06.790 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/QueryMember
+2025-01-27 06:21:06.791 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/QueryMember
+2025-01-27 06:21:06.818 +08:00 [INF] Received HTTP response headers after 25.0752ms - 200
+2025-01-27 06:21:06.821 +08:00 [INF] End processing HTTP request after 30.2665ms - 200
+2025-01-27 06:21:06.824 +08:00 [INF] MembersController QueryMember START
+2025-01-27 06:21:06.839 +08:00 [INF] HTTP GET /api/Members/QueryMember responded 200 in 52.0701 ms
+2025-01-27 06:21:07.817 +08:00 [INF] MembersController QueryMember START
+2025-01-27 06:21:07.826 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/QueryMember
+2025-01-27 06:21:07.828 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/QueryMember
+2025-01-27 06:21:07.871 +08:00 [INF] Received HTTP response headers after 24.9071ms - 200
+2025-01-27 06:21:07.883 +08:00 [INF] End processing HTTP request after 56.7102ms - 200
+2025-01-27 06:21:07.888 +08:00 [INF] MembersController QueryMember START
+2025-01-27 06:21:07.891 +08:00 [INF] HTTP GET /api/Members/QueryMember responded 200 in 74.0950 ms
+2025-01-27 06:24:54.193 +08:00 [INF] MembersController QueryMember START
+2025-01-27 06:24:54.213 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/QueryMember
+2025-01-27 06:24:54.214 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/QueryMember
+2025-01-27 06:24:54.495 +08:00 [INF] Received HTTP response headers after 278.9465ms - 200
+2025-01-27 06:24:54.506 +08:00 [INF] End processing HTTP request after 292.7348ms - 200
+2025-01-27 06:24:54.509 +08:00 [INF] MembersController QueryMember START
+2025-01-27 06:24:54.510 +08:00 [INF] HTTP GET /api/Members/QueryMember responded 200 in 318.0596 ms
+2025-01-27 06:24:58.269 +08:00 [INF] MembersController QueryMember START
+2025-01-27 06:24:58.271 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/QueryMember
+2025-01-27 06:24:58.274 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/QueryMember
+2025-01-27 06:24:58.306 +08:00 [INF] Received HTTP response headers after 19.4499ms - 200
+2025-01-27 06:24:58.309 +08:00 [INF] End processing HTTP request after 37.5552ms - 200
+2025-01-27 06:24:58.316 +08:00 [INF] MembersController QueryMember START
+2025-01-27 06:24:58.319 +08:00 [INF] HTTP GET /api/Members/QueryMember responded 200 in 50.6005 ms
+2025-01-27 06:25:04.821 +08:00 [INF] MembersController QueryMember START
+2025-01-27 06:25:04.830 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/QueryMember
+2025-01-27 06:25:04.834 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/QueryMember
+2025-01-27 06:25:04.876 +08:00 [INF] Received HTTP response headers after 37.9143ms - 200
+2025-01-27 06:25:04.880 +08:00 [INF] End processing HTTP request after 49.8237ms - 200
+2025-01-27 06:25:04.884 +08:00 [INF] MembersController QueryMember START
+2025-01-27 06:25:04.886 +08:00 [INF] HTTP GET /api/Members/QueryMember responded 200 in 65.6266 ms
+2025-01-27 06:25:12.651 +08:00 [INF] MembersController QueryMember START
+2025-01-27 06:25:12.658 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/QueryMember
+2025-01-27 06:25:12.661 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/QueryMember
+2025-01-27 06:25:12.699 +08:00 [INF] Received HTTP response headers after 34.2565ms - 200
+2025-01-27 06:25:12.714 +08:00 [INF] End processing HTTP request after 55.8878ms - 200
+2025-01-27 06:25:12.723 +08:00 [INF] MembersController QueryMember START
+2025-01-27 06:25:12.725 +08:00 [INF] HTTP GET /api/Members/QueryMember responded 200 in 76.2162 ms
+2025-01-27 06:55:23.589 +08:00 [INF] Now listening on: http://localhost:5000
+2025-01-27 06:55:24.671 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-27 06:55:24.689 +08:00 [INF] Hosting environment: Development
+2025-01-27 06:55:24.693 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2025-01-27 06:55:25.376 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 220.2999 ms
+2025-01-27 06:55:28.414 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 2501.8147 ms
+2025-01-27 06:55:34.121 +08:00 [INF] HTTP GET /api/Wallet/QueryWallet responded 200 in 103.3509 ms
+2025-01-27 06:55:41.980 +08:00 [INF] HTTP GET /api/Wallet/QueryWallet responded 200 in 6.0206 ms
+2025-01-27 06:56:50.041 +08:00 [INF] Now listening on: http://localhost:5000
+2025-01-27 06:56:50.119 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-27 06:56:50.133 +08:00 [INF] Hosting environment: Development
+2025-01-27 06:56:50.135 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2025-01-27 06:56:52.914 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 366.1606 ms
+2025-01-27 06:56:54.248 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 844.5510 ms
+2025-01-27 06:56:57.647 +08:00 [INF] HTTP GET /api/Wallet/QueryWallet responded 200 in 106.3141 ms
+2025-01-27 06:57:00.093 +08:00 [INF] HTTP GET /api/Wallet/QueryWallet responded 200 in 4.2930 ms
+2025-01-27 06:57:00.727 +08:00 [INF] HTTP GET /api/Wallet/QueryWallet responded 200 in 2.7456 ms
+2025-01-27 06:57:01.220 +08:00 [INF] HTTP GET /api/Wallet/QueryWallet responded 200 in 0.6301 ms
+2025-01-27 06:58:00.859 +08:00 [INF] Now listening on: http://localhost:5000
+2025-01-27 06:58:00.876 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-27 06:58:00.877 +08:00 [INF] Hosting environment: Development
+2025-01-27 06:58:00.877 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2025-01-27 06:58:04.951 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 401.3429 ms
+2025-01-27 06:58:06.592 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 906.6815 ms
+2025-01-27 06:58:23.022 +08:00 [INF] WalletController QueryWallet START
+2025-01-27 06:58:23.061 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/MemberMgmt/WalletService/QueryWallet
+2025-01-27 06:58:23.064 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/MemberMgmt/WalletService/QueryWallet
+2025-01-27 06:58:24.056 +08:00 [INF] Received HTTP response headers after 987.2817ms - 200
+2025-01-27 06:58:24.065 +08:00 [INF] End processing HTTP request after 1010.205ms - 200
+2025-01-27 06:58:24.101 +08:00 [INF] WalletController QueryWallet START
+2025-01-27 06:58:24.121 +08:00 [INF] HTTP GET /api/Wallet/QueryWallet responded 200 in 1187.6574 ms
+2025-01-27 06:58:46.240 +08:00 [INF] WalletController QueryWallet START
+2025-01-27 06:58:46.245 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/MemberMgmt/WalletService/QueryWallet
+2025-01-27 06:58:46.248 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/MemberMgmt/WalletService/QueryWallet
+2025-01-27 06:58:46.291 +08:00 [INF] Received HTTP response headers after 39.4934ms - 200
+2025-01-27 06:58:46.294 +08:00 [INF] End processing HTTP request after 48.7868ms - 200
+2025-01-27 07:00:06.145 +08:00 [INF] Now listening on: http://localhost:5000
+2025-01-27 07:00:06.159 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-27 07:00:06.160 +08:00 [INF] Hosting environment: Development
+2025-01-27 07:00:06.160 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2025-01-27 07:00:08.589 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 465.3975 ms
+2025-01-27 07:00:10.411 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 1120.0091 ms
+2025-01-27 07:00:16.894 +08:00 [INF] WalletController QueryWallet START
+2025-01-27 07:00:16.935 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/MemberMgmt/WalletService/QueryWallet
+2025-01-27 07:00:16.940 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/MemberMgmt/WalletService/QueryWallet
+2025-01-27 07:00:17.814 +08:00 [INF] Received HTTP response headers after 860.2235ms - 200
+2025-01-27 07:00:17.860 +08:00 [INF] End processing HTTP request after 932.4927ms - 200
+2025-01-27 07:00:21.638 +08:00 [INF] WalletController QueryWallet START
+2025-01-27 07:00:21.675 +08:00 [INF] HTTP GET /api/Wallet/QueryWallet responded 200 in 4882.5980 ms
+2025-01-27 07:00:30.283 +08:00 [INF] WalletController QueryWallet START
+2025-01-27 07:00:30.286 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/MemberMgmt/WalletService/QueryWallet
+2025-01-27 07:00:30.289 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/MemberMgmt/WalletService/QueryWallet
+2025-01-27 07:00:30.345 +08:00 [INF] Received HTTP response headers after 48.76ms - 200
+2025-01-27 07:00:30.350 +08:00 [INF] End processing HTTP request after 63.6652ms - 200
+2025-01-27 07:00:30.353 +08:00 [INF] WalletController QueryWallet START
+2025-01-27 07:00:30.357 +08:00 [INF] HTTP GET /api/Wallet/QueryWallet responded 200 in 80.4309 ms
+2025-01-27 07:00:30.769 +08:00 [INF] WalletController QueryWallet START
+2025-01-27 07:00:30.771 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/MemberMgmt/WalletService/QueryWallet
+2025-01-27 07:00:30.772 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/MemberMgmt/WalletService/QueryWallet
+2025-01-27 07:00:30.790 +08:00 [INF] Received HTTP response headers after 16.8421ms - 200
+2025-01-27 07:00:30.795 +08:00 [INF] End processing HTTP request after 24.1057ms - 200
+2025-01-27 07:00:30.799 +08:00 [INF] WalletController QueryWallet START
+2025-01-27 07:00:30.801 +08:00 [INF] HTTP GET /api/Wallet/QueryWallet responded 200 in 34.8123 ms
+2025-01-27 07:00:32.189 +08:00 [INF] WalletController QueryWallet START
+2025-01-27 07:00:32.192 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/MemberMgmt/WalletService/QueryWallet
+2025-01-27 07:00:32.198 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/MemberMgmt/WalletService/QueryWallet
+2025-01-27 07:00:32.217 +08:00 [INF] Received HTTP response headers after 17.0089ms - 200
+2025-01-27 07:00:32.227 +08:00 [INF] End processing HTTP request after 35.0127ms - 200
+2025-01-27 07:00:32.234 +08:00 [INF] WalletController QueryWallet START
+2025-01-27 07:00:32.237 +08:00 [INF] HTTP GET /api/Wallet/QueryWallet responded 200 in 47.6336 ms
+2025-01-27 07:00:32.706 +08:00 [INF] WalletController QueryWallet START
+2025-01-27 07:00:32.708 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/MemberMgmt/WalletService/QueryWallet
+2025-01-27 07:00:32.709 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/MemberMgmt/WalletService/QueryWallet
+2025-01-27 07:00:32.749 +08:00 [INF] Received HTTP response headers after 35.2275ms - 200
+2025-01-27 07:00:32.755 +08:00 [INF] End processing HTTP request after 47.2425ms - 200
+2025-01-27 07:00:32.761 +08:00 [INF] WalletController QueryWallet START
+2025-01-27 07:00:32.766 +08:00 [INF] HTTP GET /api/Wallet/QueryWallet responded 200 in 60.1200 ms
+2025-01-27 07:00:32.862 +08:00 [INF] WalletController QueryWallet START
+2025-01-27 07:00:32.865 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/MemberMgmt/WalletService/QueryWallet
+2025-01-27 07:00:32.868 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/MemberMgmt/WalletService/QueryWallet
+2025-01-27 07:00:32.891 +08:00 [INF] Received HTTP response headers after 19.3459ms - 200
+2025-01-27 07:00:32.893 +08:00 [INF] End processing HTTP request after 28.6878ms - 200
+2025-01-27 07:00:32.896 +08:00 [INF] WalletController QueryWallet START
+2025-01-27 07:00:32.904 +08:00 [INF] HTTP GET /api/Wallet/QueryWallet responded 200 in 42.7696 ms
+2025-01-27 07:00:36.066 +08:00 [INF] WalletController QueryWallet START
+2025-01-27 07:00:36.072 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/MemberMgmt/WalletService/QueryWallet
+2025-01-27 07:00:36.073 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/MemberMgmt/WalletService/QueryWallet
+2025-01-27 07:00:36.094 +08:00 [INF] Received HTTP response headers after 18.9981ms - 200
+2025-01-27 07:00:36.100 +08:00 [INF] End processing HTTP request after 28.4523ms - 200
+2025-01-27 07:00:36.104 +08:00 [INF] WalletController QueryWallet START
+2025-01-27 07:00:36.106 +08:00 [INF] HTTP GET /api/Wallet/QueryWallet responded 200 in 44.7773 ms
+2025-01-27 07:00:36.523 +08:00 [INF] WalletController QueryWallet START
+2025-01-27 07:00:36.526 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/MemberMgmt/WalletService/QueryWallet
+2025-01-27 07:00:36.527 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/MemberMgmt/WalletService/QueryWallet
+2025-01-27 07:00:36.550 +08:00 [INF] Received HTTP response headers after 22.0148ms - 200
+2025-01-27 07:00:36.552 +08:00 [INF] End processing HTTP request after 26.2395ms - 200
+2025-01-27 07:00:36.554 +08:00 [INF] WalletController QueryWallet START
+2025-01-27 07:00:36.560 +08:00 [INF] HTTP GET /api/Wallet/QueryWallet responded 200 in 38.5197 ms
+2025-01-27 07:00:37.213 +08:00 [INF] WalletController QueryWallet START
+2025-01-27 07:00:37.216 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/MemberMgmt/WalletService/QueryWallet
+2025-01-27 07:00:37.220 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/MemberMgmt/WalletService/QueryWallet
+2025-01-27 07:00:37.238 +08:00 [INF] Received HTTP response headers after 17.1571ms - 200
+2025-01-27 07:00:37.242 +08:00 [INF] End processing HTTP request after 26.1156ms - 200
+2025-01-27 07:00:37.247 +08:00 [INF] WalletController QueryWallet START
+2025-01-27 07:00:37.248 +08:00 [INF] HTTP GET /api/Wallet/QueryWallet responded 200 in 35.7093 ms
+2025-01-27 07:00:39.393 +08:00 [INF] WalletController QueryWallet START
+2025-01-27 07:00:39.394 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/MemberMgmt/WalletService/QueryWallet
+2025-01-27 07:00:39.401 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/MemberMgmt/WalletService/QueryWallet
+2025-01-27 07:00:39.424 +08:00 [INF] Received HTTP response headers after 21.5525ms - 200
+2025-01-27 07:00:39.434 +08:00 [INF] End processing HTTP request after 39.7388ms - 200
+2025-01-27 07:00:39.438 +08:00 [INF] WalletController QueryWallet START
+2025-01-27 07:00:39.439 +08:00 [INF] HTTP GET /api/Wallet/QueryWallet responded 200 in 47.6322 ms
+2025-01-27 07:03:31.820 +08:00 [INF] Now listening on: http://localhost:5000
+2025-01-27 07:03:31.852 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-27 07:03:31.886 +08:00 [INF] Hosting environment: Development
+2025-01-27 07:03:31.890 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2025-01-27 07:03:35.083 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 374.2002 ms
+2025-01-27 07:03:38.763 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 695.5878 ms
+2025-01-27 07:03:58.719 +08:00 [INF] WalletController QueryWallet START
+2025-01-27 07:03:58.780 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/MemberMgmt/WalletService/QueryWallet
+2025-01-27 07:03:58.800 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/MemberMgmt/WalletService/QueryWallet
+2025-01-27 07:03:59.462 +08:00 [INF] Received HTTP response headers after 650.1316ms - 200
+2025-01-27 07:03:59.469 +08:00 [INF] End processing HTTP request after 713.3478ms - 200
+2025-01-27 07:03:59.517 +08:00 [INF] WalletController QueryWallet START
+2025-01-27 07:03:59.539 +08:00 [INF] HTTP GET /api/Wallet/QueryWallet responded 200 in 900.1890 ms
+2025-01-27 07:04:10.160 +08:00 [INF] WalletController QueryWallet START
+2025-01-27 07:04:10.171 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/MemberMgmt/WalletService/QueryWallet
+2025-01-27 07:04:10.174 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/MemberMgmt/WalletService/QueryWallet
+2025-01-27 07:04:10.218 +08:00 [INF] Received HTTP response headers after 41.5357ms - 200
+2025-01-27 07:04:10.219 +08:00 [INF] End processing HTTP request after 48.4974ms - 200
+2025-01-27 07:04:10.227 +08:00 [INF] WalletController QueryWallet START
+2025-01-27 07:04:10.230 +08:00 [INF] HTTP GET /api/Wallet/QueryWallet responded 200 in 86.9267 ms
+2025-01-27 07:04:13.145 +08:00 [INF] WalletController QueryWallet START
+2025-01-27 07:04:13.147 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/MemberMgmt/WalletService/QueryWallet
+2025-01-27 07:04:13.162 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/MemberMgmt/WalletService/QueryWallet
+2025-01-27 07:04:13.189 +08:00 [INF] Received HTTP response headers after 23.1372ms - 200
+2025-01-27 07:04:13.192 +08:00 [INF] End processing HTTP request after 44.4497ms - 200
+2025-01-27 07:04:13.195 +08:00 [INF] WalletController QueryWallet START
+2025-01-27 07:04:13.198 +08:00 [INF] HTTP GET /api/Wallet/QueryWallet responded 200 in 55.2210 ms
+2025-01-27 07:04:16.877 +08:00 [INF] WalletController QueryWallet START
+2025-01-27 07:04:16.879 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/MemberMgmt/WalletService/QueryWallet
+2025-01-27 07:04:16.882 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/MemberMgmt/WalletService/QueryWallet
+2025-01-27 07:04:16.915 +08:00 [INF] Received HTTP response headers after 20.489ms - 200
+2025-01-27 07:04:16.917 +08:00 [INF] End processing HTTP request after 38.3116ms - 200
+2025-01-27 07:04:16.920 +08:00 [INF] WalletController QueryWallet START
+2025-01-27 07:04:16.924 +08:00 [INF] HTTP GET /api/Wallet/QueryWallet responded 200 in 55.9231 ms
+2025-01-27 07:29:27.716 +08:00 [INF] Now listening on: http://localhost:5000
+2025-01-27 07:29:27.732 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-27 07:29:27.733 +08:00 [INF] Hosting environment: Development
+2025-01-27 07:29:27.734 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2025-01-27 07:29:30.780 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 358.1811 ms
+2025-01-27 07:29:32.738 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 610.8003 ms
+2025-01-27 07:30:15.185 +08:00 [INF] SpsController QuerySps START
+2025-01-27 07:30:15.558 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2025-01-27 07:30:15.563 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2025-01-27 07:30:16.198 +08:00 [INF] Received HTTP response headers after 627.0088ms - 200
+2025-01-27 07:30:16.203 +08:00 [INF] End processing HTTP request after 651.8679ms - 200
+2025-01-27 07:30:16.234 +08:00 [INF] SpsController QuerySps START
+2025-01-27 07:30:16.255 +08:00 [INF] HTTP GET /api/Sps/QuerySps responded 200 in 1276.1026 ms
+2025-01-27 07:31:33.932 +08:00 [INF] SpsController PostSps START
+2025-01-27 07:31:33.937 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/PostSps
+2025-01-27 07:31:33.940 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/PostSps
+2025-01-27 07:31:40.417 +08:00 [INF] Received HTTP response headers after 6466.8499ms - 200
+2025-01-27 07:31:40.424 +08:00 [INF] End processing HTTP request after 6486.6134ms - 200
+2025-01-27 07:31:40.428 +08:00 [INF] SpsController PostSps END
+2025-01-27 07:31:40.432 +08:00 [INF] HTTP POST /api/Sps/ responded 200 in 6529.6710 ms
+2025-01-27 07:31:41.917 +08:00 [INF] SpsController QuerySps START
+2025-01-27 07:31:41.967 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2025-01-27 07:31:41.968 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/SpsService/QuerySps
+2025-01-27 07:31:42.011 +08:00 [INF] Received HTTP response headers after 42.3466ms - 200
+2025-01-27 07:31:42.014 +08:00 [INF] End processing HTTP request after 46.7339ms - 200
+2025-01-27 07:31:42.017 +08:00 [INF] SpsController QuerySps START
+2025-01-27 07:31:42.021 +08:00 [INF] HTTP GET /api/Sps/QuerySps responded 200 in 107.2972 ms
+2025-01-27 07:32:11.696 +08:00 [INF] HomeSettingController GetHomeVideo START
+2025-01-27 07:32:11.759 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/HomeSettingService/GetHomeVideo
+2025-01-27 07:32:11.777 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/HomeSettingService/GetHomeVideo
+2025-01-27 07:32:11.809 +08:00 [INF] Received HTTP response headers after 30.8632ms - 404
+2025-01-27 07:32:11.823 +08:00 [INF] End processing HTTP request after 63.7913ms - 404
+2025-01-27 07:32:11.905 +08:00 [INF] HomeSettingController GetHomeVideo END
+2025-01-27 07:32:11.909 +08:00 [INF] HTTP GET /api/HomeSetting/GetHomeVideo responded 200 in 217.7977 ms
+2025-01-27 07:33:12.498 +08:00 [INF] HomeSettingController GetHomeVideo START
+2025-01-27 07:33:12.536 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/HomeSettingService/GetHomeVideo
+2025-01-27 07:33:12.537 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/HomeSettingService/GetHomeVideo
+2025-01-27 07:33:12.560 +08:00 [INF] Received HTTP response headers after 20.51ms - 404
+2025-01-27 07:33:12.561 +08:00 [INF] End processing HTTP request after 25.2638ms - 404
+2025-01-27 07:33:12.613 +08:00 [INF] HomeSettingController GetHomeVideo END
+2025-01-27 07:33:12.619 +08:00 [INF] HTTP GET /api/HomeSetting/GetHomeVideo responded 200 in 40480.1427 ms
+2025-01-27 07:33:58.930 +08:00 [INF] Now listening on: http://localhost:5000
+2025-01-27 07:33:59.014 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-27 07:33:59.016 +08:00 [INF] Hosting environment: Development
+2025-01-27 07:33:59.016 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2025-01-27 07:34:01.880 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 319.8246 ms
+2025-01-27 07:34:03.146 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 827.6399 ms
+2025-01-27 07:34:16.591 +08:00 [INF] HomeSettingController GetHomeVideo START
+2025-01-27 07:34:16.641 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/HomeMgmt/HomeSettingService/GetHomeVideo
+2025-01-27 07:34:16.647 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/HomeMgmt/HomeSettingService/GetHomeVideo
+2025-01-27 07:34:16.771 +08:00 [INF] Received HTTP response headers after 110.9074ms - 404
+2025-01-27 07:34:17.304 +08:00 [INF] End processing HTTP request after 669.7667ms - 404
+2025-01-27 07:34:17.399 +08:00 [INF] HomeSettingController GetHomeVideo END
+2025-01-27 07:34:17.414 +08:00 [INF] HTTP GET /api/HomeSetting/GetHomeVideo responded 200 in 3812.6069 ms
+2025-01-27 07:35:21.754 +08:00 [INF] Now listening on: http://localhost:5000
+2025-01-27 07:35:22.120 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-27 07:35:22.182 +08:00 [INF] Hosting environment: Development
+2025-01-27 07:35:22.184 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2025-01-27 07:35:25.960 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 326.6293 ms
+2025-01-27 07:35:27.355 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 880.9354 ms
+2025-01-27 07:36:25.516 +08:00 [INF] HomeSettingController GetHomeVideo START
+2025-01-27 07:36:25.625 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/HomeMgmt/HomeSettingService/GetHomeVideo
+2025-01-27 07:36:25.633 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/HomeMgmt/HomeSettingService/GetHomeVideo
+2025-01-27 07:36:29.959 +08:00 [INF] Received HTTP response headers after 4319.5446ms - 200
+2025-01-27 07:36:29.974 +08:00 [INF] End processing HTTP request after 4362.4264ms - 200
+2025-01-27 07:36:29.996 +08:00 [INF] HomeSettingController GetHomeVideo END
+2025-01-27 07:36:30.013 +08:00 [INF] HTTP GET /api/HomeSetting/GetHomeVideo responded 200 in 4539.7107 ms
+2025-01-27 07:36:37.482 +08:00 [INF] HomeSettingController GetHomeVideo START
+2025-01-27 07:36:37.519 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/HomeMgmt/HomeSettingService/GetHomeVideo
+2025-01-27 07:36:37.527 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/HomeMgmt/HomeSettingService/GetHomeVideo
+2025-01-27 07:37:21.322 +08:00 [INF] Received HTTP response headers after 43794.2432ms - 200
+2025-01-27 07:37:21.326 +08:00 [INF] End processing HTTP request after 43806.6855ms - 200
+2025-01-27 07:37:21.336 +08:00 [INF] HomeSettingController GetHomeVideo END
+2025-01-27 07:37:21.344 +08:00 [INF] HTTP GET /api/HomeSetting/GetHomeVideo responded 200 in 43864.1607 ms
+2025-01-27 07:37:37.560 +08:00 [INF] HomePictureController GetAnnImages START
+2025-01-27 07:37:37.688 +08:00 [INF] HomePictureController GetAnnImages END
+2025-01-27 07:37:37.697 +08:00 [INF] HTTP GET /api/HomePicture/GetAnnImages responded 200 in 145.0774 ms
+2025-01-27 08:22:16.136 +08:00 [INF] Now listening on: http://localhost:5000
+2025-01-27 08:22:16.150 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-27 08:22:16.152 +08:00 [INF] Hosting environment: Development
+2025-01-27 08:22:16.153 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2025-01-27 08:22:22.767 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 533.3404 ms
+2025-01-27 08:22:25.100 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 755.4724 ms
+2025-01-27 08:22:45.409 +08:00 [INF] MembersController GetMember START
+2025-01-27 08:22:45.459 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/GetMember
+2025-01-27 08:22:45.463 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/MemberMgmt/MembersService/GetMember
+2025-01-27 08:22:47.339 +08:00 [INF] Received HTTP response headers after 1866.397ms - 200
+2025-01-27 08:22:47.353 +08:00 [INF] End processing HTTP request after 1901.8683ms - 200
+2025-01-27 08:22:47.395 +08:00 [INF] MembersController GetMember START
+2025-01-27 08:22:47.421 +08:00 [INF] HTTP GET /api/Members/1 responded 200 in 2099.0145 ms

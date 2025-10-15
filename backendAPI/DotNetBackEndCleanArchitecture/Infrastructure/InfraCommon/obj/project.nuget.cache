@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "dgSpecHash": "zOxX8lFFuSRIpVTTWRHZbnCHtHuVVKUD1Xthjbb0M4SyB0yhsXy+GhQwVndGk8tp2t4nFCTtzwd0vUVCHYCpNQ==",
+  "success": true,
+  "projectFilePath": "D:\\Project\\DotNetBackEnd\\DotNetBackEndCleanArchitecture\\DotNetBackEndCleanArchitecture\\Infrastructure\\InfraCommon\\InfraCommon.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\One\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\One\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
+    "C:\\Users\\One\\.nuget\\packages\\dapper\\2.1.24\\dapper.2.1.24.nupkg.sha512",
+    "C:\\Users\\One\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\One\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.1\\microsoft.extensions.logging.abstractions.7.0.1.nupkg.sha512",
+    "C:\\Users\\One\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\One\\.nuget\\packages\\mysqlclient\\5.5.2\\mysqlclient.5.5.2.nupkg.sha512",
+    "C:\\Users\\One\\.nuget\\packages\\mysqlconnector\\2.3.5\\mysqlconnector.2.3.5.nupkg.sha512",
+    "C:\\Users\\One\\.nuget\\packages\\optimizeddatareader\\1.1.2\\optimizeddatareader.1.1.2.nupkg.sha512",
+    "C:\\Users\\One\\.nuget\\packages\\savage.data\\5.5.2\\savage.data.5.5.2.nupkg.sha512",
+    "C:\\Users\\One\\.nuget\\packages\\swashbuckle.aspnetcore.annotations\\6.5.0\\swashbuckle.aspnetcore.annotations.6.5.0.nupkg.sha512",
+    "C:\\Users\\One\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "C:\\Users\\One\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

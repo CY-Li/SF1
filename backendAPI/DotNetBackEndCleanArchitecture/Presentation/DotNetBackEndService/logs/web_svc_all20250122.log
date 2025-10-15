@@ -1,0 +1,175 @@
+2025-01-22 17:23:14.309 +08:00 [INF] Now listening on: http://localhost:5001
+2025-01-22 17:23:14.325 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-22 17:23:14.328 +08:00 [INF] Hosting environment: Development
+2025-01-22 17:23:14.332 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2025-01-22 17:23:44.373 +08:00 [INF] HTTP GET / responded 404 in 4.1796 ms
+2025-01-22 17:28:06.422 +08:00 [INF] SpsServiceController QuerySps START
+2025-01-22 17:28:06.531 +08:00 [INF] SpsRepository QuerySps START
+2025-01-22 17:28:07.586 +08:00 [INF] SpsRepository QuerySps END
+2025-01-22 17:28:07.589 +08:00 [INF] SpsServiceController QuerySps END
+2025-01-22 17:28:07.632 +08:00 [INF] HTTP POST /api/SystemMgmt/SpsService/QuerySps responded 200 in 1461.9971 ms
+2025-01-22 17:28:19.830 +08:00 [INF] SpsServiceController PutSps START
+2025-01-22 17:28:19.838 +08:00 [INF] SpsRepository PutSps START
+2025-01-22 17:28:19.867 +08:00 [INF] SpsRepository PutSps END
+2025-01-22 17:28:19.870 +08:00 [INF] SpsServiceController PutSps END
+2025-01-22 17:28:19.879 +08:00 [INF] HTTP POST /api/SystemMgmt/SpsService/PutSps responded 200 in 74.8017 ms
+2025-01-22 17:28:21.523 +08:00 [INF] SpsServiceController QuerySps START
+2025-01-22 17:28:21.526 +08:00 [INF] SpsRepository QuerySps START
+2025-01-22 17:28:21.536 +08:00 [INF] SpsRepository QuerySps END
+2025-01-22 17:28:21.537 +08:00 [INF] SpsServiceController QuerySps END
+2025-01-22 17:28:21.540 +08:00 [INF] HTTP POST /api/SystemMgmt/SpsService/QuerySps responded 200 in 22.9887 ms
+2025-01-22 17:31:45.513 +08:00 [INF] SpsServiceController QuerySps START
+2025-01-22 17:31:45.522 +08:00 [INF] SpsRepository QuerySps START
+2025-01-22 17:31:45.531 +08:00 [INF] SpsRepository QuerySps END
+2025-01-22 17:31:45.532 +08:00 [INF] SpsServiceController QuerySps END
+2025-01-22 17:31:45.534 +08:00 [INF] HTTP POST /api/SystemMgmt/SpsService/QuerySps responded 200 in 30.6138 ms
+2025-01-22 17:31:48.970 +08:00 [INF] SpsServiceController QuerySps START
+2025-01-22 17:31:48.971 +08:00 [INF] SpsRepository QuerySps START
+2025-01-22 17:31:49.007 +08:00 [INF] SpsRepository QuerySps END
+2025-01-22 17:31:49.292 +08:00 [INF] SpsServiceController QuerySps END
+2025-01-22 17:31:49.305 +08:00 [INF] HTTP POST /api/SystemMgmt/SpsService/QuerySps responded 200 in 336.1473 ms
+2025-01-22 17:36:12.754 +08:00 [INF] SpsServiceController QuerySps START
+2025-01-22 17:36:12.827 +08:00 [INF] SpsRepository QuerySps START
+2025-01-22 17:36:12.831 +08:00 [INF] SpsRepository QuerySps END
+2025-01-22 17:36:12.832 +08:00 [INF] SpsServiceController QuerySps END
+2025-01-22 17:36:12.834 +08:00 [INF] HTTP POST /api/SystemMgmt/SpsService/QuerySps responded 200 in 83.3264 ms
+2025-01-22 17:36:17.785 +08:00 [INF] SpsServiceController QuerySps START
+2025-01-22 17:36:17.832 +08:00 [INF] SpsRepository QuerySps START
+2025-01-22 17:36:17.848 +08:00 [INF] SpsRepository QuerySps END
+2025-01-22 17:36:17.849 +08:00 [INF] SpsServiceController QuerySps END
+2025-01-22 17:36:17.850 +08:00 [INF] HTTP POST /api/SystemMgmt/SpsService/QuerySps responded 200 in 66.1289 ms
+2025-01-22 17:39:29.820 +08:00 [INF] Now listening on: http://localhost:5001
+2025-01-22 17:39:29.836 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-22 17:39:29.838 +08:00 [INF] Hosting environment: Development
+2025-01-22 17:39:29.839 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2025-01-22 17:39:35.133 +08:00 [INF] HTTP GET / responded 404 in 15.6765 ms
+2025-01-22 17:39:59.325 +08:00 [INF] SpsServiceController PostSps START
+2025-01-22 17:39:59.332 +08:00 [INF] SpsRepository PostSps START
+2025-01-22 17:39:59.657 +08:00 [INF] SpsServiceController PostSps END
+2025-01-22 17:39:59.692 +08:00 [INF] HTTP POST /api/SystemMgmt/SpsService/PostSps responded 200 in 516.3945 ms
+2025-01-22 17:40:01.882 +08:00 [INF] SpsServiceController QuerySps START
+2025-01-22 17:40:01.886 +08:00 [INF] SpsRepository QuerySps START
+2025-01-22 17:40:01.942 +08:00 [INF] SpsRepository QuerySps END
+2025-01-22 17:40:01.944 +08:00 [INF] SpsServiceController QuerySps END
+2025-01-22 17:40:01.961 +08:00 [INF] HTTP POST /api/SystemMgmt/SpsService/QuerySps responded 200 in 119.9064 ms
+2025-01-22 17:40:51.766 +08:00 [INF] SpsServiceController PutSps START
+2025-01-22 17:40:51.770 +08:00 [INF] SpsRepository PutSps START
+2025-01-22 17:40:51.784 +08:00 [INF] SpsRepository PutSps END
+2025-01-22 17:40:51.786 +08:00 [INF] SpsServiceController PutSps END
+2025-01-22 17:40:51.787 +08:00 [INF] HTTP POST /api/SystemMgmt/SpsService/PutSps responded 200 in 37.9232 ms
+2025-01-22 17:40:53.956 +08:00 [INF] SpsServiceController QuerySps START
+2025-01-22 17:40:53.959 +08:00 [INF] SpsRepository QuerySps START
+2025-01-22 17:40:53.963 +08:00 [INF] SpsRepository QuerySps END
+2025-01-22 17:40:53.965 +08:00 [INF] SpsServiceController QuerySps END
+2025-01-22 17:40:53.967 +08:00 [INF] HTTP POST /api/SystemMgmt/SpsService/QuerySps responded 200 in 12.1653 ms
+2025-01-22 17:41:26.249 +08:00 [INF] SpsServiceController PutSps START
+2025-01-22 17:41:26.253 +08:00 [INF] SpsRepository PutSps START
+2025-01-22 17:41:26.258 +08:00 [INF] SpsRepository PutSps END
+2025-01-22 17:41:26.259 +08:00 [INF] SpsServiceController PutSps END
+2025-01-22 17:41:26.259 +08:00 [INF] HTTP POST /api/SystemMgmt/SpsService/PutSps responded 200 in 11.6853 ms
+2025-01-22 17:42:36.823 +08:00 [INF] SpsServiceController QuerySps START
+2025-01-22 17:42:36.830 +08:00 [INF] SpsRepository QuerySps START
+2025-01-22 17:42:36.833 +08:00 [INF] SpsRepository QuerySps END
+2025-01-22 17:42:36.835 +08:00 [INF] SpsServiceController QuerySps END
+2025-01-22 17:42:36.838 +08:00 [INF] HTTP POST /api/SystemMgmt/SpsService/QuerySps responded 200 in 17.0821 ms
+2025-01-22 17:42:50.596 +08:00 [INF] SpsServiceController PutSps START
+2025-01-22 17:42:50.603 +08:00 [INF] SpsRepository PutSps START
+2025-01-22 17:42:50.691 +08:00 [INF] SpsRepository PutSps Parameter '@sps_parameter07' must be defined. To use this as a variable, set 'Allow User Variables=true' in the connection string.
+2025-01-22 17:42:50.693 +08:00 [INF] SpsRepository PutSps END
+2025-01-22 17:42:50.694 +08:00 [INF] SpsServiceController PutSps END
+2025-01-22 17:42:50.695 +08:00 [INF] HTTP POST /api/SystemMgmt/SpsService/PutSps responded 200 in 6684.1470 ms
+2025-01-22 17:43:26.234 +08:00 [INF] SpsServiceController PutSps START
+2025-01-22 17:43:26.243 +08:00 [INF] SpsRepository PutSps START
+2025-01-22 17:43:47.708 +08:00 [INF] SpsRepository PutSps Parameter '@sps_parameter07' must be defined. To use this as a variable, set 'Allow User Variables=true' in the connection string.
+2025-01-22 17:43:47.714 +08:00 [INF] SpsRepository PutSps END
+2025-01-22 17:43:47.715 +08:00 [INF] SpsServiceController PutSps END
+2025-01-22 17:43:47.718 +08:00 [INF] HTTP POST /api/SystemMgmt/SpsService/PutSps responded 200 in 21499.2198 ms
+2025-01-22 17:44:24.554 +08:00 [INF] SpsServiceController QuerySps START
+2025-01-22 17:44:24.556 +08:00 [INF] SpsRepository QuerySps START
+2025-01-22 17:44:24.562 +08:00 [INF] SpsRepository QuerySps END
+2025-01-22 17:44:24.563 +08:00 [INF] SpsServiceController QuerySps END
+2025-01-22 17:44:24.568 +08:00 [INF] HTTP POST /api/SystemMgmt/SpsService/QuerySps responded 200 in 20.1410 ms
+2025-01-22 17:45:20.196 +08:00 [INF] SpsServiceController PostSps START
+2025-01-22 17:45:33.999 +08:00 [INF] SpsRepository PostSps START
+2025-01-22 17:45:35.622 +08:00 [INF] SpsServiceController PostSps END
+2025-01-22 17:45:35.626 +08:00 [INF] HTTP POST /api/SystemMgmt/SpsService/PostSps responded 200 in 15442.2901 ms
+2025-01-22 17:45:38.693 +08:00 [INF] SpsServiceController QuerySps START
+2025-01-22 17:45:38.694 +08:00 [INF] SpsRepository QuerySps START
+2025-01-22 17:45:38.697 +08:00 [INF] SpsRepository QuerySps END
+2025-01-22 17:45:38.697 +08:00 [INF] SpsServiceController QuerySps END
+2025-01-22 17:45:38.703 +08:00 [INF] HTTP POST /api/SystemMgmt/SpsService/QuerySps responded 200 in 19.6252 ms
+2025-01-22 17:46:32.246 +08:00 [INF] SpsServiceController QuerySps START
+2025-01-22 17:46:32.253 +08:00 [INF] SpsRepository QuerySps START
+2025-01-22 17:46:32.256 +08:00 [INF] SpsRepository QuerySps END
+2025-01-22 17:46:32.257 +08:00 [INF] SpsServiceController QuerySps END
+2025-01-22 17:46:32.258 +08:00 [INF] HTTP POST /api/SystemMgmt/SpsService/QuerySps responded 200 in 13.5495 ms
+2025-01-22 17:48:22.131 +08:00 [INF] Now listening on: http://localhost:5001
+2025-01-22 17:48:22.195 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-22 17:48:22.196 +08:00 [INF] Hosting environment: Development
+2025-01-22 17:48:22.199 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2025-01-22 17:48:26.647 +08:00 [INF] HTTP GET / responded 404 in 1.6831 ms
+2025-01-22 17:48:33.228 +08:00 [INF] SpsServiceController QuerySps START
+2025-01-22 17:48:33.236 +08:00 [INF] SpsRepository QuerySps START
+2025-01-22 17:48:33.778 +08:00 [INF] SpsRepository QuerySps END
+2025-01-22 17:48:33.781 +08:00 [INF] SpsServiceController QuerySps END
+2025-01-22 17:48:33.877 +08:00 [INF] HTTP POST /api/SystemMgmt/SpsService/QuerySps responded 200 in 880.4358 ms
+2025-01-22 17:55:12.027 +08:00 [INF] SpsServiceController QuerySps START
+2025-01-22 17:55:12.028 +08:00 [INF] SpsRepository QuerySps START
+2025-01-22 17:55:12.042 +08:00 [INF] SpsRepository QuerySps END
+2025-01-22 17:55:12.043 +08:00 [INF] SpsServiceController QuerySps END
+2025-01-22 17:55:12.044 +08:00 [INF] HTTP POST /api/SystemMgmt/SpsService/QuerySps responded 200 in 22.4630 ms
+2025-01-22 17:55:13.405 +08:00 [INF] SpsServiceController QuerySps START
+2025-01-22 17:55:13.406 +08:00 [INF] SpsRepository QuerySps START
+2025-01-22 17:55:13.413 +08:00 [INF] SpsRepository QuerySps END
+2025-01-22 17:55:13.421 +08:00 [INF] SpsServiceController QuerySps END
+2025-01-22 17:55:13.422 +08:00 [INF] HTTP POST /api/SystemMgmt/SpsService/QuerySps responded 200 in 20.2654 ms
+2025-01-22 17:55:13.979 +08:00 [INF] SpsServiceController QuerySps START
+2025-01-22 17:55:13.981 +08:00 [INF] SpsRepository QuerySps START
+2025-01-22 17:55:13.984 +08:00 [INF] SpsRepository QuerySps END
+2025-01-22 17:55:13.986 +08:00 [INF] SpsServiceController QuerySps END
+2025-01-22 17:55:13.989 +08:00 [INF] HTTP POST /api/SystemMgmt/SpsService/QuerySps responded 200 in 10.1372 ms
+2025-01-22 17:57:36.666 +08:00 [INF] Now listening on: http://localhost:5001
+2025-01-22 17:57:36.732 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-22 17:57:36.734 +08:00 [INF] Hosting environment: Development
+2025-01-22 17:57:36.735 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2025-01-22 17:57:37.961 +08:00 [INF] HTTP GET / responded 404 in 1.9886 ms
+2025-01-22 17:57:54.304 +08:00 [INF] SpsServiceController QuerySps START
+2025-01-22 17:57:54.310 +08:00 [INF] SpsRepository QuerySps START
+2025-01-22 17:57:54.638 +08:00 [INF] SpsRepository QuerySps END
+2025-01-22 17:57:54.641 +08:00 [INF] SpsServiceController QuerySps END
+2025-01-22 17:57:54.672 +08:00 [INF] HTTP POST /api/SystemMgmt/SpsService/QuerySps responded 200 in 552.6266 ms
+2025-01-22 17:57:56.639 +08:00 [INF] SpsServiceController QuerySps START
+2025-01-22 17:57:56.641 +08:00 [INF] SpsRepository QuerySps START
+2025-01-22 17:57:56.650 +08:00 [INF] SpsRepository QuerySps END
+2025-01-22 17:57:56.653 +08:00 [INF] SpsServiceController QuerySps END
+2025-01-22 17:57:56.656 +08:00 [INF] HTTP POST /api/SystemMgmt/SpsService/QuerySps responded 200 in 21.1849 ms
+2025-01-22 17:57:59.281 +08:00 [INF] SpsServiceController QuerySps START
+2025-01-22 17:57:59.283 +08:00 [INF] SpsRepository QuerySps START
+2025-01-22 17:57:59.287 +08:00 [INF] SpsRepository QuerySps END
+2025-01-22 17:57:59.289 +08:00 [INF] SpsServiceController QuerySps END
+2025-01-22 17:57:59.293 +08:00 [INF] HTTP POST /api/SystemMgmt/SpsService/QuerySps responded 200 in 20.1432 ms
+2025-01-22 17:58:00.376 +08:00 [INF] SpsServiceController QuerySps START
+2025-01-22 17:58:00.377 +08:00 [INF] SpsRepository QuerySps START
+2025-01-22 17:58:00.381 +08:00 [INF] SpsRepository QuerySps END
+2025-01-22 17:58:00.382 +08:00 [INF] SpsServiceController QuerySps END
+2025-01-22 17:58:00.383 +08:00 [INF] HTTP POST /api/SystemMgmt/SpsService/QuerySps responded 200 in 7.2404 ms
+2025-01-22 17:58:01.182 +08:00 [INF] SpsServiceController QuerySps START
+2025-01-22 17:58:01.205 +08:00 [INF] SpsRepository QuerySps START
+2025-01-22 17:58:01.212 +08:00 [INF] SpsRepository QuerySps END
+2025-01-22 17:58:01.213 +08:00 [INF] SpsServiceController QuerySps END
+2025-01-22 17:58:01.214 +08:00 [INF] HTTP POST /api/SystemMgmt/SpsService/QuerySps responded 200 in 33.7206 ms
+2025-01-22 17:58:01.886 +08:00 [INF] SpsServiceController QuerySps START
+2025-01-22 17:58:01.887 +08:00 [INF] SpsRepository QuerySps START
+2025-01-22 17:58:01.890 +08:00 [INF] SpsRepository QuerySps END
+2025-01-22 17:58:01.891 +08:00 [INF] SpsServiceController QuerySps END
+2025-01-22 17:58:01.893 +08:00 [INF] HTTP POST /api/SystemMgmt/SpsService/QuerySps responded 200 in 7.6246 ms
+2025-01-22 17:58:05.620 +08:00 [INF] SpsServiceController QuerySps START
+2025-01-22 17:58:05.622 +08:00 [INF] SpsRepository QuerySps START
+2025-01-22 17:58:05.627 +08:00 [INF] SpsRepository QuerySps END
+2025-01-22 17:58:05.629 +08:00 [INF] SpsServiceController QuerySps END
+2025-01-22 17:58:05.631 +08:00 [INF] HTTP POST /api/SystemMgmt/SpsService/QuerySps responded 200 in 12.0195 ms
+2025-01-22 17:58:06.914 +08:00 [INF] SpsServiceController QuerySps START
+2025-01-22 17:58:06.925 +08:00 [INF] SpsRepository QuerySps START
+2025-01-22 17:58:06.929 +08:00 [INF] SpsRepository QuerySps END
+2025-01-22 17:58:06.930 +08:00 [INF] SpsServiceController QuerySps END
+2025-01-22 17:58:06.932 +08:00 [INF] HTTP POST /api/SystemMgmt/SpsService/QuerySps responded 200 in 18.8209 ms

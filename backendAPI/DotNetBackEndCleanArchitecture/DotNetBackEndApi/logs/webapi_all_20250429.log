@@ -1,0 +1,84 @@
+2025-04-29 07:48:45.790 +08:00 [INF] Now listening on: http://localhost:5000
+2025-04-29 07:48:50.898 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 478.2443 ms
+2025-04-29 07:48:51.016 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-29 07:48:56.549 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 1741.3762 ms
+2025-04-29 07:48:57.415 +08:00 [INF] Hosting environment: Development
+2025-04-29 07:49:01.155 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2025-04-29 07:56:19.700 +08:00 [INF] ApplyDepositController QueryApplyDepositAdmin START
+2025-04-29 07:56:20.463 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyDepositService/QueryApplyDepositAdmin
+2025-04-29 07:56:20.507 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyDepositService/QueryApplyDepositAdmin
+2025-04-29 07:56:23.525 +08:00 [INF] Received HTTP response headers after 3013.0194ms - 200
+2025-04-29 07:56:23.528 +08:00 [INF] End processing HTTP request after 3070.3165ms - 200
+2025-04-29 07:56:39.188 +08:00 [INF] HTTP GET /api/ApplyDeposit/QueryApplyDepositAdmin responded 200 in 19614.9704 ms
+2025-04-29 07:58:09.177 +08:00 [INF] ApplyDepositController QueryApplyDepositAdmin START
+2025-04-29 07:58:09.181 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyDepositService/QueryApplyDepositAdmin
+2025-04-29 07:58:09.184 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyDepositService/QueryApplyDepositAdmin
+2025-04-29 07:58:09.319 +08:00 [INF] Received HTTP response headers after 133.241ms - 200
+2025-04-29 07:58:09.322 +08:00 [INF] End processing HTTP request after 140.9468ms - 200
+2025-04-29 07:59:41.517 +08:00 [INF] Now listening on: http://localhost:5000
+2025-04-29 07:59:41.547 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-29 07:59:41.549 +08:00 [INF] Hosting environment: Development
+2025-04-29 07:59:41.550 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2025-04-29 07:59:45.547 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 706.3111 ms
+2025-04-29 07:59:45.574 +08:00 [INF] ApplyDepositController QueryApplyDepositAdmin START
+2025-04-29 07:59:45.618 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyDepositService/QueryApplyDepositAdmin
+2025-04-29 07:59:45.625 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyDepositService/QueryApplyDepositAdmin
+2025-04-29 07:59:47.274 +08:00 [INF] Received HTTP response headers after 1630.7927ms - 200
+2025-04-29 07:59:47.355 +08:00 [INF] End processing HTTP request after 1744.4743ms - 200
+2025-04-29 07:59:59.042 +08:00 [INF] HTTP GET /api/ApplyDeposit/QueryApplyDepositAdmin responded 200 in 13703.1925 ms
+2025-04-29 07:59:59.833 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 834.5694 ms
+2025-04-29 08:00:16.024 +08:00 [INF] ApplyDepositController QueryApplyDepositAdmin START
+2025-04-29 08:00:16.032 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyDepositService/QueryApplyDepositAdmin
+2025-04-29 08:00:16.419 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyDepositService/QueryApplyDepositAdmin
+2025-04-29 08:00:16.459 +08:00 [INF] Received HTTP response headers after 32.8243ms - 200
+2025-04-29 08:00:16.463 +08:00 [INF] End processing HTTP request after 430.8874ms - 200
+2025-04-29 08:00:19.127 +08:00 [INF] HTTP GET /api/ApplyDeposit/QueryApplyDepositAdmin responded 200 in 3110.2535 ms
+2025-04-29 08:01:29.210 +08:00 [INF] ApplyDepositController QueryApplyDepositAdmin START
+2025-04-29 08:01:29.397 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyDepositService/QueryApplyDepositAdmin
+2025-04-29 08:01:29.398 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyDepositService/QueryApplyDepositAdmin
+2025-04-29 08:01:29.431 +08:00 [INF] Received HTTP response headers after 32.1246ms - 200
+2025-04-29 08:01:29.434 +08:00 [INF] End processing HTTP request after 37.1788ms - 200
+2025-04-29 08:01:29.439 +08:00 [INF] HTTP GET /api/ApplyDeposit/QueryApplyDepositAdmin responded 200 in 234.0377 ms
+2025-04-29 08:01:29.547 +08:00 [INF] ApplyDepositController GetDepositImage START
+2025-04-29 08:01:29.671 +08:00 [INF] HTTP GET /api/ApplyDeposit/283/8/0c2c16c8-fdf9-4e62-8737-7a26830a658e_01.png responded 200 in 167.2779 ms
+2025-04-29 08:01:54.714 +08:00 [INF] ApplyDepositController QueryApplyDepositAdmin START
+2025-04-29 08:01:54.732 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyDepositService/QueryApplyDepositAdmin
+2025-04-29 08:01:54.777 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyDepositService/QueryApplyDepositAdmin
+2025-04-29 08:01:54.838 +08:00 [INF] Received HTTP response headers after 28.1585ms - 200
+2025-04-29 08:01:54.882 +08:00 [INF] End processing HTTP request after 150.9449ms - 200
+2025-04-29 08:01:54.885 +08:00 [INF] HTTP GET /api/ApplyDeposit/QueryApplyDepositAdmin responded 200 in 171.9681 ms
+2025-04-29 08:02:03.226 +08:00 [INF] ApplyDepositController QueryApplyDepositAdmin START
+2025-04-29 08:02:03.228 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyDepositService/QueryApplyDepositAdmin
+2025-04-29 08:02:03.230 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyDepositService/QueryApplyDepositAdmin
+2025-04-29 08:02:03.275 +08:00 [INF] Received HTTP response headers after 41.9459ms - 200
+2025-04-29 08:02:03.321 +08:00 [INF] End processing HTTP request after 93.2646ms - 200
+2025-04-29 08:02:03.334 +08:00 [INF] HTTP GET /api/ApplyDeposit/QueryApplyDepositAdmin responded 200 in 108.0141 ms
+2025-04-29 08:02:03.401 +08:00 [INF] ApplyDepositController GetDepositImage START
+2025-04-29 08:02:03.475 +08:00 [INF] HTTP GET /api/ApplyDeposit/283/8/0c2c16c8-fdf9-4e62-8737-7a26830a658e_01.png responded 200 in 74.9335 ms
+2025-04-29 08:02:09.853 +08:00 [INF] ApplyDepositController PutApplyDeposit START
+2025-04-29 08:02:09.858 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyDepositService/PutApplyDeposit
+2025-04-29 08:02:09.863 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyDepositService/PutApplyDeposit
+2025-04-29 08:02:09.962 +08:00 [INF] Received HTTP response headers after 94.7452ms - 200
+2025-04-29 08:02:09.986 +08:00 [INF] End processing HTTP request after 128.505ms - 200
+2025-04-29 08:02:09.997 +08:00 [INF] ApplyDepositController PutApplyDeposit END
+2025-04-29 08:02:10.009 +08:00 [INF] HTTP PUT /api/ApplyDeposit/ responded 200 in 182.0772 ms
+2025-04-29 08:02:11.527 +08:00 [INF] ApplyDepositController QueryApplyDepositAdmin START
+2025-04-29 08:02:11.532 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyDepositService/QueryApplyDepositAdmin
+2025-04-29 08:02:11.534 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyDepositService/QueryApplyDepositAdmin
+2025-04-29 08:02:11.630 +08:00 [INF] Received HTTP response headers after 83.5095ms - 200
+2025-04-29 08:02:11.786 +08:00 [INF] End processing HTTP request after 253.892ms - 200
+2025-04-29 08:02:11.811 +08:00 [INF] HTTP GET /api/ApplyDeposit/QueryApplyDepositAdmin responded 200 in 284.1629 ms
+2025-04-29 08:02:13.882 +08:00 [INF] ApplyDepositController QueryApplyDepositAdmin START
+2025-04-29 08:02:13.885 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyDepositService/QueryApplyDepositAdmin
+2025-04-29 08:02:13.887 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyDepositService/QueryApplyDepositAdmin
+2025-04-29 08:02:13.917 +08:00 [INF] Received HTTP response headers after 23.6726ms - 200
+2025-04-29 08:02:13.933 +08:00 [INF] End processing HTTP request after 48.0096ms - 200
+2025-04-29 08:02:13.965 +08:00 [INF] HTTP GET /api/ApplyDeposit/QueryApplyDepositAdmin responded 200 in 83.6098 ms
+2025-04-29 08:02:14.039 +08:00 [INF] ApplyDepositController GetDepositImage START
+2025-04-29 08:02:14.040 +08:00 [INF] ApplyDepositController GetDepositImage START
+2025-04-29 08:02:14.053 +08:00 [INF] ApplyDepositController GetDepositImage START
+2025-04-29 08:02:14.112 +08:00 [INF] HTTP GET /api/ApplyDeposit/277/0/1 responded 404 in 59.4305 ms
+2025-04-29 08:02:14.087 +08:00 [INF] HTTP GET /api/ApplyDeposit/281/0/1 responded 404 in 48.6696 ms
+2025-04-29 08:02:14.107 +08:00 [INF] HTTP GET /api/ApplyDeposit/279/0/1 responded 404 in 67.3577 ms
+2025-04-29 08:02:14.039 +08:00 [INF] ApplyDepositController GetDepositImage START
+2025-04-29 08:02:14.386 +08:00 [INF] HTTP GET /api/ApplyDeposit/283/0/1 responded 404 in 347.2110 ms

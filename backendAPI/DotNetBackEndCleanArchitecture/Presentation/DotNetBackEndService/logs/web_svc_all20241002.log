@@ -1,0 +1,95 @@
+2024-10-02 19:02:59.891 +08:00 [INF] Now listening on: http://localhost:5001
+2024-10-02 19:02:59.939 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-02 19:02:59.948 +08:00 [INF] Hosting environment: Development
+2024-10-02 19:02:59.952 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2024-10-02 19:03:05.638 +08:00 [INF] HTTP GET / responded 404 in 8.0091 ms
+2024-10-02 20:34:32.760 +08:00 [INF] ApplyDepositServiceController QueryApplyDepositAdmin START
+2024-10-02 20:34:36.560 +08:00 [INF] ApplyDepositRepository QueryApplyDepositAdmin START
+2024-10-02 20:34:43.443 +08:00 [INF] ApplyDepositRepository QueryApplyDepositAdmin END
+2024-10-02 20:34:43.445 +08:00 [INF] ApplyDepositServiceController QueryApplyDepositAdmin END
+2024-10-02 20:34:43.499 +08:00 [INF] HTTP POST /api/FinancialMgmt/ApplyDepositService/QueryApplyDepositAdmin responded 200 in 11220.4605 ms
+2024-10-02 20:37:18.889 +08:00 [INF] Now listening on: http://localhost:5001
+2024-10-02 20:37:18.917 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-02 20:37:18.919 +08:00 [INF] Hosting environment: Development
+2024-10-02 20:37:18.926 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2024-10-02 20:37:26.326 +08:00 [INF] HTTP GET / responded 404 in 5.2917 ms
+2024-10-02 20:38:14.368 +08:00 [INF] ApplyWithdrawServiceController QueryApplyWithdrawAdmin START
+2024-10-02 20:38:17.233 +08:00 [INF] ApplyWithdrawRepository QueryApplyWithdrawAdmin START
+2024-10-02 20:38:18.778 +08:00 [INF] ApplyWithdrawRepository QueryApplyWithdrawAdmin END
+2024-10-02 20:38:18.789 +08:00 [INF] ApplyWithdrawServiceController QueryApplyWithdrawAdmin END
+2024-10-02 20:38:18.832 +08:00 [INF] HTTP POST /api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawAdmin responded 200 in 4981.6649 ms
+2024-10-02 20:38:34.178 +08:00 [INF] ApplyWithdrawServiceController QueryApplyWithdrawAdmin START
+2024-10-02 20:38:39.083 +08:00 [INF] ApplyWithdrawRepository QueryApplyWithdrawAdmin START
+2024-10-02 20:38:39.114 +08:00 [INF] ApplyWithdrawRepository QueryApplyWithdrawAdmin END
+2024-10-02 20:38:39.117 +08:00 [INF] ApplyWithdrawServiceController QueryApplyWithdrawAdmin END
+2024-10-02 20:38:39.122 +08:00 [INF] HTTP POST /api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawAdmin responded 200 in 4961.0618 ms
+2024-10-02 20:45:04.858 +08:00 [INF] ApplyWithdrawServiceController QueryApplyWithdrawAdmin START
+2024-10-02 20:45:04.860 +08:00 [INF] ApplyWithdrawRepository QueryApplyWithdrawAdmin START
+2024-10-02 20:45:04.864 +08:00 [INF] ApplyWithdrawRepository QueryApplyWithdrawAdmin END
+2024-10-02 20:45:04.866 +08:00 [INF] ApplyWithdrawServiceController QueryApplyWithdrawAdmin END
+2024-10-02 20:45:04.872 +08:00 [INF] HTTP POST /api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawAdmin responded 200 in 17.4400 ms
+2024-10-02 20:45:40.123 +08:00 [INF] ApplyWithdrawServiceController QueryApplyWithdrawAdmin START
+2024-10-02 20:45:40.125 +08:00 [INF] ApplyWithdrawRepository QueryApplyWithdrawAdmin START
+2024-10-02 20:45:40.133 +08:00 [INF] ApplyWithdrawRepository QueryApplyWithdrawAdmin END
+2024-10-02 20:45:40.135 +08:00 [INF] ApplyWithdrawServiceController QueryApplyWithdrawAdmin END
+2024-10-02 20:45:40.138 +08:00 [INF] HTTP POST /api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawAdmin responded 200 in 20.2342 ms
+2024-10-02 20:45:43.461 +08:00 [INF] ApplyWithdrawServiceController PutApplyWithdraw START
+2024-10-02 20:45:47.141 +08:00 [INF] ApplyWithdrawRepository PutApplyWithdraw START
+2024-10-02 20:45:47.181 +08:00 [INF] ApplyWithdrawRepository PutApplyWithdraw END
+2024-10-02 20:45:47.184 +08:00 [INF] ApplyWithdrawServiceController PutApplyWithdraw END
+2024-10-02 20:45:47.192 +08:00 [INF] HTTP POST /api/FinancialMgmt/ApplyWithdrawService/PutApplyWithdraw responded 200 in 3752.3496 ms
+2024-10-02 20:45:49.630 +08:00 [INF] ApplyWithdrawServiceController QueryApplyWithdrawAdmin START
+2024-10-02 20:45:49.921 +08:00 [INF] ApplyWithdrawRepository QueryApplyWithdrawAdmin START
+2024-10-02 20:45:49.928 +08:00 [INF] ApplyWithdrawRepository QueryApplyWithdrawAdmin END
+2024-10-02 20:45:49.930 +08:00 [INF] ApplyWithdrawServiceController QueryApplyWithdrawAdmin END
+2024-10-02 20:45:49.933 +08:00 [INF] HTTP POST /api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawAdmin responded 200 in 304.8205 ms
+2024-10-02 20:45:52.276 +08:00 [INF] ApplyWithdrawServiceController QueryApplyWithdrawAdmin START
+2024-10-02 20:45:52.277 +08:00 [INF] ApplyWithdrawRepository QueryApplyWithdrawAdmin START
+2024-10-02 20:45:52.280 +08:00 [INF] ApplyWithdrawRepository QueryApplyWithdrawAdmin END
+2024-10-02 20:45:52.280 +08:00 [INF] ApplyWithdrawServiceController QueryApplyWithdrawAdmin END
+2024-10-02 20:45:52.281 +08:00 [INF] HTTP POST /api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawAdmin responded 200 in 15.3851 ms
+2024-10-02 20:46:11.488 +08:00 [INF] ApplyWithdrawServiceController QueryApplyWithdrawAdmin START
+2024-10-02 20:46:11.518 +08:00 [INF] ApplyWithdrawRepository QueryApplyWithdrawAdmin START
+2024-10-02 20:46:11.525 +08:00 [INF] ApplyWithdrawRepository QueryApplyWithdrawAdmin END
+2024-10-02 20:46:11.530 +08:00 [INF] ApplyWithdrawServiceController QueryApplyWithdrawAdmin END
+2024-10-02 20:46:11.531 +08:00 [INF] HTTP POST /api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawAdmin responded 200 in 43.8413 ms
+2024-10-02 20:46:14.045 +08:00 [INF] ApplyWithdrawServiceController QueryApplyWithdrawAdmin START
+2024-10-02 20:46:14.051 +08:00 [INF] ApplyWithdrawRepository QueryApplyWithdrawAdmin START
+2024-10-02 20:46:14.056 +08:00 [INF] ApplyWithdrawRepository QueryApplyWithdrawAdmin END
+2024-10-02 20:46:14.057 +08:00 [INF] ApplyWithdrawServiceController QueryApplyWithdrawAdmin END
+2024-10-02 20:46:14.059 +08:00 [INF] HTTP POST /api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawAdmin responded 200 in 14.4976 ms
+2024-10-02 20:46:15.856 +08:00 [INF] ApplyWithdrawServiceController QueryApplyWithdrawAdmin START
+2024-10-02 20:46:15.858 +08:00 [INF] ApplyWithdrawRepository QueryApplyWithdrawAdmin START
+2024-10-02 20:46:15.892 +08:00 [INF] ApplyWithdrawRepository QueryApplyWithdrawAdmin END
+2024-10-02 20:46:15.893 +08:00 [INF] ApplyWithdrawServiceController QueryApplyWithdrawAdmin END
+2024-10-02 20:46:15.901 +08:00 [INF] HTTP POST /api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawAdmin responded 200 in 46.0033 ms
+2024-10-02 20:53:15.763 +08:00 [INF] ApplyWithdrawServiceController QueryApplyWithdrawAdmin START
+2024-10-02 20:53:15.790 +08:00 [INF] ApplyWithdrawRepository QueryApplyWithdrawAdmin START
+2024-10-02 20:53:15.814 +08:00 [INF] ApplyWithdrawRepository QueryApplyWithdrawAdmin END
+2024-10-02 20:53:15.825 +08:00 [INF] ApplyWithdrawServiceController QueryApplyWithdrawAdmin END
+2024-10-02 20:53:15.827 +08:00 [INF] HTTP POST /api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawAdmin responded 200 in 65.6143 ms
+2024-10-02 20:53:46.013 +08:00 [INF] ApplyWithdrawServiceController QueryApplyWithdrawAdmin START
+2024-10-02 20:53:46.022 +08:00 [INF] ApplyWithdrawRepository QueryApplyWithdrawAdmin START
+2024-10-02 20:53:46.027 +08:00 [INF] ApplyWithdrawRepository QueryApplyWithdrawAdmin END
+2024-10-02 20:53:46.028 +08:00 [INF] ApplyWithdrawServiceController QueryApplyWithdrawAdmin END
+2024-10-02 20:53:46.033 +08:00 [INF] HTTP POST /api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawAdmin responded 200 in 22.4487 ms
+2024-10-02 20:53:47.906 +08:00 [INF] ApplyWithdrawServiceController QueryApplyWithdrawAdmin START
+2024-10-02 20:53:47.909 +08:00 [INF] ApplyWithdrawRepository QueryApplyWithdrawAdmin START
+2024-10-02 20:53:47.914 +08:00 [INF] ApplyWithdrawRepository QueryApplyWithdrawAdmin END
+2024-10-02 20:53:47.914 +08:00 [INF] ApplyWithdrawServiceController QueryApplyWithdrawAdmin END
+2024-10-02 20:53:47.915 +08:00 [INF] HTTP POST /api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawAdmin responded 200 in 10.1999 ms
+2024-10-02 20:53:49.721 +08:00 [INF] ApplyWithdrawServiceController QueryApplyWithdrawAdmin START
+2024-10-02 20:53:49.733 +08:00 [INF] ApplyWithdrawRepository QueryApplyWithdrawAdmin START
+2024-10-02 20:53:49.748 +08:00 [INF] ApplyWithdrawRepository QueryApplyWithdrawAdmin END
+2024-10-02 20:53:49.749 +08:00 [INF] ApplyWithdrawServiceController QueryApplyWithdrawAdmin END
+2024-10-02 20:53:49.750 +08:00 [INF] HTTP POST /api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawAdmin responded 200 in 30.6000 ms
+2024-10-02 20:53:50.081 +08:00 [INF] ApplyWithdrawServiceController QueryApplyWithdrawAdmin START
+2024-10-02 20:53:50.085 +08:00 [INF] ApplyWithdrawRepository QueryApplyWithdrawAdmin START
+2024-10-02 20:53:50.126 +08:00 [INF] ApplyWithdrawRepository QueryApplyWithdrawAdmin END
+2024-10-02 20:53:50.128 +08:00 [INF] ApplyWithdrawServiceController QueryApplyWithdrawAdmin END
+2024-10-02 20:53:50.130 +08:00 [INF] HTTP POST /api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawAdmin responded 200 in 49.7198 ms
+2024-10-02 20:54:27.143 +08:00 [INF] ApplyWithdrawServiceController QueryApplyWithdrawAdmin START
+2024-10-02 20:54:27.153 +08:00 [INF] ApplyWithdrawRepository QueryApplyWithdrawAdmin START
+2024-10-02 20:54:27.171 +08:00 [INF] ApplyWithdrawRepository QueryApplyWithdrawAdmin END
+2024-10-02 20:54:27.172 +08:00 [INF] ApplyWithdrawServiceController QueryApplyWithdrawAdmin END
+2024-10-02 20:54:27.174 +08:00 [INF] HTTP POST /api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawAdmin responded 200 in 31.2091 ms

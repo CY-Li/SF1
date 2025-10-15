@@ -1,0 +1,69 @@
+# .NET Core 建置輸出
+**/bin/
+**/obj/
+**/out/
+**/TestResults/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.cache
+*.docstates
+*.tmp
+
+# 套件
+packages/
+*.nupkg
+*.snupkg
+
+# 日誌文件
+*.log
+logs/
+
+# 資料庫文件
+*.db
+*.sqlite
+*.sqlite3
+
+# 環境變數文件
+.env
+.env.local
+.env.development
+.env.production
+
+# IDE 文件
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS 生成的文件
+.DS_Store
+Thumbs.db
+
+# 上傳的文件 (會在容器中重新建立)
+KycImages/
+DepositImages/
+WithdrawImages/
+AnnImagessss/
+uploads/
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# Docker
+Dockerfile
+.dockerignore
+docker-compose*.yml
+
+# 文件
+README.md
+*.md
+
+# 測試覆蓋率
+coverage/
+*.coverage
+*.coveragexml

@@ -1,0 +1,66 @@
+2024-10-16 10:49:19.576 +08:00 [INF] Now listening on: http://localhost:5000
+2024-10-16 10:49:25.326 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-16 10:49:26.624 +08:00 [INF] Hosting environment: Development
+2024-10-16 10:49:26.607 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 976.2110 ms
+2024-10-16 10:49:26.625 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2024-10-16 10:49:29.117 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 1371.5017 ms
+2024-10-16 10:56:12.539 +08:00 [INF] AnnouncementController GetAnnImages START
+2024-10-16 10:56:12.731 +08:00 [INF] AnnouncementController GetAnnImages END
+2024-10-16 10:56:12.773 +08:00 [INF] HTTP GET /api/Announcement/GetAnnImages responded 200 in 375.4134 ms
+2024-10-16 10:56:14.795 +08:00 [INF] AnnouncementController GetAnnImage START
+2024-10-16 10:56:14.795 +08:00 [INF] AnnouncementController GetAnnImage START
+2024-10-16 10:56:15.351 +08:00 [INF] AnnouncementController GetAnnImage START
+2024-10-16 10:56:15.358 +08:00 [INF] AnnouncementController GetAnnImage START
+2024-10-16 10:56:15.364 +08:00 [INF] HTTP GET /api/Announcement/8e394045-1298-4610-9a2c-4bc9b08bc71a_00.jpg responded 200 in 655.5035 ms
+2024-10-16 10:56:15.406 +08:00 [INF] HTTP GET /api/Announcement/8e394045-1298-4610-9a2c-4bc9b08bc71a_01.png responded 200 in 56.3077 ms
+2024-10-16 10:56:15.405 +08:00 [INF] HTTP GET /api/Announcement/8e394045-1298-4610-9a2c-4bc9b08bc71a_02 - test.png responded 200 in 697.0614 ms
+2024-10-16 10:56:15.454 +08:00 [INF] HTTP GET /api/Announcement/8e394045-1298-4610-9a2c-4bc9b08bc71a_02.png responded 200 in 100.2398 ms
+2024-10-16 10:56:35.975 +08:00 [INF] AnnouncementController PutAnnouncement START
+2024-10-16 10:56:36.270 +08:00 [INF] AnnouncementController PutAnnouncement END
+2024-10-16 10:56:36.282 +08:00 [INF] HTTP PUT /api/Announcement/ responded 200 in 5477.7346 ms
+2024-10-16 10:56:38.211 +08:00 [INF] AnnouncementController GetAnnImages START
+2024-10-16 10:56:38.215 +08:00 [INF] AnnouncementController GetAnnImages END
+2024-10-16 10:56:38.216 +08:00 [INF] HTTP GET /api/Announcement/GetAnnImages responded 200 in 9.1679 ms
+2024-10-16 10:56:38.289 +08:00 [INF] AnnouncementController GetAnnImage START
+2024-10-16 10:56:38.304 +08:00 [INF] HTTP GET /api/Announcement/8e394045-1298-4610-9a2c-4bc9b08bc71a_01.jpg responded 200 in 14.7059 ms
+2024-10-16 10:56:54.061 +08:00 [INF] AnnouncementController GetAnnImages START
+2024-10-16 10:56:54.109 +08:00 [INF] AnnouncementController GetAnnImages END
+2024-10-16 10:56:54.112 +08:00 [INF] HTTP GET /api/Announcement/GetAnnImages responded 200 in 52.6304 ms
+2024-10-16 10:56:54.641 +08:00 [INF] AnnouncementController GetAnnImage START
+2024-10-16 10:56:54.642 +08:00 [INF] AnnouncementController GetAnnImage START
+2024-10-16 10:56:54.893 +08:00 [INF] AnnouncementController GetAnnImage START
+2024-10-16 10:56:55.817 +08:00 [INF] HTTP GET /api/Announcement/8e394045-1298-4610-9a2c-4bc9b08bc71a_00.jpg responded 200 in 1176.4629 ms
+2024-10-16 10:56:55.854 +08:00 [INF] HTTP GET /api/Announcement/8e394045-1298-4610-9a2c-4bc9b08bc71a_01.jpg responded 200 in 1212.0639 ms
+2024-10-16 10:56:56.090 +08:00 [INF] HTTP GET /api/Announcement/8e394045-1298-4610-9a2c-4bc9b08bc71a_02.png responded 200 in 1197.0297 ms
+2024-10-16 10:57:06.215 +08:00 [INF] AnnouncementController PutAnnouncement START
+2024-10-16 10:57:06.312 +08:00 [INF] AnnouncementController PutAnnouncement END
+2024-10-16 10:57:06.319 +08:00 [INF] HTTP PUT /api/Announcement/ responded 200 in 1717.9856 ms
+2024-10-16 10:57:08.522 +08:00 [INF] AnnouncementController GetAnnImages START
+2024-10-16 10:57:08.525 +08:00 [INF] AnnouncementController GetAnnImages END
+2024-10-16 10:57:08.542 +08:00 [INF] HTTP GET /api/Announcement/GetAnnImages responded 200 in 20.2133 ms
+2024-10-16 10:57:08.650 +08:00 [INF] AnnouncementController GetAnnImage START
+2024-10-16 10:57:08.677 +08:00 [INF] HTTP GET /api/Announcement/8e394045-1298-4610-9a2c-4bc9b08bc71a_01.png responded 200 in 28.0677 ms
+2024-10-16 10:57:26.087 +08:00 [INF] AnnouncementController PutAnnouncement START
+2024-10-16 10:57:26.304 +08:00 [INF] AnnouncementController PutAnnouncement END
+2024-10-16 10:57:26.313 +08:00 [INF] HTTP PUT /api/Announcement/ responded 200 in 2344.3766 ms
+2024-10-16 10:57:28.256 +08:00 [INF] AnnouncementController GetAnnImages START
+2024-10-16 10:57:28.339 +08:00 [INF] AnnouncementController GetAnnImages END
+2024-10-16 10:57:28.434 +08:00 [INF] HTTP GET /api/Announcement/GetAnnImages responded 200 in 178.7220 ms
+2024-10-16 10:57:28.523 +08:00 [INF] AnnouncementController GetAnnImage START
+2024-10-16 10:57:28.560 +08:00 [INF] HTTP GET /api/Announcement/8e394045-1298-4610-9a2c-4bc9b08bc71a_02.jpg responded 200 in 38.0247 ms
+2024-10-16 10:57:45.830 +08:00 [INF] AnnouncementController PutAnnouncement START
+2024-10-16 10:57:45.909 +08:00 [INF] AnnouncementController PutAnnouncement END
+2024-10-16 10:57:46.145 +08:00 [INF] HTTP PUT /api/Announcement/ responded 200 in 2077.0421 ms
+2024-10-16 10:57:48.012 +08:00 [INF] AnnouncementController GetAnnImages START
+2024-10-16 10:57:48.027 +08:00 [INF] AnnouncementController GetAnnImages END
+2024-10-16 10:57:48.042 +08:00 [INF] HTTP GET /api/Announcement/GetAnnImages responded 200 in 30.8374 ms
+2024-10-16 10:57:48.137 +08:00 [INF] AnnouncementController GetAnnImage START
+2024-10-16 10:57:48.171 +08:00 [INF] HTTP GET /api/Announcement/8e394045-1298-4610-9a2c-4bc9b08bc71a_00.png responded 200 in 34.4602 ms
+2024-10-16 11:20:09.817 +08:00 [INF] AnnouncementController GetAnnImages START
+2024-10-16 11:27:50.926 +08:00 [INF] Now listening on: http://localhost:5000
+2024-10-16 11:27:50.943 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-16 11:27:50.944 +08:00 [INF] Hosting environment: Development
+2024-10-16 11:27:50.945 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2024-10-16 11:27:57.487 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 482.2666 ms
+2024-10-16 11:28:01.675 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 610.4552 ms
+2024-10-16 11:28:19.787 +08:00 [INF] AnnouncementController GetAnnImages START

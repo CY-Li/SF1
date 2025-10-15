@@ -1,0 +1,124 @@
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background: white;
+  box-shadow: 0px 3px 10px #71631C1A;
+  @media #{$mobile} {
+    background: #f5f5f5;
+    box-shadow: none;
+  }
+}
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  @media #{$mobile} {
+    justify-content: center;
+  }
+}
+.logo {
+  width: 160px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  @media #{$mobile} {
+    width: 120px;
+    padding: 12px 0;
+  }
+}
+.navs {
+  display: flex;
+  .nav {
+    margin: 0 40px;
+    font-size: 18px;
+    color: $black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    &.active {
+      border-top: 5px solid $primary;
+      @media #{$mobile} {
+        border-top: none;
+        color: $primary;
+      }
+    }
+    &:hover {
+      color: lighten($black, 20%);
+    }
+    @media #{$mobile} {
+      margin: 0 auto 40px auto;
+    }
+    &.registNav {
+      display: none;
+      @media #{$mobile} {
+        display: flex;
+      }
+    }
+  }
+  @media #{$mobile} {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background: white linear-gradient(180deg, white 40%, #F8F2F2 100%) 0% 0% no-repeat padding-box;
+    display: none;
+  }
+  .closeMenu {
+    display: none;
+    @media #{$mobile} {
+      display: block;
+      margin-bottom: 40px;
+      span {
+        padding: 8px;
+        cursor: pointer;
+        color: $primary;
+        font-size: 50px;
+        font-weight: bold;
+      }
+    }
+  }
+  .menuFooter {
+    display: none;
+    color: $secondary;
+    @media #{$mobile} {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      left: 0;
+      background: white;
+      padding: 19px 25px;
+      font-size: 12px;
+    }
+  }
+}
+
+.registBtn {
+  padding: 20px 50px;
+  background: $primary;
+  color: white;
+  border-radius: 25px 0 25px 0;
+  cursor: pointer;
+  @media #{$mobile} {
+    display: none;
+  }
+}
+
+.hamburger {
+  display: none;
+  @media #{$mobile} {
+    display: inline;
+    position: absolute;
+    font-size: 30px;
+    color: #880f0b;
+    top: 50%;
+    left: 12px;
+    transform: translate(0, -50%);
+  }
+}

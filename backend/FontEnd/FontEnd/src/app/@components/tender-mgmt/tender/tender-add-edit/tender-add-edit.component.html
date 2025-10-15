@@ -1,0 +1,31 @@
+<h2 mat-dialog-title>新增標案</h2>
+<mat-dialog-content>
+    <form [formGroup]="addeditformGroup" (ngSubmit)="onFormSubmit()">
+        <mat-form-field class="mat-50">
+            <mat-label>標會名稱</mat-label>
+            <input matInput formControlName="roscam_name">
+            <mat-error *ngIf="addeditformGroup.get('roscam_name')?.hasError('maxlength')">
+                名稱不可超過25個字元
+            </mat-error>
+        </mat-form-field>
+
+        <mat-form-field class="mat-50">
+            <mat-label>玩法</mat-label>
+            <select matNativeControl required formControlName="roscam_type">
+                <option value="1">一般玩法</option>
+                <option value="2">二人玩法</option>
+                <option value="3">四人玩法</option>
+                <option value="4">六人玩法</option>
+                <option value="5">十二人玩法</option>
+            </select>
+        </mat-form-field>
+        <div class="action">
+            <button mat-raised-button color="primary" type="submit">新增</button>
+            <button mat-button mat-dialog-close>取消</button>
+        </div>
+    </form>
+</mat-dialog-content>
+<!-- <mat-dialog-actions>
+    <button mat-raised-button color="primary" type="submit">新增</button>
+    <button mat-button mat-dialog-close>取消</button>
+</mat-dialog-actions> -->

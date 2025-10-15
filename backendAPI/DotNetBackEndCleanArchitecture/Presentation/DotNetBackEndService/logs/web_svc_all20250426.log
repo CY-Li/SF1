@@ -1,0 +1,26 @@
+2025-04-26 07:11:49.900 +08:00 [INF] Now listening on: http://localhost:5001
+2025-04-26 07:11:50.478 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-26 07:11:51.260 +08:00 [INF] Hosting environment: Development
+2025-04-26 07:11:51.261 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2025-04-26 07:11:53.299 +08:00 [INF] HTTP GET / responded 404 in 4.0736 ms
+2025-04-26 07:12:32.173 +08:00 [INF] PointConversionServiceController GetTransactionData START
+2025-04-26 07:12:32.326 +08:00 [INF] PointConversionRepository GetTransactionData START
+2025-04-26 07:12:33.338 +08:00 [INF] PointConversionRepository GetTransactionData END
+2025-04-26 07:12:33.339 +08:00 [INF] PointConversionServiceController GetTransactionData END
+2025-04-26 07:12:33.392 +08:00 [INF] HTTP POST /api/FinancialMgmt/PointConversionService/GetTransactionData responded 200 in 7118.4879 ms
+2025-04-26 07:14:12.941 +08:00 [INF] HTTP POST /api/FinancialMgmt/ApplyDepositService/PostApplyDeposit responded 400 in 71.9149 ms
+2025-04-26 07:16:15.627 +08:00 [INF] Now listening on: http://localhost:5001
+2025-04-26 07:16:15.693 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-26 07:16:15.696 +08:00 [INF] Hosting environment: Development
+2025-04-26 07:16:15.697 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2025-04-26 07:16:18.851 +08:00 [INF] HTTP GET / responded 404 in 2.2894 ms
+2025-04-26 07:17:45.088 +08:00 [INF] ApplyDepositServiceController PostApplyDeposit START
+2025-04-26 07:17:45.094 +08:00 [INF] ApplyDepositRepository PostApplyDeposit START
+2025-04-26 07:17:45.757 +08:00 [INF] ApplyDepositRepository PostApplyDeposit END
+2025-04-26 07:17:45.834 +08:00 [INF] ApplyDepositServiceController PostApplyDeposit END
+2025-04-26 07:17:45.857 +08:00 [INF] HTTP POST /api/FinancialMgmt/ApplyDepositService/PostApplyDeposit responded 200 in 928.2988 ms
+2025-04-26 07:19:58.602 +08:00 [INF] ApplyWithdrawServiceController PostApplyWithdraw START
+2025-04-26 07:19:58.607 +08:00 [INF] ApplyWithdrawRepository PostApplyWithdraw START
+2025-04-26 07:19:58.643 +08:00 [INF] ApplyWithdrawRepository PostApplyWithdraw END
+2025-04-26 07:19:58.649 +08:00 [INF] ApplyWithdrawServiceController PostApplyWithdraw END
+2025-04-26 07:19:58.651 +08:00 [INF] HTTP POST /api/FinancialMgmt/ApplyWithdrawService/PostApplyWithdraw responded 200 in 75.0117 ms

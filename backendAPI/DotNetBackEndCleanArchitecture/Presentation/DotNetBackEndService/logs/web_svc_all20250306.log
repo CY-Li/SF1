@@ -1,0 +1,37 @@
+2025-03-06 04:39:05.928 +08:00 [INF] Now listening on: http://localhost:5001
+2025-03-06 04:39:05.977 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-06 04:39:05.979 +08:00 [INF] Hosting environment: Development
+2025-03-06 04:39:05.980 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2025-03-06 04:39:09.841 +08:00 [INF] HTTP GET / responded 404 in 2.0914 ms
+2025-03-06 04:45:52.676 +08:00 [INF] PointConversionServiceController PostGiftPoint START
+2025-03-06 04:45:53.519 +08:00 [INF] PointConversionRepository PostGiftPoint START
+2025-03-06 04:46:11.058 +08:00 [INF] PointConversionServiceController PostGiftPoint END
+2025-03-06 04:46:11.084 +08:00 [INF] HTTP POST /api/FinancialMgmt/PointConversionService/PostGiftPoint responded 200 in 18726.4558 ms
+2025-03-06 04:46:28.143 +08:00 [INF] PointConversionServiceController PostGiftPoint START
+2025-03-06 04:46:28.148 +08:00 [INF] PointConversionRepository PostGiftPoint START
+2025-03-06 04:47:00.157 +08:00 [INF] PointConversionServiceController PostGiftPoint END
+2025-03-06 04:47:00.169 +08:00 [INF] HTTP POST /api/FinancialMgmt/PointConversionService/PostGiftPoint responded 200 in 32045.2440 ms
+2025-03-06 04:47:05.398 +08:00 [INF] PointConversionServiceController PostGiftPoint START
+2025-03-06 04:47:05.400 +08:00 [INF] PointConversionRepository PostGiftPoint START
+2025-03-06 04:47:21.794 +08:00 [INF] PointConversionServiceController PostGiftPoint END
+2025-03-06 04:47:21.795 +08:00 [INF] HTTP POST /api/FinancialMgmt/PointConversionService/PostGiftPoint responded 200 in 16401.6380 ms
+2025-03-06 04:47:29.383 +08:00 [INF] PointConversionServiceController PostGiftPoint START
+2025-03-06 04:47:29.386 +08:00 [INF] PointConversionRepository PostGiftPoint START
+2025-03-06 04:47:46.724 +08:00 [INF] PointConversionRepository PostGiftPoint END
+2025-03-06 04:47:46.727 +08:00 [INF] PointConversionServiceController PostGiftPoint END
+2025-03-06 04:47:46.728 +08:00 [INF] HTTP POST /api/FinancialMgmt/PointConversionService/PostGiftPoint responded 200 in 17345.3226 ms
+2025-03-06 04:48:14.448 +08:00 [INF] PointConversionServiceController PostGiftPoint START
+2025-03-06 04:48:14.450 +08:00 [INF] PointConversionRepository PostGiftPoint START
+2025-03-06 04:48:17.248 +08:00 [INF] PointConversionRepository PostGiftPoint END
+2025-03-06 04:48:17.250 +08:00 [INF] PointConversionServiceController PostGiftPoint END
+2025-03-06 04:48:17.250 +08:00 [INF] HTTP POST /api/FinancialMgmt/PointConversionService/PostGiftPoint responded 200 in 2806.2924 ms
+2025-03-06 04:48:42.679 +08:00 [INF] WalletServiceController GetWallet START
+2025-03-06 04:48:42.915 +08:00 [INF] WalletRepository GetWallet START
+2025-03-06 04:48:42.929 +08:00 [INF] WalletRepository GetWallet END
+2025-03-06 04:48:42.930 +08:00 [INF] WalletServiceController GetWallet END
+2025-03-06 04:48:42.953 +08:00 [INF] HTTP POST /api/MemberMgmt/WalletService/GetWallet responded 200 in 462.3271 ms
+2025-03-06 04:48:54.018 +08:00 [INF] WalletServiceController GetWallet START
+2025-03-06 04:48:54.022 +08:00 [INF] WalletRepository GetWallet START
+2025-03-06 04:48:54.028 +08:00 [INF] WalletRepository GetWallet END
+2025-03-06 04:48:54.030 +08:00 [INF] WalletServiceController GetWallet END
+2025-03-06 04:48:54.032 +08:00 [INF] HTTP POST /api/MemberMgmt/WalletService/GetWallet responded 200 in 16.8759 ms

@@ -1,0 +1,893 @@
+2025-01-27 03:09:54.411 +08:00 [INF] Now listening on: http://localhost:5001
+2025-01-27 03:09:54.461 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-27 03:09:54.463 +08:00 [INF] Hosting environment: Development
+2025-01-27 03:09:54.464 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2025-01-27 03:10:02.178 +08:00 [INF] HTTP GET / responded 404 in 6.6598 ms
+2025-01-27 03:10:46.060 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+DotNetBackEndService.Controllers.SystemMgmt.AnnouncementServiceController.QueryAnnBoardAdmin (DotNetBackEndService)
+DotNetBackEndService.Controllers.SystemMgmt.AnnouncementServiceController.QueryAnnBoardUser (DotNetBackEndService)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-01-27 03:10:54.546 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+DotNetBackEndService.Controllers.SystemMgmt.AnnouncementServiceController.QueryAnnBoardAdmin (DotNetBackEndService)
+DotNetBackEndService.Controllers.SystemMgmt.AnnouncementServiceController.QueryAnnBoardUser (DotNetBackEndService)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-01-27 03:11:45.465 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+DotNetBackEndService.Controllers.SystemMgmt.AnnouncementServiceController.QueryAnnBoardAdmin (DotNetBackEndService)
+DotNetBackEndService.Controllers.SystemMgmt.AnnouncementServiceController.QueryAnnBoardUser (DotNetBackEndService)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-01-27 03:12:08.706 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+DotNetBackEndService.Controllers.SystemMgmt.AnnouncementServiceController.QueryAnnBoardAdmin (DotNetBackEndService)
+DotNetBackEndService.Controllers.SystemMgmt.AnnouncementServiceController.QueryAnnBoardUser (DotNetBackEndService)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-01-27 03:13:15.045 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+DotNetBackEndService.Controllers.SystemMgmt.AnnouncementServiceController.QueryAnnBoardAdmin (DotNetBackEndService)
+DotNetBackEndService.Controllers.SystemMgmt.AnnouncementServiceController.QueryAnnBoardUser (DotNetBackEndService)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-01-27 03:13:24.067 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+DotNetBackEndService.Controllers.SystemMgmt.AnnouncementServiceController.QueryAnnBoardAdmin (DotNetBackEndService)
+DotNetBackEndService.Controllers.SystemMgmt.AnnouncementServiceController.QueryAnnBoardUser (DotNetBackEndService)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-01-27 03:15:47.321 +08:00 [INF] Now listening on: http://localhost:5001
+2025-01-27 03:15:47.373 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-27 03:15:47.463 +08:00 [INF] Hosting environment: Development
+2025-01-27 03:15:47.469 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2025-01-27 03:15:54.210 +08:00 [INF] HTTP GET / responded 404 in 477.6056 ms
+2025-01-27 03:16:26.894 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+DotNetBackEndService.Controllers.SystemMgmt.AnnouncementServiceController.QueryAnnBoardAdmin (DotNetBackEndService)
+DotNetBackEndService.Controllers.SystemMgmt.AnnouncementServiceController.QueryAnnBoardUser (DotNetBackEndService)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-01-27 03:17:51.016 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnBoardUserRespModel responded 404 in 0.0732 ms
+2025-01-27 03:19:10.965 +08:00 [INF] Now listening on: http://localhost:5001
+2025-01-27 03:19:11.062 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-27 03:19:11.064 +08:00 [INF] Hosting environment: Development
+2025-01-27 03:19:11.068 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2025-01-27 03:19:13.101 +08:00 [INF] HTTP GET / responded 404 in 6.8868 ms
+2025-01-27 03:19:21.270 +08:00 [INF] SpsServiceController QuerySps START
+2025-01-27 03:19:21.488 +08:00 [INF] SpsRepository QuerySps START
+2025-01-27 03:19:22.880 +08:00 [INF] SpsRepository QuerySps END
+2025-01-27 03:19:22.881 +08:00 [INF] SpsServiceController QuerySps END
+2025-01-27 03:19:22.925 +08:00 [INF] HTTP POST /api/SystemMgmt/SpsService/QuerySps responded 200 in 1936.6678 ms
+2025-01-27 03:19:28.729 +08:00 [INF] SpsServiceController QuerySps START
+2025-01-27 03:19:28.730 +08:00 [INF] SpsRepository QuerySps START
+2025-01-27 03:19:28.738 +08:00 [INF] SpsRepository QuerySps END
+2025-01-27 03:19:28.740 +08:00 [INF] SpsServiceController QuerySps END
+2025-01-27 03:19:28.743 +08:00 [INF] HTTP POST /api/SystemMgmt/SpsService/QuerySps responded 200 in 17.5154 ms
+2025-01-27 03:20:31.847 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+DotNetBackEndService.Controllers.SystemMgmt.AnnouncementServiceController.QueryAnnBoardAdmin (DotNetBackEndService)
+DotNetBackEndService.Controllers.SystemMgmt.AnnouncementServiceController.QueryAnnBoardUser (DotNetBackEndService)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-01-27 03:20:40.478 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+DotNetBackEndService.Controllers.SystemMgmt.AnnouncementServiceController.QueryAnnBoardAdmin (DotNetBackEndService)
+DotNetBackEndService.Controllers.SystemMgmt.AnnouncementServiceController.QueryAnnBoardUser (DotNetBackEndService)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-01-27 03:21:42.713 +08:00 [INF] Now listening on: http://localhost:5001
+2025-01-27 03:21:42.739 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-27 03:21:42.752 +08:00 [INF] Hosting environment: Development
+2025-01-27 03:21:42.754 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2025-01-27 03:21:52.927 +08:00 [INF] HTTP GET / responded 404 in 1.7251 ms
+2025-01-27 03:22:06.411 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin START
+2025-01-27 03:22:06.425 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin START
+2025-01-27 03:22:07.244 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin END
+2025-01-27 03:22:07.263 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin END
+2025-01-27 03:22:07.313 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin responded 200 in 4482.4414 ms
+2025-01-27 03:22:37.584 +08:00 [INF] AnnouncementServiceController PutAnnouncement START
+2025-01-27 03:22:41.103 +08:00 [INF] AnnouncementRepository PutAnnouncement START
+2025-01-27 03:22:41.561 +08:00 [INF] AnnouncementRepository PutAnnouncement END
+2025-01-27 03:22:41.564 +08:00 [INF] AnnouncementServiceController PutAnnouncement END
+2025-01-27 03:22:41.577 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/PutAnnouncement responded 200 in 4645.6443 ms
+2025-01-27 03:22:43.922 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin START
+2025-01-27 03:22:43.925 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin START
+2025-01-27 03:22:43.942 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin END
+2025-01-27 03:22:43.945 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin END
+2025-01-27 03:22:43.950 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin responded 200 in 31.9705 ms
+2025-01-27 03:22:54.378 +08:00 [INF] AnnouncementServiceController PutAnnouncement START
+2025-01-27 03:22:54.381 +08:00 [INF] AnnouncementRepository PutAnnouncement START
+2025-01-27 03:22:54.389 +08:00 [INF] AnnouncementRepository PutAnnouncement END
+2025-01-27 03:22:54.391 +08:00 [INF] AnnouncementServiceController PutAnnouncement END
+2025-01-27 03:22:54.392 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/PutAnnouncement responded 200 in 15.4807 ms
+2025-01-27 03:22:56.837 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin START
+2025-01-27 03:22:56.941 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin START
+2025-01-27 03:22:56.947 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin END
+2025-01-27 03:22:56.948 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin END
+2025-01-27 03:22:56.949 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin responded 200 in 114.5324 ms
+2025-01-27 03:23:12.483 +08:00 [INF] AnnouncementServiceController PutAnnouncement START
+2025-01-27 03:23:12.507 +08:00 [INF] AnnouncementRepository PutAnnouncement START
+2025-01-27 03:23:12.511 +08:00 [INF] AnnouncementRepository PutAnnouncement END
+2025-01-27 03:23:12.514 +08:00 [INF] AnnouncementServiceController PutAnnouncement END
+2025-01-27 03:23:12.516 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/PutAnnouncement responded 200 in 35.3031 ms
+2025-01-27 03:23:16.260 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin START
+2025-01-27 03:23:16.262 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin START
+2025-01-27 03:23:16.268 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin END
+2025-01-27 03:23:16.269 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin END
+2025-01-27 03:23:16.270 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin responded 200 in 11.3404 ms
+2025-01-27 04:00:49.032 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnBoardUserRespModel responded 404 in 0.0279 ms
+2025-01-27 04:01:34.561 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnBoardUserRespModel responded 404 in 0.0193 ms
+2025-01-27 04:02:39.076 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnBoardUserRespModel responded 404 in 0.0449 ms
+2025-01-27 04:03:33.706 +08:00 [INF] Now listening on: http://localhost:5001
+2025-01-27 04:03:33.719 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-27 04:03:33.722 +08:00 [INF] Hosting environment: Development
+2025-01-27 04:03:33.723 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2025-01-27 04:03:35.483 +08:00 [INF] HTTP GET / responded 404 in 6.2185 ms
+2025-01-27 04:03:46.616 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin START
+2025-01-27 04:03:46.622 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin START
+2025-01-27 04:03:46.973 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin END
+2025-01-27 04:03:46.977 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin END
+2025-01-27 04:03:47.008 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin responded 200 in 568.7786 ms
+2025-01-27 04:03:53.723 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin START
+2025-01-27 04:03:53.726 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin START
+2025-01-27 04:03:53.737 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin END
+2025-01-27 04:03:53.739 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin END
+2025-01-27 04:03:53.742 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin responded 200 in 28.0592 ms
+2025-01-27 04:03:57.630 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin START
+2025-01-27 04:03:57.632 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin START
+2025-01-27 04:03:57.638 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin END
+2025-01-27 04:03:57.640 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin END
+2025-01-27 04:03:57.643 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin responded 200 in 21.3013 ms
+2025-01-27 04:04:08.556 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnBoardUserRespModel responded 404 in 0.0176 ms
+2025-01-27 04:05:11.325 +08:00 [INF] Now listening on: http://localhost:5001
+2025-01-27 04:05:11.368 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-27 04:05:11.378 +08:00 [INF] Hosting environment: Development
+2025-01-27 04:05:11.395 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2025-01-27 04:05:16.542 +08:00 [INF] HTTP GET / responded 404 in 3.2354 ms
+2025-01-27 04:05:41.298 +08:00 [INF] AnnouncementServiceController QueryAnnBoardUser START
+2025-01-27 04:05:41.318 +08:00 [INF] AnnouncementRepository QueryAnnBoardUser START
+2025-01-27 04:05:41.740 +08:00 [INF] AnnouncementRepository QueryAnnBoardUser END
+2025-01-27 04:05:41.744 +08:00 [INF] AnnouncementServiceController QueryAnnBoardUser END
+2025-01-27 04:05:41.801 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnBoardUser responded 200 in 3463.5460 ms
+2025-01-27 04:06:00.030 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin START
+2025-01-27 04:06:00.277 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin START
+2025-01-27 04:06:00.305 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin END
+2025-01-27 04:06:00.306 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin END
+2025-01-27 04:06:00.313 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin responded 200 in 829.8427 ms
+2025-01-27 04:06:28.255 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin START
+2025-01-27 04:06:28.259 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin START
+2025-01-27 04:06:28.263 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin END
+2025-01-27 04:06:28.264 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin END
+2025-01-27 04:06:28.267 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin responded 200 in 31.8577 ms
+2025-01-27 04:11:53.629 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin START
+2025-01-27 04:11:53.631 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin START
+2025-01-27 04:11:53.639 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin END
+2025-01-27 04:11:53.640 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin END
+2025-01-27 04:11:53.640 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin responded 200 in 12.5251 ms
+2025-01-27 04:15:26.960 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin START
+2025-01-27 04:15:27.602 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin START
+2025-01-27 04:15:27.609 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin END
+2025-01-27 04:15:27.641 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin END
+2025-01-27 04:15:27.643 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin responded 200 in 756.1996 ms
+2025-01-27 04:15:45.285 +08:00 [INF] AnnouncementServiceController PutAnnouncement START
+2025-01-27 04:15:45.293 +08:00 [INF] AnnouncementRepository PutAnnouncement START
+2025-01-27 04:15:45.528 +08:00 [INF] AnnouncementRepository PutAnnouncement END
+2025-01-27 04:15:45.545 +08:00 [INF] AnnouncementServiceController PutAnnouncement END
+2025-01-27 04:15:45.558 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/PutAnnouncement responded 200 in 293.2010 ms
+2025-01-27 04:15:48.494 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin START
+2025-01-27 04:15:48.506 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin START
+2025-01-27 04:15:48.509 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin END
+2025-01-27 04:15:48.511 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin END
+2025-01-27 04:15:48.513 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin responded 200 in 30.3343 ms
+2025-01-27 04:15:59.127 +08:00 [INF] AnnouncementServiceController PutAnnouncement START
+2025-01-27 04:15:59.130 +08:00 [INF] AnnouncementRepository PutAnnouncement START
+2025-01-27 04:15:59.137 +08:00 [INF] AnnouncementRepository PutAnnouncement END
+2025-01-27 04:15:59.138 +08:00 [INF] AnnouncementServiceController PutAnnouncement END
+2025-01-27 04:15:59.139 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/PutAnnouncement responded 200 in 12.8420 ms
+2025-01-27 04:16:01.268 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin START
+2025-01-27 04:16:01.271 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin START
+2025-01-27 04:16:01.277 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin END
+2025-01-27 04:16:01.279 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin END
+2025-01-27 04:16:01.281 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin responded 200 in 14.0824 ms
+2025-01-27 04:16:07.236 +08:00 [INF] AnnouncementServiceController PutAnnouncement START
+2025-01-27 04:16:07.255 +08:00 [INF] AnnouncementRepository PutAnnouncement START
+2025-01-27 04:16:07.265 +08:00 [INF] AnnouncementRepository PutAnnouncement END
+2025-01-27 04:16:07.270 +08:00 [INF] AnnouncementServiceController PutAnnouncement END
+2025-01-27 04:16:07.278 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/PutAnnouncement responded 200 in 42.6563 ms
+2025-01-27 04:16:09.258 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin START
+2025-01-27 04:16:09.259 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin START
+2025-01-27 04:16:09.265 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin END
+2025-01-27 04:16:09.269 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin END
+2025-01-27 04:16:09.271 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin responded 200 in 13.3899 ms
+2025-01-27 04:17:01.963 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin START
+2025-01-27 04:17:01.968 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin START
+2025-01-27 04:17:01.976 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin END
+2025-01-27 04:17:01.978 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin END
+2025-01-27 04:17:01.980 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin responded 200 in 28.0146 ms
+2025-01-27 04:17:05.987 +08:00 [INF] AnnouncementServiceController PutAnnouncement START
+2025-01-27 04:17:06.020 +08:00 [INF] AnnouncementRepository PutAnnouncement START
+2025-01-27 04:17:06.037 +08:00 [INF] AnnouncementRepository PutAnnouncement END
+2025-01-27 04:17:06.037 +08:00 [INF] AnnouncementServiceController PutAnnouncement END
+2025-01-27 04:17:06.039 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/PutAnnouncement responded 200 in 52.1374 ms
+2025-01-27 04:17:08.965 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin START
+2025-01-27 04:17:09.028 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin START
+2025-01-27 04:17:09.052 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin END
+2025-01-27 04:17:09.068 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin END
+2025-01-27 04:17:09.083 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin responded 200 in 143.2305 ms
+2025-01-27 04:17:30.170 +08:00 [INF] AnnouncementServiceController PutAnnouncement START
+2025-01-27 04:17:30.181 +08:00 [INF] AnnouncementRepository PutAnnouncement START
+2025-01-27 04:17:30.183 +08:00 [INF] AnnouncementRepository PutAnnouncement END
+2025-01-27 04:17:30.184 +08:00 [INF] AnnouncementServiceController PutAnnouncement END
+2025-01-27 04:17:30.186 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/PutAnnouncement responded 200 in 17.5045 ms
+2025-01-27 04:17:31.931 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin START
+2025-01-27 04:17:31.988 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin START
+2025-01-27 04:17:31.998 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin END
+2025-01-27 04:17:31.999 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin END
+2025-01-27 04:17:32.000 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin responded 200 in 75.2915 ms
+2025-01-27 04:17:39.818 +08:00 [INF] AnnouncementServiceController PutAnnouncement START
+2025-01-27 04:17:39.827 +08:00 [INF] AnnouncementRepository PutAnnouncement START
+2025-01-27 04:17:39.830 +08:00 [INF] AnnouncementRepository PutAnnouncement END
+2025-01-27 04:17:39.837 +08:00 [INF] AnnouncementServiceController PutAnnouncement END
+2025-01-27 04:17:39.840 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/PutAnnouncement responded 200 in 22.1228 ms
+2025-01-27 04:17:41.266 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin START
+2025-01-27 04:17:41.271 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin START
+2025-01-27 04:17:41.280 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin END
+2025-01-27 04:17:41.281 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin END
+2025-01-27 04:17:41.283 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin responded 200 in 24.8275 ms
+2025-01-27 04:19:41.313 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin START
+2025-01-27 04:19:41.315 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin START
+2025-01-27 04:19:41.319 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin END
+2025-01-27 04:19:41.320 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin END
+2025-01-27 04:19:41.322 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin responded 200 in 11.0220 ms
+2025-01-27 04:19:53.827 +08:00 [INF] AnnouncementServiceController PutAnnouncement START
+2025-01-27 04:19:53.853 +08:00 [INF] AnnouncementRepository PutAnnouncement START
+2025-01-27 04:19:53.891 +08:00 [INF] AnnouncementRepository PutAnnouncement END
+2025-01-27 04:19:53.892 +08:00 [INF] AnnouncementServiceController PutAnnouncement END
+2025-01-27 04:19:53.896 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/PutAnnouncement responded 200 in 70.2297 ms
+2025-01-27 04:19:56.921 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin START
+2025-01-27 04:19:57.048 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin START
+2025-01-27 04:19:57.127 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin END
+2025-01-27 04:19:57.133 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin END
+2025-01-27 04:19:57.138 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin responded 200 in 220.3203 ms
+2025-01-27 04:20:06.473 +08:00 [INF] AnnouncementServiceController PutAnnouncement START
+2025-01-27 04:20:06.482 +08:00 [INF] AnnouncementRepository PutAnnouncement START
+2025-01-27 04:20:06.485 +08:00 [INF] AnnouncementRepository PutAnnouncement END
+2025-01-27 04:20:06.487 +08:00 [INF] AnnouncementServiceController PutAnnouncement END
+2025-01-27 04:20:06.489 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/PutAnnouncement responded 200 in 19.5455 ms
+2025-01-27 04:21:44.070 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin START
+2025-01-27 04:21:44.072 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin START
+2025-01-27 04:21:44.074 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin END
+2025-01-27 04:21:44.075 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin END
+2025-01-27 04:21:44.078 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin responded 200 in 7.9203 ms
+2025-01-27 04:23:56.946 +08:00 [INF] AnnouncementServiceController PutAnnouncement START
+2025-01-27 04:23:56.949 +08:00 [INF] AnnouncementRepository PutAnnouncement START
+2025-01-27 04:23:56.959 +08:00 [INF] AnnouncementRepository PutAnnouncement END
+2025-01-27 04:23:56.961 +08:00 [INF] AnnouncementServiceController PutAnnouncement END
+2025-01-27 04:23:56.982 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/PutAnnouncement responded 200 in 36.7905 ms
+2025-01-27 04:24:05.076 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin START
+2025-01-27 04:24:05.102 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin START
+2025-01-27 04:24:05.144 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin END
+2025-01-27 04:24:05.150 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin END
+2025-01-27 04:24:05.151 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin responded 200 in 90.6926 ms
+2025-01-27 04:24:21.063 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin START
+2025-01-27 04:24:21.064 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin START
+2025-01-27 04:24:21.066 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin END
+2025-01-27 04:24:21.067 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin END
+2025-01-27 04:24:21.069 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin responded 200 in 6.9810 ms
+2025-01-27 04:24:21.132 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin START
+2025-01-27 04:24:21.133 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin START
+2025-01-27 04:24:21.141 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin END
+2025-01-27 04:24:21.143 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin END
+2025-01-27 04:24:21.144 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin responded 200 in 12.8120 ms
+2025-01-27 04:24:26.188 +08:00 [INF] AnnouncementServiceController PutAnnouncement START
+2025-01-27 04:24:26.336 +08:00 [INF] AnnouncementRepository PutAnnouncement START
+2025-01-27 04:24:26.340 +08:00 [INF] AnnouncementRepository PutAnnouncement END
+2025-01-27 04:24:26.342 +08:00 [INF] AnnouncementServiceController PutAnnouncement END
+2025-01-27 04:24:26.345 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/PutAnnouncement responded 200 in 166.2733 ms
+2025-01-27 04:24:27.935 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin START
+2025-01-27 04:24:27.937 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin START
+2025-01-27 04:24:27.949 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin END
+2025-01-27 04:24:27.950 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin END
+2025-01-27 04:24:27.953 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin responded 200 in 18.3754 ms
+2025-01-27 04:31:27.421 +08:00 [INF] Now listening on: http://localhost:5001
+2025-01-27 04:31:27.436 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-27 04:31:27.437 +08:00 [INF] Hosting environment: Development
+2025-01-27 04:31:27.450 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2025-01-27 04:31:32.039 +08:00 [INF] HTTP GET / responded 404 in 2.8092 ms
+2025-01-27 04:32:02.562 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin START
+2025-01-27 04:32:02.568 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin START
+2025-01-27 04:32:03.209 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin END
+2025-01-27 04:32:03.210 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin END
+2025-01-27 04:32:03.252 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin responded 200 in 850.1114 ms
+2025-01-27 04:32:11.455 +08:00 [INF] AnnouncementServiceController PutAnnouncement START
+2025-01-27 04:32:11.462 +08:00 [INF] AnnouncementRepository PutAnnouncement START
+2025-01-27 04:32:11.487 +08:00 [INF] AnnouncementRepository PutAnnouncement END
+2025-01-27 04:32:11.489 +08:00 [INF] AnnouncementServiceController PutAnnouncement END
+2025-01-27 04:32:11.503 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/PutAnnouncement responded 200 in 69.2530 ms
+2025-01-27 04:32:13.308 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin START
+2025-01-27 04:32:13.312 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin START
+2025-01-27 04:32:13.315 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin END
+2025-01-27 04:32:13.316 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin END
+2025-01-27 04:32:13.317 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin responded 200 in 23.1742 ms
+2025-01-27 04:32:18.723 +08:00 [INF] AnnouncementServiceController PutAnnouncement START
+2025-01-27 04:32:18.726 +08:00 [INF] AnnouncementRepository PutAnnouncement START
+2025-01-27 04:32:18.735 +08:00 [INF] AnnouncementRepository PutAnnouncement END
+2025-01-27 04:32:18.737 +08:00 [INF] AnnouncementServiceController PutAnnouncement END
+2025-01-27 04:32:18.740 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/PutAnnouncement responded 200 in 17.9893 ms
+2025-01-27 04:32:20.492 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin START
+2025-01-27 04:32:20.492 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin START
+2025-01-27 04:32:20.498 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin END
+2025-01-27 04:32:20.506 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin END
+2025-01-27 04:32:20.510 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin responded 200 in 19.3523 ms
+2025-01-27 04:32:23.525 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin START
+2025-01-27 04:32:23.540 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin START
+2025-01-27 04:32:23.544 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin END
+2025-01-27 04:32:23.547 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin END
+2025-01-27 04:32:23.569 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin responded 200 in 45.2327 ms
+2025-01-27 04:33:58.641 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin START
+2025-01-27 04:33:58.644 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin START
+2025-01-27 04:33:58.660 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin END
+2025-01-27 04:33:58.666 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin END
+2025-01-27 04:33:58.668 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin responded 200 in 34.8127 ms
+2025-01-27 04:35:00.623 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin START
+2025-01-27 04:35:00.658 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin START
+2025-01-27 04:35:00.693 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin END
+2025-01-27 04:35:00.702 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin END
+2025-01-27 04:35:00.702 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin responded 200 in 87.1465 ms
+2025-01-27 04:35:07.007 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin START
+2025-01-27 04:35:07.349 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin START
+2025-01-27 04:35:07.365 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin END
+2025-01-27 04:35:07.373 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin END
+2025-01-27 04:35:07.375 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin responded 200 in 588.0551 ms
+2025-01-27 04:35:39.820 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin START
+2025-01-27 04:35:39.833 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin START
+2025-01-27 04:35:39.836 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin END
+2025-01-27 04:35:39.836 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin END
+2025-01-27 04:35:39.838 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin responded 200 in 20.9145 ms
+2025-01-27 04:37:17.743 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin START
+2025-01-27 04:37:17.744 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin START
+2025-01-27 04:37:17.751 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin END
+2025-01-27 04:37:17.754 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin END
+2025-01-27 04:37:17.756 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin responded 200 in 13.7783 ms
+2025-01-27 04:37:32.756 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin START
+2025-01-27 04:37:33.093 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin START
+2025-01-27 04:37:33.122 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin END
+2025-01-27 04:37:33.124 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin END
+2025-01-27 04:37:33.126 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin responded 200 in 384.5020 ms
+2025-01-27 04:38:19.732 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin START
+2025-01-27 04:38:19.740 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin START
+2025-01-27 04:38:19.749 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin END
+2025-01-27 04:38:19.750 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin END
+2025-01-27 04:38:19.752 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin responded 200 in 20.6160 ms
+2025-01-27 04:38:40.684 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin START
+2025-01-27 04:38:40.695 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin START
+2025-01-27 04:38:40.697 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin END
+2025-01-27 04:38:40.698 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin END
+2025-01-27 04:38:40.700 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin responded 200 in 17.0770 ms
+2025-01-27 04:39:33.307 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin START
+2025-01-27 04:39:33.323 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin START
+2025-01-27 04:39:33.334 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin END
+2025-01-27 04:39:33.335 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin END
+2025-01-27 04:39:33.336 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin responded 200 in 29.2159 ms
+2025-01-27 04:40:16.888 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin START
+2025-01-27 04:40:16.912 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin START
+2025-01-27 04:40:16.915 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin END
+2025-01-27 04:40:16.920 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin END
+2025-01-27 04:40:16.922 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin responded 200 in 40.9715 ms
+2025-01-27 04:40:22.409 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin START
+2025-01-27 04:40:22.473 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin START
+2025-01-27 04:40:22.486 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin END
+2025-01-27 04:40:22.496 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin END
+2025-01-27 04:40:22.497 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin responded 200 in 89.6115 ms
+2025-01-27 04:41:26.029 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin START
+2025-01-27 04:41:26.032 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin START
+2025-01-27 04:41:26.036 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin END
+2025-01-27 04:41:26.040 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin END
+2025-01-27 04:41:26.042 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin responded 200 in 42.0424 ms
+2025-01-27 04:42:35.848 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin START
+2025-01-27 04:42:35.880 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin START
+2025-01-27 04:42:36.172 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin END
+2025-01-27 04:42:36.185 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin END
+2025-01-27 04:42:36.187 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin responded 200 in 395.4696 ms
+2025-01-27 04:48:39.260 +08:00 [INF] Now listening on: http://localhost:5001
+2025-01-27 04:48:39.432 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-27 04:48:39.488 +08:00 [INF] Hosting environment: Development
+2025-01-27 04:48:39.504 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2025-01-27 04:48:42.275 +08:00 [INF] HTTP GET / responded 404 in 2.2051 ms
+2025-01-27 04:52:33.116 +08:00 [INF] Now listening on: http://localhost:5001
+2025-01-27 04:52:33.136 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-27 04:52:33.137 +08:00 [INF] Hosting environment: Development
+2025-01-27 04:52:33.138 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2025-01-27 04:52:40.477 +08:00 [INF] HTTP GET / responded 404 in 1.7741 ms
+2025-01-27 04:54:12.279 +08:00 [INF] Now listening on: http://localhost:5001
+2025-01-27 04:54:12.311 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-27 04:54:12.330 +08:00 [INF] Hosting environment: Development
+2025-01-27 04:54:12.331 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2025-01-27 04:54:13.674 +08:00 [INF] HTTP GET / responded 404 in 4.4021 ms
+2025-01-27 04:54:59.913 +08:00 [INF] AnnouncementServiceController PostAnnouncement START
+2025-01-27 04:55:02.467 +08:00 [INF] AnnouncementRepository PostAnnouncement START
+2025-01-27 04:55:04.536 +08:00 [INF] AnnouncementRepository PostAnnouncement You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ab_title
+             ,ab_content
+             ,ab_image
+             ,ab_...' at line 2
+2025-01-27 04:55:04.539 +08:00 [INF] AnnouncementRepository PostAnnouncement END
+2025-01-27 04:55:04.539 +08:00 [INF] AnnouncementServiceController PostAnnouncement END
+2025-01-27 04:55:04.564 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/PostAnnouncement responded 200 in 4996.9216 ms
+2025-01-27 04:55:14.688 +08:00 [INF] AnnouncementServiceController PostAnnouncement START
+2025-01-27 04:55:18.156 +08:00 [INF] AnnouncementRepository PostAnnouncement START
+2025-01-27 04:55:40.565 +08:00 [INF] AnnouncementRepository PostAnnouncement You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ab_title
+             ,ab_content
+             ,ab_image
+             ,ab_...' at line 2
+2025-01-27 04:55:40.566 +08:00 [INF] AnnouncementRepository PostAnnouncement END
+2025-01-27 04:55:40.566 +08:00 [INF] AnnouncementServiceController PostAnnouncement END
+2025-01-27 04:55:40.568 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/PostAnnouncement responded 200 in 25890.0763 ms
+2025-01-27 04:55:53.027 +08:00 [INF] AnnouncementServiceController PostAnnouncement START
+2025-01-27 04:56:00.482 +08:00 [INF] AnnouncementRepository PostAnnouncement START
+2025-01-27 04:59:06.661 +08:00 [INF] AnnouncementRepository PostAnnouncement You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ab_title
+             ,ab_content
+             ,ab_image
+             ,ab_...' at line 2
+2025-01-27 04:59:07.046 +08:00 [INF] AnnouncementRepository PostAnnouncement END
+2025-01-27 04:59:08.855 +08:00 [INF] AnnouncementServiceController PostAnnouncement END
+2025-01-27 04:59:09.653 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/PostAnnouncement responded 200 in 196726.7309 ms
+2025-01-27 04:59:37.854 +08:00 [INF] Now listening on: http://localhost:5001
+2025-01-27 04:59:37.870 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-27 04:59:37.874 +08:00 [INF] Hosting environment: Development
+2025-01-27 04:59:37.876 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2025-01-27 04:59:42.374 +08:00 [INF] HTTP GET / responded 404 in 2.3003 ms
+2025-01-27 04:59:52.019 +08:00 [INF] AnnouncementServiceController PostAnnouncement START
+2025-01-27 04:59:52.045 +08:00 [INF] AnnouncementRepository PostAnnouncement START
+2025-01-27 04:59:56.837 +08:00 [INF] AnnouncementRepository PostAnnouncement END
+2025-01-27 04:59:56.841 +08:00 [INF] AnnouncementServiceController PostAnnouncement END
+2025-01-27 04:59:56.868 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/PostAnnouncement responded 200 in 5032.8106 ms
+2025-01-27 04:59:59.410 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin START
+2025-01-27 04:59:59.428 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin START
+2025-01-27 04:59:59.480 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin END
+2025-01-27 04:59:59.482 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin END
+2025-01-27 04:59:59.498 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin responded 200 in 330.7484 ms
+2025-01-27 05:00:01.134 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin START
+2025-01-27 05:00:01.136 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin START
+2025-01-27 05:00:01.144 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin END
+2025-01-27 05:00:01.145 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin END
+2025-01-27 05:00:01.147 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin responded 200 in 18.6449 ms
+2025-01-27 05:00:01.942 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin START
+2025-01-27 05:00:01.944 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin START
+2025-01-27 05:00:01.948 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin END
+2025-01-27 05:00:01.950 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin END
+2025-01-27 05:00:01.953 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin responded 200 in 13.1099 ms
+2025-01-27 05:00:38.201 +08:00 [INF] AnnouncementServiceController PutAnnouncement START
+2025-01-27 05:00:38.209 +08:00 [INF] AnnouncementRepository PutAnnouncement START
+2025-01-27 05:00:38.222 +08:00 [INF] AnnouncementRepository PutAnnouncement END
+2025-01-27 05:00:38.224 +08:00 [INF] AnnouncementServiceController PutAnnouncement END
+2025-01-27 05:00:38.226 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/PutAnnouncement responded 200 in 34.1975 ms
+2025-01-27 05:00:40.497 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin START
+2025-01-27 05:00:40.517 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin START
+2025-01-27 05:00:40.529 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin END
+2025-01-27 05:00:40.533 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin END
+2025-01-27 05:00:40.534 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin responded 200 in 52.3860 ms
+2025-01-27 05:01:20.109 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin START
+2025-01-27 05:01:20.114 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin START
+2025-01-27 05:01:20.117 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin END
+2025-01-27 05:01:20.118 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin END
+2025-01-27 05:01:20.120 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin responded 200 in 12.2465 ms
+2025-01-27 05:01:21.280 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin START
+2025-01-27 05:01:21.294 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin START
+2025-01-27 05:01:21.297 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin END
+2025-01-27 05:01:21.299 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin END
+2025-01-27 05:01:21.302 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin responded 200 in 24.4250 ms
+2025-01-27 05:01:23.995 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin START
+2025-01-27 05:01:23.997 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin START
+2025-01-27 05:01:24.003 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin END
+2025-01-27 05:01:24.005 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin END
+2025-01-27 05:01:24.006 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin responded 200 in 11.5505 ms
+2025-01-27 05:01:24.946 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin START
+2025-01-27 05:01:24.947 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin START
+2025-01-27 05:01:24.950 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin END
+2025-01-27 05:01:24.951 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin END
+2025-01-27 05:01:24.957 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin responded 200 in 11.1351 ms
+2025-01-27 05:01:29.072 +08:00 [INF] SpsServiceController QuerySps START
+2025-01-27 05:01:29.077 +08:00 [INF] SpsRepository QuerySps START
+2025-01-27 05:01:29.088 +08:00 [INF] SpsRepository QuerySps END
+2025-01-27 05:01:29.090 +08:00 [INF] SpsServiceController QuerySps END
+2025-01-27 05:01:29.101 +08:00 [INF] HTTP POST /api/SystemMgmt/SpsService/QuerySps responded 200 in 39.5492 ms
+2025-01-27 05:01:30.270 +08:00 [INF] SpsServiceController QuerySps START
+2025-01-27 05:01:30.331 +08:00 [INF] SpsRepository QuerySps START
+2025-01-27 05:01:30.344 +08:00 [INF] SpsRepository QuerySps END
+2025-01-27 05:01:30.345 +08:00 [INF] SpsServiceController QuerySps END
+2025-01-27 05:01:30.347 +08:00 [INF] HTTP POST /api/SystemMgmt/SpsService/QuerySps responded 200 in 77.2765 ms
+2025-01-27 05:01:34.697 +08:00 [INF] SpsServiceController QuerySps START
+2025-01-27 05:01:34.937 +08:00 [INF] SpsRepository QuerySps START
+2025-01-27 05:01:34.945 +08:00 [INF] SpsRepository QuerySps END
+2025-01-27 05:01:34.946 +08:00 [INF] SpsServiceController QuerySps END
+2025-01-27 05:01:34.948 +08:00 [INF] HTTP POST /api/SystemMgmt/SpsService/QuerySps responded 200 in 253.6290 ms
+2025-01-27 05:01:48.825 +08:00 [INF] SpsServiceController PostSps START
+2025-01-27 05:01:51.043 +08:00 [INF] SpsRepository PostSps START
+2025-01-27 05:01:52.937 +08:00 [INF] SpsServiceController PostSps END
+2025-01-27 05:01:52.984 +08:00 [INF] HTTP POST /api/SystemMgmt/SpsService/PostSps responded 200 in 4202.7068 ms
+2025-01-27 05:01:55.520 +08:00 [INF] SpsServiceController QuerySps START
+2025-01-27 05:01:55.521 +08:00 [INF] SpsRepository QuerySps START
+2025-01-27 05:01:55.524 +08:00 [INF] SpsRepository QuerySps END
+2025-01-27 05:01:55.527 +08:00 [INF] SpsServiceController QuerySps END
+2025-01-27 05:01:55.529 +08:00 [INF] HTTP POST /api/SystemMgmt/SpsService/QuerySps responded 200 in 10.4961 ms
+2025-01-27 05:05:48.075 +08:00 [INF] Now listening on: http://localhost:5001
+2025-01-27 05:05:48.856 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-27 05:05:48.897 +08:00 [INF] Hosting environment: Development
+2025-01-27 05:05:48.954 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2025-01-27 05:05:49.314 +08:00 [INF] HTTP GET / responded 404 in 2.3137 ms
+2025-01-27 05:09:11.168 +08:00 [INF] Now listening on: http://localhost:5001
+2025-01-27 05:09:11.185 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-27 05:09:11.201 +08:00 [INF] Hosting environment: Development
+2025-01-27 05:09:11.202 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2025-01-27 05:09:12.518 +08:00 [INF] HTTP GET / responded 404 in 8.0855 ms
+2025-01-27 05:10:43.424 +08:00 [INF] Now listening on: http://localhost:5001
+2025-01-27 05:10:43.440 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-27 05:10:43.446 +08:00 [INF] Hosting environment: Development
+2025-01-27 05:10:43.446 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2025-01-27 05:10:45.824 +08:00 [INF] HTTP GET / responded 404 in 2.1419 ms
+2025-01-27 06:03:04.260 +08:00 [INF] Now listening on: http://localhost:5001
+2025-01-27 06:03:04.290 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-27 06:03:04.303 +08:00 [INF] Hosting environment: Development
+2025-01-27 06:03:04.306 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2025-01-27 06:03:05.504 +08:00 [INF] HTTP GET / responded 404 in 2.9784 ms
+2025-01-27 06:05:14.524 +08:00 [INF] MembersServiceController QueryMember START
+2025-01-27 06:05:14.528 +08:00 [INF] MemberRepository QueryMember START
+2025-01-27 06:05:15.274 +08:00 [INF] MemberRepository QueryMember END
+2025-01-27 06:05:15.277 +08:00 [INF] MembersServiceController QueryMember END
+2025-01-27 06:05:15.319 +08:00 [INF] HTTP POST /api/MemberMgmt/MembersService/QueryMember responded 200 in 930.6212 ms
+2025-01-27 06:05:27.813 +08:00 [INF] MembersServiceController QueryMember START
+2025-01-27 06:05:27.814 +08:00 [INF] MemberRepository QueryMember START
+2025-01-27 06:05:27.822 +08:00 [INF] MemberRepository QueryMember END
+2025-01-27 06:05:27.824 +08:00 [INF] MembersServiceController QueryMember END
+2025-01-27 06:05:27.828 +08:00 [INF] HTTP POST /api/MemberMgmt/MembersService/QueryMember responded 200 in 18.0146 ms
+2025-01-27 06:05:28.448 +08:00 [INF] MembersServiceController QueryMember START
+2025-01-27 06:05:28.451 +08:00 [INF] MemberRepository QueryMember START
+2025-01-27 06:05:28.454 +08:00 [INF] MemberRepository QueryMember END
+2025-01-27 06:05:28.455 +08:00 [INF] MembersServiceController QueryMember END
+2025-01-27 06:05:28.457 +08:00 [INF] HTTP POST /api/MemberMgmt/MembersService/QueryMember responded 200 in 14.6198 ms
+2025-01-27 06:06:07.139 +08:00 [INF] MembersServiceController QueryMember START
+2025-01-27 06:06:07.142 +08:00 [INF] MemberRepository QueryMember START
+2025-01-27 06:06:07.147 +08:00 [INF] MemberRepository QueryMember END
+2025-01-27 06:06:07.148 +08:00 [INF] MembersServiceController QueryMember END
+2025-01-27 06:06:07.149 +08:00 [INF] HTTP POST /api/MemberMgmt/MembersService/QueryMember responded 200 in 16.7726 ms
+2025-01-27 06:06:19.472 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin START
+2025-01-27 06:06:19.475 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin START
+2025-01-27 06:06:19.488 +08:00 [INF] AnnouncementRepository QueryAnnBoardAdmin END
+2025-01-27 06:06:19.491 +08:00 [INF] AnnouncementServiceController QueryAnnBoardAdmin END
+2025-01-27 06:06:19.508 +08:00 [INF] HTTP POST /api/SystemMgmt/AnnouncementService/QueryAnnBoardAdmin responded 200 in 52.6527 ms
+2025-01-27 06:06:26.423 +08:00 [INF] MembersServiceController QueryMember START
+2025-01-27 06:06:26.425 +08:00 [INF] MemberRepository QueryMember START
+2025-01-27 06:06:26.430 +08:00 [INF] MemberRepository QueryMember END
+2025-01-27 06:06:26.435 +08:00 [INF] MembersServiceController QueryMember END
+2025-01-27 06:06:26.438 +08:00 [INF] HTTP POST /api/MemberMgmt/MembersService/QueryMember responded 200 in 15.7669 ms
+2025-01-27 06:17:40.095 +08:00 [INF] Now listening on: http://localhost:5001
+2025-01-27 06:17:40.189 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-27 06:17:40.207 +08:00 [INF] Hosting environment: Development
+2025-01-27 06:17:40.208 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2025-01-27 06:18:04.518 +08:00 [INF] HTTP GET / responded 404 in 3.3196 ms
+2025-01-27 06:18:40.019 +08:00 [INF] Now listening on: http://localhost:5001
+2025-01-27 06:18:40.051 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-27 06:18:40.079 +08:00 [INF] Hosting environment: Development
+2025-01-27 06:18:40.080 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2025-01-27 06:18:45.586 +08:00 [INF] HTTP GET / responded 404 in 1.8518 ms
+2025-01-27 06:18:54.621 +08:00 [INF] MembersServiceController QueryMember START
+2025-01-27 06:18:54.635 +08:00 [INF] MemberRepository QueryMember START
+2025-01-27 06:18:55.230 +08:00 [INF] MemberRepository QueryMember END
+2025-01-27 06:18:55.233 +08:00 [INF] MembersServiceController QueryMember END
+2025-01-27 06:18:55.279 +08:00 [INF] HTTP POST /api/MemberMgmt/MembersService/QueryMember responded 200 in 837.3958 ms
+2025-01-27 06:18:56.969 +08:00 [INF] MembersServiceController QueryMember START
+2025-01-27 06:18:56.970 +08:00 [INF] MemberRepository QueryMember START
+2025-01-27 06:18:56.977 +08:00 [INF] MemberRepository QueryMember END
+2025-01-27 06:18:56.979 +08:00 [INF] MembersServiceController QueryMember END
+2025-01-27 06:18:56.983 +08:00 [INF] HTTP POST /api/MemberMgmt/MembersService/QueryMember responded 200 in 20.2523 ms
+2025-01-27 06:18:57.860 +08:00 [INF] MembersServiceController QueryMember START
+2025-01-27 06:18:57.864 +08:00 [INF] MemberRepository QueryMember START
+2025-01-27 06:18:57.870 +08:00 [INF] MemberRepository QueryMember END
+2025-01-27 06:18:57.872 +08:00 [INF] MembersServiceController QueryMember END
+2025-01-27 06:18:57.875 +08:00 [INF] HTTP POST /api/MemberMgmt/MembersService/QueryMember responded 200 in 38.8746 ms
+2025-01-27 06:19:01.051 +08:00 [INF] MembersServiceController QueryMember START
+2025-01-27 06:19:01.056 +08:00 [INF] MemberRepository QueryMember START
+2025-01-27 06:19:01.061 +08:00 [INF] MemberRepository QueryMember END
+2025-01-27 06:19:01.063 +08:00 [INF] MembersServiceController QueryMember END
+2025-01-27 06:19:01.065 +08:00 [INF] HTTP POST /api/MemberMgmt/MembersService/QueryMember responded 200 in 15.4335 ms
+2025-01-27 06:19:01.658 +08:00 [INF] MembersServiceController QueryMember START
+2025-01-27 06:19:01.659 +08:00 [INF] MemberRepository QueryMember START
+2025-01-27 06:19:01.663 +08:00 [INF] MemberRepository QueryMember END
+2025-01-27 06:19:01.671 +08:00 [INF] MembersServiceController QueryMember END
+2025-01-27 06:19:01.673 +08:00 [INF] HTTP POST /api/MemberMgmt/MembersService/QueryMember responded 200 in 16.3879 ms
+2025-01-27 06:19:46.256 +08:00 [INF] MembersServiceController QueryMember START
+2025-01-27 06:19:46.282 +08:00 [INF] MemberRepository QueryMember START
+2025-01-27 06:19:46.405 +08:00 [INF] MemberRepository QueryMember END
+2025-01-27 06:19:46.424 +08:00 [INF] MembersServiceController QueryMember END
+2025-01-27 06:19:46.424 +08:00 [INF] HTTP POST /api/MemberMgmt/MembersService/QueryMember responded 200 in 169.8405 ms
+2025-01-27 06:19:53.926 +08:00 [INF] MembersServiceController QueryMember START
+2025-01-27 06:19:53.930 +08:00 [INF] MemberRepository QueryMember START
+2025-01-27 06:19:53.933 +08:00 [INF] MemberRepository QueryMember END
+2025-01-27 06:19:53.942 +08:00 [INF] MembersServiceController QueryMember END
+2025-01-27 06:19:53.945 +08:00 [INF] HTTP POST /api/MemberMgmt/MembersService/QueryMember responded 200 in 20.3946 ms
+2025-01-27 06:20:03.581 +08:00 [INF] MembersServiceController QueryMember START
+2025-01-27 06:20:03.588 +08:00 [INF] MemberRepository QueryMember START
+2025-01-27 06:20:03.595 +08:00 [INF] MemberRepository QueryMember END
+2025-01-27 06:20:03.596 +08:00 [INF] MembersServiceController QueryMember END
+2025-01-27 06:20:03.597 +08:00 [INF] HTTP POST /api/MemberMgmt/MembersService/QueryMember responded 200 in 18.2898 ms
+2025-01-27 06:20:04.224 +08:00 [INF] MembersServiceController QueryMember START
+2025-01-27 06:20:04.225 +08:00 [INF] MemberRepository QueryMember START
+2025-01-27 06:20:04.228 +08:00 [INF] MemberRepository QueryMember END
+2025-01-27 06:20:04.232 +08:00 [INF] MembersServiceController QueryMember END
+2025-01-27 06:20:04.234 +08:00 [INF] HTTP POST /api/MemberMgmt/MembersService/QueryMember responded 200 in 10.6722 ms
+2025-01-27 06:20:16.079 +08:00 [INF] MembersServiceController QueryMember START
+2025-01-27 06:20:16.080 +08:00 [INF] MemberRepository QueryMember START
+2025-01-27 06:20:16.084 +08:00 [INF] MemberRepository QueryMember END
+2025-01-27 06:20:16.093 +08:00 [INF] MembersServiceController QueryMember END
+2025-01-27 06:20:16.095 +08:00 [INF] HTTP POST /api/MemberMgmt/MembersService/QueryMember responded 200 in 16.8785 ms
+2025-01-27 06:20:16.587 +08:00 [INF] MembersServiceController QueryMember START
+2025-01-27 06:20:16.589 +08:00 [INF] MemberRepository QueryMember START
+2025-01-27 06:20:16.594 +08:00 [INF] MemberRepository QueryMember END
+2025-01-27 06:20:16.594 +08:00 [INF] MembersServiceController QueryMember END
+2025-01-27 06:20:16.596 +08:00 [INF] HTTP POST /api/MemberMgmt/MembersService/QueryMember responded 200 in 9.4381 ms
+2025-01-27 06:20:17.848 +08:00 [INF] MembersServiceController QueryMember START
+2025-01-27 06:20:17.850 +08:00 [INF] MemberRepository QueryMember START
+2025-01-27 06:20:17.855 +08:00 [INF] MemberRepository QueryMember END
+2025-01-27 06:20:17.859 +08:00 [INF] MembersServiceController QueryMember END
+2025-01-27 06:20:17.863 +08:00 [INF] HTTP POST /api/MemberMgmt/MembersService/QueryMember responded 200 in 15.5857 ms
+2025-01-27 06:20:18.044 +08:00 [INF] MembersServiceController QueryMember START
+2025-01-27 06:20:18.046 +08:00 [INF] MemberRepository QueryMember START
+2025-01-27 06:20:18.050 +08:00 [INF] MemberRepository QueryMember END
+2025-01-27 06:20:18.054 +08:00 [INF] MembersServiceController QueryMember END
+2025-01-27 06:20:18.057 +08:00 [INF] HTTP POST /api/MemberMgmt/MembersService/QueryMember responded 200 in 13.5727 ms
+2025-01-27 06:20:18.222 +08:00 [INF] MembersServiceController QueryMember START
+2025-01-27 06:20:18.237 +08:00 [INF] MemberRepository QueryMember START
+2025-01-27 06:20:18.249 +08:00 [INF] MemberRepository QueryMember END
+2025-01-27 06:20:18.251 +08:00 [INF] MembersServiceController QueryMember END
+2025-01-27 06:20:18.252 +08:00 [INF] HTTP POST /api/MemberMgmt/MembersService/QueryMember responded 200 in 30.8865 ms
+2025-01-27 06:20:18.448 +08:00 [INF] MembersServiceController QueryMember START
+2025-01-27 06:20:18.465 +08:00 [INF] MemberRepository QueryMember START
+2025-01-27 06:20:18.481 +08:00 [INF] MemberRepository QueryMember END
+2025-01-27 06:20:18.483 +08:00 [INF] MembersServiceController QueryMember END
+2025-01-27 06:20:18.484 +08:00 [INF] HTTP POST /api/MemberMgmt/MembersService/QueryMember responded 200 in 36.8996 ms
+2025-01-27 06:20:18.557 +08:00 [INF] MembersServiceController QueryMember START
+2025-01-27 06:20:18.562 +08:00 [INF] MemberRepository QueryMember START
+2025-01-27 06:20:18.581 +08:00 [INF] MemberRepository QueryMember END
+2025-01-27 06:20:18.583 +08:00 [INF] MembersServiceController QueryMember END
+2025-01-27 06:20:18.586 +08:00 [INF] HTTP POST /api/MemberMgmt/MembersService/QueryMember responded 200 in 30.2042 ms
+2025-01-27 06:20:18.778 +08:00 [INF] MembersServiceController QueryMember START
+2025-01-27 06:20:18.779 +08:00 [INF] MemberRepository QueryMember START
+2025-01-27 06:20:18.790 +08:00 [INF] MemberRepository QueryMember END
+2025-01-27 06:20:18.794 +08:00 [INF] MembersServiceController QueryMember END
+2025-01-27 06:20:18.795 +08:00 [INF] HTTP POST /api/MemberMgmt/MembersService/QueryMember responded 200 in 18.0636 ms
+2025-01-27 06:20:19.106 +08:00 [INF] MembersServiceController QueryMember START
+2025-01-27 06:20:19.123 +08:00 [INF] MembersServiceController QueryMember START
+2025-01-27 06:20:19.155 +08:00 [INF] MemberRepository QueryMember START
+2025-01-27 06:20:19.157 +08:00 [INF] MemberRepository QueryMember START
+2025-01-27 06:20:19.174 +08:00 [INF] MemberRepository QueryMember END
+2025-01-27 06:20:19.185 +08:00 [INF] MemberRepository QueryMember END
+2025-01-27 06:20:19.493 +08:00 [INF] MembersServiceController QueryMember END
+2025-01-27 06:20:19.494 +08:00 [INF] MembersServiceController QueryMember END
+2025-01-27 06:20:19.497 +08:00 [INF] HTTP POST /api/MemberMgmt/MembersService/QueryMember responded 200 in 392.1903 ms
+2025-01-27 06:20:19.498 +08:00 [INF] HTTP POST /api/MemberMgmt/MembersService/QueryMember responded 200 in 376.9545 ms
+2025-01-27 06:21:06.804 +08:00 [INF] MembersServiceController QueryMember START
+2025-01-27 06:21:06.806 +08:00 [INF] MemberRepository QueryMember START
+2025-01-27 06:21:06.814 +08:00 [INF] MemberRepository QueryMember END
+2025-01-27 06:21:06.815 +08:00 [INF] MembersServiceController QueryMember END
+2025-01-27 06:21:06.817 +08:00 [INF] HTTP POST /api/MemberMgmt/MembersService/QueryMember responded 200 in 13.2631 ms
+2025-01-27 06:21:07.847 +08:00 [INF] MembersServiceController QueryMember START
+2025-01-27 06:21:07.860 +08:00 [INF] MemberRepository QueryMember START
+2025-01-27 06:21:07.863 +08:00 [INF] MemberRepository QueryMember END
+2025-01-27 06:21:07.865 +08:00 [INF] MembersServiceController QueryMember END
+2025-01-27 06:21:07.870 +08:00 [INF] HTTP POST /api/MemberMgmt/MembersService/QueryMember responded 200 in 23.5374 ms
+2025-01-27 06:24:54.309 +08:00 [INF] MembersServiceController QueryMember START
+2025-01-27 06:24:54.441 +08:00 [INF] MemberRepository QueryMember START
+2025-01-27 06:24:54.462 +08:00 [INF] MemberRepository QueryMember END
+2025-01-27 06:24:54.473 +08:00 [INF] MembersServiceController QueryMember END
+2025-01-27 06:24:54.478 +08:00 [INF] HTTP POST /api/MemberMgmt/MembersService/QueryMember responded 200 in 181.5437 ms
+2025-01-27 06:24:58.288 +08:00 [INF] MembersServiceController QueryMember START
+2025-01-27 06:24:58.292 +08:00 [INF] MemberRepository QueryMember START
+2025-01-27 06:24:58.300 +08:00 [INF] MemberRepository QueryMember END
+2025-01-27 06:24:58.303 +08:00 [INF] MembersServiceController QueryMember END
+2025-01-27 06:24:58.305 +08:00 [INF] HTTP POST /api/MemberMgmt/MembersService/QueryMember responded 200 in 17.8167 ms
+2025-01-27 06:25:04.845 +08:00 [INF] MembersServiceController QueryMember START
+2025-01-27 06:25:04.851 +08:00 [INF] MemberRepository QueryMember START
+2025-01-27 06:25:04.865 +08:00 [INF] MemberRepository QueryMember END
+2025-01-27 06:25:04.867 +08:00 [INF] MembersServiceController QueryMember END
+2025-01-27 06:25:04.870 +08:00 [INF] HTTP POST /api/MemberMgmt/MembersService/QueryMember responded 200 in 30.4460 ms
+2025-01-27 06:25:12.674 +08:00 [INF] MembersServiceController QueryMember START
+2025-01-27 06:25:12.675 +08:00 [INF] MemberRepository QueryMember START
+2025-01-27 06:25:12.682 +08:00 [INF] MemberRepository QueryMember END
+2025-01-27 06:25:12.684 +08:00 [INF] MembersServiceController QueryMember END
+2025-01-27 06:25:12.696 +08:00 [INF] HTTP POST /api/MemberMgmt/MembersService/QueryMember responded 200 in 30.4291 ms
+2025-01-27 06:55:24.852 +08:00 [INF] Now listening on: http://localhost:5001
+2025-01-27 06:55:24.869 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-27 06:55:24.876 +08:00 [INF] Hosting environment: Development
+2025-01-27 06:55:24.878 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2025-01-27 06:55:32.020 +08:00 [INF] HTTP GET / responded 404 in 2.4196 ms
+2025-01-27 06:56:48.037 +08:00 [INF] Now listening on: http://localhost:5001
+2025-01-27 06:56:48.048 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-27 06:56:48.049 +08:00 [INF] Hosting environment: Development
+2025-01-27 06:56:48.050 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2025-01-27 06:56:49.997 +08:00 [INF] HTTP GET / responded 404 in 2.3426 ms
+2025-01-27 06:58:00.734 +08:00 [INF] Now listening on: http://localhost:5001
+2025-01-27 06:58:00.768 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-27 06:58:00.772 +08:00 [INF] Hosting environment: Development
+2025-01-27 06:58:00.797 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2025-01-27 06:58:04.414 +08:00 [INF] HTTP GET / responded 404 in 2.4623 ms
+2025-01-27 06:58:23.254 +08:00 [INF] WalletServiceController QueryWallet START
+2025-01-27 06:58:23.260 +08:00 [INF] WalletRepository QueryWallet START
+2025-01-27 06:58:23.987 +08:00 [INF] WalletRepository QueryWallet END
+2025-01-27 06:58:23.989 +08:00 [INF] WalletServiceController QueryWallet END
+2025-01-27 06:58:24.050 +08:00 [INF] HTTP POST /api/MemberMgmt/WalletService/QueryWallet responded 200 in 950.9133 ms
+2025-01-27 06:58:46.274 +08:00 [INF] WalletServiceController QueryWallet START
+2025-01-27 06:58:46.275 +08:00 [INF] WalletRepository QueryWallet START
+2025-01-27 06:58:46.280 +08:00 [INF] WalletRepository QueryWallet END
+2025-01-27 06:58:46.282 +08:00 [INF] WalletServiceController QueryWallet END
+2025-01-27 06:58:46.286 +08:00 [INF] HTTP POST /api/MemberMgmt/WalletService/QueryWallet responded 200 in 17.6894 ms
+2025-01-27 07:00:06.220 +08:00 [INF] Now listening on: http://localhost:5001
+2025-01-27 07:00:06.238 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-27 07:00:06.240 +08:00 [INF] Hosting environment: Development
+2025-01-27 07:00:06.241 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2025-01-27 07:00:07.900 +08:00 [INF] HTTP GET / responded 404 in 2.5673 ms
+2025-01-27 07:00:17.139 +08:00 [INF] WalletServiceController QueryWallet START
+2025-01-27 07:00:17.144 +08:00 [INF] WalletRepository QueryWallet START
+2025-01-27 07:00:17.759 +08:00 [INF] WalletRepository QueryWallet END
+2025-01-27 07:00:17.761 +08:00 [INF] WalletServiceController QueryWallet END
+2025-01-27 07:00:17.802 +08:00 [INF] HTTP POST /api/MemberMgmt/WalletService/QueryWallet responded 200 in 814.6045 ms
+2025-01-27 07:00:30.319 +08:00 [INF] WalletServiceController QueryWallet START
+2025-01-27 07:00:30.321 +08:00 [INF] WalletRepository QueryWallet START
+2025-01-27 07:00:30.330 +08:00 [INF] WalletRepository QueryWallet END
+2025-01-27 07:00:30.332 +08:00 [INF] WalletServiceController QueryWallet END
+2025-01-27 07:00:30.335 +08:00 [INF] HTTP POST /api/MemberMgmt/WalletService/QueryWallet responded 200 in 19.7808 ms
+2025-01-27 07:00:30.783 +08:00 [INF] WalletServiceController QueryWallet START
+2025-01-27 07:00:30.784 +08:00 [INF] WalletRepository QueryWallet START
+2025-01-27 07:00:30.788 +08:00 [INF] WalletRepository QueryWallet END
+2025-01-27 07:00:30.789 +08:00 [INF] WalletServiceController QueryWallet END
+2025-01-27 07:00:30.790 +08:00 [INF] HTTP POST /api/MemberMgmt/WalletService/QueryWallet responded 200 in 15.2997 ms
+2025-01-27 07:00:32.202 +08:00 [INF] WalletServiceController QueryWallet START
+2025-01-27 07:00:32.203 +08:00 [INF] WalletRepository QueryWallet START
+2025-01-27 07:00:32.208 +08:00 [INF] WalletRepository QueryWallet END
+2025-01-27 07:00:32.209 +08:00 [INF] WalletServiceController QueryWallet END
+2025-01-27 07:00:32.210 +08:00 [INF] HTTP POST /api/MemberMgmt/WalletService/QueryWallet responded 200 in 8.8672 ms
+2025-01-27 07:00:32.717 +08:00 [INF] WalletServiceController QueryWallet START
+2025-01-27 07:00:32.718 +08:00 [INF] WalletRepository QueryWallet START
+2025-01-27 07:00:32.722 +08:00 [INF] WalletRepository QueryWallet END
+2025-01-27 07:00:32.723 +08:00 [INF] WalletServiceController QueryWallet END
+2025-01-27 07:00:32.748 +08:00 [INF] HTTP POST /api/MemberMgmt/WalletService/QueryWallet responded 200 in 32.1951 ms
+2025-01-27 07:00:32.873 +08:00 [INF] WalletServiceController QueryWallet START
+2025-01-27 07:00:32.876 +08:00 [INF] WalletRepository QueryWallet START
+2025-01-27 07:00:32.880 +08:00 [INF] WalletRepository QueryWallet END
+2025-01-27 07:00:32.884 +08:00 [INF] WalletServiceController QueryWallet END
+2025-01-27 07:00:32.890 +08:00 [INF] HTTP POST /api/MemberMgmt/WalletService/QueryWallet responded 200 in 17.6783 ms
+2025-01-27 07:00:36.078 +08:00 [INF] WalletServiceController QueryWallet START
+2025-01-27 07:00:36.082 +08:00 [INF] WalletRepository QueryWallet START
+2025-01-27 07:00:36.087 +08:00 [INF] WalletRepository QueryWallet END
+2025-01-27 07:00:36.090 +08:00 [INF] WalletServiceController QueryWallet END
+2025-01-27 07:00:36.093 +08:00 [INF] HTTP POST /api/MemberMgmt/WalletService/QueryWallet responded 200 in 17.3516 ms
+2025-01-27 07:00:36.530 +08:00 [INF] WalletServiceController QueryWallet START
+2025-01-27 07:00:36.531 +08:00 [INF] WalletRepository QueryWallet START
+2025-01-27 07:00:36.537 +08:00 [INF] WalletRepository QueryWallet END
+2025-01-27 07:00:36.543 +08:00 [INF] WalletServiceController QueryWallet END
+2025-01-27 07:00:36.546 +08:00 [INF] HTTP POST /api/MemberMgmt/WalletService/QueryWallet responded 200 in 16.4504 ms
+2025-01-27 07:00:37.222 +08:00 [INF] WalletServiceController QueryWallet START
+2025-01-27 07:00:37.225 +08:00 [INF] WalletRepository QueryWallet START
+2025-01-27 07:00:37.233 +08:00 [INF] WalletRepository QueryWallet END
+2025-01-27 07:00:37.234 +08:00 [INF] WalletServiceController QueryWallet END
+2025-01-27 07:00:37.237 +08:00 [INF] HTTP POST /api/MemberMgmt/WalletService/QueryWallet responded 200 in 15.3255 ms
+2025-01-27 07:00:39.404 +08:00 [INF] WalletServiceController QueryWallet START
+2025-01-27 07:00:39.406 +08:00 [INF] WalletRepository QueryWallet START
+2025-01-27 07:00:39.411 +08:00 [INF] WalletRepository QueryWallet END
+2025-01-27 07:00:39.421 +08:00 [INF] WalletServiceController QueryWallet END
+2025-01-27 07:00:39.423 +08:00 [INF] HTTP POST /api/MemberMgmt/WalletService/QueryWallet responded 200 in 20.2442 ms
+2025-01-27 07:03:32.020 +08:00 [INF] Now listening on: http://localhost:5001
+2025-01-27 07:03:32.077 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-27 07:03:32.080 +08:00 [INF] Hosting environment: Development
+2025-01-27 07:03:32.082 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2025-01-27 07:03:34.993 +08:00 [INF] HTTP GET / responded 404 in 3.5241 ms
+2025-01-27 07:03:58.977 +08:00 [INF] WalletServiceController QueryWallet START
+2025-01-27 07:03:59.008 +08:00 [INF] WalletRepository QueryWallet START
+2025-01-27 07:03:59.391 +08:00 [INF] WalletRepository QueryWallet END
+2025-01-27 07:03:59.394 +08:00 [INF] WalletServiceController QueryWallet END
+2025-01-27 07:03:59.447 +08:00 [INF] HTTP POST /api/MemberMgmt/WalletService/QueryWallet responded 200 in 601.5112 ms
+2025-01-27 07:04:10.195 +08:00 [INF] WalletServiceController QueryWallet START
+2025-01-27 07:04:10.200 +08:00 [INF] WalletRepository QueryWallet START
+2025-01-27 07:04:10.208 +08:00 [INF] WalletRepository QueryWallet END
+2025-01-27 07:04:10.213 +08:00 [INF] WalletServiceController QueryWallet END
+2025-01-27 07:04:10.217 +08:00 [INF] HTTP POST /api/MemberMgmt/WalletService/QueryWallet responded 200 in 27.9645 ms
+2025-01-27 07:04:13.176 +08:00 [INF] WalletServiceController QueryWallet START
+2025-01-27 07:04:13.178 +08:00 [INF] WalletRepository QueryWallet START
+2025-01-27 07:04:13.185 +08:00 [INF] WalletRepository QueryWallet END
+2025-01-27 07:04:13.186 +08:00 [INF] WalletServiceController QueryWallet END
+2025-01-27 07:04:13.187 +08:00 [INF] HTTP POST /api/MemberMgmt/WalletService/QueryWallet responded 200 in 19.7216 ms
+2025-01-27 07:04:16.896 +08:00 [INF] WalletServiceController QueryWallet START
+2025-01-27 07:04:16.899 +08:00 [INF] WalletRepository QueryWallet START
+2025-01-27 07:04:16.908 +08:00 [INF] WalletRepository QueryWallet END
+2025-01-27 07:04:16.910 +08:00 [INF] WalletServiceController QueryWallet END
+2025-01-27 07:04:16.912 +08:00 [INF] HTTP POST /api/MemberMgmt/WalletService/QueryWallet responded 200 in 16.8394 ms
+2025-01-27 07:29:27.957 +08:00 [INF] Now listening on: http://localhost:5001
+2025-01-27 07:29:27.970 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-27 07:29:27.971 +08:00 [INF] Hosting environment: Development
+2025-01-27 07:29:27.972 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2025-01-27 07:29:30.686 +08:00 [INF] HTTP GET / responded 404 in 2.8747 ms
+2025-01-27 07:30:15.778 +08:00 [INF] SpsServiceController QuerySps START
+2025-01-27 07:30:15.784 +08:00 [INF] SpsRepository QuerySps START
+2025-01-27 07:30:16.134 +08:00 [INF] SpsRepository QuerySps END
+2025-01-27 07:30:16.138 +08:00 [INF] SpsServiceController QuerySps END
+2025-01-27 07:30:16.188 +08:00 [INF] HTTP POST /api/SystemMgmt/SpsService/QuerySps responded 200 in 582.0494 ms
+2025-01-27 07:31:34.018 +08:00 [INF] SpsServiceController PostSps START
+2025-01-27 07:31:37.925 +08:00 [INF] SpsRepository PostSps START
+2025-01-27 07:31:39.200 +08:00 [INF] SpsServiceController PostSps END
+2025-01-27 07:31:40.409 +08:00 [INF] HTTP POST /api/SystemMgmt/SpsService/PostSps responded 200 in 6423.5132 ms
+2025-01-27 07:31:41.992 +08:00 [INF] SpsServiceController QuerySps START
+2025-01-27 07:31:41.997 +08:00 [INF] SpsRepository QuerySps START
+2025-01-27 07:31:42.005 +08:00 [INF] SpsRepository QuerySps END
+2025-01-27 07:31:42.007 +08:00 [INF] SpsServiceController QuerySps END
+2025-01-27 07:31:42.009 +08:00 [INF] HTTP POST /api/SystemMgmt/SpsService/QuerySps responded 200 in 31.6550 ms
+2025-01-27 07:32:11.781 +08:00 [INF] HTTP POST /api/SystemMgmt/HomeSettingService/GetHomeVideo responded 404 in 0.0190 ms
+2025-01-27 07:33:12.546 +08:00 [INF] HTTP POST /api/SystemMgmt/HomeSettingService/GetHomeVideo responded 404 in 1.2678 ms
+2025-01-27 07:33:55.380 +08:00 [INF] Now listening on: http://localhost:5001
+2025-01-27 07:33:58.077 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-27 07:33:58.100 +08:00 [INF] Hosting environment: Development
+2025-01-27 07:33:58.101 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2025-01-27 07:33:58.381 +08:00 [INF] HTTP GET / responded 404 in 4.0468 ms
+2025-01-27 07:34:16.686 +08:00 [INF] HTTP POST /api/HomeMgmt/HomeSettingService/GetHomeVideo responded 404 in 0.1554 ms
+2025-01-27 07:35:20.300 +08:00 [INF] Now listening on: http://localhost:5001
+2025-01-27 07:35:20.330 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-27 07:35:21.361 +08:00 [INF] Hosting environment: Development
+2025-01-27 07:35:21.405 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2025-01-27 07:35:21.873 +08:00 [INF] HTTP GET / responded 404 in 37.6262 ms
+2025-01-27 07:36:27.711 +08:00 [INF] HomeSettingService GetHomeVideo START
+2025-01-27 07:36:28.466 +08:00 [INF] SpsRepository GetHomeVideo START
+2025-01-27 07:36:29.818 +08:00 [INF] SpsRepository GetHomeVideo END
+2025-01-27 07:36:29.830 +08:00 [INF] HomeSettingService GetHomeVideo END
+2025-01-27 07:36:29.949 +08:00 [INF] HTTP POST /api/HomeMgmt/HomeSettingService/GetHomeVideo responded 200 in 4227.2916 ms
+2025-01-27 07:37:19.881 +08:00 [INF] HomeSettingService GetHomeVideo START
+2025-01-27 07:37:19.894 +08:00 [INF] SpsRepository GetHomeVideo START
+2025-01-27 07:37:21.307 +08:00 [INF] SpsRepository GetHomeVideo END
+2025-01-27 07:37:21.311 +08:00 [INF] HomeSettingService GetHomeVideo END
+2025-01-27 07:37:21.320 +08:00 [INF] HTTP POST /api/HomeMgmt/HomeSettingService/GetHomeVideo responded 200 in 43785.3349 ms
+2025-01-27 08:22:15.966 +08:00 [INF] Now listening on: http://localhost:5001
+2025-01-27 08:22:15.982 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-27 08:22:15.984 +08:00 [INF] Hosting environment: Development
+2025-01-27 08:22:15.985 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2025-01-27 08:22:22.227 +08:00 [INF] HTTP GET / responded 404 in 1.6862 ms
+2025-01-27 08:22:45.684 +08:00 [INF] MembersServiceController GetMember START
+2025-01-27 08:22:45.699 +08:00 [INF] MemberRepository GetMember START
+2025-01-27 08:22:47.289 +08:00 [INF] MemberRepository GetMember END
+2025-01-27 08:22:47.292 +08:00 [INF] MembersServiceController GetMember END
+2025-01-27 08:22:47.333 +08:00 [INF] HTTP POST /api/MemberMgmt/MembersService/GetMember responded 200 in 1823.8202 ms

@@ -1,0 +1,271 @@
+2024-10-03 01:12:36.839 +08:00 [INF] Now listening on: http://localhost:5000
+2024-10-03 01:12:36.925 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-03 01:12:36.930 +08:00 [INF] Hosting environment: Development
+2024-10-03 01:12:36.934 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2024-10-03 01:12:40.493 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 389.2307 ms
+2024-10-03 01:12:42.208 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 932.9810 ms
+2024-10-03 01:13:05.241 +08:00 [INF] AnnouncementController QueryAnnAdmin START
+2024-10-03 01:13:05.319 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnAdmin
+2024-10-03 01:13:05.359 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnAdmin
+2024-10-03 01:13:08.283 +08:00 [INF] Received HTTP response headers after 2914.2962ms - 200
+2024-10-03 01:13:08.299 +08:00 [INF] End processing HTTP request after 2991.5847ms - 200
+2024-10-03 01:13:08.338 +08:00 [INF] AnnouncementController QueryAnnAdmin START
+2024-10-03 01:13:08.362 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnAdmin responded 200 in 3282.9873 ms
+2024-10-03 01:14:19.660 +08:00 [INF] Now listening on: http://localhost:5000
+2024-10-03 01:14:19.691 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-03 01:14:19.714 +08:00 [INF] Hosting environment: Development
+2024-10-03 01:14:19.721 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2024-10-03 01:14:23.892 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 430.0985 ms
+2024-10-03 01:14:25.643 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 972.2173 ms
+2024-10-03 01:15:41.702 +08:00 [INF] AnnouncementController QueryAnnAdmin START
+2024-10-03 01:15:41.793 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnAdmin
+2024-10-03 01:15:41.807 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnAdmin
+2024-10-03 01:15:44.028 +08:00 [INF] Received HTTP response headers after 2215.6358ms - 200
+2024-10-03 01:15:44.041 +08:00 [INF] End processing HTTP request after 2257.1681ms - 200
+2024-10-03 01:15:44.103 +08:00 [INF] AnnouncementController QueryAnnAdmin START
+2024-10-03 01:15:44.139 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnAdmin responded 200 in 2569.0097 ms
+2024-10-03 01:16:00.077 +08:00 [INF] AnnouncementController QueryAnnAdmin START
+2024-10-03 01:16:00.119 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnAdmin
+2024-10-03 01:16:00.120 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnAdmin
+2024-10-03 01:16:00.192 +08:00 [INF] Received HTTP response headers after 69.1746ms - 200
+2024-10-03 01:16:00.205 +08:00 [INF] End processing HTTP request after 85.473ms - 200
+2024-10-03 01:16:00.207 +08:00 [INF] AnnouncementController QueryAnnAdmin START
+2024-10-03 01:16:00.211 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnAdmin responded 200 in 143.5739 ms
+2024-10-03 01:16:10.811 +08:00 [INF] AnnouncementController QueryAnnAdmin START
+2024-10-03 01:16:10.813 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnAdmin
+2024-10-03 01:16:10.814 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnAdmin
+2024-10-03 01:16:10.953 +08:00 [INF] Received HTTP response headers after 58.7135ms - 200
+2024-10-03 01:16:10.967 +08:00 [INF] End processing HTTP request after 153.9102ms - 200
+2024-10-03 01:16:10.969 +08:00 [INF] AnnouncementController QueryAnnAdmin START
+2024-10-03 01:16:10.972 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnAdmin responded 200 in 165.5470 ms
+2024-10-03 01:18:06.073 +08:00 [INF] Now listening on: http://localhost:5000
+2024-10-03 01:18:06.098 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-03 01:18:06.099 +08:00 [INF] Hosting environment: Development
+2024-10-03 01:18:06.100 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2024-10-03 01:18:11.343 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 783.9967 ms
+2024-10-03 01:18:13.291 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 987.3698 ms
+2024-10-03 01:18:24.730 +08:00 [INF] AnnouncementController QueryAnnAdmin START
+2024-10-03 01:18:25.044 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnAdmin
+2024-10-03 01:18:25.060 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnAdmin
+2024-10-03 01:18:26.501 +08:00 [INF] Received HTTP response headers after 1431.0691ms - 200
+2024-10-03 01:18:26.617 +08:00 [INF] End processing HTTP request after 1577.6199ms - 200
+2024-10-03 01:18:26.753 +08:00 [INF] AnnouncementController QueryAnnAdmin START
+2024-10-03 01:18:26.774 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnAdmin responded 200 in 2450.5778 ms
+2024-10-03 01:18:37.720 +08:00 [INF] AnnouncementController QueryAnnAdmin START
+2024-10-03 01:18:37.792 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnAdmin
+2024-10-03 01:18:37.793 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnAdmin
+2024-10-03 01:18:37.857 +08:00 [INF] Received HTTP response headers after 63.5765ms - 200
+2024-10-03 01:18:37.859 +08:00 [INF] End processing HTTP request after 66.7438ms - 200
+2024-10-03 01:18:37.873 +08:00 [INF] AnnouncementController QueryAnnAdmin START
+2024-10-03 01:18:37.879 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnAdmin responded 200 in 162.7873 ms
+2024-10-03 01:20:04.667 +08:00 [INF] Now listening on: http://localhost:5000
+2024-10-03 01:20:04.700 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-03 01:20:04.703 +08:00 [INF] Hosting environment: Development
+2024-10-03 01:20:04.704 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2024-10-03 01:20:12.715 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 401.0558 ms
+2024-10-03 01:20:15.814 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 748.5644 ms
+2024-10-03 01:20:59.828 +08:00 [INF] AnnouncementController QueryAnnAdmin START
+2024-10-03 01:20:59.955 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnAdmin
+2024-10-03 01:20:59.977 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnAdmin
+2024-10-03 01:21:01.344 +08:00 [INF] Received HTTP response headers after 1362.2954ms - 200
+2024-10-03 01:21:01.357 +08:00 [INF] End processing HTTP request after 1420.1009ms - 200
+2024-10-03 01:21:01.392 +08:00 [INF] AnnouncementController QueryAnnAdmin START
+2024-10-03 01:21:01.410 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnAdmin responded 200 in 1902.8678 ms
+2024-10-03 02:02:41.814 +08:00 [INF] Now listening on: http://localhost:5000
+2024-10-03 02:02:41.837 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-03 02:02:41.838 +08:00 [INF] Hosting environment: Development
+2024-10-03 02:02:41.839 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2024-10-03 02:02:52.033 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 569.0150 ms
+2024-10-03 02:02:54.146 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 1122.9863 ms
+2024-10-03 02:03:02.557 +08:00 [INF] AnnouncementController GetAnnImage START
+2024-10-03 02:03:02.622 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnouncementBoardAdmin responded 404 in 425.5692 ms
+2024-10-03 02:03:11.048 +08:00 [INF] AnnouncementController GetAnnImage START
+2024-10-03 02:03:11.058 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnouncementBoardAdmin responded 404 in 13.6065 ms
+2024-10-03 02:04:03.725 +08:00 [INF] AnnouncementController QueryAnnAdmin START
+2024-10-03 02:04:03.775 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnAdmin
+2024-10-03 02:04:03.781 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnAdmin
+2024-10-03 02:04:04.452 +08:00 [INF] Received HTTP response headers after 665.4993ms - 200
+2024-10-03 02:04:04.457 +08:00 [INF] End processing HTTP request after 688.3555ms - 200
+2024-10-03 02:04:04.493 +08:00 [INF] AnnouncementController QueryAnnAdmin START
+2024-10-03 02:04:04.535 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnAdmin responded 200 in 1140.6028 ms
+2024-10-03 02:04:19.317 +08:00 [INF] AnnouncementController QueryAnnAdmin START
+2024-10-03 02:04:19.318 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnAdmin
+2024-10-03 02:04:19.319 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnAdmin
+2024-10-03 02:04:19.374 +08:00 [INF] Received HTTP response headers after 53.9041ms - 200
+2024-10-03 02:04:19.381 +08:00 [INF] End processing HTTP request after 62.2525ms - 200
+2024-10-03 02:04:19.385 +08:00 [INF] AnnouncementController QueryAnnAdmin START
+2024-10-03 02:04:19.391 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnAdmin responded 200 in 76.3537 ms
+2024-10-03 02:04:22.923 +08:00 [INF] AnnouncementController QueryAnnAdmin START
+2024-10-03 02:04:22.925 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnAdmin
+2024-10-03 02:04:22.927 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnAdmin
+2024-10-03 02:04:22.986 +08:00 [INF] Received HTTP response headers after 46.7612ms - 200
+2024-10-03 02:04:23.003 +08:00 [INF] End processing HTTP request after 77.6275ms - 200
+2024-10-03 02:04:23.006 +08:00 [INF] AnnouncementController QueryAnnAdmin START
+2024-10-03 02:04:23.009 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnAdmin responded 200 in 94.1972 ms
+2024-10-03 02:04:28.275 +08:00 [INF] AnnouncementController QueryAnnAdmin START
+2024-10-03 02:04:28.279 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnAdmin
+2024-10-03 02:04:28.280 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnAdmin
+2024-10-03 02:04:28.302 +08:00 [INF] Received HTTP response headers after 20.4869ms - 200
+2024-10-03 02:04:28.313 +08:00 [INF] End processing HTTP request after 33.8899ms - 200
+2024-10-03 02:04:28.314 +08:00 [INF] AnnouncementController QueryAnnAdmin START
+2024-10-03 02:04:28.316 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnAdmin responded 200 in 43.6785 ms
+2024-10-03 02:04:32.316 +08:00 [INF] AnnouncementController QueryAnnAdmin START
+2024-10-03 02:04:32.328 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnAdmin
+2024-10-03 02:04:32.329 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnAdmin
+2024-10-03 02:04:32.358 +08:00 [INF] Received HTTP response headers after 27.8901ms - 200
+2024-10-03 02:04:32.360 +08:00 [INF] End processing HTTP request after 32.4251ms - 200
+2024-10-03 02:04:32.363 +08:00 [INF] AnnouncementController QueryAnnAdmin START
+2024-10-03 02:04:32.370 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnAdmin responded 200 in 54.3601 ms
+2024-10-03 02:04:35.985 +08:00 [INF] AnnouncementController QueryAnnAdmin START
+2024-10-03 02:04:35.988 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnAdmin
+2024-10-03 02:04:35.996 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnAdmin
+2024-10-03 02:04:36.020 +08:00 [INF] Received HTTP response headers after 17.8987ms - 200
+2024-10-03 02:04:36.023 +08:00 [INF] End processing HTTP request after 34.9773ms - 200
+2024-10-03 02:04:36.031 +08:00 [INF] AnnouncementController QueryAnnAdmin START
+2024-10-03 02:04:36.034 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnAdmin responded 200 in 48.7889 ms
+2024-10-03 02:04:42.068 +08:00 [INF] AnnouncementController QueryAnnAdmin START
+2024-10-03 02:04:42.080 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnAdmin
+2024-10-03 02:04:42.081 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/SystemMgmt/AnnouncementService/QueryAnnAdmin
+2024-10-03 02:04:42.097 +08:00 [INF] Received HTTP response headers after 15.3293ms - 200
+2024-10-03 02:04:42.101 +08:00 [INF] End processing HTTP request after 20.7772ms - 200
+2024-10-03 02:04:42.102 +08:00 [INF] AnnouncementController QueryAnnAdmin START
+2024-10-03 02:04:42.107 +08:00 [INF] HTTP GET /api/Announcement/QueryAnnAdmin responded 200 in 39.6204 ms
+2024-10-03 02:25:00.676 +08:00 [INF] AnnouncementController GetAnnImages START
+2024-10-03 02:25:00.771 +08:00 [INF] AnnouncementController GetAnnImages END
+2024-10-03 02:25:00.779 +08:00 [INF] HTTP GET /api/Announcement/GetAnnImages responded 200 in 105.8302 ms
+2024-10-03 02:25:00.830 +08:00 [INF] AnnouncementController GetAnnImage START
+2024-10-03 02:25:00.831 +08:00 [INF] AnnouncementController GetAnnImage START
+2024-10-03 02:25:00.884 +08:00 [INF] HTTP GET /api/Announcement/8e394045-1298-4610-9a2c-4bc9b08bc71a_01.png responded 200 in 52.9759 ms
+2024-10-03 02:25:00.928 +08:00 [INF] AnnouncementController GetAnnImage START
+2024-10-03 02:25:00.960 +08:00 [INF] HTTP GET /api/Announcement/8e394045-1298-4610-9a2c-4bc9b08bc71a_00.jpg responded 200 in 130.5885 ms
+2024-10-03 02:25:01.129 +08:00 [INF] HTTP GET /api/Announcement/8e394045-1298-4610-9a2c-4bc9b08bc71a_02.png responded 200 in 201.4808 ms
+2024-10-03 02:25:07.414 +08:00 [INF] AnnouncementController GetAnnImages START
+2024-10-03 02:25:07.420 +08:00 [INF] AnnouncementController GetAnnImages END
+2024-10-03 02:25:07.435 +08:00 [INF] HTTP GET /api/Announcement/GetAnnImages responded 200 in 21.5351 ms
+2024-10-03 02:25:09.260 +08:00 [INF] AnnouncementController GetAnnImages START
+2024-10-03 02:25:09.276 +08:00 [INF] AnnouncementController GetAnnImages END
+2024-10-03 02:25:09.277 +08:00 [INF] HTTP GET /api/Announcement/GetAnnImages responded 200 in 17.1538 ms
+2024-10-03 02:25:14.106 +08:00 [INF] AnnouncementController GetAnnImages START
+2024-10-03 02:25:14.122 +08:00 [INF] AnnouncementController GetAnnImages END
+2024-10-03 02:25:14.124 +08:00 [INF] HTTP GET /api/Announcement/GetAnnImages responded 200 in 33.7964 ms
+2024-10-03 02:25:14.167 +08:00 [INF] AnnouncementController GetAnnImage START
+2024-10-03 02:25:14.168 +08:00 [INF] AnnouncementController GetAnnImage START
+2024-10-03 02:25:14.181 +08:00 [INF] AnnouncementController GetAnnImage START
+2024-10-03 02:25:14.228 +08:00 [INF] HTTP GET /api/Announcement/8e394045-1298-4610-9a2c-4bc9b08bc71a_01.png responded 200 in 60.8903 ms
+2024-10-03 02:25:14.380 +08:00 [INF] HTTP GET /api/Announcement/8e394045-1298-4610-9a2c-4bc9b08bc71a_00.jpg responded 200 in 213.7065 ms
+2024-10-03 02:25:14.382 +08:00 [INF] HTTP GET /api/Announcement/8e394045-1298-4610-9a2c-4bc9b08bc71a_02.png responded 200 in 200.7207 ms
+2024-10-03 02:25:14.873 +08:00 [INF] AnnouncementController GetAnnImages START
+2024-10-03 02:25:14.878 +08:00 [INF] AnnouncementController GetAnnImages END
+2024-10-03 02:25:14.879 +08:00 [INF] HTTP GET /api/Announcement/GetAnnImages responded 200 in 6.1067 ms
+2024-10-03 02:25:15.511 +08:00 [INF] AnnouncementController GetAnnImages START
+2024-10-03 02:25:15.558 +08:00 [INF] AnnouncementController GetAnnImages END
+2024-10-03 02:25:15.602 +08:00 [INF] HTTP GET /api/Announcement/GetAnnImages responded 200 in 90.6608 ms
+2024-10-03 02:25:16.157 +08:00 [INF] AnnouncementController GetAnnImages START
+2024-10-03 02:25:16.167 +08:00 [INF] AnnouncementController GetAnnImages END
+2024-10-03 02:25:16.170 +08:00 [INF] HTTP GET /api/Announcement/GetAnnImages responded 200 in 13.3355 ms
+2024-10-03 02:25:17.129 +08:00 [INF] AnnouncementController GetAnnImages START
+2024-10-03 02:25:17.151 +08:00 [INF] AnnouncementController GetAnnImages END
+2024-10-03 02:25:17.152 +08:00 [INF] HTTP GET /api/Announcement/GetAnnImages responded 200 in 23.2746 ms
+2024-10-03 03:31:58.287 +08:00 [INF] Now listening on: http://localhost:5000
+2024-10-03 03:31:58.413 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-03 03:31:58.415 +08:00 [INF] Hosting environment: Development
+2024-10-03 03:31:58.416 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2024-10-03 03:32:07.082 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 327.2619 ms
+2024-10-03 03:32:09.786 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 590.2637 ms
+2024-10-03 03:33:32.239 +08:00 [INF] Now listening on: http://localhost:5000
+2024-10-03 03:33:32.253 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-03 03:33:32.255 +08:00 [INF] Hosting environment: Development
+2024-10-03 03:33:32.257 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2024-10-03 03:33:42.677 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 309.0117 ms
+2024-10-03 03:33:45.845 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 652.9913 ms
+2024-10-03 03:34:39.913 +08:00 [INF] ApplyDepositController QueryApplyDepositUser START
+2024-10-03 03:34:39.960 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyDepositService/QueryApplyDepositUser
+2024-10-03 03:34:39.966 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyDepositService/QueryApplyDepositUser
+2024-10-03 03:34:42.496 +08:00 [INF] Received HTTP response headers after 2527.5379ms - 200
+2024-10-03 03:34:42.500 +08:00 [INF] End processing HTTP request after 2545.7022ms - 200
+2024-10-03 03:34:42.536 +08:00 [INF] ApplyDepositController QueryApplyDepositUser START
+2024-10-03 03:34:42.557 +08:00 [INF] HTTP GET /api/ApplyDeposit/QueryApplyDepositUser responded 200 in 2749.8100 ms
+2024-10-03 03:34:48.539 +08:00 [INF] ApplyDepositController QueryApplyDepositUser START
+2024-10-03 03:34:48.576 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyDepositService/QueryApplyDepositUser
+2024-10-03 03:34:48.583 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyDepositService/QueryApplyDepositUser
+2024-10-03 03:34:48.913 +08:00 [INF] Received HTTP response headers after 323.9662ms - 200
+2024-10-03 03:34:48.930 +08:00 [INF] End processing HTTP request after 353.7984ms - 200
+2024-10-03 03:34:48.958 +08:00 [INF] ApplyDepositController QueryApplyDepositUser START
+2024-10-03 03:34:48.961 +08:00 [INF] HTTP GET /api/ApplyDeposit/QueryApplyDepositUser responded 200 in 473.8927 ms
+2024-10-03 03:34:53.605 +08:00 [INF] ApplyDepositController QueryApplyDepositUser START
+2024-10-03 03:34:53.612 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyDepositService/QueryApplyDepositUser
+2024-10-03 03:34:53.613 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyDepositService/QueryApplyDepositUser
+2024-10-03 03:34:53.636 +08:00 [INF] Received HTTP response headers after 20.7708ms - 200
+2024-10-03 03:34:53.642 +08:00 [INF] End processing HTTP request after 29.2822ms - 200
+2024-10-03 03:34:53.645 +08:00 [INF] ApplyDepositController QueryApplyDepositUser START
+2024-10-03 03:34:53.648 +08:00 [INF] HTTP GET /api/ApplyDeposit/QueryApplyDepositUser responded 200 in 45.5165 ms
+2024-10-03 03:35:00.300 +08:00 [INF] ApplyDepositController QueryApplyDepositUser START
+2024-10-03 03:35:00.302 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyDepositService/QueryApplyDepositUser
+2024-10-03 03:35:00.304 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyDepositService/QueryApplyDepositUser
+2024-10-03 03:35:00.391 +08:00 [INF] Received HTTP response headers after 85.8143ms - 200
+2024-10-03 03:35:00.411 +08:00 [INF] End processing HTTP request after 108.8172ms - 200
+2024-10-03 03:35:00.413 +08:00 [INF] ApplyDepositController QueryApplyDepositUser START
+2024-10-03 03:35:00.416 +08:00 [INF] HTTP GET /api/ApplyDeposit/QueryApplyDepositUser responded 200 in 116.8706 ms
+2024-10-03 03:36:02.589 +08:00 [INF] Now listening on: http://localhost:5000
+2024-10-03 03:36:02.626 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-03 03:36:02.629 +08:00 [INF] Hosting environment: Development
+2024-10-03 03:36:02.629 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2024-10-03 03:36:12.591 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 528.0516 ms
+2024-10-03 03:36:14.327 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 805.5969 ms
+2024-10-03 03:36:50.978 +08:00 [INF] HTTP GET /api/ApplyWithdraw/QueryApplyWithdrawUser responded 200 in 185.2578 ms
+2024-10-03 03:37:10.000 +08:00 [INF] ApplyWithdrawController QueryApplyWithdrawUser START
+2024-10-03 03:37:10.086 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawUser
+2024-10-03 03:37:10.091 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawUser
+2024-10-03 03:37:11.145 +08:00 [INF] Received HTTP response headers after 1047.4907ms - 200
+2024-10-03 03:37:11.152 +08:00 [INF] End processing HTTP request after 1077.2463ms - 200
+2024-10-03 03:37:11.170 +08:00 [INF] ApplyWithdrawController QueryApplyWithdrawUser START
+2024-10-03 03:37:11.192 +08:00 [INF] HTTP GET /api/ApplyWithdraw/QueryApplyWithdrawUser responded 200 in 1205.8487 ms
+2024-10-03 03:37:19.143 +08:00 [INF] ApplyWithdrawController QueryApplyWithdrawUser START
+2024-10-03 03:37:19.184 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawUser
+2024-10-03 03:37:19.188 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawUser
+2024-10-03 03:37:19.212 +08:00 [INF] Received HTTP response headers after 21.7187ms - 200
+2024-10-03 03:37:19.214 +08:00 [INF] End processing HTTP request after 30.1369ms - 200
+2024-10-03 03:37:19.217 +08:00 [INF] ApplyWithdrawController QueryApplyWithdrawUser START
+2024-10-03 03:37:19.220 +08:00 [INF] HTTP GET /api/ApplyWithdraw/QueryApplyWithdrawUser responded 200 in 79.0464 ms
+2024-10-03 03:37:31.945 +08:00 [INF] ApplyWithdrawController QueryApplyWithdrawUser START
+2024-10-03 03:37:31.947 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawUser
+2024-10-03 03:37:31.950 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawUser
+2024-10-03 03:37:32.020 +08:00 [INF] Received HTTP response headers after 68.8468ms - 200
+2024-10-03 03:37:32.022 +08:00 [INF] End processing HTTP request after 74.9132ms - 200
+2024-10-03 03:37:32.039 +08:00 [INF] ApplyWithdrawController QueryApplyWithdrawUser START
+2024-10-03 03:37:32.041 +08:00 [INF] HTTP GET /api/ApplyWithdraw/QueryApplyWithdrawUser responded 200 in 95.7504 ms
+2024-10-03 03:37:49.477 +08:00 [INF] ApplyWithdrawController QueryApplyWithdrawUser START
+2024-10-03 03:37:49.504 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawUser
+2024-10-03 03:37:49.506 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawUser
+2024-10-03 03:37:49.524 +08:00 [INF] Received HTTP response headers after 12.1482ms - 200
+2024-10-03 03:37:49.527 +08:00 [INF] End processing HTTP request after 22.997ms - 200
+2024-10-03 03:37:49.530 +08:00 [INF] ApplyWithdrawController QueryApplyWithdrawUser START
+2024-10-03 03:37:49.534 +08:00 [INF] HTTP GET /api/ApplyWithdraw/QueryApplyWithdrawUser responded 200 in 57.8368 ms
+2024-10-03 03:38:02.010 +08:00 [INF] ApplyWithdrawController QueryApplyWithdrawUser START
+2024-10-03 03:38:02.087 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawUser
+2024-10-03 03:38:02.093 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawUser
+2024-10-03 03:38:02.125 +08:00 [INF] Received HTTP response headers after 30.5124ms - 200
+2024-10-03 03:38:02.129 +08:00 [INF] End processing HTTP request after 41.9616ms - 200
+2024-10-03 03:38:02.136 +08:00 [INF] ApplyWithdrawController QueryApplyWithdrawUser START
+2024-10-03 03:38:02.138 +08:00 [INF] HTTP GET /api/ApplyWithdraw/QueryApplyWithdrawUser responded 200 in 128.7964 ms
+2024-10-03 03:38:09.287 +08:00 [INF] HTTP GET /api/ApplyWithdraw/QueryApplyWithdrawUser responded 200 in 1.1349 ms
+2024-10-03 03:40:18.271 +08:00 [INF] Now listening on: http://localhost:5000
+2024-10-03 03:40:18.295 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-03 03:40:18.296 +08:00 [INF] Hosting environment: Development
+2024-10-03 03:40:18.297 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\DotNetBackEndApi
+2024-10-03 03:40:28.519 +08:00 [INF] HTTP GET /swagger/index.html responded 200 in 381.3324 ms
+2024-10-03 03:40:30.603 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 1090.6653 ms
+2024-10-03 03:41:16.459 +08:00 [INF] ApplyWithdrawController QueryApplyWithdrawUser START
+2024-10-03 03:41:16.508 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawUser
+2024-10-03 03:41:16.511 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawUser
+2024-10-03 03:41:26.320 +08:00 [INF] Received HTTP response headers after 9800.6812ms - 200
+2024-10-03 03:41:26.324 +08:00 [INF] End processing HTTP request after 9826.3302ms - 200
+2024-10-03 03:41:26.369 +08:00 [INF] ApplyWithdrawController QueryApplyWithdrawUser START
+2024-10-03 03:41:26.391 +08:00 [INF] HTTP GET /api/ApplyWithdraw/QueryApplyWithdrawUser responded 200 in 10038.1322 ms
+2024-10-03 03:41:34.016 +08:00 [INF] ApplyWithdrawController QueryApplyWithdrawUser START
+2024-10-03 03:41:34.068 +08:00 [INF] Start processing HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawUser
+2024-10-03 03:41:34.069 +08:00 [INF] Sending HTTP request POST http://localhost:5001/api/FinancialMgmt/ApplyWithdrawService/QueryApplyWithdrawUser
+2024-10-03 03:41:34.107 +08:00 [INF] Received HTTP response headers after 37.7157ms - 200
+2024-10-03 03:41:34.121 +08:00 [INF] End processing HTTP request after 52.907ms - 200
+2024-10-03 03:41:34.122 +08:00 [INF] ApplyWithdrawController QueryApplyWithdrawUser START
+2024-10-03 03:41:34.124 +08:00 [INF] HTTP GET /api/ApplyWithdraw/QueryApplyWithdrawUser responded 200 in 113.1371 ms

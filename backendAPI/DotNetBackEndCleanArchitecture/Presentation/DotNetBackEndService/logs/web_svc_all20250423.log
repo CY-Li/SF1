@@ -1,0 +1,13 @@
+2025-04-23 09:05:41.027 +08:00 [INF] Now listening on: http://localhost:5001
+2025-04-23 09:05:41.050 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-23 09:05:41.084 +08:00 [INF] Hosting environment: Development
+2025-04-23 09:05:50.604 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2025-04-23 09:05:52.563 +08:00 [INF] HTTP GET / responded 404 in 8.6759 ms
+2025-04-23 09:12:56.475 +08:00 [INF] LoginServiceController Login START
+2025-04-23 09:12:58.953 +08:00 [INF] LoginServiceController Login END
+2025-04-23 09:12:59.029 +08:00 [INF] HTTP POST /api/AuthenticationMgmt/LoginService/Login responded 200 in 384177.0830 ms
+2025-04-23 09:21:11.595 +08:00 [INF] Now listening on: http://localhost:5001
+2025-04-23 09:21:11.630 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-23 09:21:11.632 +08:00 [INF] Hosting environment: Development
+2025-04-23 09:21:11.687 +08:00 [INF] Content root path: D:\Project\DotNetBackEnd\DotNetBackEndCleanArchitecture\DotNetBackEndCleanArchitecture\Presentation\DotNetBackEndService
+2025-04-23 09:21:13.395 +08:00 [INF] HTTP GET / responded 404 in 2.8777 ms

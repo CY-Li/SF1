@@ -1,0 +1,83 @@
+.mat-50 {
+    width: 48%;
+    margin: 1%;
+}
+
+.mat-100 {
+    width: 99%;
+    margin: 1%;
+}
+
+@media (max-width: 600px) {
+
+    /* 假設小於6吋的手機寬度約為600px */
+    .mat-50 {
+        width: 99%;
+        margin: 1%;
+    }
+}
+
+.form-action {
+    padding: 0px 25px 20px;
+
+    button {
+        flex: 1;
+        margin-right: 8px;
+    }
+}
+.table-action {
+    display: flex;
+  }
+
+
+.example-element-row td {
+    border-bottom-width: 0;
+}
+
+.example-element-detail {
+    overflow: hidden;
+    display: flex;
+}
+
+tr.example-detail-row {
+    height: 0;
+}
+
+.fixed-img {
+    width: 100%;/* 根據容器寬度自適應 */
+    max-width: 300px;/* 設定最大寬度，例如 6.3 吋的大小 */
+    height: auto;/* 保持圖片的高寬比 */
+}
+
+.paginator-container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  .page-input-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .page-input {
+    width: 60px;
+    text-align: center;
+    -moz-appearance: textfield;
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+  .input-label {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 14px;
+  }
+  .total-pages {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 14px;
+  }
