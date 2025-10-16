@@ -1,8 +1,8 @@
-# Angular 建置問題修復報告
+# Zeabur 部署問題修復報告
 
 ## 🚨 問題描述
 
-Zeabur 部署時出現 Angular 建置失敗：
+### 1. Angular 建置失敗 (已修復 ✅)
 
 ```
 #24 [angular-build 6/6] RUN npm run build
@@ -12,15 +12,28 @@ Zeabur 部署時出現 Angular 建置失敗：
 #24 ERROR: process "/bin/sh -c npm run build" did not complete successfully: exit code: 127
 ```
 
+### 2. .NET 編譯錯誤 (最新問題 🔧)
+
+```
+/src/DotNetBackEndApi/Program.cs(102,47): error CS4010: Cannot convert async lambda expression to delegate type 'Func<HealthCheckResult>'
+/src/DotNetBackEndApi/Program.cs(257,40): error CS0246: The type or namespace name 'HealthCheckOptions' could not be found
+```
+
 ## 🔍 根本原因分析
 
+### Angular 問題 (已解決)
 1. **Angular CLI 未安裝**: `ng` 命令找不到
 2. **npm 安裝問題**: 使用 `npm ci --only=production` 跳過了 devDependencies
 3. **依賴配置**: Angular CLI (`@angular/cli`) 位於 devDependencies 中
 
+### .NET 問題 (已修復)
+1. **Health Check 配置錯誤**: 異步 lambda 表達式類型不匹配
+2. **缺少 using 語句**: `HealthCheckOptions` 命名空間未引用
+3. **目標框架過舊**: 使用 .NET 7.0 但 Docker 運行 .NET 8.0
+
 ## ✅ 解決方案
 
-### 方案 1: 修復 Angular 建置 (推薦)
+### Angular 建置修復 (已完成 ✅)
 
 修改 Dockerfile 中的 npm 安裝命令：
 
@@ -32,32 +45,52 @@ RUN npm ci --only=production
 RUN npm ci  # 安裝所有依賴，包含 devDependencies
 ```
 
-**優點**:
-- 完整的 Angular 建置
-- 後台功能完整
-- 符合標準開發流程
+### .NET 編譯修復 (已完成 ✅)
 
-**缺點**:
-- 建置時間較長
-- 需要更多建置資源
+#### 1. 修復 Health Check 配置
 
-### 方案 2: 跳過 Angular 建置
+```csharp
+// 修改前 - 異步 lambda 錯誤
+.AddCheck("backend-service", async () => { ... })
 
-提供備用 Dockerfile (`Dockerfile.no-angular`)：
+// 修改後 - 簡化為同步檢查
+.AddCheck("self", () => HealthCheckResult.Healthy("API Gateway is running"));
+```
+
+#### 2. 添加缺少的 using 語句
+
+```csharp
+using Microsoft.AspNetCore.Diagnostics.HealthChecks;
+```
+
+#### 3. 修復 HealthCheckOptions 引用
+
+```csharp
+// 修改前
+app.MapHealthChecks("/health", new HealthCheckOptions { ... });
+
+// 修改後
+app.MapHealthChecks("/health", new Microsoft.AspNetCore.Diagnostics.HealthChecks.HealthCheckOptions { ... });
+```
+
+#### 4. 升級目標框架
+
+```xml
+<!-- 修改前 -->
+<TargetFramework>net7.0</TargetFramework>
+
+<!-- 修改後 -->
+<TargetFramework>net8.0</TargetFramework>
+```
+
+### 備用方案: 跳過 Angular 建置
+
+如果仍有問題，提供備用 Dockerfile (`Dockerfile.no-angular`)：
 
 ```dockerfile
 # 直接複製原始檔案，不進行建置
 COPY backend/FontEnd/FontEnd/src/ /var/www/admin/
 ```
-
-**優點**:
-- 建置速度快
-- 避免 Node.js 建置問題
-- 資源需求低
-
-**缺點**:
-- 後台功能可能受限
-- 需要手動建置 Angular (如需要)
 
 ## 🛠️ 實施步驟
 

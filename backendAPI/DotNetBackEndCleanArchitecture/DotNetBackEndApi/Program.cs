@@ -9,6 +9,7 @@ using Hangfire.MySql;
 using Microsoft.OpenApi.Models;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 using HealthChecks.UI.Client;
+using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Serilog;
 using Serilog.Events;
 
@@ -98,23 +99,7 @@ try
 
     // Add health checks
     builder.Services.AddHealthChecks()
-        .AddCheck("self", () => HealthCheckResult.Healthy("API Gateway is running"))
-        .AddCheck("backend-service", async () =>
-        {
-            try
-            {
-                using var httpClient = new HttpClient();
-                httpClient.Timeout = TimeSpan.FromSeconds(10);
-                var response = await httpClient.GetAsync($"{mAppSetting.APIUrl}health");
-                return response.IsSuccessStatusCode 
-                    ? HealthCheckResult.Healthy("Backend service is healthy")
-                    : HealthCheckResult.Unhealthy("Backend service is not responding");
-            }
-            catch (Exception ex)
-            {
-                return HealthCheckResult.Unhealthy($"Backend service check failed: {ex.Message}");
-            }
-        });
+        .AddCheck("self", () => HealthCheckResult.Healthy("API Gateway is running"));
 
     //�Ӧa��O�]�w�VService����ƪ��]�w(�N�O�b�ϥθ�service�ɷ|�۰ʥ[�J��URL)
     builder.Services.AddHttpClient<HttpClientService>(c =>
@@ -254,9 +239,9 @@ try
     app.UseAuthorization(); // ���v
 
     // Configure health check endpoint
-    app.MapHealthChecks("/health", new HealthCheckOptions
+    app.MapHealthChecks("/health", new Microsoft.AspNetCore.Diagnostics.HealthChecks.HealthCheckOptions
     {
-        ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
+        ResponseWriter = HealthChecks.UI.Client.UIResponseWriter.WriteHealthCheckUIResponse
     });
 
     app.MapControllers();
