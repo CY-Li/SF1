@@ -8,8 +8,8 @@ COPY backend/FontEnd/FontEnd/package*.json ./
 # 安裝所有依賴 (包含 devDependencies 中的 Angular CLI)
 RUN npm ci
 COPY backend/FontEnd/FontEnd/ .
-# 建置 Angular 專案
-RUN npm run build
+# 建置 Angular 專案 (使用 Zeabur 優化配置)
+RUN npm run build:zeabur
 
 # 階段 2: 建置 .NET Core Backend Service
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS backend-service-build
