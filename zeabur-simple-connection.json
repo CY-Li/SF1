@@ -8,17 +8,17 @@
       "name": "rosca-app",
       "env": {
         "ASPNETCORE_ENVIRONMENT": "Production",
-        "ConnectionStrings__BackEndDatabase": "Server=43.167.174.222;Port=31500;User Id=root;Password=dp17Itl608ZaMBXbWH5VAo49xJr3Ds2G;Database=zeabur;",
-        "ConnectionStrings__DefaultConnection": "Server=43.167.174.222;Port=31500;User Id=root;Password=dp17Itl608ZaMBXbWH5VAo49xJr3Ds2G;Database=zeabur;",
-        "JWT__SecretKey": "${JWT_SECRET_KEY}",
-        "JWT__Issuer": "${JWT_ISSUER}",
-        "JWT__Audience": "${JWT_AUDIENCE}",
-        "JWT__ExpiryMinutes": "${JWT_EXPIRY_MINUTES}",
-        "CORS__AllowedOrigins": "${CORS_ALLOWED_ORIGINS}",
-        "FileUpload__MaxFileSize": "${FILE_UPLOAD_MAX_SIZE}",
-        "FileUpload__AllowedExtensions": "${FILE_UPLOAD_EXTENSIONS}",
-        "Hangfire__DashboardEnabled": "${HANGFIRE_DASHBOARD_ENABLED}",
-        "Serilog__MinimumLevel__Default": "${LOG_LEVEL}",
+        "ConnectionStrings__BackEndDatabase": "Server=rosca-mariadb;Port=3306;Uid=root;Pwd=rosca_root_2024!;Database=zeabur;CharSet=utf8mb4;",
+        "ConnectionStrings__DefaultConnection": "Server=rosca-mariadb;Port=3306;Uid=root;Pwd=rosca_root_2024!;Database=zeabur;CharSet=utf8mb4;",
+        "JWT__SecretKey": "your-super-secret-jwt-key-at-least-32-characters-long-2024",
+        "JWT__Issuer": "ROSCA-API",
+        "JWT__Audience": "ROSCA-Client",
+        "JWT__ExpiryMinutes": "60",
+        "CORS__AllowedOrigins": "https://sf-test.zeabur.app",
+        "FileUpload__MaxFileSize": "52428800",
+        "FileUpload__AllowedExtensions": ".jpg,.jpeg,.png,.gif,.pdf",
+        "Hangfire__DashboardEnabled": "true",
+        "Serilog__MinimumLevel__Default": "Information",
         "TZ": "Asia/Taipei"
       },
       "volumes": [
@@ -52,7 +52,54 @@
           "dir": "/app/logs",
           "size": "1GB"
         }
+      ],
+      "depends_on": [
+        "mariadb"
       ]
+    },
+    "mariadb": {
+      "template": "mariadb:11.3.2",
+      "name": "rosca-mariadb",
+      "env": {
+        "MYSQL_ROOT_PASSWORD": "rosca_root_2024!",
+        "MYSQL_DATABASE": "zeabur",
+        "MYSQL_CHARACTER_SET_SERVER": "utf8mb4",
+        "MYSQL_COLLATION_SERVER": "utf8mb4_general_ci",
+        "TZ": "Asia/Taipei"
+      },
+      "volumes": [
+        {
+          "name": "db-data",
+          "dir": "/var/lib/mysql",
+          "size": "10GB"
+        }
+      ],
+      "configs": [
+        {
+          "path": "/docker-entrypoint-initdb.d/01-schema.sql",
+          "template": "./zeabur-complete-database-init.sql"
+        }
+      ],
+      "resources": {
+        "memory": "512Mi",
+        "cpu": "0.5"
+      },
+      "healthcheck": {
+        "test": [
+          "CMD",
+          "mysqladmin",
+          "ping",
+          "-h",
+          "localhost",
+          "-u",
+          "root",
+          "-p$MYSQL_ROOT_PASSWORD"
+        ],
+        "interval": "30s",
+        "timeout": "10s",
+        "retries": 3,
+        "start_period": "60s"
+      }
     }
   }
 }

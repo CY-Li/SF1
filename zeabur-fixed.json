@@ -8,8 +8,8 @@
       "name": "rosca-app",
       "env": {
         "ASPNETCORE_ENVIRONMENT": "Production",
-        "ConnectionStrings__BackEndDatabase": "Server=rosca-mariadb;Port=3306;User Id=root;Password=rosca_root_2024!;Database=zeabur;CharSet=utf8mb4;AllowUserVariables=True;UseAffectedRows=False;ConnectionTimeout=60;CommandTimeout=120;Pooling=true;MinimumPoolSize=5;MaximumPoolSize=100;ConnectionLifeTime=300;ConnectRetryCount=3;ConnectRetryInterval=10;",
-        "ConnectionStrings__DefaultConnection": "Server=rosca-mariadb;Port=3306;User Id=root;Password=rosca_root_2024!;Database=zeabur;CharSet=utf8mb4;AllowUserVariables=True;UseAffectedRows=False;ConnectionTimeout=60;CommandTimeout=120;Pooling=true;MinimumPoolSize=5;MaximumPoolSize=100;ConnectionLifeTime=300;ConnectRetryCount=3;ConnectRetryInterval=10;",
+        "ConnectionStrings__BackEndDatabase": "Server=rosca-mariadb;Port=3306;User Id=root;Password=rosca_root_2024!;Database=zeabur;CharSet=utf8mb4;AllowUserVariables=True;UseAffectedRows=False;ConnectionTimeout=60;Pooling=true;MinimumPoolSize=5;MaximumPoolSize=100;ConnectionLifeTime=300;ConnectRetryCount=3;ConnectRetryInterval=10;",
+        "ConnectionStrings__DefaultConnection": "Server=rosca-mariadb;Port=3306;User Id=root;Password=rosca_root_2024!;Database=zeabur;CharSet=utf8mb4;AllowUserVariables=True;UseAffectedRows=False;ConnectionTimeout=60;Pooling=true;MinimumPoolSize=5;MaximumPoolSize=100;ConnectionLifeTime=300;ConnectRetryCount=3;ConnectRetryInterval=10;",
         "JWT__SecretKey": "your-super-secret-jwt-key-at-least-32-characters-long-2024",
         "JWT__Issuer": "ROSCA-API",
         "JWT__Audience": "ROSCA-Client",
