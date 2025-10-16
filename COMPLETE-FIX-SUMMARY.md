@@ -12,22 +12,23 @@
 - ❌ **問題**: `ng: not found` - Angular CLI 未安裝
 - ✅ **修復**: 改用 `npm ci` 安裝完整依賴
 
-#### 2. Angular Bundle Size 問題 (最新)
+#### 2. Angular Bundle Size 問題
 - ❌ **問題**: Bundle 1.30MB 超出 1MB 預算限制
-- ✅ **修復**: 
-  - 調整預算限制到 5MB
-  - 禁用 SSR 減少 bundle 大小
-  - 新增 Zeabur 專用建置配置
+- ✅ **修復**: 調整預算限制到 5MB，禁用 SSR
 
-#### 3. .NET API Gateway 編譯錯誤
+#### 3. Angular 配置錯誤 (最新)
+- ❌ **問題**: `buildOptimizer` 在 Angular 17 中不支援
+- ✅ **修復**: 移除過時配置，使用標準 production 配置
+
+#### 4. .NET API Gateway 編譯錯誤
 - ❌ **問題**: Health Check 配置錯誤
 - ✅ **修復**: 修復異步 lambda 和命名空間引用
 
-#### 4. .NET Backend Service 編譯錯誤
+#### 5. .NET Backend Service 編譯錯誤
 - ❌ **問題**: `BackEndDbContext` 和 `HealthCheckOptions` 找不到
 - ✅ **修復**: 移除問題依賴，添加正確 using 語句
 
-#### 5. 框架版本升級
+#### 6. 框架版本升級
 - ✅ **完成**: .NET 7.0 → .NET 8.0
 - ✅ **完成**: 更新所有 NuGet 套件到 .NET 8.0 版本
 
