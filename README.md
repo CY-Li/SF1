@@ -97,7 +97,7 @@ rosca-system/
 ├── database/zeabur/                           # 資料庫配置
 ├── storage/zeabur/                            # 存儲管理
 ├── Dockerfile                                 # 容器建置檔案
-├── zeabur.json                               # Zeabur 部署配置
+├── .kiro/specs/zeabur-deployment/            # Zeabur 部署規格文件
 ├── docker-compose.yml                        # Docker Compose 配置
 └── README.md                                 # 本檔案
 ```

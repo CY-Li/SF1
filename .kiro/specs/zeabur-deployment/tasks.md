@@ -38,13 +38,12 @@
   - 移除本地資料庫環境變數
   - _需求: 2.1, 3.1_
 
-- [x] 1.3 創建 Zeabur 部署配置
+- [x] 1.3 準備 Zeabur 部署配置
 
 
-  - 創建簡化的 zeabur.json 配置檔案
+  - 移除錯誤的 zeabur.json 配置檔案 (Zeabur 自動偵測 Dockerfile)
   - 準備環境變數模板
   - 建立部署文檔
-
   - _需求: 1.1, 2.1_
 
 - [x] 2. 驗證和測試外部資料庫連接
@@ -84,6 +83,9 @@
   - _需求: 1.1, 1.3_
 
 - [x] 3.1 優化後端服務 Dockerfile
+
+
+
 
 
   - 更新 API Gateway Dockerfile

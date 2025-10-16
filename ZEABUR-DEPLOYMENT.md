@@ -54,7 +54,7 @@ LOG_LEVEL=Information
 
 ### 3. 部署服務
 
-Zeabur 會根據 `zeabur.json` 配置自動部署以下服務：
+Zeabur 會自動偵測 Dockerfile 並部署以下服務：
 
 1. **backend-service** - .NET Core 微服務 (Port: 5001)
 2. **api-gateway** - API Gateway (Port: 5000)
