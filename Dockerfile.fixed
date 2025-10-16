@@ -1,14 +1,12 @@
-# ROSCA 平安商會系統 - Zeabur 優化版 Dockerfile
-# 單一容器包含所有服務：前台、後台、API Gateway、Backend Service
+# ROSCA 平安商會系統 - 修復前後台路由問題
+# 確保前台顯示在根路徑，後台顯示在 /admin 路徑
 
 # 階段 1: 建置 Angular 後台
 FROM node:18-alpine AS angular-build
 WORKDIR /app
 COPY backend/FontEnd/FontEnd/package*.json ./
-# 安裝所有依賴 (包含 devDependencies 中的 Angular CLI)
 RUN npm ci
 COPY backend/FontEnd/FontEnd/ .
-# 建置 Angular 專案 (使用 production 配置)
 RUN npm run build:prod
 
 # 階段 2: 建置 .NET Core Backend Service
@@ -44,7 +42,7 @@ RUN apt-get update && apt-get install -y \
 COPY --from=backend-service-build /app/backend-service/publish /app/backend-service/
 COPY --from=backend-build /app/backend/publish /app/backend/
 
-# 複製前端檔案
+# 複製前台檔案到正確位置
 COPY frontend/ /var/www/frontend/
 
 # 複製 Angular 後台檔案 (從建置階段)
@@ -122,7 +120,7 @@ server {
 EOF
 
 # 創建 supervisor 配置
-COPY <<EOF /etc/supervisor/conf.d/supervisord.conf
+RUN cat > /etc/supervisor/conf.d/supervisord.conf << 'EOF'
 [supervisord]
 nodaemon=true
 user=root
