@@ -4,6 +4,23 @@
 
 本專案已優化為單一 Docker 映像檔，包含所有服務，可直接部署到 Zeabur 平台。
 
+### 🔧 Angular 建置問題解決方案
+
+如果遇到 Angular 建置失敗 (`ng: not found`)，有兩種解決方案：
+
+#### 方案 1: 修復 Angular 建置 (推薦)
+- 已修復 `npm ci --only=production` 問題
+- 現在使用 `npm ci` 安裝完整依賴包含 Angular CLI
+
+#### 方案 2: 跳過 Angular 建置
+如果仍有問題，可使用備用 Dockerfile：
+```bash
+# 重命名檔案
+mv Dockerfile Dockerfile.with-angular
+mv Dockerfile.no-angular Dockerfile
+# 重新部署
+```
+
 ### 📋 部署前準備
 
 1. **Zeabur 帳號**: 註冊 [Zeabur](https://zeabur.com) 帳號
@@ -168,19 +185,33 @@ curl https://your-app.zeabur.app/api/system/info
 
 #### 常見問題
 
-1. **服務無法啟動**
+1. **Angular 建置失敗 (`ng: not found`)**
+   - 原因：Angular CLI 未安裝或不在 PATH 中
+   - 解決方案：
+     ```bash
+     # 方案 1: 使用修復後的 Dockerfile (推薦)
+     git pull  # 獲取最新修復
+     
+     # 方案 2: 使用無 Angular 建置版本
+     mv Dockerfile Dockerfile.with-angular
+     mv Dockerfile.no-angular Dockerfile
+     git add . && git commit -m "Use no-angular Dockerfile"
+     git push
+     ```
+
+2. **服務無法啟動**
    - 檢查環境變數是否正確設定
    - 查看服務日誌找出錯誤原因
 
-2. **資料庫連接失敗**
+3. **資料庫連接失敗**
    - 確認 MariaDB 服務正常運行
    - 檢查資料庫環境變數設定
 
-3. **檔案上傳失敗**
+4. **檔案上傳失敗**
    - 確認存儲卷已正確掛載
    - 檢查檔案大小和類型限制
 
-4. **前端無法連接後端**
+5. **前端無法連接後端**
    - 檢查 CORS 設定
    - 確認域名配置正確
 

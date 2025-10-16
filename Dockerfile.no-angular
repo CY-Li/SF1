@@ -1,17 +1,7 @@
-# ROSCA 平安商會系統 - Zeabur 優化版 Dockerfile
-# 單一容器包含所有服務：前台、後台、API Gateway、Backend Service
+# ROSCA 平安商會系統 - Zeabur 部署版 (無 Angular 建置)
+# 避免 Angular 建置問題，直接使用原始檔案
 
-# 階段 1: 建置 Angular 後台
-FROM node:18-alpine AS angular-build
-WORKDIR /app
-COPY backend/FontEnd/FontEnd/package*.json ./
-# 安裝所有依賴 (包含 devDependencies 中的 Angular CLI)
-RUN npm ci
-COPY backend/FontEnd/FontEnd/ .
-# 建置 Angular 專案
-RUN npm run build
-
-# 階段 2: 建置 .NET Core Backend Service
+# 階段 1: 建置 .NET Core Backend Service
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS backend-service-build
 WORKDIR /src
 COPY backendAPI/DotNetBackEndCleanArchitecture/ .
@@ -20,7 +10,7 @@ RUN dotnet restore
 RUN dotnet build -c Release -o /app/backend-service/build
 RUN dotnet publish -c Release -o /app/backend-service/publish --no-restore
 
-# 階段 3: 建置 .NET Core API Gateway
+# 階段 2: 建置 .NET Core API Gateway
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS backend-build
 WORKDIR /src
 COPY backendAPI/DotNetBackEndCleanArchitecture/ .
@@ -29,7 +19,7 @@ RUN dotnet restore
 RUN dotnet build -c Release -o /app/backend/build
 RUN dotnet publish -c Release -o /app/backend/publish --no-restore
 
-# 階段 4: 最終運行階段
+# 階段 3: 最終運行階段
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS final
 WORKDIR /app
 
@@ -47,13 +37,8 @@ COPY --from=backend-build /app/backend/publish /app/backend/
 # 複製前端檔案
 COPY frontend/ /var/www/frontend/
 
-# 複製 Angular 後台檔案 (從建置階段)
-COPY --from=angular-build /app/dist/font-end/browser/ /var/www/admin/
-
-# 修正 Angular base href
-RUN if [ -f /var/www/admin/index.html ]; then \
-        sed -i 's|<base href="/backend/">|<base href="/admin/">|g' /var/www/admin/index.html; \
-    fi
+# 複製 Angular 後台原始檔案 (不建置，直接使用)
+COPY backend/FontEnd/FontEnd/src/ /var/www/admin/
 
 # 創建 nginx 配置
 COPY <<EOF /etc/nginx/sites-available/default
@@ -68,25 +53,11 @@ server {
         try_files \$uri \$uri/ /index.html;
     }
 
-    # 後台 Angular SPA
+    # 後台 (直接提供原始檔案)
     location /admin {
         alias /var/www/admin/;
         index index.html;
         try_files \$uri \$uri/ /admin/index.html;
-        
-        # 防止快取 index.html
-        location = /admin/index.html {
-            alias /var/www/admin/index.html;
-            add_header Cache-Control "no-cache, no-store, must-revalidate";
-            add_header Pragma "no-cache";
-            add_header Expires "0";
-        }
-    }
-    
-    # 處理 Angular 路由 (所有 /admin/* 路徑)
-    location ~ ^/admin/(.*)$ {
-        alias /var/www/admin/;
-        try_files \$1 \$1/ /admin/index.html;
     }
 
     # API 代理到 API Gateway

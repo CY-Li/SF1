@@ -12,6 +12,19 @@
 2. 建立新專案並連接此 GitHub 儲存庫
 3. 按照 [ZEABUR-DEPLOY.md](./ZEABUR-DEPLOY.md) 指南完成部署
 
+#### 🔧 部署問題排除
+
+如果遇到 Angular 建置失敗 (`ng: not found`)：
+
+```bash
+# 方案 1: 使用修復版本 (推薦)
+git pull  # 獲取最新修復
+
+# 方案 2: 切換到無建置版本
+chmod +x switch-dockerfile.sh
+./switch-dockerfile.sh
+```
+
 ### 本地 Docker 部署
 
 ```bash
