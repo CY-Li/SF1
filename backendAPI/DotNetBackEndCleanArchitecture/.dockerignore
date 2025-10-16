@@ -3,6 +3,7 @@
 **/obj/
 **/out/
 **/TestResults/
+**/publish/
 
 # Visual Studio
 .vs/
@@ -20,17 +21,18 @@ packages/
 # 日誌文件
 *.log
 logs/
+log/
 
-# 資料庫文件
+# 資料庫文件 (使用外部 MariaDB，不需要本地資料庫檔案)
 *.db
 *.sqlite
 *.sqlite3
+*.mdf
+*.ldf
 
 # 環境變數文件
-.env
-.env.local
-.env.development
-.env.production
+.env*
+!.env.zeabur
 
 # IDE 文件
 .vscode/
@@ -41,8 +43,9 @@ logs/
 # OS 生成的文件
 .DS_Store
 Thumbs.db
+*.tmp
 
-# 上傳的文件 (會在容器中重新建立)
+# 上傳的文件 (會在容器中重新建立，Zeabur 使用持久化存儲)
 KycImages/
 DepositImages/
 WithdrawImages/
@@ -54,16 +57,30 @@ uploads/
 .gitignore
 .gitattributes
 
-# Docker
-Dockerfile
+# Docker 相關 (除了當前 Dockerfile)
 .dockerignore
 docker-compose*.yml
 
-# 文件
-README.md
+# 文件和說明
+README*.md
 *.md
+!DEPLOYMENT*.md
 
 # 測試覆蓋率
 coverage/
 *.coverage
 *.coveragexml
+
+# 開發工具
+*.DotSettings
+*.DotSettings.user
+
+# 暫存檔案
+*.tmp
+*.temp
+*.bak
+
+# 不必要的資產檔案 (減少建置上下文大小)
+assets/
+wwwroot/lib/
+node_modules/

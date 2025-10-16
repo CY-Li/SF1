@@ -84,15 +84,14 @@ temp/
 *.rar
 *.7z
 
-# Docker 相關 (保留主要 Dockerfile)
+# Docker 相關
 docker-compose*.yml
-!docker-compose.yml
 Dockerfile.*
 !Dockerfile
 
-# 部署腳本和工具
-scripts/
+# 部署腳本和工具 (保留 Zeabur 部署配置)
 deployment/
+!deployment/zeabur/
 
 # 資料庫檔案
 *.mdf
@@ -103,5 +102,5 @@ deployment/
 .cache/
 .parcel-cache/
 
-# 不必要的配置檔案
-nginx/
+# 不必要的配置檔案 (已移除)
+# nginx/ - removed for Zeabur deployment

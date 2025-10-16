@@ -1,15 +1,38 @@
 {
   "name": "rosca-system",
   "services": {
-    "app": {
+    "backend-service": {
       "build": {
-        "dockerfile": "Dockerfile"
+        "dockerfile": "backendAPI/DotNetBackEndCleanArchitecture/Presentation/DotNetBackEndService/Dockerfile"
       },
-      "name": "rosca-app",
+      "name": "backend-service",
       "env": {
         "ASPNETCORE_ENVIRONMENT": "Production",
-        "ConnectionStrings__BackEndDatabase": "Server=rosca-mariadb;Port=3306;User Id=${DB_USER};Password=${DB_PASSWORD};Database=${DB_NAME};CharSet=utf8mb4;AllowUserVariables=True;UseAffectedRows=False;ConnectionTimeout=60;CommandTimeout=120;Pooling=true;MinimumPoolSize=5;MaximumPoolSize=100;ConnectionLifeTime=300;ConnectRetryCount=3;ConnectRetryInterval=10;",
-        "ConnectionStrings__DefaultConnection": "Server=rosca-mariadb;Port=3306;User Id=${DB_USER};Password=${DB_PASSWORD};Database=${DB_NAME};CharSet=utf8mb4;AllowUserVariables=True;UseAffectedRows=False;ConnectionTimeout=60;CommandTimeout=120;Pooling=true;MinimumPoolSize=5;MaximumPoolSize=100;ConnectionLifeTime=300;ConnectRetryCount=3;ConnectRetryInterval=10;",
+        "ASPNETCORE_URLS": "http://+:5001",
+        "ConnectionStrings__BackEndDatabase": "Server=${DB_HOST};Port=${DB_PORT};User Id=${DB_USER};Password=${DB_PASSWORD};Database=${DB_NAME};CharSet=utf8mb4;AllowUserVariables=True;UseAffectedRows=False;",
+        "JWT__SecretKey": "${JWT_SECRET_KEY}",
+        "JWT__Issuer": "${JWT_ISSUER}",
+        "JWT__Audience": "${JWT_AUDIENCE}",
+        "JWT__ExpiryMinutes": "${JWT_EXPIRY_MINUTES}",
+        "Serilog__MinimumLevel__Default": "${LOG_LEVEL}",
+        "TZ": "Asia/Taipei"
+      },
+      "resources": {
+        "memory": "512Mi",
+        "cpu": "0.5"
+      }
+    },
+    "api-gateway": {
+      "build": {
+        "dockerfile": "backendAPI/DotNetBackEndCleanArchitecture/Dockerfile"
+      },
+      "name": "api-gateway",
+      "env": {
+        "ASPNETCORE_ENVIRONMENT": "Production",
+        "ASPNETCORE_URLS": "http://+:5000",
+        "ConnectionStrings__BackEndDatabase": "Server=${DB_HOST};Port=${DB_PORT};User Id=${DB_USER};Password=${DB_PASSWORD};Database=${DB_NAME};CharSet=utf8mb4;AllowUserVariables=True;UseAffectedRows=False;",
+        "ConnectionStrings__DefaultConnection": "Server=${DB_HOST};Port=${DB_PORT};User Id=${DB_USER};Password=${DB_PASSWORD};Database=${DB_NAME};CharSet=utf8mb4;AllowUserVariables=True;UseAffectedRows=False;",
+        "APIUrl": "http://backend-service:5001/",
         "JWT__SecretKey": "${JWT_SECRET_KEY}",
         "JWT__Issuer": "${JWT_ISSUER}",
         "JWT__Audience": "${JWT_AUDIENCE}",
@@ -46,81 +69,37 @@
           "name": "ann-images",
           "dir": "/app/AnnImagessss",
           "size": "2GB"
-        },
-        {
-          "name": "logs",
-          "dir": "/app/logs",
-          "size": "1GB"
-        }
-      ],
-      "depends_on": [
-        "mariadb"
-      ]
-    },
-    "mariadb": {
-      "template": "mariadb:11.3.2",
-      "name": "rosca-mariadb",
-      "env": {
-        "MYSQL_ROOT_PASSWORD": "${DB_ROOT_PASSWORD}",
-        "MYSQL_DATABASE": "${DB_NAME}",
-        "MYSQL_USER": "${DB_USER}",
-        "MYSQL_PASSWORD": "${DB_PASSWORD}",
-        "MYSQL_CHARACTER_SET_SERVER": "utf8mb4",
-        "MYSQL_COLLATION_SERVER": "utf8mb4_general_ci",
-        "MYSQL_ALLOW_EMPTY_PASSWORD": "no",
-        "MYSQL_REMOVE_ANONYMOUS_USERS": "yes",
-        "MYSQL_REMOVE_TEST_DATABASE": "yes",
-        "TZ": "Asia/Taipei"
-      },
-      "volumes": [
-        {
-          "name": "db-data",
-          "dir": "/var/lib/mysql",
-          "size": "10GB"
-        },
-        {
-          "name": "db-logs",
-          "dir": "/var/log/mysql",
-          "size": "1GB"
-        }
-      ],
-      "configs": [
-        {
-          "path": "/etc/mysql/my.cnf",
-          "template": "./database/zeabur/my.cnf"
-        },
-        {
-          "path": "/docker-entrypoint-initdb.d/01-schema.sql",
-          "template": "./database/zeabur/docker-entrypoint-initdb.d/01-schema.sql"
-        },
-        {
-          "path": "/docker-entrypoint-initdb.d/02-default-data.sql",
-          "template": "./database/zeabur/docker-entrypoint-initdb.d/02-default-data.sql"
-        },
-        {
-          "path": "/docker-entrypoint-initdb.d/03-default-user.sql",
-          "template": "./database/zeabur/docker-entrypoint-initdb.d/03-default-user.sql"
         }
       ],
       "resources": {
         "memory": "512Mi",
         "cpu": "0.5"
+      }
+    },
+    "frontend": {
+      "build": {
+        "dockerfile": "frontend/Dockerfile"
       },
-      "healthcheck": {
-        "test": [
-          "CMD",
-          "mysqladmin",
-          "ping",
-          "-h",
-          "localhost",
-          "-u",
-          "root",
-          "-p${MYSQL_ROOT_PASSWORD}"
-        ],
-        "interval": "30s",
-        "timeout": "10s",
-        "retries": 3,
-        "start_period": "60s"
+      "name": "frontend",
+      "env": {
+        "TZ": "Asia/Taipei"
+      },
+      "resources": {
+        "memory": "256Mi",
+        "cpu": "0.25"
+      }
+    },
+    "admin": {
+      "build": {
+        "dockerfile": "backend/FontEnd/Dockerfile"
+      },
+      "name": "admin",
+      "env": {
+        "TZ": "Asia/Taipei"
+      },
+      "resources": {
+        "memory": "256Mi",
+        "cpu": "0.25"
       }
     }
   },

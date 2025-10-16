@@ -21,8 +21,8 @@ graph TB
             SVC[Backend Service<br/>.NET Core<br/>Port: 5001]
         end
         
-        subgraph "Database"
-            DB[(MariaDB<br/>Port: 3306)]
+        subgraph "External Database"
+            DB[(MariaDB<br/>43.167.174.222:31500<br/>Database: zeabur)]
         end
         
         subgraph "Storage"
@@ -50,30 +50,20 @@ graph TB
 
 ### 服務配置
 
-#### 1. MariaDB 資料庫服務
+#### 1. 外部 MariaDB 資料庫
 
-**服務類型：** Database Service
-**映像：** mariadb:11.3.2
-**配置：**
-- 記憶體：512MB - 1GB
-- 存儲：10GB SSD
-- 備份：每日自動備份
+**服務類型：** 外部資料庫服務 (已部署)
+**連接資訊：**
+- 主機：43.167.174.222
+- 端口：31500
+- 用戶：root
+- 密碼：dp17Itl608ZaMBXbWH5VAo49xJr3Ds2G
+- 資料庫：zeabur
 
-**環境變數：**
-```env
-MYSQL_ROOT_PASSWORD=${DB_ROOT_PASSWORD}
-MYSQL_DATABASE=${DB_NAME}
-MYSQL_USER=${DB_USER}
-MYSQL_PASSWORD=${DB_PASSWORD}
-MYSQL_CHARACTER_SET_SERVER=utf8mb4
-MYSQL_COLLATION_SERVER=utf8mb4_general_ci
-TZ=Asia/Taipei
+**連接字串格式：**
 ```
-
-**初始化腳本：**
-- `/docker-entrypoint-initdb.d/01-schema.sql`
-- `/docker-entrypoint-initdb.d/02-default-data.sql`
-- `/docker-entrypoint-initdb.d/03-default-user.sql`
+Server=43.167.174.222;Port=31500;User Id=root;Password=dp17Itl608ZaMBXbWH5VAo49xJr3Ds2G;Database=zeabur;CharSet=utf8mb4;AllowUserVariables=True;UseAffectedRows=False;
+```
 
 #### 2. Backend Service (.NET Core 微服務)
 
@@ -90,7 +80,7 @@ TZ=Asia/Taipei
 ```env
 ASPNETCORE_ENVIRONMENT=Production
 ASPNETCORE_URLS=http://+:5001
-ConnectionStrings__BackEndDatabase=Server=${DB_HOST};Port=3306;User Id=${DB_USER};Password=${DB_PASSWORD};Database=${DB_NAME};CharSet=utf8mb4;AllowUserVariables=True;UseAffectedRows=False;
+ConnectionStrings__BackEndDatabase=Server=43.167.174.222;Port=31500;User Id=root;Password=dp17Itl608ZaMBXbWH5VAo49xJr3Ds2G;Database=zeabur;CharSet=utf8mb4;AllowUserVariables=True;UseAffectedRows=False;
 TZ=Asia/Taipei
 JWT__SecretKey=${JWT_SECRET_KEY}
 JWT__Issuer=${JWT_ISSUER}
@@ -114,7 +104,7 @@ Serilog__MinimumLevel__Default=${LOG_LEVEL}
 ```env
 ASPNETCORE_ENVIRONMENT=Production
 ASPNETCORE_URLS=http://+:5000
-ConnectionStrings__BackEndDatabase=Server=${DB_HOST};Port=3306;User Id=${DB_USER};Password=${DB_PASSWORD};Database=${DB_NAME};CharSet=utf8mb4;AllowUserVariables=True;UseAffectedRows=False;
+ConnectionStrings__BackEndDatabase=Server=43.167.174.222;Port=31500;User Id=root;Password=dp17Itl608ZaMBXbWH5VAo49xJr3Ds2G;Database=zeabur;CharSet=utf8mb4;AllowUserVariables=True;UseAffectedRows=False;
 APIUrl=http://${BACKEND_SERVICE_HOST}:5001/
 TZ=Asia/Taipei
 JWT__SecretKey=${JWT_SECRET_KEY}
@@ -181,7 +171,7 @@ Serilog__MinimumLevel__Default=${LOG_LEVEL}
 
 4. **Backend Service → MariaDB**
    - 透過 Entity Framework Core
-   - 連接字串：`Server=${DB_HOST};Port=3306;...`
+   - 連接字串：`Server=43.167.174.222;Port=31500;User Id=root;Password=dp17Itl608ZaMBXbWH5VAo49xJr3Ds2G;Database=zeabur;...`
 
 ### 域名配置
 
@@ -231,12 +221,12 @@ volumes:
 ### 必要環境變數
 
 ```env
-# 資料庫配置
-DB_HOST=mariadb-service-host
-DB_NAME=rosca_db
-DB_USER=rosca_user
-DB_PASSWORD=secure_password_here
-DB_ROOT_PASSWORD=root_password_here
+# 資料庫配置 (外部 MariaDB)
+DB_HOST=43.167.174.222
+DB_PORT=31500
+DB_NAME=zeabur
+DB_USER=root
+DB_PASSWORD=dp17Itl608ZaMBXbWH5VAo49xJr3Ds2G
 
 # JWT 配置
 JWT_SECRET_KEY=your-super-secret-jwt-key-change-in-production
@@ -270,14 +260,14 @@ DB_HOST=mariadb-service
 
 ### 部署順序
 
-1. **MariaDB 資料庫**
-   - 首先部署資料庫服務
-   - 等待資料庫初始化完成
-   - 驗證連接和初始資料
+1. **驗證外部資料庫連接**
+   - 測試連接到現有 MariaDB (43.167.174.222:31500)
+   - 驗證資料庫 schema 和初始資料
+   - 如需要則執行初始化腳本
 
 2. **Backend Service**
    - 部署 .NET Core 微服務
-   - 配置資料庫連接
+   - 配置外部資料庫連接
    - 驗證 API 端點
 
 3. **API Gateway**

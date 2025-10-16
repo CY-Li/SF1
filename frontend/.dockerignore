@@ -1,56 +1,80 @@
-# Node.js
+# Node.js (前端不需要 Node.js 相關檔案)
 node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+package*.json
 
-# IDE
+# IDE 和編輯器
 .vscode/
 .idea/
 *.swp
 *.swo
+*.sublime-*
 
-# OS
+# OS 生成的檔案
 .DS_Store
 Thumbs.db
+*.tmp
 
-# Git
+# Git 相關
 .git/
 .gitignore
+.gitattributes
 
-# Documentation
-README.md
+# 文件和說明
+README*.md
 *.md
+!DEPLOYMENT*.md
 
-# Tests
+# 測試檔案
 test/
 tests/
 *.test.js
 *.spec.js
+coverage/
 
-# Development files
+# 開發檔案 (前端已編譯，不需要原始碼)
 src/
 *.map
 *.ts
+*.scss
+*.sass
+*.less
 
-# Build artifacts (keep only dist)
+# 建置產物 (保留必要的靜態檔案)
 build/
-coverage/
+dist/
+node_modules/
 
-# Logs
+# 日誌檔案
 logs/
 *.log
 
-# Runtime data
+# 執行時資料
 pids/
 *.pid
 *.seed
 *.pid.lock
 
-# Temporary folders
+# 暫存資料夾
 tmp/
 temp/
+.cache/
 
-# Docker files
+# Docker 檔案
 Dockerfile*
 docker-compose*
+.dockerignore
+
+# 環境變數檔案
+.env*
+
+# 備份檔案
+*.bak
+*.backup
+
+# 壓縮檔案
+*.zip
+*.tar.gz
+*.rar
