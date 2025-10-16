@@ -8,6 +8,7 @@ using InfraCommon.MapperServices.AutoMapperProfile;
 using DotNetBackEndService.DI;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 using HealthChecks.UI.Client;
+using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 
 Log.Logger = new LoggerConfiguration()
     .MinimumLevel.Information()
@@ -36,8 +37,7 @@ try
 
     // Add health checks
     builder.Services.AddHealthChecks()
-        .AddCheck("self", () => HealthCheckResult.Healthy("Backend Service is running"))
-        .AddDbContextCheck<BackEndDbContext>("database");
+        .AddCheck("self", () => HealthCheckResult.Healthy("Backend Service is running"));
 
     #region Service DI 
     builder.Services.AddInfraCommon();
@@ -78,9 +78,9 @@ try
     app.UseAuthorization();
 
     // Configure health check endpoint
-    app.MapHealthChecks("/health", new HealthCheckOptions
+    app.MapHealthChecks("/health", new Microsoft.AspNetCore.Diagnostics.HealthChecks.HealthCheckOptions
     {
-        ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
+        ResponseWriter = HealthChecks.UI.Client.UIResponseWriter.WriteHealthCheckUIResponse
     });
 
     app.MapControllers();

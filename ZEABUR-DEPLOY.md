@@ -83,8 +83,8 @@ DB_USER=rosca_user
 DB_PASSWORD=your_secure_password_2024!
 DB_NAME=rosca_db
 
-# CORS 配置 (部署後更新為實際域名)
-CORS_ALLOWED_ORIGINS=https://your-app.zeabur.app
+# CORS 配置 (使用您的實際域名)
+CORS_ALLOWED_ORIGINS=https://sf-test.zeabur.app
 
 # 檔案上傳配置
 FILE_UPLOAD_MAX_SIZE=10485760
@@ -116,10 +116,12 @@ Zeabur 會根據 `zeabur.json` 自動配置以下存儲卷：
 
 部署完成後，您可以透過以下方式存取：
 
-- **前台系統**: `https://your-app.zeabur.app/`
-- **後台系統**: `https://your-app.zeabur.app/admin/`
-- **API 文檔**: `https://your-app.zeabur.app/swagger/`
-- **健康檢查**: `https://your-app.zeabur.app/health`
+- **前台系統**: `https://sf-test.zeabur.app/`
+- **後台系統**: `https://sf-test.zeabur.app/admin/`
+- **API 文檔**: `https://sf-test.zeabur.app/swagger/`
+- **健康檢查**: `https://sf-test.zeabur.app/health`
+
+> **您的域名**: `https://sf-test.zeabur.app/`
 
 ### 🔧 系統架構
 
@@ -168,10 +170,14 @@ Zeabur 會根據 `zeabur.json` 自動配置以下存儲卷：
 
 ```bash
 # 健康檢查
-curl https://your-app.zeabur.app/health
+curl https://sf-test.zeabur.app/health
 
 # API 測試
-curl https://your-app.zeabur.app/api/system/info
+curl https://sf-test.zeabur.app/api/system/info
+
+# 或使用驗證腳本
+chmod +x verify-sf-test-deployment.sh
+./verify-sf-test-deployment.sh
 ```
 
 #### 2. 測試功能
