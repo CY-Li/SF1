@@ -20,6 +20,7 @@ COPY --chown=nginx:nginx css/ /usr/share/nginx/html/css/
 COPY --chown=nginx:nginx js/ /usr/share/nginx/html/js/
 COPY --chown=nginx:nginx images/ /usr/share/nginx/html/images/
 COPY --chown=nginx:nginx component/ /usr/share/nginx/html/component/
+COPY --chown=nginx:nginx scss/ /usr/share/nginx/html/scss/
 
 # 暴露端口 80
 EXPOSE 80
