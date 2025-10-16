@@ -44,7 +44,7 @@ FROM mcr.microsoft.com/dotnet/aspnet:8.0-alpine AS runtime
 WORKDIR /app
 
 # 安裝必要的系統套件 (僅保留必要套件以減少映像檔案大小)
-RUN apk add --no-cache curl tzdata && \
+RUN apk add --no-cache icu-libs curl tzdata && \
     rm -rf /var/cache/apk/*
 
 # 建立非 root 使用者
