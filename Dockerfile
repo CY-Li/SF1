@@ -62,10 +62,6 @@ server {
     listen 80;
     server_name _;
     
-    # 設定根目錄
-    root /var/www;
-    index index.html;
-
     # 後台管理系統 (優先匹配，避免被根路徑攔截)
     location /admin {
         alias /var/www/admin/;
@@ -106,8 +102,9 @@ server {
         add_header Content-Type text/plain;
     }
 
-    # 靜態檔案快取
+    # 前台靜態檔案 (優先匹配靜態資源)
     location ~* \.(css|js|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|eot)$ {
+        root /var/www/frontend;
         expires 1y;
         add_header Cache-Control "public, immutable";
         try_files $uri =404;
@@ -116,6 +113,7 @@ server {
     # 前台系統 (放在最後，作為預設路由)
     location / {
         root /var/www/frontend;
+        index index.html;
         try_files $uri $uri/ /index.html;
     }
 }
