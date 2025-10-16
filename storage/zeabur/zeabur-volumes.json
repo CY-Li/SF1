@@ -1,0 +1,306 @@
+{
+  "ZeaburVolumeConfiguration": {
+    "projectName": "rosca-system",
+    "totalStorage": "15GB",
+    "description": "ROSCA 平安商會系統 Zeabur 存儲卷配置",
+    "version": "1.0.0",
+    "lastUpdated": "2025-01-15"
+  },
+  "volumes": {
+    "uploads": {
+      "name": "uploads",
+      "size": "5GB",
+      "mountPath": "/app/uploads",
+      "description": "通用檔案上傳存儲",
+      "services": ["backend", "backend-service"],
+      "accessMode": "ReadWriteMany",
+      "storageClass": "standard",
+      "backup": {
+        "enabled": true,
+        "schedule": "0 2 * * *",
+        "retention": "30d"
+      },
+      "fileTypes": {
+        "allowed": [".jpg", ".jpeg", ".png", ".gif", ".pdf", ".doc", ".docx", ".xls", ".xlsx"],
+        "maxFileSize": "10MB",
+        "totalLimit": "5GB"
+      },
+      "cleanup": {
+        "enabled": true,
+        "retentionDays": 365,
+        "schedule": "0 3 * * 0"
+      }
+    },
+    "kyc-images": {
+      "name": "kyc-images",
+      "size": "2GB",
+      "mountPath": "/app/KycImages",
+      "description": "KYC 身份認證圖片存儲",
+      "services": ["backend", "backend-service"],
+      "accessMode": "ReadWriteMany",
+      "storageClass": "standard",
+      "security": {
+        "encryption": true,
+        "accessLevel": "restricted",
+        "auditLog": true
+      },
+      "backup": {
+        "enabled": true,
+        "schedule": "0 1 * * *",
+        "retention": "365d"
+      },
+      "fileTypes": {
+        "allowed": [".jpg", ".jpeg", ".png"],
+        "maxFileSize": "5MB",
+        "totalLimit": "2GB"
+      },
+      "cleanup": {
+        "enabled": false,
+        "retentionDays": -1
+      }
+    },
+    "deposit-images": {
+      "name": "deposit-images",
+      "size": "2GB",
+      "mountPath": "/app/DepositImages",
+      "description": "存款憑證圖片存儲",
+      "services": ["backend", "backend-service"],
+      "accessMode": "ReadWriteMany",
+      "storageClass": "standard",
+      "security": {
+        "encryption": true,
+        "accessLevel": "restricted",
+        "auditLog": true
+      },
+      "backup": {
+        "enabled": true,
+        "schedule": "0 1 * * *",
+        "retention": "1095d"
+      },
+      "fileTypes": {
+        "allowed": [".jpg", ".jpeg", ".png", ".pdf"],
+        "maxFileSize": "5MB",
+        "totalLimit": "2GB"
+      },
+      "cleanup": {
+        "enabled": true,
+        "retentionDays": 1095,
+        "schedule": "0 4 * * 0"
+      }
+    },
+    "withdraw-images": {
+      "name": "withdraw-images",
+      "size": "2GB",
+      "mountPath": "/app/WithdrawImages",
+      "description": "提款憑證圖片存儲",
+      "services": ["backend", "backend-service"],
+      "accessMode": "ReadWriteMany",
+      "storageClass": "standard",
+      "security": {
+        "encryption": true,
+        "accessLevel": "restricted",
+        "auditLog": true
+      },
+      "backup": {
+        "enabled": true,
+        "schedule": "0 1 * * *",
+        "retention": "1095d"
+      },
+      "fileTypes": {
+        "allowed": [".jpg", ".jpeg", ".png", ".pdf"],
+        "maxFileSize": "5MB",
+        "totalLimit": "2GB"
+      },
+      "cleanup": {
+        "enabled": true,
+        "retentionDays": 1095,
+        "schedule": "0 4 * * 0"
+      }
+    },
+    "ann-images": {
+      "name": "ann-images",
+      "size": "2GB",
+      "mountPath": "/app/AnnImagessss",
+      "description": "公告圖片存儲",
+      "services": ["backend", "backend-service"],
+      "accessMode": "ReadWriteMany",
+      "storageClass": "standard",
+      "security": {
+        "encryption": false,
+        "accessLevel": "public",
+        "auditLog": false
+      },
+      "backup": {
+        "enabled": true,
+        "schedule": "0 2 * * *",
+        "retention": "730d"
+      },
+      "fileTypes": {
+        "allowed": [".jpg", ".jpeg", ".png", ".gif"],
+        "maxFileSize": "3MB",
+        "totalLimit": "2GB"
+      },
+      "cleanup": {
+        "enabled": true,
+        "retentionDays": 730,
+        "schedule": "0 3 * * 0"
+      }
+    },
+    "logs": {
+      "name": "logs",
+      "size": "1GB",
+      "mountPath": "/app/logs",
+      "description": "應用程式日誌存儲",
+      "services": ["backend", "backend-service"],
+      "accessMode": "ReadWriteMany",
+      "storageClass": "standard",
+      "backup": {
+        "enabled": true,
+        "schedule": "0 0 * * *",
+        "retention": "30d"
+      },
+      "fileTypes": {
+        "allowed": [".log", ".txt", ".json"],
+        "maxFileSize": "100MB",
+        "totalLimit": "1GB"
+      },
+      "cleanup": {
+        "enabled": true,
+        "retentionDays": 30,
+        "schedule": "0 5 * * *"
+      },
+      "compression": {
+        "enabled": true,
+        "algorithm": "gzip",
+        "afterDays": 7
+      }
+    }
+  },
+  "databaseVolumes": {
+    "db-data": {
+      "name": "db-data",
+      "size": "10GB",
+      "mountPath": "/var/lib/mysql",
+      "description": "MariaDB 資料庫資料存儲",
+      "service": "mariadb",
+      "accessMode": "ReadWriteOnce",
+      "storageClass": "ssd",
+      "backup": {
+        "enabled": true,
+        "schedule": "0 0 * * *",
+        "retention": "30d",
+        "type": "mysqldump"
+      },
+      "performance": {
+        "iops": 3000,
+        "throughput": "125MB/s"
+      }
+    },
+    "db-logs": {
+      "name": "db-logs",
+      "size": "1GB",
+      "mountPath": "/var/log/mysql",
+      "description": "MariaDB 日誌存儲",
+      "service": "mariadb",
+      "accessMode": "ReadWriteOnce",
+      "storageClass": "standard",
+      "backup": {
+        "enabled": false
+      },
+      "cleanup": {
+        "enabled": true,
+        "retentionDays": 7,
+        "schedule": "0 6 * * *"
+      }
+    }
+  },
+  "monitoring": {
+    "enabled": true,
+    "metrics": {
+      "diskUsage": true,
+      "fileCount": true,
+      "accessFrequency": true,
+      "errorRate": true,
+      "backupStatus": true
+    },
+    "alerts": {
+      "diskUsageThreshold": 85,
+      "fileCountThreshold": 10000,
+      "errorRateThreshold": 5,
+      "backupFailureAlert": true
+    },
+    "dashboard": {
+      "enabled": true,
+      "refreshInterval": "30s"
+    }
+  },
+  "security": {
+    "encryption": {
+      "atRest": true,
+      "inTransit": true,
+      "algorithm": "AES-256"
+    },
+    "accessControl": {
+      "enabled": true,
+      "rbac": true,
+      "serviceAccounts": ["backend", "backend-service", "mariadb"]
+    },
+    "auditLogging": {
+      "enabled": true,
+      "logLevel": "info",
+      "retention": "90d"
+    },
+    "virusScanning": {
+      "enabled": true,
+      "quarantine": true,
+      "scanSchedule": "0 2 * * *"
+    }
+  },
+  "performance": {
+    "caching": {
+      "enabled": true,
+      "ttl": 3600,
+      "maxSize": "100MB"
+    },
+    "compression": {
+      "enabled": true,
+      "level": 6,
+      "minFileSize": "1KB"
+    },
+    "optimization": {
+      "autoDefrag": true,
+      "defragSchedule": "0 4 * * 0"
+    }
+  },
+  "maintenance": {
+    "autoCleanup": {
+      "enabled": true,
+      "schedule": "0 3 * * 0",
+      "actions": [
+        "removeExpiredFiles",
+        "compressOldLogs",
+        "optimizeStorage",
+        "updateMetrics"
+      ]
+    },
+    "healthCheck": {
+      "enabled": true,
+      "interval": 300,
+      "checks": [
+        "diskSpace",
+        "filePermissions",
+        "mountPoints",
+        "backupStatus"
+      ]
+    },
+    "notifications": {
+      "enabled": true,
+      "channels": ["email", "webhook"],
+      "events": [
+        "diskSpaceWarning",
+        "backupFailure",
+        "healthCheckFailure"
+      ]
+    }
+  }
+}

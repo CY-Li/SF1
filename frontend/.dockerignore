@@ -32,8 +32,6 @@ tests/
 src/
 *.map
 *.ts
-*.scss
-*.less
 
 # Build artifacts (keep only dist)
 build/
@@ -52,3 +50,7 @@ pids/
 # Temporary folders
 tmp/
 temp/
+
+# Docker files
+Dockerfile*
+docker-compose*

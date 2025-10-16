@@ -1,8 +1,8 @@
-# 優化版 Zeabur Dockerfile - 修復 Angular 建置問題
-# 跳過 Angular 建置，使用預建置檔案以避免 Node.js 相關問題
+# ROSCA 平安商會系統 - Zeabur 優化版 Dockerfile
+# 單一容器包含所有服務：前台、後台、API Gateway、Backend Service
 
 # 階段 1: 建置 .NET Core Backend Service
-FROM mcr.microsoft.com/dotnet/sdk:7.0 AS backend-service-build
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS backend-service-build
 WORKDIR /src
 COPY backendAPI/DotNetBackEndCleanArchitecture/ .
 WORKDIR /src/Presentation/DotNetBackEndService
@@ -11,7 +11,7 @@ RUN dotnet build -c Release -o /app/backend-service/build
 RUN dotnet publish -c Release -o /app/backend-service/publish --no-restore
 
 # 階段 2: 建置 .NET Core API Gateway
-FROM mcr.microsoft.com/dotnet/sdk:7.0 AS backend-build
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS backend-build
 WORKDIR /src
 COPY backendAPI/DotNetBackEndCleanArchitecture/ .
 WORKDIR /src/DotNetBackEndApi
@@ -20,7 +20,7 @@ RUN dotnet build -c Release -o /app/backend/build
 RUN dotnet publish -c Release -o /app/backend/publish --no-restore
 
 # 階段 3: 最終運行階段
-FROM mcr.microsoft.com/dotnet/aspnet:7.0 AS final
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS final
 WORKDIR /app
 
 # 安裝 nginx 和 supervisor

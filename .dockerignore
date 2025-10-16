@@ -1,43 +1,41 @@
 # Git
-.git
+.git/
 .gitignore
 .gitattributes
 
-# Documentation
-README.md
+# Documentation (保留 README.md)
 *.md
+!README.md
 
-# Docker
-docker-compose.yml
-docker-compose.override.yml
-Dockerfile
-.dockerignore
-
-# Environment
-.env
-.env.example
-.env.local
-.env.development
-.env.production
-
-# IDE
+# IDE 和編輯器
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
 
-# OS
+# OS 生成的檔案
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
 
-# Logs
-*.log
-logs/
+# 環境變數檔案 (保留 .env.zeabur.example)
+.env
+.env.*
+!.env.zeabur.example
 
-# Node modules (will be installed in container)
+# Node.js
 node_modules/
+*/node_modules/
 npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn/
 
 # .NET
 bin/
@@ -45,11 +43,66 @@ obj/
 *.user
 *.suo
 *.cache
-*.dll
+[Dd]ebug/
+[Rr]elease/
+*.exe
 *.pdb
+*.dll
+*.mdb
+*.log
+*.nupkg
+*.snupkg
 
-# Scripts
+# 建置輸出 (保留前端 dist)
+dist/
+!backend/FontEnd/FontEnd/dist/
+
+# 測試和覆蓋率
+coverage/
+*.lcov
+.nyc_output
+TestResult.xml
+[Tt]est[Rr]esult*/
+
+# 日誌檔案
+logs/
+*.log
+
+# 臨時檔案
+tmp/
+temp/
+*.tmp
+*.temp
+
+# 備份檔案
+*.bak
+*.backup
+
+# 壓縮檔案
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# Docker 相關 (保留主要 Dockerfile)
+docker-compose*.yml
+!docker-compose.yml
+Dockerfile.*
+!Dockerfile
+
+# 部署腳本和工具
 scripts/
+deployment/
 
-# Database
-database/
+# 資料庫檔案
+*.mdf
+*.ldf
+*.ndf
+
+# 快取目錄
+.cache/
+.parcel-cache/
+
+# 不必要的配置檔案
+nginx/

@@ -1,8 +1,8 @@
-# ROSCA 平安商會系統 - .NET Core 7 微服務 Dockerfile
+# ROSCA 平安商會系統 - .NET Core 7 Backend Service Dockerfile
 # 多階段建置：建置階段 + 運行階段
 
 # ===== 建置階段 =====
-FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
+FROM mcr.microsoft.com/dotnet/sdk:7.0-alpine AS build
 WORKDIR /src
 
 # 複製解決方案文件
@@ -20,39 +20,35 @@ COPY Presentation/DotNetBackEndService/*.csproj ./Presentation/DotNetBackEndServ
 COPY DotNetBackEndApi/*.csproj ./DotNetBackEndApi/
 
 # 還原 NuGet 套件
-RUN dotnet restore
+RUN dotnet restore Presentation/DotNetBackEndService/DotNetBackEndService.csproj
 
 # 複製所有原始碼
 COPY . .
 
-# 建置應用程式
+# 建置和發布應用程式
 WORKDIR /src/Presentation/DotNetBackEndService
-RUN dotnet build -c Release -o /app/build
-
-# 發布應用程式
-RUN dotnet publish -c Release -o /app/publish --no-restore
+RUN dotnet publish -c Release -o /app/publish --no-restore --self-contained false
 
 # ===== 運行階段 =====
-FROM mcr.microsoft.com/dotnet/aspnet:7.0 AS runtime
+FROM mcr.microsoft.com/dotnet/aspnet:7.0-alpine AS runtime
 WORKDIR /app
 
-# 安裝必要的系統套件
-RUN apt-get update && apt-get install -y \
-    curl \
-    && rm -rf /var/lib/apt/lists/*
+# 安裝必要的系統套件 (Alpine 版本)
+RUN apk add --no-cache curl tzdata
 
 # 建立非 root 使用者
-RUN groupadd -r appuser && useradd -r -g appuser appuser
+RUN addgroup -g 1001 -S appuser && \
+    adduser -S appuser -G appuser -u 1001
 
-# 建立應用程式目錄
-RUN mkdir -p /app/uploads /app/KycImages /app/DepositImages /app/WithdrawImages /app/AnnImagessss
+# 建立應用程式目錄和檔案存儲目錄
+RUN mkdir -p /app/uploads /app/KycImages /app/DepositImages /app/WithdrawImages /app/AnnImagessss /app/logs
 
 # 複製發布的應用程式
 COPY --from=build /app/publish .
 
 # 設定目錄權限
-RUN chown -R appuser:appuser /app
-RUN chmod -R 755 /app
+RUN chown -R appuser:appuser /app && \
+    chmod -R 755 /app
 
 # 切換到非 root 使用者
 USER appuser
@@ -61,9 +57,11 @@ USER appuser
 EXPOSE 5001
 
 # 設定環境變數
-ENV ASPNETCORE_URLS=http://+:5001
-ENV ASPNETCORE_ENVIRONMENT=Production
-ENV TZ=Asia/Taipei
+ENV ASPNETCORE_URLS=http://+:5001 \
+    ASPNETCORE_ENVIRONMENT=Production \
+    TZ=Asia/Taipei \
+    DOTNET_RUNNING_IN_CONTAINER=true \
+    DOTNET_USE_POLLING_FILE_WATCHER=true
 
 # 健康檢查
 HEALTHCHECK --interval=30s --timeout=10s --start-period=60s --retries=3 \

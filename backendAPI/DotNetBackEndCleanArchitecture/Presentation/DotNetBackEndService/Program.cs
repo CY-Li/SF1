@@ -6,6 +6,8 @@ using InfraCommon.DBA;
 using AutoMapper;
 using InfraCommon.MapperServices.AutoMapperProfile;
 using DotNetBackEndService.DI;
+using Microsoft.Extensions.Diagnostics.HealthChecks;
+using HealthChecks.UI.Client;
 
 Log.Logger = new LoggerConfiguration()
     .MinimumLevel.Information()
@@ -30,7 +32,12 @@ try
     // Add services to the container.
 
     builder.Services.AddControllers();
-    builder.Services.Configure<AppConfig>(builder.Configuration); // Åýconfig¦³±j«¬§O
+    builder.Services.Configure<AppConfig>(builder.Configuration); // ï¿½ï¿½configï¿½ï¿½ï¿½jï¿½ï¿½ï¿½O
+
+    // Add health checks
+    builder.Services.AddHealthChecks()
+        .AddCheck("self", () => HealthCheckResult.Healthy("Backend Service is running"))
+        .AddDbContextCheck<BackEndDbContext>("database");
 
     #region Service DI 
     builder.Services.AddInfraCommon();
@@ -62,13 +69,19 @@ try
 
     app.UseSerilogRequestLogging();
 
-    //app.UseExceptionHandleMiddleware();//¥[¤J³o¦æ§Y¥i§¹¦¨³]©w
+    //app.UseExceptionHandleMiddleware();//ï¿½[ï¿½Jï¿½oï¿½ï¿½Yï¿½iï¿½ï¿½ï¿½ï¿½ï¿½]ï¿½w
 
     // Configure the HTTP request pipeline.
 
     //app.UseHttpsRedirection();
 
     app.UseAuthorization();
+
+    // Configure health check endpoint
+    app.MapHealthChecks("/health", new HealthCheckOptions
+    {
+        ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
+    });
 
     app.MapControllers();
 

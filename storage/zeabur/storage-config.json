@@ -1,0 +1,193 @@
+{
+  "StorageConfiguration": {
+    "Provider": "Zeabur",
+    "BasePath": "/app",
+    "MaxTotalSize": "15GB",
+    "BackupEnabled": true,
+    "CompressionEnabled": true,
+    "EncryptionEnabled": false
+  },
+  "Volumes": {
+    "uploads": {
+      "name": "uploads",
+      "mountPath": "/app/uploads",
+      "size": "5GB",
+      "description": "通用檔案上傳存儲",
+      "allowedExtensions": [".jpg", ".jpeg", ".png", ".gif", ".pdf", ".doc", ".docx", ".xls", ".xlsx"],
+      "maxFileSize": "10MB",
+      "autoCleanup": {
+        "enabled": true,
+        "retentionDays": 365
+      }
+    },
+    "kyc-images": {
+      "name": "kyc-images",
+      "mountPath": "/app/KycImages",
+      "size": "2GB",
+      "description": "KYC 身份認證圖片存儲",
+      "allowedExtensions": [".jpg", ".jpeg", ".png"],
+      "maxFileSize": "5MB",
+      "autoCleanup": {
+        "enabled": false,
+        "retentionDays": -1
+      },
+      "security": {
+        "accessLevel": "restricted",
+        "encryptionRequired": true
+      }
+    },
+    "deposit-images": {
+      "name": "deposit-images",
+      "mountPath": "/app/DepositImages",
+      "size": "2GB",
+      "description": "存款憑證圖片存儲",
+      "allowedExtensions": [".jpg", ".jpeg", ".png", ".pdf"],
+      "maxFileSize": "5MB",
+      "autoCleanup": {
+        "enabled": true,
+        "retentionDays": 1095
+      },
+      "security": {
+        "accessLevel": "restricted",
+        "auditRequired": true
+      }
+    },
+    "withdraw-images": {
+      "name": "withdraw-images",
+      "mountPath": "/app/WithdrawImages",
+      "size": "2GB",
+      "description": "提款憑證圖片存儲",
+      "allowedExtensions": [".jpg", ".jpeg", ".png", ".pdf"],
+      "maxFileSize": "5MB",
+      "autoCleanup": {
+        "enabled": true,
+        "retentionDays": 1095
+      },
+      "security": {
+        "accessLevel": "restricted",
+        "auditRequired": true
+      }
+    },
+    "announcement-images": {
+      "name": "ann-images",
+      "mountPath": "/app/AnnImagessss",
+      "size": "2GB",
+      "description": "公告圖片存儲",
+      "allowedExtensions": [".jpg", ".jpeg", ".png", ".gif"],
+      "maxFileSize": "3MB",
+      "autoCleanup": {
+        "enabled": true,
+        "retentionDays": 730
+      },
+      "security": {
+        "accessLevel": "public",
+        "cacheEnabled": true
+      }
+    },
+    "logs": {
+      "name": "logs",
+      "mountPath": "/app/logs",
+      "size": "1GB",
+      "description": "應用程式日誌存儲",
+      "allowedExtensions": [".log", ".txt"],
+      "maxFileSize": "100MB",
+      "autoCleanup": {
+        "enabled": true,
+        "retentionDays": 30
+      },
+      "compression": {
+        "enabled": true,
+        "algorithm": "gzip"
+      }
+    }
+  },
+  "BackupConfiguration": {
+    "enabled": true,
+    "schedule": "0 2 * * *",
+    "retention": {
+      "daily": 7,
+      "weekly": 4,
+      "monthly": 12
+    },
+    "compression": true,
+    "encryption": true,
+    "destinations": [
+      {
+        "type": "cloud",
+        "provider": "zeabur",
+        "config": {
+          "bucket": "rosca-backups",
+          "region": "auto"
+        }
+      }
+    ]
+  },
+  "MonitoringConfiguration": {
+    "enabled": true,
+    "metrics": {
+      "diskUsage": true,
+      "fileCount": true,
+      "accessFrequency": true,
+      "errorRate": true
+    },
+    "alerts": {
+      "diskUsageThreshold": 85,
+      "fileCountThreshold": 10000,
+      "errorRateThreshold": 5
+    }
+  },
+  "SecurityConfiguration": {
+    "virusScanning": {
+      "enabled": true,
+      "quarantineEnabled": true
+    },
+    "accessControl": {
+      "enabled": true,
+      "defaultPolicy": "deny",
+      "allowedIPs": [],
+      "blockedIPs": []
+    },
+    "auditLogging": {
+      "enabled": true,
+      "logLevel": "info",
+      "includeFileContent": false
+    }
+  },
+  "PerformanceConfiguration": {
+    "caching": {
+      "enabled": true,
+      "ttl": 3600,
+      "maxSize": "100MB"
+    },
+    "compression": {
+      "enabled": true,
+      "level": 6,
+      "minFileSize": "1KB"
+    },
+    "cdn": {
+      "enabled": false,
+      "provider": "zeabur",
+      "cacheTtl": 86400
+    }
+  },
+  "MaintenanceConfiguration": {
+    "autoCleanup": {
+      "enabled": true,
+      "schedule": "0 3 * * 0",
+      "actions": [
+        "removeExpiredFiles",
+        "compressOldLogs",
+        "optimizeStorage"
+      ]
+    },
+    "healthCheck": {
+      "enabled": true,
+      "interval": 300,
+      "checks": [
+        "diskSpace",
+        "filePermissions",
+        "mountPoints"
+      ]
+    }
+  }
+}

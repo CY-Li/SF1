@@ -1,0 +1,205 @@
+# Zeabur 持久化存儲卷配置
+# 用於 ROSCA 平安商會系統的檔案存儲
+
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: rosca-uploads-pv
+  labels:
+    app: rosca-system
+    type: uploads
+spec:
+  capacity:
+    storage: 5Gi
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: standard
+  hostPath:
+    path: /data/rosca/uploads
+
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: rosca-uploads-pvc
+  labels:
+    app: rosca-system
+    type: uploads
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 5Gi
+  storageClassName: standard
+
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: rosca-kyc-images-pv
+  labels:
+    app: rosca-system
+    type: kyc-images
+spec:
+  capacity:
+    storage: 2Gi
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: standard
+  hostPath:
+    path: /data/rosca/kyc-images
+
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: rosca-kyc-images-pvc
+  labels:
+    app: rosca-system
+    type: kyc-images
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 2Gi
+  storageClassName: standard
+
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: rosca-deposit-images-pv
+  labels:
+    app: rosca-system
+    type: deposit-images
+spec:
+  capacity:
+    storage: 2Gi
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: standard
+  hostPath:
+    path: /data/rosca/deposit-images
+
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: rosca-deposit-images-pvc
+  labels:
+    app: rosca-system
+    type: deposit-images
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 2Gi
+  storageClassName: standard
+
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: rosca-withdraw-images-pv
+  labels:
+    app: rosca-system
+    type: withdraw-images
+spec:
+  capacity:
+    storage: 2Gi
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: standard
+  hostPath:
+    path: /data/rosca/withdraw-images
+
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: rosca-withdraw-images-pvc
+  labels:
+    app: rosca-system
+    type: withdraw-images
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 2Gi
+  storageClassName: standard
+
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: rosca-announcement-images-pv
+  labels:
+    app: rosca-system
+    type: announcement-images
+spec:
+  capacity:
+    storage: 2Gi
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: standard
+  hostPath:
+    path: /data/rosca/announcement-images
+
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: rosca-announcement-images-pvc
+  labels:
+    app: rosca-system
+    type: announcement-images
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 2Gi
+  storageClassName: standard
+
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: rosca-logs-pv
+  labels:
+    app: rosca-system
+    type: logs
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: standard
+  hostPath:
+    path: /data/rosca/logs
+
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: rosca-logs-pvc
+  labels:
+    app: rosca-system
+    type: logs
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
+  storageClassName: standard

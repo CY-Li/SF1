@@ -1,0 +1,23 @@
+{
+  "FileUploadConfiguration": {
+    "MaxFileSize": 10485760,
+    "AllowedExtensions": [".jpg", ".jpeg", ".png", ".gif", ".pdf"],
+    "UploadPaths": {
+      "Uploads": "/app/uploads",
+      "KycImages": "/app/KycImages",
+      "DepositImages": "/app/DepositImages",
+      "WithdrawImages": "/app/WithdrawImages",
+      "AnnouncementImages": "/app/AnnImagessss"
+    },
+    "Security": {
+      "VirusScanEnabled": true,
+      "ValidateFileContent": true,
+      "AllowExecutableFiles": false
+    },
+    "Performance": {
+      "EnableCompression": true,
+      "EnableCaching": true,
+      "MaxConcurrentUploads": 5
+    }
+  }
+}

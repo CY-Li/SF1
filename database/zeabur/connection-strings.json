@@ -1,0 +1,73 @@
+{
+  "ConnectionStrings": {
+    "BackEndDatabase": "Server=${DB_HOST};Port=${DB_PORT};User Id=${DB_USER};Password=${DB_PASSWORD};Database=${DB_NAME};CharSet=utf8mb4;AllowUserVariables=True;UseAffectedRows=False;",
+    "BackEndDatabaseZeabur": "Server=${ZEABUR_MARIADB_CONNECTION_HOST};Port=${ZEABUR_MARIADB_CONNECTION_PORT};User Id=${DB_USER};Password=${DB_PASSWORD};Database=${DB_NAME};CharSet=utf8mb4;AllowUserVariables=True;UseAffectedRows=False;",
+    "BackEndDatabaseLocal": "Server=localhost;Port=3306;User Id=${DB_USER};Password=${DB_PASSWORD};Database=${DB_NAME};CharSet=utf8mb4;AllowUserVariables=True;UseAffectedRows=False;"
+  },
+  "DatabaseConfiguration": {
+    "Provider": "MariaDB",
+    "Version": "11.3.2",
+    "CharacterSet": "utf8mb4",
+    "Collation": "utf8mb4_general_ci",
+    "TimeZone": "Asia/Taipei",
+    "ConnectionTimeout": 30,
+    "CommandTimeout": 60,
+    "MaxPoolSize": 100,
+    "MinPoolSize": 5,
+    "ConnectionLifetime": 300,
+    "EnableRetryOnFailure": true,
+    "MaxRetryCount": 3,
+    "MaxRetryDelay": "00:00:30"
+  },
+  "ZeaburServiceDiscovery": {
+    "MariaDBHost": "${ZEABUR_MARIADB_CONNECTION_HOST}",
+    "MariaDBPort": "${ZEABUR_MARIADB_CONNECTION_PORT}",
+    "BackendServiceHost": "${ZEABUR_BACKEND_SERVICE_DOMAIN}",
+    "BackendServicePort": "5001",
+    "APIGatewayHost": "${ZEABUR_BACKEND_DOMAIN}",
+    "APIGatewayPort": "5000",
+    "FrontendHost": "${ZEABUR_FRONTEND_DOMAIN}",
+    "AdminHost": "${ZEABUR_ADMIN_DOMAIN}"
+  },
+  "EnvironmentVariables": {
+    "Development": {
+      "DB_HOST": "localhost",
+      "DB_PORT": "3306",
+      "DB_NAME": "rosca_db",
+      "DB_USER": "rosca_user",
+      "DB_PASSWORD": "development_password"
+    },
+    "Production": {
+      "DB_HOST": "${ZEABUR_MARIADB_CONNECTION_HOST}",
+      "DB_PORT": "${ZEABUR_MARIADB_CONNECTION_PORT}",
+      "DB_NAME": "${DB_NAME}",
+      "DB_USER": "${DB_USER}",
+      "DB_PASSWORD": "${DB_PASSWORD}"
+    }
+  },
+  "ConnectionStringTemplates": {
+    "EntityFrameworkCore": "Server={host};Port={port};User Id={user};Password={password};Database={database};CharSet=utf8mb4;AllowUserVariables=True;UseAffectedRows=False;",
+    "MySqlConnector": "Server={host};Port={port};Uid={user};Pwd={password};Database={database};CharSet=utf8mb4;AllowUserVariables=True;UseAffectedRows=False;",
+    "ADO.NET": "Server={host};Port={port};User ID={user};Password={password};Database={database};CharSet=utf8mb4;AllowUserVariables=True;UseAffectedRows=False;",
+    "WithSSL": "Server={host};Port={port};User Id={user};Password={password};Database={database};CharSet=utf8mb4;AllowUserVariables=True;UseAffectedRows=False;SslMode=Required;",
+    "WithPooling": "Server={host};Port={port};User Id={user};Password={password};Database={database};CharSet=utf8mb4;AllowUserVariables=True;UseAffectedRows=False;Pooling=true;MinimumPoolSize=5;MaximumPoolSize=100;ConnectionLifeTime=300;"
+  },
+  "ValidationQueries": {
+    "HealthCheck": "SELECT 1",
+    "DatabaseExists": "SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA WHERE SCHEMA_NAME = '{database}'",
+    "TableExists": "SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = '{database}' AND TABLE_NAME = '{table}'",
+    "UserExists": "SELECT User FROM mysql.user WHERE User = '{user}'",
+    "CharacterSetCheck": "SELECT @@character_set_database, @@collation_database",
+    "VersionCheck": "SELECT VERSION()"
+  },
+  "TroubleshootingQueries": {
+    "ShowProcessList": "SHOW PROCESSLIST",
+    "ShowStatus": "SHOW STATUS LIKE 'Connections'",
+    "ShowVariables": "SHOW VARIABLES LIKE 'character_set%'",
+    "ShowDatabases": "SHOW DATABASES",
+    "ShowTables": "SHOW TABLES",
+    "CheckTableStatus": "SHOW TABLE STATUS FROM {database}",
+    "CheckIndexes": "SHOW INDEX FROM {table}",
+    "CheckConstraints": "SELECT * FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE TABLE_SCHEMA = '{database}'"
+  }
+}
