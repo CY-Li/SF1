@@ -1,0 +1,58 @@
+# Zeabur 單一容器部署 Dockerfile
+# 這個 Dockerfile 將所有服務打包到一個容器中，適用於 Zeabur 的簡化部署
+
+FROM mcr.microsoft.com/dotnet/aspnet:7.0 AS base
+WORKDIR /app
+
+# 安裝必要的套件
+RUN apt-get update && apt-get install -y \
+    nginx \
+    supervisor \
+    curl \
+    && rm -rf /var/lib/apt/lists/*
+
+# 複製 .NET Core 應用程式
+COPY backendAPI/DotNetBackEndCleanArchitecture/DotNetBackEndApi/bin/Release/net7.0/publish/ /app/backend/
+COPY backendAPI/DotNetBackEndCleanArchitecture/Presentation/DotNetBackEndService/bin/Release/net7.0/publish/ /app/backend-service/
+
+# 複製前端檔案
+COPY frontend/ /var/www/frontend/
+COPY backend/FontEnd/FontEnd/dist/font-end/browser/ /var/www/admin/
+
+# 複製 nginx 配置
+COPY frontend/nginx.conf /etc/nginx/sites-available/frontend
+COPY backend/FontEnd/admin-nginx.conf /etc/nginx/sites-available/admin
+
+# 配置 nginx
+RUN ln -s /etc/nginx/sites-available/frontend /etc/nginx/sites-enabled/ && \
+    ln -s /etc/nginx/sites-available/admin /etc/nginx/sites-enabled/ && \
+    rm /etc/nginx/sites-enabled/default
+
+# 創建 supervisor 配置
+COPY <<EOF /etc/supervisor/conf.d/supervisord.conf
+[supervisord]
+nodaemon=true
+
+[program:nginx]
+command=nginx -g "daemon off;"
+autostart=true
+autorestart=true
+
+[program:backend]
+command=dotnet /app/backend/DotNetBackEndApi.dll
+directory=/app/backend
+autostart=true
+autorestart=true
+environment=ASPNETCORE_URLS="http://+:5000"
+
+[program:backend-service]
+command=dotnet /app/backend-service/DotNetBackEndService.dll
+directory=/app/backend-service
+autostart=true
+autorestart=true
+environment=ASPNETCORE_URLS="http://+:5001"
+EOF
+
+EXPOSE 80 5000 5001
+
+CMD ["/usr/bin/supervisord"]
