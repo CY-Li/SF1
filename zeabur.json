@@ -1,0 +1,152 @@
+{
+  "$schema": "https://zeabur.com/schema.json",
+  "name": "rosca-system",
+  "services": {
+    "mariadb": {
+      "template": "mariadb",
+      "name": "rosca-mariadb",
+      "env": {
+        "MYSQL_ROOT_PASSWORD": "${DB_ROOT_PASSWORD}",
+        "MYSQL_DATABASE": "${DB_NAME}",
+        "MYSQL_USER": "${DB_USER}",
+        "MYSQL_PASSWORD": "${DB_PASSWORD}",
+        "MYSQL_CHARACTER_SET_SERVER": "utf8mb4",
+        "MYSQL_COLLATION_SERVER": "utf8mb4_general_ci",
+        "TZ": "Asia/Taipei"
+      },
+      "volumes": [
+        {
+          "name": "db-data",
+          "dir": "/var/lib/mysql"
+        }
+      ],
+      "configs": [
+        {
+          "path": "/docker-entrypoint-initdb.d/01-schema.sql",
+          "template": "./database/init/01-schema.sql"
+        },
+        {
+          "path": "/docker-entrypoint-initdb.d/02-default-data.sql",
+          "template": "./database/init/02-default-data.sql"
+        },
+        {
+          "path": "/docker-entrypoint-initdb.d/03-default-user.sql",
+          "template": "./database/init/03-default-user.sql"
+        }
+      ]
+    },
+    "backend-service": {
+      "build": {
+        "context": "./backendAPI/DotNetBackEndCleanArchitecture",
+        "dockerfile": "Presentation/DotNetBackEndService/Dockerfile"
+      },
+      "name": "rosca-backend-service",
+      "env": {
+        "ASPNETCORE_ENVIRONMENT": "${ASPNETCORE_ENVIRONMENT}",
+        "ASPNETCORE_URLS": "http://+:5001",
+        "ConnectionStrings__BackEndDatabase": "Server=${ZEABUR_MARIADB_CONNECTION_HOST};Port=${ZEABUR_MARIADB_CONNECTION_PORT};User Id=${DB_USER};Password=${DB_PASSWORD};Database=${DB_NAME};CharSet=utf8mb4;AllowUserVariables=True;UseAffectedRows=False;",
+        "TZ": "Asia/Taipei",
+        "JWT__SecretKey": "${JWT_SECRET_KEY}",
+        "JWT__Issuer": "${JWT_ISSUER}",
+        "JWT__Audience": "${JWT_AUDIENCE}",
+        "JWT__ExpiryMinutes": "${JWT_EXPIRY_MINUTES}",
+        "Serilog__MinimumLevel__Default": "${LOG_LEVEL}"
+      },
+      "volumes": [
+        {
+          "name": "uploads",
+          "dir": "/app/uploads"
+        },
+        {
+          "name": "kyc-images",
+          "dir": "/app/KycImages"
+        },
+        {
+          "name": "deposit-images",
+          "dir": "/app/DepositImages"
+        },
+        {
+          "name": "withdraw-images",
+          "dir": "/app/WithdrawImages"
+        },
+        {
+          "name": "ann-images",
+          "dir": "/app/AnnImagessss"
+        }
+      ],
+      "depends_on": ["mariadb"]
+    },
+    "backend": {
+      "build": {
+        "context": "./backendAPI/DotNetBackEndCleanArchitecture",
+        "dockerfile": "Dockerfile"
+      },
+      "name": "rosca-backend",
+      "env": {
+        "ASPNETCORE_ENVIRONMENT": "${ASPNETCORE_ENVIRONMENT}",
+        "ASPNETCORE_URLS": "http://+:5000",
+        "ConnectionStrings__BackEndDatabase": "Server=${ZEABUR_MARIADB_CONNECTION_HOST};Port=${ZEABUR_MARIADB_CONNECTION_PORT};User Id=${DB_USER};Password=${DB_PASSWORD};Database=${DB_NAME};CharSet=utf8mb4;AllowUserVariables=True;UseAffectedRows=False;",
+        "APIUrl": "http://${ZEABUR_BACKEND_SERVICE_DOMAIN}:5001/",
+        "TZ": "Asia/Taipei",
+        "JWT__SecretKey": "${JWT_SECRET_KEY}",
+        "JWT__Issuer": "${JWT_ISSUER}",
+        "JWT__Audience": "${JWT_AUDIENCE}",
+        "JWT__ExpiryMinutes": "${JWT_EXPIRY_MINUTES}",
+        "CORS__AllowedOrigins": "${CORS_ALLOWED_ORIGINS}",
+        "FileUpload__MaxFileSize": "${FILE_UPLOAD_MAX_SIZE}",
+        "FileUpload__AllowedExtensions": "${FILE_UPLOAD_EXTENSIONS}",
+        "Hangfire__DashboardEnabled": "${HANGFIRE_DASHBOARD_ENABLED}",
+        "Serilog__MinimumLevel__Default": "${LOG_LEVEL}"
+      },
+      "volumes": [
+        {
+          "name": "uploads",
+          "dir": "/app/uploads"
+        },
+        {
+          "name": "kyc-images",
+          "dir": "/app/KycImages"
+        },
+        {
+          "name": "deposit-images",
+          "dir": "/app/DepositImages"
+        },
+        {
+          "name": "withdraw-images",
+          "dir": "/app/WithdrawImages"
+        },
+        {
+          "name": "ann-images",
+          "dir": "/app/AnnImagessss"
+        }
+      ],
+      "depends_on": ["mariadb", "backend-service"]
+    },
+    "frontend": {
+      "build": {
+        "context": "./frontend",
+        "dockerfile": "Dockerfile"
+      },
+      "name": "rosca-frontend",
+      "depends_on": ["backend"]
+    },
+    "admin": {
+      "build": {
+        "context": "./backend/FontEnd",
+        "dockerfile": "Dockerfile"
+      },
+      "name": "rosca-admin",
+      "depends_on": ["backend"]
+    }
+  },
+  "domains": [
+    {
+      "name": "frontend",
+      "service": "frontend"
+    },
+    {
+      "name": "admin",
+      "service": "admin"
+    }
+  ]
+}
