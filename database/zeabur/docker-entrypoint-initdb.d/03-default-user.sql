@@ -1,11 +1,11 @@
 -- ROSCA 平安商會系統預設使用者帳號建立腳本 (Zeabur 版本)
 -- 建立預設測試帳號和管理員帳號
 
-USE rosca_db;
+USE ${DB_NAME};
 
 -- 建立預設管理員帳號
 -- 帳號: admin / 密碼: Admin123456
--- 密碼 'Admin123456' 的 BCrypt hash (cost=12)
+-- 密碼 'Admin123456' 的 SHA256 hash
 INSERT INTO `member_master` (
     `mm_id`,
     `mm_account`,
@@ -41,8 +41,8 @@ INSERT INTO `member_master` (
 ) VALUES (
     1,
     'admin',
-    '$2a$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewdBdXwtGtrKm9K2',
-    '$2a$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewdBdXwtGtrKm9K2',
+    '1CD73874884DB6A0F9F21D853D7E9EACDC773C39EE389060F5E96AE0BCB4773A',
+    '1CD73874884DB6A0F9F21D853D7E9EACDC773C39EE389060F5E96AE0BCB4773A',
     '系統管理員',
     NULL,
     0,
@@ -73,8 +73,8 @@ INSERT INTO `member_master` (
 );
 
 -- 建立預設測試使用者
--- 帳號: 0938766349 / 密碼: 123456
--- 密碼 '123456' 的 BCrypt hash (cost=12)
+-- 帳號: 0938766349 / 密碼: Admin123456
+-- 密碼 'Admin123456' 的 SHA256 hash
 INSERT INTO `member_master` (
     `mm_id`,
     `mm_account`,
@@ -110,8 +110,8 @@ INSERT INTO `member_master` (
 ) VALUES (
     2,
     '0938766349',
-    '$2a$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewdBdXwtGtrKm9K2',
-    '$2a$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewdBdXwtGtrKm9K2',
+    '1CD73874884DB6A0F9F21D853D7E9EACDC773C39EE389060F5E96AE0BCB4773A',
+    '1CD73874884DB6A0F9F21D853D7E9EACDC773C39EE389060F5E96AE0BCB4773A',
     '測試使用者',
     1,
     100001,
@@ -210,4 +210,4 @@ INSERT INTO `tender_master` (
 -- 預設使用者帳號建立完成
 SELECT 'Default users initialization completed for Zeabur deployment' as message;
 SELECT 'Admin account: admin / Admin123456' as admin_info;
-SELECT 'Test account: 0938766349 / 123456' as test_info;
+SELECT 'Test account: 0938766349 / Admin123456' as test_info;
