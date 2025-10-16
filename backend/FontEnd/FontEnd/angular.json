@@ -42,30 +42,6 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "1mb",
-                  "maximumError": "2mb"
-                },
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "4kb",
-                  "maximumError": "8kb"
-                }
-              ],
-              "outputHashing": "all",
-              "optimization": true,
-              "sourceMap": false,
-              "extractLicenses": true,
-              "namedChunks": false
-            },
-            "development": {
-              "optimization": false,
-              "extractLicenses": false,
-              "sourceMap": true
-            },
-            "zeabur": {
-              "budgets": [
-                {
-                  "type": "initial",
                   "maximumWarning": "2mb",
                   "maximumError": "5mb"
                 },
@@ -78,10 +54,13 @@
               "outputHashing": "all",
               "optimization": true,
               "sourceMap": false,
+              "extractLicenses": true,
+              "namedChunks": false
+            },
+            "development": {
+              "optimization": false,
               "extractLicenses": false,
-              "namedChunks": false,
-              "aot": true,
-              "buildOptimizer": true
+              "sourceMap": true
             }
           },
           "defaultConfiguration": "production"
