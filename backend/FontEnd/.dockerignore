@@ -28,10 +28,10 @@ FontEnd/e2e/
 *.test.ts
 *.spec.ts
 
-# Development files
-FontEnd/src/
-FontEnd/angular.json
-FontEnd/tsconfig*.json
+# Development files (commented out for multi-stage build)
+# FontEnd/src/
+# FontEnd/angular.json
+# FontEnd/tsconfig*.json
 
 # Build artifacts
 # FontEnd/dist/  # 保留 dist 目錄用於 Docker 建置
