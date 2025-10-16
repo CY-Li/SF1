@@ -1,8 +1,8 @@
-# ROSCA 平安商會系統 - .NET Core 7 API Gateway Dockerfile (Zeabur 優化版)
+# ROSCA 平安商會系統 - .NET 8 API Gateway Dockerfile (Zeabur 優化版)
 # 多階段建置：建置階段 + 運行階段
 
 # ===== 建置階段 =====
-FROM mcr.microsoft.com/dotnet/sdk:7.0-alpine AS build
+FROM mcr.microsoft.com/dotnet/sdk:8.0-alpine AS build
 WORKDIR /src
 
 # 複製解決方案文件
@@ -40,7 +40,7 @@ RUN dotnet publish -c Release -o /app/publish \
     /p:PublishSingleFile=false
 
 # ===== 運行階段 =====
-FROM mcr.microsoft.com/dotnet/aspnet:7.0-alpine AS runtime
+FROM mcr.microsoft.com/dotnet/aspnet:8.0-alpine AS runtime
 WORKDIR /app
 
 # 安裝必要的系統套件 (僅保留必要套件以減少映像檔案大小)

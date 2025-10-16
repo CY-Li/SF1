@@ -1,23 +1,15 @@
--- ROSCA 平安商會系統 - Zeabur 資料庫初始化腳本
--- 此腳本用於初始化 Zeabur 部署的外部 MariaDB 資料庫
+-- ROSCA 平安商會系統資料庫結構初始化腳本
+-- 此腳本會在 MariaDB 容器首次啟動時自動執行
 
 -- 設定字符集和排序規則
 SET NAMES utf8mb4;
 SET CHARACTER SET utf8mb4;
 
--- 使用 zeabur 資料庫
+-- 使用 rosca2 資料庫 (已由 Docker 環境變數自動建立)
 USE zeabur;
 
--- 檢查是否已經初始化過
-SELECT 'Checking if database is already initialized...' as status;
-
--- 如果 member_master 表已存在且有資料，則跳過初始化
-SET @table_exists = (SELECT COUNT(*) FROM information_schema.tables 
-                     WHERE table_schema = 'zeabur' AND table_name = 'member_master');
-
--- 只有在表不存在時才執行初始化
 -- 建立公告板表
-CREATE TABLE IF NOT EXISTS `announcement_board` (
+CREATE TABLE `announcement_board` (
     `ab_id` bigint(15) AUTO_INCREMENT NOT NULL,
     `ab_title` varchar(30) COMMENT '標題' NOT NULL,
     `ab_content` varchar(300) COMMENT '內容' NULL,
@@ -34,7 +26,7 @@ CREATE TABLE IF NOT EXISTS `announcement_board` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- 建立存款申請表
-CREATE TABLE IF NOT EXISTS `apply_deposit` (
+CREATE TABLE `apply_deposit` (
     `ad_id` bigint(15) AUTO_INCREMENT NOT NULL,
     `ad_mm_id` bigint(15) COMMENT '存款人' NOT NULL,
     `ad_amount` int(15) COMMENT '存款金額' NOT NULL,
@@ -54,7 +46,7 @@ CREATE TABLE IF NOT EXISTS `apply_deposit` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- 建立KYC認證申請表
-CREATE TABLE IF NOT EXISTS `apply_kyc_certification` (
+CREATE TABLE `apply_kyc_certification` (
     `akc_id` bigint(15) NOT NULL,
     `akc_mm_id` bigint(15) NOT NULL,
     `akc_name` varchar(30) NOT NULL DEFAULT '會員真實姓名',
@@ -80,7 +72,7 @@ CREATE TABLE IF NOT EXISTS `apply_kyc_certification` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- 建立提款申請表
-CREATE TABLE IF NOT EXISTS `apply_withdraw` (
+CREATE TABLE `apply_withdraw` (
     `aw_id` bigint(15) AUTO_INCREMENT NOT NULL,
     `aw_mm_id` bigint(15) COMMENT '申請人ID' NOT NULL,
     `aw_amount` decimal(15,5) COMMENT '申請提領金額' NOT NULL,
@@ -99,7 +91,7 @@ CREATE TABLE IF NOT EXISTS `apply_withdraw` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- 建立抽籤記錄表
-CREATE TABLE IF NOT EXISTS `lottery_record` (
+CREATE TABLE `lottery_record` (
     `lr_id` bigint(15) AUTO_INCREMENT NOT NULL,
     `lr_tm_id` bigint(15) NOT NULL,
     `lr_td_id` bigint(15) NOT NULL,
@@ -112,7 +104,7 @@ CREATE TABLE IF NOT EXISTS `lottery_record` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- 建立會員餘額表
-CREATE TABLE IF NOT EXISTS `member_balance` (
+CREATE TABLE `member_balance` (
     `mb_id` bigint(15) AUTO_INCREMENT NOT NULL,
     `mb_mm_id` bigint(15) NOT NULL,
     `mb_payee_mm_id` bigint(15) COMMENT '收款人帳號(標會點數可以轉給其他人)' NOT NULL,
@@ -136,7 +128,7 @@ CREATE TABLE IF NOT EXISTS `member_balance` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- 建立會員主檔表
-CREATE TABLE IF NOT EXISTS `member_master` (
+CREATE TABLE `member_master` (
     `mm_id` bigint(15) NOT NULL,
     `mm_account` varchar(20) COMMENT '帳號(現在是手機號碼)' NOT NULL,
     `mm_hash_pwd` varchar(100) COMMENT '雜湊密碼' NOT NULL,
@@ -160,7 +152,7 @@ CREATE TABLE IF NOT EXISTS `member_master` (
     `mm_beneficiary_phone` varchar(15) NULL DEFAULT '受益人電話',
     `mm_beneficiary_relationship` varchar(30) NULL DEFAULT '受益人關係',
     `mm_level` char(1) COMMENT '會員等級(暫時沒用)' NOT NULL DEFAULT '0',
-    `mm_role_type` char(2) COMMENT '角色權限:10-使用者、20-管理員' NOT NULL DEFAULT '10',
+    `mm_role_type` char(1) COMMENT '角色權限:1-使用者、2-管理員' NOT NULL DEFAULT '1',
     `mm_status` char(1) COMMENT '帳號是否可以正常使用' NOT NULL DEFAULT 'Y',
     `mm_kyc_id` bigint(15) COMMENT '最新通過認證編號，所以會存目前是哪個kyc' NOT NULL DEFAULT '0',
     `mm_kyc` char(1) COMMENT 'KYC審核，沒有審核不能標會' NOT NULL DEFAULT 'N',
@@ -172,7 +164,7 @@ CREATE TABLE IF NOT EXISTS `member_master` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- 建立會員錢包表
-CREATE TABLE IF NOT EXISTS `member_wallet` (
+CREATE TABLE `member_wallet` (
     `mw_id` bigint(15) AUTO_INCREMENT NOT NULL,
     `mw_mm_id` bigint(15) COMMENT '會員ID' NOT NULL,
     `mw_currency` varchar(10) COMMENT '幣別類型' NULL,
@@ -195,7 +187,7 @@ CREATE TABLE IF NOT EXISTS `member_wallet` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- 建立參數分類表
-CREATE TABLE IF NOT EXISTS `parameter_category` (
+CREATE TABLE `parameter_category` (
     `sp_id` bigint(15) AUTO_INCREMENT NOT NULL,
     `sp_key` varchar(25) COMMENT '查詢參數設定索引' NOT NULL,
     `sp_code` varchar(25) COMMENT '參數代碼' NOT NULL,
@@ -209,7 +201,7 @@ CREATE TABLE IF NOT EXISTS `parameter_category` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- 建立待付款表
-CREATE TABLE IF NOT EXISTS `pending_payment` (
+CREATE TABLE `pending_payment` (
     `pp_sn` bigint(15) AUTO_INCREMENT NOT NULL,
     `pp_id` bigint(15) NOT NULL,
     `pp_mm_id` bigint(15) NOT NULL,
@@ -227,7 +219,7 @@ CREATE TABLE IF NOT EXISTS `pending_payment` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- 建立系統參數設定表
-CREATE TABLE IF NOT EXISTS `system_parameter_setting` (
+CREATE TABLE `system_parameter_setting` (
     `sps_id` bigint(15) AUTO_INCREMENT NOT NULL,
     `sps_code` varchar(25) COMMENT '設定索引' NOT NULL,
     `sps_name` varchar(25) COMMENT '設定名稱' NOT NULL,
@@ -251,7 +243,7 @@ CREATE TABLE IF NOT EXISTS `system_parameter_setting` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- 建立臨時標會記錄表
-CREATE TABLE IF NOT EXISTS `temp_tender_record` (
+CREATE TABLE `temp_tender_record` (
     `ttr_sn` bigint(15) AUTO_INCREMENT NOT NULL,
     `ttr_tm_sn` bigint(15) NOT NULL,
     `ttr_tm_id` bigint(15) NOT NULL,
@@ -271,7 +263,7 @@ CREATE TABLE IF NOT EXISTS `temp_tender_record` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- 建立標會活動記錄表
-CREATE TABLE IF NOT EXISTS `tender_activity_record` (
+CREATE TABLE `tender_activity_record` (
     `tar_id` bigint(15) AUTO_INCREMENT NOT NULL,
     `tar_mm_id` bigint(15) COMMENT '操作人(標會人、得標人)' NOT NULL,
     `tar_mm_introduce_code` bigint(15) NULL DEFAULT '0',
@@ -289,7 +281,7 @@ CREATE TABLE IF NOT EXISTS `tender_activity_record` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- 建立標會明細表
-CREATE TABLE IF NOT EXISTS `tender_detail` (
+CREATE TABLE `tender_detail` (
     `td_id` bigint(15) AUTO_INCREMENT COMMENT 'RSOCA 明細檔ID (Rotating Savings and Credit Association ID_標會明細標' NOT NULL,
     `td_tm_id` bigint(15) COMMENT 'RSOCA 主檔ID (Rotating Savings and Credit Association ID_標會明細標會' NOT NULL,
     `td_participants` bigint(15) COMMENT '參加者mm_id' NULL,
@@ -308,7 +300,7 @@ CREATE TABLE IF NOT EXISTS `tender_detail` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- 建立標會主檔表
-CREATE TABLE IF NOT EXISTS `tender_master` (
+CREATE TABLE `tender_master` (
     `tm_id` bigint(15) COMMENT 'RSOCA 主檔ID (Rotating Savings and Credit Association ID_標會明細標會' NOT NULL,
     `tm_sn` bigint(15) NOT NULL DEFAULT '0',
     `tm_name` varchar(25) COMMENT '標會名稱' NOT NULL,
@@ -333,7 +325,7 @@ CREATE TABLE IF NOT EXISTS `tender_master` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- 建立交易記錄表
-CREATE TABLE IF NOT EXISTS `transaction_record` (
+CREATE TABLE `transaction_record` (
     `tr_id` bigint(15) AUTO_INCREMENT NOT NULL,
     `tr_code` char(22) COMMENT '自製交易序號' NOT NULL,
     `tr_mm_id` bigint(15) COMMENT '標會人mm_id' NOT NULL,
@@ -366,79 +358,119 @@ ALTER TABLE `member_wallet`
     UNIQUE (`mw_mm_id`);
 
 -- 建立索引以提升查詢效能
-CREATE INDEX IF NOT EXISTS `INDEX_announcement_board_1`
+CREATE INDEX `INDEX_announcement_board_1`
     ON `announcement_board`(`ab_id` DESC);
 
-CREATE INDEX IF NOT EXISTS `INDEX_apply_deposit_1`
+CREATE INDEX `INDEX_apply_deposit_1`
     ON `apply_deposit`(`ad_mm_id` DESC);
 
-CREATE INDEX IF NOT EXISTS `INDEX_apply_deposit_2`
+CREATE INDEX `INDEX_apply_deposit_2`
     ON `apply_deposit`(`ad_status`);
 
-CREATE INDEX IF NOT EXISTS `INDEX_apply_kyc_certification_1`
+CREATE INDEX `INDEX_apply_kyc_certification_1`
     ON `apply_kyc_certification`(`akc_mm_id`);
 
-CREATE INDEX IF NOT EXISTS `INDEX_apply_kyc_certification_2`
+CREATE INDEX `INDEX_apply_kyc_certification_2`
     ON `apply_kyc_certification`(`akc_status`);
 
-CREATE INDEX IF NOT EXISTS `INDEX_apply_withdraw_1`
+CREATE INDEX `INDEX_apply_withdraw_1`
     ON `apply_withdraw`(`aw_mm_id`);
 
-CREATE INDEX IF NOT EXISTS `INDEX_apply_withdraw_2`
+CREATE INDEX `INDEX_apply_withdraw_2`
     ON `apply_withdraw`(`aw_status`);
 
-CREATE INDEX IF NOT EXISTS `INDEX_member_balance_1`
+CREATE INDEX `INDEX_member_balance_1`
     ON `member_balance`(`mb_mm_id`);
 
-CREATE INDEX IF NOT EXISTS `INDEX_member_balance_2`
+CREATE INDEX `INDEX_member_balance_2`
     ON `member_balance`(`mb_mm_id`, `mb_points_type`);
 
-CREATE INDEX IF NOT EXISTS `INDEX_member_master_1`
+CREATE INDEX `INDEX_member_master_1`
     ON `member_master`(`mm_account`);
 
-CREATE INDEX IF NOT EXISTS `INDEX_member_wallet_1`
+CREATE INDEX `INDEX_member_wallet_1`
     ON `member_wallet`(`mw_mm_id`);
 
-CREATE INDEX IF NOT EXISTS `INDEX_parameter_category_1`
+CREATE INDEX `INDEX_parameter_category_1`
     ON `parameter_category`(`sp_key`);
 
-CREATE INDEX IF NOT EXISTS `INDEX_pending_payment_1`
+CREATE INDEX `INDEX_pending_payment_1`
     ON `pending_payment`(`pp_id` DESC);
 
-CREATE INDEX IF NOT EXISTS `INDEX_pending_payment_2`
+CREATE INDEX `INDEX_pending_payment_2`
     ON `pending_payment`(`pp_mm_id`, `pp_status`);
 
-CREATE INDEX IF NOT EXISTS `INDEX_system_parameter_setting_1`
+CREATE INDEX `INDEX_system_parameter_setting_1`
     ON `system_parameter_setting`(`sps_code`);
 
-CREATE INDEX IF NOT EXISTS `INDEX_temp_tender_record_1`
+CREATE INDEX `INDEX_temp_tender_record_1`
     ON `temp_tender_record`(`ttr_tm_sn` DESC);
 
-CREATE INDEX IF NOT EXISTS `INDEX_tender_activity_record_1`
+CREATE INDEX `INDEX_tender_activity_record_1`
     ON `tender_activity_record`(`tar_tr_code` DESC);
 
-CREATE INDEX IF NOT EXISTS `INDEX_tender_activity_record_2`
+CREATE INDEX `INDEX_tender_activity_record_2`
     ON `tender_activity_record`(`tar_status`);
 
-CREATE INDEX IF NOT EXISTS `INDEX_tender_detail_1`
+CREATE INDEX `INDEX_tender_detail_1`
     ON `tender_detail`(`td_tm_id`);
 
-CREATE INDEX IF NOT EXISTS `INDEX_tender_detail_2`
+CREATE INDEX `INDEX_tender_detail_2`
     ON `tender_detail`(`td_participants`);
 
-CREATE INDEX IF NOT EXISTS `INDEX_tender_master_1`
+CREATE INDEX `INDEX_tender_master_1`
     ON `tender_master`(`tm_group_datetime` DESC);
 
-CREATE INDEX IF NOT EXISTS `INDEX_tender_master_2`
+CREATE INDEX `INDEX_tender_master_2`
     ON `tender_master`(`tm_status`);
 
-CREATE INDEX IF NOT EXISTS `INDEX_transaction_record_1`
+CREATE INDEX `INDEX_transaction_record_1`
     ON `transaction_record`(`tr_mm_id`);
 
-CREATE INDEX IF NOT EXISTS `INDEX_transaction_record_2`
+CREATE INDEX `INDEX_transaction_record_2`
     ON `transaction_record`(`tr_mm_id`, `tr_type` DESC);
 
-CREATE INDEX IF NOT EXISTS `INDEX_transaction_record_3`
+CREATE INDEX `INDEX_transaction_record_3`
     ON `transaction_record`(`tr_mm_id`);
 
-SELECT 'Database schema creation completed.' as status;
+-- ROSCA 平安商會系統預設資料載入腳本
+-- 此腳本會在資料庫結構建立完成後執行
+
+USE zeabur;
+
+-- 插入系統參數設定
+INSERT INTO `system_parameter_setting` (
+    `sps_id`, `sps_code`, `sps_name`, `sps_description`,
+    `sps_parameter01`, `sps_parameter02`, `sps_parameter03`, `sps_parameter04`, `sps_parameter05`,
+    `sps_parameter06`, `sps_parameter07`, `sps_parameter08`, `sps_parameter09`, `sps_parameter10`,
+    `sps_create_member`, `sps_create_datetime`, `sps_update_member`, `sps_update_datetime`
+) VALUES 
+(1, 'DEPOSIT_RATE', '存款匯率', '存款時的匯率設定', '1.0', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, NOW(), 1, NOW()),
+(2, 'WITHDRAW_RATE', '提款匯率', '提款時的匯率設定', '1.0', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, NOW(), 1, NOW()),
+(3, 'MIN_DEPOSIT', '最小存款金額', '最小存款金額限制', '1000', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, NOW(), 1, NOW()),
+(4, 'MIN_WITHDRAW', '最小提款金額', '最小提款金額限制', '1000', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, NOW(), 1, NOW()),
+(5, 'TENDER_MIN_AMOUNT', '標會最小金額', '標會最小金額設定', '8000', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, NOW(), 1, NOW());
+
+-- 插入參數分類
+INSERT INTO `parameter_category` (
+    `sp_id`, `sp_key`, `sp_code`, `sp_name`, `sp_description`,
+    `sp_create_member`, `sp_create_datetime`, `sp_update_member`, `sp_update_datetime`
+) VALUES 
+(10, 'WALLET_TYPE', 'SUBSCRIPTS_COUNT', '標會次數', '會員標會次數統計', 1, NOW(), 1, NOW()),
+(11, 'WALLET_TYPE', 'STORED_POINTS', '存款點數', '可用存款點數', 1, NOW(), 1, NOW()),
+(12, 'WALLET_TYPE', 'REWARD_POINTS', '獎勵點數', '標會獎勵點數', 1, NOW(), 1, NOW()),
+(13, 'WALLET_TYPE', 'PEACE_POINTS', '平安點數', '平安保險點數', 1, NOW(), 1, NOW()),
+(14, 'WALLET_TYPE', 'MALL_POINTS', '商城點數', '商城購物點數', 1, NOW(), 1, NOW()),
+(15, 'WALLET_TYPE', 'REGISTRATION_POINTS', '註冊點數', '註冊獎勵點數', 1, NOW(), 1, NOW()),
+(16, 'WALLET_TYPE', 'DEATH_POINTS', '死會點數', '死會相關點數', 1, NOW(), 1, NOW()),
+(17, 'WALLET_TYPE', 'ACCUMULATION', '累積流水', '累積交易流水', 1, NOW(), 1, NOW()),
+(18, 'WALLET_TYPE', 'PUNISH_POINTS', '懲罰點數', '違規懲罰點數', 1, NOW(), 1, NOW());
+
+-- 插入範例公告
+INSERT INTO `announcement_board` (
+    `ab_id`, `ab_title`, `ab_content`, `ab_status`, `ab_datetime`,
+    `ab_create_member`, `ab_create_datetime`, `ab_update_datetime`, `ab_update_member`
+) VALUES 
+(1, '歡迎使用平安商會系統', '歡迎使用平安商會標會系統，請先完成 KYC 認證後即可開始參與標會活動。', '10', NOW(), 1, NOW(), 1, NOW()),
+(2, '系統維護通知', '系統將於每週日凌晨 2:00-4:00 進行例行維護，期間可能無法正常使用，敬請見諒。', '10', NOW(), 1, NOW(), 1, NOW()),
+(3, '標會規則說明', '請詳細閱讀標會規則，確保了解相關權利義務後再參與標會活動。', '10', NOW(), 1, NOW(), 1, NOW());
