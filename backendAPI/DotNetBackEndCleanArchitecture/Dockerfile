@@ -63,10 +63,10 @@ COPY --from=build --chown=appuser:appuser /app/publish .
 USER appuser
 
 # 暴露端口
-EXPOSE 5000
+EXPOSE 5001
 
 # 設定環境變數 (針對 Zeabur 優化)
-ENV ASPNETCORE_URLS=http://+:5000 \
+ENV ASPNETCORE_URLS=http://+:5001 \
     ASPNETCORE_ENVIRONMENT=Production \
     TZ=Asia/Taipei \
     DOTNET_RUNNING_IN_CONTAINER=true \
@@ -75,7 +75,7 @@ ENV ASPNETCORE_URLS=http://+:5000 \
 
 # 健康檢查 (使用更輕量的檢查方式)
 HEALTHCHECK --interval=30s --timeout=10s --start-period=60s --retries=3 \
-    CMD curl -f http://localhost:5000/api/HomePicture/GetAnnImages || exit 1
+    CMD curl -f http://localhost:5001/health || exit 1
 
 # 啟動應用程式
 ENTRYPOINT ["dotnet", "DotNetBackEndApi.dll"]

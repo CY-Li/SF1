@@ -12,7 +12,7 @@ RUN mkdir -p /var/cache/nginx /var/log/nginx /usr/share/nginx/html && \
     chmod -R 755 /usr/share/nginx/html
 
 # 複製自定義 nginx 配置 (優化順序以利用 Docker 快取)
-COPY nginx.conf /etc/nginx/nginx.conf
+COPY nginx.conf /etc/nginx/nginx.conf.template
 
 # 複製靜態檔案到 nginx 預設目錄 (排除不必要的檔案)
 COPY --chown=nginx:nginx *.html /usr/share/nginx/html/
@@ -33,5 +33,5 @@ ENV TZ=Asia/Taipei \
 HEALTHCHECK --interval=30s --timeout=5s --start-period=10s --retries=3 \
     CMD curl -f http://localhost/ || exit 1
 
-# 啟動 nginx
-CMD ["nginx", "-g", "daemon off;"]
+# 使用 envsubst 啟動 nginx
+CMD ["/bin/sh", "-c", "envsubst \'$BACKEND_API_URL\' < /etc/nginx/nginx.conf.template > /etc/nginx/nginx.conf && nginx -g 'daemon off;'"]
