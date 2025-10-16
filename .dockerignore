@@ -53,9 +53,8 @@ obj/
 *.nupkg
 *.snupkg
 
-# 建置輸出 (保留前端 dist)
+# 建置輸出 (在 Docker 中重新建置)
 dist/
-!backend/FontEnd/FontEnd/dist/
 
 # 測試和覆蓋率
 coverage/

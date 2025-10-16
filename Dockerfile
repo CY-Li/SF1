@@ -1,7 +1,15 @@
 # ROSCA 平安商會系統 - Zeabur 優化版 Dockerfile
 # 單一容器包含所有服務：前台、後台、API Gateway、Backend Service
 
-# 階段 1: 建置 .NET Core Backend Service
+# 階段 1: 建置 Angular 後台
+FROM node:18-alpine AS angular-build
+WORKDIR /app
+COPY backend/FontEnd/FontEnd/package*.json ./
+RUN npm ci --only=production
+COPY backend/FontEnd/FontEnd/ .
+RUN npm run build
+
+# 階段 2: 建置 .NET Core Backend Service
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS backend-service-build
 WORKDIR /src
 COPY backendAPI/DotNetBackEndCleanArchitecture/ .
@@ -10,7 +18,7 @@ RUN dotnet restore
 RUN dotnet build -c Release -o /app/backend-service/build
 RUN dotnet publish -c Release -o /app/backend-service/publish --no-restore
 
-# 階段 2: 建置 .NET Core API Gateway
+# 階段 3: 建置 .NET Core API Gateway
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS backend-build
 WORKDIR /src
 COPY backendAPI/DotNetBackEndCleanArchitecture/ .
@@ -19,7 +27,7 @@ RUN dotnet restore
 RUN dotnet build -c Release -o /app/backend/build
 RUN dotnet publish -c Release -o /app/backend/publish --no-restore
 
-# 階段 3: 最終運行階段
+# 階段 4: 最終運行階段
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS final
 WORKDIR /app
 
@@ -34,9 +42,11 @@ RUN apt-get update && apt-get install -y \
 COPY --from=backend-service-build /app/backend-service/publish /app/backend-service/
 COPY --from=backend-build /app/backend/publish /app/backend/
 
-# 複製前端檔案 (使用預建置檔案)
+# 複製前端檔案
 COPY frontend/ /var/www/frontend/
-COPY backend/FontEnd/FontEnd/dist/font-end/browser/ /var/www/admin/
+
+# 複製 Angular 後台檔案 (從建置階段)
+COPY --from=angular-build /app/dist/font-end/browser/ /var/www/admin/
 
 # 修正 Angular base href
 RUN if [ -f /var/www/admin/index.html ]; then \
