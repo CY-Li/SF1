@@ -46,7 +46,7 @@ JWT__Audience=ROSCA-Client
 JWT__ExpiryMinutes=60
 
 # CORS 跨域配置
-CORS__AllowedOrigins=https://your-domain.zeabur.app
+CORS__AllowedOrigins=https://sf-test.zeabur.app
 
 # 檔案上傳配置
 FileUpload__MaxFileSize=10485760
@@ -102,3 +102,38 @@ APIUrl=http://localhost:5001/
 5. **持久化存儲**：確保配置所有必要的存儲卷
 6. **多端口訪問**：前台 (Port 80)、後台 (Port 8080)
 7. **健康檢查**：容器會自動檢查所有服務狀態
+#
+# 故障排除
+
+### 常見建置問題
+
+1. **nginx.conf 找不到**
+   - 已修正：Dockerfile 現在直接在容器內建立 nginx 配置
+   - 不再依賴外部 nginx.conf 檔案
+
+2. **Angular 建置失敗**
+   - 確保使用 `npm run build:zeabur` 命令
+   - 檢查 Angular 專案路徑：`backend/FontEnd/FontEnd/`
+
+3. **.NET Core 建置問題**
+   - 確保所有 .csproj 檔案路徑正確
+   - 檢查 NuGet 套件還原
+
+### 建置驗證
+
+在部署前，可以本地測試 Dockerfile：
+
+```bash
+# 建置映像檔案
+docker build -t rosca-system .
+
+# 運行容器測試
+docker run -p 80:80 -p 8080:8080 -p 5000:5000 -p 5001:5001 rosca-system
+```
+
+### 部署後檢查
+
+1. **前台系統**：訪問主域名 (Port 80)
+2. **後台系統**：訪問主域名:8080 (Port 8080)
+3. **API 健康檢查**：訪問 `/api/HomePicture/GetAnnImages`
+4. **日誌檢查**：在 Zeabur 控制台查看服務日誌

@@ -11,16 +11,13 @@ RUN apk add --no-cache python3 make g++ && \
 
 # 複製 Angular 專案檔案
 COPY backend/FontEnd/FontEnd/package*.json ./
-RUN npm ci --only=production --no-audit --no-fund && \
+RUN npm ci --no-audit --no-fund && \
     npm cache clean --force
 
 # 複製 Angular 源代碼並建置
-COPY backend/FontEnd/FontEnd/src/ ./src/
-COPY backend/FontEnd/FontEnd/angular.json ./
-COPY backend/FontEnd/FontEnd/tsconfig*.json ./
-COPY backend/FontEnd/FontEnd/*.js ./
+COPY backend/FontEnd/FontEnd/ ./
 
-RUN npm run build -- --configuration=production --optimization=true --aot=true --build-optimizer=true
+RUN npm run build:zeabur
 
 # ===== .NET Core 建置階段 =====
 FROM mcr.microsoft.com/dotnet/sdk:7.0-alpine AS dotnet-build
@@ -112,9 +109,6 @@ COPY --chown=appuser:appuser frontend/component/ /app/frontend/component/
 # 複製 Angular 建置檔案
 COPY --from=angular-build --chown=appuser:appuser /app/dist/font-end/browser/ /app/admin/
 
-# 複製 Nginx 配置
-COPY --chown=appuser:appuser nginx.conf /etc/nginx/nginx.conf
-
 # 建立 Supervisor 配置
 RUN cat > /etc/supervisor/conf.d/supervisord.conf << 'EOF'
 [supervisord]
@@ -152,7 +146,7 @@ user=appuser
 environment=ASPNETCORE_URLS="http://+:5001",ASPNETCORE_ENVIRONMENT="Production"
 EOF
 
-# 建立 Nginx 配置
+# 建立整合的 Nginx 配置
 RUN cat > /etc/nginx/nginx.conf << 'EOF'
 user nginx;
 worker_processes auto;
@@ -161,6 +155,8 @@ pid /var/run/nginx.pid;
 
 events {
     worker_connections 1024;
+    use epoll;
+    multi_accept on;
 }
 
 http {
@@ -179,57 +175,144 @@ http {
     keepalive_timeout 65;
     types_hash_max_size 2048;
     
+    # Gzip 壓縮
     gzip on;
     gzip_vary on;
     gzip_min_length 1024;
-    gzip_types text/plain text/css text/xml text/javascript application/javascript application/xml+rss application/json;
+    gzip_proxied any;
+    gzip_comp_level 6;
+    gzip_types
+        text/plain
+        text/css
+        text/xml
+        text/javascript
+        application/json
+        application/javascript
+        application/xml+rss
+        application/atom+xml
+        image/svg+xml;
     
-    # 前台系統 (主域名)
+    # 前台系統 (主域名 Port 80)
     server {
         listen 80 default_server;
         server_name _;
         root /app/frontend;
         index index.html;
         
-        # 靜態檔案
-        location / {
-            try_files $uri $uri/ /index.html;
-            expires 1d;
+        # 靜態檔案快取設定
+        location ~* \.(css|js|png|jpg|jpeg|gif|ico|svg)$ {
+            expires 1y;
             add_header Cache-Control "public, immutable";
         }
         
-        # API 代理
+        # API 代理設定
         location /api/ {
             proxy_pass http://localhost:5000/api/;
             proxy_set_header Host $host;
             proxy_set_header X-Real-IP $remote_addr;
             proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
             proxy_set_header X-Forwarded-Proto $scheme;
+            proxy_set_header X-Forwarded-Host $host;
+            
+            # 處理 CORS 預檢請求
+            if ($request_method = 'OPTIONS') {
+                add_header 'Access-Control-Allow-Origin' '*' always;
+                add_header 'Access-Control-Allow-Methods' 'GET, POST, PUT, DELETE, OPTIONS' always;
+                add_header 'Access-Control-Allow-Headers' 'DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization' always;
+                add_header 'Access-Control-Max-Age' 1728000 always;
+                add_header 'Content-Type' 'text/plain; charset=utf-8';
+                add_header 'Content-Length' 0;
+                return 204;
+            }
+            
+            # 優化的超時設定
+            proxy_connect_timeout 10s;
+            proxy_send_timeout 30s;
+            proxy_read_timeout 30s;
+            proxy_buffering off;
+            proxy_request_buffering off;
+            
+            # 連接池優化
+            proxy_http_version 1.1;
+            proxy_set_header Connection "";
         }
+        
+        # SPA 路由支援
+        location / {
+            try_files $uri $uri/ /index.html;
+        }
+        
+        # 錯誤頁面
+        error_page 404 /index.html;
+        error_page 500 502 503 504 /50x.html;
     }
     
-    # 後台管理系統
+    # 後台管理系統 (Port 8080)
     server {
         listen 8080;
         server_name _;
         root /app/admin;
         index index.html;
         
-        # Angular 路由支援
-        location / {
-            try_files $uri $uri/ /index.html;
-            expires 1d;
+        # 靜態檔案快取設定
+        location ~* \.(css|js|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|eot)$ {
+            expires 1y;
             add_header Cache-Control "public, immutable";
         }
         
-        # API 代理
+        # API 代理設定
         location /api/ {
             proxy_pass http://localhost:5000/api/;
             proxy_set_header Host $host;
             proxy_set_header X-Real-IP $remote_addr;
             proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
             proxy_set_header X-Forwarded-Proto $scheme;
+            proxy_set_header X-Forwarded-Host $host;
+            
+            # 處理 CORS 預檢請求
+            if ($request_method = 'OPTIONS') {
+                add_header 'Access-Control-Allow-Origin' '*' always;
+                add_header 'Access-Control-Allow-Methods' 'GET, POST, PUT, DELETE, OPTIONS' always;
+                add_header 'Access-Control-Allow-Headers' 'DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization' always;
+                add_header 'Access-Control-Max-Age' 1728000 always;
+                add_header 'Content-Type' 'text/plain; charset=utf-8';
+                add_header 'Content-Length' 0;
+                return 204;
+            }
+            
+            # 優化的超時設定
+            proxy_connect_timeout 10s;
+            proxy_send_timeout 30s;
+            proxy_read_timeout 30s;
+            proxy_buffering off;
+            proxy_request_buffering off;
+            
+            # 連接池優化
+            proxy_http_version 1.1;
+            proxy_set_header Connection "";
         }
+        
+        # Angular SPA 路由支援
+        location / {
+            try_files $uri $uri/ /index.html;
+            
+            # 防止快取 index.html
+            location = /index.html {
+                add_header Cache-Control "no-cache, no-store, must-revalidate";
+                add_header Pragma "no-cache";
+                add_header Expires "0";
+            }
+        }
+        
+        # 錯誤頁面
+        error_page 404 /index.html;
+        error_page 500 502 503 504 /50x.html;
+        
+        # 安全標頭
+        add_header X-Frame-Options "SAMEORIGIN" always;
+        add_header X-Content-Type-Options "nosniff" always;
+        add_header X-XSS-Protection "1; mode=block" always;
+        add_header Referrer-Policy "strict-origin-when-cross-origin" always;
     }
 }
 EOF
