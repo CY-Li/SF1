@@ -2,7 +2,7 @@
 FROM nginx:alpine
 
 # 複製自定義 nginx 配置
-COPY admin-nginx.conf /etc/nginx/nginx.conf
+COPY admin-nginx.conf.template /etc/nginx/templates/default.conf.template
 
 # 複製建置好的檔案到 nginx 目錄
 COPY FontEnd/dist/font-end/browser/ /usr/share/nginx/html/

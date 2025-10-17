@@ -5,7 +5,7 @@ FROM nginx:alpine
 COPY . /usr/share/nginx/html/
 
 # 複製自定義 nginx 配置
-COPY nginx.conf /etc/nginx/nginx.conf
+COPY nginx.conf.template /etc/nginx/templates/default.conf.template
 
 # 建立必要的目錄並設定權限
 RUN mkdir -p /var/cache/nginx /var/log/nginx && \
